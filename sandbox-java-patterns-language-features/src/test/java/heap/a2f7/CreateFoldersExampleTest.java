@@ -10,9 +10,7 @@ import java.nio.file.Paths;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
-/**
- * java.io.* playground
- */
+
 class CreateFoldersExampleTest {
     @Test
     void main() {
