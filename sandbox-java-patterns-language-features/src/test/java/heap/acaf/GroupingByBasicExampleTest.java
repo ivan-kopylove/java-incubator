@@ -12,20 +12,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * java streams playground
  */
-class GroupingByBasicExampleTest
-{
+class GroupingByBasicExampleTest {
     @Test
-    void run()
-    {
+    void run() {
         List<Integer> ints = new ArrayList<>();
         ints.add(1);
         ints.add(2);
         ints.add(3);
 
         Map<Boolean, List<Integer>> collect = ints.stream()
-                                                  .collect(Collectors.groupingBy(integer -> integer > 1));
-        assertEquals(3,
-                     (int) collect.get(true)
-                                  .get(1));
+                .collect(Collectors.groupingBy(integer -> integer > 1));
+
+        assertEquals(3, (int) collect.get(true)
+                .get(1));
     }
 }
