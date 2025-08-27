@@ -1,7 +1,7 @@
-package a2da94f4c2fd41e8af7509d91cad4932.L1.usecase;
+package named.adapter_pack.L1.usecase;
 
 
-import a2da94f4c2fd41e8af7509d91cad4932.L1.api.MyNewJava_Api;
+import named.adapter_pack.L1.api.MyNewJava_Api;
 
 public class MyNewJava_UseCase implements MyNewJava_Api {
 
