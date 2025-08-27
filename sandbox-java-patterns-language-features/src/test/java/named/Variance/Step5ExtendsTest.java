@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Answer the questions stated in {@link heap.Variance.Fruit}.
+ * Answer the questions stated in {@link Fruit}.
  */
 @SuppressWarnings("unused")
 class Step5ExtendsTest

@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Answer the questions stated in {@link heap.Variance.Fruit}.
+ * Answer the questions stated in {@link Fruit}.
  */
 public class Step3Test
 {

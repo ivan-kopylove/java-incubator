@@ -3,7 +3,7 @@ package named.Variance;
 import org.junit.jupiter.api.Test;
 
 /**
- * Answer the questions stated in {@link heap.Variance.Fruit}.
+ * Answer the questions stated in {@link Fruit}.
  * <p>
  * Book search: "language misfeature".
  */

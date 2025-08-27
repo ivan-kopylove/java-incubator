@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Answer the questions stated in {@link heap.Variance.Fruit}.
+ * Answer the questions stated in {@link Fruit}.
  */
 @SuppressWarnings("unused")
 class Step4SuperTest
@@ -27,7 +27,7 @@ class Step4SuperTest
         // apples.add(new Fruit());
         // apples.add(new Apple());
         // apples.add(new Orange());
-        // apples.add(new Jonathan());
+//         apples.add(new Jonathan());
     }
 
     void test3(List<? super Apple> apples)
