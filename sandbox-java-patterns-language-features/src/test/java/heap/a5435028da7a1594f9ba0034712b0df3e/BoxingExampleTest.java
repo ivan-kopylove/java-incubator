@@ -6,10 +6,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 
+@SuppressWarnings("ALL")
 class BoxingExampleTest
 {
     @Test
-    void should_box_to_a_character()
+    void what_happens_here()
     {
         Character ch = 'a';
     }
@@ -19,26 +20,25 @@ class BoxingExampleTest
     {
 
         @Test
-        void should_do_something_when_condition()
+        void what_will_be_printed_01()
         {
             // given
-            Integer iOb1 = 127;
-            Integer iOb2 = 127;
+            Integer a = 127;
+            Integer b = 127;
 
             // then
-            System.out.println("iOb1 == iOb2: " + (iOb1 == iOb2));
-
+            System.out.println("a == b: " + (a == b));
         }
 
         @Test
-        void should_not_be_equal_because_greater_than_128_is_not_cached_by_default()
+        void what_will_be_printed_and_why()
         {
             // given
-            Integer iOb1 = 128;
-            Integer iOb2 = 128;
+            Integer a = 128;
+            Integer b = 128;
 
             // then
-            assertFalse(iOb1 == iOb2);
+            System.out.println("a == b: " + (a == b));
         }
 
         @Test
