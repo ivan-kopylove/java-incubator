@@ -45,7 +45,9 @@ class Solution {
             power <<= 1;
         }
 
-        int option1 = (int) dp(power - n); // by subtracting from the right side of the interavl - what does he do? the leftover of subtraction - is what?
+        // by subtracting from the right side of the interavl - what does he do?
+        // the leftover of subtraction - is what?
+        int option1 = (int) dp(power - n);
         int option2 = (int) dp(n - (power >> 1));
 
         int minOps = 1 + Math.min(option1, option2);
