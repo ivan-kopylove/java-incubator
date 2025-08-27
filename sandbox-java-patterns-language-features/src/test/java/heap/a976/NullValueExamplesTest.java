@@ -9,10 +9,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class NullValueExamplesTest
 {
     @Test
-    @DisplayName("Demonstration that null equals null")
-    void nullEqualsNull()
+    void what_will_be_printed()
     {
-        assertTrue(null == null);
-        assertNull(null);
+        if(false) // try to predict yourself before switching
+        {
+            System.out.println(null == null);
+        }
+
     }
 }
