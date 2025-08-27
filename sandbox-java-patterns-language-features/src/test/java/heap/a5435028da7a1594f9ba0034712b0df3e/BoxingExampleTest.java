@@ -42,14 +42,14 @@ class BoxingExampleTest
         }
 
         @Test
-        void explicit_object_declaration_should_result_in_different_reference()
+        void what_will_be_printed_and_why_02()
         {
             // given
-            Integer i1 = new Integer(127);
-            Integer i2 = new Integer(127);
+            Integer a = new Integer(127);
+            Integer b = new Integer(127);
 
             // then
-            assertFalse(i1 == i2);
+            System.out.println("a == b: " + (a == b));
         }
     }
 }
