@@ -2,22 +2,12 @@ package heap.a7d5;
 
 import org.junit.jupiter.api.Test;
 
+@SuppressWarnings("ALL")
 class RunnableLambdaExampleTest
 {
-    /**
-     * Java lambdas.
-     * <p>
-     * VolatileTest functional interface is an interface that contains only one abstract method
-     * {@link Runnable}, ActionListener, Comparable are some of the examples of functional interfaces
-     * <p>
-     * VolatileTest lambda expression is composed of three parts.
-     * Argument List  | Arrow	| 	Token Body
-     * (int x, int y) | ->		|	x + y
-     */
 
-    @SuppressWarnings("Convert2Lambda")
     @Test
-    void run()
+    void an_example_of_what()
     {
         Runnable r1 = new Runnable()
         {
