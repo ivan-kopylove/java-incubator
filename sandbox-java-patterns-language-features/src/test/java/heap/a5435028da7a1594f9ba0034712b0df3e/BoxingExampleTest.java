@@ -3,8 +3,6 @@ package heap.a5435028da7a1594f9ba0034712b0df3e;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-
 
 @SuppressWarnings("ALL")
 class BoxingExampleTest
