@@ -9,9 +9,6 @@ import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * java streams playground
- */
 class GroupingByBasicExampleTest {
     @Test
     void run() {

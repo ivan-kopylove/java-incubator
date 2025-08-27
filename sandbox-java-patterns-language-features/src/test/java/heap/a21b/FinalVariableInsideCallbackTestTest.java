@@ -6,7 +6,7 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-class MainTest
+class FinalVariableInsideCallbackTestTest
 {
     @Test
     void main()
