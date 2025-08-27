@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * fiddling with the solution
+ * fiddling with a solution
  * <p>
  * <a href="https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/6789775/beats-100-java-0ms-dp-solution/">6789775</a>
  */
