@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class BoxingExampleTest
 {
     @Test
-    void what_happens_here()
+    void an_example_of_what()
     {
         Character ch = 'a';
     }
