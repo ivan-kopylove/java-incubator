@@ -21,7 +21,7 @@ public class Solution_6789775 {
 
 @SuppressWarnings("ALL")
 class Solution {
-    Map<Integer, Integer> memo = new HashMap<>();
+    Map<Integer, Integer> memo = new HashMap<>(); // what if it was an array?
 
     public int minOperations(int n) {
         return dp(n);
