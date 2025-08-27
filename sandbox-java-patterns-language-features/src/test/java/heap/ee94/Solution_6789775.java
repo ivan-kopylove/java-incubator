@@ -12,7 +12,6 @@ import java.util.Map;
  */
 public class Solution_6789775 {
 
-
     @Test
     public void run()
     {
@@ -29,7 +28,9 @@ class Solution {
     }
     private int dp(int n) {
 
-        if (n == 0) return 0;
+        if (n == 0) {
+            return 0;
+        }
 
         if ((n & (n - 1)) == 0) {
             memo.put(n, 1);
