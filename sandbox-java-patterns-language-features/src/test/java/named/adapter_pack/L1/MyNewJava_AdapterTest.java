@@ -1,16 +1,14 @@
 package named.adapter_pack.L1;
 
 
-
-
-import a2da94f4c2fd41e8af7509d91cad4932.L1.adapter.*;
-import a2da94f4c2fd41e8af7509d91cad4932.L1.spi.*;
-import a2da94f4c2fd41e8af7509d91cad4932.L1.usecase.*;
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
+import named.adapter_pack.L1.adapter.MyNewJava_Adapter;
+import named.adapter_pack.L1.spi.MyNewJava_Spi;
+import named.adapter_pack.L1.usecase.MyNewJava_UseCase;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 
 class MyNewJava_AdapterTest {
 

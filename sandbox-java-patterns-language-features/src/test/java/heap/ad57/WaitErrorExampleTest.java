@@ -19,8 +19,7 @@ public class WaitErrorExampleTest {
     class Problem
     {
         @Test
-        void should_throw_because_monitor_is_not_locked() throws InterruptedException
-        {
+        void should_throw_because_monitor_is_not_locked() {
             // given
             Object lock = new Object();
 
