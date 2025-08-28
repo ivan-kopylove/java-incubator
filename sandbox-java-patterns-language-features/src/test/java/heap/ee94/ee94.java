@@ -2,7 +2,7 @@ package heap.ee94;
 
 import org.junit.jupiter.api.Test;
 
-@SuppressWarnings("ALL")
+
 public class ee94 {
 
     /**

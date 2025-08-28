@@ -2,7 +2,7 @@ package heap.a7d5;
 
 import org.junit.jupiter.api.Test;
 
-@SuppressWarnings("ALL")
+
 class RunnableLambdaExampleTest
 {
 

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 
-@SuppressWarnings("ALL")
+
 class EavExample
 {
     private String       phoneNumber;

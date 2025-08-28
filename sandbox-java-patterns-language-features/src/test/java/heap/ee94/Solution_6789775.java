@@ -13,19 +13,19 @@ import java.util.Map;
 public class Solution_6789775 {
 
     @Test
-    public void run()
-    {
+    public void run() {
         new MyFailedSolution().minOperations(33);
     }
 }
 
-@SuppressWarnings("ALL")
+
 class Solution {
     Map<Integer, Integer> memo = new HashMap<>(); // what if it was an array?
 
     public int minOperations(int n) {
         return dp(n);
     }
+
     private int dp(int n) {
 
         if (n == 0) {
