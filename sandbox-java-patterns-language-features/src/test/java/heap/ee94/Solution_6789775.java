@@ -15,7 +15,7 @@ public class Solution_6789775 {
     @Test
     public void run()
     {
-        new Solution().minOperations(33);
+        new MySolution().minOperations(33);
     }
 }
 
