@@ -46,7 +46,7 @@ class Solution {
             power <<= 1;
         }
 
-        // by subtracting from the right side of the interavl - what does he do?
+        // by subtracting from the right side of the interval - what does he do?
         // the leftover of subtraction - is what?
         int option1 = (int) dp(power - n);
         // by subtracting from current left side of the interval - what does he do?
