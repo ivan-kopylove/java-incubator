@@ -3,19 +3,21 @@ package named.Variance;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
  * Answer the questions stated in {@link Fruit}.
  */
-@SuppressWarnings("unused")
+
 class Step5ExtendsTest
 {
     @Test
     void test1()
     {
-//        List<Integer> ints = Arrays.asList(1, 2);
-//        List<? extends Number> nums = ints;
+        List<Integer> ints = Arrays.asList(1, 2);
+//        List<? extends Number> nums1 = ints;
+//        List<? super Number> nums2 = ints;
     }
 
     void test2()

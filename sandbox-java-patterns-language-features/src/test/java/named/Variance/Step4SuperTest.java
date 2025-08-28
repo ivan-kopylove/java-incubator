@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Answer the questions stated in {@link Fruit}.
  */
-@SuppressWarnings("unused")
+
 class Step4SuperTest
 {
     @Test

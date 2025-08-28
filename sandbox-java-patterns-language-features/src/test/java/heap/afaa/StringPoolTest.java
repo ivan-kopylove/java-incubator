@@ -8,10 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 /**
  * Basic demonstration of strings pool in java. Strings are compared intentionally using reference equality.
  */
-@SuppressWarnings({"SimplifiableAssertion", // using basic mechamism
-                   "StringEquality", //
-                   "ConstantValue", //
-                   "StringConcatenationInLoop"}) // avoid string builder inner logic
 class StringPoolTest
 {
     @Test

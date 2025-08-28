@@ -28,7 +28,7 @@ class IntermediateNullTest
         assertNull(mapped.get(1));
     }
 
-    @SuppressWarnings("ConstantConditions")
+    
     @Test
     void b()
     {
