@@ -1,7 +1,7 @@
 package heap.ee94;
 
 
-class MySolution {
+class MyFailedSolution {
     public int minOperations(int n) {
 
         int low = 0;
