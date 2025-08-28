@@ -1,6 +1,10 @@
 package heap.ee94;
 
 
+/**
+ * https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/description/
+ * @see <a href="https://ivan-kopylove.github.io/leetcode/0c78">blog</a>
+ */
 class MyFailedSolution {
     public int minOperations(int n) {
 
