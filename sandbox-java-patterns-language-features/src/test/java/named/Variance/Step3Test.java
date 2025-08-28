@@ -27,6 +27,7 @@ public class Step3Test
     {
         List<Apple> apples = new ArrayList<>();
 
+//         apples.add(null);
         // apples.add(new Object());
         // apples.add(new Fruit());
         // apples.add(new Apple());
@@ -38,7 +39,8 @@ public class Step3Test
     // what PECS it is?
     void test3(List<Apple> apples)
     {
-        // apples.add(new Object());
+//        apples.add(null);
+//         apples.add(new Object());
         // apples.add(new Fruit());
         // apples.add(new Apple());
         // apples.add(new Orange());

@@ -23,6 +23,7 @@ class Step4SuperTest
     {
         List<? super Apple> apples = new ArrayList<>();
 
+//        apples.add(null);
         // apples.add(new Object());
         // apples.add(new Fruit());
         // apples.add(new Apple());
@@ -32,6 +33,7 @@ class Step4SuperTest
 
     void test3(List<? super Apple> apples)
     {
+//        apples.add(null);
         // apples.add(new Object());
         // apples.add(new Fruit());
         // apples.add(new Apple());
