@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class ArraysAsListFixedSizeExampleTest
 {
     @Test
-    void Arrays_asList_immutable()
+    void Arrays_asList_is_what()
     {
         assertThrows(UnsupportedOperationException.class, () -> {
 
