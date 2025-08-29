@@ -43,8 +43,6 @@ class Solution
         int seven = Integer.MAX_VALUE;
         int eight = Integer.MAX_VALUE;
 
-
-
         if(x % 11 == 0)
         {
             one = dfs(x / 11, y);
