@@ -1,11 +1,13 @@
 package heap.cea2;
 
-public class WavFileLengthAdjuster {
+public class WavFileLengthAdjuster
+{
 
     /**
      * Used to read unfinished recording.
      */
-    public static byte[] finalizeWavFile(byte[] bytes) {
+    public static byte[] finalizeWavFile(byte[] bytes)
+    {
         int length = bytes.length;
 
         // Bytes 4-7: Size of the entire file minus 8
@@ -21,7 +23,8 @@ public class WavFileLengthAdjuster {
         return bytes;
     }
 
-    private static byte[] intToLittleEndianBytes(int value) {
+    private static byte[] intToLittleEndianBytes(int value)
+    {
         byte[] bytes = new byte[4];
         bytes[0] = (byte) (value & 0xff);
         bytes[1] = (byte) ((value >> 8) & 0xff);
