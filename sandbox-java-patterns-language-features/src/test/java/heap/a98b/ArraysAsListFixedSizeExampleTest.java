@@ -20,7 +20,6 @@ class ArraysAsListFixedSizeExampleTest
     {
         assertThrows(UnsupportedOperationException.class, () -> {
 
-
             List<String> immutableList = Arrays.asList("1", "2");
             immutableList.add("3");
         });
