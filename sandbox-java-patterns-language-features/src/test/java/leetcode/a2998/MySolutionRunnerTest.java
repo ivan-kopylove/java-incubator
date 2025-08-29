@@ -10,6 +10,7 @@ class MySolutionRunnerTest
 {
     @ParameterizedTest
     @CsvSource({
+            "329,57,11",
             "10000,1,8",
             "21,12,9",
             "9420,8299,1121",
