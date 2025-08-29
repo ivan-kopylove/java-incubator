@@ -3,11 +3,6 @@ package leetcode.a2998;
 class Solution
 {
     public int minimumOperationsToMakeEqual(int x, int y) {
-        if(y > x)
-        {
-            return y - x;
-        }
-
         return dfs(x, y);
     }
 
