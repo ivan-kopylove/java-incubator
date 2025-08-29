@@ -1,16 +1,10 @@
 package heap.c085;
 
-
 import org.junit.jupiter.api.Test;
 
 import java.util.Comparator;
 import java.util.List;
 
-/**
- * java streams playground
- * <p>
- * The default implementation of smth.
- */
 class StreamSortTest
 {
     /**

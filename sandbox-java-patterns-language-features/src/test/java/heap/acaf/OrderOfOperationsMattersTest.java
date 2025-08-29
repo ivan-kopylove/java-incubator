@@ -8,9 +8,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * java streams playground
- */
+
 class OrderOfOperationsMattersTest
 {
 
