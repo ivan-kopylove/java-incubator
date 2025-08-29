@@ -12,7 +12,7 @@ class RunnableLambdaExampleTest
         Runnable r1 = new Runnable()
         {
             @Override
-            public void foo()
+            public void run()
             {
                 System.out.println("runnable 1");
             }
