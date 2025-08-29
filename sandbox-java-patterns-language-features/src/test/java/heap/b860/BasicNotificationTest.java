@@ -30,7 +30,7 @@ public class BasicNotificationTest
 
         Thread.sleep(3_000); // Ensure ordering
 
-        synchronized (lock)
+        synchronized (lock) // try to drop it
         {
             System.out.println("Thread B: Notifying");
             lock.notify();
