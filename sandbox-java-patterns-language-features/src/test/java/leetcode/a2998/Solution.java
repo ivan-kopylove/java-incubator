@@ -9,7 +9,6 @@ class Solution
 
     int dfs(int x, int y, int shift)
     {
-        System.out.println(x);
         if (x == y)
         {
             return 0;
@@ -27,12 +26,12 @@ class Solution
         int call5 = Integer.MAX_VALUE - 50000;
         int call6 = Integer.MAX_VALUE - 50000;
 
-        if (x % 11 == 0 )
+        if (x % 11 == 0)
         {
             call1 = dfs(x / 11, y, 0);
         }
 
-        if (x % 5 == 0 )
+        if (x % 5 == 0)
         {
             call2 = dfs(x / 5, y, 0);
         }
