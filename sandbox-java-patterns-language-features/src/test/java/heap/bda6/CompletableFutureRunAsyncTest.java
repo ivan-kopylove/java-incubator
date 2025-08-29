@@ -7,22 +7,17 @@ import java.util.concurrent.ExecutionException;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class CompletableFutureRunAsyncTest
-{
+class CompletableFutureRunAsyncTest {
 
     @Test
-    void exception()
-    {
+    void exception() {
         CompletableFuture<Void> stringCompletableFuture = CompletableFuture.runAsync(() -> {
             throw new RuntimeException("hello");
         });
         assertThrows(RuntimeException.class, () -> {
-            try
-            {
+            try {
                 stringCompletableFuture.get();
-            }
-            catch (ExecutionException e)
-            {
+            } catch (ExecutionException e) {
                 throw e.getCause();
             }
         });
