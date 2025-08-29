@@ -2,26 +2,35 @@ package leetcode.a2998;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-class MySolution
+class Solution
 {
-    public int minimumOperationsToMakeEqual(int x, int y)
-    {
-        return dfs(x, y);
-    }
-
-    int dfs(int x, int y)
-    {
-        if (x < y)
+    public int minimumOperationsToMakeEqual(int x, int y) {
+        if(y > x)
         {
             return y - x;
         }
 
-        if (x == y)
+
+        return dfs(x, y);
+
+    }
+
+    int dfs(int x, int y)
+    {
+
+        System.out.println(x);
+
+        if(x < y)
+        {
+            return y-x;
+        }
+
+        if(x == y)
         {
             return 0;
         }
 
-        if (x - y <= 2)
+        if(x - y <= 2)
         {
             return x - y;
         }
@@ -36,17 +45,30 @@ class MySolution
         int seven = Integer.MAX_VALUE;
         int eight = Integer.MAX_VALUE;
 
-        if (x % 11 == 0)
+
+
+        if(x % 11 == 0)
         {
             one = dfs(x / 11, y);
         }
 
-        if (x % 5 == 0)
+        if(x % 5 == 0)
         {
             two = dfs(x / 5, y);
         }
+        else
+        {
+            if(x % 5 >= 3)
+            {
+                three = dfs(x + 1, y);
+            }
+            else
+            {
+                four = dfs(x - 1, y);
+            }
+        }
 
-
-        return 1 + Math.min(one, two);
+        return 1 + Math.min(one, Math.min(two, Math.min(three, Math.min(four, Math.min(five, Math.min(six, Math.min(seven, eight)))))));
     }
+
 }
