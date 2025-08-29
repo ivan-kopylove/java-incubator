@@ -9,12 +9,12 @@ class AccessStaticMemberOfNull
     @Test
     void try_to_predict_the_result_before_uncommenting()
     {
-        MyClass myClass = new MyClass();
-        myClass = null;
+        MyClass a = new MyClass();
+        a = null;
 
         assertEquals("some value", MyClass.VALUE);
-        assertEquals("some value", myClass.VALUE);
+        assertEquals("some value", a.VALUE);
         assertEquals("some text", MyClass.foo());
-        assertEquals("some text", myClass.foo());
+        assertEquals("some text", a.foo());
     }
 }
