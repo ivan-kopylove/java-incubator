@@ -1,5 +1,7 @@
 package com.github.ivan.kopylove.sandbox.persistence.jpa.join;
 
+
+
 import com.github.ivan.kopylove.sandbox.persistence.entities.a.TicketDetails;
 
 import javax.persistence.Column;
