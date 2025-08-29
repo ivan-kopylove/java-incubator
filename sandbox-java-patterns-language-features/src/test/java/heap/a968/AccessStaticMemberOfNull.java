@@ -4,10 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * static members example
- */
-class AccessStaticMemberWithNull1486Test
+class AccessStaticMemberOfNull
 {
     @Test
     void try_to_predict_the_result_before_uncommenting()
