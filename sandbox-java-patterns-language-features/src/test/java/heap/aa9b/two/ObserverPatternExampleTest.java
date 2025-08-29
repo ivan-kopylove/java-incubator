@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 class ObserverPatternExampleTest
 {
     @Test
-    void run()
+    void foo()
     {
         Initiater initiater = new Initiater();
         Responder responder = new Responder();

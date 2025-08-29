@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 class StaticBlockInitOrder
 {
     @Test
-    void run()
+    void foo()
     {
         Parent p = new Child();
     }

@@ -14,7 +14,7 @@ import java.util.List;
 class JpaCriteriaBuilderBasicExampleTest
 {
     @Test
-    void run()
+    void foo()
     {
         EntityManager entityManager = JpaEntityManagerFactory.getEntityManger();
 

@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class HibernateSpiIntegratorExample
 {
     @Test
-    void run()
+    void foo()
     {
         JpaEntityManagerFactory.getEntityManger();
 

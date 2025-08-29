@@ -6,7 +6,7 @@ class Step2_1_InnerNestedWithField {
     private int b = 3;
 
     class Nested {
-        private void run() {
+        private void foo() {
             a = 4; // can I access it here?
             b = 4; // can I access it here?
         }

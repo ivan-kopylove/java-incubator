@@ -6,7 +6,7 @@ class StaticBlockNestedClassTest
 {
 
     @Test
-    void run()
+    void foo()
     {
         System.out.println(Child.ID);
     }

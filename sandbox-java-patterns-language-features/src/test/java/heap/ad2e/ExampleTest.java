@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class ExampleTest
 {
     @Test
-    void run()
+    void foo()
     {
         LambdaInterface lambdaInterface = (str, num) -> {
             System.out.println("Lambda function");

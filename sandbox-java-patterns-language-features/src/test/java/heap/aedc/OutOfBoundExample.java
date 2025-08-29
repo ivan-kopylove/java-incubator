@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class OutOfBoundExample
 {
     @Test
-    void run()
+    void foo()
     {
         assertThrows(IndexOutOfBoundsException.class, () -> {
             List<String> l = new ArrayList<>();

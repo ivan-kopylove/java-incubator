@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class LinkedListExampleTest
 {
     @Test
-    void run()
+    void foo()
     {
         LinkedList<String> linkedList = new LinkedList<>();
         linkedList.add("b");

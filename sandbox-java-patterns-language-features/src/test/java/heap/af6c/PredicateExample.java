@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class PredicateExample
 {
     @Test
-    void run()
+    void foo()
     {
         Stream<String> myStream = Stream.of("a", "b", "c");
 

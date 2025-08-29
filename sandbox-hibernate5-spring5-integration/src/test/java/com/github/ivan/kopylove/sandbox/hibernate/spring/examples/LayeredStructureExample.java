@@ -20,7 +20,7 @@ class LayeredStructureExample
     }
 
     @Test
-    void run()
+    void foo()
     {
         RestServiceEmulator documentService = context.getBean(RestServiceEmulator.class);
         assertEquals("Alexander, Alexey", documentService.frontEndCallAcceptor("Alex"));

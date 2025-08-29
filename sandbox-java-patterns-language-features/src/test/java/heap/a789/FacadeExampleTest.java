@@ -123,7 +123,7 @@ class FacadeExampleTest
 
     class CoolingController
     {
-        void run()
+        void foo()
         {
         }
 

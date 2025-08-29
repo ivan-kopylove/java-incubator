@@ -30,7 +30,7 @@ class JpaUpdateExampleTest
     }
 
     @Test
-    void run()
+    void foo()
     {
         EntityManager entityManger = JpaEntityManagerFactory.getEntityManger();
         ParentEntity parentEntity = entityManger.find(ParentEntity.class, 101);

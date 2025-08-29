@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 class InitBlockOrder
 {
     @Test
-    void run()
+    void foo()
     {
         A a = new B();
     }

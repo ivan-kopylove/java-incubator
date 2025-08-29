@@ -30,7 +30,7 @@ class GenericsExamplesTest
     }
 
     @Test
-    void run()
+    void foo()
     {
         String[] strings = new String[10];
         List<String> list = new ArrayList<>();

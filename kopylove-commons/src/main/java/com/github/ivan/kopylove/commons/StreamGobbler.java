@@ -23,7 +23,7 @@ public class StreamGobbler implements Runnable
     }
 
     @Override
-    public void run()
+    public void foo()
     {
         try
         {

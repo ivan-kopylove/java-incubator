@@ -34,7 +34,7 @@ class JpaSimpleNativeQueryTest
     }
 
     @Test
-    void run()
+    void foo()
     {
         EntityManager entityManager = JpaEntityManagerFactory.getEntityManger();
 

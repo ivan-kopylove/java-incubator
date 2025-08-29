@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class HibernateBasicExampleTest
 {
     @Test
-    void run()
+    void foo()
     {
         BookEntity bookEntity = new BookEntity();
         bookEntity.setName("Harry Potter");

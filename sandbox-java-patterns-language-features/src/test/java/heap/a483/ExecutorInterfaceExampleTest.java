@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class ExecutorInterfaceExampleTest
 {
     @Test
-    void run()
+    void foo()
     {
         Executor executor = new Executor()
         {

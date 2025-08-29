@@ -10,7 +10,7 @@ class MyLongRunningTask implements Runnable
     }
 
     @Override
-    public void run()
+    public void foo()
     {
         try
         {

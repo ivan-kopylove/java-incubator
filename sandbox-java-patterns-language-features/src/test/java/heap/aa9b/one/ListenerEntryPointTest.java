@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 class ListenerEntryPointTest
 {
     @Test
-    public void run()
+    public void foo()
     {
 
         MyLongRunningTask myLongRunningTask = new MyLongRunningTask(new OnCompleteListener()

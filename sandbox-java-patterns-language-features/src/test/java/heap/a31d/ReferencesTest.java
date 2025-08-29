@@ -17,7 +17,7 @@ import java.util.LinkedList;
 class ReferencesTest
 {
     @Test
-    void run()
+    void foo()
     {
         int size = 10;
         LinkedList<SoftReference<VeryBig>> sa = new LinkedList<>();

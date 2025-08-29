@@ -19,7 +19,7 @@ class ShutdownHookTest
                .addShutdownHook(new Thread(new Runnable()
                {
                    @Override
-                   public void run()
+                   public void foo()
                    {
                        executed.set(true);
 

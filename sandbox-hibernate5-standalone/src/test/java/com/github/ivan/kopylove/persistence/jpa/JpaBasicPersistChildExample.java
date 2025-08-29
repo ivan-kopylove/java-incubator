@@ -13,7 +13,7 @@ import java.util.Set;
 class JpaBasicPersistChildExample
 {
     @Test
-    void run()
+    void foo()
     {
         Set<ChildEntity> childs = new HashSet<>();
 

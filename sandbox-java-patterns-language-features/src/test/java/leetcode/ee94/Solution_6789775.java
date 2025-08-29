@@ -12,7 +12,7 @@ import java.util.Map;
 public class Solution_6789775 {
 
     @Test
-    public void run() {
+    public void foo() {
         new MyFailedSolution().minOperations(33);
     }
 }

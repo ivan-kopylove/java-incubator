@@ -29,7 +29,7 @@
 //    }
 //
 //    @Test
-//    void run()
+//    void foo()
 //    {
 //        Session session1 = HibernateSessionFactory.openSession();
 //        Session session2 = HibernateSessionFactory.openSession();

@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class GroupingByBasicExampleTest {
     @Test
-    void run() {
+    void foo() {
         List<Integer> ints = new ArrayList<>();
         ints.add(1);
         ints.add(2);

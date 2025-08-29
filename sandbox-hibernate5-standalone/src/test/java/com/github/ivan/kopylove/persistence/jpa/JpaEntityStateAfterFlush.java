@@ -30,7 +30,7 @@ class JpaEntityStateAfterFlush
     }
 
     @Test
-    void run()
+    void foo()
     {
         do_flush();
         read_again();

@@ -14,7 +14,7 @@ class ThreadRunVsThreadStart
                                         .getName();
         Thread thread = new Thread()
         {
-            public void run()
+            public void foo()
             {
                 String childThreadName = Thread.currentThread()
                                                .getName();
@@ -26,13 +26,13 @@ class ThreadRunVsThreadStart
     }
 
     @Test
-    void run()
+    void foo()
     {
         String parentThreadName = Thread.currentThread()
                                         .getName();
         Thread thread = new Thread()
         {
-            public void run()
+            public void foo()
             {
                 String childThreadName = Thread.currentThread()
                                                .getName();

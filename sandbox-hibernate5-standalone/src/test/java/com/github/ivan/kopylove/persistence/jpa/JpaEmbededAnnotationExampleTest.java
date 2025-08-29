@@ -46,7 +46,7 @@ class JpaEmbededAnnotationExampleTest
     }
 
     @Test
-    void run()
+    void foo()
     {
         EntityManager entityManager = HibernateSessionFactory.openSession();
         entityManager.getTransaction()
