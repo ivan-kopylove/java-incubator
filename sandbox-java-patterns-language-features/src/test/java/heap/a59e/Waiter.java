@@ -10,7 +10,7 @@ class Waiter implements Runnable
     }
 
     @Override
-    public void foo()
+    public void run()
     {
         String name = Thread.currentThread().getName();
         synchronized (msg)
