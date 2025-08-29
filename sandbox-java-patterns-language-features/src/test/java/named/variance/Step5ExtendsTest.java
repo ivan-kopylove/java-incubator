@@ -1,4 +1,4 @@
-package named.Variance;
+package named.variance;
 
 import org.junit.jupiter.api.Test;
 

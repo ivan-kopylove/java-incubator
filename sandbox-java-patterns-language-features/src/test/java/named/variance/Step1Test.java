@@ -1,4 +1,4 @@
-package named.Variance;
+package named.variance;
 
 import java.util.ArrayList;
 import java.util.List;
