@@ -14,7 +14,7 @@ class MyNewJava_AdapterTest {
 
 
     @Test
-    @DisplayName("Should %verb% when / if")
+    @DisplayName("what is the purpose of this example?")
     void what_is_the_purpose_of_this_example() {
         // given
         MyNewJava_Adapter myNewJavaAdapter = new MyNewJava_Adapter(

@@ -21,7 +21,7 @@ public class TestTest
 {
 
     @Test
-    @DisplayName("Should %verb% when / if")
+    @DisplayName("what is the purpose of this example?")
     void what_is_the_purpose_of_this_example() throws IOException
     {
         // given
