@@ -14,6 +14,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 public class TestTest
 {
 
@@ -35,7 +38,7 @@ public class TestTest
         test.copyAudio(finalized, "c:\\1\\temp\\dest.wav", 1);
 
         // then
-        MatcherAssert.assertThat("actual result", CoreMatchers.equalTo("expected result"));
+        assertThat("actual result", equalTo("expected result"));
     }
 
     public void copyAudio(String sourceFileName, String destinationFileName, long lastNSeconds)
