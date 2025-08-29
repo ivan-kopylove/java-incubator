@@ -6,7 +6,7 @@ class PlusOperationBetweenClassesTest
 {
 
     @Test
-    void should_result_in_compilation_error_when_uncommented()
+    void what_is_the_point_of_this_example()
     {
         //        System.out.println(new ClassOne() + new ClassTwo());
     }

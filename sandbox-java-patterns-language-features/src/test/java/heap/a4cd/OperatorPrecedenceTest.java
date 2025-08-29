@@ -22,8 +22,9 @@ class OperatorPrecedenceTest
         String result1 = "1 + 2 = " + 1 + 2;
         String result2 = "1 + 2 = " + (1 + 2);
 
-        //        assertEquals("", result1);
-        //        assertEquals("", result2);
+
+//        System.out.println(result1);
+//        System.out.println(result2);
     }
 
     @Test
@@ -32,18 +33,19 @@ class OperatorPrecedenceTest
         String result1 = 1 + 2 + "abc";
         String result2 = "abc" + 1 + 2;
 
-        //        assertEquals("", result1);
-        //        assertEquals("", result2);
+
+//        System.out.println(result1);
+//        System.out.println(result2);
     }
 
-    /**
-     * Also, add clarifying parentheses.
-     */
+
     @Test
     void calculateYourselfFirst3()
     {
         int year = 2020;
         boolean result = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
-        //        assertEquals(, myResultField);
+
+                System.out.println(result);
+
     }
 }
