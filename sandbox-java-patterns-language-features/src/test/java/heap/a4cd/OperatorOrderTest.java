@@ -3,9 +3,9 @@ package heap.a4cd;
 import org.junit.jupiter.api.Test;
 
 /**
- * Operators evaluation order.
+ * Operator p______
  */
-class OperatorPrecedenceTest
+class OperatorOrderTest
 {
     @Test
     void calculateYourselfFirst1()
