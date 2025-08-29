@@ -37,7 +37,6 @@ class ComparatorLambdaExampleTest {
         }
 
         // Print Desc
-        System.out.println("=== Sorted Desc SurName ===");
         Collections.sort(personList, (p1, p2) -> p2.getSurName().compareTo(p1.getSurName()));
 
         for (Person p : personList) {
