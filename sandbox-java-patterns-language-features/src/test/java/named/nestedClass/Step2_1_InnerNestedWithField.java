@@ -17,10 +17,10 @@ class Step2_1_InnerNestedWithField {
 
     class Nested {
         private void bar() {
-            foo1();
-            foo2();
-            a = 4; // can I access it here?
-            b = 4; // can I access it here?
+//            foo1(); // can I access it here?
+//            foo2(); // can I access it here?
+//            a = 4; // can I access it here?
+//            b = 4; // can I access it here?
         }
     }
 }

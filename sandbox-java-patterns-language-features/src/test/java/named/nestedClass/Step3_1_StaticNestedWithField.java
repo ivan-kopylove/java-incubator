@@ -19,7 +19,6 @@ class Step3_1_StaticNestedWithField {
         private void bar() {
 //            foo1();// can I access it here?
 //            foo2();// can I access it here?
-//            foo(); // can I access it here?
 //            a = 2; // can I access it here?
 //            b = 2; // can I access it here?
         }
