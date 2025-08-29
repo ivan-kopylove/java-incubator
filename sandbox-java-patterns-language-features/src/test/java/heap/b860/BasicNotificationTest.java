@@ -2,10 +2,7 @@ package heap.b860;
 
 import org.junit.jupiter.api.Test;
 
-/**
- * @see <a href="https://ivan-kopylove.github.io/b860f78d-6f8b-4bf9-84de-3da73d06edac">blog</a>
- * @see <a href="obsidian://search/?vault=notes&query=b860f78d">obsidian</a>
- */
+
 class BasicNotificationTest
 {
     static Object lock = new Object();

@@ -1,16 +1,13 @@
 package leetcode.a11;
 
 /**
- * @see <a href="https://leetcode.com/problems/container-with-most-water/submissions/449358581/">11. Container With Most Water</a>
+ * @see <a href="https://leetcode.com/problems/container-with-most-water/submissions/449358581/">submission</a>
+ * @see <a href="https://ivan-kopylove.github.io/leetcode/6b0b">garden</a>
  */
 class Solution
 {
     public int maxArea(int[] height)
     {
-        //paper: https://imgur.com/a/xi69lzH
-        //idea #1: find biggestSide, find biggestBottomLength and multiply (failed)
-        //idea #2: multiply current height by max bottom or max height (failed)
-        //idea #3: two pointers idea (from the solution section, without glancing the code).
         int maxArea = 0;
 
         int currentLeftIndex = 0;
