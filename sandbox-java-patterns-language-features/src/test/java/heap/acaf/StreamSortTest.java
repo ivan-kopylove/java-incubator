@@ -30,7 +30,6 @@ class StreamSortTest
     void chainedLambdaComparator()
     {
         List<ComparableObject> list = DataProvider.createObjects();
-        list.sort(Comparator.comparing(ComparableObject::getDate)
-                            .thenComparing(ComparableObject::getStr));
+        list.sort(Comparator.comparing(ComparableObject::getDate).thenComparing(ComparableObject::getStr));
     }
 }
