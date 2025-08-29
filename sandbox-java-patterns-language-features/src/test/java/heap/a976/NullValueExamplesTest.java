@@ -11,10 +11,9 @@ class NullValueExamplesTest
     @Test
     void what_will_be_printed()
     {
-        if(false) // try to predict yourself before switching
+        if (false) // try to predict yourself before switching
         {
             System.out.println(null == null);
         }
-
     }
 }

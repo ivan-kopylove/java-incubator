@@ -16,16 +16,19 @@ import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.lessThan;
 import static org.junit.jupiter.api.Assertions.fail;
 
-class ConcurrentHashMapUnderstandingPlaygroundTest {
+class ConcurrentHashMapUnderstandingPlaygroundTest
+{
 
     @Test
-    void should_save_all_keys_under_high_load() throws InterruptedException {
+    void should_save_all_keys_under_high_load() throws InterruptedException
+    {
         ConcurrentHashMap<String, String> collector = new ConcurrentHashMap<>();
 
         ExecutorService executorService = newFixedThreadPool(200);
 
         int loops = 1_000_000;
-        for (int i = 0; i < loops; i++) {
+        for (int i = 0; i < loops; i++)
+        {
             executorService.submit(() -> {
                 collector.put(randomUUID().toString(), randomUUID().toString());
             });
@@ -37,13 +40,15 @@ class ConcurrentHashMapUnderstandingPlaygroundTest {
     }
 
     @Test
-    void should_miss_some_keys() throws InterruptedException {
+    void should_miss_some_keys() throws InterruptedException
+    {
         Map<String, String> collector = new HashMap<>();
 
         ExecutorService executorService = newFixedThreadPool(200);
 
         int loops = 1_000_000;
-        for (int i = 0; i < loops; i++) {
+        for (int i = 0; i < loops; i++)
+        {
             executorService.submit(() -> {
                 collector.put(randomUUID().toString(), randomUUID().toString());
             });

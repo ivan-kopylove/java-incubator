@@ -15,29 +15,28 @@ class ShutdownHookTest
     {
         AtomicBoolean executed = new AtomicBoolean(false);
 
-        Runtime.getRuntime()
-               .addShutdownHook(new Thread(new Runnable()
-               {
-                   @Override
-                   public void foo()
-                   {
-                       executed.set(true);
+        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable()
+        {
+            @Override
+            public void foo()
+            {
+                executed.set(true);
 
-                       try
-                       {
-                           System.out.println("shutdown in " + 3);
-                           Thread.sleep(1000);
-                           System.out.println("shutdown in " + 2);
-                           Thread.sleep(1000);
-                           System.out.println("shutdown in " + 1);
-                           Thread.sleep(1000);
-                       }
-                       catch (InterruptedException e)
-                       {
-                           e.printStackTrace();
-                       }
-                   }
-               }));
+                try
+                {
+                    System.out.println("shutdown in " + 3);
+                    Thread.sleep(1000);
+                    System.out.println("shutdown in " + 2);
+                    Thread.sleep(1000);
+                    System.out.println("shutdown in " + 1);
+                    Thread.sleep(1000);
+                }
+                catch (InterruptedException e)
+                {
+                    e.printStackTrace();
+                }
+            }
+        }));
 
 
         assertThat(executed.get(), equalTo(false)); // false because the hooks triggered after this line

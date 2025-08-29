@@ -14,6 +14,7 @@ package named.variance;
 class Fruit {}
 
 class Orange extends Fruit {}
+
 class Apple extends Fruit {}
 
 class Jonathan extends Apple {}

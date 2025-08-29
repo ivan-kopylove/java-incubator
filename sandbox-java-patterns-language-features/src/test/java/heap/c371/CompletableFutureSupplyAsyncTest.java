@@ -10,24 +10,30 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.fail;
 
-class CompletableFutureSupplyAsyncTest {
+class CompletableFutureSupplyAsyncTest
+{
 
     @Test
-    void exception() {
+    void exception()
+    {
         CompletableFuture<String> stringCompletableFuture = CompletableFuture.supplyAsync(() -> {
             throw new RuntimeException("hello");
         });
         assertThrows(RuntimeException.class, () -> {
-            try {
+            try
+            {
                 stringCompletableFuture.get();
-            } catch (ExecutionException e) {
+            }
+            catch (ExecutionException e)
+            {
                 throw e.getCause();
             }
         });
     }
 
     @Test
-    void return_value() throws ExecutionException, InterruptedException {
+    void return_value() throws ExecutionException, InterruptedException
+    {
         CompletableFuture<String> stringCompletableFuture = CompletableFuture.supplyAsync(() -> "world");
 
         fail("try to predict yourself before running the assertion");

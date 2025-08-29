@@ -1,4 +1,3 @@
-
 package named.variance;
 
 import org.junit.jupiter.api.Test;
@@ -23,22 +22,21 @@ class Step4SuperTest
     {
         List<? super Apple> apples = new ArrayList<>();
 
-//        apples.add(null);
+        //        apples.add(null);
         // apples.add(new Object());
         // apples.add(new Fruit());
         // apples.add(new Apple());
         // apples.add(new Orange());
-//         apples.add(new Jonathan());
+        //         apples.add(new Jonathan());
     }
 
     void test3(List<? super Apple> apples)
     {
-//        apples.add(null);
+        //        apples.add(null);
         // apples.add(new Object());
         // apples.add(new Fruit());
         // apples.add(new Apple());
         // apples.add(new Orange());
         // apples.add(new Jonathan());
     }
-
 }

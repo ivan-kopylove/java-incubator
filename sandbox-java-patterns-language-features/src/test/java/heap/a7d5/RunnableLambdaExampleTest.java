@@ -2,7 +2,6 @@ package heap.a7d5;
 
 import org.junit.jupiter.api.Test;
 
-
 class RunnableLambdaExampleTest
 {
 

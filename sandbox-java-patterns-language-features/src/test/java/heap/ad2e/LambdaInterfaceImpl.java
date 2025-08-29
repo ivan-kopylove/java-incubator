@@ -1,6 +1,5 @@
 package heap.ad2e;
 
-
 class LambdaInterfaceImpl implements LambdaInterface
 {
 

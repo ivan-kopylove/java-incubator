@@ -1,6 +1,5 @@
 package heap.ad2e;
 
-
 @FunctionalInterface
 public interface LambdaInterface
 {

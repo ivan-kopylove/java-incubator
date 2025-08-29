@@ -79,7 +79,7 @@ public class TestTest
                 }
                 catch (Exception e)
                 {
-                   e.printStackTrace();
+                    e.printStackTrace();
                 }
             }
             if (shortenedStream != null)

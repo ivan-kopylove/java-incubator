@@ -23,8 +23,8 @@ class OperatorPrecedenceTest
         String result2 = "1 + 2 = " + (1 + 2);
 
 
-//        System.out.println(result1);
-//        System.out.println(result2);
+        //        System.out.println(result1);
+        //        System.out.println(result2);
     }
 
     @Test
@@ -34,10 +34,9 @@ class OperatorPrecedenceTest
         String result2 = "abc" + 1 + 2;
 
 
-//        System.out.println(result1);
-//        System.out.println(result2);
+        //        System.out.println(result1);
+        //        System.out.println(result2);
     }
-
 
     @Test
     void calculateYourselfFirst3()
@@ -45,7 +44,6 @@ class OperatorPrecedenceTest
         int year = 2020;
         boolean result = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
 
-                System.out.println(result);
-
+        System.out.println(result);
     }
 }

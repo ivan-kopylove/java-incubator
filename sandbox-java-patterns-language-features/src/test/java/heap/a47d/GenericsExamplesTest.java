@@ -73,8 +73,6 @@ class GenericsExamplesTest
 
     public List<?> printAll(List<?> list) //the same as using <? extends Object>.
     {
-        return list.stream()
-                   .map(Object::toString)
-                   .collect(Collectors.toList());
+        return list.stream().map(Object::toString).collect(Collectors.toList());
     }
 }

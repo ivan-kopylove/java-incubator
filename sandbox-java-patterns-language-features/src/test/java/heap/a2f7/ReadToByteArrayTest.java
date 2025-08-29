@@ -32,8 +32,7 @@ class ReadToByteArrayTest
     @Test
     void main() throws IOException
     {
-        URL resource = ReadToByteArrayTest.class.getClassLoader()
-                                                .getResource("cameleon-transition.svg.pdf");
+        URL resource = ReadToByteArrayTest.class.getClassLoader().getResource("cameleon-transition.svg.pdf");
         if (resource != null)
         {
             InputStream inputStream = null;

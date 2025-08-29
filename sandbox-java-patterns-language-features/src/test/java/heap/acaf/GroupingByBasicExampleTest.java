@@ -9,18 +9,18 @@ import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class GroupingByBasicExampleTest {
+class GroupingByBasicExampleTest
+{
     @Test
-    void foo() {
+    void foo()
+    {
         List<Integer> ints = new ArrayList<>();
         ints.add(1);
         ints.add(2);
         ints.add(3);
 
-        Map<Boolean, List<Integer>> collect = ints.stream()
-                .collect(Collectors.groupingBy(integer -> integer > 1));
+        Map<Boolean, List<Integer>> collect = ints.stream().collect(Collectors.groupingBy(integer -> integer > 1));
 
-        assertEquals(3, (int) collect.get(true)
-                .get(1));
+        assertEquals(3, (int) collect.get(true).get(1));
     }
 }

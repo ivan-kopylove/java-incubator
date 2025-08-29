@@ -11,7 +11,6 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-
 /**
  * Facets:
  * - concurrency
@@ -29,8 +28,7 @@ class LoginQueueUsingSemaphoreTest
         LoginQueueUsingSemaphore loginQueue = new LoginQueueUsingSemaphore(slots);
 
         // when
-        IntStream.range(0, slots)
-                 .forEach(user -> executorService.submit(loginQueue::tryLogin));
+        IntStream.range(0, slots).forEach(user -> executorService.submit(loginQueue::tryLogin));
         executorService.shutdown();
         executorService.awaitTermination(10, SECONDS);
 

@@ -13,13 +13,15 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
  * @see <a href="https://ivan-kopylove.github.io/ad57cce4-610d-4519-8362-140e9facf32c">blog</a>
  * @see <a href="obsidian://search/?vault=notes&query=ad57cce4">obsidian</a>
  */
-public class WaitErrorExampleTest {
+public class WaitErrorExampleTest
+{
 
     @Nested
     class Problem
     {
         @Test
-        void should_throw_because_monitor_is_not_locked() {
+        void should_throw_because_monitor_is_not_locked()
+        {
             // given
             Object lock = new Object();
 
@@ -42,7 +44,8 @@ public class WaitErrorExampleTest {
         {
             // given
             Object lock = new Object();
-            synchronized (lock) {
+            synchronized (lock)
+            {
                 System.out.println("Entered sync block");
                 // when
                 lock.wait();

@@ -2,8 +2,8 @@ package leetcode.a2571;
 
 import org.junit.jupiter.api.Test;
 
-
-public class ee94 {
+public class ee94
+{
 
     /**
      * what will be printed?
@@ -11,7 +11,8 @@ public class ee94 {
      * what if there were another number?
      */
     @Test
-    void what_is_the_point_of_this() {
+    void what_is_the_point_of_this()
+    {
         int n = 32;
         System.out.println((n & (n - 1)) == 0);
     }

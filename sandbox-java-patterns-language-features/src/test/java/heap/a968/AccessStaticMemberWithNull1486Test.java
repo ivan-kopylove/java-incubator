@@ -2,7 +2,6 @@ package heap.a968;
 
 import org.junit.jupiter.api.Test;
 
-
 import static heap.a968.MyClass.VALUE;
 import static heap.a968.MyClass.myMethod;
 import static org.junit.jupiter.api.Assertions.assertEquals;

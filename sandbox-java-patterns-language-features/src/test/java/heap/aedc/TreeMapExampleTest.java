@@ -28,8 +28,7 @@ class TreeMapExampleTest
         treeMap.put(1, "some value");
         treeMap.put(2, "some value");
 
-        Iterator<Integer> iterator = treeMap.keySet()
-                                            .iterator();
+        Iterator<Integer> iterator = treeMap.keySet().iterator();
         assertEquals(Integer.valueOf(1), iterator.next());
         assertEquals(Integer.valueOf(2), iterator.next());
         assertEquals(Integer.valueOf(3), iterator.next());
@@ -47,8 +46,7 @@ class TreeMapExampleTest
         treeMap.put(4, "some value");
         treeMap.put(5, "some value");
 
-        Iterator<Integer> iterator = treeMap.keySet()
-                                            .iterator();
+        Iterator<Integer> iterator = treeMap.keySet().iterator();
         assertEquals(Integer.valueOf(5), iterator.next());
         assertEquals(Integer.valueOf(4), iterator.next());
         assertEquals(Integer.valueOf(3), iterator.next());
@@ -74,8 +72,7 @@ class TreeMapExampleTest
         treeMap.put(4, "some value");
         treeMap.put(5, "some value");
 
-        Iterator<Integer> iterator = treeMap.keySet()
-                                            .iterator();
+        Iterator<Integer> iterator = treeMap.keySet().iterator();
         assertEquals(Integer.valueOf(1), iterator.next());
         assertEquals(Integer.valueOf(2), iterator.next());
         assertEquals(Integer.valueOf(3), iterator.next());

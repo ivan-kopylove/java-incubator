@@ -8,21 +8,16 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
 class OrderOfOperationsMattersTest
 {
 
     public static void orderOfOperationsMatters()
     {
-        List<String> result1 = Stream.of("1", "22", "333")
-                                     .map(s -> s + "-postfix")
-                                     .filter(s -> s.length() > 1)
-                                     .collect(Collectors.toList());
+        List<String> result1 = Stream.of("1", "22", "333").map(s -> s + "-postfix").filter(s -> s.length() > 1).collect(
+                Collectors.toList());
 
-        List<String> result2 = Stream.of("1", "22", "333")
-                                     .filter(s -> s.length() > 1)
-                                     .map(s -> s + "-postfix")
-                                     .collect(Collectors.toList());
+        List<String> result2 = Stream.of("1", "22", "333").filter(s -> s.length() > 1).map(s -> s + "-postfix").collect(
+                Collectors.toList());
 
         assertEquals(3, result1.size());
         assertEquals(2, result2.size());

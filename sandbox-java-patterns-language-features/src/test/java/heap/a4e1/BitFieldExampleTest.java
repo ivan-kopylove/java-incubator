@@ -29,8 +29,7 @@ class BitFieldExampleTest
 
     private String fillNumberWithLeadingZeroes(int length, String s)
     {
-        return String.format("%" + length + "s", s)
-                     .replace(' ', '0');
+        return String.format("%" + length + "s", s).replace(' ', '0');
     }
 
     @Test

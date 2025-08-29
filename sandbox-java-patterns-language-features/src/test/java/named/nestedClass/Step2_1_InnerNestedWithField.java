@@ -1,9 +1,10 @@
 package named.nestedClass;
 
-class Step2_1_InnerNestedWithField {
+class Step2_1_InnerNestedWithField
+{
 
     private static int a = 3;
-    private int b = 3;
+    private        int b = 3;
 
     static void foo1()
     {
@@ -15,12 +16,14 @@ class Step2_1_InnerNestedWithField {
 
     }
 
-    class Nested {
-        private void bar() {
-//            foo1(); // can I access it here?
-//            foo2(); // can I access it here?
-//            a = 4; // can I access it here?
-//            b = 4; // can I access it here?
+    class Nested
+    {
+        private void bar()
+        {
+            //            foo1(); // can I access it here?
+            //            foo2(); // can I access it here?
+            //            a = 4; // can I access it here?
+            //            b = 4; // can I access it here?
         }
     }
 }

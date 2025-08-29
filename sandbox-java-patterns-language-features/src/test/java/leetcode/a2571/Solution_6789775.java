@@ -9,39 +9,47 @@ import java.util.Map;
  * @see <a href="https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/6789775/beats-100-java-0ms-dp-solution/">6789775</a>
  * @see <a href="https://ivan-kopylove.github.io/leetcode/0c78">blog</a>
  */
-public class Solution_6789775 {
+public class Solution_6789775
+{
 
     @Test
-    public void foo() {
+    public void foo()
+    {
         new MyFailedSolution().minOperations(33);
     }
 }
 
-
-class Solution {
+class Solution
+{
     Map<Integer, Integer> memo = new HashMap<>(); // what if it was an array?
 
-    public int minOperations(int n) {
+    public int minOperations(int n)
+    {
         return dp(n);
     }
 
-    private int dp(int n) {
+    private int dp(int n)
+    {
 
-        if (n == 0) {
+        if (n == 0)
+        {
             return 0;
         }
 
-        if ((n & (n - 1)) == 0) {
+        if ((n & (n - 1)) == 0)
+        {
             memo.put(n, 1);
             return 1;
         }
 
-        if (memo.containsKey(n)) {
+        if (memo.containsKey(n))
+        {
             return memo.get(n);
         }
 
         int power = 1;
-        while (power < n) {
+        while (power < n)
+        {
             power <<= 1;
         }
 
@@ -55,5 +63,4 @@ class Solution {
         memo.put(n, minOps);
         return minOps;
     }
-
 }

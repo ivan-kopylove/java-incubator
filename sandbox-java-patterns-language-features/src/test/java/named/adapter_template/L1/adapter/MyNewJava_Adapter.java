@@ -1,20 +1,22 @@
 package named.adapter_template.L1.adapter;
 
-
 import named.adapter_template.L1.api.MyNewJava_Api;
 import named.adapter_template.L1.spi.MyNewJava_Spi;
 
-public class MyNewJava_Adapter implements MyNewJava_Spi, MyNewJava_Api.Result.ResultAdapter<String> {
+public class MyNewJava_Adapter implements MyNewJava_Spi, MyNewJava_Api.Result.ResultAdapter<String>
+{
 
     private final MyNewJava_Api myApi;
 
-    public MyNewJava_Adapter(MyNewJava_Api myApi) {
+    public MyNewJava_Adapter(MyNewJava_Api myApi)
+    {
 
         this.myApi = myApi;
     }
 
     @Override
-    public String callMe(Payload myPayload) {
+    public String callMe(Payload myPayload)
+    {
         MyNewJava_Api.Result wrappedResult = myApi.callMe(new MyNewJava_Api.Payload(myPayload.myPayload()));
 
         String result = wrappedResult.adapt(this);
@@ -23,12 +25,14 @@ public class MyNewJava_Adapter implements MyNewJava_Spi, MyNewJava_Api.Result.Re
     }
 
     @Override
-    public String onSuccess(MyNewJava_Api.Result.MySuccessResult result) {
+    public String onSuccess(MyNewJava_Api.Result.MySuccessResult result)
+    {
         return result.myResultField();
     }
 
     @Override
-    public String onFailure(MyNewJava_Api.Result.MyFailureResult result) {
+    public String onFailure(MyNewJava_Api.Result.MyFailureResult result)
+    {
         return "";
     }
 }

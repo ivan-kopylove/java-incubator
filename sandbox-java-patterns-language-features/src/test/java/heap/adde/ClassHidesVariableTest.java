@@ -19,7 +19,6 @@ class ClassHidesVariableTest
         assertEquals("method local variable", new ClassHidesVariable().getLocalVariable());
     }
 
-
     class ClassHidesVariable
     {
         private final String message = "instance variable";

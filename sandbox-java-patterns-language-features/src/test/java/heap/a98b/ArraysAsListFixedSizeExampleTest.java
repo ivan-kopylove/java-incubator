@@ -10,9 +10,11 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class ArraysAsListFixedSizeExampleTest {
+class ArraysAsListFixedSizeExampleTest
+{
     @Test
-    void Arrays_asList_is_what() {
+    void Arrays_asList_is_what()
+    {
         assertThrows(UnsupportedOperationException.class, () -> {
 
             List<String> immutableList = Arrays.asList("1", "2");
@@ -21,7 +23,8 @@ class ArraysAsListFixedSizeExampleTest {
     }
 
     @Test
-    void Collections_singletonList_is_what() {
+    void Collections_singletonList_is_what()
+    {
         assertThrows(UnsupportedOperationException.class, () -> {
             List<String> immutableList = Collections.singletonList("a");
             immutableList.add("b");
@@ -29,7 +32,8 @@ class ArraysAsListFixedSizeExampleTest {
     }
 
     @Test
-    void what_does_this_demonstrate() {
+    void what_does_this_demonstrate()
+    {
         List<String> immutableList = Arrays.asList("1", "2");
         List<String> mutableList = new ArrayList<>(immutableList);
         mutableList.add("3");

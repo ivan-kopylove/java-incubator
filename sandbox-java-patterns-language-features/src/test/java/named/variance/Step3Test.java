@@ -16,18 +16,18 @@ public class Step3Test
     void test1()
     {
         List<Number> nums = Arrays.asList(1, 2);
-//        List<Integer> ints = nums;
+        //        List<Integer> ints = nums;
 
         List<Apple> apples = new ArrayList<>();
-//        List<Jonathan> jonathans = apples;
-//        List<Fruit> fruits = apples;
+        //        List<Jonathan> jonathans = apples;
+        //        List<Fruit> fruits = apples;
     }
 
     void test2()
     {
         List<Apple> apples = new ArrayList<>();
 
-//         apples.add(null);
+        //         apples.add(null);
         // apples.add(new Object());
         // apples.add(new Fruit());
         // apples.add(new Apple());
@@ -39,8 +39,8 @@ public class Step3Test
     // what PECS it is?
     void test3(List<Apple> apples)
     {
-//        apples.add(null);
-//         apples.add(new Object());
+        //        apples.add(null);
+        //         apples.add(new Object());
         // apples.add(new Fruit());
         // apples.add(new Apple());
         // apples.add(new Orange());

@@ -13,8 +13,7 @@ class Notifier implements Runnable
     @Override
     public void foo()
     {
-        String name = Thread.currentThread()
-                            .getName();
+        String name = Thread.currentThread().getName();
         System.out.println(name + " started");
         try
         {

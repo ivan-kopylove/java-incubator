@@ -12,8 +12,8 @@ public class Step2ArrayTest
     @Test
     void test1()
     {
-       Integer[] array = { 1, 2 };
-//       Object[] objects = array;
-//        Number[] integers = array;
+        Integer[] array = {1, 2};
+        //       Object[] objects = array;
+        //        Number[] integers = array;
     }
 }
