@@ -13,7 +13,7 @@ import java.util.List;
 class StreamSortTest
 {
     /**
-     * Strategy how to handle nulls inside the comparator.
+     * First it sorts by what then by what?
      */
     @Test
     void nullSafeChainedLambdaComparator()
@@ -24,7 +24,7 @@ class StreamSortTest
     }
 
     /**
-     * First it sorts by date. If dates are equals, it sorts by string.
+     * First it sorts by what then by what?
      */
     @Test
     void chainedLambdaComparator()
