@@ -2,7 +2,7 @@ package named.nestedClass;
 
 class Step2_2_InnerNestedWithInstanceField {
 
-    private int someField = 3;
+
 
     class Nested {
         private void run() {
