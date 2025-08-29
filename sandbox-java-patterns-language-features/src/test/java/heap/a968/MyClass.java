@@ -4,7 +4,7 @@ class MyClass
 {
     public static final String VALUE = "some value";
 
-    public static String myMethod()
+    public static String foo()
     {
         return "some text";
     }

@@ -12,8 +12,9 @@ class AccessStaticMemberOfNull
         MyClass myClass = new MyClass();
         myClass = null;
 
-//        assertEquals("some value", MyClass.VALUE);
-//        assertEquals("some text", MyClass.myMethod());
-//        assertEquals("some text", myClass.myMethod());
+        assertEquals("some value", MyClass.VALUE);
+        assertEquals("some value", myClass.VALUE);
+        assertEquals("some text", MyClass.foo());
+        assertEquals("some text", myClass.foo());
     }
 }
