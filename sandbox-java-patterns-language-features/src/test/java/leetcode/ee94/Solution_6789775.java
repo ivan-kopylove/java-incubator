@@ -1,4 +1,4 @@
-package heap.ee94;
+package leetcode.ee94;
 
 import org.junit.jupiter.api.Test;
 

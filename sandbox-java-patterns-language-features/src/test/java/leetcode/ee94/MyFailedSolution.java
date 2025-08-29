@@ -1,4 +1,4 @@
-package heap.ee94;
+package leetcode.ee94;
 
 
 /**
