@@ -8,6 +8,7 @@ import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 
+import static java.util.UUID.randomUUID;
 import static java.util.concurrent.Executors.newFixedThreadPool;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -26,7 +27,7 @@ class ConcurrentHashMapUnderstandingPlaygroundTest {
         int loops = 1_000_000;
         for (int i = 0; i < loops; i++) {
             executorService.submit(() -> {
-                collector.put(UUID.randomUUID().toString(), UUID.randomUUID().toString());
+                collector.put(randomUUID().toString(), randomUUID().toString());
             });
         }
         Thread.sleep(15_000);
@@ -44,7 +45,7 @@ class ConcurrentHashMapUnderstandingPlaygroundTest {
         int loops = 1_000_000;
         for (int i = 0; i < loops; i++) {
             executorService.submit(() -> {
-                collector.put(UUID.randomUUID().toString(), UUID.randomUUID().toString());
+                collector.put(randomUUID().toString(), randomUUID().toString());
             });
         }
         Thread.sleep(15_000);
