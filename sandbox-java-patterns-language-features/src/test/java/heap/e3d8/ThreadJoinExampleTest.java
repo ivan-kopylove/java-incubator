@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 class ThreadJoinExampleTest
 {
         @Test
-        @DisplayName("VolatileTest way to demonstrate that .join operation blocks the execution")
+        @DisplayName(".join operation blocks the execution")
         void should_print_one_by_one_ascending() throws InterruptedException
         {
             for(int i = 0; i < 10; i++)
@@ -27,9 +27,9 @@ class ThreadJoinExampleTest
                         throw new RuntimeException(e);
                     }
                 });
-//                thread.join(); // try to uncomment the call
+//                thread.join(); // try different combinations of comment-uncomment
                 thread.start();
-                thread.join(); // try to comment the call
+//                thread.join(); // try different combinations of comment-uncomment
             }
 
             System.out.println("main thread");
