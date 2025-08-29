@@ -10,9 +10,7 @@ class Solution
             return y - x;
         }
 
-
         return dfs(x, y);
-
     }
 
     int dfs(int x, int y)
