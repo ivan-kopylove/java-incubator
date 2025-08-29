@@ -12,7 +12,7 @@ import static java.util.concurrent.Executors.newFixedThreadPool;
 public class ConcurrentLinkedDequeTest
 {
     @Test
-    void should_do_something_when_condition() throws InterruptedException
+    void what_is_the_purpose_of_this_example() throws InterruptedException
     {
         // given
         var deque = new ConcurrentLinkedDeque<String>();

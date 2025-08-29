@@ -18,7 +18,7 @@ import static java.util.concurrent.TimeUnit.MILLISECONDS;
     private final Lock lock2 = new ReentrantLock(true);
 
     @Test
-    void should_do_something_when_condition() throws InterruptedException
+    void what_is_the_purpose_of_this_example() throws InterruptedException
     {
         // given
         LiveLockExampleTest livelock = new LiveLockExampleTest();

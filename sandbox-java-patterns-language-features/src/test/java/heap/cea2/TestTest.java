@@ -22,7 +22,7 @@ public class TestTest
 
     @Test
     @DisplayName("Should %verb% when / if")
-    void should_do_something_when_condition() throws IOException
+    void what_is_the_purpose_of_this_example() throws IOException
     {
         // given
 

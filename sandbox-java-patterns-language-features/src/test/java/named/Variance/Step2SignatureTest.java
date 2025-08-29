@@ -25,7 +25,7 @@ public class Step2SignatureTest
 
 
         @Test
-        void should_do_something_when_condition()
+        void what_is_the_purpose_of_this_example()
         {
 //            test1(1);
 //            test1(1.1);
