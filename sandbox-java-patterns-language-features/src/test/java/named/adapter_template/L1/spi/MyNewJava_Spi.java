@@ -1,4 +1,4 @@
-package named.adapter_pack.L1.spi;
+package named.adapter_template.L1.spi;
 
 
 @FunctionalInterface

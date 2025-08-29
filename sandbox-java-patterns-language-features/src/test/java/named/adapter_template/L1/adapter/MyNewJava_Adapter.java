@@ -1,8 +1,8 @@
-package named.adapter_pack.L1.adapter;
+package named.adapter_template.L1.adapter;
 
 
-import named.adapter_pack.L1.api.MyNewJava_Api;
-import named.adapter_pack.L1.spi.MyNewJava_Spi;
+import named.adapter_template.L1.api.MyNewJava_Api;
+import named.adapter_template.L1.spi.MyNewJava_Spi;
 
 public class MyNewJava_Adapter implements MyNewJava_Spi, MyNewJava_Api.Result.ResultAdapter<String> {
 

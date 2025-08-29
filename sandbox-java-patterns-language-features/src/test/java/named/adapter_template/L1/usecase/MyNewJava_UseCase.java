@@ -1,7 +1,7 @@
-package named.adapter_pack.L1.usecase;
+package named.adapter_template.L1.usecase;
 
 
-import named.adapter_pack.L1.api.MyNewJava_Api;
+import named.adapter_template.L1.api.MyNewJava_Api;
 
 public class MyNewJava_UseCase implements MyNewJava_Api {
 

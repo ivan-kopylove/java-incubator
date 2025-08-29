@@ -1,4 +1,4 @@
-package named.adapter_pack.L1.api;
+package named.adapter_template.L1.api;
 
 @FunctionalInterface
 public interface MyNewJava_Api {
