@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class ThreadJoinExampleTest
 {
         @Test
-        @DisplayName(".join operation blocks the execution")
+        @DisplayName("run the example and explain this behaviour")
         void should_print_one_by_one_ascending() throws InterruptedException
         {
             for(int i = 0; i < 10; i++)
