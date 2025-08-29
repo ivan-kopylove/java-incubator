@@ -39,6 +39,13 @@ class Solution
         {
             one = dfs(x / 11, y);
         }
+        else
+        {
+            if(x % 11 <= 8)
+            {
+                five = dfs(x - 1, y);
+            }
+        }
 
         if(x % 5 == 0)
         {
