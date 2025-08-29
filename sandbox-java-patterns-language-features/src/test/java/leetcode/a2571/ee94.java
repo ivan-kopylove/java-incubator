@@ -2,7 +2,7 @@ package leetcode.a2571;
 
 import org.junit.jupiter.api.Test;
 
-public class ee94
+class ee94
 {
 
     /**

@@ -18,7 +18,7 @@ import java.util.Objects;
 import static java.net.http.HttpClient.Version.HTTP_1_1;
 import static java.net.http.HttpClient.newHttpClient;
 
-public class YandexApiJwtClient
+class YandexApiJwtClient
 {
 
     private static final Logger       LOGGER          = LoggerFactory.getLogger(YandexApiJwtClient.class);

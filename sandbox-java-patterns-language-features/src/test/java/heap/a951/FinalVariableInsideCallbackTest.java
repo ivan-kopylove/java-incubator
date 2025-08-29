@@ -22,7 +22,7 @@ class FinalVariableInsideCallbackTest
         };
 
         /*
-         * For nested classes, the compiler generates a new standalone public class
+         * For nested classes, the compiler generates a new standalone class
          * with a constructor that will take all the variables it uses as arguments
          */
 

@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Answer the questions stated in {@link Fruit}.
  */
-public class Step3Test
+class Step3Test
 {
 
     @Test

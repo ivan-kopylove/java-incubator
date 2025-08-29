@@ -3,7 +3,7 @@ package named.variance;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Step1Test
+class Step1Test
 {
     void foo()
     {

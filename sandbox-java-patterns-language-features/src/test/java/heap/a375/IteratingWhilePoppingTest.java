@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * <p>
  * Based on that idea, the experiment is about my hypothesis if I can pop elements from the deque while iterating on the que.
  */
-public class IteratingWhilePoppingTest
+class IteratingWhilePoppingTest
 {
     @Test
     void should_remove_elements_from_queue_without_exceptions()

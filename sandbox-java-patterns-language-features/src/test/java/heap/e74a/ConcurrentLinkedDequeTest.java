@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
 
 import static java.util.concurrent.Executors.newFixedThreadPool;
 
-public class ConcurrentLinkedDequeTest
+class ConcurrentLinkedDequeTest
 {
     @Test
     void what_is_the_purpose_of_this_example() throws InterruptedException

@@ -9,7 +9,7 @@ import java.util.concurrent.ExecutorService;
 import static java.util.concurrent.Executors.newFixedThreadPool;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-public class ShellExecutorParameters
+class ShellExecutorParameters
 {
     private static final Logger          LOGGER            = LoggerFactory.getLogger(ShellExecutorParameters.class);
     private final        Path            workingDir;

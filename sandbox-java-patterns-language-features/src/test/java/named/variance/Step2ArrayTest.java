@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
  * <p>
  * Book search: "language misfeature".
  */
-public class Step2ArrayTest
+class Step2ArrayTest
 {
     @Test
     void test1()

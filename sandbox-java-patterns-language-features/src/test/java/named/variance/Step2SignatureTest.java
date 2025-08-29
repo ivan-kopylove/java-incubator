@@ -21,7 +21,7 @@ class B extends A
 /**
  * Answer the questions stated in {@link heap.Variance.Fruit}.
  */
-public class Step2SignatureTest
+class Step2SignatureTest
 {
 
     @Test

@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
  * @see <a href="https://ivan-kopylove.github.io/ad57cce4-610d-4519-8362-140e9facf32c">blog</a>
  * @see <a href="obsidian://search/?vault=notes&query=ad57cce4">obsidian</a>
  */
-public class WaitErrorExampleTest
+class WaitErrorExampleTest
 {
 
     @Nested

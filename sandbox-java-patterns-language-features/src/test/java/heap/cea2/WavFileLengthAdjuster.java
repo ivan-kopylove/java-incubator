@@ -1,6 +1,6 @@
 package heap.cea2;
 
-public class WavFileLengthAdjuster
+class WavFileLengthAdjuster
 {
 
     /**

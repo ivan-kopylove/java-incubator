@@ -11,7 +11,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
  * @see <a href="https://ivan-kopylove.github.io/f50e8fff-7e74-47c9-ab98-1be96f5d2f81">blog</a>
  * @see <a href="obsidian://search/?vault=notes&query=f50e8fff">obsidian</a>
  */
-public class LiveLockTest
+class LiveLockTest
 {
     @Test
     void what_is_the_purpose_of_this_example()
