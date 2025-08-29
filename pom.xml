@@ -8,6 +8,7 @@
 
     <properties>
         <maven-compiler-plugin-version>3.14.0</maven-compiler-plugin-version>
+        <junit-jupiter-api.version>5.13.1</junit-jupiter-api.version>
     </properties>
 
 
@@ -37,7 +38,14 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.13.1</version>
+            <version>${junit-jupiter-api.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit-jupiter-api.version}</version>
             <scope>test</scope>
         </dependency>
 
