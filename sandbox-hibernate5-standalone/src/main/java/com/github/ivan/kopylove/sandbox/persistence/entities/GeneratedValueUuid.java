@@ -7,7 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-class GeneratedValueUuid
+public class GeneratedValueUuid
 {
     @Id
     @GeneratedValue(generator = "generator")

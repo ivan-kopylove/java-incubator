@@ -17,6 +17,8 @@ class CastList
         child.addValue(new Child());
         child.addValue(new Child());
 
-        Iterator<Child> iterator = ((List<Child>) (List<?>) child.getList()).iterator();
+        List<Child> list = (List<Child>) (List<?>) child.getList();
+
+        Iterator<Child> iterator = list.iterator();
     }
 }
