@@ -3,7 +3,7 @@ package leetcode.a2571;
 
 /**
  *
- * <a href="https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/description/">leetcode</a>
+ * @see <a href="https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/description/">leetcode</a>
  * @see <a href="https://ivan-kopylove.github.io/leetcode/0c78">blog</a>
  */
 class MyFailedSolution {
