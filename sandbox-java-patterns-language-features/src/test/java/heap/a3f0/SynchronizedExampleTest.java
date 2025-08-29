@@ -33,7 +33,7 @@ class SynchronizedExampleTest
     void threadSafeRun() throws InterruptedException
     {
         ExecutorService executorService = Executors.newFixedThreadPool(3);
-        CounterThreadSafe summation = new CounterThreadSafe();
+        ThreadSafeCounter summation = new ThreadSafeCounter();
 
         IntStream.range(0, 1000)
                  .forEach(count -> executorService.submit(summation::calculate));
@@ -55,7 +55,7 @@ class SynchronizedExampleTest
         assertEquals(1000, summation.getSum());
     }
 
-    class CounterThreadSafe
+    class ThreadSafeCounter
     {
         private int sum = 0;
 
