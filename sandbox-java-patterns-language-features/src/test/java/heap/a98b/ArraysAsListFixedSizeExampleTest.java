@@ -26,7 +26,7 @@ class ArraysAsListFixedSizeExampleTest
     }
 
     @Test
-    void Collections_singletonList_immutability()
+    void Collections_singletonList_is_what()
     {
         assertThrows(UnsupportedOperationException.class, () -> {
             List<String> immutableList = Collections.singletonList("a");
@@ -35,7 +35,7 @@ class ArraysAsListFixedSizeExampleTest
     }
 
     @Test
-    void Arrays_asList_make_mutable()
+    void what_does_this_demonstrate()
     {
         List<String> immutableList = Arrays.asList("1", "2");
         List<String> mutableList = new ArrayList<>(immutableList);
