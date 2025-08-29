@@ -1,7 +1,5 @@
 package leetcode.a2998;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-
 class Solution
 {
     public int minimumOperationsToMakeEqual(int x, int y) {
