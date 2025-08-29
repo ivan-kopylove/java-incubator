@@ -98,9 +98,7 @@ class SynchronizedExampleTest
         }
     }
 
-    /**
-     *
-     */
+
     class CounterThreadDangerous
     {
         private int sum = 0;
