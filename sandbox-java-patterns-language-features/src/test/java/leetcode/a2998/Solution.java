@@ -22,29 +22,33 @@ class Solution
 
         if (x % 11 == 0)
         {
-            result = Math.min(result, dfs(x / 11, y, 0, dp));
+            result = Math.min(result, 1 + dfs(x / 11, y, 0, dp));
+        }
+        else if(shift > 0 && shift < 5)
+        {
+            result = Math.min(result, 1 + dfs(x + 1, y, shift + 1, dp));
         }
 
         if (x % 5 == 0)
         {
-            result = Math.min(result, dfs(x / 5, y, 0, dp));
+            result = Math.min(result, 1 + dfs(x / 5, y, 0, dp));
+        }
+        else if(shift > 0 && shift < 4)
+        {
+            result = Math.min(result, 1 + dfs(x + 1, y, shift + 1, dp));
         }
 
         if (shift == 0)
         {
-            result = Math.min(result, dfs(x - 1, y, shift - 1, dp));
-            result = Math.min(result, dfs(x + 1, y, shift + 1, dp));
+            result = Math.min(result, 1 + dfs(x - 1, y, shift - 1, dp));
+            result = Math.min(result, 1 + dfs(x + 1, y, shift + 1, dp));
         }
-        else if(shift > 0 && shift < 2)
+        else if (shift > -100 && shift < 0)
         {
-            result = Math.min(result, dfs(x + 1, y, shift + 1, dp));
-        }
-        else if (shift > -2000 && shift < 0)
-        {
-            result = Math.min(result, dfs(x - 1, y, shift - 1, dp));
+            result = Math.min(result, 1 + dfs(x - 1, y, shift - 1, dp));
         }
 
-        dp[x] = 1 + result;
+        dp[x] = result;
         return dp[x];
     }
 }
