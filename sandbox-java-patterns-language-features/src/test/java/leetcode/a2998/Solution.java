@@ -1,59 +1,50 @@
 package leetcode.a2998;
 
+import java.util.Arrays;
+
 class Solution
 {
     public int minimumOperationsToMakeEqual(int x, int y)
     {
-        return dfs(x, y, 0);
+        int[] dp = new int[x + 11];
+        Arrays.fill(dp, -1);
+        return dfs(x, y, 0, dp);
     }
 
-    int dfs(int x, int y, int shift)
+    int dfs(int x, int y, int shift, int[] dp)
     {
-        if (x == y)
-        {
-            return 0;
-        }
-
-        if (x < y)
+        if (x <= y)
         {
             return y - x;
         }
 
-
-
-        int call1 = Integer.MAX_VALUE - 50000;
-        int call2 = Integer.MAX_VALUE - 50000;
-        int call3 = Integer.MAX_VALUE - 50000;
-        int call4 = Integer.MAX_VALUE - 50000;
-        int call5 = Integer.MAX_VALUE - 50000;
-        int call6 = Integer.MAX_VALUE - 50000;
+        int result = Math.abs(x - y);
 
         if (x % 11 == 0)
         {
-            call1 = dfs(x / 11, y, 0);
+            result = Math.min(result, dfs(x / 11, y, 0, dp));
         }
 
         if (x % 5 == 0)
         {
-            call2 = dfs(x / 5, y, 0);
+            result = Math.min(result, dfs(x / 5, y, 0, dp));
         }
 
         if (shift == 0)
         {
-            call3 = dfs(x - 1, y, shift - 1);
-            call4 = dfs(x + 1, y, shift + 1);
-
+            result = Math.min(result, dfs(x - 1, y, shift - 1, dp));
+            result = Math.min(result, dfs(x + 1, y, shift + 1, dp));
         }
-        else if(shift > 0 && shift < 7)
+        else if(shift > 0 && shift < 2)
         {
-            call5 = dfs(x + 1, y, shift + 1);
+            result = Math.min(result, dfs(x + 1, y, shift + 1, dp));
         }
-        else if (shift < 0 && shift > -10000)
+        else if (shift > -2000 && shift < 0)
         {
-            call6 = dfs(x - 1, y, shift - 1);
+            result = Math.min(result, dfs(x - 1, y, shift - 1, dp));
         }
 
-
-        return 1 + Math.min(call1, Math.min(call2, Math.min(call3, Math.min(call4, Math.min(call5, call6)))));
+        dp[x] = 1 + result;
+        return dp[x];
     }
 }

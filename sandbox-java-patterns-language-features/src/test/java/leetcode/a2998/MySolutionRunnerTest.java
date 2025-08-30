@@ -11,7 +11,6 @@ class MySolutionRunnerTest
     @ParameterizedTest
     @CsvSource({
             "329,57,11",
-            "10000,1,8",
             "21,12,9",
             "9420,8299,1121",
             "967,759,208",
@@ -27,6 +26,7 @@ class MySolutionRunnerTest
             "3,1,2",
             "8,2,3",
             "8,4,4",
+            "10000,1,8",
     })
     void should_calculate_minimum(int x, int y, int expected)
     {
