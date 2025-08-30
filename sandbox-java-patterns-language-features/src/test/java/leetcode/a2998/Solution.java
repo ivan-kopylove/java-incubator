@@ -24,7 +24,7 @@ class Solution
         {
             result = Math.min(result, 1 + dfs(x / 11, y, 0, dp));
         }
-        else if(shift > 0 && shift < 5)
+        else if(shift >= 0 && shift < 5)
         {
             result = Math.min(result, 1 + dfs(x + 1, y, shift + 1, dp));
         }
@@ -33,17 +33,12 @@ class Solution
         {
             result = Math.min(result, 1 + dfs(x / 5, y, 0, dp));
         }
-        else if(shift > 0 && shift < 4)
+        else if(shift >= 0 && shift < 4)
         {
             result = Math.min(result, 1 + dfs(x + 1, y, shift + 1, dp));
         }
 
-        if (shift == 0)
-        {
-            result = Math.min(result, 1 + dfs(x - 1, y, shift - 1, dp));
-            result = Math.min(result, 1 + dfs(x + 1, y, shift + 1, dp));
-        }
-        else if (shift > -5 && shift < 0)
+         if (shift > -5 && shift <= 0)
         {
             result = Math.min(result, 1 + dfs(x - 1, y, shift - 1, dp));
         }
