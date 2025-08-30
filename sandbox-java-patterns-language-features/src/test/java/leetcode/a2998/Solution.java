@@ -43,9 +43,10 @@ class Solution
             result = Math.min(result, 1 + dfs(x - 1, y, shift - 1, dp));
             result = Math.min(result, 1 + dfs(x + 1, y, shift + 1, dp));
         }
-
+        else if (shift > -5 && shift < 0)
+        {
             result = Math.min(result, 1 + dfs(x - 1, y, shift - 1, dp));
-
+        }
 
         dp[x] = result;
         return dp[x];
