@@ -1,6 +1,6 @@
 package leetcode.a2222;
 
-class Solution
+class SolutionStackoverflow
 {
     public long numberOfWays(String s)
     {

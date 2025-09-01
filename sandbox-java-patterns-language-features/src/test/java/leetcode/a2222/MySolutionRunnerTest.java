@@ -1,6 +1,5 @@
 package leetcode.a2222;
 
-import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -17,7 +16,7 @@ class MySolutionRunnerTest
     void should_calculate_minimum(String s, long expected)
     {
         // given
-        Solution sut = new Solution();
+        SolutionStackoverflow sut = new SolutionStackoverflow();
 
         // when
         long result = sut.numberOfWays(s);
