@@ -18,28 +18,28 @@ class Solution
         for (int i = 0; i < equations.length; i++)
         {
 
-            char a = equations[i].charAt(0);
+            char left = equations[i].charAt(0);
             char op = equations[i].charAt(1);
 
-            char b = equations[i].charAt(3);
+            char right = equations[i].charAt(3);
 
 
             if (op == '=')
             {
-                enrich(eq, a, b);
-                enrich(eq, b, a);
+                enrich(eq, left, right);
+                enrich(eq, right, left);
 
-                enrichTransitive(eq, a, b);
-                enrichTransitive(eq, b, a);
+                enrichTransitive(eq, left, right);
+                enrichTransitive(eq, right, left);
             }
             else if (op == '!')
             {
-                if (a == b)
+                if (left == right)
                 {
                     return false;
                 }
 
-                if (eq.get(a) != null && eq.get(a).stream().anyMatch(el -> el == b))
+                if (eq.get(left) != null && eq.get(left).stream().anyMatch(el -> el == right))
                 {
                     return false;
                 }
@@ -49,28 +49,28 @@ class Solution
         return true;
     }
 
-    private static void enrichTransitive(Map<Character, Set<Character>> eq, char a, char b)
+    private static void enrichTransitive(Map<Character, Set<Character>> eq, char left, char right)
     {
-        Set<Character> Acharacters = eq.computeIfPresent(a, (k, v) -> {
+        Set<Character> Acharacters = eq.computeIfPresent(left, (k, v) -> {
             for (char c : v)
             {
-                enrich(eq, c, b);
-                enrich(eq, b, c);
+                enrich(eq, c, right);
+                enrich(eq, right, c);
             }
 
             return v;
         });
     }
 
-    private static void enrich(Map<Character, Set<Character>> eq, char a, char b)
+    private static void enrich(Map<Character, Set<Character>> eq, char left, char right)
     {
-        eq.computeIfPresent(a, (x, y) -> {
-            y.add(b);
+        eq.computeIfPresent(left, (x, y) -> {
+            y.add(right);
             return y;
         });
-        eq.computeIfAbsent(a, x -> {
+        eq.computeIfAbsent(left, x -> {
             HashSet<Character> objects = new HashSet<>();
-            objects.add(b);
+            objects.add(right);
             return objects;
         });
     }
