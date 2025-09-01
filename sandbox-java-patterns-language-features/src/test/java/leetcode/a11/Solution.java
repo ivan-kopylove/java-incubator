@@ -1,6 +1,6 @@
 package leetcode.a11;
 
-/// @see <a href="https://www.google.com/search?q=leetcode 11">task</a>
+/// @see <a href="https://www.google.com/search?q=leetcode 11">problem definition</a>
 /// @see <a href="https://ivan-kopylove.github.io/leetcode/6b0b">garden</a>
 /// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+11+container">github</a>
 /// @see <a href="https://leetcode.com/problems/container-with-most-water/submissions/449358581/">my submission</a>

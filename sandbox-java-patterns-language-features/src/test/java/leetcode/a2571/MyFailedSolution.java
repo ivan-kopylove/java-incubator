@@ -2,7 +2,7 @@ package leetcode.a2571;
 
 import org.junit.jupiter.api.Test;
 
-/// @see <a href="https://www.google.com/search?q=leetcode 2571">task</a>
+/// @see <a href="https://www.google.com/search?q=leetcode 2571">problem definition</a>
 /// @see <a href="https://ivan-kopylove.github.io/leetcode/0c78">garden</a>
 /// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+2571">github</a>
 /// @see <a href="https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/description/">leetcode</a>
