@@ -16,7 +16,7 @@ class MySolutionRunnerTest
     void should_calculate_minimum(String s, long expected)
     {
         // given
-        SolutionStackoverflow sut = new SolutionStackoverflow();
+        Solution3907842 sut = new Solution3907842();
 
         // when
         long result = sut.numberOfWays(s);

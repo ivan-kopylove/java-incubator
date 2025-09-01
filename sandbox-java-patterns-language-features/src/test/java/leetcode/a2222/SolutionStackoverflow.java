@@ -4,9 +4,7 @@ class SolutionStackoverflow
 {
     public long numberOfWays(String s)
     {
-
-            return dfs(new StringBuilder(), 0, s);
-
+        return dfs(new StringBuilder(), 0, s);
     }
 
     int dfs(StringBuilder current, int i, String s)
@@ -16,7 +14,7 @@ class SolutionStackoverflow
             return 1;
         }
 
-        if ( i >= s.length())
+        if (i >= s.length())
         {
             return 0;
         }
