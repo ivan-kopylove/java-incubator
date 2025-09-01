@@ -1,4 +1,4 @@
-package leetcode.a2222;
+package leetcode.L2222;
 
 /// @see <a href="https://ivan-kopylove.github.io/leetcode/8b49">garden</a>
 /// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+2222">github</a>

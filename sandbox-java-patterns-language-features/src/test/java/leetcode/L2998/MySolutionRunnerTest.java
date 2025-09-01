@@ -1,4 +1,4 @@
-package leetcode.a2998;
+package leetcode.L2998;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.params.ParameterizedTest;
