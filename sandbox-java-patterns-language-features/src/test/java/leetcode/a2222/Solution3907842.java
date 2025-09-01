@@ -3,7 +3,7 @@ package leetcode.a2222;
 /**
  * @see <a href="https://leetcode.com/problems/number-of-ways-to-select-buildings/solutions/3907842/easy-recursion-memoization/?envType=problem-list-v2&envId=dynamic-programming/">6789775</a>
  * @see <a href="https://ivan-kopylove.github.io/leetcode/8b49">garden</a>
- * @see <a href="obsidian://search?vault=notes&query=leetcode 2222">obsidian</a>
+ * @see <a href="obsidian://search?query=leetcode 2222">obsidian</a>
  */
 class Solution3907842
 {
