@@ -3,9 +3,7 @@ package heap.a2f7;
 import java.io.File;
 import java.io.IOException;
 
-/**
- * java.io.* playground
- */
+/// java.io.* playground
 class FileExample
 {
     public static void main(String[] args) throws IOException

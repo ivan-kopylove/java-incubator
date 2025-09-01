@@ -7,10 +7,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * Minimal example with Hibernate session - save and load saved entity<br/>
- * Example available at: https://github.com/ivan-kopylove/sandbox-java
- */
+/// Minimal example with Hibernate session - save and load saved entity
+/// Example available at: [...](https://github.com/ivan-kopylove/sandbox-java)
 class HibernateBasicExampleTest
 {
     @Test

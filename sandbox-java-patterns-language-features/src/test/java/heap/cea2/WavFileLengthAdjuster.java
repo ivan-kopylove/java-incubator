@@ -3,9 +3,7 @@ package heap.cea2;
 class WavFileLengthAdjuster
 {
 
-    /**
-     * Used to read unfinished recording.
-     */
+    /// Used to read unfinished recording.
     public static byte[] finalizeWavFile(byte[] bytes)
     {
         int length = bytes.length;

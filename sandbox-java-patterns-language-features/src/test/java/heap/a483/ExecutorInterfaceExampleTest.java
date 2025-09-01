@@ -6,11 +6,9 @@ import java.util.concurrent.Executor;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * Facets:
- * <p>
- * - concurrency
- */
+/// Facets:
+///
+/// - concurrency
 class ExecutorInterfaceExampleTest
 {
     @Test

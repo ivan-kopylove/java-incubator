@@ -1,8 +1,6 @@
 package heap.a951;
 
-/**
- * finalVariableInsideCallback
- */
+/// finalVariableInsideCallback
 class FinalVariableInsideCallbackTest
 {
     public static void main(String[] args)

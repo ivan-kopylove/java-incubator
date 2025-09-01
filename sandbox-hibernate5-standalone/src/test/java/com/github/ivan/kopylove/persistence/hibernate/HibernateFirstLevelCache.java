@@ -8,10 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * 1. First level cache cannot be turned off<br/>
- * 2.
- */
+/// First level cache cannot be turned off
 class HibernateFirstLevelCache
 {
     @BeforeAll

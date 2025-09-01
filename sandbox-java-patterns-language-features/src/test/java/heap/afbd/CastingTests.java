@@ -7,9 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CastingTests
 {
 
-    /**
-     * Automatic type conversion. No explicit cast required.
-     */
+    /// Automatic type conversion. No explicit cast required.
     @Test
     void wideningCasting()
     {
@@ -35,9 +33,7 @@ class CastingTests
         assertEquals(40, d, 0);
     }
 
-    /**
-     * Explicit cast required.
-     */
+    /// Explicit cast required.
     @Test
     void narrowingCasting()
     {
@@ -63,9 +59,7 @@ class CastingTests
         assertEquals(30, b);
     }
 
-    /**
-     * Implicit narrowing is supported among byte, char, short, and int when literals are used.
-     */
+    /// Implicit narrowing is supported among byte, char, short, and int when literals are used.
     @Test
     void narrowingCastingImplicit()
     {
@@ -84,9 +78,7 @@ class CastingTests
         //        byte b1 = i1;//d'oh, only for literals
     }
 
-    /**
-     * Implicit narrowing is permitted only among byte, char, short, and int.
-     */
+    /// Implicit narrowing is permitted only among byte, char, short, and int.
     @Test
     void narrowingCastingFloatingPointNumbers()
     {
@@ -94,9 +86,7 @@ class CastingTests
         float f2 = 1.0f; //legal notation, works fine
     }
 
-    /**
-     * Explicit cast is required to case byte primitive to Integer wrapper.
-     */
+    /// Explicit cast is required to case byte primitive to Integer wrapper.
     @Test
     void noAutobox()
     {

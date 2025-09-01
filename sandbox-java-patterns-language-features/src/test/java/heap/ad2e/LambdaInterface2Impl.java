@@ -9,11 +9,9 @@ class LambdaInterface2Impl implements LambdaInterface
         return 0;
     }
 
-    /**
-     * Default method can be overridden.
-     *
-     * @return
-     */
+    /// Default method can be overridden.
+    ///
+    /// @return
     @Override
     public int someDefaultMethod()
     {

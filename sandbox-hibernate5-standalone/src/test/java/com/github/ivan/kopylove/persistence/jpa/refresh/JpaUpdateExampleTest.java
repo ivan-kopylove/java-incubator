@@ -9,9 +9,7 @@ import javax.persistence.EntityManager;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * Example of EntityManager#refresh.
- */
+/// Example of EntityManager#refresh.
 class JpaUpdateExampleTest
 {
     @BeforeAll

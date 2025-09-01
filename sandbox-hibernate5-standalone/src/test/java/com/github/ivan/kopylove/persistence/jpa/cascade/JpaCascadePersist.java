@@ -8,9 +8,7 @@ import org.junit.jupiter.api.Test;
 import javax.persistence.EntityManager;
 import java.util.Collections;
 
-/**
- * https://www.baeldung.com/jpa-cascade-types
- */
+/// [...](https://www.baeldung.com/jpa-cascade-types)
 class JpaCascadePersist
 {
     @Test

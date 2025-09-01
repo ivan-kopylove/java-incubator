@@ -8,9 +8,7 @@ import javax.persistence.EntityManager;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * Difference vs merge and persist
- */
+/// Difference vs merge and persist
 class JpaMergeExampleTest
 {
     @Test

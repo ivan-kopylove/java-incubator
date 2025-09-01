@@ -2,18 +2,16 @@ package heap.a789;
 
 import org.junit.jupiter.api.Test;
 
-/**
- * 1. adds additional layers of abstraction.<br/>
- * 2. purpose is to provide a single interface rather than multiple interfaces that does the similar kind of jobs<br/>
- * 3. Subsystem interfaces are not aware of Facade and they shouldn’t have any reference of the Facade interface.<br/>
- * 4. it doesn’t hide subsystem interfaces from the client. Whether to use Facade or not is completely dependent on client code.<br/>
- * tags:
- * - patterns
- * - facade
- *
- * @see <a href=https://www.journaldev.com/1557/facade-design-pattern-in-java>https://www.journaldev.com/1557/facade-design-pattern-in-java</a>
- * @see <a href=https://www.baeldung.com/java-facade-pattern>https://www.baeldung.com/java-facade-pattern</a>
- */
+/// 1. adds additional layers of abstraction.
+/// 2. purpose is to provide a single interface rather than multiple interfaces that does the similar kind of jobs
+/// 3. Subsystem interfaces are not aware of Facade and they shouldn’t have any reference of the Facade interface.
+/// 4. it doesn’t hide subsystem interfaces from the client. Whether to use Facade or not is completely dependent on client code.
+/// tags:
+/// - patterns
+/// - facade
+///
+/// @see <a href=https://www.journaldev.com/1557/facade-design-pattern-in-java>https://www.journaldev.com/1557/facade-design-pattern-in-java</a>
+/// @see <a href=https://www.baeldung.com/java-facade-pattern>https://www.baeldung.com/java-facade-pattern</a>
 class FacadeExampleTest
 {
 

@@ -9,9 +9,7 @@ import org.junit.jupiter.api.Test;
 import javax.persistence.EntityManager;
 import javax.persistence.FlushModeType;
 
-/**
- * JPA allows implementations to synchronize the persistence context at other times, if they wish.
- */
+/// JPA allows implementations to synchronize the persistence context at other times, if they wish.
 class JpaFlushMode
 {
 

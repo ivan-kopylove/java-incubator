@@ -7,9 +7,7 @@ import java.util.List;
 
 class StreamSortTest
 {
-    /**
-     * First it sorts by what then by what?
-     */
+    /// First it sorts by what then by what?
     @Test
     void nullSafeChainedLambdaComparator()
     {
@@ -18,9 +16,7 @@ class StreamSortTest
                             .thenComparing(Comparator.nullsLast(Comparator.comparing(ComparableObject::getStr))));
     }
 
-    /**
-     * First it sorts by what then by what?
-     */
+    /// First it sorts by what then by what?
     @Test
     void chainedLambdaComparator()
     {

@@ -10,14 +10,10 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
-/**
- * In this two examples, JOIN query is used to load. They have certain difference.
- */
+/// In this two examples, JOIN query is used to load. They have certain difference.
 class FetchVsJoin
 {
-    /**
-     * Join will not add information to the generated SQL query projection, so, no chance for hibernate to cache joined entity.
-     */
+    /// Join will not add information to the generated SQL query projection, so, no chance for hibernate to cache joined entity.
     @Test
     void join()
     {
@@ -39,9 +35,7 @@ class FetchVsJoin
         entityManager.close();
     }
 
-    /**
-     * Hibernate adds projections to joined table, so data is returned into Hibernate, so that Hibernate can cache this data.
-     */
+    /// Hibernate adds projections to joined table, so data is returned into Hibernate, so that Hibernate can cache this data.
     @Test
     void fetch()
     {

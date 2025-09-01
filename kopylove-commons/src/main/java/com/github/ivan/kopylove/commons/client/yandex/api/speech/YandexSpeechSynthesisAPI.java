@@ -27,9 +27,7 @@ public final class YandexSpeechSynthesisAPI {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(YandexSpeechSynthesisAPI.class);
     private static final String YANDEX_TTS_API_URL = "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize";
-    /**
-     * The limit from Yandex API side.
-     */
+    /// The limit from Yandex API side.
     private static final int YANDEX_API_TEXT_LIMIT = 4999;
     private final YandexApiParameters apiParameters;
     private final HttpClient httpClient = newHttpClient();
@@ -52,9 +50,7 @@ public final class YandexSpeechSynthesisAPI {
         return URLEncoder.encode(obj.toString(), UTF_8);
     }
 
-    /**
-     * The IAM token lifetime doesn't exceed 12 hours, but we recommend requesting the token more often, like once per hour.
-     */
+    /// The IAM token lifetime doesn't exceed 12 hours, but we recommend requesting the token more often, like once per hour.
     public byte[] yandexSpeechGenerate(String text, Voice voice) {
         try {
             if (text.length() > YANDEX_API_TEXT_LIMIT) {

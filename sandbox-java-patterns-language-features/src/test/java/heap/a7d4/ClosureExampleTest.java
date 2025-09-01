@@ -4,14 +4,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * search engine query with comprehensive examples:
- * closure baeldung
- * <p>
- * facets:
- * - patterns
- * - closure
- */
+/// search engine query with comprehensive examples:
+/// closure baeldung
+///
+/// facets:
+/// - patterns
+/// - closure
 class ClosureExampleTest
 {
 

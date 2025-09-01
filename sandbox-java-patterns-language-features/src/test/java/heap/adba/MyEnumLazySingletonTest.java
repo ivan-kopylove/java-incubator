@@ -8,11 +8,9 @@ import java.lang.reflect.Modifier;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-/**
- * facets:
- * - patterns
- * - singleton
- */
+/// facets:
+/// - patterns
+/// - singleton
 class MyEnumLazySingletonTest
 {
     @Test

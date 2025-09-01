@@ -1,8 +1,6 @@
 package com.github.ivan.kopylove.sandbox.persistence.domain;
 
-/**
- * Purpose: TODO .
- */
+
 class CompoundObject
 {
     private int    a;

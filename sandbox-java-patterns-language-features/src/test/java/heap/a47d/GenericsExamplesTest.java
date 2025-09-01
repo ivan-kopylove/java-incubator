@@ -11,19 +11,15 @@ import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * Various examples of generic methods.<br/>
- * Generics added to the Java programming language in 2004 within version J2SE 5.0.
- */
+/// Various examples of generic methods.
+/// Generics added to the Java programming language in 2004 within version J2SE 5.0.
 class GenericsExamplesTest
 {
-    /**
-     * Generic method.
-     *
-     * @param a
-     * @param c
-     * @param <T>
-     */
+    /// a generic method.
+    ///
+    /// @param a
+    /// @param c
+    /// @param <T>
     static <T> void fromArrayToCollection(T[] a, Collection<T> c)
     {
         Collections.addAll(c, a);

@@ -15,9 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/**
- * Difference between EntityManager#find and EntityManager#getReference
- */
+/// Difference between EntityManager#find and EntityManager#getReference
 class JpaFindvsGetReference
 {
     @BeforeAll
@@ -51,11 +49,9 @@ class JpaFindvsGetReference
         entityManger.close();
     }
 
-    /**
-     * proxy, that provides lazy access, throws an error on access
-     * getReference can be considered the lazy version of find
-     * The object content is retrieved from the database and the persistent fields are initialized, lazily, when the entity object is first accessed.
-     */
+    /// proxy, that provides lazy access, throws an error on access
+    /// getReference can be considered the lazy version of find
+    /// The object content is retrieved from the database and the persistent fields are initialized, lazily, when the entity object is first accessed.
     @Test
     void getReference()
     {

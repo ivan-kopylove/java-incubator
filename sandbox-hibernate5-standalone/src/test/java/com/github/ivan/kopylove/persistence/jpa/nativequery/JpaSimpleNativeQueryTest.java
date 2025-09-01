@@ -10,9 +10,7 @@ import javax.persistence.Query;
 import javax.persistence.Tuple;
 import java.util.List;
 
-/**
- * Minimal JPA example - save and load saved entity.
- */
+/// Minimal JPA example - save and load saved entity.
 class JpaSimpleNativeQueryTest
 {
     @BeforeEach

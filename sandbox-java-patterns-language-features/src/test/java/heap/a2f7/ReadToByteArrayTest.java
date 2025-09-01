@@ -11,9 +11,7 @@ import java.net.URL;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
-/**
- * java.io.* playground
- */
+/// java.io.* playground
 class ReadToByteArrayTest
 {
     private static byte[] readFully(InputStream stream) throws IOException

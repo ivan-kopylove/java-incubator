@@ -5,13 +5,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * Make provider return a value passed from initial call
- * facets
- * - patterns
- * - closure
- * - koan
- */
+/// Make provider return a value passed from initial call
+/// facets
+/// - patterns
+/// - closure
+/// - koan
 class ClosureKoanTest
 {
 

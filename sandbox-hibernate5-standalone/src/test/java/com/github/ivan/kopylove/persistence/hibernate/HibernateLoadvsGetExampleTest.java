@@ -11,10 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/**
- * this example demonsrates that
- * 1. entity var is buildEntityManagerFactory pure object
- */
+/// this example demonsrates that
+/// 1. entity var is buildEntityManagerFactory pure object
 class HibernateLoadvsGetExampleTest
 {
 
@@ -33,9 +31,7 @@ class HibernateLoadvsGetExampleTest
                .commit();
     }
 
-    /**
-     * session.get() hits the database immediately
-     */
+    /// session.get() hits the database immediately
     @Test
     void get()
     {
@@ -53,9 +49,7 @@ class HibernateLoadvsGetExampleTest
         session.close();
     }
 
-    /**
-     * ParentEntity is proxy
-     */
+    /// ParentEntity is proxy
     @Test
     void load()
     {

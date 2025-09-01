@@ -17,9 +17,7 @@ import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-/**
- * ORM N+1 problem demonstration
- */
+/// ORM N+1 problem demonstration
 class OrmNPlusOneBehaviour
 {
     @BeforeAll
@@ -51,9 +49,7 @@ class OrmNPlusOneBehaviour
         entityManager.close();
     }
 
-    /**
-     * No additional queries without proxy's getter call
-     */
+    /// No additional queries without proxy's getter call
     @Test
     void noDbHits()
     {
@@ -75,9 +71,7 @@ class OrmNPlusOneBehaviour
         entityManager.close();
     }
 
-    /**
-     * N+1 additional queries when accessing db through child proxy
-     */
+    /// N+1 additional queries when accessing db through child proxy
     @Test
     void nPlusOne()
     {

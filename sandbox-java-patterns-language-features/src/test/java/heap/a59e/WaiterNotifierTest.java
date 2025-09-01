@@ -2,11 +2,10 @@ package heap.a59e;
 
 import org.junit.jupiter.api.Test;
 
-/**
- * Facets:
- * - concurrency
- * https://www.journaldev.com/1037/java-thread-wait-notify-and-notifyall-example
- */
+/// Facets:
+/// - concurrency
+///
+/// [link](https://www.journaldev.com/1037/java-thread-wait-notify-and-notifyall-example)
 class WaiterNotifierTest
 {
     @Test

@@ -5,10 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Answer the questions stated in {@link Fruit}.
- */
-
+/// Answer the questions stated in [Fruit].
 class Step6QuestionMarkTest
 {
     @Test

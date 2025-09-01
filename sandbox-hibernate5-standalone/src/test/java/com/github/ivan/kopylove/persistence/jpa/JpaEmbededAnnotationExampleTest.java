@@ -11,9 +11,7 @@ import javax.persistence.EntityManager;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * @Embedded annotation demonstration.
- */
+/// @Embedded annotation demonstration.
 class JpaEmbededAnnotationExampleTest
 {
     @BeforeAll

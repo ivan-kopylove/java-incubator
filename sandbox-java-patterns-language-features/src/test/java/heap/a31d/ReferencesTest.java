@@ -7,13 +7,11 @@ import java.lang.ref.SoftReference;
 import java.lang.ref.WeakReference;
 import java.util.LinkedList;
 
-/**
- * facets
- * - thinking-in-java
- * - java-mechanism
- * <p>
- * SoftReference > Weak Reference > PhantomReference
- */
+/// facets
+/// - thinking-in-java
+/// - java-mechanism
+///
+/// SoftReference > Weak Reference > PhantomReference
 class ReferencesTest
 {
     @Test

@@ -18,9 +18,7 @@ class B extends A
     //        }
 }
 
-/**
- * Answer the questions stated in {@link heap.Variance.Fruit}.
- */
+/// Answer the questions stated in [Fruit].
 class Step2SignatureTest
 {
 

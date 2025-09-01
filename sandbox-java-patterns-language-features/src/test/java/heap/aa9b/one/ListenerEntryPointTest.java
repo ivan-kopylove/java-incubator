@@ -2,11 +2,9 @@ package heap.aa9b.one;
 
 import org.junit.jupiter.api.Test;
 
-/**
- * facets:
- * - patterns
- * - listener
- */
+/// facets:
+/// - patterns
+/// - listener
 class ListenerEntryPointTest
 {
     @Test

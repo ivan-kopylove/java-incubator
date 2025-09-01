@@ -8,10 +8,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/**
- * Facets:
- * - concurrency
- */
+/// Facets:
+/// - concurrency
 class ExecutorServiceExampleTest
 {
 

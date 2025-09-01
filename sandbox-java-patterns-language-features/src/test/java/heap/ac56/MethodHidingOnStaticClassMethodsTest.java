@@ -4,12 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * java.mechanics.oop.methodhiding
- * <p>
- * Calling static methods on instances rather than classes is a very bad practice, and should never be done.<br/>
- * This examples only for the purpose of demostration.<br/>
- */
+/// java.mechanics.oop.methodhiding
+///
+/// Calling static methods on instances rather than classes is a very bad practice, and should never be done.
+/// This examples only for the purpose of demostration.
 class MethodHidingOnStaticClassMethodsTest
 {
     @Test

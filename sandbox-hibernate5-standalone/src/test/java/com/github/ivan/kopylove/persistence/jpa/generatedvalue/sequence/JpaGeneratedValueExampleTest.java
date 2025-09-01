@@ -8,9 +8,7 @@ import javax.persistence.EntityManager;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * JPA @GeneratedValue examples
- */
+/// JPA @GeneratedValue examples
 class JpaGeneratedValueExampleTest
 {
     @Test

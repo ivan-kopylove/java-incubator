@@ -6,14 +6,10 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/**
- * java.util.* playground
- */
+/// java.util.* playground
 class DateExamplesTest
 {
-    /**
-     * Date#before method exists in JCL.
-     */
+    /// Date#before method exists in JCL.
     @Test
     void foo()
     {

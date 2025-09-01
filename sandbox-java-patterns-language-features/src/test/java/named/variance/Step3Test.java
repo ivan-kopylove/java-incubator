@@ -6,9 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Answer the questions stated in {@link Fruit}.
- */
+/// Answer the questions stated in [Fruit].
 class Step3Test
 {
 

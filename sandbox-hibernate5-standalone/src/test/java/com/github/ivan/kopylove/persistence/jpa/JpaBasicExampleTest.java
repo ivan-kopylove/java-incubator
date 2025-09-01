@@ -8,9 +8,7 @@ import javax.persistence.EntityManager;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * Minimal JPA example - save and load saved entity.
- */
+/// Minimal JPA example - save and load saved entity.
 class JpaBasicExampleTest
 {
     @Test

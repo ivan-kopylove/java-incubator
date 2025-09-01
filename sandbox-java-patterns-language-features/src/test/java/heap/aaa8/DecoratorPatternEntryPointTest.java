@@ -4,12 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * Decorator Pattern Example.
- * facets:
- * - patterns
- * - decorator
- */
+/// Decorator Pattern Example.
+/// facets:
+/// - patterns
+/// - decorator
 class DecoratorPatternEntryPointTest
 {
     @Test

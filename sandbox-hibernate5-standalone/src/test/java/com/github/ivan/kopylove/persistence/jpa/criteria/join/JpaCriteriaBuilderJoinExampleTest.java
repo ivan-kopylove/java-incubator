@@ -15,9 +15,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * This example demonstrates minimal join boilerplate
- */
+/// This example demonstrates minimal join boilerplate
 class JpaCriteriaBuilderJoinExampleTest
 {
     @BeforeAll

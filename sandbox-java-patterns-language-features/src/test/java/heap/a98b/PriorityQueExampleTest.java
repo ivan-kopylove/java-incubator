@@ -6,10 +6,8 @@ import java.util.PriorityQueue;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * java.util.* playground
- * Priority map keeps structure sorted according natural ordering
- */
+/// java.util.* playground
+/// Priority map keeps structure sorted according natural ordering
 class PriorityQueExampleTest
 {
 

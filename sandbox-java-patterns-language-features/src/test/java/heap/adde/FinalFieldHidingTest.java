@@ -4,9 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * java.mechanics.oop.hiding
- */
+/// java.mechanics.oop.hiding
 class FinalFieldHidingTest
 {
     @Test

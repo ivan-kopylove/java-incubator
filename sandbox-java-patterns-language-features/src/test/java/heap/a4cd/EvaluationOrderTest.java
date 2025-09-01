@@ -2,9 +2,7 @@ package heap.a4cd;
 
 import org.junit.jupiter.api.Test;
 
-/**
- * aka Operator p______
- */
+/// aka Operator p______
 class EvaluationOrderTest
 {
     @Test

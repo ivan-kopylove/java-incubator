@@ -10,9 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class GenerationTypeIdentity
 {
-    /**
-     * This example is intended to show basic working example of GenerationType.IDENTITY.
-     */
+    /// This example is intended to show basic working example of GenerationType.IDENTITY.
     @Test
     void generationTypeIdentity()
     {

@@ -4,9 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-/**
- * drop sequence if exists MyGeneratorName
- */
+/// drop sequence if exists MyGeneratorName
 @Entity
 class GeneratedValueMostBasicSecond
 {

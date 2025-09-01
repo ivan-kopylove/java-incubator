@@ -44,9 +44,7 @@ public final class JpaEntityManagerFactory
         return emf.createEntityManager();
     }
 
-    /**
-     * drops the database when hbm2ddl = create-drop
-     */
+    /// drops the database when hbm2ddl = create-drop
     public static void closeFactory()
     {
         emf.close();

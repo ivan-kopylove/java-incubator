@@ -2,13 +2,11 @@ package heap.aaef;
 
 import org.junit.jupiter.api.Test;
 
-/**
- * Labels example
- * facets
- * - enthuware
- * <p>
- * enthuware.ocpjp.i.v11.2.1255
- */
+/// Labels example
+/// facets
+/// - enthuware
+///
+/// enthuware.ocpjp.i.v11.2.1255
 class BreakToLabel1255Test
 {
     @Test

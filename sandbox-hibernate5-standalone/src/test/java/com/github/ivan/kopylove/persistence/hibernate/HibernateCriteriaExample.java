@@ -13,10 +13,8 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/**
- * org.hibernate.Criteria simpliest example.<br/>
- * Example available at: https://github.com/ivan-kopylove/sandbox-java
- */
+/// org.hibernate.Criteria simpliest example.
+/// Example available at: [...](https://github.com/ivan-kopylove/sandbox-java)
 class HibernateCriteriaExample
 {
     @BeforeAll

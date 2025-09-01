@@ -9,13 +9,11 @@ import java.util.TreeMap;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * TreeMap sorts all its entries according to their natural ordering.<br/>
- * Complexity: O(log(n))<br/>
- *
- * @see <a href="https://i.imgur.com/Uf622Ip.png">Big O typical growth rates</a>
- * @see <a href="https://i.imgur.com/uyqWi6O.png">red-black tree</a>
- */
+/// TreeMap sorts all its entries according to their natural ordering.
+/// Complexity: O(log(n))
+///
+/// @see <a href="https://i.imgur.com/Uf622Ip.png">Big O typical growth rates</a>
+/// @see <a href="https://i.imgur.com/uyqWi6O.png">red-black tree</a>
 class TreeMapExampleTest
 {
     @Test

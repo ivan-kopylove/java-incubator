@@ -2,11 +2,9 @@ package named.variance;
 
 import org.junit.jupiter.api.Test;
 
-/**
- * Answer the questions stated in {@link Fruit}.
- * <p>
- * Book search: "language misfeature".
- */
+/// Answer the questions stated in [Fruit].
+///
+/// Book search: "language misfeature".
 class Step2ArrayTest
 {
     @Test

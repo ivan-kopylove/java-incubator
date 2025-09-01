@@ -4,9 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * functional interface playground
- */
+/// functional interface playground
 class ExampleTest
 {
     @Test

@@ -5,9 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/**
- * Basic demonstration of strings pool in java. Strings are compared intentionally using reference equality.
- */
+/// Basic demonstration of strings pool in java. Strings are compared intentionally using reference equality.
 class StringPoolTest
 {
     @Test

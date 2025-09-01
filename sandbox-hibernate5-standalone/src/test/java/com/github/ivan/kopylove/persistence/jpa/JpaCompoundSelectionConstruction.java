@@ -49,9 +49,7 @@ class JpaCompoundSelectionConstruction
         entityManager.close();
     }
 
-    /**
-     * CompoundSelection filled according construct order.
-     */
+    /// CompoundSelection filled according construct order.
     @Test
     void run_incorrect()
     {
@@ -77,9 +75,7 @@ class JpaCompoundSelectionConstruction
         });
     }
 
-    /**
-     * CompoundSelection filled according construct order.
-     */
+    /// CompoundSelection filled according construct order.
     @Test
     void run_correct()
     {

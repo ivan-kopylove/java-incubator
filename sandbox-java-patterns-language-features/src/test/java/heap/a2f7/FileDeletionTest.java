@@ -4,9 +4,7 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * java.io.* playground
- */
+/// java.io.* playground
 class FileDeletionTest
 {
     public static void main(String[] args)
