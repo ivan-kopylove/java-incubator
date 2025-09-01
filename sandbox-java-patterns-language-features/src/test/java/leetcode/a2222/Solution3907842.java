@@ -12,26 +12,26 @@ class Solution3907842
         return numberOfWays(s, '2', 0, 0, memo);
     }
 
-    public long numberOfWays(String s, char ch, int si, int count, Long[][][] memo)
+    public long numberOfWays(String s, char ch, int i, int count, Long[][][] memo)
     {
         if (count == 3)
         {
             return 1;
         }
-        if (si >= s.length())
+        if (i >= s.length())
         {
             return 0;
         }
-        if (memo[si][ch - '0'][count] != null)
+        if (memo[i][ch - '0'][count] != null)
         {
-            return memo[si][ch - '0'][count];
+            return memo[i][ch - '0'][count];
         }
-        long notPick = numberOfWays(s, ch, si + 1, count, memo);
+        long notPick = numberOfWays(s, ch, i + 1, count, memo);
         long pick = 0;
-        if (s.charAt(si) != ch)
+        if (s.charAt(i) != ch)
         {
-            pick = numberOfWays(s, s.charAt(si), si + 1, count + 1, memo);
+            pick = numberOfWays(s, s.charAt(i), i + 1, count + 1, memo);
         }
-        return memo[si][ch - '0'][count] = pick + notPick;
+        return memo[i][ch - '0'][count] = pick + notPick;
     }
 }
