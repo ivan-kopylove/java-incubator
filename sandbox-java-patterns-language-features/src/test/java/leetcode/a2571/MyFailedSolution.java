@@ -4,6 +4,7 @@ package leetcode.a2571;
  *
  * @see <a href="https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/description/">leetcode</a>
  * @see <a href="https://ivan-kopylove.github.io/leetcode/0c78">garden</a>
+ * @see <a href="obsidian://search?query=leetcode 2571">obsidian</a>
  */
 class MyFailedSolution
 {

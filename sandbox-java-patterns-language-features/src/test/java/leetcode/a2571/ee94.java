@@ -13,7 +13,13 @@ class ee94
     @Test
     void what_is_the_point_of_this()
     {
+        // given
         int n = 32;
-        System.out.println((n & (n - 1)) == 0);
+
+        // when
+        boolean result = (n & (n - 1)) == 0;
+
+        // then
+        System.out.println(result);
     }
 }
