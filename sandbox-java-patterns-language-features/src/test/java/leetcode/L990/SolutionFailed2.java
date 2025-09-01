@@ -7,7 +7,8 @@ import java.util.Map;
 import java.util.Set;
 
 
-class Solution
+//180 / 181 testcases passed
+class SolutionFailed2
 {
     public boolean equationsPossible(String[] equations)
     {

@@ -20,7 +20,7 @@ class MySolutionRunnerTest
     void should_calculate_minimum(String[] s, boolean expected)
     {
         // given
-        Solution sut = new Solution();
+        SolutionFailed2 sut = new SolutionFailed2();
 
         // when
         boolean result = sut.equationsPossible(s);
@@ -34,7 +34,8 @@ class MySolutionRunnerTest
         return Stream.of(
                 Arguments.of(new String[]{"a==b","b==c", "c!=a"}, false),
                 Arguments.of(new String[]{"b!=a","c==a"}, true),
-                Arguments.of(new String[]{"a==b","e==c","b==c","a!=e"}, false)
+                Arguments.of(new String[]{"a==b","e==c","b==c","a!=e"}, false),
+                Arguments.of(new String[]{"a==z","a==b","b==c","c==d","b==y","c==x","d==w","g==h","h==i","i==j","a==g","j!=y"}, false)
 
         );
     }
