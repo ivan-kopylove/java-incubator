@@ -33,7 +33,7 @@ class MySolutionRunnerTest
     {
         return Stream.of(
                 Arguments.of(new String[]{"a!=a"}, false),
-                Arguments.of(new String[]{"c==c","b==d","x!=z"}, false),
+                Arguments.of(new String[]{"c==c","b==d","x!=z"}, true),
                 Arguments.of(new String[]{"a==b","b==c", "c!=a"}, false),
                 Arguments.of(new String[]{"b!=a","c==a"}, true),
                 Arguments.of(new String[]{"a==b","e==c","b==c","a!=e"}, false),
