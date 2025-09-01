@@ -20,7 +20,7 @@ class MySolutionRunnerTest
     void should_calculate_minimum(String[] s, boolean expected)
     {
         // given
-        SolutionFailed3 sut = new SolutionFailed3();
+        Solution sut = new Solution();
 
         // when
         boolean result = sut.equationsPossible(s);
@@ -32,6 +32,8 @@ class MySolutionRunnerTest
     public static Stream<Arguments> palindromeCombos()
     {
         return Stream.of(
+                Arguments.of(new String[]{"a!=a"}, false),
+                Arguments.of(new String[]{"c==c","b==d","x!=z"}, false),
                 Arguments.of(new String[]{"a==b","b==c", "c!=a"}, false),
                 Arguments.of(new String[]{"b!=a","c==a"}, true),
                 Arguments.of(new String[]{"a==b","e==c","b==c","a!=e"}, false),

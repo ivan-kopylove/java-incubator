@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-class SolutionFailed3
+class Solution
 {
     public boolean equationsPossible(String[] equations)
     {
@@ -21,29 +21,26 @@ class SolutionFailed3
         List<String> eqStr = ops.get('=');
         List<String> neqStr = ops.get('!');
 
-        for (int i = 0; i < eqStr.size(); i++)
-        {
-            char left = eqStr.get(i).charAt(0);
-            char right = eqStr.get(i).charAt(3);
 
-            enrich(eq, left, right);
-            enrich(eq, right, left);
+        if (neqStr == null)
+        {
+            return true;
         }
 
-        Map<Character, Set<Character>> merge = new HashMap<>();
+        if (eqStr != null)
+        {
 
-        eq.entrySet().forEach( (v) -> {
-            Set<Character> value = v.getValue();
-            for(char c1 : value)
+
+            for (int i = 0; i < eqStr.size(); i++)
             {
-                for(char c2 : value)
-                {
-                    enrich(merge, c1, c2);
-                }
-            }
-        });
+                char left = eqStr.get(i).charAt(0);
+                char right = eqStr.get(i).charAt(3);
 
-        eq.putAll(merge);
+                enrich(eq, left, right);
+                enrich(eq, right, left);
+            }
+        }
+
 
         for (int i = 0; i < neqStr.size(); i++)
         {
@@ -55,28 +52,45 @@ class SolutionFailed3
                 return false;
             }
 
-            if (checkEquality(eq, left, right))
+            if (!checkEquality(eq, right, left, new HashSet()))
             {
                 return false;
             }
-            if (checkEquality(eq, right, left))
-            {
-                return false;
-            }
-
         }
 
 
         return true;
     }
 
-    private static boolean checkEquality(Map<Character, Set<Character>> eq, char left, char right)
+    private static boolean checkEquality(Map<Character, Set<Character>> eq, char left, char right, Set<Character> visited)
     {
-        if (eq.get(left) != null && eq.get(left).stream().anyMatch(el -> el == right))
+        if (left == right)
+        {
+            return false;
+        }
+
+        visited.add(left);
+        Set<Character> characters = eq.get(left);
+        if (characters == null)
         {
             return true;
         }
-        return false;
+        for (char c : characters)
+        {
+            if (visited.contains(c))
+            {
+                continue;
+            }
+
+            boolean res = checkEquality(eq, c, right, visited);
+            if (!res)
+            {
+                return res;
+            }
+        }
+
+
+        return true;
     }
 
     private static void enrich(Map<Character, Set<Character>> eq, char left, char right)
