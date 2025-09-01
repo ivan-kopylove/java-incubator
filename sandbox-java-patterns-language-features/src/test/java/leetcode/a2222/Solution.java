@@ -4,8 +4,13 @@ class Solution
 {
     public long numberOfWays(String s)
     {
+        int result = 0;
+        for (int i = 0; i < s.length(); i++)
+        {
+            result += dfs(new StringBuilder(), i, s);
+        }
 
-        return dfs(new StringBuilder(), 0, s);
+        return result;
     }
 
     int dfs(StringBuilder current, int i, String s)
@@ -42,9 +47,10 @@ class Solution
                 counter += dfs(current, i + 1, s);
                 current.deleteCharAt(current.length() - 1);
             }
-        }
 
-        counter += dfs(current, i + 1, s);
+
+
+        }
 
         return counter;
     }
