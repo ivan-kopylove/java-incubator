@@ -6,9 +6,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @see <a href="https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/6789775/beats-100-java-0ms-dp-solution/">peeked at solution</a>
  * @see <a href="https://ivan-kopylove.github.io/leetcode/0c78">garden</a>
  * @see <a href="https://github.com/search?q=user%3Aivan-kopylove+2571">github</a>
+ * @see <a href="https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/6789775/beats-100-java-0ms-dp-solution/">peeked at solution</a>
  * @see <a href="obsidian://search?query=leetcode 2571">obsidian</a>
  */
 class Solution_6789775
