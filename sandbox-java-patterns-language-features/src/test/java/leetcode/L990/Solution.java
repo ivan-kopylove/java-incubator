@@ -31,8 +31,6 @@ class Solution
 
                 enrichTransitive(eq, a, b);
                 enrichTransitive(eq, b, a);
-
-
             }
             else if (op == '!')
             {
@@ -41,11 +39,10 @@ class Solution
                     return false;
                 }
 
-                if(eq.get(a) != null && eq.get(a).stream().anyMatch(el -> el ==b))
+                if (eq.get(a) != null && eq.get(a).stream().anyMatch(el -> el == b))
                 {
                     return false;
                 }
-
             }
         }
 
