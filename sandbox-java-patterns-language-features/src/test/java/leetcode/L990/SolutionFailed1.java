@@ -12,7 +12,7 @@ import java.util.Set;
 /// @see <a href="https://ivan-kopylove.github.io/leetcode/88a6">garden</a>
 /// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+990">github</a>
 /// @see <a href="obsidian://search?query=leetcode 990">obsidian</a>
-class SolutionFailed
+class SolutionFailed1
 {
     public boolean equationsPossible(String[] equations)
     {
