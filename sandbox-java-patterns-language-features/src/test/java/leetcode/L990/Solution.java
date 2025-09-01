@@ -51,7 +51,7 @@ class Solution
 
     private static void enrichTransitive(Map<Character, Set<Character>> eq, char left, char right)
     {
-        Set<Character> Acharacters = eq.computeIfPresent(left, (k, v) -> {
+        eq.computeIfPresent(left, (k, v) -> {
             for (char c : v)
             {
                 enrich(eq, c, right);
