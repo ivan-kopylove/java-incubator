@@ -3,9 +3,11 @@ package leetcode.L990;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 class Solution
 {
@@ -15,80 +17,67 @@ class Solution
 
         Map<Character, Set<Character>> eq = new HashMap<>();
 
-        for (int i = 0; i < equations.length; i++)
+        Map<Character, List<String>> ops = Arrays.stream(equations).collect(Collectors.groupingBy(el -> el.charAt(1)));
+
+        List<String> eqStr = ops.get('=');
+        List<String> neqStr = ops.get('!');
+
+        for (int i = 0; i < eqStr.size(); i++)
         {
+            char left = eqStr.get(i).charAt(0);
+            char right = eqStr.get(i).charAt(3);
 
-            char left = equations[i].charAt(0);
-            char op = equations[i].charAt(1);
-
-            char right = equations[i].charAt(3);
-
-
-            if (op == '=')
-            {
-                enrich(eq, left, right);
-                enrich(eq, right, left);
-
-                enrichTransitive(eq, left, right);
-                enrichTransitive(eq, right, left);
-            }
-            else if (op == '!')
-            {
-                if (left == right)
-                {
-                    return false;
-                }
-
-                if (eq.get(left) != null && eq.get(left).stream().anyMatch(el -> el == right))
-                {
-                    return false;
-                }
-            }
+            enrich(eq, left, right);
+            enrich(eq, right, left);
         }
+
+        Map<Character, Set<Character>> merge = new HashMap<>();
+
+        eq.entrySet().forEach( (v) -> {
+            Set<Character> value = v.getValue();
+            for(char c1 : value)
+            {
+                for(char c2 : value)
+                {
+                    enrich(merge, c1, c2);
+                }
+            }
+        });
+
+        eq.putAll(merge);
+
+        for (int i = 0; i < neqStr.size(); i++)
+        {
+            char left = neqStr.get(i).charAt(0);
+            char right = neqStr.get(i).charAt(3);
+
+            if (left == right)
+            {
+                return false;
+            }
+
+            if (checkEquality(eq, left, right))
+            {
+                return false;
+            }
+            if (checkEquality(eq, right, left))
+            {
+                return false;
+            }
+
+        }
+
 
         return true;
     }
 
-    private static void enrichTransitive(Map<Character, Set<Character>> eq, char left, char right)
+    private static boolean checkEquality(Map<Character, Set<Character>> eq, char left, char right)
     {
-        eq.computeIfPresent(left, (k, v) -> {
-            for (char c : v)
-            {
-                enrich(eq, c, right);
-                enrich(eq, right, c);
-            }
-
-            return v;
-        });
-
-        Map<Character, Character> merge = new HashMap<>();
-
-        eq.computeIfPresent(left, (k1, v1) -> {
-            eq.computeIfPresent(right, (k2, v2) -> {
-                for(char v1c: v1)
-                {
-                    for(char v2c : v2)
-                    {
-                        merge.put(v1c, v2c);
-                        merge.put(v2c, v1c);
-                    }
-                }
-
-                return v2;
-            });
-            return v1;
-        });
-
-        merge.forEach((k,v) ->
-                      {
-                          eq.computeIfPresent(k, (k1,v1) -> {
-                              v1.add(v);
-                              return v1;
-                          });
-                      }
-        );
-
-
+        if (eq.get(left) != null && eq.get(left).stream().anyMatch(el -> el == right))
+        {
+            return true;
+        }
+        return false;
     }
 
     private static void enrich(Map<Character, Set<Character>> eq, char left, char right)
