@@ -2,7 +2,6 @@ package heap.b860;
 
 import org.junit.jupiter.api.Test;
 
-
 class BasicNotificationTest
 {
     static Object lock = new Object();

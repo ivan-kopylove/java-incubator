@@ -7,7 +7,6 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 
-
 class LiveLockExampleTest
 {
     private final Lock lock1 = new ReentrantLock(true);

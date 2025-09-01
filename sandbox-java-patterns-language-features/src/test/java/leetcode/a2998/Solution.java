@@ -2,9 +2,10 @@ package leetcode.a2998;
 
 import java.util.Arrays;
 
-///  @see <a href="https://ivan-kopylove.github.io/leetcode/3a54">garden</a>
-///  @see <a href="https://github.com/search?q=user%3Aivan-kopylove+2998">github</a>
-///  @see <a href="obsidian://search?query=leetcode 2998">obsidian</a>
+/// @see <a href="https://www.google.com/search?q=leetcode 2998">task</a>
+/// @see <a href="https://ivan-kopylove.github.io/leetcode/3a54">garden</a>
+/// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+2998">github</a>
+/// @see <a href="obsidian://search?query=leetcode 2998">obsidian</a>
 class Solution
 {
     public int minimumOperationsToMakeEqual(int x, int y)
@@ -27,7 +28,7 @@ class Solution
         {
             result = Math.min(result, 1 + dfs(x / 11, y, 0, dp));
         }
-        else if(shift >= 0 && shift < 5)
+        else if (shift >= 0 && shift < 5)
         {
             result = Math.min(result, 1 + dfs(x + 1, y, shift + 1, dp));
         }
@@ -36,12 +37,12 @@ class Solution
         {
             result = Math.min(result, 1 + dfs(x / 5, y, 0, dp));
         }
-        else if(shift >= 0 && shift < 4)
+        else if (shift >= 0 && shift < 4)
         {
             result = Math.min(result, 1 + dfs(x + 1, y, shift + 1, dp));
         }
 
-         if (shift > -5 && shift <= 0)
+        if (shift > -5 && shift <= 0)
         {
             result = Math.min(result, 1 + dfs(x - 1, y, shift - 1, dp));
         }
