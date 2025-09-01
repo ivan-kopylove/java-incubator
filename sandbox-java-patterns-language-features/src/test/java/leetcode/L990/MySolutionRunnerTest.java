@@ -20,7 +20,7 @@ class MySolutionRunnerTest
     void should_calculate_minimum(String[] s, boolean expected)
     {
         // given
-        Solution sut = new Solution();
+        SolutionFailed3 sut = new SolutionFailed3();
 
         // when
         boolean result = sut.equationsPossible(s);
