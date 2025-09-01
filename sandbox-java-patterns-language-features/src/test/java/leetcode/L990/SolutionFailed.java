@@ -6,7 +6,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-class Solution
+/// 179 / 181 testcases passed
+class SolutionFailed
 {
     public boolean equationsPossible(String[] equations)
     {

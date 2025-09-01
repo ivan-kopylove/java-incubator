@@ -2,7 +2,6 @@ package leetcode.L990;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
@@ -21,7 +20,7 @@ class MySolutionRunnerTest
     void should_calculate_minimum(String[] s, boolean expected)
     {
         // given
-        Solution sut = new Solution();
+        SolutionFailed sut = new SolutionFailed();
 
         // when
         boolean result = sut.equationsPossible(s);
