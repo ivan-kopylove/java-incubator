@@ -1,9 +1,9 @@
 package leetcode.a2222;
 
 /**
- * @see <a href="https://leetcode.com/problems/number-of-ways-to-select-buildings/submissions/1755549166/">submission</a>
  * @see <a href="https://ivan-kopylove.github.io/leetcode/8b49">garden</a>
  * @see <a href="https://github.com/search?q=user%3Aivan-kopylove+2222">github</a>
+ * @see <a href="https://leetcode.com/problems/number-of-ways-to-select-buildings/submissions/1755549166/">submission</a>
  * @see <a href="obsidian://search?query=leetcode 2222">obsidian</a>
  */
 class SolutionStackoverflow
