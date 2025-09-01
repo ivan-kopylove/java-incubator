@@ -6,6 +6,9 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+/// @see <a href="https://ivan-kopylove.github.io/leetcode/8b49">garden</a>
+/// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+2222">github</a>
+/// @see <a href="obsidian://search?query=leetcode 2222">obsidian</a>
 class MySolutionRunnerTest
 {
     @ParameterizedTest
