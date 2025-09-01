@@ -1,4 +1,4 @@
-package leetcode.a11;
+package leetcode.L11;
 
 /// @see <a href="https://www.google.com/search?q=leetcode 11">problem definition</a>
 /// @see <a href="https://ivan-kopylove.github.io/leetcode/6b0b">garden</a>
