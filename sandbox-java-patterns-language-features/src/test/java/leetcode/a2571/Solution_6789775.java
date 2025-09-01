@@ -15,7 +15,7 @@ class Solution_6789775
     @Test
     public void foo()
     {
-        new MyFailedSolution().minOperations(33);
+        new Solution().minOperations(33);
     }
 
     class Solution

@@ -25,13 +25,13 @@ class SolutionStackoverflow
 
         int counter = 0;
         char currentChar = s.charAt(i);
-        if (current.length() == 0)
+        if (current.isEmpty())
         {
             current.append(currentChar);
             counter += dfs(current, i + 1, s);
             current.deleteCharAt(current.length() - 1);
         }
-        else if (current.length() > 0)
+        else
         {
             if (current.charAt(current.length() - 1) == '1' && currentChar == '0')
             {
