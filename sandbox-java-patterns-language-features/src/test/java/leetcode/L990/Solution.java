@@ -14,7 +14,6 @@ class Solution
         Arrays.sort(equations, (a, b) -> b.charAt(1) - a.charAt(1));
 
         Map<Character, Set<Character>> eq = new HashMap<>();
-        Map<Character, Set<Character>> neq = new HashMap<>();
 
         for (int i = 0; i < equations.length; i++)
         {
