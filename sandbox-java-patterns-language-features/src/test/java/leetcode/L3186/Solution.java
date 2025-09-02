@@ -4,7 +4,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-/// [502 / 554 testcases passed](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/submissions/1756893038/?envType=problem-list-v2&envId=dynamic-programming)
 class Solution
 {
     public long maximumTotalDamage(int[] power)
