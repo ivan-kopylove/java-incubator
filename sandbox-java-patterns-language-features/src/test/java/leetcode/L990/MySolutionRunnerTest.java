@@ -4,10 +4,12 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import java.util.List;
 import java.util.stream.Stream;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
+import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 /// @see <a href="https://www.google.com/search?q=leetcode 990">problem definition</a>
 /// @see <a href="https://ivan-kopylove.github.io/leetcode/88a6">garden</a>
@@ -16,7 +18,7 @@ import static org.hamcrest.Matchers.equalTo;
 class MySolutionRunnerTest
 {
     @ParameterizedTest
-    @MethodSource("palindromeCombos")
+    @MethodSource("dataSet")
     void should_calculate_minimum(String[] s, boolean expected)
     {
         // given
@@ -29,15 +31,15 @@ class MySolutionRunnerTest
         assertThat(result, equalTo(expected));
     }
 
-    public static Stream<Arguments> palindromeCombos()
+    public static List<Arguments> dataSet()
     {
-        return Stream.of(
-                Arguments.of(new String[]{"a!=a"}, false),
-                Arguments.of(new String[]{"c==c","b==d","x!=z"}, true),
-                Arguments.of(new String[]{"a==b","b==c", "c!=a"}, false),
-                Arguments.of(new String[]{"b!=a","c==a"}, true),
-                Arguments.of(new String[]{"a==b","e==c","b==c","a!=e"}, false),
-                Arguments.of(new String[]{"a==z","a==b","b==c","c==d","b==y","c==x","d==w","g==h","h==i","i==j","a==g","j!=y"}, false)
+        return List.of(
+                arguments(new String[]{"a!=a"}, false),
+                arguments(new String[]{"c==c","b==d","x!=z"}, true),
+                arguments(new String[]{"a==b","b==c", "c!=a"}, false),
+                arguments(new String[]{"b!=a","c==a"}, true),
+                arguments(new String[]{"a==b","e==c","b==c","a!=e"}, false),
+                arguments(new String[]{"a==z","a==b","b==c","c==d","b==y","c==x","d==w","g==h","h==i","i==j","a==g","j!=y"}, false)
 
         );
     }
