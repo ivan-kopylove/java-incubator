@@ -35,12 +35,10 @@ class SolutionFailed1
             used.remove((Integer) 7);
         }
 
-
         if (!used.contains(value))
         {
             max = Math.max(max, dfs(currentSum, i + 1, power, used));
         }
-
 
         return max;
     }
