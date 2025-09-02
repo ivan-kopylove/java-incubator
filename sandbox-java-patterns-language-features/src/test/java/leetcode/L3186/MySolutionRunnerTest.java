@@ -30,7 +30,7 @@ class MySolutionRunnerTest
         assertThat(result, equalTo(expected));
     }
 
-    public static List<Arguments> dataSet()
+    private static List<Arguments> dataSet()
     {
         return List.of(//
                        arguments(new int[]{7, 1, 6, 3}, 10), //
