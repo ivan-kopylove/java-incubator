@@ -21,8 +21,6 @@ class SolutionFailed2TLE
 
         int max = 0;
 
-        max = Math.max(max, dfs(currentSum, i + 1, power, used));
-
         if (used.contains(value - 1) || //
             used.contains(value - 2) || //
             used.contains(value + 1) || //
