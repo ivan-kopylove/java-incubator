@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
+/// [502 / 554 testcases passed](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/submissions/1756893038/?envType=problem-list-v2&envId=dynamic-programming)
 class Solution
 {
     public long maximumTotalDamage(int[] power)
@@ -21,6 +22,8 @@ class Solution
 
         int max = 0;
 
+        max = Math.max(max, dfs(currentSum, i + 1, power, used));
+
         if (used.contains(value - 1) || //
             used.contains(value - 2) || //
             used.contains(value + 1) || //
@@ -32,15 +35,13 @@ class Solution
         {
             used.add(value);
             max = Math.max(max, dfs(currentSum + value, i + 1, power, used));
-            used.remove((Integer) 7);
+            used.remove((Integer) value);
         }
-
 
         if (!used.contains(value))
         {
             max = Math.max(max, dfs(currentSum, i + 1, power, used));
         }
-
 
         return max;
     }
