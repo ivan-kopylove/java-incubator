@@ -4,10 +4,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import java.util.stream.Stream;
+import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
+import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 /// @see <a href="https://www.google.com/search?q=leetcode 3186">problem definition</a>
 /// @see <a href="https://ivan-kopylove.github.io/leetcode/XXXXXXXXXXXX">garden</a>
@@ -16,7 +17,7 @@ import static org.hamcrest.Matchers.equalTo;
 class MySolutionRunnerTest
 {
     @ParameterizedTest
-    @MethodSource("palindromeCombos")
+    @MethodSource("dataSet")
     void should_calculate_minimum(int[] input, long expected)
     {
         // given
@@ -29,11 +30,12 @@ class MySolutionRunnerTest
         assertThat(result, equalTo(expected));
     }
 
-    public static Stream<Arguments> palindromeCombos()
+    public static List<Arguments> dataSet()
     {
-        return Stream.of(//
-                         Arguments.of(new int[]{7, 1, 6, 6}, 13), //
-                         Arguments.of(new int[]{1, 1, 3, 4}, 6) //
+        return List.of(//
+                       arguments(new int[]{7, 1, 6, 3}, 10), //
+                       arguments(new int[]{7, 1, 6, 6}, 13), //
+                       arguments(new int[]{1, 1, 3, 4}, 6) //
         );
     }
 }
