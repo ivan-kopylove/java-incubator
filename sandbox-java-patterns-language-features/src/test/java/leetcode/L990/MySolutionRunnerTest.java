@@ -31,7 +31,7 @@ class MySolutionRunnerTest
         assertThat(result, equalTo(expected));
     }
 
-    private static List<Arguments> dataSet()
+    public static List<Arguments> dataSet()
     {
         return List.of(
                 arguments(new String[]{"a!=a"}, false),
