@@ -5,11 +5,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 /// @see <a href="https://leetcode.com/problems/different-ways-to-add-parentheses/solutions/6634483/master-expression-evaluation-unlock-all-possible-results-from-a-math-string/">peeked at solution</a>
-/// @see <a href="https://google.com/search?q=leetcode 241">problem definition</a>
+/// @see <a href="https://google.com/search?q=leetcode%20241">problem definition</a>
 /// @see <a href="https://ivan-kopylove.github.io/leetcode/190b">garden</a>
 /// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+241">github</a>
 /// @see <a href="https://leetcode.com/problems/different-ways-to-add-parentheses/submissions/1764655146/">my submission</a>
-/// @see <a href="obsidian://search?query=leetcode 241">obsidian</a>
+/// @see <a href="obsidian://search?query=leetcode%20241">obsidian</a>
 class PeekedAtSolution6634483
 {
     public List<Integer> diffWaysToCompute(String expression)
