@@ -22,7 +22,9 @@ class Solution
 
         Map<Character, Set<Character>> eq = new HashMap<>();
 
-        Map<Character, List<String>> ops = Arrays.stream(equations).collect(Collectors.groupingBy(el -> el.charAt(1)));
+        Map<Character, List<String>> ops = Arrays
+                .stream(equations)
+                .collect(Collectors.groupingBy(el -> el.charAt(1)));
 
         List<String> eqStr = ops.get('=');
         List<String> neqStr = ops.get('!');
