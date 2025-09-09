@@ -12,7 +12,7 @@ import java.util.Map;
 /// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+241">github</a>
 /// @see <a href="https://leetcode.com/problems/different-ways-to-add-parentheses/submissions/1764655146/">my submission</a>
 /// @see <a href="obsidian://search?query=leetcode 241">obsidian</a>
-class SolutionFailed
+class MySolutionFailed
 {
     public List<Integer> diffWaysToCompute(String expression) {
         
