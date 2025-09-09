@@ -7,11 +7,11 @@ import java.util.Map;
 
 /// 19 / 25 testcases passed
 ///
-/// @see <a href="https://www.google.com/search?q=leetcode 241">problem definition</a>
-/// @see <a href="https://ivan-kopylove.github.io/leetcode/XXXXXXXX">garden</a>
-/// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+241+container">github</a>
+/// @see <a href="https://google.com/search?q=leetcode 241">problem definition</a>
+/// @see <a href="https://ivan-kopylove.github.io/leetcode/190b">garden</a>
+/// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+241">github</a>
 /// @see <a href="https://leetcode.com/problems/different-ways-to-add-parentheses/submissions/1764655146/">my submission</a>
-/// @see <a href="obsidian://search?query=leetcode 241 container">obsidian</a>
+/// @see <a href="obsidian://search?query=leetcode 241">obsidian</a>
 class SolutionFailed
 {
     public List<Integer> diffWaysToCompute(String expression) {

@@ -2,7 +2,7 @@ package leetcode.L2998;
 
 import java.util.Arrays;
 
-/// @see <a href="https://www.google.com/search?q=leetcode 2998">problem definition</a>
+/// @see <a href="https://google.com/search?q=leetcode 2998">problem definition</a>
 /// @see <a href="https://ivan-kopylove.github.io/leetcode/3a54">garden</a>
 /// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+2998">github</a>
 /// @see <a href="obsidian://search?query=leetcode 2998">obsidian</a>
