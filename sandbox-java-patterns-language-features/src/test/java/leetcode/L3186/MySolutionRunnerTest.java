@@ -21,7 +21,7 @@ class MySolutionRunnerTest
     void should_calculate_minimum(int[] input, long expected)
     {
         // given
-        SolutionFailed2TLE sut = new SolutionFailed2TLE();
+        Solution sut = new Solution();
 
         // when
         long result = sut.maximumTotalDamage(input);
