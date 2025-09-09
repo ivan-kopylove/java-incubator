@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 class MyFailedSolution
 {
     @Test
-    public void foo()
+    public void should_calculate_result()
     {
         new MyFailedSolution().minOperations(33);
     }

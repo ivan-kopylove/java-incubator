@@ -14,7 +14,7 @@ class Solution_6789775
 {
 
     @Test
-    public void foo()
+    public void should_calculate_result()
     {
         new Solution().minOperations(33);
     }
