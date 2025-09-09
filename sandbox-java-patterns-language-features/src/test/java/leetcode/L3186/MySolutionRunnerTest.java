@@ -10,10 +10,10 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-/// @see <a href="https://google.com/search?q=leetcode 3186">problem definition</a>
-/// @see <a href="https://ivan-kopylove.github.io/leetcode/XXXXXXXXXXXX">garden</a>
-/// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+3186">github</a>
-/// @see <a href="obsidian://search?query=leetcode 3186">obsidian</a>
+/// - [problem definition](https://google.com/search?q=leetcode%203186)
+/// - [garden](https://ivan-kopylove.github.io/leetcode/XXXXXXXXXXXX)
+/// - [github](https://github.com/search?q=user%3Aivan-kopylove+3186)
+/// - [obsidian](obsidian://search?query=leetcode%203186)
 class MySolutionRunnerTest
 {
     @ParameterizedTest

@@ -1,10 +1,10 @@
 package leetcode.L11;
 
-/// @see <a href="https://google.com/search?q=leetcode 11">problem definition</a>
-/// @see <a href="https://ivan-kopylove.github.io/leetcode/6b0b">garden</a>
-/// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+11+container">github</a>
-/// @see <a href="https://leetcode.com/problems/container-with-most-water/submissions/449358581/">my submission</a>
-/// @see <a href="obsidian://search?query=leetcode 11 container">obsidian</a>
+/// - [problem definition](https://google.com/search?q=leetcode%2011)
+/// - [garden](https://ivan-kopylove.github.io/leetcode/6b0b)
+/// - [github](https://github.com/search?q=user%3Aivan-kopylove+11+container)
+/// - [my submission](https://leetcode.com/problems/container-with-most-water/submissions/449358581/)
+/// - [obsidian](obsidian://search?query=leetcode 11%20container)
 class Solution
 {
     public int maxArea(int[] height)

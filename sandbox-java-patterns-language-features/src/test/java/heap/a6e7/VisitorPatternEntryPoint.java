@@ -21,7 +21,7 @@ interface CarElementVisitor
     void visit(Wheel wheel);
 }
 
-/// @see <a href="https://en.wikipedia.org/wiki/Visitor_pattern">...</a>
+/// - [...](https://en.wikipedia.org/wiki/Visitor_pattern)
 class VisitorPatternEntryPoint
 {
     @Test

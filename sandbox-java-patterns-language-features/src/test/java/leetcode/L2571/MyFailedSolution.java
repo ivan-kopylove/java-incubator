@@ -2,11 +2,11 @@ package leetcode.L2571;
 
 import org.junit.jupiter.api.Test;
 
-/// @see <a href="https://google.com/search?q=leetcode 2571">problem definition</a>
-/// @see <a href="https://ivan-kopylove.github.io/leetcode/0c78">garden</a>
-/// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+2571">github</a>
-/// @see <a href="https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/description/">leetcode</a>
-/// @see <a href="obsidian://search?query=leetcode 2571">obsidian</a>
+/// - [problem definition](https://google.com/search?q=leetcode%202571)
+/// - [garden](https://ivan-kopylove.github.io/leetcode/0c78)
+/// - [github](https://github.com/search?q=user%3Aivan-kopylove+2571)
+/// - [leetcode](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/description/)
+/// - [obsidian](obsidian://search?query=leetcode%202571)
 class MyFailedSolution
 {
     @Test

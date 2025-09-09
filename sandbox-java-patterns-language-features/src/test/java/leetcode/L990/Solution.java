@@ -10,11 +10,11 @@ import java.util.stream.Collectors;
 
 /// 181 / 181 testcases passed
 ///
-/// @see <a href="https://google.com/search?q=leetcode 990">problem definition</a>
-/// @see <a href="https://ivan-kopylove.github.io/leetcode/88a6">garden</a>
-/// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+990">github</a>
-/// @see <a href="https://leetcode.com/problems/satisfiability-of-equality-equations/submissions/1755893062/">my submission</a>
-/// @see <a href="obsidian://search?query=leetcode 990">obsidian</a>
+/// - [problem definition](https://google.com/search?q=leetcode%20990)
+/// - [garden](https://ivan-kopylove.github.io/leetcode/88a6)
+/// - [github](https://github.com/search?q=user%3Aivan-kopylove+990)
+/// - [my submission](https://leetcode.com/problems/satisfiability-of-equality-equations/submissions/1755893062/)
+/// - [obsidian](obsidian://search?query=leetcode%20990)
 class Solution
 {
     public boolean equationsPossible(String[] equations)

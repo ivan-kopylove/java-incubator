@@ -12,8 +12,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /// TreeMap sorts all its entries according to their natural ordering.
 /// Complexity: O(log(n))
 ///
-/// @see <a href="https://i.imgur.com/Uf622Ip.png">Big O typical growth rates</a>
-/// @see <a href="https://i.imgur.com/uyqWi6O.png">red-black tree</a>
+/// - [Big O typical growth rates](https://i.imgur.com/Uf622Ip.png)
+/// - [red-black tree](https://i.imgur.com/uyqWi6O.png)
 class TreeMapExampleTest
 {
     @Test

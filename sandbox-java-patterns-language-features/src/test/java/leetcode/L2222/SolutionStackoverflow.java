@@ -1,9 +1,9 @@
 package leetcode.L2222;
 
-/// @see <a href="https://ivan-kopylove.github.io/leetcode/8b49">garden</a>
-/// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+2222">github</a>
-/// @see <a href="https://leetcode.com/problems/number-of-ways-to-select-buildings/submissions/1755549166/">my submission</a>
-/// @see <a href="obsidian://search?query=leetcode 2222">obsidian</a>
+/// - [garden](https://ivan-kopylove.github.io/leetcode/8b49)
+/// - [github](https://github.com/search?q=user%3Aivan-kopylove+2222)
+/// - [my submission](https://leetcode.com/problems/number-of-ways-to-select-buildings/submissions/1755549166/)
+/// - [obsidian](obsidian://search?query=leetcode%202222)
 class SolutionStackoverflow
 {
     public long numberOfWays(String s)
