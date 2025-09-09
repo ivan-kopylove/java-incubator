@@ -8,7 +8,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-
+/// 181 / 181 testcases passed
+///
 /// @see <a href="https://google.com/search?q=leetcode 990">problem definition</a>
 /// @see <a href="https://ivan-kopylove.github.io/leetcode/88a6">garden</a>
 /// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+990">github</a>
@@ -18,13 +19,12 @@ class Solution
 {
     public boolean equationsPossible(String[] equations)
     {
-        Arrays.sort(equations, (a, b) -> b.charAt(1) - a.charAt(1)); // why it doesnt make sence to sort? left as demonstrational example to spot the mistake
+        Arrays.sort(equations,
+                    (a, b) -> b.charAt(1) - a.charAt(1)); // why it doesnt make sence to sort? left as demonstrational example to spot the mistake
 
         Map<Character, Set<Character>> eq = new HashMap<>();
 
-        Map<Character, List<String>> ops = Arrays
-                .stream(equations)
-                .collect(Collectors.groupingBy(el -> el.charAt(1)));
+        Map<Character, List<String>> ops = Arrays.stream(equations).collect(Collectors.groupingBy(el -> el.charAt(1)));
 
         List<String> eqStr = ops.get('=');
         List<String> neqStr = ops.get('!');
@@ -37,8 +37,6 @@ class Solution
 
         if (eqStr != null)
         {
-
-
             for (int i = 0; i < eqStr.size(); i++)
             {
                 char left = eqStr.get(i).charAt(0);
@@ -48,7 +46,6 @@ class Solution
                 enrich(eq, right, left);
             }
         }
-
 
         for (int i = 0; i < neqStr.size(); i++)
         {
