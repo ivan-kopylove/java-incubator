@@ -22,7 +22,7 @@ class MySolutionRunnerTest
     void should_calculate_minimum(String input, List<Integer> expected)
     {
         // given
-        Solution6634483 sut = new Solution6634483();
+        PeekedAtSolution6634483 sut = new PeekedAtSolution6634483();
 
         // when
         List<Integer> result = sut.diffWaysToCompute(input);

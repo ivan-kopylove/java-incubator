@@ -10,7 +10,7 @@ import java.util.List;
 /// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+241">github</a>
 /// @see <a href="https://leetcode.com/problems/different-ways-to-add-parentheses/submissions/1764655146/">my submission</a>
 /// @see <a href="obsidian://search?query=leetcode 241">obsidian</a>
-class Solution6634483
+class PeekedAtSolution6634483
 {
     public List<Integer> diffWaysToCompute(String expression)
     {
