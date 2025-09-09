@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-/// @see <a href="https://leetcode.com/problems/number-of-ways-to-select-buildings/solutions/3907842/easy-recursion-memoization/?envType=problem-list-v2&envId=dynamic-programming/">peeked at solution</a>
+/// @see <a href="https://leetcode.com/problems/different-ways-to-add-parentheses/solutions/6634483/master-expression-evaluation-unlock-all-possible-results-from-a-math-string/">peeked at solution</a>
 /// @see <a href="https://google.com/search?q=leetcode 241">problem definition</a>
 /// @see <a href="https://ivan-kopylove.github.io/leetcode/190b">garden</a>
 /// @see <a href="https://github.com/search?q=user%3Aivan-kopylove+241">github</a>
