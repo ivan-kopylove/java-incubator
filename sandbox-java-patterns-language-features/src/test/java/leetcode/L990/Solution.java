@@ -29,7 +29,6 @@ class Solution
         List<String> eqStr = ops.get('=');
         List<String> neqStr = ops.get('!');
 
-
         if (neqStr == null)
         {
             return true;
@@ -93,7 +92,6 @@ class Solution
                 return res;
             }
         }
-
 
         return true;
     }
