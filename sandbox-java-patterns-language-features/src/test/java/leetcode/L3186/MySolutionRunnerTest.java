@@ -18,7 +18,7 @@ class MySolutionRunnerTest
 {
     @ParameterizedTest
     @MethodSource("dataSet")
-    void should_calculate_minimum(int[] input, long expected)
+    void should_calculate_result(int[] input, long expected)
     {
         // given
         Solution sut = new Solution();

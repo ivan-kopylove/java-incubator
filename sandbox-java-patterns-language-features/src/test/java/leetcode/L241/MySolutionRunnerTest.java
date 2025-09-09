@@ -19,7 +19,7 @@ class MySolutionRunnerTest
 {
     @ParameterizedTest
     @MethodSource("dataSet")
-    void should_calculate_minimum(String input, List<Integer> expected)
+    void should_calculate_result(String input, List<Integer> expected)
     {
         // given
         PeekedAtSolution6634483 sut = new PeekedAtSolution6634483();
