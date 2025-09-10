@@ -2,9 +2,8 @@ package leetcode.L3186;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
 
-class Solution
+class MySolution
 {
     public long maximumTotalDamage(int[] power)
     {

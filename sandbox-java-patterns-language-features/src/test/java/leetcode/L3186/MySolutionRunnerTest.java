@@ -21,7 +21,7 @@ class MySolutionRunnerTest
     void should_calculate_result(int[] input, long expected)
     {
         // given
-        Solution sut = new Solution();
+        MySolution sut = new MySolution();
 
         // when
         long result = sut.maximumTotalDamage(input);
