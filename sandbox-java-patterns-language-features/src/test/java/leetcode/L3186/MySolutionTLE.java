@@ -3,7 +3,7 @@ package leetcode.L3186;
 import java.util.LinkedList;
 import java.util.List;
 
-///  [TLE](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/submissions/1756923231/)
+/// [TLE](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/submissions/1756923231/)
 ///
 /// - [problem definition](https://google.com/search?q=leetcode%203186)
 /// - [garden](https://ivan-kopylove.github.io/leetcode/b531)
