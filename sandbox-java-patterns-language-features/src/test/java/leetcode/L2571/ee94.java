@@ -7,7 +7,7 @@ class ee94
     /// - what will be printed?
     /// - what kind of number 32 is?
     /// - what if there were another number?
-    /// - what does & operator do?
+    /// - what does `&` operator do?
     @Test
     void what_is_the_point_of_this()
     {
