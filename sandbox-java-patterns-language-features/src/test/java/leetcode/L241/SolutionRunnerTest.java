@@ -14,7 +14,7 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 /// - [garden](https://ivan-kopylove.github.io/leetcode/e5eb)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+241)
 /// - [obsidian](obsidian://search?query=leetcode%20241)
-class MySolutionRunnerTest
+class SolutionRunnerTest
 {
     @ParameterizedTest
     @MethodSource("dataSet")
