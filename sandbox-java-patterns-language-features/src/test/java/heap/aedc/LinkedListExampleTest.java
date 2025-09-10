@@ -7,14 +7,6 @@ import java.util.LinkedList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/// The insertion, addition and removal operations of an item are faster in a LinkedList.
-/// Because there is no need to resize an array or update the index.
-/// Only references in surrounding elements will change.
-///
-/// - [https://www.baeldung.com/java-linkedlist](https://www.baeldung.com/java-linkedlist)
-/// - [https://stackoverflow.com/questions/393556/when-to-use-a-linked-list-over-an-array-array-list](https://stackoverflow.com/questions/393556/when-to-use-a-linked-list-over-an-array-array-list)
-/// - [https://imgur.com/a/gmQVtBb](https://imgur.com/a/gmQVtBb)
-/// - [https://imgur.com/a/0QEAN8O](https://imgur.com/a/0QEAN8O)
 class LinkedListExampleTest
 {
     @Test
