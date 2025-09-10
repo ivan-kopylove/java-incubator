@@ -5,7 +5,6 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.List;
-import java.util.stream.Stream;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -22,7 +21,7 @@ class MySolutionRunnerTest
     void should_calculate_result(String[] s, boolean expected)
     {
         // given
-        Solution sut = new Solution();
+        MySolution sut = new MySolution();
 
         // when
         boolean result = sut.equationsPossible(s);
