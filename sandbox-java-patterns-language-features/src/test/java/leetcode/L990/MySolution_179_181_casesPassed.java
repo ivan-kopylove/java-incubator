@@ -12,7 +12,7 @@ import java.util.Set;
 /// - [garden](https://ivan-kopylove.github.io/leetcode/88a6)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+990)
 /// - [obsidian](obsidian://search?query=leetcode%20990)
-class SolutionFailed1
+class MySolution_179_181_casesPassed
 {
     public boolean equationsPossible(String[] equations)
     {
