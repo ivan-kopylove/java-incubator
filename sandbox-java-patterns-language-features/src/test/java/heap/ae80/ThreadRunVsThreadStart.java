@@ -20,7 +20,7 @@ class ThreadRunVsThreadStart
             }
         };
 
-        thread.start(); //executes all required mechanisms to run a new thread.
+        thread.start(); // executes all the required mechanisms to run a new thread.
     }
 
     @Test
@@ -36,6 +36,6 @@ class ThreadRunVsThreadStart
             }
         };
 
-        thread.run(); //just runs overridden method.
+        thread.run(); // just runs the overridden method.
     }
 }
