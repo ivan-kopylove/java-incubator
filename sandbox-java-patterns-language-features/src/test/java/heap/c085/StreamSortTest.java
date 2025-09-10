@@ -1,5 +1,6 @@
 package heap.c085;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -10,9 +11,8 @@ import java.util.List;
 
 class StreamSortTest
 {
-    /// First it sorts by what then by what?
-    @Test
-    void nullSafeChainedLambdaComparator()
+    @DisplayName("what is the purpose of this example?")
+    void what_is_the_purpose_of_this_example() throws InterruptedException
     {
         List<ComparableObject> list = createObjectsWithNulls();
         list.sort(Comparator.nullsLast(Comparator.comparing(ComparableObject::getDate))
