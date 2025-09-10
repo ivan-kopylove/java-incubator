@@ -1,7 +1,5 @@
 package heap.cea2;
 
-import org.hamcrest.CoreMatchers;
-import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -17,7 +15,7 @@ import java.nio.file.Paths;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-class TestTest
+class CutAudiofileTest
 {
 
     @Test
@@ -27,7 +25,7 @@ class TestTest
         // given
 
         // when
-        TestTest test = new TestTest();
+        CutAudiofileTest test = new CutAudiofileTest();
         String sourceFileName = "c:\\1\\temp\\src.wav";
         String finalized = "c:\\1\\temp\\src-finalized.wav";
 
