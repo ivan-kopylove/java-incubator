@@ -14,7 +14,7 @@ class SolutionTest
 {
     // @formatter:off
     @ParameterizedTest
-    @CsvSource({ //
+    @CsvSource({
                  "33,25,8",
                  "9994,1111,208",
                  "9996,909,4", "329,57,11",

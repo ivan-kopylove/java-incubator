@@ -32,6 +32,7 @@ class SolutionTest
 
     private static List<Arguments> dataSet()
     {
+        // @formatter:off
         return List.of(
                 arguments(new String[]{"a!=a"}, false),
                 arguments(new String[]{"c==c","b==d","x!=z"}, true),
@@ -39,6 +40,7 @@ class SolutionTest
                 arguments(new String[]{"b!=a","c==a"}, true),
                 arguments(new String[]{"a==b","e==c","b==c","a!=e"}, false),
                 arguments(new String[]{"a==z","a==b","b==c","c==d","b==y","c==x","d==w","g==h","h==i","i==j","a==g","j!=y"}, false)
+        // @formatter:on
 
         );
     }
