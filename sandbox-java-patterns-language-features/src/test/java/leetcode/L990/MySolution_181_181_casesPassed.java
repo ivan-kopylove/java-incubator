@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+990)
 /// - [my submission](https://leetcode.com/problems/satisfiability-of-equality-equations/submissions/1755893062/)
 /// - [obsidian](obsidian://search?query=leetcode%20990)
-class MySolution
+class MySolution_181_181_casesPassed
 {
     public boolean equationsPossible(String[] equations)
     {

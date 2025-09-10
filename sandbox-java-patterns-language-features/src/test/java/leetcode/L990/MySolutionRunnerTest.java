@@ -21,7 +21,7 @@ class MySolutionRunnerTest
     void should_calculate_result(String[] s, boolean expected)
     {
         // given
-        MySolution sut = new MySolution();
+        MySolution_181_181_casesPassed sut = new MySolution_181_181_casesPassed();
 
         // when
         boolean result = sut.equationsPossible(s);
