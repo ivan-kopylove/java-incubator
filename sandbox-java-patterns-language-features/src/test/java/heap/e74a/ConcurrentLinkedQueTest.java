@@ -5,9 +5,11 @@ import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.Executors;
 import java.util.stream.IntStream;
 
-import static java.util.concurrent.Executors.newFixedThreadPool;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 class ConcurrentLinkedQueTest
 {
@@ -16,7 +18,7 @@ class ConcurrentLinkedQueTest
     {
         // given
         var result = new ConcurrentLinkedQueue<String>();
-        var threadPool = newFixedThreadPool(200);
+        var threadPool = Executors.newFixedThreadPool(200);
 
         // when
         IntStream.range(0, 10_000).forEach((value) -> {
@@ -27,6 +29,6 @@ class ConcurrentLinkedQueTest
 
         // then
         Thread.sleep(10_000);
-        MatcherAssert.assertThat(result.size(), CoreMatchers.equalTo(10_000));
+        assertThat(result.size(), equalTo(10_000));
     }
 }
