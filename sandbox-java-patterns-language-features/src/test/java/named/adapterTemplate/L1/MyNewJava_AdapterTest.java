@@ -1,8 +1,8 @@
-package named.adapter_template.L1;
+package named.adapterTemplate.L1;
 
-import named.adapter_template.L1.adapter.MyNewJava_Adapter;
-import named.adapter_template.L1.spi.MyNewJava_Spi;
-import named.adapter_template.L1.usecase.MyNewJava_UseCase;
+import named.adapterTemplate.L1.adapter.MyNewJava_Adapter;
+import named.adapterTemplate.L1.spi.MyNewJava_Spi;
+import named.adapterTemplate.L1.usecase.MyNewJava_UseCase;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

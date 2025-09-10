@@ -1,4 +1,4 @@
-package named.adapter_template.L1.spi;
+package named.adapterTemplate.L1.spi;
 
 @FunctionalInterface
 public interface MyNewJava_Spi
