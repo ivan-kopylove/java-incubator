@@ -12,7 +12,7 @@ import java.util.Map;
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+241)
 /// - [my submission](https://leetcode.com/problems/different-ways-to-add-parentheses/submissions/1764655146/)
 /// - [obsidian](obsidian://search?query=leetcode%20241)
-class MySolution_19_25_cases_passed
+class MySolution_19_25_casesPassed
 {
     public List<Integer> diffWaysToCompute(String expression) {
         
