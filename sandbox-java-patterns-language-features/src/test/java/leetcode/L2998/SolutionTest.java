@@ -17,7 +17,7 @@ class SolutionTest
     void should_calculate_result(int x, int y, int expected)
     {
         // given
-        Solution sut = new Solution();
+        MySolution sut = new MySolution();
 
         // when
         int result = sut.minimumOperationsToMakeEqual(x, y);

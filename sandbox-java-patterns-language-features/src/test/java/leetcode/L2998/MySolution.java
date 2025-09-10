@@ -6,7 +6,7 @@ import java.util.Arrays;
 /// - [garden](https://ivan-kopylove.github.io/leetcode/3a54)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+2998)
 /// - [obsidian](obsidian://search?query=leetcode%202998)
-class Solution
+class MySolution
 {
     public int minimumOperationsToMakeEqual(int x, int y)
     {
