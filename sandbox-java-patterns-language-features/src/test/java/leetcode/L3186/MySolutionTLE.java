@@ -3,7 +3,7 @@ package leetcode.L3186;
 import java.util.LinkedList;
 import java.util.List;
 
-class MySolution
+class MySolutionTLE
 {
     public long maximumTotalDamage(int[] power)
     {
