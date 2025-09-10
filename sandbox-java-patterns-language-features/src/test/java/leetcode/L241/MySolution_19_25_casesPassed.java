@@ -5,12 +5,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-/// 19 / 25 testcases passed
+/// - [19 / 25 testcases passed](https://leetcode.com/problems/different-ways-to-add-parentheses/submissions/1764655146/)
 ///
 /// - [problem definition](https://google.com/search?q=leetcode%20241)
 /// - [garden](https://ivan-kopylove.github.io/leetcode/190b)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+241)
-/// - [my submission](https://leetcode.com/problems/different-ways-to-add-parentheses/submissions/1764655146/)
 /// - [obsidian](obsidian://search?query=leetcode%20241)
 class MySolution_19_25_casesPassed
 {
