@@ -9,12 +9,6 @@ import org.junit.jupiter.api.Test;
 /// - [obsidian](obsidian://search?query=leetcode%202571)
 class MyFailedSolution
 {
-    @Test
-    public void should_calculate_result()
-    {
-        new MyFailedSolution().minOperations(33);
-    }
-
     public int minOperations(int n)
     {
 

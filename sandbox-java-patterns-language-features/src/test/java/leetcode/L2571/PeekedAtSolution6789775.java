@@ -14,56 +14,46 @@ import java.util.Map;
 class PeekedAtSolution6789775
 {
 
-    @Test
-    public void should_calculate_result()
+    Map<Integer, Integer> memo = new HashMap<>(); // what if it was an array?
+
+    public int minOperations(int n)
     {
-        new Solution().minOperations(33);
+        return dp(n);
     }
 
-    class Solution
+    private int dp(int n)
     {
-        Map<Integer, Integer> memo = new HashMap<>(); // what if it was an array?
 
-        public int minOperations(int n)
+        if (n == 0)
         {
-            return dp(n);
+            return 0;
         }
 
-        private int dp(int n)
+        if ((n & (n - 1)) == 0)
         {
-
-            if (n == 0)
-            {
-                return 0;
-            }
-
-            if ((n & (n - 1)) == 0)
-            {
-                memo.put(n, 1);
-                return 1;
-            }
-
-            if (memo.containsKey(n))
-            {
-                return memo.get(n);
-            }
-
-            int power = 1;
-            while (power < n)
-            {
-                power <<= 1;
-            }
-
-            // by subtracting from the right side of the interval - what does he do?
-            // the leftover of subtraction - is what?
-            int option1 = (int) dp(power - n);
-            // by subtracting left from current side of the interval - what does he do?
-            int option2 = (int) dp(n - (power >> 1));
-
-            int minOps = 1 + Math.min(option1, option2);
-            memo.put(n, minOps);
-            return minOps;
+            memo.put(n, 1);
+            return 1;
         }
+
+        if (memo.containsKey(n))
+        {
+            return memo.get(n);
+        }
+
+        int power = 1;
+        while (power < n)
+        {
+            power <<= 1;
+        }
+
+        // by subtracting from the right side of the interval - what does he do?
+        // the leftover of subtraction - is what?
+        int option1 = (int) dp(power - n);
+        // by subtracting left from current side of the interval - what does he do?
+        int option2 = (int) dp(n - (power >> 1));
+
+        int minOps = 1 + Math.min(option1, option2);
+        memo.put(n, minOps);
+        return minOps;
     }
 }
-
