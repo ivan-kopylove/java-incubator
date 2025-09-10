@@ -33,7 +33,6 @@ class SolutionTest
     private static List<Arguments> dataSet()
     {
         return List.of(//
-
                        arguments(new int[]{7, 1, 6, 3}, 10), //
                        arguments(new int[]{7, 1, 6, 6}, 13), //
                        arguments(new int[]{1, 1, 3, 4}, 6), //
