@@ -8,7 +8,7 @@ import java.util.Set;
 
 
 //180 / 181 testcases passed
-class MySolutionFailed_180_181_cases_passed
+class MySolution_180_181_cases_passed
 {
     public boolean equationsPossible(String[] equations)
     {
