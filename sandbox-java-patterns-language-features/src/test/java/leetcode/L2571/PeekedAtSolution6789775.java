@@ -10,7 +10,7 @@ import java.util.Map;
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+2571)
 /// - [peeked at solution](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/solutions/6789775/beats-100-java-0ms-dp-solution/)
 /// - [obsidian](obsidian://search?query=leetcode%202571)
-class Solution_6789775
+class PeekedAtSolution6789775
 {
 
     @Test

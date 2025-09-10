@@ -17,7 +17,7 @@ class MySolutionRunnerTest
     void should_calculate_result(String s, long expected)
     {
         // given
-        Solution3907842 sut = new Solution3907842();
+        PeekedAtSolution3907842 sut = new PeekedAtSolution3907842();
 
         // when
         long result = sut.numberOfWays(s);
