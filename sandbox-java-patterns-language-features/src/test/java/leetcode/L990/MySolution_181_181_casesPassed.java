@@ -19,8 +19,8 @@ class MySolution_181_181_casesPassed
 {
     public boolean equationsPossible(String[] equations)
     {
-        Arrays.sort(equations,
-                    (a, b) -> b.charAt(1) - a.charAt(1)); // why it doesnt make sence to sort? left as demonstrational example to spot the mistake
+        // why it doesnt make sence to sort? left as demonstrational example to spot the mistake
+        Arrays.sort(equations, (a, b) -> b.charAt(1) - a.charAt(1));
 
         Map<Character, Set<Character>> eq = new HashMap<>();
 
