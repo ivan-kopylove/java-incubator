@@ -8,6 +8,8 @@ import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.stream.IntStream;
 
 import static java.util.concurrent.Executors.newFixedThreadPool;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 class ConcurrentLinkedDequeTest
 {
@@ -27,6 +29,6 @@ class ConcurrentLinkedDequeTest
 
         Thread.sleep(10_000);
         // then
-        MatcherAssert.assertThat(deque.size(), CoreMatchers.equalTo(10_000));
+        assertThat(deque.size(), equalTo(10_000));
     }
 }
