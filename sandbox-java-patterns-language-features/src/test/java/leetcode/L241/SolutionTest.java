@@ -34,8 +34,9 @@ class SolutionTest
     {
         // @formatter:off
         return List.of(
-                       arguments("21-51-18-25", List.of(60, 60)),
-                       arguments("15*1*4", List.of(60, 60))
+                       arguments("21-51-18-25-21-51-18-25-100+50+51", List.of(60, 60))
+//                       arguments("21-51-18-25", List.of(60, 60))
+//                       arguments("15*1*4", List.of(60, 60))
        // @formatter:on
 
         );
