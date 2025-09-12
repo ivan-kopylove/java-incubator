@@ -6,6 +6,7 @@ import java.util.stream.IntStream;
 
 public class WhatWillBePrinteddc5e
 {
+    // what word describes this effect? (the word is also used in Hibernate, Singletons, method references)?
     @Test
     void what_will_be_printed_and_why()
     {
