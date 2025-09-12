@@ -27,14 +27,14 @@ class Reducer
     }
 
     @Test
-    void run2()
+    void will_it_be_called_for_single_element()
     {
         Optional<Integer> reduced = Stream.of(1).reduce(new BinaryOperator<Integer>()
         {
             @Override
             public Integer apply(Integer previous, Integer current)
             {
-                System.out.println("Called"); //not called for one element
+                System.out.println("Called"); // will it be called?
                 return current > previous ? current : previous;
             }
         });
