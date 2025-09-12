@@ -1,14 +1,10 @@
 package heap.dc5e;
 
-import org.hamcrest.CoreMatchers;
-import org.hamcrest.MatcherAssert;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 import java.util.stream.IntStream;
 
-public class asd
+public class WhatWillBePrinteddc5e
 {
     @Test
     void what_will_be_printed()
