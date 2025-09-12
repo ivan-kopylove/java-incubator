@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 public class WhatWillBePrinteddc5e
 {
     @Test
-    void what_will_be_printed()
+    void what_will_be_printed_and_why()
     {
         // then
         IntStream.range(1, 4)
