@@ -39,7 +39,7 @@ public class VisibilityTest {
         writerThread.start();
 
         writerThread.join();
-        readerThread.join(2000); // Wait with what?
+        readerThread.join(2000); // why should I provide 2000?
 
 
         assertFalse(readerThread.isAlive(), "Reader thread is stuck - visibility issue!");
