@@ -15,8 +15,6 @@ class VisibilityExample {
     public boolean getFlag() {
         return flag;
     }
-
-    /// What is the potential issue when multiple threads access flag without volatile?
 }
 
 public class VisibilityTest {
