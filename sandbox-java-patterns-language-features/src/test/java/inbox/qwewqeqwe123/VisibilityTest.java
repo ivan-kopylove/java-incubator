@@ -6,14 +6,14 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
 class VisibilityExample {
-    private boolean flag = false; // Line C: Try with and without volatile
+    private boolean flag = false;
 
     public void toggleFlag() {
-        flag = true; // Line D
+        flag = true;
     }
 
     public boolean getFlag() {
-        return flag; // Line E
+        return flag;
     }
 
     /// What is the potential issue when multiple threads access flag without volatile?
