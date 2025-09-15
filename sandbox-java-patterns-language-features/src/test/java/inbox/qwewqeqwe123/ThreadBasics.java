@@ -8,6 +8,7 @@ public class ThreadBasics {
      * 1. What will the output look like if we run this code?
      * 2. How many threads are executing here?
      * 3. Why does the output vary between runs?
+     * 4. Where the sequential execution and where is concurrent?
      */
     @Test
     void demonstrateSequentialVsConcurrent() throws InterruptedException {
