@@ -12,12 +12,10 @@ public class ThreadBasics {
      */
     @Test
     void demonstrateSequentialVsConcurrent() throws InterruptedException {
-        // Sequential execution
         System.out.println("Sequential start:");
         task("A");
         task("B");
         
-        // Concurrent execution
         System.out.println("Concurrent start:");
         Thread thread1 = new Thread(() -> task("C"));
         Thread thread2 = new Thread(() -> task("D"));
