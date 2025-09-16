@@ -23,13 +23,13 @@ public class WooHoo
         int max = 0;
         int current = 0;
 
-        while (line != null && !"".equals(line))
+        while (line != null && !"".equals(line)) // what is redundant here?
         {
             if ("1".equals(line))
             {
                 current++;
             }
-            else if ("0".equals(line))
+            else if ("0".equals(line)) // why did I put else if?
             {
                 max = Math.max(max, current);
                 current = 0;
