@@ -1,0 +1,43 @@
+package inbox.sda;
+
+import java.io.*;
+
+/// - [problem definition](https://www.google.com/search?q=yandex+contest+B.+Последовательно+идущие+единицы)
+/// - [garden](https://ivan-kopylove.github.io/leetcode/8d9e)
+/// - [obsidian](obsidian://search?query=Последовательно идущие единицы)
+public class WooHoo
+{
+    public static void main(String[] args) throws Exception
+    {
+        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+
+        String line = r.readLine();
+        if ("0".equals(line))
+        {
+            System.out.println("0");
+            return;
+        }
+        line = r.readLine();
+
+        int max = 0;
+        int current = 0;
+
+        while (line != null && !"".equals(line))
+        {
+            if ("1".equals(line))
+            {
+                current++;
+            }
+            else if ("0".equals(line))
+            {
+                max = Math.max(max, current);
+                current = 0;
+            }
+
+            line = r.readLine();
+        }
+
+        System.out.println(max);
+    }
+}
+
