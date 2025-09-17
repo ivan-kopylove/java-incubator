@@ -11,7 +11,7 @@ public class OutputStreamKoan30
     void what_will_be_printed() throws IOException
     {
         //given
-        byte[] chars = new byte[4];
+        byte[] chars = new byte[3];
 
         BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1);
 

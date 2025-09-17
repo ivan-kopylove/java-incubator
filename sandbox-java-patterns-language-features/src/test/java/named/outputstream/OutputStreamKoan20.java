@@ -11,7 +11,7 @@ public class OutputStreamKoan20
     @Test
     void what_will_be_printed_1() throws IOException
     {
-        byte[] chars = new byte[4];
+        byte[] chars = new byte[3];
         BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1); // why exactly +1?
 
         chars[0] = 'a';
@@ -23,7 +23,7 @@ public class OutputStreamKoan20
     @Test
     void what_will_be_printed_2() throws IOException
     {
-        byte[] chars = new byte[4];
+        byte[] chars = new byte[3];
         BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1);
 
         chars[0] = 'c';
