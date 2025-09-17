@@ -11,7 +11,7 @@ public class OutputStreamKoan10
     void example_1()
     {
         // given
-        char[] chars = new char[5];
+        char[] chars = new char[4];
 
         // when
         chars[0] = 'a';
