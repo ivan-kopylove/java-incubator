@@ -12,10 +12,11 @@ public class OutputStreamKoan20
     void what_will_be_printed_1() throws IOException
     {
         byte[] chars = new byte[3];
-        BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1); // why exactly +1?
 
-        chars[0] = 'a';
-        chars[1] = 'b';
+        BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1); // why plus one?
+
+        chars[0] = '(';
+        chars[1] = '(';
 
         output.write(chars);
     }
@@ -24,15 +25,12 @@ public class OutputStreamKoan20
     void what_will_be_printed_2() throws IOException
     {
         byte[] chars = new byte[3];
-        BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1);
+        BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length - 1); // why minus one?
 
-        chars[0] = 'c';
-        chars[1] = 'd';
+        chars[0] = '(';
+        chars[1] = '(';
 
         output.write(chars);
-        output.flush();
     }
-
-
 }
 

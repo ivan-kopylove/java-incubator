@@ -5,17 +5,29 @@ import org.junit.jupiter.api.Test;
 import java.io.BufferedOutputStream;
 import java.io.IOException;
 
+/// what does the example demonstrate?
 public class OutputStreamKoan50
 {
     @Test
-    void what_is_the_purpose_of_the_example() throws IOException
+    void what_will_be_printed() throws IOException
     {
-        BufferedOutputStream output = new BufferedOutputStream(System.out, 20);
+        // given
+        byte[] chars = new byte[3];
 
-        output.write(new byte[]{'a', 'b'}); // how this possible I can assign chars to byte array?
-//        output.write(new byte[]{128 }); // can I assign 128?
-//        output.write(new byte[]{'\n' }); // can I assign \n and why?
-//        output.write(new byte[]{'\uD83D' ); // can I assign an emoji? aka 📙
+        BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1);
+
+        chars[0] = 'c';
+        chars[1] = 'd';
+        chars[chars.length - 1] = '\n'; // in what situation this approach might be useful?
+
+        // then
+        output.write(chars);
+        output.flush();
+
+        chars[1] = 'e';
+
+        output.write(chars);
         output.flush();
     }
 }
+
