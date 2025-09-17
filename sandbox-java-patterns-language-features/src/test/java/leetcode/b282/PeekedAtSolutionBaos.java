@@ -5,7 +5,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class WooHooBufferedOutputStream
+public class PeekedAtSolutionBaos
 {
     private static int                  n   = 0;
     private static BufferedOutputStream out = new BufferedOutputStream(System.out, 64 * 1024);
