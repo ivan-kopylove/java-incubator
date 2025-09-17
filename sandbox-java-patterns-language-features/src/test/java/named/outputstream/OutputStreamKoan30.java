@@ -11,7 +11,7 @@ public class OutputStreamKoan30
 {
 
     @Test
-    void example_1() throws IOException
+    void what_will_be_printed() throws IOException
     {
         //given
         byte[] abc = new byte[5];
