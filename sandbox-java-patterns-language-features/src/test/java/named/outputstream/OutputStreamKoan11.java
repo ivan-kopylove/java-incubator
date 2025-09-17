@@ -17,7 +17,6 @@ public class OutputStreamKoan11
         // what if there is no buffer - what happens each println() without buffer?
         BufferedOutputStream output = new BufferedOutputStream(System.out, 20);
 
-
         output.write(new byte[]{'a', 'b'});
         output.flush();
     }
