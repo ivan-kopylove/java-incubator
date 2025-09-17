@@ -17,6 +17,11 @@ public class MySolution
 
         /// how can this be sanity-checked before running heavy calculations?
 
+        if(line1.length() != line2.length())
+        {
+            System.out.println(0);
+        }
+
         /// count each char and compare
         /// - length
         /// - start from 1
