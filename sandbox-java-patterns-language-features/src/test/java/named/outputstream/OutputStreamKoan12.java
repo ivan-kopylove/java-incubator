@@ -5,17 +5,32 @@ import org.junit.jupiter.api.Test;
 import java.io.BufferedOutputStream;
 import java.io.IOException;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-
+/// what do the 2 examples demonstrate?
 public class OutputStreamKoan12
 {
-    /// [1](https://google.com/search?q="наденем+буфер+в+64+килобайта%2C+он+не+имеет+своего+буфера")
     @Test
-    void what_is_the_purpose_of_the_example() throws IOException
+    void what_will_be_printed_1() throws IOException
     {
-        BufferedOutputStream output = new BufferedOutputStream(System.out, 20);
+        byte[] chars = new byte[3];
 
-        output.write(new byte[]{'a', 'b'});
-        output.flush();
+        BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1); // why plus one?
+
+        chars[0] = '(';
+        chars[1] = '(';
+
+        output.write(chars);
+    }
+
+    @Test
+    void what_will_be_printed_2() throws IOException
+    {
+        byte[] chars = new byte[3];
+        BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length - 1); // why minus one?
+
+        chars[0] = '(';
+        chars[1] = '(';
+
+        output.write(chars);
     }
 }
+
