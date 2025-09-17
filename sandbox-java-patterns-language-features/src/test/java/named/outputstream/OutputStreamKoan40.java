@@ -12,21 +12,21 @@ public class OutputStreamKoan40
     void what_will_be_printed() throws IOException
     {
         // given
-        byte[] abc = new byte[5];
+        byte[] chars = new byte[5];
 
-        BufferedOutputStream output = new BufferedOutputStream(System.out, abc.length + 1);
+        BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1);
 
-        abc[0] = 'c';
-        abc[1] = 'd';
-        abc[abc.length - 1] = '\n';
+        chars[0] = 'c';
+        chars[1] = 'd';
+        chars[chars.length - 1] = '\n';
 
         // then
-        output.write(abc);
+        output.write(chars);
         output.flush();
 
-        abc[1] = 'e';
+        chars[1] = 'e';
 
-        output.write(abc);
+        output.write(chars);
         output.flush();
     }
 }

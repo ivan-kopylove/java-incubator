@@ -11,26 +11,26 @@ public class OutputStreamKoan11
     @Test
     void what_will_be_printed_1() throws IOException
     {
-        byte[] abc = new byte[5];
+        byte[] chars = new byte[5];
 
-        BufferedOutputStream output = new BufferedOutputStream(System.out, abc.length + 1); // why plus one?
+        BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1); // why plus one?
 
-        abc[0] = '(';
-        abc[1] = '(';
+        chars[0] = '(';
+        chars[1] = '(';
 
-        output.write(abc);
+        output.write(chars);
     }
 
     @Test
     void what_will_be_printed_2() throws IOException
     {
-        byte[] abc = new byte[5];
-        BufferedOutputStream output = new BufferedOutputStream(System.out, abc.length - 1); // why minus one?
+        byte[] chars = new byte[5];
+        BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length - 1); // why minus one?
 
-        abc[0] = '(';
-        abc[1] = '(';
+        chars[0] = '(';
+        chars[1] = '(';
 
-        output.write(abc);
+        output.write(chars);
     }
 }
 

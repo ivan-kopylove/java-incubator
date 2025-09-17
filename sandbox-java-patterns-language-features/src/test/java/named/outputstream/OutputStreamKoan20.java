@@ -12,25 +12,25 @@ public class OutputStreamKoan20
     @Test
     void what_will_be_printed_1() throws IOException
     {
-        byte[] abc = new byte[5];
-        BufferedOutputStream output = new BufferedOutputStream(System.out, abc.length + 1); // why exactly +1?
+        byte[] chars = new byte[5];
+        BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1); // why exactly +1?
 
-        abc[0] = 'a';
-        abc[1] = 'b';
+        chars[0] = 'a';
+        chars[1] = 'b';
 
-        output.write(abc);
+        output.write(chars);
     }
 
     @Test
     void what_will_be_printed_2() throws IOException
     {
-        byte[] abc = new byte[5];
-        BufferedOutputStream output = new BufferedOutputStream(System.out, abc.length + 1);
+        byte[] chars = new byte[5];
+        BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1);
 
-        abc[0] = 'c';
-        abc[1] = 'd';
+        chars[0] = 'c';
+        chars[1] = 'd';
 
-        output.write(abc);
+        output.write(chars);
         output.flush();
     }
 
