@@ -7,7 +7,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class OutputStreamKoan10
 {
     @Test
-    void what_will_be_printed()
+    void example_1()
     {
         // given
         char[] chars = new char[5];
@@ -19,5 +19,18 @@ public class OutputStreamKoan10
 
         // then
         System.out.println(chars);
+    }
+
+    /// [1](https://google.com/search?q="наденем+буфер+в+64+килобайта%2C+он+не+имеет+своего+буфера")
+    @Test
+    void example_2()
+    {
+        // given
+        int result = 0;
+
+        // when
+
+        // then
+        System.out.println(result);
     }
 }
