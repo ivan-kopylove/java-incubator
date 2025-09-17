@@ -1,12 +1,11 @@
 package leetcode.a47b;
 
 import java.io.*;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class MySolution
+public class MySolution_168_testsPassed_MemoryLimit
 {
     public static void main(String[] args) throws Exception
     {
