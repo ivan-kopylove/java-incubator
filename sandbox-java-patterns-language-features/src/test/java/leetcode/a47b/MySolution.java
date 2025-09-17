@@ -20,6 +20,7 @@ public class MySolution
         if(line1.length() != line2.length())
         {
             System.out.println(0);
+            return;
         }
 
         /// count each char and compare
