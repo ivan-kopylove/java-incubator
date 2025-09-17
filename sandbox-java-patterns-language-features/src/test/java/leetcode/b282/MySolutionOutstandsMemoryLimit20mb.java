@@ -2,7 +2,7 @@ package leetcode.b282;
 
 import java.io.*;
 
-public class WooHooWorksWithMemoryLimit
+public class MySolutionOutstandsMemoryLimit20mb
 {
     public static void main(String[] args) throws Exception
     {
