@@ -1,4 +1,4 @@
-package inbox.qwewqeqwe123;
+package inbox.concurrency;
 
 import org.junit.jupiter.api.Test;
 
