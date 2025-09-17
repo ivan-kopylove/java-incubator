@@ -25,7 +25,7 @@ public class OutputStreamKoan20
     void what_will_be_printed_2() throws IOException
     {
         byte[] abc = new byte[5];
-        BufferedOutputStream output = new BufferedOutputStream(System.out, abc.length + 1); // why exactly +1?
+        BufferedOutputStream output = new BufferedOutputStream(System.out, abc.length + 1);
 
         abc[0] = 'c';
         abc[1] = 'd';

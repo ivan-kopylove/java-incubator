@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.io.BufferedOutputStream;
 import java.io.IOException;
 
-/// what does this example demonstrate?
-/// what will be printed?
+/// what does the example demonstrate?
 public class OutputStreamKoan40
 {
     @Test
