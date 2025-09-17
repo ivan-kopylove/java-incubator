@@ -9,7 +9,6 @@ import java.io.IOException;
 /// what will each example print?
 public class OutputStreamKoan30
 {
-
     @Test
     void what_will_be_printed() throws IOException
     {
