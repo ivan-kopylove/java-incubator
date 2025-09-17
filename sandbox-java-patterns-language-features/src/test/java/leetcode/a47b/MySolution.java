@@ -13,24 +13,20 @@ public class MySolution
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
 
         String line1 = r.readLine();
-    	String line2 = r.readLine();
-    
-    	/// check lengths of both
-    
+        String line2 = r.readLine();
 
-        
-    	/// count each char and compare
-    	/// - length
-    	/// - start from 1 
-    	/// - start from 2
+        /// how can this be sanity-checked before running heavy calculations?
 
-        Map<Integer, List<Integer>> line1map = line1.chars().mapToObj(val -> (Integer) val).collect(Collectors.groupingBy(val -> val ));
+        /// count each char and compare
+        /// - length
+        /// - start from 1
+        /// - start from 2
 
-    	
-//    	System.out.println(line1map.equals(line2map) ? 1 : 0);
-    
+        Map<Integer, List<Integer>> line1map = line1.chars().mapToObj(val -> (Integer) val).collect(Collectors.groupingBy(val -> val));
+        Map<Integer, List<Integer>> line2map = line2.chars().mapToObj(val -> (Integer) val).collect(Collectors.groupingBy(val -> val));
+
+
+        System.out.println(line1map.equals(line2map) ? 1 : 0);
     }
-
-
 }
 
