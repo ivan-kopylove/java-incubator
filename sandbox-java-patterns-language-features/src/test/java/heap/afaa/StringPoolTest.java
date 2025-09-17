@@ -12,7 +12,7 @@ class StringPoolTest
     void runExample()
     {
         // given
-        String a = "Duke"; // all compile-time constant goes into the string pool
+        String a = "Duke"; // all compile-time constant goes to a what place?
         String b = "Duke";
 
         // then
