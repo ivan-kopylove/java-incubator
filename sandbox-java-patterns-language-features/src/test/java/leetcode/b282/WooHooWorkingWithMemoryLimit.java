@@ -2,7 +2,7 @@ package leetcode.b282;
 
 import java.io.*;
 
-public class WooHoo
+public class WooHooWorkingWithMemoryLimit
 {
     public static void main(String[] args) throws Exception
     {
