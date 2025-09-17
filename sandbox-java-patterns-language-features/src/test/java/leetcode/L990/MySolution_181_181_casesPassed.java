@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 /// 181 / 181 testcases passed
 ///
-/// - [problem definition](https://google.com/search?q=leetcode%20990)
+/// - [searchable problem definition](https://google.com/search?q=leetcode%20990)
 /// - [garden](https://ivan-kopylove.github.io/leetcode/88a6)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+990)
 /// - [my submission](https://leetcode.com/problems/satisfiability-of-equality-equations/submissions/1755893062/)

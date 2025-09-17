@@ -5,6 +5,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/// [problem definition](https://contest.yandex.ru/contest/8458/problems/D/)
 public class PeekedAtSolutionBaos
 {
     private static int                  n   = 0;

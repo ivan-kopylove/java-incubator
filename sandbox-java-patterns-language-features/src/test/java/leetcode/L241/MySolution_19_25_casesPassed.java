@@ -7,7 +7,7 @@ import java.util.Map;
 
 /// - [19 / 25 testcases passed](https://leetcode.com/problems/different-ways-to-add-parentheses/submissions/1764655146/)
 ///
-/// - [problem definition](https://google.com/search?q=leetcode%20241)
+/// - [searchable problem definition](https://google.com/search?q=leetcode%20241)
 /// - [garden](https://ivan-kopylove.github.io/leetcode/190b)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+241)
 /// - [obsidian](obsidian://search?query=leetcode%20241)

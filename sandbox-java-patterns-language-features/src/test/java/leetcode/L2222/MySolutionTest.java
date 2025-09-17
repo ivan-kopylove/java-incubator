@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-/// - [problem definition](https://google.com/search?q=leetcode%202222)
+/// - [searchable problem definition](https://google.com/search?q=leetcode%202222)
 /// - [garden](https://ivan-kopylove.github.io/leetcode/8b49)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+2222)
 /// - [obsidian](obsidian://search?query=leetcode%202222)

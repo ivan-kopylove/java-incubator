@@ -10,7 +10,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-/// - [problem definition](https://google.com/search?q=leetcode%20990)
+/// - [searchable problem definition](https://google.com/search?q=leetcode%20990)
 /// - [garden](https://ivan-kopylove.github.io/leetcode/88a6)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+990)
 /// - [obsidian](obsidian://search?query=leetcode%20990)
