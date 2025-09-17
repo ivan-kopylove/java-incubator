@@ -7,7 +7,7 @@ import java.io.IOException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class OutputStreamKoan50
+public class OutputStreamKoan12
 {
     /// [1](https://google.com/search?q="наденем+буфер+в+64+килобайта%2C+он+не+имеет+своего+буфера")
     @Test

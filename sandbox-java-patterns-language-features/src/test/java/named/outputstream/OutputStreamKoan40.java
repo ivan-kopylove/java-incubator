@@ -18,7 +18,7 @@ public class OutputStreamKoan40
 
         chars[0] = 'c';
         chars[1] = 'd';
-        chars[chars.length - 1] = '\n';
+        chars[chars.length - 1] = '\n'; // in what situation this approach might be useful?
 
         // then
         output.write(chars);
