@@ -1,4 +1,4 @@
-package inbox.concurrency;
+package named.concurrency;
 
 import org.junit.jupiter.api.Test;
 
