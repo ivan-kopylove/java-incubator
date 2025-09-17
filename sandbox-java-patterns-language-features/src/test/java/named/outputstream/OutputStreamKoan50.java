@@ -13,7 +13,7 @@ public class OutputStreamKoan50
     @Test
     void what_is_the_purpose_of_the_example() throws IOException
     {
-        BufferedOutputStream output = new BufferedOutputStream(System.out, 20); // why plus one?
+        BufferedOutputStream output = new BufferedOutputStream(System.out, 20);
 
         output.write(new byte[]{'a', 'b'});
         output.flush();
