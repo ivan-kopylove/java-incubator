@@ -11,7 +11,7 @@ public class OutputStreamKoan50
 {
     /// [1](https://google.com/search?q="наденем+буфер+в+64+килобайта%2C+он+не+имеет+своего+буфера")
     @Test
-    void example_2() throws IOException
+    void what_is_the_purpose_of_the_example() throws IOException
     {
         BufferedOutputStream output = new BufferedOutputStream(System.out, 20); // why plus one?
 
