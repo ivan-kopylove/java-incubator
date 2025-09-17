@@ -12,7 +12,7 @@ public class OutputStreamKoan40
     void what_will_be_printed() throws IOException
     {
         // given
-        byte[] chars = new byte[5];
+        byte[] chars = new byte[4];
 
         BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1);
 

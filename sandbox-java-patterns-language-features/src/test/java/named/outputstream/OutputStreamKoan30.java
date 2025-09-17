@@ -5,15 +5,13 @@ import org.junit.jupiter.api.Test;
 import java.io.BufferedOutputStream;
 import java.io.IOException;
 
-/// what do the 2 examples demonstrate?
-/// what will each example print?
 public class OutputStreamKoan30
 {
     @Test
     void what_will_be_printed() throws IOException
     {
         //given
-        byte[] chars = new byte[5];
+        byte[] chars = new byte[4];
 
         BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1);
 

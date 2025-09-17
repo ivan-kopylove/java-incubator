@@ -6,13 +6,12 @@ import java.io.BufferedOutputStream;
 import java.io.IOException;
 
 /// what do the 2 examples demonstrate?
-/// what will each example print?
 public class OutputStreamKoan20
 {
     @Test
     void what_will_be_printed_1() throws IOException
     {
-        byte[] chars = new byte[5];
+        byte[] chars = new byte[4];
         BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1); // why exactly +1?
 
         chars[0] = 'a';
@@ -24,7 +23,7 @@ public class OutputStreamKoan20
     @Test
     void what_will_be_printed_2() throws IOException
     {
-        byte[] chars = new byte[5];
+        byte[] chars = new byte[4];
         BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length + 1);
 
         chars[0] = 'c';
