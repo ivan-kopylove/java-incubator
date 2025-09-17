@@ -22,7 +22,7 @@ public class ThreadBasics {
         thread1.start();
         thread2.start();
 
-        // what if I drop both joins? why the method is called join?
+        // what if I drop both joins? why the method is called join? how this related to SQL join?
         thread1.join();
         thread2.join();
     }
