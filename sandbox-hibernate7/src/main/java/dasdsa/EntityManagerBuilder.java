@@ -45,7 +45,7 @@ public class EntityManagerBuilder
         configuration.setProperty("hibernate.format_sql", "false");
         configuration.setProperty("hibernate.use_sql_comments", "true");
 
-        configuration.addPackage("");
+//        configuration.addPackage("com.example");
 
         annotatedClass.forEach(clazz -> {
             configuration.addAnnotatedClass(clazz);
