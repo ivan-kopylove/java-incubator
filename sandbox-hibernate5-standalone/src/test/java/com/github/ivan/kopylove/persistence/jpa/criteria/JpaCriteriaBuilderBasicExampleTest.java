@@ -1,6 +1,6 @@
 package com.github.ivan.kopylove.persistence.jpa.criteria;
 
-import com.github.ivan.kopylove.sandbox.persistence.entities.ParentEntity;
+
 import com.github.ivan.kopylove.sandbox.persistence.util.JpaEntityManagerFactory;
 import org.junit.jupiter.api.Test;
 

@@ -1,6 +1,6 @@
 package com.github.ivan.kopylove.persistence.jpa.fetchvsjoin;
 
-import com.github.ivan.kopylove.sandbox.persistence.jpa.fetchvsjoin.Gamer;
+
 import com.github.ivan.kopylove.sandbox.persistence.util.JpaEntityManagerFactory;
 import org.junit.jupiter.api.Test;
 

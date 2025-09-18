@@ -1,6 +1,5 @@
 package com.github.ivan.kopylove.persistence.jpa.nativequery;
 
-import com.github.ivan.kopylove.sandbox.persistence.entities.BookEntity;
 import com.github.ivan.kopylove.sandbox.persistence.util.JpaEntityManagerFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,8 +16,7 @@ class JpaSimpleNativeQueryTest
     public void populate()
     {
         EntityManager entityManager = JpaEntityManagerFactory.getEntityManger();
-        entityManager.getTransaction()
-                     .begin();
+        entityManager.getTransaction().begin();
 
         BookEntity bookEntity = new BookEntity();
         bookEntity.setId(5001);
@@ -26,8 +24,7 @@ class JpaSimpleNativeQueryTest
 
         entityManager.persist(bookEntity);
 
-        entityManager.getTransaction()
-                     .commit();
+        entityManager.getTransaction().commit();
         entityManager.close();
     }
 
@@ -37,15 +34,13 @@ class JpaSimpleNativeQueryTest
         EntityManager entityManager = JpaEntityManagerFactory.getEntityManger();
 
 
-        entityManager.getTransaction()
-                     .begin();
+        entityManager.getTransaction().begin();
 
         Query query = entityManager.createNativeQuery("SELECT * FROM BOOK;");
 
         List<Tuple> resultList = query.getResultList();
 
-        entityManager.getTransaction()
-                     .commit();
+        entityManager.getTransaction().commit();
 
         entityManager.close();
     }

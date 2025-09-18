@@ -1,8 +1,5 @@
 package com.github.ivan.kopylove.persistence.jpa.compoundselection;
 
-import com.github.ivan.kopylove.sandbox.persistence.entities.OrganizationBuildingDetails;
-import com.github.ivan.kopylove.sandbox.persistence.entities.OrganizationEntity;
-import com.github.ivan.kopylove.sandbox.persistence.entities.OrganizationGeneralDetails;
 import com.github.ivan.kopylove.sandbox.persistence.util.HibernateSessionFactory;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

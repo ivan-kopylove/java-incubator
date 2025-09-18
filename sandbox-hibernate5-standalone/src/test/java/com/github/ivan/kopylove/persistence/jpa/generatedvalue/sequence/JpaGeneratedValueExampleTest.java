@@ -1,6 +1,5 @@
 package com.github.ivan.kopylove.persistence.jpa.generatedvalue.sequence;
 
-import com.github.ivan.kopylove.sandbox.persistence.entities.Car;
 import com.github.ivan.kopylove.sandbox.persistence.util.JpaEntityManagerFactory;
 import org.junit.jupiter.api.Test;
 

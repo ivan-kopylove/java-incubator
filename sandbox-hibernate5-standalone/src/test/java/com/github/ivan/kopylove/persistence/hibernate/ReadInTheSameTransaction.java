@@ -1,6 +1,6 @@
 package com.github.ivan.kopylove.persistence.hibernate;
 
-import com.github.ivan.kopylove.sandbox.persistence.entities.ParentEntity;
+
 import com.github.ivan.kopylove.sandbox.persistence.util.HibernateSessionFactory;
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;
