@@ -20,7 +20,7 @@ class LockKoanTest
             {
                 lock1.tryLock();
 
-                sleep(1_000);
+                sleep(5_000);
 
                 if (lock2.tryLock())
                 {
@@ -47,7 +47,7 @@ class LockKoanTest
             {
                 lock2.tryLock();
 
-                sleep(1_000);
+                sleep(5_000);
 
                 if (lock1.tryLock())
                 {
