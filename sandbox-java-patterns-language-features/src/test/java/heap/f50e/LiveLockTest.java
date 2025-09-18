@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-class LockKoanTest
+class LiveLockTest
 {
     @Test
     void what_is_the_purpose_of_this_example()
