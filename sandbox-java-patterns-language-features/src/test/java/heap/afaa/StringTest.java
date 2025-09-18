@@ -23,8 +23,8 @@ class StringTest
         assertThrows(StringIndexOutOfBoundsException.class, () -> {
 
             String s = "0123456789_A";
-            int endIndex = "qwee".lastIndexOf("_________"); //returns -1
-            s.substring(0, endIndex); //throws exception
+            int endIndex = "qwee".lastIndexOf("_________"); // what will it return?
+            s.substring(0, endIndex); // what will happen here?
         });
     }
 

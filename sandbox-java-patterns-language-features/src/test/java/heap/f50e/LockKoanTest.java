@@ -1,13 +1,12 @@
 package heap.f50e;
 
-import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.locks.ReentrantLock;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-class LiveLockTest
+class LockKoanTest
 {
     @Test
     void what_is_the_purpose_of_this_example()
@@ -71,9 +70,6 @@ class LiveLockTest
 
         // when
         sleep(15_000);
-
-        // then
-        assertThat("actual result", CoreMatchers.equalTo("expected result"));
     }
 
     private static void sleep(int millis)
