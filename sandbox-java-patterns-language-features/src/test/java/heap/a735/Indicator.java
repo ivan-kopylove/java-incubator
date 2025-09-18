@@ -4,3 +4,8 @@ public interface Indicator
 {
     double getTemperature();
 }
+
+interface IndicatorAdapter
+{
+    double getTemperature();
+}
