@@ -29,7 +29,6 @@
     <modules>
         <module>kopylove-commons</module>
         <module>sandbox-java-patterns-language-features</module>
-        <module>sandbox-hibernate5-spring5-integration</module>
         <module>sandbox-hibernate5-standalone</module>
     </modules>
 

@@ -5,6 +5,7 @@ import java.util.List;
 
 import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Language.*;
 import static com.github.ivan.kopylove.commons.client.yandex.api.speech.VoiceGender.*;
+
 import static com.github.ivan.kopylove.commons.stream.StreamUtil.shuffleComparator;
 import static java.util.stream.Collectors.toList;
 

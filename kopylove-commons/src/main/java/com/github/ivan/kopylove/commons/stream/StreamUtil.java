@@ -10,7 +10,7 @@ import static java.util.Objects.requireNonNull;
 import static java.util.Spliterator.ORDERED;
 import static java.util.Spliterators.spliteratorUnknownSize;
 
-class StreamUtil
+public class StreamUtil
 {
     public static <T> Stream<T> iteratorToStream(Iterator<T> iterator)
     {
