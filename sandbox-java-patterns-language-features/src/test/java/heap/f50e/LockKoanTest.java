@@ -24,16 +24,16 @@ class LockKoanTest
 
                 if (lock2.tryLock())
                 {
-                    System.out.println("thread 1 - lock 1 locked");
+                    System.out.println("thread 1 - lock 2 locked");
                 }
                 else
                 {
-                    System.out.println("thread 1 - lock 1 cannot be locked, unlocking lock 1");
+                    System.out.println("thread 1 - lock 2 cannot be locked, unlocking lock 1");
                     lock1.unlock();
                     continue;
                 }
 
-                System.out.println("reached thread 2 end.");
+                System.out.println("thread 1 - reached end");
                 break;
             }
 
@@ -60,7 +60,7 @@ class LockKoanTest
                     continue;
                 }
 
-                System.out.println("reached thread 2 end.");
+                System.out.println("thread 2 - reached end.");
                 break;
             }
 
