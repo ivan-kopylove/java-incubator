@@ -1,4 +1,4 @@
-package heap.ac25;
+package named.concurrency.ac25;
 
 import org.junit.jupiter.api.Test;
 
