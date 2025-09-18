@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class ClassHidesVariableTest
 {
     @Test
-    void test()
+    void foo()
     {
         String localVariable = new ClassHidesVariable().getLocalVariable();
 

@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 class StringsTests
 {
     @Test
-    void test()
+    void foo()
     {
 
         Stream.of(new MyObj("a"), new MyObj("b")).peek(o -> {

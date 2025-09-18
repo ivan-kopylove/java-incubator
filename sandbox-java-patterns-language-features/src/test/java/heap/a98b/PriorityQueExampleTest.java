@@ -40,7 +40,7 @@ class PriorityQueExampleTest
     }
 
     @Test
-    void test()
+    void foo()
     {
         PriorityQueue<String> priorityQueue = new PriorityQueue<>();
 
