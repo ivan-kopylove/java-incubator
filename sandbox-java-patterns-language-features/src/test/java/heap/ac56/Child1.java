@@ -1,6 +1,6 @@
 package heap.ac56;
 
-class Child extends Parent
+class Child1 extends Parent
 {
     public static String getValue() // hides Parent.getValue()
     {
