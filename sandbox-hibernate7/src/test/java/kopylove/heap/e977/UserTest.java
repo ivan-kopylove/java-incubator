@@ -11,8 +11,6 @@ class UserTest extends EntityManagerTransactional
     @Test
     void testSaveAndRetrieveUser()
     {
-
-
         User01 user = new User01("John Doe");
         getEntityManager().persist(user);
 
