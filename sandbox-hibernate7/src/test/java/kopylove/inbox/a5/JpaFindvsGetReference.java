@@ -3,7 +3,7 @@ package kopylove.inbox.a5;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityNotFoundException;
 import kopylove.heap.EntityManagerProvider;
-import kopylove.heap.dsasdasda.BaseSession;
+import kopylove.heap.dsasdasda.EntitiManagerSession;
 import org.hibernate.proxy.HibernateProxy;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /// Difference between EntityManager#find and EntityManager#getReference
-class JpaFindvsGetReference extends BaseSession
+class JpaFindvsGetReference extends EntitiManagerSession
 {
     @BeforeAll
     public static void populate()

@@ -1,12 +1,12 @@
 package kopylove.heap.e977;
 
-import kopylove.heap.dsasdasda.BaseSession;
+import kopylove.heap.dsasdasda.EntitiManagerSession;
 import org.junit.jupiter.api.Test;
 
 import static kopylove.heap.EntityManagerProvider.getEntityManager;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-class UserTest extends BaseSession
+class UserTest extends EntitiManagerSession
 {
 
     @Test

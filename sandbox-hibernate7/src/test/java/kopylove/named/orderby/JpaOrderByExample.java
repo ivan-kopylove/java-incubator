@@ -2,7 +2,7 @@ package kopylove.named.orderby;
 
 import jakarta.persistence.EntityManager;
 import kopylove.heap.EntityManagerProvider;
-import kopylove.heap.dsasdasda.BaseSession;
+import kopylove.heap.dsasdasda.EntitiManagerSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class JpaOrderByExample extends BaseSession
+class JpaOrderByExample extends EntitiManagerSession
 {
     @BeforeAll
     public static void populate()

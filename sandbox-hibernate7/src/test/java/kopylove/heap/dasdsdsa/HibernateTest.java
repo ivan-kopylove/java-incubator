@@ -3,12 +3,12 @@ package kopylove.heap.dasdsdsa;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import kopylove.heap.EntityManagerProvider;
-import kopylove.heap.dsasdasda.BaseSession;
+import kopylove.heap.dsasdasda.EntitiManagerSession;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class HibernateTest extends BaseSession
+class HibernateTest extends EntitiManagerSession
 {
     @Test
     void testPackageScan()
