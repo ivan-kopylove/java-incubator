@@ -1,7 +1,5 @@
 package leetcode.L2571;
 
-import org.junit.jupiter.api.Test;
-
 /// - [searchable problem definition](https://google.com/search?q=leetcode%202571)
 /// - [garden](https://ivan-kopylove.github.io/leetcode/0c78)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+2571)

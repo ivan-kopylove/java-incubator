@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.locks.ReentrantLock;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-
 class LiveLockTest
 {
     @Test
