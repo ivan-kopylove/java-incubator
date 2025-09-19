@@ -48,7 +48,7 @@ public class TestRunner
 
         System.setOut(printStream);
 
-        MySolution_61_testsPassed_MemoryLimit.main(new String[]{});
+        MySolution_168_testsPassed_MemoryLimit.main(new String[]{});
         String string = baos.toString();
 
         // then

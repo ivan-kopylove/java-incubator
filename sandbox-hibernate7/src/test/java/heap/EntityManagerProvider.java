@@ -1,15 +1,18 @@
-package dasdsa;
+package heap;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import org.hibernate.cfg.Configuration;
+import org.reflections.Reflections;
 
-import java.util.List;
+import java.lang.reflect.Modifier;
 
-public class EntityManagerBuilder
+public class EntityManagerProvider
 {
     private static EntityManagerFactory emf;
     private static EntityManager        em;
+    private static Configuration        configuration;
 
     public static void close()
     {
@@ -17,18 +20,18 @@ public class EntityManagerBuilder
         emf.close();
     }
 
-    public static EntityManager getEntityManager(List<Class<?>> classes)
+    public static EntityManager getEntityManager()
     {
         if (em == null)
         {
-            em = build(classes);
+            em = build();
         }
         return em;
     }
 
-    private static EntityManager build(List<Class<?>> annotatedClass)
+    private static EntityManager build()
     {
-        Configuration configuration = new Configuration();
+        configuration = new Configuration();
 
         // Database connection settings
         configuration.setProperty("hibernate.connection.driver_class", "org.h2.Driver");
@@ -37,7 +40,7 @@ public class EntityManagerBuilder
         configuration.setProperty("hibernate.connection.password", "");
 
         // Hibernate specific properties
-        configuration.setProperty("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
+        configuration.setProperty("hibernate.dialect1", "org.hibernate.dialect.H2Dialect");
         configuration.setProperty("hibernate.hbm2ddl.auto", "create-drop");
 
         // SQL logging
@@ -45,12 +48,15 @@ public class EntityManagerBuilder
         configuration.setProperty("hibernate.format_sql", "false");
         configuration.setProperty("hibernate.use_sql_comments", "true");
 
-//        configuration.addPackage("com.example");
+//        configuration.addPackage("dasdsa");
 
-        annotatedClass.forEach(clazz -> {
-            configuration.addAnnotatedClass(clazz);
-        });
-
+        for (Class<?> clazz : (new Reflections("heap")).getTypesAnnotatedWith(Entity.class))
+        {
+            if (!Modifier.isAbstract(clazz.getModifiers()))
+            {
+                configuration.addAnnotatedClass(clazz);
+            }
+        }
 
         // Build EntityManagerFactory
         emf = configuration.buildSessionFactory().unwrap(EntityManagerFactory.class);
