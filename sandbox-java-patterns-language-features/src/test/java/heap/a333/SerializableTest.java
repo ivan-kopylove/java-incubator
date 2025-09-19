@@ -50,7 +50,10 @@ class SerializableTest
         catch (IOException e)
         {
             System.out.println("error " + e);
+                    if (KOAN_MODE)
+        {
             fail("try to predict yourself before running the assertion");
+        }
         }
     }
 }

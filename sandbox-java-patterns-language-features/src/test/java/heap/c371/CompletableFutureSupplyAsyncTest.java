@@ -36,7 +36,10 @@ class CompletableFutureSupplyAsyncTest
     {
         CompletableFuture<String> stringCompletableFuture = CompletableFuture.supplyAsync(() -> "world");
 
-        fail("try to predict yourself before running the assertion");
+                if (KOAN_MODE)
+        {
+            fail("try to predict yourself before running the assertion");
+        }
         assertThat(stringCompletableFuture.get(), equalTo("world"));
     }
 }
