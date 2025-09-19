@@ -1,19 +1,12 @@
 package kopylove.named.criteria;
 
-
-
-import kopylove.heap.EntityManagerProvider;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
+import kopylove.heap.EntityManagerProvider;
 import org.junit.jupiter.api.Test;
-
-
-
-
-
 
 import java.util.List;
 

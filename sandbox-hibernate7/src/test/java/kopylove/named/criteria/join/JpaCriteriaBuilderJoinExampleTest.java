@@ -1,21 +1,13 @@
 package kopylove.named.criteria.join;
 
-
-
-
-import kopylove.heap.EntityManagerProvider;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
+import kopylove.heap.EntityManagerProvider;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-
-
-
-
 
 import java.util.List;
 
@@ -39,14 +31,12 @@ class JpaCriteriaBuilderJoinExampleTest
 
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
 
-        entityManager.getTransaction()
-                     .begin();
+        entityManager.getTransaction().begin();
 
         entityManager.persist(parentEntity);
         entityManager.persist(childEntity);
 
-        entityManager.getTransaction()
-                     .commit();
+        entityManager.getTransaction().commit();
     }
 
     @Test
@@ -65,11 +55,7 @@ class JpaCriteriaBuilderJoinExampleTest
 
         for (ParentEntity2 parentEntity : result)
         {
-            assertEquals("some child name",
-                         parentEntity.getChilds()
-                                     .iterator()
-                                     .next()
-                                     .getName());
+            assertEquals("some child name", parentEntity.getChilds().iterator().next().getName());
             assertEquals("some parent name", parentEntity.getName());
         }
     }

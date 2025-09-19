@@ -109,7 +109,7 @@ class OrmNPlusOneBehaviour
 
         List<ParentEntity6> parents = entityManager.createQuery(cq).getResultList();
 
-//        entityManager.close();
+        //        entityManager.close();
 
         for (ParentEntity6 parent : parents)
         {
@@ -136,7 +136,6 @@ class OrmNPlusOneBehaviour
         cq.select(root);
 
         List<ParentEntity6> parents = entityManager.createQuery(cq).getResultList();
-
 
 
         System.out.println("---- FINISHED -----");

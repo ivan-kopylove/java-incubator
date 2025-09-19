@@ -13,8 +13,7 @@ class JpaSharedGeneratedValue extends BaseSession
     void what_does_this_example_demonstrate()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
-        entityManager.getTransaction()
-                     .begin();
+        entityManager.getTransaction().begin();
 
         GeneratedValueMostBasic g1 = new GeneratedValueMostBasic();
         entityManager.persist(g1);
@@ -25,8 +24,7 @@ class JpaSharedGeneratedValue extends BaseSession
         assertEquals(1, g1.getId());
         assertEquals(2, g2.getId());
 
-        entityManager.getTransaction()
-                     .commit();
+        entityManager.getTransaction().commit();
         entityManager.close();
     }
 }

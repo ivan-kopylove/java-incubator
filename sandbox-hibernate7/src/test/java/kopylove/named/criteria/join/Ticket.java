@@ -1,21 +1,9 @@
 package kopylove.named.criteria.join;
 
-
-
-
-
-
-
-
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-
-
-
-
 
 @Entity
 class Ticket

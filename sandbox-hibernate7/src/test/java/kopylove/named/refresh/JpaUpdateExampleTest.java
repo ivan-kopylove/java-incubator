@@ -1,13 +1,10 @@
 package kopylove.named.refresh;
 
-
-
-import kopylove.heap.EntityManagerProvider;
 import jakarta.persistence.EntityManager;
+import kopylove.heap.EntityManagerProvider;
 import kopylove.heap.dsasdasda.BaseSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -22,11 +19,9 @@ class JpaUpdateExampleTest extends BaseSession
         parentEntity.setName("Robert Patrick");
 
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
-        entityManager.getTransaction()
-                     .begin();
+        entityManager.getTransaction().begin();
         entityManager.persist(parentEntity);
-        entityManager.getTransaction()
-                     .commit();
+        entityManager.getTransaction().commit();
     }
 
     @Test

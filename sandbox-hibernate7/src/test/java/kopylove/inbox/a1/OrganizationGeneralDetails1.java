@@ -1,7 +1,6 @@
 package kopylove.inbox.a1;
 
 import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
 
 class OrganizationGeneralDetails1
 {

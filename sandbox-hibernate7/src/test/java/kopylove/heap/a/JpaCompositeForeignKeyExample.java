@@ -1,13 +1,10 @@
 package kopylove.heap.a;
 
-
 import jakarta.persistence.EntityManager;
 import kopylove.heap.EntityManagerProvider;
 import kopylove.heap.dsasdasda.BaseSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -17,8 +14,7 @@ class JpaCompositeForeignKeyExample extends BaseSession
     public static void populate()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
-        entityManager.getTransaction()
-                     .begin();
+        entityManager.getTransaction().begin();
 
         UserEntity user = new UserEntity();
         user.setCity("Moscow");
@@ -32,8 +28,7 @@ class JpaCompositeForeignKeyExample extends BaseSession
         entityManager.persist(user);
         entityManager.persist(documentEntity);
 
-        entityManager.getTransaction()
-                     .commit();
+        entityManager.getTransaction().commit();
         entityManager.close();
     }
 
@@ -41,20 +36,14 @@ class JpaCompositeForeignKeyExample extends BaseSession
     void what_does_this_example_demonstrate()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
-        entityManager.getTransaction()
-                     .begin();
+        entityManager.getTransaction().begin();
 
         DocumentEntity documentEntity = entityManager.find(DocumentEntity.class, 0);
 
-        assertEquals(99999999,
-                     documentEntity.getUser()
-                                   .getSsn());
-        assertEquals("bob",
-                     documentEntity.getUser()
-                                   .getName());
+        assertEquals(99999999, documentEntity.getUser().getSsn());
+        assertEquals("bob", documentEntity.getUser().getName());
 
-        entityManager.getTransaction()
-                     .commit();
+        entityManager.getTransaction().commit();
         entityManager.close();
     }
 }

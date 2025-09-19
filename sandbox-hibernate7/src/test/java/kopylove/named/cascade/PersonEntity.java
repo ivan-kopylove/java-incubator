@@ -1,7 +1,5 @@
 package kopylove.named.cascade;
 
-
-
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

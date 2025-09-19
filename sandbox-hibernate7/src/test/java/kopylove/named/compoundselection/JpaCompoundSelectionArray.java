@@ -1,6 +1,7 @@
 package kopylove.named.compoundselection;
 
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.criteria.CompoundSelection;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
@@ -8,8 +9,6 @@ import kopylove.heap.EntityManagerProvider;
 import kopylove.heap.dsasdasda.BaseSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-import jakarta.persistence.criteria.CompoundSelection;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;

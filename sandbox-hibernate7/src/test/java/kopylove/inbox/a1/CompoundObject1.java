@@ -1,6 +1,5 @@
 package kopylove.inbox.a1;
 
-
 class CompoundObject1
 {
     private int    a;

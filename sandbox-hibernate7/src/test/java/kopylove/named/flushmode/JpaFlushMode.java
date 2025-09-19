@@ -1,13 +1,10 @@
 package kopylove.named.flushmode;
 
-
-
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.FlushModeType;
 import kopylove.heap.EntityManagerProvider;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-import jakarta.persistence.FlushModeType;
 
 /// JPA allows implementations to synchronize the persistence context at other times, if they wish.
 class JpaFlushMode

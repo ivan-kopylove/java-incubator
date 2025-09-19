@@ -13,10 +13,7 @@ public class EntityClassProvider
     {
         Reflections relections = new Reflections("kopylove");
 
-        return relections
-                    .getTypesAnnotatedWith(Entity.class)
-                   .stream()
-                   .filter(clazz -> !Modifier.isAbstract(clazz.getModifiers()))
-                   .collect(Collectors.toSet());
+        return relections.getTypesAnnotatedWith(Entity.class).stream()
+                         .filter(clazz -> !Modifier.isAbstract(clazz.getModifiers())).collect(Collectors.toSet());
     }
 }

@@ -1,10 +1,8 @@
 package kopylove.inbox.persistchild;
 
-
 import jakarta.persistence.EntityManager;
 import kopylove.heap.EntityManagerProvider;
 import org.junit.jupiter.api.Test;
-
 
 import java.util.HashSet;
 import java.util.Random;
