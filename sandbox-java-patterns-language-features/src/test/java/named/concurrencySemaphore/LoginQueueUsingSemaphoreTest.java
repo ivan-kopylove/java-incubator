@@ -1,4 +1,4 @@
-package named.concurrency.ac25;
+package named.concurrencySemaphore;
 
 import org.junit.jupiter.api.Test;
 
