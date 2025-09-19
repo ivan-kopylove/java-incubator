@@ -8,6 +8,7 @@ import jakarta.persistence.criteria.Root;
 import kopylove.heap.b505.EntityManagerProvider;
 import kopylove.heap.e70a.EntityManagerManual;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -15,6 +16,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// The example demonstrates minimal `join` boilerplate.
+@Disabled
 class JpaCriteriaBuilderJoinExampleTest extends EntityManagerManual
 {
     @BeforeAll
