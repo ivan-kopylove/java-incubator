@@ -1,9 +1,9 @@
 package kopylove.inbox.a5;
 
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityNotFoundException;
 import kopylove.heap.EntityManagerProvider;
 import kopylove.heap.dsasdasda.EntityManagerSession;
+import org.hibernate.ObjectNotFoundException;
 import org.hibernate.proxy.HibernateProxy;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /// Difference between EntityManager#find and EntityManager#getReference
-class JpaFindvsGetReference extends EntityManagerSession
+class JpaFindvsGetReferenceTest extends EntityManagerSession
 {
     @BeforeAll
     public static void populate()
@@ -52,11 +52,15 @@ class JpaFindvsGetReference extends EntityManagerSession
     {
         EntityManager entityManger = EntityManagerProvider.getEntityManager();
 
-        ParentEntity10 anEntity = entityManger.getReference(ParentEntity10.class, 999999999); //no db hit, parent is taken from proxy (what level?)
+        ParentEntity10 anEntity = entityManger.getReference(ParentEntity10.class,
+                                                            999999999); //no db hit, parent is taken from proxy (what level?)
 
         assertEquals(999999999, anEntity.getId()); //no init
         assertInstanceOf(HibernateProxy.class, anEntity);
-        assertTrue(anEntity.getClass().toString().contains("$HibernateProxy$"));
+        String string = anEntity.getClass().toString();
+        System.out.println(string);
+
+        assertTrue(string.contains("$HibernateProxy"));
 
         entityManger.close();
     }
@@ -64,13 +68,13 @@ class JpaFindvsGetReference extends EntityManagerSession
     @Test
     void getReferenceException()
     {
-        assertThrows(EntityNotFoundException.class, () -> {
+        assertThrows(ObjectNotFoundException.class, () -> {
             EntityManager entityManger = EntityManagerProvider.getEntityManager();
 
             ParentEntity10 parent = entityManger.getReference(ParentEntity10.class, 999999999); //no db hit
 
             assertEquals(999999999, parent.getId());//no init
-            assertTrue(parent.getClass().toString().contains("$HibernateProxy$"));
+            assertTrue(parent.getClass().toString().contains("$HibernateProxy"));
             assertInstanceOf(HibernateProxy.class, parent);
             parent.getName(); //produces exception
 

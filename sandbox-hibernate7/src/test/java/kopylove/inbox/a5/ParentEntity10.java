@@ -5,7 +5,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -22,7 +21,7 @@ class ParentEntity10
     private String name;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "parent")
-    private Set<ChildEntity9> childs;
+    private Set<ChildEntity10> childs;
 
     public int getId()
     {
@@ -44,12 +43,12 @@ class ParentEntity10
         this.name = name;
     }
 
-    public Set<ChildEntity9> getChilds()
+    public Set<ChildEntity10> getChilds()
     {
         return childs;
     }
 
-    public void setChilds(Set<ChildEntity9> childs)
+    public void setChilds(Set<ChildEntity10> childs)
     {
         this.childs = new HashSet(childs);
     }
