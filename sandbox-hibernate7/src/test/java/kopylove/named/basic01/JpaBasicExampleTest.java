@@ -1,13 +1,13 @@
 package kopylove.named.basic01;
 
 import jakarta.persistence.EntityManager;
-import kopylove.heap.e70a.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerManual;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// Minimal JPA example - save and load saved entity.
-class JpaBasicExampleTest extends EntityManagerSession
+class JpaBasicExampleTest extends EntityManagerManual
 {
     @Test
     void what_does_this_example_demonstrate()

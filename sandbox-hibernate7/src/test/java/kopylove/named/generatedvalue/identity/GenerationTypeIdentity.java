@@ -1,12 +1,12 @@
 package kopylove.named.generatedvalue.identity;
 
 import jakarta.persistence.EntityManager;
-import kopylove.heap.e70a.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerManual;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class GenerationTypeIdentity extends EntityManagerSession
+class GenerationTypeIdentity extends EntityManagerManual
 {
 
     /// This example is intended to show basic working example of GenerationType.IDENTITY.

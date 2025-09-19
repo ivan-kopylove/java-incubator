@@ -2,13 +2,13 @@ package kopylove.heap.fbe8;
 
 import jakarta.persistence.EntityManager;
 import kopylove.heap.b505.EntityManagerProvider;
-import kopylove.heap.e70a.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerTransactional;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class JpaCompositeForeignKeyExample extends EntityManagerSession
+class JpaCompositeForeignKeyExample extends EntityManagerTransactional
 {
     @BeforeAll
     public static void populate()
@@ -36,14 +36,11 @@ class JpaCompositeForeignKeyExample extends EntityManagerSession
     void what_does_this_example_demonstrate()
     {
         EntityManager entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
 
         DocumentEntity01 documentEntity = entityManager.find(DocumentEntity01.class, 0);
 
         assertEquals(99999999, documentEntity.getUser().getSsn());
         assertEquals("bob", documentEntity.getUser().getName());
 
-        entityManager.getTransaction().commit();
-        entityManager.close();
     }
 }

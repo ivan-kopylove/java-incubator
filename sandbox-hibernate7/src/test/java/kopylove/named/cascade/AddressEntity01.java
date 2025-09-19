@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-class AddressEntity
+class AddressEntity01
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -16,9 +16,9 @@ class AddressEntity
     private String       street;
     private int          houseNumber;
     private String       city;
-    private int          zipCode;
+    private int            zipCode;
     @ManyToOne(fetch = FetchType.LAZY)
-    private PersonEntity person;
+    private PersonEntity01 person;
 
     public int getId()
     {
@@ -65,12 +65,12 @@ class AddressEntity
         this.zipCode = zipCode;
     }
 
-    public PersonEntity getPerson()
+    public PersonEntity01 getPerson()
     {
         return person;
     }
 
-    public void setPerson(PersonEntity person)
+    public void setPerson(PersonEntity01 person)
     {
         this.person = person;
     }

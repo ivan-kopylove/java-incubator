@@ -2,14 +2,14 @@ package kopylove.named.refresh;
 
 import jakarta.persistence.EntityManager;
 import kopylove.heap.b505.EntityManagerProvider;
-import kopylove.heap.e70a.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerManual;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// Example of EntityManager#refresh.
-class JpaUpdateExampleTest extends EntityManagerSession
+class JpaUpdateExampleTest extends EntityManagerManual
 {
     @BeforeAll
     public static void populate()

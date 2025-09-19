@@ -2,7 +2,7 @@ package kopylove.heap.d3f8;
 
 import jakarta.persistence.EntityManager;
 import kopylove.heap.b505.EntityManagerProvider;
-import kopylove.heap.e70a.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerManual;
 import org.hibernate.ObjectNotFoundException;
 import org.hibernate.proxy.HibernateProxy;
 import org.junit.jupiter.api.BeforeAll;
@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /// Difference between EntityManager#find and EntityManager#getReference
-class JpaFindvsGetReferenceTest extends EntityManagerSession
+class JpaFindvsGetReferenceTest extends EntityManagerManual
 {
     @BeforeAll
     public static void populate()

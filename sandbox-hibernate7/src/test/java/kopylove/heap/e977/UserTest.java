@@ -1,17 +1,17 @@
 package kopylove.heap.e977;
 
-import kopylove.heap.e70a.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerManual;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-class UserTest extends EntityManagerSession
+class UserTest extends EntityManagerManual
 {
 
     @Test
     void testSaveAndRetrieveUser()
     {
-        getEntityManager().getTransaction().begin();
+
 
         User01 user = new User01("John Doe");
         getEntityManager().persist(user);

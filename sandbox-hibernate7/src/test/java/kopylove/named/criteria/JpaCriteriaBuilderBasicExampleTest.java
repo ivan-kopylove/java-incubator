@@ -5,12 +5,12 @@ import jakarta.persistence.TypedQuery;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
-import kopylove.heap.e70a.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerManual;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-class JpaCriteriaBuilderBasicExampleTest extends EntityManagerSession
+class JpaCriteriaBuilderBasicExampleTest extends EntityManagerManual
 {
     @Test
     void what_does_this_example_demonstrate()

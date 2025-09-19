@@ -1,13 +1,13 @@
 package kopylove.named.cascade;
 
 import jakarta.persistence.EntityManager;
-import kopylove.heap.e70a.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerManual;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collections;
 
 /// [...](https://www.baeldung.com/jpa-cascade-types)
-class JpaCascadePersist extends EntityManagerSession
+class JpaCascadePersist extends EntityManagerManual
 {
     @Test
     void whenParentSavedThenChildSaved()
@@ -15,9 +15,9 @@ class JpaCascadePersist extends EntityManagerSession
         EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
-        PersonEntity person = new PersonEntity();
+        PersonEntity01 person = new PersonEntity01();
         person.setName("devender");
-        AddressEntity address = new AddressEntity();
+        AddressEntity01 address = new AddressEntity01();
         address.setPerson(person);
         person.setAddresses(Collections.singletonList(address));
 
@@ -33,9 +33,9 @@ class JpaCascadePersist extends EntityManagerSession
         EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
-        PersonEntity person = new PersonEntity();
+        PersonEntity01 person = new PersonEntity01();
         person.setName("devender");
-        AddressEntity address = new AddressEntity();
+        AddressEntity01 address = new AddressEntity01();
         address.setPerson(person);
 
         person.setAddresses(Collections.singletonList(address));
@@ -48,7 +48,7 @@ class JpaCascadePersist extends EntityManagerSession
         entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
-        PersonEntity personEntity = entityManager.find(PersonEntity.class, id);
+        PersonEntity01 personEntity = entityManager.find(PersonEntity01.class, id);
 
         entityManager.remove(personEntity);
         entityManager.getTransaction().commit(); //also deletes addresses
@@ -61,9 +61,9 @@ class JpaCascadePersist extends EntityManagerSession
         EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
-        PersonEntity person = new PersonEntity();
+        PersonEntity01 person = new PersonEntity01();
         person.setName("some");
-        AddressEntity address = new AddressEntity();
+        AddressEntity01 address = new AddressEntity01();
         address.setPerson(person);
 
         person.setAddresses(Collections.singletonList(address));
@@ -76,7 +76,7 @@ class JpaCascadePersist extends EntityManagerSession
         entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
-        PersonEntity personEntity = entityManager.find(PersonEntity.class, id);
+        PersonEntity01 personEntity = entityManager.find(PersonEntity01.class, id);
 
         personEntity.getAddresses().remove(personEntity.getAddresses().get(0));
 
@@ -91,8 +91,8 @@ class JpaCascadePersist extends EntityManagerSession
         entityManager.getTransaction().begin();
 
         int addressId;
-        PersonEntity person = new PersonEntity();
-        AddressEntity address = new AddressEntity();
+        PersonEntity01 person = new PersonEntity01();
+        AddressEntity01 address = new AddressEntity01();
         person.setAddresses(Collections.singletonList(address));
         address.setPerson(person);
         entityManager.persist(person);
@@ -105,8 +105,8 @@ class JpaCascadePersist extends EntityManagerSession
         entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
-        AddressEntity savedAddressEntity = entityManager.find(AddressEntity.class, addressId);
-        PersonEntity savedPersonEntity = savedAddressEntity.getPerson();
+        AddressEntity01 savedAddressEntity = entityManager.find(AddressEntity01.class, addressId);
+        PersonEntity01 savedPersonEntity = savedAddressEntity.getPerson();
         savedPersonEntity.setName("devender kumar");
         savedAddressEntity.setHouseNumber(24);
 

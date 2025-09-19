@@ -2,12 +2,12 @@ package kopylove.named.basic02;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
-import kopylove.heap.e70a.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerManual;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class HibernateTest extends EntityManagerSession
+class HibernateTest extends EntityManagerManual
 {
     @Test
     void testPackageScan()

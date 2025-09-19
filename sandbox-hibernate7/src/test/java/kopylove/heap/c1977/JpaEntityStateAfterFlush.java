@@ -2,13 +2,13 @@ package kopylove.heap.c1977;
 
 import jakarta.persistence.EntityManager;
 import kopylove.heap.b505.EntityManagerProvider;
-import kopylove.heap.e70a.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerManual;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class JpaEntityStateAfterFlush extends EntityManagerSession
+class JpaEntityStateAfterFlush extends EntityManagerManual
 {
     @BeforeAll
     public static void populate()

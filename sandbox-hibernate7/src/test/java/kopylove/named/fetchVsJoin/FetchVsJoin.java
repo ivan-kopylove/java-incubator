@@ -5,11 +5,11 @@ import jakarta.persistence.TypedQuery;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
-import kopylove.heap.e70a.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerManual;
 import org.junit.jupiter.api.Test;
 
 /// In this two examples, JOIN query is used to load. They have certain difference.
-class FetchVsJoin extends EntityManagerSession
+class FetchVsJoin extends EntityManagerManual
 {
     /// Join will not add information to the generated SQL query projection, so, no chance for hibernate to cache joined entity.
     @Test

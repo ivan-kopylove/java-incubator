@@ -8,14 +8,14 @@ import jakarta.persistence.criteria.Join;
 import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;
 import kopylove.heap.b505.EntityManagerProvider;
-import kopylove.heap.e70a.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerManual;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
 /// - [https://stackoverflow.com/questions/4511368/](https://stackoverflow.com/questions/4511368/)
-class JpaFetchFetchPathNavigationTest2 extends EntityManagerSession
+class JpaFetchFetchPathNavigationTest2 extends EntityManagerManual
 {
     private static final String USER_NAME_ONE = "a";
     private static final String USER_NAME_TWO = "b";

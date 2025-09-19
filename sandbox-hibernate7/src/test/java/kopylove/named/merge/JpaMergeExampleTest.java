@@ -1,13 +1,13 @@
 package kopylove.named.merge;
 
 import jakarta.persistence.EntityManager;
-import kopylove.heap.e70a.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerManual;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// Difference vs merge and persist
-class JpaMergeExampleTest extends EntityManagerSession
+class JpaMergeExampleTest extends EntityManagerManual
 {
     @Test
     void merge_set_new_name_original_object()

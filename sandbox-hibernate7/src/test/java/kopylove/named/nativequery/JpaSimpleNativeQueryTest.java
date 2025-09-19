@@ -3,14 +3,14 @@ package kopylove.named.nativequery;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
 import jakarta.persistence.Tuple;
-import kopylove.heap.e70a.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerManual;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
 /// Minimal JPA example - save and load saved entity.
-class JpaSimpleNativeQueryTest extends EntityManagerSession
+class JpaSimpleNativeQueryTest extends EntityManagerManual
 {
     @BeforeEach
     public void populate()

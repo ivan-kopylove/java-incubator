@@ -10,14 +10,14 @@ import jakarta.persistence.OneToMany;
 import java.util.List;
 
 @Entity
-class PersonEntity
+class PersonEntity01
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int                 id;
-    private String              name;
+    private String                name;
     @OneToMany(mappedBy = "person", orphanRemoval = true, cascade = CascadeType.ALL)
-    private List<AddressEntity> addresses;
+    private List<AddressEntity01> addresses;
 
     public int getId()
     {
@@ -34,12 +34,12 @@ class PersonEntity
         this.name = name;
     }
 
-    public List<AddressEntity> getAddresses()
+    public List<AddressEntity01> getAddresses()
     {
         return addresses;
     }
 
-    public void setAddresses(List<AddressEntity> addresses)
+    public void setAddresses(List<AddressEntity01> addresses)
     {
         this.addresses = addresses;
     }

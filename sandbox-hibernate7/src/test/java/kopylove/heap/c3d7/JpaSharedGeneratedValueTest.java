@@ -1,12 +1,12 @@
 package kopylove.heap.c3d7;
 
 import jakarta.persistence.EntityManager;
-import kopylove.heap.e70a.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerManual;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class JpaSharedGeneratedValueTest extends EntityManagerSession
+class JpaSharedGeneratedValueTest extends EntityManagerManual
 {
     @Test
     void what_does_this_example_demonstrate()
