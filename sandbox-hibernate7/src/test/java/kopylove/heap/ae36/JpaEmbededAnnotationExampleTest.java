@@ -41,11 +41,14 @@ class JpaEmbededAnnotationExampleTest extends EntityManagerManual
     @Test
     void what_does_this_example_demonstrate()
     {
+        // given
         EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
+        // when
         OrganizationEntity02 organization = entityManager.find(OrganizationEntity02.class, 0);
 
+        // then
         assertEquals(5, organization.getOrganizationBuildingDetails().getFloors());
         assertEquals("1997", organization.getOrganizationGeneralDetails().getFound());
 
