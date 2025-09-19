@@ -1,11 +1,11 @@
-package heap.dfjkfl321;
+package heap.e7109;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.function.Consumer;
 
-import static heap.asddas.EducationalStrengthness.EDUCATION_MODE;
-import static heap.asddas.EducationalStrengthness.KOAN;
+import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
+import static heap.cb2d.EducationalStrengthness.KOAN;
 import static org.junit.jupiter.api.Assertions.fail;
 
 class RunnableLambdaExampleTest

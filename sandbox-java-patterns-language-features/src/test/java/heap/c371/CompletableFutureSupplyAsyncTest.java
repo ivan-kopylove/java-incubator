@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
-import static heap.asddas.EducationalStrengthness.EDUCATION_MODE;
-import static heap.asddas.EducationalStrengthness.KOAN;
+import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
+import static heap.cb2d.EducationalStrengthness.KOAN;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;

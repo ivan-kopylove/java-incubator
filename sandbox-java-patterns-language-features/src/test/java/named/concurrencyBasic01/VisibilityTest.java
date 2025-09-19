@@ -2,8 +2,8 @@ package named.concurrencyBasic01;
 
 import org.junit.jupiter.api.Test;
 
-import static heap.asddas.EducationalStrengthness.EDUCATION_MODE;
-import static heap.asddas.EducationalStrengthness.KOAN;
+import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
+import static heap.cb2d.EducationalStrengthness.KOAN;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;

@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static heap.asddas.EducationalStrengthness.EDUCATION_MODE;
-import static heap.asddas.EducationalStrengthness.KOAN;
+import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
+import static heap.cb2d.EducationalStrengthness.KOAN;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 

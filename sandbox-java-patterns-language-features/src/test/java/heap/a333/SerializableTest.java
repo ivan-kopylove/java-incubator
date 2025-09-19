@@ -8,8 +8,8 @@ import java.io.ObjectOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import static heap.asddas.EducationalStrengthness.EDUCATION_MODE;
-import static heap.asddas.EducationalStrengthness.KOAN;
+import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
+import static heap.cb2d.EducationalStrengthness.KOAN;
 import static org.junit.jupiter.api.Assertions.fail;
 
 class SerializableTest
