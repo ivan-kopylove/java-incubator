@@ -16,7 +16,7 @@
 //    @BeforeAll
 //    public static void populate()
 //    {
-//        BookEntity07 book = new BookEntity07();
+//        BookEntity08 book = new BookEntity08();
 //        book.setId(2);
 //        book.setName("The Lord of the Rings");
 //
@@ -33,9 +33,9 @@
 //        Session session = HibernateSessionFactory.openSession();
 //        session.getTransaction().begin();
 //
-//        Criteria criteria = session.createCriteria(BookEntity07.class);
+//        Criteria criteria = session.createCriteria(BookEntity08.class);
 //        criteria.add(Restrictions.eq("name", "The Lord of the Rings"));
-//        List<BookEntity07> list = criteria.list();
+//        List<BookEntity08> list = criteria.list();
 //
 //        assertTrue(list.size() > 0);
 //        assertEquals("The Lord of the Rings", list.get(0).getName());
