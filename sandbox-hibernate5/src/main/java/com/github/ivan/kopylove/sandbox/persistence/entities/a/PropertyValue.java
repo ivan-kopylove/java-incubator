@@ -1,7 +1,7 @@
 package com.github.ivan.kopylove.sandbox.persistence.entities.a;
 
-
-
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
 
 @Embeddable
 class PropertyValue

@@ -1,18 +1,15 @@
 package com.github.ivan.kopylove.persistence.hibernate;
 
-
-
-
-
-
-
-
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-
 class ParentEntity
 {
     @Id

@@ -1,6 +1,5 @@
 package com.github.ivan.kopylove.sandbox.persistence.domain;
 
-
 class CompoundObject
 {
     private int    a;

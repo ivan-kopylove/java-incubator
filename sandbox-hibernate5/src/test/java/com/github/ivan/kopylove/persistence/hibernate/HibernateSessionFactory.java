@@ -1,6 +1,5 @@
-package kopylove.heap.ed1a;
+package com.github.ivan.kopylove.persistence.hibernate;
 
-import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -15,15 +14,14 @@ public final class HibernateSessionFactory
 
     private static SessionFactory buildSessionFactory()
     {
-        try
-        {
-            return new Configuration().configure().buildSessionFactory(); // looks for hibernate.cfg.xml
-        }
-        catch (HibernateException e)
-        {
-            System.out.println("Hibernate session factory configuration failed " + e);
-            throw new ExceptionInInitializerError();
-        }
+        Configuration configuration = new Configuration();
+        configuration.addPackage("com.github.ivan.kopylove");
+
+
+        configuration.addAnnotatedClasses()
+
+
+        return configuration.configure().buildSessionFactory(); // looks for hibernate.cfg.xml
     }
 
     public static Session getCurrentSession()

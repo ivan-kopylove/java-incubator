@@ -1,7 +1,5 @@
 package com.github.ivan.kopylove.persistence.hibernate;
 
-
-
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;
 
@@ -19,20 +17,16 @@ class HibernateBasicExampleTest
         bookEntity.setId(0);
 
         Session session = HibernateSessionFactory.openSession();
-        session.getTransaction()
-               .begin();
+        session.getTransaction().begin();
         session.persist(bookEntity);
-        session.getTransaction()
-               .commit();
+        session.getTransaction().commit();
         session.close();
 
         session = HibernateSessionFactory.openSession();
-        session.getTransaction()
-               .begin();
+        session.getTransaction().begin();
         BookEntity05 entity = session.find(BookEntity05.class, 0);
         assertEquals(entity.getName(), "Harry Potter");
-        session.getTransaction()
-               .commit();
+        session.getTransaction().commit();
         session.close();
     }
 }

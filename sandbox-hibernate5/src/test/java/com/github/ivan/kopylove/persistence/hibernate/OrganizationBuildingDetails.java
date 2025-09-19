@@ -1,7 +1,7 @@
 package com.github.ivan.kopylove.persistence.hibernate;
 
-
-
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
 
 @Embeddable
 class OrganizationBuildingDetails

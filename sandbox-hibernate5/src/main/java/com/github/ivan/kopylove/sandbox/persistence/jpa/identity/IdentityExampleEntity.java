@@ -1,9 +1,9 @@
 package com.github.ivan.kopylove.sandbox.persistence.jpa.identity;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-
-import jakarta.persistence.Column;
 import jakarta.persistence.Id;
 
 @Entity

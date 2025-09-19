@@ -1,11 +1,11 @@
 package com.github.ivan.kopylove.sandbox.persistence.util;
 
-import org.hibernate.integrator.spi.Integrator;
-import org.hibernate.jpa.boot.spi.IntegratorProvider;
-
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
+import org.hibernate.integrator.spi.Integrator;
+import org.hibernate.jpa.boot.spi.IntegratorProvider;
+
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;

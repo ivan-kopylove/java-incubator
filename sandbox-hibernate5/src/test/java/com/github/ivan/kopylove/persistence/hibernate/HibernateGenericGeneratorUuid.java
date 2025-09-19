@@ -1,6 +1,5 @@
 package com.github.ivan.kopylove.persistence.hibernate;
 
-
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;
 
@@ -17,17 +16,13 @@ class HibernateGenericGeneratorUuid
         GeneratedValueUuid generatedKey = new GeneratedValueUuid();
 
         Session session = HibernateSessionFactory.openSession();
-        session.getTransaction()
-               .begin();
+        session.getTransaction().begin();
         session.persist(generatedKey);
-        session.getTransaction()
-               .commit();
+        session.getTransaction().commit();
         session.close();
 
         assertNotNull(generatedKey.getKey());
         assertInstanceOf(String.class, generatedKey.getKey());
-        assertEquals(32,
-                     generatedKey.getKey()
-                                 .length());
+        assertEquals(32, generatedKey.getKey().length());
     }
 }

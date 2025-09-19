@@ -25,7 +25,6 @@ public class MetadataExtractorIntegrator implements Integrator
         return metadata;
     }
 
-    @Override
     public void integrate(Metadata metadata, SessionFactoryImplementor sessionFactoryImplementor, SessionFactoryServiceRegistry sessionFactoryServiceRegistry)
     {
         this.database = metadata.getDatabase();

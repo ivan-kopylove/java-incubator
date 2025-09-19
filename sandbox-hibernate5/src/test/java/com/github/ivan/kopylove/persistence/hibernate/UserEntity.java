@@ -1,13 +1,12 @@
 package com.github.ivan.kopylove.persistence.hibernate;
 
-
-
-
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 import java.io.Serializable;
 
 @Entity
-
 class UserEntity implements Serializable
 {
     @Id

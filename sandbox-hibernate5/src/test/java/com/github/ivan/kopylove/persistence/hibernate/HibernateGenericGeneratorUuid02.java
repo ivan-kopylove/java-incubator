@@ -1,6 +1,5 @@
 package com.github.ivan.kopylove.persistence.hibernate;
 
-
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 /// [...](https://docs.jboss.org/hibernate/core/3.6/reference/en-US/html/mapping.html#d0e5294)
-class HibernateGenericGeneratorUuid2
+class HibernateGenericGeneratorUuid02
 {
     @Test
     void what_does_this_example_demonstrate()

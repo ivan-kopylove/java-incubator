@@ -1,9 +1,11 @@
 package kopylove.heap.b505;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
-import kopylove.heap.c637.EntityClassProvider;
 import org.hibernate.cfg.Configuration;
+
+import static com.github.ivan.kopylove.commons.reflection.AnnotatedClassesProvider.getAnnotatedClasses;
 
 public class EntityManagerProvider
 {
@@ -52,7 +54,8 @@ public class EntityManagerProvider
         configuration.setProperty("hibernate.format_sql", "false");
         configuration.setProperty("hibernate.use_sql_comments", "false");
 
-        EntityClassProvider.getEntities().forEach(entity -> {
+
+        getAnnotatedClasses(Entity.class, "kopylove").forEach(entity -> {
             configuration.addAnnotatedClass(entity);
         });
 

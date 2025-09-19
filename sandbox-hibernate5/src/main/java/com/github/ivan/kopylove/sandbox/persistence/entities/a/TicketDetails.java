@@ -1,7 +1,7 @@
 package com.github.ivan.kopylove.sandbox.persistence.entities.a;
 
-
-
+import jakarta.persistence.Embeddable;
+import jakarta.persistence.Embedded;
 
 @Embeddable
 class TicketDetails

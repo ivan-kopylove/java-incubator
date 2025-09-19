@@ -1,7 +1,5 @@
 package com.github.ivan.kopylove.persistence.hibernate;
 
-
-
 import org.hibernate.Session;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -13,8 +11,7 @@ class HibernateDirtyChecking
     public static void verifyDirtyCheckWorks()
     {
         Session session = HibernateSessionFactory.openSession();
-        session.getTransaction()
-               .begin();
+        session.getTransaction().begin();
 
         BookEntity05 book = session.find(BookEntity05.class, 1);
         if (book != null)
@@ -22,8 +19,7 @@ class HibernateDirtyChecking
             assertEquals("Fred Brooks - The Mythical Man-Month", book.getName());
         }
 
-        session.getTransaction()
-               .commit();
+        session.getTransaction().commit();
         session.close();
     }
 
@@ -31,8 +27,7 @@ class HibernateDirtyChecking
     public static void populate()
     {
         Session session = HibernateSessionFactory.openSession();
-        session.getTransaction()
-               .begin();
+        session.getTransaction().begin();
 
         BookEntity05 book = new BookEntity05();
         book.setName("Maxim Dorofeev - Inbox Zero");
@@ -40,8 +35,7 @@ class HibernateDirtyChecking
 
         session.persist(book);
 
-        session.getTransaction()
-               .commit();
+        session.getTransaction().commit();
         session.close();
     }
 
@@ -55,8 +49,7 @@ class HibernateDirtyChecking
     public void triggerDirtyCheck()
     {
         Session session = HibernateSessionFactory.openSession();
-        session.getTransaction()
-               .begin();
+        session.getTransaction().begin();
 
         BookEntity05 book = session.find(BookEntity05.class, 1);
         if (book != null)
@@ -67,8 +60,7 @@ class HibernateDirtyChecking
             //in the database this feature is called dirty checking in hibernate
         }
 
-        session.getTransaction()
-               .commit();
+        session.getTransaction().commit();
         session.close();
     }
 }

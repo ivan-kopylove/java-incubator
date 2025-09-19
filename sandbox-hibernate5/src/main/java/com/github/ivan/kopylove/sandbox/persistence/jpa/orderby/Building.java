@@ -1,8 +1,9 @@
 package com.github.ivan.kopylove.sandbox.persistence.jpa.orderby;
 
-
-
-
+import jakarta.persistence.ElementCollection;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.OrderBy;
 
 import java.util.List;
 
