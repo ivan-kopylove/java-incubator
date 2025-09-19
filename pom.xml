@@ -30,7 +30,6 @@
     <modules>
         <module>kopylove-commons</module>
         <module>sandbox-java-patterns-language-features</module>
-        <module>sandbox-hibernate5</module>
         <module>sandbox-hibernate7</module>
     </modules>
 
