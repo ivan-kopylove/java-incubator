@@ -16,7 +16,7 @@ class HibernateDirtyChecking
         session.getTransaction()
                .begin();
 
-        BookEntity book = session.find(BookEntity.class, 1);
+        BookEntity05 book = session.find(BookEntity05.class, 1);
         if (book != null)
         {
             assertEquals("Fred Brooks - The Mythical Man-Month", book.getName());
@@ -34,7 +34,7 @@ class HibernateDirtyChecking
         session.getTransaction()
                .begin();
 
-        BookEntity book = new BookEntity();
+        BookEntity05 book = new BookEntity05();
         book.setName("Maxim Dorofeev - Inbox Zero");
         book.setId(1);
 
@@ -58,7 +58,7 @@ class HibernateDirtyChecking
         session.getTransaction()
                .begin();
 
-        BookEntity book = session.find(BookEntity.class, 1);
+        BookEntity05 book = session.find(BookEntity05.class, 1);
         if (book != null)
         {
             book.setName("Fred Brooks - The Mythical Man-Month");

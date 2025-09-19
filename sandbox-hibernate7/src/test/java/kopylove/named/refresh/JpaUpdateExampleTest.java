@@ -14,7 +14,7 @@ class JpaUpdateExampleTest extends BaseSession
     @BeforeAll
     public static void prepareData()
     {
-        ParentEntityRefresh parentEntity = new ParentEntityRefresh();
+        ParentEntity12 parentEntity = new ParentEntity12();
         parentEntity.setId(101);
         parentEntity.setName("Robert Patrick");
 
@@ -28,10 +28,10 @@ class JpaUpdateExampleTest extends BaseSession
     void what_does_this_example_demonstrate()
     {
         EntityManager entityManger = EntityManagerProvider.getEntityManager();
-        ParentEntityRefresh parentEntity = entityManger.find(ParentEntityRefresh.class, 101);
+        ParentEntity12 parentEntity = entityManger.find(ParentEntity12.class, 101);
         parentEntity.setName("Linda Hamilton");
 
-        parentEntity = entityManger.find(ParentEntityRefresh.class,
+        parentEntity = entityManger.find(ParentEntity12.class,
                                          101); //loads from persistence context first, then from database
 
         assertEquals("Linda Hamilton", parentEntity.getName());

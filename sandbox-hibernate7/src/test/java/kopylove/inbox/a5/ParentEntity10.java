@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "PARENTTABLE")
+
 class ParentEntity10
 {
     @Id

@@ -8,7 +8,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "CHILDTABLE")
+
 class ChildEntity9
 {
     @Id

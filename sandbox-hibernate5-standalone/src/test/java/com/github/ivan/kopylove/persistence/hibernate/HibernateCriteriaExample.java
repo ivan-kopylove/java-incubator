@@ -20,7 +20,7 @@ class HibernateCriteriaExample
     @BeforeAll
     public static void populate()
     {
-        BookEntity book = new BookEntity();
+        BookEntity05 book = new BookEntity05();
         book.setId(2);
         book.setName("The Lord of the Rings");
 
@@ -40,9 +40,9 @@ class HibernateCriteriaExample
         session.getTransaction()
                .begin();
 
-        Criteria criteria = session.createCriteria(BookEntity.class);
+        Criteria criteria = session.createCriteria(BookEntity05.class);
         criteria.add(Restrictions.eq("name", "The Lord of the Rings"));
-        List<BookEntity> list = criteria.list();
+        List<BookEntity05> list = criteria.list();
 
         assertTrue(list.size() > 0);
         assertEquals("The Lord of the Rings",

@@ -6,19 +6,17 @@ import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "PAGE")
-class PageEntity3
+class PageEntity03
 {
     @Id
     @Column(name = "PAGE_KEY")
     private int key;
 
-    @ManyToOne(targetEntity = BookEntity3.class, fetch = FetchType.LAZY)
+    @ManyToOne(targetEntity = BookEntity03.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "BOOK_KEY")
-    private BookEntity3 book;
+    private BookEntity03 book;
 
     @Column(name = "PAGE_NAME")
     private String name;
@@ -36,12 +34,12 @@ class PageEntity3
         this.key = key;
     }
 
-    public BookEntity3 getBook()
+    public BookEntity03 getBook()
     {
         return book;
     }
 
-    public void setBook(BookEntity3 book)
+    public void setBook(BookEntity03 book)
     {
         this.book = book;
     }

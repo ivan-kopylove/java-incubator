@@ -1,13 +1,12 @@
 package com.github.ivan.kopylove.persistence.hibernate;
 
-
-
-
-
-
+import javax.persistence.Column;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
-@Table(name = "ORGANIZATION")
+
 class OrganizationEntity
 {
     @Id

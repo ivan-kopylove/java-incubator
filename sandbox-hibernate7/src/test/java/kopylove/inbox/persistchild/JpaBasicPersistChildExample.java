@@ -15,14 +15,14 @@ class JpaBasicPersistChildExample
     {
 
 
-        Set<ChildEntity7> childs = new HashSet<>();
+        Set<ChildEntity07> childs = new HashSet<>();
 
-        ParentEntity7 parentEntity = new ParentEntity7();
+        ParentEntity07 parentEntity = new ParentEntity07();
         parentEntity.setId(new Random().nextInt(1000));
         parentEntity.setName("c");
         parentEntity.setChilds(childs);
 
-        ChildEntity7 childEntity = new ChildEntity7();
+        ChildEntity07 childEntity = new ChildEntity07();
         childEntity.setKey(new Random().nextInt(1000));
         childEntity.setName("a");
         childEntity.setParent(parentEntity);

@@ -1,15 +1,14 @@
-package kopylove.inbox.merge;
+package kopylove.named.criteria.join;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "CHILDTABLE")
-class ChildEntity8
+
+class ChildEntity02
 {
     @Id
     @Column(name = "CHILDTABLE_KEY", unique = true, nullable = false)
@@ -20,7 +19,7 @@ class ChildEntity8
 
     @ManyToOne
     @JoinColumn(name = "CHILDTABLE_PARENT_KEY", nullable = false)
-    private ParentEntity8 parent;
+    private ParentEntity02 parent;
 
     public Integer getKey()
     {
@@ -42,12 +41,12 @@ class ChildEntity8
         this.name = name;
     }
 
-    public ParentEntity8 getParent()
+    public ParentEntity02 getParent()
     {
         return parent;
     }
 
-    public void setParent(ParentEntity8 parent)
+    public void setParent(ParentEntity02 parent)
     {
         this.parent = parent;
     }

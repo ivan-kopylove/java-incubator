@@ -9,7 +9,7 @@ import jakarta.persistence.JoinColumns;
 
 
 @Entity
-@Table(name = "DOCUMENT")
+
 class DocumentEntity
 {
     @Id

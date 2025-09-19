@@ -18,13 +18,13 @@ class HibernateTest extends BaseSession
         EntityTransaction tx = entityManager.getTransaction();
         tx.begin();
 
-        BookEntity4 book = new BookEntity4();
+        BookEntity04 book = new BookEntity04();
         book.setTitle("The Hitchhiker's Guide to the Galaxy");
         entityManager.persist(book);
         entityManager.flush();
         entityManager.clear();
 
-        BookEntity4 found = entityManager.find(BookEntity4.class, book.getId());
+        BookEntity04 found = entityManager.find(BookEntity04.class, book.getId());
         assertEquals("The Hitchhiker's Guide to the Galaxy", found.getTitle());
 
         tx.commit();

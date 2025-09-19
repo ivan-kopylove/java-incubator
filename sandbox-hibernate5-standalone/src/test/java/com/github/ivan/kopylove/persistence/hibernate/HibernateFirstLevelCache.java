@@ -14,7 +14,7 @@ class HibernateFirstLevelCache
     @BeforeAll
     public static void populate()
     {
-        BookEntity book = new BookEntity();
+        BookEntity05 book = new BookEntity05();
         book.setId(4);
         book.setName("Stephen King - Shining");
 
@@ -35,11 +35,11 @@ class HibernateFirstLevelCache
         session.getTransaction()
                .begin();
 
-        BookEntity book = session.load(BookEntity.class, 4);
+        BookEntity05 book = session.load(BookEntity05.class, 4);
 
         assertEquals(book.getName(), "Stephen King - Shining");
 
-        book = session.load(BookEntity.class, 4);
+        book = session.load(BookEntity05.class, 4);
 
         assertEquals(book.getName(), "Stephen King - Shining");
 
@@ -55,12 +55,12 @@ class HibernateFirstLevelCache
         session.getTransaction()
                .begin();
 
-        BookEntity book = session.load(BookEntity.class, 4);
+        BookEntity05 book = session.load(BookEntity05.class, 4);
 
         assertEquals(book.getName(), "Stephen King - Shining");
         session.evict(book);
 
-        book = session.load(BookEntity.class, 4);
+        book = session.load(BookEntity05.class, 4);
         assertEquals(book.getName(), "Stephen King - Shining");
 
         session.getTransaction()
@@ -75,12 +75,12 @@ class HibernateFirstLevelCache
         session.getTransaction()
                .begin();
 
-        BookEntity book = session.load(BookEntity.class, 4);
+        BookEntity05 book = session.load(BookEntity05.class, 4);
 
         assertEquals(book.getName(), "Stephen King - Shining");
         session.clear();
 
-        book = session.load(BookEntity.class, 4);
+        book = session.load(BookEntity05.class, 4);
         assertEquals(book.getName(), "Stephen King - Shining");
 
         session.getTransaction()

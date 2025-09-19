@@ -21,7 +21,7 @@ class JpaCompositeForeignKeyExample extends BaseSession
         user.setName("bob");
         user.setSsn(99999999);
 
-        DocumentEntity documentEntity = new DocumentEntity();
+        DocumentEntity01 documentEntity = new DocumentEntity01();
         documentEntity.setKey(0);
         documentEntity.setUser(user);
 
@@ -38,7 +38,7 @@ class JpaCompositeForeignKeyExample extends BaseSession
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         entityManager.getTransaction().begin();
 
-        DocumentEntity documentEntity = entityManager.find(DocumentEntity.class, 0);
+        DocumentEntity01 documentEntity = entityManager.find(DocumentEntity01.class, 0);
 
         assertEquals(99999999, documentEntity.getUser().getSsn());
         assertEquals("bob", documentEntity.getUser().getName());

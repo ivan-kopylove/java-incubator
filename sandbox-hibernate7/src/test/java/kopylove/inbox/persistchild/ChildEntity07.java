@@ -1,15 +1,13 @@
-package kopylove.named.generatedvalue.identity;
+package kopylove.inbox.persistchild;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "CHILDTABLE")
-class ChildEntity5
+class ChildEntity07
 {
     @Id
     @Column(name = "CHILDTABLE_KEY", unique = true, nullable = false)
@@ -20,7 +18,7 @@ class ChildEntity5
 
     @ManyToOne
     @JoinColumn(name = "CHILDTABLE_PARENT_KEY", nullable = false)
-    private ParentEntity5 parent;
+    private ParentEntity07 parent;
 
     public Integer getKey()
     {
@@ -42,12 +40,12 @@ class ChildEntity5
         this.name = name;
     }
 
-    public ParentEntity5 getParent()
+    public ParentEntity07 getParent()
     {
         return parent;
     }
 
-    public void setParent(ParentEntity5 parent)
+    public void setParent(ParentEntity07 parent)
     {
         this.parent = parent;
     }

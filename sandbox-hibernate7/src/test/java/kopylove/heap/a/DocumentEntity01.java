@@ -6,11 +6,10 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinColumns;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "DOCUMENT")
-class DocumentEntity
+
+class DocumentEntity01
 {
     @Id
     @Column(name = "DOCUMENT_KEY")

@@ -1,8 +1,8 @@
 //package com.github.ivan.kopylove.persistence.jpa;
 //
 //
-//import com.github.ivan.kopylove.persistence.jpa.a7.BookEntity3;
-//import com.github.ivan.kopylove.persistence.jpa.a7.PageEntity3;
+//import com.github.ivan.kopylove.persistence.jpa.a7.BookEntity03;
+//import com.github.ivan.kopylove.persistence.jpa.a7.PageEntity03;
 //
 //import org.hibernate.LazyInitializationException;
 //import org.junit.jupiter.api.BeforeAll;
@@ -24,11 +24,11 @@
 //        entityManager.getTransaction()
 //                     .begin();
 //
-//        BookEntity3 book = new BookEntity3();
+//        BookEntity03 book = new BookEntity03();
 //        book.setId(7);
 //        book.setName("The Lord of the Rings");
 //
-//        PageEntity3 page = new PageEntity3();
+//        PageEntity03 page = new PageEntity03();
 //        page.setAnnotations("1. Annotation; 2. Annotation");
 //        page.setName("");
 //        page.setBook(book);
@@ -50,7 +50,7 @@
 //        entityManager.getTransaction()
 //                     .begin();
 //
-//        PageEntity3 page = entityManager.find(PageEntity3.class, pageId);
+//        PageEntity03 page = entityManager.find(PageEntity03.class, pageId);
 //        assertEquals("asserts pk equality", "1. Annotation; 2. Annotation", page.getAnnotations());
 //        assertEquals("asserts book name equality", page.getName(), "");
 //
@@ -69,7 +69,7 @@
 //            entityManager.getTransaction()
 //                         .begin();
 //
-//            PageEntity3 page = entityManager.find(PageEntity3.class, pageId);
+//            PageEntity03 page = entityManager.find(PageEntity03.class, pageId);
 //
 //            assertEquals("asserts pk equality", "1. Annotation; 2. Annotation", page.getAnnotations());
 //            assertEquals("asserts book name equality", page.getName(), "");
@@ -78,7 +78,7 @@
 //                         .commit();
 //            entityManager.close();
 //
-//            BookEntity3 book = page.getBook();
+//            BookEntity03 book = page.getBook();
 //
 //            book.getName();
 //        });
@@ -91,7 +91,7 @@
 //        entityManager.getTransaction()
 //                     .begin();
 //
-//        PageEntity3 page = entityManager.find(PageEntity3.class, pageId);
+//        PageEntity03 page = entityManager.find(PageEntity03.class, pageId);
 //
 //        entityManager.getTransaction()
 //                     .commit();
@@ -100,6 +100,6 @@
 //        assertEquals("asserts pk equality", "1. Annotation; 2. Annotation", page.getAnnotations());
 //        assertEquals("asserts book name equality", page.getName(), "");
 //
-//        BookEntity3 book = page.getBook();
+//        BookEntity03 book = page.getBook();
 //    }
 //}

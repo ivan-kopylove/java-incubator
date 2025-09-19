@@ -3,12 +3,10 @@ package kopylove.inbox.a4;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
 import java.io.Serializable;
 
 @Entity
-@Table(name = "USERS")
 class UserEntity01 implements Serializable
 {
     @Id

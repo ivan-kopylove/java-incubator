@@ -20,11 +20,11 @@ class JpaCriteriaBuilderJoinExampleTest
     public static void prepareData()
     {
 
-        ParentEntity2 parentEntity = new ParentEntity2();
+        ParentEntity02 parentEntity = new ParentEntity02();
         parentEntity.setId(100);
         parentEntity.setName("some parent name");
 
-        ChildEntity2 childEntity = new ChildEntity2();
+        ChildEntity02 childEntity = new ChildEntity02();
         childEntity.setKey(100);
         childEntity.setName("some child name");
         childEntity.setParent(parentEntity);
@@ -44,16 +44,16 @@ class JpaCriteriaBuilderJoinExampleTest
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();
-        CriteriaQuery<ParentEntity2> cq = cb.createQuery(ParentEntity2.class);//result
-        Root<ParentEntity2> root = cq.from(ParentEntity2.class);//to start from
+        CriteriaQuery<ParentEntity02> cq = cb.createQuery(ParentEntity02.class);//result
+        Root<ParentEntity02> root = cq.from(ParentEntity02.class);//to start from
 
         root.join("childs");
         cq.select(root);
 
-        TypedQuery<ParentEntity2> query = entityManager.createQuery(cq);
-        List<ParentEntity2> result = query.getResultList();
+        TypedQuery<ParentEntity02> query = entityManager.createQuery(cq);
+        List<ParentEntity02> result = query.getResultList();
 
-        for (ParentEntity2 parentEntity : result)
+        for (ParentEntity02 parentEntity : result)
         {
             assertEquals("some child name", parentEntity.getChilds().iterator().next().getName());
             assertEquals("some parent name", parentEntity.getName());

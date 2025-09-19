@@ -14,7 +14,7 @@ class HibernateBasicExampleTest
     @Test
     void what_does_this_example_demonstrate()
     {
-        BookEntity bookEntity = new BookEntity();
+        BookEntity05 bookEntity = new BookEntity05();
         bookEntity.setName("Harry Potter");
         bookEntity.setId(0);
 
@@ -29,7 +29,7 @@ class HibernateBasicExampleTest
         session = HibernateSessionFactory.openSession();
         session.getTransaction()
                .begin();
-        BookEntity entity = session.find(BookEntity.class, 0);
+        BookEntity05 entity = session.find(BookEntity05.class, 0);
         assertEquals(entity.getName(), "Harry Potter");
         session.getTransaction()
                .commit();

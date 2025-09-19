@@ -1,15 +1,14 @@
-package kopylove.named.criteria.join;
+package kopylove.named.generatedvalue.identity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "CHILDTABLE")
-class ChildEntity2
+
+class ChildEntity05
 {
     @Id
     @Column(name = "CHILDTABLE_KEY", unique = true, nullable = false)
@@ -20,7 +19,7 @@ class ChildEntity2
 
     @ManyToOne
     @JoinColumn(name = "CHILDTABLE_PARENT_KEY", nullable = false)
-    private ParentEntity2 parent;
+    private ParentEntity05 parent;
 
     public Integer getKey()
     {
@@ -42,12 +41,12 @@ class ChildEntity2
         this.name = name;
     }
 
-    public ParentEntity2 getParent()
+    public ParentEntity05 getParent()
     {
         return parent;
     }
 
-    public void setParent(ParentEntity2 parent)
+    public void setParent(ParentEntity05 parent)
     {
         this.parent = parent;
     }

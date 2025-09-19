@@ -18,14 +18,14 @@ class JpaCriteriaBuilderBasicExampleTest
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
 
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();
-        CriteriaQuery<ParentEntity1> cr = cb.createQuery(ParentEntity1.class);
-        Root<ParentEntity1> root = cr.from(ParentEntity1.class);
+        CriteriaQuery<ParentEntity01> cr = cb.createQuery(ParentEntity01.class);
+        Root<ParentEntity01> root = cr.from(ParentEntity01.class);
         cr.select(root);
 
-        TypedQuery<ParentEntity1> query = entityManager.createQuery(cr);
-        List<ParentEntity1> list = query.getResultList();
+        TypedQuery<ParentEntity01> query = entityManager.createQuery(cr);
+        List<ParentEntity01> list = query.getResultList();
 
-        for (ParentEntity1 parentEntity : list)
+        for (ParentEntity01 parentEntity : list)
         {
             System.out.println(parentEntity.getName());
         }

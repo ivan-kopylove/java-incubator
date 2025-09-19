@@ -1,4 +1,4 @@
-package kopylove.named.refresh;
+package kopylove.named.criteria;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -7,7 +7,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-class ChildEntityRefresh
+class ChildEntity01
 {
     @Id
     @Column(name = "CHILDTABLE_KEY", unique = true, nullable = false)
@@ -18,7 +18,7 @@ class ChildEntityRefresh
 
     @ManyToOne
     @JoinColumn(name = "CHILDTABLE_PARENT_KEY", nullable = false)
-    private ParentEntityRefresh parent;
+    private ParentEntity01 parent;
 
     public Integer getKey()
     {
@@ -40,12 +40,12 @@ class ChildEntityRefresh
         this.name = name;
     }
 
-    public ParentEntityRefresh getParent()
+    public ParentEntity01 getParent()
     {
         return parent;
     }
 
-    public void setParent(ParentEntityRefresh parent)
+    public void setParent(ParentEntity01 parent)
     {
         this.parent = parent;
     }

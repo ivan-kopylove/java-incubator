@@ -1,4 +1,4 @@
-package kopylove.inbox.persistchild;
+package kopylove.inbox.merge;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -7,7 +7,8 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-class ChildEntity7
+
+class ChildEntity08
 {
     @Id
     @Column(name = "CHILDTABLE_KEY", unique = true, nullable = false)
@@ -18,7 +19,7 @@ class ChildEntity7
 
     @ManyToOne
     @JoinColumn(name = "CHILDTABLE_PARENT_KEY", nullable = false)
-    private ParentEntity7 parent;
+    private ParentEntity08 parent;
 
     public Integer getKey()
     {
@@ -40,12 +41,12 @@ class ChildEntity7
         this.name = name;
     }
 
-    public ParentEntity7 getParent()
+    public ParentEntity08 getParent()
     {
         return parent;
     }
 
-    public void setParent(ParentEntity7 parent)
+    public void setParent(ParentEntity08 parent)
     {
         this.parent = parent;
     }

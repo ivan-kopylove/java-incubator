@@ -16,14 +16,14 @@ class JpaBasicExampleTest extends BaseSession
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         entityManager.getTransaction().begin();
 
-        BookEntity2 bookEntity = new BookEntity2();
+        BookEntity02 bookEntity = new BookEntity02();
         bookEntity.setName("Terry Pratchett - The Colour of Magic");
         bookEntity.setId(6);
         entityManager.persist(bookEntity);
 
         entityManager.getTransaction().commit();
 
-        BookEntity2 entity = entityManager.find(BookEntity2.class, 6);
+        BookEntity02 entity = entityManager.find(BookEntity02.class, 6);
         assertEquals(entity.getName(), "Terry Pratchett - The Colour of Magic");
         entityManager.close();
     }

@@ -1,18 +1,16 @@
-package kopylove.inbox.merge;
+package kopylove.inbox.persistchild;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
 
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "PARENTTABLE")
-class ParentEntity8
+class ParentEntity07
 {
     @Id
     @Column(name = "PARENTTABLE_KEY", unique = true, nullable = false)
@@ -22,7 +20,7 @@ class ParentEntity8
     private String name;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "parent")
-    private Set<ChildEntity8> childs;
+    private Set<ChildEntity07> childs;
 
     public int getId()
     {
@@ -44,12 +42,12 @@ class ParentEntity8
         this.name = name;
     }
 
-    public Set<ChildEntity8> getChilds()
+    public Set<ChildEntity07> getChilds()
     {
         return childs;
     }
 
-    public void setChilds(Set<ChildEntity8> childs)
+    public void setChilds(Set<ChildEntity07> childs)
     {
         this.childs = new HashSet(childs);
     }

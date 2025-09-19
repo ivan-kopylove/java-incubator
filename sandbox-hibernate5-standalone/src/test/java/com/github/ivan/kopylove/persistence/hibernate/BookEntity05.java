@@ -1,14 +1,12 @@
-package kopylove.inbox.a7;
+package com.github.ivan.kopylove.persistence.hibernate;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import javax.persistence.Column;
+import javax.persistence.Id;
 
 @Entity
-@Table(name = "BOOK")
+
         //@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
-class BookEntity3
+class BookEntity05
 {
     @Id
     @Column(name = "BOOK_KEY")

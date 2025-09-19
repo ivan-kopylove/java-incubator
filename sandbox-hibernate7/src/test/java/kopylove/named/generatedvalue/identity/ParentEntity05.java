@@ -1,18 +1,17 @@
-package kopylove.named.criteria;
+package kopylove.named.generatedvalue.identity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
 
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "PARENTTABLE")
-class ParentEntity1
+
+class ParentEntity05
 {
     @Id
     @Column(name = "PARENTTABLE_KEY", unique = true, nullable = false)
@@ -22,7 +21,7 @@ class ParentEntity1
     private String name;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "parent")
-    private Set<ChildEntity1> childs;
+    private Set<ChildEntity05> childs;
 
     public int getId()
     {
@@ -44,12 +43,12 @@ class ParentEntity1
         this.name = name;
     }
 
-    public Set<ChildEntity1> getChilds()
+    public Set<ChildEntity05> getChilds()
     {
         return childs;
     }
 
-    public void setChilds(Set<ChildEntity1> childs)
+    public void setChilds(Set<ChildEntity05> childs)
     {
         this.childs = new HashSet(childs);
     }

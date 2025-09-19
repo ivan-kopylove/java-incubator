@@ -8,7 +8,7 @@ package com.github.ivan.kopylove.persistence.hibernate;
 
 
 @Entity
-@Table(name = "CHILDTABLE")
+
 class ChildEntity
 {
     @Id

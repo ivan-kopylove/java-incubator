@@ -7,7 +7,7 @@ package com.github.ivan.kopylove.persistence.hibernate;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "USERS")
+
 class UserEntity implements Serializable
 {
     @Id

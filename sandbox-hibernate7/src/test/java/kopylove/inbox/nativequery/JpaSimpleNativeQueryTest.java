@@ -19,7 +19,7 @@ class JpaSimpleNativeQueryTest extends BaseSession
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         entityManager.getTransaction().begin();
 
-        BookEntity1 bookEntity = new BookEntity1();
+        BookEntity13 bookEntity = new BookEntity13();
         bookEntity.setId(5001);
         bookEntity.setName("some name");
 

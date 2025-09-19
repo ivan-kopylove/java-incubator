@@ -1,14 +1,13 @@
-package kopylove.inbox.nativequery;
+package kopylove.inbox.basicexample;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "BOOK")
+
         //@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
-class BookEntity1
+class BookEntity02
 {
     @Id
     @Column(name = "BOOK_KEY")

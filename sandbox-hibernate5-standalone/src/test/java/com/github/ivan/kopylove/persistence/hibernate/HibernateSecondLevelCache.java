@@ -38,10 +38,10 @@
 //        session2.getTransaction()
 //                .begin();
 //
-//        BookEntity book = session1.load(BookEntity.class, 5);
+//        BookEntity05 book = session1.load(BookEntity05.class, 5);
 //        assertEquals(book.getName(), "Tolkien - The Hobbit");
 //
-//        book = session2.load(BookEntity.class, 5);
+//        book = session2.load(BookEntity05.class, 5);
 //        assertEquals(book.getName(), "Tolkien - The Hobbit");
 //
 //        session1.getTransaction()
