@@ -6,6 +6,10 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
+import static heap.cb2d.EducationalStrengthness.KOAN;
+import static org.junit.jupiter.api.Assertions.fail;
+
 class VolatileTest
 {
     private static volatile int counter1 = 0;
@@ -27,9 +31,11 @@ class VolatileTest
         }
 
         latch.await();
-        if (false) // try to predict yourself before switching
+        if (EDUCATION_MODE == KOAN)
         {
-            System.out.println(counter1);
+            fail("try to predict yourself before running the assertion");
         }
+
+        System.out.println(counter1);
     }
 }
