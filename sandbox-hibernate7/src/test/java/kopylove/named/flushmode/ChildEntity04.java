@@ -5,11 +5,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
 
 @Entity
 
-class ChildEntity4
+class ChildEntity04
 {
     @Id
     @Column(name = "CHILDTABLE_KEY", unique = true, nullable = false)
@@ -20,7 +19,7 @@ class ChildEntity4
 
     @ManyToOne
     @JoinColumn(name = "CHILDTABLE_PARENT_KEY", nullable = false)
-    private ParentEntity4 parent;
+    private ParentEntity04 parent;
 
     public Integer getKey()
     {
@@ -42,12 +41,12 @@ class ChildEntity4
         this.name = name;
     }
 
-    public ParentEntity4 getParent()
+    public ParentEntity04 getParent()
     {
         return parent;
     }
 
-    public void setParent(ParentEntity4 parent)
+    public void setParent(ParentEntity04 parent)
     {
         this.parent = parent;
     }

@@ -16,7 +16,7 @@ class JpaFlushMode
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         entityManager.getTransaction().begin();
 
-        ParentEntity4 parent = new ParentEntity4();
+        ParentEntity04 parent = new ParentEntity04();
         parent.setName("some name");
         parent.setId(4000);
 
@@ -32,7 +32,7 @@ class JpaFlushMode
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         entityManager.getTransaction().begin();
 
-        ParentEntity4 parent = entityManager.find(ParentEntity4.class, 4000);
+        ParentEntity04 parent = entityManager.find(ParentEntity04.class, 4000);
         parent.setName("new name");
 
         entityManager.setFlushMode(FlushModeType.COMMIT);

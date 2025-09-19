@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-class ParentEntity6
+class ParentEntity06
 {
     @Id
     @Column(name = "PARENTTABLE_KEY", unique = true, nullable = false)
@@ -20,7 +20,7 @@ class ParentEntity6
     private String name;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "parent")
-    private Set<ChildEntity6> childs;
+    private Set<ChildEntity06> childs;
 
     public int getId()
     {
@@ -42,12 +42,12 @@ class ParentEntity6
         this.name = name;
     }
 
-    public Set<ChildEntity6> getChilds()
+    public Set<ChildEntity06> getChilds()
     {
         return childs;
     }
 
-    public void setChilds(Set<ChildEntity6> childs)
+    public void setChilds(Set<ChildEntity06> childs)
     {
         this.childs = new HashSet(childs);
     }

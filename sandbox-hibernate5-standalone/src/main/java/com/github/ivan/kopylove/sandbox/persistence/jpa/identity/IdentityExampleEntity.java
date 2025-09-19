@@ -1,12 +1,12 @@
 package com.github.ivan.kopylove.sandbox.persistence.jpa.identity;
 
-
-
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 
+import javax.persistence.Column;
+import javax.persistence.Id;
 
-@Entity(name = "IDENTITY_EXAMPLE")
+@Entity
 class IdentityExampleEntity
 {
     /// The GenerationType.IDENTITY is the easiest to use but not the best one from a performance point of view.

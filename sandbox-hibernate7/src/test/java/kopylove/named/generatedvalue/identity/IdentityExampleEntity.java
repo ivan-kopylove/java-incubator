@@ -6,7 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-@Entity(name = "IDENTITY_EXAMPLE")
+@Entity
 class IdentityExampleEntity
 {
     /// The GenerationType.IDENTITY is the easiest to use but not the best one from a performance PoV.
