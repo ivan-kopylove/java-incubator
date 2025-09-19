@@ -27,7 +27,7 @@ public class VisibilityTest
 {
 
     @Test
-    public void fix_me() throws InterruptedException
+    void fix_me() throws InterruptedException
     {
         if (EDUCATION_MODE == KOAN)
         {
