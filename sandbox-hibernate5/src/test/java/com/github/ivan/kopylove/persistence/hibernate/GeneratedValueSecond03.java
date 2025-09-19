@@ -2,7 +2,7 @@ package com.github.ivan.kopylove.persistence.hibernate;
 
 import jakarta.persistence.GeneratedValue;
 
-import javax.persistence.Id;
+import jakarta.persistence.Id;
 
 /// drop sequence if exists MyGeneratorName
 @Entity

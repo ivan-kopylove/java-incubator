@@ -3,8 +3,8 @@ package com.github.ivan.kopylove.sandbox.persistence.jpa.identity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
+import jakarta.persistence.Column;
+import jakarta.persistence.Id;
 
 @Entity
 class IdentityExampleEntity

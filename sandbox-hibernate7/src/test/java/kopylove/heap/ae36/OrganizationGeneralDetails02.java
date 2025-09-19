@@ -1,6 +1,6 @@
 package kopylove.heap.ae36;
 
-import javax.persistence.Column;
+import jakarta.persistence.Column;
 
 class OrganizationGeneralDetails02
 {

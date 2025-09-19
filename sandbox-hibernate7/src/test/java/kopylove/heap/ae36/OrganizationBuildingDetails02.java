@@ -2,7 +2,7 @@ package kopylove.heap.ae36;
 
 import jakarta.persistence.Column;
 
-import javax.persistence.Embeddable;
+import jakarta.persistence.Embeddable;
 
 @Embeddable
 class OrganizationBuildingDetails02
