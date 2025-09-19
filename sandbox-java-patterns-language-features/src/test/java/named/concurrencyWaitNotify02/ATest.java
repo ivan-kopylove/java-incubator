@@ -16,9 +16,7 @@ class ATest
         MyHouse myHouse = new MyHouse();
 
         // when
-        new Thread(() -> {
-            myHouse.eatPizza();
-        }).start();
+        new Thread(() -> {myHouse.eatPizza();}).start();
         Thread.sleep(2_000);
 
         myHouse.pizzaGuy();
