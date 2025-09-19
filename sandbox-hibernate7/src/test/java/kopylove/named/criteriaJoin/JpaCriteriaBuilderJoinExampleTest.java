@@ -14,7 +14,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/// This example demonstrates minimal join boilerplate
+/// The example demonstrates minimal `join` boilerplate.
 class JpaCriteriaBuilderJoinExampleTest extends EntityManagerManual
 {
     @BeforeAll
@@ -26,7 +26,7 @@ class JpaCriteriaBuilderJoinExampleTest extends EntityManagerManual
         parentEntity.setName("some parent name");
 
         ChildEntity02 childEntity = new ChildEntity02();
-        childEntity.setKey(100);
+        childEntity.setKey(101);
         childEntity.setName("some child name");
         childEntity.setParent(parentEntity);
 
