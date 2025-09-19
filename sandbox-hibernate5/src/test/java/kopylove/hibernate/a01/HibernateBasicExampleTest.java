@@ -1,6 +1,6 @@
-package kopylove.persistence.hibernate.a01;
+package kopylove.hibernate.a01;
 
-import kopylove.persistence.hibernate.HibernateSessionFactory;
+import kopylove.hibernate.HibernateSessionFactory;
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;
 

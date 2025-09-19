@@ -1,4 +1,4 @@
-package kopylove.persistence.hibernate;
+package kopylove.hibernate;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,19 +6,14 @@ import jakarta.persistence.Id;
 
 /// drop sequence if exists MyGeneratorName
 @Entity
-class GeneratedValueCustomName
+class GeneratedValueSecond03
 {
     @Id
-    @GeneratedValue(generator = "MyGeneratorName")
+    @GeneratedValue
     private long key;
 
     public long getKey()
     {
         return key;
-    }
-
-    public void setKey(long key)
-    {
-        this.key = key;
     }
 }

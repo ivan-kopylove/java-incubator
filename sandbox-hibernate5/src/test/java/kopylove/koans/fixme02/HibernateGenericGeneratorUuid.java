@@ -1,6 +1,6 @@
 package kopylove.koans.fixme02;
 
-import kopylove.persistence.hibernate.HibernateSessionFactory;
+import kopylove.hibernate.HibernateSessionFactory;
 import kopylove.koans.fixme02.a01.GeneratedValueUuid99;
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;

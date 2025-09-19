@@ -1,4 +1,4 @@
-package kopylove.persistence.hibernate;
+package kopylove.hibernate.a01;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 @Entity
 
         //@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
-class BookEntity05
+class BookEntity06
 {
     @Id
     @Column(name = "BOOK_KEY")

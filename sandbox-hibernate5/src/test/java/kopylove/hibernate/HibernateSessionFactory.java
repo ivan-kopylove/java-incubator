@@ -1,4 +1,4 @@
-package kopylove.persistence.hibernate;
+package kopylove.hibernate;
 
 import jakarta.persistence.Entity;
 import org.hibernate.Session;
@@ -31,7 +31,7 @@ public final class HibernateSessionFactory
         configuration.setProperty("hibernate.format_sql", "false");
         configuration.setProperty("hibernate.use_sql_comments", "false");
 
-        getAnnotatedClasses(Entity.class, "kopylove").forEach(entity -> {
+        getAnnotatedClasses(Entity.class, "kopylove.hibernate").forEach(entity -> {
             configuration.addAnnotatedClass(entity);
         });
 

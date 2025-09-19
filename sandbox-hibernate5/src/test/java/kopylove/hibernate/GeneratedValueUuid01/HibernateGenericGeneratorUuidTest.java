@@ -1,6 +1,6 @@
-package kopylove.persistence.hibernate.GeneratedValueUuid01;
+package kopylove.hibernate.GeneratedValueUuid01;
 
-import kopylove.persistence.hibernate.HibernateSessionFactory;
+import kopylove.hibernate.HibernateSessionFactory;
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;
 

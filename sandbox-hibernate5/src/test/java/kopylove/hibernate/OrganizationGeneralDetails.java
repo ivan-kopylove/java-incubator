@@ -1,4 +1,4 @@
-package kopylove.persistence.hibernate;
+package kopylove.hibernate;
 
 import jakarta.persistence.Column;
 
