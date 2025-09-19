@@ -1,7 +1,6 @@
-//package com.github.ivan.kopylove.persistence.hibernate;
+//package kopylove.hibernate.named.secondlevelcache;
 //
-//
-//
+//import kopylove.hibernate.HibernateSessionFactory;
 //import org.hibernate.Session;
 //import org.hibernate.query.NativeQuery;
 //import org.junit.jupiter.api.BeforeAll;
@@ -16,38 +15,32 @@
 //    {
 //
 //        Session session = HibernateSessionFactory.openSession();
-//        session.getTransaction()
-//               .begin();
+//        session.getTransaction().begin();
 //
-//        NativeQuery sqlQuery = session.createSQLQuery("INSERT INTO BOOK VALUES (5, 'Tolkien - The Hobbit')");
+//        NativeQuery sqlQuery = session.createNativeQuery("INSERT INTO BOOK VALUES (5, 'Tolkien - The Hobbit')");
 //        int i = sqlQuery.executeUpdate();
 //        assertEquals(1, i);
-//        session.getTransaction()
-//               .commit();
+//        session.getTransaction().commit();
 //
 //        session.close();
 //    }
 //
 //    @Test
-//    void foo()
+//    void what_does_this_example_demonstrate()
 //    {
 //        Session session1 = HibernateSessionFactory.openSession();
 //        Session session2 = HibernateSessionFactory.openSession();
-//        session1.getTransaction()
-//                .begin();
-//        session2.getTransaction()
-//                .begin();
+//        session1.getTransaction().begin();
+//        session2.getTransaction().begin();
 //
-//        BookEntity05 book = session1.load(BookEntity05.class, 5);
+//        BookEntity06 book = session1.load(BookEntity06.class, 5);
 //        assertEquals(book.getName(), "Tolkien - The Hobbit");
 //
-//        book = session2.load(BookEntity05.class, 5);
+//        book = session2.load(BookEntity06.class, 5);
 //        assertEquals(book.getName(), "Tolkien - The Hobbit");
 //
-//        session1.getTransaction()
-//                .commit();
-//        session2.getTransaction()
-//                .commit();
+//        session1.getTransaction().commit();
+//        session2.getTransaction().commit();
 //        session1.close();
 //        session2.close();
 //    }

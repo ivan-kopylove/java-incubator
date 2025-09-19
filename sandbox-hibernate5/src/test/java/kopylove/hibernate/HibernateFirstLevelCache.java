@@ -1,10 +1,9 @@
 //package com.github.ivan.kopylove.persistence.hibernate;
 //
+//import kopylove.hibernate.HibernateSessionFactory;
 //import org.hibernate.Session;
 //import org.junit.jupiter.api.BeforeAll;
 //import org.junit.jupiter.api.Test;
-//
-//import static org.junit.jupiter.api.Assertions.assertEquals;
 //
 ///// First level cache cannot be turned off
 //class HibernateFirstLevelCache

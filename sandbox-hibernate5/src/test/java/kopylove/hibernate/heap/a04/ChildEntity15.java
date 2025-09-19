@@ -1,4 +1,4 @@
-package kopylove.hibernate;
+package kopylove.hibernate.heap.a04;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -7,7 +7,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-class ChildEntity
+class ChildEntity15
 {
     @Id
     @Column(name = "CHILDTABLE_KEY", unique = true, nullable = false)
@@ -18,7 +18,7 @@ class ChildEntity
 
     @ManyToOne
     @JoinColumn(name = "CHILDTABLE_PARENT_KEY", nullable = false)
-    private ParentEntity parent;
+    private ParentEntity15 parent;
 
     public Integer getKey()
     {
@@ -40,12 +40,12 @@ class ChildEntity
         this.name = name;
     }
 
-    public ParentEntity getParent()
+    public ParentEntity15 getParent()
     {
         return parent;
     }
 
-    public void setParent(ParentEntity parent)
+    public void setParent(ParentEntity15 parent)
     {
         this.parent = parent;
     }

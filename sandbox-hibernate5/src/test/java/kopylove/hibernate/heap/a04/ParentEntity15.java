@@ -1,4 +1,4 @@
-package kopylove.hibernate;
+package kopylove.hibernate.heap.a04;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-class ParentEntity
+class ParentEntity15
 {
     @Id
     @Column(name = "PARENTTABLE_KEY", unique = true, nullable = false)
@@ -20,7 +20,7 @@ class ParentEntity
     private String name;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "parent")
-    private Set<ChildEntity> childs;
+    private Set<ChildEntity15> childs;
 
     public int getId()
     {
@@ -42,12 +42,12 @@ class ParentEntity
         this.name = name;
     }
 
-    public Set<ChildEntity> getChilds()
+    public Set<ChildEntity15> getChilds()
     {
         return childs;
     }
 
-    public void setChilds(Set<ChildEntity> childs)
+    public void setChilds(Set<ChildEntity15> childs)
     {
         this.childs = new HashSet(childs);
     }

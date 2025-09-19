@@ -1,5 +1,6 @@
-//package com.github.ivan.kopylove.persistence.hibernate;
+//package kopylove.hibernate.heap.a03;
 //
+//import kopylove.hibernate.HibernateSessionFactory;
 //import org.hibernate.Session;
 //import org.junit.jupiter.api.Test;
 //
@@ -10,7 +11,7 @@
 //    @Test
 //    void test_find()
 //    {
-//        ParentEntity parentEntity = new ParentEntity();
+//        ParentEntity14 parentEntity = new ParentEntity14();
 //        parentEntity.setId(4);
 //        parentEntity.setName("test4");
 //
@@ -21,10 +22,10 @@
 //
 //        session = HibernateSessionFactory.openSession();
 //        session.getTransaction().begin();
-//        ParentEntity entity = session.get(ParentEntity.class, 4);
+//        ParentEntity14 entity = session.get(ParentEntity14.class, 4);
 //        entity.setName("test4-2");
 //
-//        ParentEntity entity2 = session.find(ParentEntity.class, 4);
+//        ParentEntity14 entity2 = session.find(ParentEntity14.class, 4);
 //        assertEquals("message", "test4-2", entity2.getName());
 //        session.close();
 //    }
@@ -32,7 +33,7 @@
 //    @Test
 //    void test_get()
 //    {
-//        ParentEntity parentEntity = new ParentEntity();
+//        ParentEntity14 parentEntity = new ParentEntity14();
 //        parentEntity.setId(4);
 //        parentEntity.setName("test4");
 //
@@ -43,17 +44,17 @@
 //
 //        session = HibernateSessionFactory.openSession();
 //        session.getTransaction().begin();
-//        ParentEntity entity = session.get(ParentEntity.class, 4);
+//        ParentEntity14 entity = session.get(ParentEntity14.class, 4);
 //        entity.setName("test4-2");
 //
-//        ParentEntity entity2 = session.get(ParentEntity.class, 4);
+//        ParentEntity14 entity2 = session.get(ParentEntity14.class, 4);
 //        assertEquals("message", "test4-2", entity2.getName());
 //    }
 //
 //    @Test
 //    void test_load()
 //    {
-//        ParentEntity parentEntity = new ParentEntity();
+//        ParentEntity14 parentEntity = new ParentEntity14();
 //        parentEntity.setId(4);
 //        parentEntity.setName("test4");
 //
@@ -64,10 +65,10 @@
 //
 //        session = HibernateSessionFactory.openSession();
 //        session.getTransaction().begin();
-//        ParentEntity entity = session.get(ParentEntity.class, 4);
+//        ParentEntity14 entity = session.get(ParentEntity14.class, 4);
 //        entity.setName("test4-2");
 //
-//        ParentEntity entity2 = session.load(ParentEntity.class, 4);
+//        ParentEntity14 entity2 = session.load(ParentEntity14.class, 4);
 //        assertEquals("message", "test4-2", entity2.getName());
 //    }
 //}

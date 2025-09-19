@@ -30,7 +30,7 @@ class JpaOrderByExample extends EntityManagerManual
     }
 
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
