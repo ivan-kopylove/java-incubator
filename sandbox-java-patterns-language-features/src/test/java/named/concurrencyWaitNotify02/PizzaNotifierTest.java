@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-class ATest
+class PizzaNotifierTest
 {
     @Test
     @DisplayName("what is the purpose of this example?")
