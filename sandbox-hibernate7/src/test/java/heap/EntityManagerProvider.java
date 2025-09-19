@@ -7,6 +7,7 @@ import org.hibernate.cfg.Configuration;
 import org.reflections.Reflections;
 
 import java.lang.reflect.Modifier;
+import java.util.stream.Collectors;
 
 public class EntityManagerProvider
 {
@@ -48,18 +49,17 @@ public class EntityManagerProvider
         configuration.setProperty("hibernate.format_sql", "false");
         configuration.setProperty("hibernate.use_sql_comments", "true");
 
-//        configuration.addPackage("dasdsa");
+        //        configuration.addPackage("dasdsa");
 
-        for (Class<?> clazz : (new Reflections("heap")).getTypesAnnotatedWith(Entity.class))
-        {
-            if (!Modifier.isAbstract(clazz.getModifiers()))
-            {
-                configuration.addAnnotatedClass(clazz);
-            }
-        }
+        extracted();
+
+        configuration.addAnnotatedClass(clazz);
+
 
         // Build EntityManagerFactory
         emf = configuration.buildSessionFactory().unwrap(EntityManagerFactory.class);
         return emf.createEntityManager();
     }
+
+
 }
