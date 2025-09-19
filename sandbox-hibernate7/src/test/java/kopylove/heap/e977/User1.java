@@ -5,11 +5,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "User_E977")
-public class User
+public class User1
 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,15 +16,14 @@ public class User
     @Column(name = "name")
     private String name;
 
-    // Constructors, getters, and setters
-    public User() {}
+    public User1() {}
 
-    public User(String name)
+    public User1(String name)
     {
         this.name = name;
     }
 
-    // Getters and setters
+    
     public Long getId() {return id;}
 
     public String getName() {return name;}

@@ -2,11 +2,12 @@ package kopylove.inbox.a6;
 
 import jakarta.persistence.EntityManager;
 import kopylove.heap.EntityManagerProvider;
+import kopylove.heap.dsasdasda.BaseSession;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class JpaSharedGeneratedValue
+class JpaSharedGeneratedValue extends BaseSession
 {
     @Test
     void foo()

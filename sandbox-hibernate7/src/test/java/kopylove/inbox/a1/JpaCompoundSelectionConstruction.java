@@ -49,7 +49,7 @@ class JpaCompoundSelectionConstruction extends BaseSession
     @Test
     void run_incorrect()
     {
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(IllegalStateException.class, () -> {
 
 
             EntityManager entityManager = EntityManagerProvider.getEntityManager();

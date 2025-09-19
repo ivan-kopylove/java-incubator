@@ -15,12 +15,12 @@ class UserTest extends BaseSession
     {
         getEntityManager().getTransaction().begin();
 
-        User user = new User("John Doe");
+        User1 user = new User1("John Doe");
         getEntityManager().persist(user);
 
         getEntityManager().getTransaction().commit();
 
-        User foundUser = getEntityManager().find(User.class, user.getId());
+        User1 foundUser = getEntityManager().find(User1.class, user.getId());
         assertNotNull(foundUser);
         assertNotNull(foundUser.getName());
     }

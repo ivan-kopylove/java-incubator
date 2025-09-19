@@ -13,18 +13,18 @@ class HibernateTest extends BaseSession
     @Test
     void testPackageScan()
     {
-
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
-        // Perform test
+
         EntityTransaction tx = entityManager.getTransaction();
         tx.begin();
 
-        Book book = new Book("The Hitchhiker's Guide to the Galaxy");
+        BookEntity4 book = new BookEntity4();
+        book.setTitle("The Hitchhiker's Guide to the Galaxy");
         entityManager.persist(book);
         entityManager.flush();
         entityManager.clear();
 
-        Book found = entityManager.find(Book.class, book.getId());
+        BookEntity4 found = entityManager.find(BookEntity4.class, book.getId());
         assertEquals("The Hitchhiker's Guide to the Galaxy", found.getTitle());
 
         tx.commit();

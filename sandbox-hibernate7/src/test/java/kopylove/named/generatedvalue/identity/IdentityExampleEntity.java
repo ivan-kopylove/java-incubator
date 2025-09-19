@@ -11,7 +11,7 @@ import jakarta.persistence.Id;
 @Entity(name = "IDENTITY_EXAMPLE")
 class IdentityExampleEntity
 {
-    /// The GenerationType.IDENTITY is the easiest to use but not the best one from a performance point of view.
+    /// The GenerationType.IDENTITY is the easiest to use but not the best one from a performance PoV.
     ///
     /// It relies on an auto-incremented database column and lets the database generate a new value with each insert operation.
     @Id
