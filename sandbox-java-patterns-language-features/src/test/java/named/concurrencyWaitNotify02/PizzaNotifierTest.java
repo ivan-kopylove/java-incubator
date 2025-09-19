@@ -7,7 +7,6 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
-@SuppressWarnings("ALL")
 class PizzaNotifierTest
 {
     @Test
@@ -24,9 +23,5 @@ class PizzaNotifierTest
         assertDoesNotThrow(() -> {
             myHouse.pizzaGuy();
         });
-
-
-        // then
-        assertThat("actual result", equalTo("expected result"));
     }
 }
