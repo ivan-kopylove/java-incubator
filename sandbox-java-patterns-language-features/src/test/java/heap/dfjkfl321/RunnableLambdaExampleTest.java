@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.function.Consumer;
 
-import static heap.asddas.PredictionMode.KOAN_MODE;
+import static heap.asddas.EducationalStrengthness.KOAN_MODE;
 import static org.junit.jupiter.api.Assertions.fail;
 
 class RunnableLambdaExampleTest
