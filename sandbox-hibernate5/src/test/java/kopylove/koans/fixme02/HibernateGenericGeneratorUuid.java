@@ -17,7 +17,7 @@ class HibernateGenericGeneratorUuid
     {
         GeneratedValueUuid99 generatedKey = new GeneratedValueUuid99();
 
-        Session session = HibernateSessionFactory.openSession();
+        Session session = HibernateSessionFactory.openCustomSession("kopylove.koans.fixme02");
         session.getTransaction().begin();
         session.persist(generatedKey);
         session.getTransaction().commit();

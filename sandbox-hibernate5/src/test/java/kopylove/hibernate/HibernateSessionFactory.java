@@ -51,7 +51,7 @@ public final class HibernateSessionFactory
 
      public static Session openCustomSession(String packageToScan)
     {
-        SessionFactory confinedSessionFactory = buildSessionFactory("kopylove.hibernate");
+        SessionFactory confinedSessionFactory = buildSessionFactory(packageToScan);
 
         return confinedSessionFactory.openSession();
     }
