@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 @Entity
 
         //@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
-class BookEntity06
+class BookEntity07
 {
     @Id
     @Column(name = "BOOK_KEY")

@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class HibernateDirtyChecking
 {
+    private static int ID = 1;
 
     @BeforeAll
     public static void populate()
@@ -16,26 +17,11 @@ class HibernateDirtyChecking
         Session session = HibernateSessionFactory.openSession();
         session.getTransaction().begin();
 
-        BookEntity06 book = new BookEntity06();
+        BookEntity07 book = new BookEntity07();
         book.setName("Maxim Dorofeev - Inbox Zero");
-        book.setId(1);
+        book.setId(ID);
 
         session.persist(book);
-
-        session.getTransaction().commit();
-        session.close();
-    }
-
-    public static void verifyDirtyCheckWorks()
-    {
-        Session session = HibernateSessionFactory.openSession();
-        session.getTransaction().begin();
-
-        BookEntity06 book = session.find(BookEntity06.class, 1);
-        if (book != null)
-        {
-            assertEquals("Fred Brooks - The Mythical Man-Month", book.getName());
-        }
 
         session.getTransaction().commit();
         session.close();
@@ -53,12 +39,22 @@ class HibernateDirtyChecking
         Session session = HibernateSessionFactory.openSession();
         session.getTransaction().begin();
 
-        BookEntity06 book = session.find(BookEntity06.class, 1);
-        if (book != null)
-        {
-            book.setName("Fred Brooks - The Mythical Man-Month");
-            // what is implicit here?
-        }
+
+        BookEntity07 book = session.find(BookEntity07.class, ID);
+        book.setName("Fred Brooks - The Mythical Man-Month");
+        // what is implicit here?
+
+        session.getTransaction().commit();
+        session.close();
+    }
+
+    public void verifyDirtyCheckWorks()
+    {
+        Session session = HibernateSessionFactory.openSession();
+        session.getTransaction().begin();
+
+        BookEntity07 book = session.find(BookEntity07.class, ID);
+        assertEquals("Fred Brooks - The Mythical Man-Month", book.getName());
 
         session.getTransaction().commit();
         session.close();
