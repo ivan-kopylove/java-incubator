@@ -2,7 +2,7 @@ package kopylove.heap.b505;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
-import kopylove.heap.jsdkl.EntityClassProvider;
+import kopylove.heap.c637.EntityClassProvider;
 import org.hibernate.cfg.Configuration;
 
 public class EntityManagerProvider

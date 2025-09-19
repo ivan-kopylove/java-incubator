@@ -1,4 +1,4 @@
-package kopylove.heap.jsdkl;
+package kopylove.heap.c637;
 
 import jakarta.persistence.Entity;
 import org.reflections.Reflections;
