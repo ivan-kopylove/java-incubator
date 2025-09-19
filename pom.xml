@@ -23,19 +23,6 @@
                 </configuration>
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version> <!-- Use an appropriate version -->
-                <configuration>
-                    <properties>
-                        <property>
-                            <name>listener</name>
-                            <value>com.github.ivan.kopylove.commons.util.UnusedTestExecutionListener</value>
-                        </property>
-                    </properties>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 
@@ -69,26 +56,6 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit-jupiter-api.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>${junit-jupiter-api.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-launcher</artifactId>
-            <version>1.13.4</version>
-            <scope>test</scope>
-        </dependency>
 
         <dependency>
             <groupId>org.hamcrest</groupId>
