@@ -1,41 +1,22 @@
-package kopylove.heap.b505;
+package kopylove.persistence.hibernate;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 import static com.github.ivan.kopylove.commons.reflection.AnnotatedClassesProvider.getAnnotatedClasses;
 
-public class EntityManagerProvider
+public final class HibernateSessionFactory
 {
-    private static EntityManagerFactory emf;
-    private static EntityManager        em;
+    private static final SessionFactory sessionFactory = buildSessionFactory();
 
-    public static EntityManager getEntityManager()
+    private HibernateSessionFactory()
     {
-        if (em == null || !em.isOpen())
-        {
-            em = build();
-        }
-        return em;
     }
 
-    public static void closeEntityManager()
+    private static SessionFactory buildSessionFactory()
     {
-        if (em.isOpen())
-        {
-            em.close();
-        }
-    }
-
-    private static EntityManager build()
-    {
-        if (emf != null)
-        {
-            return emf.createEntityManager();
-        }
-
         Configuration configuration = new Configuration();
 
         configuration.setProperty("hibernate.connection.driver_class", "org.h2.Driver");
@@ -55,8 +36,21 @@ public class EntityManagerProvider
         });
 
 
-        // Build EntityManagerFactory
-        emf = configuration.buildSessionFactory().unwrap(EntityManagerFactory.class);
-        return emf.createEntityManager();
+        return configuration.configure().buildSessionFactory(); // looks for hibernate.cfg.xml
+    }
+
+    public static Session getCurrentSession()
+    {
+        return sessionFactory.getCurrentSession();
+    }
+
+    public static Session openSession()
+    {
+        return sessionFactory.openSession();
+    }
+
+    public static void close()
+    {
+        sessionFactory.close();
     }
 }

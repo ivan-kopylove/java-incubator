@@ -1,4 +1,4 @@
-package com.github.ivan.kopylove.persistence.hibernate;
+package kopylove.persistence.hibernate;
 
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;
