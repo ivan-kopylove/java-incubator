@@ -2,5 +2,11 @@ package heap.asddas;
 
 public enum EducationalStrengthness
 {
-    KOAN, EXAMPLE
+
+    KOAN,
+    EXAMPLE;
+
+    public static EducationalStrengthness EDUCATION_MODE = KOAN;
 }
+
+
