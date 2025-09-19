@@ -21,8 +21,8 @@ class HibernateGenericGeneratorUuid
         session.getTransaction().commit();
         session.close();
 
-        assertNotNull(generatedKey.getKey());
-        assertInstanceOf(String.class, generatedKey.getKey());
-        assertEquals(32, generatedKey.getKey().length());
+        assertNotNull(generatedKey.getId());
+        assertInstanceOf(String.class, generatedKey.getId());
+        assertEquals(32, generatedKey.getId().length());
     }
 }

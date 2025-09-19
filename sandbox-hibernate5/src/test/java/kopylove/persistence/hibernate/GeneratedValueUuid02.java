@@ -11,10 +11,10 @@ class GeneratedValueUuid02
     @Id
     @GeneratedValue(generator = "generator")
     @GenericGenerator(name = "generator", strategy = "uuid2")
-    private String key;
+    private String id;
 
-    public String getKey()
+    public String getId()
     {
-        return key;
+        return id;
     }
 }

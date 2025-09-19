@@ -1,18 +1,17 @@
-package kopylove.persistence.hibernate;
+package kopylove.persistence.hibernate.fixme01;
 
+import kopylove.persistence.hibernate.HibernateSessionFactory;
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/// Minimal example with Hibernate session - save and load saved entity
-/// Example available at: [...](https://github.com/ivan-kopylove/sandbox-java)
-class HibernateBasicExampleTest
+class HibernateBasicExampleKoanTest
 {
     @Test
     void what_does_this_example_demonstrate()
     {
-        BookEntity05 bookEntity = new BookEntity05();
+        BookEntity07 bookEntity = new BookEntity07();
         bookEntity.setName("Harry Potter");
         bookEntity.setId(0);
 
@@ -24,7 +23,7 @@ class HibernateBasicExampleTest
 
         session = HibernateSessionFactory.openSession();
         session.getTransaction().begin();
-        BookEntity05 entity = session.find(BookEntity05.class, 0);
+        BookEntity07 entity = session.find(BookEntity07.class, 0);
         assertEquals(entity.getName(), "Harry Potter");
         session.getTransaction().commit();
         session.close();
