@@ -1,5 +1,3 @@
-
-
-- raw examples
-- koans
+- atomic examples
+- atomic koans
 - what will be printed
