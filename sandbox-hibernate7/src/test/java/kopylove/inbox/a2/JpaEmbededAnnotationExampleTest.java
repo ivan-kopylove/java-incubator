@@ -41,7 +41,7 @@ class JpaEmbededAnnotationExampleTest extends EntityManagerSession
     @Test
     void what_does_this_example_demonstrate()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         OrganizationEntity02 organization = entityManager.find(OrganizationEntity02.class, 0);

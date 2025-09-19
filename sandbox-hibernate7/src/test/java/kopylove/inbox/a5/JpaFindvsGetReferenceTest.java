@@ -34,7 +34,7 @@ class JpaFindvsGetReferenceTest extends EntityManagerSession
     @Test
     void find_method()
     {
-        EntityManager entityManger = EntityManagerProvider.getEntityManager();
+        EntityManager entityManger = super.getEntityManager();
 
         // not a proxy with no lazy access;
         // if the object is not found in the database null is returned
@@ -50,7 +50,7 @@ class JpaFindvsGetReferenceTest extends EntityManagerSession
     @Test
     void getReference()
     {
-        EntityManager entityManger = EntityManagerProvider.getEntityManager();
+        EntityManager entityManger = super.getEntityManager();
 
         ParentEntity10 anEntity = entityManger.getReference(ParentEntity10.class,
                                                             999999999); //no db hit, parent is taken from proxy (what level?)
@@ -69,7 +69,7 @@ class JpaFindvsGetReferenceTest extends EntityManagerSession
     void getReferenceException()
     {
         assertThrows(ObjectNotFoundException.class, () -> {
-            EntityManager entityManger = EntityManagerProvider.getEntityManager();
+            EntityManager entityManger = super.getEntityManager();
 
             ParentEntity10 parent = entityManger.getReference(ParentEntity10.class, 999999999); //no db hit
 

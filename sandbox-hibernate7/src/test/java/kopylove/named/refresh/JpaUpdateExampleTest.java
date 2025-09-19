@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class JpaUpdateExampleTest extends EntityManagerSession
 {
     @BeforeAll
-    public static void prepareData()
+    public static void populate()
     {
         ParentEntity12 parentEntity = new ParentEntity12();
         parentEntity.setId(101);
@@ -27,7 +27,7 @@ class JpaUpdateExampleTest extends EntityManagerSession
     @Test
     void what_does_this_example_demonstrate()
     {
-        EntityManager entityManger = EntityManagerProvider.getEntityManager();
+        EntityManager entityManger = super.getEntityManager();
         ParentEntity12 parentEntity = entityManger.find(ParentEntity12.class, 101);
         parentEntity.setName("Linda Hamilton");
 

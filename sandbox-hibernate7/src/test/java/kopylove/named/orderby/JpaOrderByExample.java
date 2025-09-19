@@ -32,7 +32,7 @@ class JpaOrderByExample extends EntityManagerSession
     @Test
     void foo()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         Building building = entityManager.find(Building.class, 0L);

@@ -45,7 +45,7 @@ class JpaCompoundSelectionArray extends EntityManagerSession
     @Test
     void run_correct()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();

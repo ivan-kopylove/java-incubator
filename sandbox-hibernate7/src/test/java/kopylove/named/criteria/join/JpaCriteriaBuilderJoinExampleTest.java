@@ -6,6 +6,7 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
 import kopylove.heap.EntityManagerProvider;
+import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -14,10 +15,10 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// This example demonstrates minimal join boilerplate
-class JpaCriteriaBuilderJoinExampleTest
+class JpaCriteriaBuilderJoinExampleTest extends EntityManagerSession
 {
     @BeforeAll
-    public static void prepareData()
+    public static void populate()
     {
 
         ParentEntity02 parentEntity = new ParentEntity02();
@@ -42,7 +43,7 @@ class JpaCriteriaBuilderJoinExampleTest
     @Test
     void what_does_this_example_demonstrate()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();
         CriteriaQuery<ParentEntity02> cq = cb.createQuery(ParentEntity02.class);//result
         Root<ParentEntity02> root = cq.from(ParentEntity02.class);//to start from

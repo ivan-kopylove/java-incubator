@@ -51,7 +51,7 @@ class JpaCompoundSelectionConstruction extends EntityManagerSession
         assertThrows(IllegalStateException.class, () -> {
 
 
-            EntityManager entityManager = EntityManagerProvider.getEntityManager();
+            EntityManager entityManager = super.getEntityManager();
             entityManager.getTransaction().begin();
 
             CriteriaBuilder builder = entityManager.getCriteriaBuilder();
@@ -72,7 +72,7 @@ class JpaCompoundSelectionConstruction extends EntityManagerSession
     @Test
     void run_correct()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();

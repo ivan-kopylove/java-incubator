@@ -1,18 +1,18 @@
 package kopylove.named.cascade;
 
 import jakarta.persistence.EntityManager;
-import kopylove.heap.EntityManagerProvider;
+import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collections;
 
 /// [...](https://www.baeldung.com/jpa-cascade-types)
-class JpaCascadePersist
+class JpaCascadePersist extends EntityManagerSession
 {
     @Test
     void whenParentSavedThenChildSaved()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         PersonEntity person = new PersonEntity();
@@ -30,7 +30,7 @@ class JpaCascadePersist
     @Test
     void whenParentRemovedThenChildRemoved()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         PersonEntity person = new PersonEntity();
@@ -45,7 +45,7 @@ class JpaCascadePersist
         entityManager.getTransaction().commit();
         entityManager.close();
 
-        entityManager = EntityManagerProvider.getEntityManager();
+        entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         PersonEntity personEntity = entityManager.find(PersonEntity.class, id);
@@ -58,7 +58,7 @@ class JpaCascadePersist
     @Test
     void a()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         PersonEntity person = new PersonEntity();
@@ -73,7 +73,7 @@ class JpaCascadePersist
         entityManager.getTransaction().commit();
         entityManager.close();
 
-        entityManager = EntityManagerProvider.getEntityManager();
+        entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         PersonEntity personEntity = entityManager.find(PersonEntity.class, id);
@@ -87,7 +87,7 @@ class JpaCascadePersist
     @Test
     void whenParentSavedThenMerged()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         int addressId;
@@ -102,7 +102,7 @@ class JpaCascadePersist
         entityManager.getTransaction().commit();
         entityManager.close();
 
-        entityManager = EntityManagerProvider.getEntityManager();
+        entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         AddressEntity savedAddressEntity = entityManager.find(AddressEntity.class, addressId);

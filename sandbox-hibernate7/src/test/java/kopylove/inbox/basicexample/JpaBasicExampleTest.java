@@ -13,7 +13,7 @@ class JpaBasicExampleTest extends EntityManagerSession
     @Test
     void what_does_this_example_demonstrate()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         BookEntity02 bookEntity = new BookEntity02();

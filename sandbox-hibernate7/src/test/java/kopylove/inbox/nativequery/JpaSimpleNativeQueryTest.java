@@ -16,7 +16,7 @@ class JpaSimpleNativeQueryTest extends EntityManagerSession
     @BeforeEach
     public void populate()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         BookEntity13 bookEntity = new BookEntity13();
@@ -32,7 +32,7 @@ class JpaSimpleNativeQueryTest extends EntityManagerSession
     @Test
     void what_does_this_example_demonstrate()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
 
         entityManager.getTransaction().begin();
 

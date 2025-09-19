@@ -8,13 +8,14 @@ import jakarta.persistence.criteria.Join;
 import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;
 import kopylove.heap.EntityManagerProvider;
+import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
 /// - [https://stackoverflow.com/questions/4511368/](https://stackoverflow.com/questions/4511368/)
-class JpaFetchFetchPathNavigationTest2
+class JpaFetchFetchPathNavigationTest2 extends EntityManagerSession
 {
     private static final String USER_NAME_ONE = "a";
     private static final String USER_NAME_TWO = "b";
@@ -49,7 +50,7 @@ class JpaFetchFetchPathNavigationTest2
     @Test
     void join_fetch_together()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
@@ -73,7 +74,7 @@ class JpaFetchFetchPathNavigationTest2
     @Test
     void cast_to_join()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();

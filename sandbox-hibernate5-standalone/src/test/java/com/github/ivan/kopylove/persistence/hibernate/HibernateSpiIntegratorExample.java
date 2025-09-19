@@ -10,7 +10,7 @@ class HibernateSpiIntegratorExample
     @Test
     void what_does_this_example_demonstrate()
     {
-        EntityManagerProvider.getEntityManager();
+        super.getEntityManager();
 
         MetadataExtractorIntegrator instance = MetadataExtractorIntegrator.INSTANCE;
         for (PersistentClass clazz : instance.getMetadata()

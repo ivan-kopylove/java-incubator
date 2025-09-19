@@ -1,14 +1,19 @@
 package kopylove.heap.dsasdasda;
 
+import jakarta.persistence.EntityManager;
+import kopylove.heap.EntityManagerProvider;
 import org.junit.jupiter.api.AfterEach;
-
-import static kopylove.heap.EntityManagerProvider.closeEntityManager;
 
 public class EntityManagerSession
 {
     @AfterEach
     public void destroy()
     {
-        closeEntityManager();
+        EntityManagerProvider.closeEntityManager();
+    }
+
+    public EntityManager getEntityManager()
+    {
+        return EntityManagerProvider.getEntityManager();
     }
 }

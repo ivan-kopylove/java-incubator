@@ -35,7 +35,7 @@ class JpaCompositeForeignKeyExample extends EntityManagerSession
     @Test
     void what_does_this_example_demonstrate()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         DocumentEntity01 documentEntity = entityManager.find(DocumentEntity01.class, 0);

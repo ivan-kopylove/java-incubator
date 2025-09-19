@@ -2,12 +2,13 @@ package kopylove.inbox.a3;
 
 import jakarta.persistence.EntityManager;
 import kopylove.heap.EntityManagerProvider;
+import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class JpaEntityStateAfterFlush
+class JpaEntityStateAfterFlush extends EntityManagerSession
 {
     @BeforeAll
     public static void populate()
@@ -34,7 +35,7 @@ class JpaEntityStateAfterFlush
 
     public void do_flush()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         ParentEntity11 parent = entityManager.find(ParentEntity11.class, 3000);
@@ -50,7 +51,7 @@ class JpaEntityStateAfterFlush
 
     public void read_again()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         ParentEntity11 parent = entityManager.find(ParentEntity11.class, 3000);

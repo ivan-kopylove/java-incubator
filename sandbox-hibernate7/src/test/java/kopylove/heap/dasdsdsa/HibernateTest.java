@@ -13,7 +13,7 @@ class HibernateTest extends EntityManagerSession
     @Test
     void testPackageScan()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
 
         EntityTransaction tx = entityManager.getTransaction();
         tx.begin();

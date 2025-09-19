@@ -20,7 +20,7 @@
 //    @BeforeAll
 //    public static void populate()
 //    {
-//        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+//        EntityManager entityManager = super.getEntityManager();
 //        entityManager.getTransaction()
 //                     .begin();
 //
@@ -46,7 +46,7 @@
 //    @Test
 //    void normalBehaviour()
 //    {
-//        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+//        EntityManager entityManager = super.getEntityManager();
 //        entityManager.getTransaction()
 //                     .begin();
 //
@@ -65,7 +65,7 @@
 //        assertThrows(LazyInitializationException.class, () -> {
 //
 //
-//            EntityManager entityManager = EntityManagerProvider.getEntityManager();
+//            EntityManager entityManager = super.getEntityManager();
 //            entityManager.getTransaction()
 //                         .begin();
 //
@@ -87,7 +87,7 @@
 //    @Test
 //    void outOfTransactionNoFkGet()
 //    {
-//        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+//        EntityManager entityManager = super.getEntityManager();
 //        entityManager.getTransaction()
 //                     .begin();
 //

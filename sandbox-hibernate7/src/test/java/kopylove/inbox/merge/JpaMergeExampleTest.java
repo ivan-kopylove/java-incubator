@@ -2,12 +2,13 @@ package kopylove.inbox.merge;
 
 import jakarta.persistence.EntityManager;
 import kopylove.heap.EntityManagerProvider;
+import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// Difference vs merge and persist
-class JpaMergeExampleTest
+class JpaMergeExampleTest extends EntityManagerSession
 {
     @Test
     void merge_set_new_name_original_object()
@@ -16,7 +17,7 @@ class JpaMergeExampleTest
         initialEntity.setId(1);
         initialEntity.setName("initial name");
 
-        EntityManager entityManger = EntityManagerProvider.getEntityManager();
+        EntityManager entityManger = super.getEntityManager();
         entityManger.getTransaction().begin();
         ParentEntity08 merged = entityManger.merge(initialEntity);//copies the state from the supplied entity, and makes the new copy managed.
 
@@ -26,7 +27,7 @@ class JpaMergeExampleTest
 
         entityManger.close();
 
-        entityManger = EntityManagerProvider.getEntityManager();
+        entityManger = super.getEntityManager();
         ParentEntity08 reloadedEntity = entityManger.find(ParentEntity08.class, 1);
         assertEquals("initial name", reloadedEntity.getName());
         assertEquals("initial name", merged.getName());
@@ -41,7 +42,7 @@ class JpaMergeExampleTest
         initialEntity.setId(2);
         initialEntity.setName("initial name");
 
-        EntityManager entityManger = EntityManagerProvider.getEntityManager();
+        EntityManager entityManger = super.getEntityManager();
         entityManger.getTransaction().begin();
         ParentEntity08 merged = entityManger.merge(initialEntity);//copies the state from the supplied entity, and makes the new copy managed.
 
@@ -51,7 +52,7 @@ class JpaMergeExampleTest
 
         entityManger.close();
 
-        entityManger = EntityManagerProvider.getEntityManager();
+        entityManger = super.getEntityManager();
         ParentEntity08 reloadedEntity = entityManger.find(ParentEntity08.class, 2);
         assertEquals("merged updated name", reloadedEntity.getName());
         assertEquals("merged updated name", merged.getName());
@@ -71,14 +72,14 @@ class JpaMergeExampleTest
         entity2.setName("entity 2");
 
         //save to db and commit
-        EntityManager entityManger = EntityManagerProvider.getEntityManager();
+        EntityManager entityManger = super.getEntityManager();
         entityManger.getTransaction().begin();
         entityManger.persist(entity1);
         entityManger.getTransaction().commit();
         entityManger.close();
 
         //update detached entity with the same id
-        entityManger = EntityManagerProvider.getEntityManager();
+        entityManger = super.getEntityManager();
         entityManger.getTransaction().begin();
         entityManger.merge(entity2);
         entityManger.getTransaction().commit();
@@ -92,7 +93,7 @@ class JpaMergeExampleTest
         originalEntity.setId(4);
         originalEntity.setName("old parent name");
 
-        EntityManager entityManger = EntityManagerProvider.getEntityManager();
+        EntityManager entityManger = super.getEntityManager();
         entityManger.getTransaction().begin();
         entityManger.persist(originalEntity);//makes supplied entity managed
 
@@ -102,7 +103,7 @@ class JpaMergeExampleTest
 
         entityManger.close();
 
-        entityManger = EntityManagerProvider.getEntityManager();
+        entityManger = super.getEntityManager();
         ParentEntity08 parentEntity1 = entityManger.find(ParentEntity08.class, 4);
         assertEquals("new parent name", parentEntity1.getName());
         entityManger.close();

@@ -3,11 +3,12 @@ package kopylove.named.flushmode;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.FlushModeType;
 import kopylove.heap.EntityManagerProvider;
+import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 /// JPA allows implementations to synchronize the persistence context at other times, if they wish.
-class JpaFlushMode
+class JpaFlushMode extends EntityManagerSession
 {
 
     @BeforeAll
@@ -29,7 +30,7 @@ class JpaFlushMode
     @Test
     void commitMode()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
 
         ParentEntity04 parent = entityManager.find(ParentEntity04.class, 4000);

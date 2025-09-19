@@ -1,7 +1,6 @@
 package kopylove.inbox.a6;
 
 import jakarta.persistence.EntityManager;
-import kopylove.heap.EntityManagerProvider;
 import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +11,7 @@ class JpaSharedGeneratedValueTest extends EntityManagerSession
     @Test
     void what_does_this_example_demonstrate()
     {
-        EntityManager entityManager = EntityManagerProvider.getEntityManager();
+        EntityManager entityManager = getEntityManager();
         entityManager.getTransaction().begin();
 
         GeneratedValue02 g10 = new GeneratedValue02();
