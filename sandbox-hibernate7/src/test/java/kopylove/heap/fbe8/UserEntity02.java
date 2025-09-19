@@ -7,7 +7,6 @@ import jakarta.persistence.Id;
 import java.io.Serializable;
 
 @Entity
-
 class UserEntity02 implements Serializable
 {
     @Id

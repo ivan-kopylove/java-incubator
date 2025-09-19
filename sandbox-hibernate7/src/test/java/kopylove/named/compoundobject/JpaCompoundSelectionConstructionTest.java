@@ -60,8 +60,8 @@ class JpaCompoundSelectionConstructionTest extends EntityManagerSession
 
             CompoundSelection<CompoundObject01> compoundSelection = builder.construct(CompoundObject01.class,
                                                                                       cgedRoot.get(
-                                                                                                     "organizationBuildingDetails")
-                                                                                             .get("address"),
+                                                                                                      "organizationBuildingDetails")
+                                                                                              .get("address"),
                                                                                       cgedRoot.get("key")); //incorrect order
             query.select(compoundSelection);
             List<CompoundObject01> resultList = entityManager.createQuery(query).getResultList();
@@ -82,8 +82,8 @@ class JpaCompoundSelectionConstructionTest extends EntityManagerSession
         CompoundSelection<CompoundObject01> compoundSelection = builder.construct(CompoundObject01.class,
                                                                                   cgedRoot.get("key"),
                                                                                   cgedRoot.get(
-                                                                                                 "organizationBuildingDetails")
-                                                                                         .get("address")); //correct order
+                                                                                                  "organizationBuildingDetails")
+                                                                                          .get("address")); //correct order
         query.select(compoundSelection);
         List<CompoundObject01> resultList = entityManager.createQuery(query).getResultList();
         assertEquals(0, resultList.get(0).getA());

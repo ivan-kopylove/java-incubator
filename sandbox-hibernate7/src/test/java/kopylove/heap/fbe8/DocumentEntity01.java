@@ -8,7 +8,6 @@ import jakarta.persistence.JoinColumns;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-
 class DocumentEntity01
 {
     @Id
