@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class JpaSharedGeneratedValue extends EntityManagerSession
+class JpaSharedGeneratedValueTest extends EntityManagerSession
 {
     @Test
     void what_does_this_example_demonstrate()
