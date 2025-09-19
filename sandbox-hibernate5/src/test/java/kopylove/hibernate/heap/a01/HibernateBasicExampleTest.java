@@ -1,4 +1,4 @@
-package kopylove.hibernate.a01;
+package kopylove.hibernate.heap.a01;
 
 import kopylove.hibernate.HibernateSessionFactory;
 import org.hibernate.Session;

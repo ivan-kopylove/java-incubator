@@ -1,4 +1,4 @@
-package kopylove.hibernate.dirtyChecking;
+package kopylove.hibernate.named.dirtyChecking;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
