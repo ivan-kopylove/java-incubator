@@ -7,9 +7,9 @@ import java.lang.reflect.Modifier;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class dasdsa
+public class EntityClassProvider
 {
-    private static Set<Class<?>> getEntities()
+    public static Set<Class<?>> getEntities()
     {
         Reflections relections = new Reflections("heap");
 

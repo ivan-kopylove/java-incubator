@@ -1,5 +1,6 @@
 package heap;
 
+import heap.jsdkl.EntityClassProvider;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
@@ -7,6 +8,7 @@ import org.hibernate.cfg.Configuration;
 import org.reflections.Reflections;
 
 import java.lang.reflect.Modifier;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class EntityManagerProvider
@@ -49,17 +51,13 @@ public class EntityManagerProvider
         configuration.setProperty("hibernate.format_sql", "false");
         configuration.setProperty("hibernate.use_sql_comments", "true");
 
-        //        configuration.addPackage("dasdsa");
-
-        extracted();
-
-        configuration.addAnnotatedClass(clazz);
+        EntityClassProvider.getEntities().forEach(entity -> {
+            configuration.addAnnotatedClass(entity);
+        });
 
 
         // Build EntityManagerFactory
         emf = configuration.buildSessionFactory().unwrap(EntityManagerFactory.class);
         return emf.createEntityManager();
     }
-
-
 }
