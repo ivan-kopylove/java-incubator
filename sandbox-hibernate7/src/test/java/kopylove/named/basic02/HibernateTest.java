@@ -1,4 +1,4 @@
-package kopylove.heap.cb891;
+package kopylove.named.basic02;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;

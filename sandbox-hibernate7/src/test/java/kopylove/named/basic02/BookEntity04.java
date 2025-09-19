@@ -1,4 +1,4 @@
-package kopylove.heap.cb891;
+package kopylove.named.basic02;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,4 +1,4 @@
-package kopylove.named.basicexample;
+package kopylove.named.basic01;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

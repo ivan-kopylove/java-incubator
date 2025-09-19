@@ -1,4 +1,4 @@
-package kopylove.named.basicexample;
+package kopylove.named.basic01;
 
 import jakarta.persistence.EntityManager;
 import kopylove.heap.e70a.EntityManagerSession;
