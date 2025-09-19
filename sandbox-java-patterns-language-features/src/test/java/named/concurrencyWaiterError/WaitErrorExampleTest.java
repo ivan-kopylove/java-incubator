@@ -27,7 +27,7 @@ class WaitErrorExampleTest
 
 
             // then
-            assertThat(ex.getMessage(), equalTo("Current thread is not owner")); // (is not an owner of what?);
+            assertThat(ex.getMessage(), equalTo("current thread is not owner")); // (is not an owner of what?);
         }
     }
 

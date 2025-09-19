@@ -50,7 +50,7 @@ class SerializableTest
         catch (IOException e)
         {
             System.out.println("error " + e);
-            fail();
+            fail("try to predict yourself before running the assertion");
         }
     }
 }

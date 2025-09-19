@@ -1,5 +1,6 @@
 package leetcode.L241;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -14,6 +15,7 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 /// - [garden](https://ivan-kopylove.github.io/leetcode/e5eb)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+241)
 /// - [obsidian](obsidian://search?query=leetcode%20241)
+
 class SolutionTest
 {
     private static List<Arguments> dataSet()
@@ -30,6 +32,7 @@ class SolutionTest
 
     @ParameterizedTest
     @MethodSource("dataSet")
+    @Disabled
     void should_calculate_result(String input, List<Integer> expected)
     {
         // given

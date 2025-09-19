@@ -24,7 +24,7 @@ class MapEqualityTest
         map2.put(2, 4);
 
 
-        fail();
+        fail("try to predict yourself before running the assertion");
         System.out.println(map1.equals(map2)); // how can I get an evidence prooving or falsifying this (without running)?
         assertEquals(map1, map2);
     }
@@ -49,7 +49,7 @@ class MapEqualityTest
         map2.put(1, list1);
         map2.put(2, list2);
 
-        fail();
+        fail("try to predict yourself before running the assertion");
         System.out.println(map1.equals(map2)); // how can I get an evidence prooving or falsifying this (without running)?
         assertEquals(map1, map2);
     }

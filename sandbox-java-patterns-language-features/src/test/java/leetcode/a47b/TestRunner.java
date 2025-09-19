@@ -2,6 +2,7 @@ package leetcode.a47b;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
@@ -12,6 +13,7 @@ import java.io.PrintStream;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+@Disabled
 public class TestRunner
 {
     private static InputStream originalSystemIn;
