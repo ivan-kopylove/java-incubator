@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 /// JPA allows implementations to synchronize the persistence context at other times, if they wish.
-class JpaFlushMode extends EntityManagerManual
+class JpaFlushModeTest extends EntityManagerManual
 {
 
     @BeforeAll
