@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
+import static heap.asddas.EducationalStrengthness.EDUCATION_MODE;
+import static heap.asddas.EducationalStrengthness.KOAN;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -36,7 +38,7 @@ class CompletableFutureSupplyAsyncTest
     {
         CompletableFuture<String> stringCompletableFuture = CompletableFuture.supplyAsync(() -> "world");
 
-                if (KOAN_MODE)
+         if (EDUCATION_MODE == KOAN)
         {
             fail("try to predict yourself before running the assertion");
         }

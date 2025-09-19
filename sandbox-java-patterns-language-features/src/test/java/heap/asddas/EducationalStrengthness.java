@@ -6,7 +6,7 @@ public enum EducationalStrengthness
     KOAN,
     EXAMPLE;
 
-    public static EducationalStrengthness EDUCATION_MODE = KOAN;
+    public static EducationalStrengthness EDUCATION_MODE = EXAMPLE;
 }
 
 

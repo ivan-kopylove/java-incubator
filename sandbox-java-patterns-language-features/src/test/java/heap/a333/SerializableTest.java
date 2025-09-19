@@ -8,6 +8,8 @@ import java.io.ObjectOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import static heap.asddas.EducationalStrengthness.EDUCATION_MODE;
+import static heap.asddas.EducationalStrengthness.KOAN;
 import static org.junit.jupiter.api.Assertions.fail;
 
 class SerializableTest
@@ -50,7 +52,7 @@ class SerializableTest
         catch (IOException e)
         {
             System.out.println("error " + e);
-                    if (KOAN_MODE)
+             if (EDUCATION_MODE == KOAN)
         {
             fail("try to predict yourself before running the assertion");
         }

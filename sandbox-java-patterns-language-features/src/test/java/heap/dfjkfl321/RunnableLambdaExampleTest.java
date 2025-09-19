@@ -4,7 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.function.Consumer;
 
-import static heap.asddas.EducationalStrengthness.KOAN_MODE;
+import static heap.asddas.EducationalStrengthness.EDUCATION_MODE;
+import static heap.asddas.EducationalStrengthness.KOAN;
 import static org.junit.jupiter.api.Assertions.fail;
 
 class RunnableLambdaExampleTest
@@ -31,7 +32,7 @@ class RunnableLambdaExampleTest
         r3.accept("something");
         r4.myMethod();
 
-        if (KOAN_MODE)
+        if (EDUCATION_MODE == KOAN)
         {
             fail("try to predict yourself before running the assertion");
         }

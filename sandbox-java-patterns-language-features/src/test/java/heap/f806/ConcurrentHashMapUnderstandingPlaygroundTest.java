@@ -7,6 +7,8 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 
+import static heap.asddas.EducationalStrengthness.EDUCATION_MODE;
+import static heap.asddas.EducationalStrengthness.KOAN;
 import static java.util.UUID.randomUUID;
 import static java.util.concurrent.Executors.newFixedThreadPool;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -34,7 +36,7 @@ class ConcurrentHashMapUnderstandingPlaygroundTest
         }
         Thread.sleep(15_000);
 
-                if (KOAN_MODE)
+        if (EDUCATION_MODE == KOAN)
         {
             fail("try to predict yourself before running the assertion");
         }
@@ -57,7 +59,7 @@ class ConcurrentHashMapUnderstandingPlaygroundTest
         }
         Thread.sleep(15_000);
 
-                if (KOAN_MODE)
+        if (EDUCATION_MODE == KOAN)
         {
             fail("try to predict yourself before running the assertion");
         }

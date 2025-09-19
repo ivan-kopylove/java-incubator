@@ -7,6 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static heap.asddas.EducationalStrengthness.EDUCATION_MODE;
+import static heap.asddas.EducationalStrengthness.KOAN;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
@@ -24,7 +26,7 @@ class MapEqualityTest
         map2.put(2, 4);
 
 
-                if (KOAN_MODE)
+        if (EDUCATION_MODE == KOAN)
         {
             fail("try to predict yourself before running the assertion");
         }
@@ -52,7 +54,7 @@ class MapEqualityTest
         map2.put(1, list1);
         map2.put(2, list2);
 
-                if (KOAN_MODE)
+        if (EDUCATION_MODE == KOAN)
         {
             fail("try to predict yourself before running the assertion");
         }
