@@ -44,7 +44,7 @@ class WaitErrorExampleTest
             {
                 System.out.println("Entered sync block");
                 // when
-                lock.wait();
+                lock.wait(5000); // how this is supposed to be used without timeouts?
                 System.out.println("Will this be printed somewhen?");
             }
         }
