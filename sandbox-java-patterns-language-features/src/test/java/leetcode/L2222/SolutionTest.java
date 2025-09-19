@@ -10,7 +10,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 /// - [garden](https://ivan-kopylove.github.io/leetcode/8b49)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+2222)
 /// - [obsidian](obsidian://search?query=leetcode%202222)
-class MySolutionTest
+class SolutionTest
 {
     // @formatter:off
     @ParameterizedTest
@@ -19,7 +19,7 @@ class MySolutionTest
 //            "001101,6"
             }, maxCharsPerColumn = 8192)
     // @formatter:on
-    void should_calculate_result(String s, long expected)
+    void what_does_this_example_demonstrate(String s, long expected)
     {
         // given
         PeekedAtSolution3907842 sut = new PeekedAtSolution3907842();

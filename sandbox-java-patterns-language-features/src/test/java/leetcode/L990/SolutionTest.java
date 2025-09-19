@@ -33,7 +33,7 @@ class SolutionTest
 
     @ParameterizedTest
     @MethodSource("dataSet")
-    void should_calculate_result(String[] s, boolean expected)
+    void what_does_this_example_demonstrate(String[] s, boolean expected)
     {
         // given
         MySolution_181_181_casesPassed sut = new MySolution_181_181_casesPassed();

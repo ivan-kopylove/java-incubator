@@ -36,7 +36,7 @@ class SolutionTest
                  "10000,1,8",
     })
     // @formatter:on
-    void should_calculate_result(int x, int y, int expected)
+    void what_does_this_example_demonstrate(int x, int y, int expected)
     {
         // given
         MySolution sut = new MySolution();

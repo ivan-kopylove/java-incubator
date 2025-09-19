@@ -33,7 +33,7 @@ class SolutionTest
     @ParameterizedTest
     @MethodSource("dataSet")
     @Disabled
-    void should_calculate_result(String input, List<Integer> expected)
+    void what_does_this_example_demonstrate(String input, List<Integer> expected)
     {
         // given
         PeekedAtSolution6634483 sut = new PeekedAtSolution6634483();
