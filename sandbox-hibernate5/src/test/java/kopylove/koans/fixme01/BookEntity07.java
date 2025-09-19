@@ -1,4 +1,4 @@
-package kopylove.persistence.hibernate.fixme01;
+package kopylove.koans.fixme01;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

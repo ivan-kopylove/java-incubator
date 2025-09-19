@@ -1,4 +1,4 @@
-package kopylove.persistence.hibernate.fixme01;
+package kopylove.koans.fixme01;
 
 import kopylove.persistence.hibernate.HibernateSessionFactory;
 import org.hibernate.Session;

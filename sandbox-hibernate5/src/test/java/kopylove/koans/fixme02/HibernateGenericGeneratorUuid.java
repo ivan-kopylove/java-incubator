@@ -1,5 +1,7 @@
-package kopylove.persistence.hibernate;
+package kopylove.koans.fixme02;
 
+import kopylove.persistence.hibernate.HibernateSessionFactory;
+import kopylove.koans.fixme02.a01.GeneratedValueUuid99;
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;
 
@@ -13,7 +15,7 @@ class HibernateGenericGeneratorUuid
     @Test
     void what_does_this_example_demonstrate()
     {
-        GeneratedValueUuid01 generatedKey = new GeneratedValueUuid01();
+        GeneratedValueUuid99 generatedKey = new GeneratedValueUuid99();
 
         Session session = HibernateSessionFactory.openSession();
         session.getTransaction().begin();
