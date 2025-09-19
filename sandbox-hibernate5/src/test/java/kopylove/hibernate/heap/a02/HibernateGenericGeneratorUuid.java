@@ -1,5 +1,6 @@
-package kopylove.hibernate;
+package kopylove.hibernate.heap.a02;
 
+import kopylove.hibernate.HibernateSessionFactory;
 import org.hibernate.Session;
 import org.junit.jupiter.api.Test;
 
@@ -8,12 +9,12 @@ import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 
-class HibernateGenericGeneratorUuid02
+class HibernateGenericGeneratorUuid
 {
     @Test
     void what_does_this_example_demonstrate()
     {
-        GeneratedValueUuid02 generatedKey = new GeneratedValueUuid02();
+        GeneratedValueUuid04 generatedKey = new GeneratedValueUuid04();
 
         Session session = HibernateSessionFactory.openSession();
         session.getTransaction().begin();
