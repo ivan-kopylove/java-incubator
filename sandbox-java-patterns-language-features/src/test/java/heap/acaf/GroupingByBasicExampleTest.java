@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class GroupingByBasicExampleTest
 {
     @Test
-    void foo1()
+    void what_is_the_purpose_of_the_example_1()
     {
         List<Integer> ints = new ArrayList<>();
         ints.add(1);
@@ -25,7 +25,7 @@ class GroupingByBasicExampleTest
     }
 
     @Test
-    void foo2()
+    void what_is_the_purpose_of_the_example_2()
     {
         List<Integer> ints = new ArrayList<>();
         ints.add(1);
@@ -35,6 +35,6 @@ class GroupingByBasicExampleTest
 
         Map<Integer, List<Integer>> groupedBy = ints.stream().collect(Collectors.groupingBy(integer -> integer));
 
-        assertEquals(3, (int) groupedBy.get(true).get(1));
+        assertEquals(2, (int) groupedBy.get(3).size());
     }
 }

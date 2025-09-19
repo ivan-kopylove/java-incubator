@@ -2,8 +2,11 @@ package named.concurrencyBasic01;
 
 import org.junit.jupiter.api.Test;
 
+import static heap.asddas.EducationalStrengthness.EDUCATION_MODE;
+import static heap.asddas.EducationalStrengthness.KOAN;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
 class VisibilityExample
 {
@@ -26,6 +29,15 @@ public class VisibilityTest
     @Test
     public void fix_me() throws InterruptedException
     {
+        if (EDUCATION_MODE == KOAN)
+        {
+            fail("try to fix me");
+        }
+        else
+        {
+            return;
+        }
+
         VisibilityExample example = new VisibilityExample();
 
         Thread writerThread = new Thread(() -> {
