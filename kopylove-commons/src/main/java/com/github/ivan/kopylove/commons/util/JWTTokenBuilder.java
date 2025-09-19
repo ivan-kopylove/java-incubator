@@ -21,7 +21,7 @@ import java.util.Objects;
 
 import static java.time.Instant.now;
 
-class JWTTokenBuilder
+public class JWTTokenBuilder
 {
     private static final Logger LOGGER = LoggerFactory.getLogger(JWTTokenBuilder.class);
 

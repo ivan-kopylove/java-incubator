@@ -12,7 +12,7 @@ import java.util.concurrent.TimeoutException;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-class ShellExecutor
+public class ShellExecutor
 {
     private static final Logger LOGGER = LoggerFactory.getLogger(ShellExecutor.class);
 
