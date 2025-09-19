@@ -1,4 +1,4 @@
-package kopylove.inbox.a2;
+package kopylove.heap.a2;
 
 import javax.persistence.Column;
 

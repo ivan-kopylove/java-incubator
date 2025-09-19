@@ -1,7 +1,7 @@
-package kopylove.inbox.a3;
+package kopylove.heap.a3;
 
 import jakarta.persistence.EntityManager;
-import kopylove.heap.EntityManagerProvider;
+import kopylove.heap.dasads.EntityManagerProvider;
 import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

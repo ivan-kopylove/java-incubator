@@ -1,35 +1,34 @@
-package kopylove.inbox.a3;
+package kopylove.heap.a5;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
 
 @Entity
 
-class ChildEntity11
+class ChildEntity10
 {
     @Id
     @Column(name = "CHILDTABLE_KEY", unique = true, nullable = false)
-    private Integer key;
+    private Integer id;
 
     @Column(name = "CHILDTABLE_NAME")
     private String name;
 
     @ManyToOne
     @JoinColumn(name = "CHILDTABLE_PARENT_KEY", nullable = false)
-    private ParentEntity11 parent;
+    private ParentEntity10 parent;
 
-    public Integer getKey()
+    public Integer getId()
     {
-        return key;
+        return id;
     }
 
-    public void setKey(Integer key)
+    public void setId(Integer id)
     {
-        this.key = key;
+        this.id = id;
     }
 
     public String getName()
@@ -42,12 +41,12 @@ class ChildEntity11
         this.name = name;
     }
 
-    public ParentEntity11 getParent()
+    public ParentEntity10 getParent()
     {
         return parent;
     }
 
-    public void setParent(ParentEntity11 parent)
+    public void setParent(ParentEntity10 parent)
     {
         this.parent = parent;
     }

@@ -1,10 +1,9 @@
-package kopylove.inbox.a2;
+package kopylove.heap.a2;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
 @Entity
 

@@ -2,7 +2,7 @@ package kopylove.named.flushmode;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.FlushModeType;
-import kopylove.heap.EntityManagerProvider;
+import kopylove.heap.dasads.EntityManagerProvider;
 import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

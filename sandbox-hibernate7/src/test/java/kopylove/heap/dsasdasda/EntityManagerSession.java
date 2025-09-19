@@ -1,7 +1,7 @@
 package kopylove.heap.dsasdasda;
 
 import jakarta.persistence.EntityManager;
-import kopylove.heap.EntityManagerProvider;
+import kopylove.heap.dasads.EntityManagerProvider;
 import org.junit.jupiter.api.AfterEach;
 
 public class EntityManagerSession

@@ -1,4 +1,4 @@
-package kopylove.inbox.a6;
+package kopylove.heap.a6;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

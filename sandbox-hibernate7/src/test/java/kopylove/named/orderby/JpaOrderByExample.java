@@ -1,7 +1,7 @@
 package kopylove.named.orderby;
 
 import jakarta.persistence.EntityManager;
-import kopylove.heap.EntityManagerProvider;
+import kopylove.heap.dasads.EntityManagerProvider;
 import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

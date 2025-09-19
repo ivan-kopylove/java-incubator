@@ -1,4 +1,4 @@
-package kopylove.inbox.a5;
+package kopylove.heap.a5;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -2,7 +2,6 @@ package kopylove.heap.dasdsdsa;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
-import kopylove.heap.EntityManagerProvider;
 import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.Test;
 

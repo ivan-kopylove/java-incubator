@@ -1,7 +1,7 @@
-package kopylove.inbox.a5;
+package kopylove.heap.a5;
 
 import jakarta.persistence.EntityManager;
-import kopylove.heap.EntityManagerProvider;
+import kopylove.heap.dasads.EntityManagerProvider;
 import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.hibernate.ObjectNotFoundException;
 import org.hibernate.proxy.HibernateProxy;

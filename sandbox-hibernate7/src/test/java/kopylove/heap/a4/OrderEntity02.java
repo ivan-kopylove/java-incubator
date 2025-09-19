@@ -1,4 +1,4 @@
-package kopylove.inbox.a4;
+package kopylove.heap.a4;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;

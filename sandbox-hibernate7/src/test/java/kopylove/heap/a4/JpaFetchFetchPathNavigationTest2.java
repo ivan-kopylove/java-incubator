@@ -1,4 +1,4 @@
-package kopylove.inbox.a4;
+package kopylove.heap.a4;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
@@ -7,7 +7,7 @@ import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Join;
 import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;
-import kopylove.heap.EntityManagerProvider;
+import kopylove.heap.dasads.EntityManagerProvider;
 import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
