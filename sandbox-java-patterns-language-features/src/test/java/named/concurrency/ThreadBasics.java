@@ -2,7 +2,8 @@ package named.concurrency;
 
 import org.junit.jupiter.api.Test;
 
-public class ThreadBasics {
+public class ThreadBasics
+{
 
     /**
      * 1. What will the output look like if we run this code?
@@ -11,11 +12,12 @@ public class ThreadBasics {
      * 4. Where the sequential execution and where is concurrent?
      */
     @Test
-    void demonstrateSequentialVsConcurrent() throws InterruptedException {
+    void demonstrateSequentialVsConcurrent() throws InterruptedException
+    {
         System.out.println("Sequential start:");
         task("A");
         task("B");
-        
+
         System.out.println("Concurrent start:");
         Thread thread1 = new Thread(() -> task("C"));
         Thread thread2 = new Thread(() -> task("D"));
@@ -26,9 +28,11 @@ public class ThreadBasics {
         thread1.join();
         thread2.join();
     }
-    
-    private void task(String name) {
-        for (int i = 0; i < 3; i++) {
+
+    private void task(String name)
+    {
+        for (int i = 0; i < 3; i++)
+        {
             System.out.println(name + ": " + i);
         }
     }

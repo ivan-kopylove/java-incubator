@@ -14,6 +14,32 @@ import java.util.Set;
 /// - [obsidian](obsidian://search?query=leetcode%20990)
 class MySolution_179_181_casesPassed
 {
+    private static void enrichTransitive(Map<Character, Set<Character>> eq, char left, char right)
+    {
+        Set<Character> Acharacters = eq.computeIfPresent(left, (k, v) -> {
+            for (char c : v)
+            {
+                enrich(eq, c, right);
+                enrich(eq, right, c);
+            }
+
+            return v;
+        });
+    }
+
+    private static void enrich(Map<Character, Set<Character>> eq, char left, char right)
+    {
+        eq.computeIfPresent(left, (x, y) -> {
+            y.add(right);
+            return y;
+        });
+        eq.computeIfAbsent(left, x -> {
+            HashSet<Character> objects = new HashSet<>();
+            objects.add(right);
+            return objects;
+        });
+    }
+
     public boolean equationsPossible(String[] equations)
     {
         Arrays.sort(equations, (a, b) -> b.charAt(1) - a.charAt(1));
@@ -53,31 +79,5 @@ class MySolution_179_181_casesPassed
         }
 
         return true;
-    }
-
-    private static void enrichTransitive(Map<Character, Set<Character>> eq, char left, char right)
-    {
-        Set<Character> Acharacters = eq.computeIfPresent(left, (k, v) -> {
-            for (char c : v)
-            {
-                enrich(eq, c, right);
-                enrich(eq, right, c);
-            }
-
-            return v;
-        });
-    }
-
-    private static void enrich(Map<Character, Set<Character>> eq, char left, char right)
-    {
-        eq.computeIfPresent(left, (x, y) -> {
-            y.add(right);
-            return y;
-        });
-        eq.computeIfAbsent(left, x -> {
-            HashSet<Character> objects = new HashSet<>();
-            objects.add(right);
-            return objects;
-        });
     }
 }

@@ -1,7 +1,6 @@
 package heap.a735;
 
-class IndicatorAdapterImpl implements
-        IndicatorAdapter// what's wrong with that interface?
+class IndicatorAdapterImpl implements IndicatorAdapter// what's wrong with that interface?
 {
 
     private final Indicator indicator;

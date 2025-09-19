@@ -37,6 +37,4 @@ class GroupingByBasicExampleTest
 
         assertEquals(3, (int) groupedBy.get(true).get(1));
     }
-
-
 }

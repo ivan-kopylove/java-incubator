@@ -13,9 +13,9 @@ public class OutputStreamKoan60
         BufferedOutputStream output = new BufferedOutputStream(System.out, 20);
 
         output.write(new byte[]{'a', 'b'}); // how this possible I can assign chars to byte array?
-//        output.write(new byte[]{128 }); // can I assign 128?
-//        output.write(new byte[]{'\n' }); // can I assign \n and why?
-//        output.write(new byte[]{'\uD83D' ); // can I assign an emoji? aka 📙
+        //        output.write(new byte[]{128 }); // can I assign 128?
+        //        output.write(new byte[]{'\n' }); // can I assign \n and why?
+        //        output.write(new byte[]{'\uD83D' ); // can I assign an emoji? aka 📙
         output.flush();
     }
 }

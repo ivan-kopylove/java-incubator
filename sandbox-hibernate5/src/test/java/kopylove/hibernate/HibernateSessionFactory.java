@@ -49,14 +49,12 @@ public final class HibernateSessionFactory
         return sessionFactory.openSession();
     }
 
-     public static Session openCustomSession(String packageToScan)
+    public static Session openCustomSession(String packageToScan)
     {
         SessionFactory confinedSessionFactory = buildSessionFactory(packageToScan);
 
         return confinedSessionFactory.openSession();
     }
-
-
 
     public static void close()
     {

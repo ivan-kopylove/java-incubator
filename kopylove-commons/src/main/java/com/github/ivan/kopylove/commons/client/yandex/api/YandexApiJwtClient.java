@@ -41,13 +41,11 @@ class YandexApiJwtClient
 
         try
         {
-            HttpRequest request = HttpRequest.newBuilder()
-                                             .version(HTTP_1_1)
-                                             .uri(URI.create(API_URL))
-                                             .header("Content-Type", "application/json")
+            HttpRequest request = HttpRequest.newBuilder().version(HTTP_1_1).uri(URI.create(API_URL)).header(
+                                                     "Content-Type",
+                                                     "application/json")
                                              .POST(HttpRequest.BodyPublishers.ofString(objectMapper.writeValueAsString(
-                                                     payload)))
-                                             .build();
+                                                     payload))).build();
 
 
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());

@@ -3,9 +3,12 @@ package com.github.ivan.kopylove.commons.client.yandex.api.speech;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Language.*;
-import static com.github.ivan.kopylove.commons.client.yandex.api.speech.VoiceGender.*;
-
+import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Language.EN;
+import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Language.RU;
+import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Language.UNKNOWN_LANG;
+import static com.github.ivan.kopylove.commons.client.yandex.api.speech.VoiceGender.FEMALE;
+import static com.github.ivan.kopylove.commons.client.yandex.api.speech.VoiceGender.MALE;
+import static com.github.ivan.kopylove.commons.client.yandex.api.speech.VoiceGender.UNKNOWN_GENDER;
 import static com.github.ivan.kopylove.commons.stream.StreamUtil.shuffleComparator;
 import static java.util.stream.Collectors.toList;
 
@@ -17,15 +20,15 @@ public enum Voice
     ALENA(FEMALE, RU),
     MADIRUS(MALE, RU),
     ZAHAR(MALE, RU),
-//    OMAZH(MALE, RU),
+    //    OMAZH(MALE, RU),
     JANE(FEMALE, RU),
     PREVIOUS(UNKNOWN_GENDER, UNKNOWN_LANG);
 
     private static final List<Voice> ALL_VOICES        = List.of(Voice.values());
     private static final List<Voice> VOICE_RANDOM_POOL = new ArrayList<>();
-    private static VoiceGender nextRandomGender  = MALE;
-    private final VoiceGender gender;
-    private final Language language;
+    private static       VoiceGender nextRandomGender  = MALE;
+    private final        VoiceGender gender;
+    private final        Language    language;
 
     Voice(VoiceGender gender, Language language)
     {
@@ -37,9 +40,7 @@ public enum Voice
     {
         if (VOICE_RANDOM_POOL.size() < 1)
         {
-            List<Voice> ruVoices = ALL_VOICES.stream()
-                                             .filter(voice -> voice.language == RU)
-                                             .collect(toList());
+            List<Voice> ruVoices = ALL_VOICES.stream().filter(voice -> voice.language == RU).collect(toList());
 
             VOICE_RANDOM_POOL.addAll(ruVoices);
         }
@@ -52,11 +53,8 @@ public enum Voice
                 case MALE ->
                 {
                     nextRandomGender = FEMALE;
-                    voice = VOICE_RANDOM_POOL.stream()
-                                             .filter(v -> v.gender == MALE)
-                                             .filter(v -> v.language == RU)
-                                             .min(shuffleComparator())
-                                             .orElseThrow();
+                    voice = VOICE_RANDOM_POOL.stream().filter(v -> v.gender == MALE).filter(v -> v.language == RU).min(
+                            shuffleComparator()).orElseThrow();
                     if (voice == PREVIOUS)
                     {
                         continue;
@@ -65,11 +63,8 @@ public enum Voice
                 case FEMALE ->
                 {
                     nextRandomGender = MALE;
-                    voice = VOICE_RANDOM_POOL.stream()
-                                             .filter(v -> v.gender == FEMALE)
-                                             .filter(v -> v.language == RU)
-                                             .min(shuffleComparator())
-                                             .orElse(PREVIOUS);
+                    voice = VOICE_RANDOM_POOL.stream().filter(v -> v.gender == FEMALE).filter(v -> v.language == RU)
+                                             .min(shuffleComparator()).orElse(PREVIOUS);
                     if (voice == PREVIOUS)
                     {
                         continue;

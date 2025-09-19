@@ -13,8 +13,9 @@ import java.util.Map;
 /// - [obsidian](obsidian://search?query=leetcode%20241)
 class MySolution_19_25_casesPassed
 {
-    public List<Integer> diffWaysToCompute(String expression) {
-        
+    public List<Integer> diffWaysToCompute(String expression)
+    {
+
         Map<String, Integer> memo = new HashMap<>();
 
         List<Integer> collector = new LinkedList();
@@ -22,16 +23,12 @@ class MySolution_19_25_casesPassed
         return collector;
     }
 
-    void dfs(String expression, List<Integer> collector, Map<String,Integer> memo)
+    void dfs(String expression, List<Integer> collector, Map<String, Integer> memo)
     {
 
-        if(!(
-            expression.contains("+") ||
-            expression.contains("-") ||
-            expression.contains("*"))
-         )
+        if (!(expression.contains("+") || expression.contains("-") || expression.contains("*")))
         {
-            if(expression.startsWith("m"))
+            if (expression.startsWith("m"))
             {
                 int negative = Integer.valueOf(expression.substring(1)) * -1;
                 collector.add(negative);
@@ -41,11 +38,11 @@ class MySolution_19_25_casesPassed
                 int pos = Integer.valueOf(expression);
                 collector.add(pos);
             }
-            
+
             return;
         }
 
-        if(memo.get(expression) != null)
+        if (memo.get(expression) != null)
         {
             return;
         }
@@ -53,11 +50,11 @@ class MySolution_19_25_casesPassed
         memo.put(expression, 1);
 
 
-        for(int i = 0; i < expression.length(); i++)
+        for (int i = 0; i < expression.length(); i++)
         {
             char current = expression.charAt(i);
 
-            if(!Character.isDigit(current) && current != 'm')
+            if (!Character.isDigit(current) && current != 'm')
             {
                 int l = i - 1;
                 int r = i + 1;
@@ -65,7 +62,7 @@ class MySolution_19_25_casesPassed
                 String left = "";
                 String right = "";
 
-                while(l >= 0 && Character.isDigit(expression.charAt(l)))
+                while (l >= 0 && Character.isDigit(expression.charAt(l)))
                 {
 
                     left = expression.charAt(l) + left;
@@ -73,62 +70,59 @@ class MySolution_19_25_casesPassed
                 }
 
                 int lMultiplier = 1;
-                
-                if(l >= 0 && expression.charAt(l) == 'm'){
+
+                if (l >= 0 && expression.charAt(l) == 'm')
+                {
                     lMultiplier = -1;
                     l--;
                 }
-                 
-                
+
+
                 int rMultiplier = 1;
-                if(expression.charAt(r) == 'm')
+                if (expression.charAt(r) == 'm')
                 {
                     rMultiplier = -1;
                     r++;
-                } 
+                }
 
-                while(r < expression.length() && Character.isDigit(expression.charAt(r)))
+                while (r < expression.length() && Character.isDigit(expression.charAt(r)))
                 {
                     right = right + expression.charAt(r);
                     r++;
                 }
 
 
-
-
                 int operandL = Integer.valueOf(left) * lMultiplier;
                 int operandR = Integer.valueOf(right) * rMultiplier;
 
                 int evaluated = 0;
-                if(current == '-')
+                if (current == '-')
                 {
                     evaluated = operandL - operandR;
                 }
-                else if(current == '*')
+                else if (current == '*')
                 {
                     evaluated = operandL * operandR;
                 }
-                else if(current == '+')
+                else if (current == '+')
                 {
                     evaluated = operandL + operandR;
                 }
 
                 String newExpr = null;
-                if(evaluated < 0)
+                if (evaluated < 0)
                 {
                     int abs = Math.abs(evaluated);
 
-                    newExpr = expression.substring(0, l + 1) + "m" + abs + expression.substring(r, expression.length());   
+                    newExpr = expression.substring(0, l + 1) + "m" + abs + expression.substring(r, expression.length());
                 }
-                else{
-                    newExpr = expression.substring(0, l + 1) + evaluated + expression.substring(r, expression.length());   
+                else
+                {
+                    newExpr = expression.substring(0, l + 1) + evaluated + expression.substring(r, expression.length());
                 }
 
 
-                 dfs(newExpr, collector, memo);
-                
-                
-
+                dfs(newExpr, collector, memo);
             }
         }
     }

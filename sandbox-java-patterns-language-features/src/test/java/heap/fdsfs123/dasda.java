@@ -24,11 +24,9 @@ public class dasda
 
         System.out.println("HashMap size: " + map.size());
         System.out.println("HashMap contents: " + map);
-
-
     }
 
-     class Key
+    class Key
     {
         int id;
 

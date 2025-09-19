@@ -6,10 +6,60 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-
 //180 / 181 testcases passed
 class MySolution_180_181_casesPassed
 {
+    private static void enrichTransitive(Map<Character, Set<Character>> eq, char left, char right)
+    {
+        eq.computeIfPresent(left, (k, v) -> {
+            for (char c : v)
+            {
+                enrich(eq, c, right);
+                enrich(eq, right, c);
+            }
+
+            return v;
+        });
+
+        Map<Character, Character> merge = new HashMap<>();
+
+        eq.computeIfPresent(left, (k1, v1) -> {
+            eq.computeIfPresent(right, (k2, v2) -> {
+                for (char v1c : v1)
+                {
+                    for (char v2c : v2)
+                    {
+                        merge.put(v1c, v2c);
+                        merge.put(v2c, v1c);
+                    }
+                }
+
+                return v2;
+            });
+            return v1;
+        });
+
+        merge.forEach((k, v) -> {
+            eq.computeIfPresent(k, (k1, v1) -> {
+                v1.add(v);
+                return v1;
+            });
+        });
+    }
+
+    private static void enrich(Map<Character, Set<Character>> eq, char left, char right)
+    {
+        eq.computeIfPresent(left, (x, y) -> {
+            y.add(right);
+            return y;
+        });
+        eq.computeIfAbsent(left, x -> {
+            HashSet<Character> objects = new HashSet<>();
+            objects.add(right);
+            return objects;
+        });
+    }
+
     public boolean equationsPossible(String[] equations)
     {
         Arrays.sort(equations, (a, b) -> b.charAt(1) - a.charAt(1));
@@ -48,60 +98,5 @@ class MySolution_180_181_casesPassed
         }
 
         return true;
-    }
-
-    private static void enrichTransitive(Map<Character, Set<Character>> eq, char left, char right)
-    {
-        eq.computeIfPresent(left, (k, v) -> {
-            for (char c : v)
-            {
-                enrich(eq, c, right);
-                enrich(eq, right, c);
-            }
-
-            return v;
-        });
-
-        Map<Character, Character> merge = new HashMap<>();
-
-        eq.computeIfPresent(left, (k1, v1) -> {
-            eq.computeIfPresent(right, (k2, v2) -> {
-                for(char v1c: v1)
-                {
-                    for(char v2c : v2)
-                    {
-                        merge.put(v1c, v2c);
-                        merge.put(v2c, v1c);
-                    }
-                }
-
-                return v2;
-            });
-            return v1;
-        });
-
-        merge.forEach((k,v) ->
-                      {
-                          eq.computeIfPresent(k, (k1,v1) -> {
-                              v1.add(v);
-                              return v1;
-                          });
-                      }
-        );
-
-
-    }
-
-    private static void enrich(Map<Character, Set<Character>> eq, char left, char right)
-    {
-        eq.computeIfPresent(left, (x, y) -> {
-            y.add(right);
-            return y;
-        });
-        eq.computeIfAbsent(left, x -> {
-            HashSet<Character> objects = new HashSet<>();
-            objects.add(right);
-            return objects;
-        });
     }
 }

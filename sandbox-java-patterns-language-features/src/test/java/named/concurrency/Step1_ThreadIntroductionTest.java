@@ -2,11 +2,12 @@ package named.concurrency;
 
 import org.junit.jupiter.api.Test;
 
-public class Step1_ThreadIntroductionTest {
-
+public class Step1_ThreadIntroductionTest
+{
 
     @Test
-    void twoThreadsPrinting() throws InterruptedException {
+    void twoThreadsPrinting() throws InterruptedException
+    {
         Thread thread1 = new Thread(() -> {
             System.out.println("Hello");
         });

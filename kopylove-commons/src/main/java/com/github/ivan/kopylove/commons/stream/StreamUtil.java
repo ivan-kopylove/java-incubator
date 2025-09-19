@@ -18,8 +18,8 @@ public class StreamUtil
         return StreamSupport.stream(spliteratorUnknownSize(iterator, ORDERED), false);
     }
 
-    public static <T> Comparator<T> shuffleComparator() {
-        return Comparator.comparing(e -> ThreadLocalRandom.current()
-                .nextBoolean());
+    public static <T> Comparator<T> shuffleComparator()
+    {
+        return Comparator.comparing(e -> ThreadLocalRandom.current().nextBoolean());
     }
 }

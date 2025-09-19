@@ -46,14 +46,10 @@ class JWTTokenBuilder
 
             Instant now = now();
 
-            return Jwts.builder()
-                       .setHeaderParam("kid", kid)
-                       .setIssuer(issuer)
-                       .setAudience(audience)
-                       .setIssuedAt(Date.from(now))
-                       .setExpiration(Date.from(now.plusSeconds(360)))
-                       .signWith(SignatureAlgorithm.PS256, privateKey)
-                       .compact();
+            return Jwts.builder().setHeaderParam("kid", kid).setIssuer(issuer).setAudience(audience)
+                       .setIssuedAt(Date.from(now)).setExpiration(Date.from(now.plusSeconds(360))).signWith(
+                            SignatureAlgorithm.PS256,
+                            privateKey).compact();
         }
         catch (IOException | NoSuchAlgorithmException | InvalidKeySpecException e)
         {

@@ -16,20 +16,6 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 /// - [obsidian](obsidian://search?query=leetcode%20990)
 class SolutionTest
 {
-    @ParameterizedTest
-    @MethodSource("dataSet")
-    void should_calculate_result(String[] s, boolean expected)
-    {
-        // given
-        MySolution_181_181_casesPassed sut = new MySolution_181_181_casesPassed();
-
-        // when
-        boolean result = sut.equationsPossible(s);
-
-        // then
-        assertThat(result, equalTo(expected));
-    }
-
     private static List<Arguments> dataSet()
     {
         // @formatter:off
@@ -43,5 +29,19 @@ class SolutionTest
         // @formatter:on
 
         );
+    }
+
+    @ParameterizedTest
+    @MethodSource("dataSet")
+    void should_calculate_result(String[] s, boolean expected)
+    {
+        // given
+        MySolution_181_181_casesPassed sut = new MySolution_181_181_casesPassed();
+
+        // when
+        boolean result = sut.equationsPossible(s);
+
+        // then
+        assertThat(result, equalTo(expected));
     }
 }

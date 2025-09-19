@@ -9,8 +9,8 @@
 //import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 //import static org.junit.jupiter.api.Assertions.assertTrue;
 //
-///// this example demonsrates that
-///// 1. entity var is buildEntityManagerFactory pure object
+/// // this example demonsrates that
+/// // 1. entity var is buildEntityManagerFactory pure object
 //class HibernateLoadvsGetExampleTest
 //{
 //

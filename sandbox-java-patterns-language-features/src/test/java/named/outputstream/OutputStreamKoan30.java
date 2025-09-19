@@ -32,7 +32,5 @@ public class OutputStreamKoan30
         output.write(chars);
         output.flush();
     }
-
-
 }
 

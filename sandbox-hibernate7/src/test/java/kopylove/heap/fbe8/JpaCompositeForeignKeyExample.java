@@ -41,6 +41,5 @@ class JpaCompositeForeignKeyExample extends EntityManagerTransactional
 
         assertEquals(99999999, documentEntity.getUser().getSsn());
         assertEquals("bob", documentEntity.getUser().getName());
-
     }
 }

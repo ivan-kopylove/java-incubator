@@ -11,8 +11,6 @@ public class WhatWillBePrinteddc5e
     void what_will_be_printed_and_why()
     {
         // then
-        IntStream.range(1, 4)
-                 .peek(System.out::println)
-                 .anyMatch(i -> i > 1);
+        IntStream.range(1, 4).peek(System.out::println).anyMatch(i -> i > 1);
     }
 }

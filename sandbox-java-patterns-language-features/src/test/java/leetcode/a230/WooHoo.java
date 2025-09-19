@@ -1,6 +1,7 @@
 package leetcode.a230;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -21,7 +22,7 @@ public class WooHoo
 
         while (!"".equals(line))
         {
-            if(!duplicates.contains(line))
+            if (!duplicates.contains(line))
             {
                 System.out.println(line);
             }

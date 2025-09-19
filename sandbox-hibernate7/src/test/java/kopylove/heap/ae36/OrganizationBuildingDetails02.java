@@ -1,7 +1,6 @@
 package kopylove.heap.ae36;
 
 import jakarta.persistence.Column;
-
 import jakarta.persistence.Embeddable;
 
 @Embeddable

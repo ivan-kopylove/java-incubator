@@ -1,6 +1,7 @@
 package leetcode.ef29;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 /// - [searchable problem definition](https://google.com/search?q=yandex+contest+B.+Последовательно+идущие+единицы)
 /// - [garden](https://ivan-kopylove.github.io/leetcode/8d9e)

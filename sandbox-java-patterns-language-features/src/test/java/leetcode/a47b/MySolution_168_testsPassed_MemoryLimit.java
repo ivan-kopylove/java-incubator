@@ -1,6 +1,7 @@
 package leetcode.a47b;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -16,7 +17,7 @@ public class MySolution_168_testsPassed_MemoryLimit
 
         /// how can this be sanity-checked before running heavy calculations?
 
-        if(line1.length() != line2.length())
+        if (line1.length() != line2.length())
         {
             System.out.println(0);
             return;
@@ -27,8 +28,10 @@ public class MySolution_168_testsPassed_MemoryLimit
         /// - start from 1
         /// - start from 2
 
-        Map<Integer, List<Integer>> line1map = line1.chars().mapToObj(val -> (Integer) val).collect(Collectors.groupingBy(val -> val));
-        Map<Integer, List<Integer>> line2map = line2.chars().mapToObj(val -> (Integer) val).collect(Collectors.groupingBy(val -> val));
+        Map<Integer, List<Integer>> line1map = line1.chars().mapToObj(val -> (Integer) val)
+                                                    .collect(Collectors.groupingBy(val -> val));
+        Map<Integer, List<Integer>> line2map = line2.chars().mapToObj(val -> (Integer) val)
+                                                    .collect(Collectors.groupingBy(val -> val));
 
 
         System.out.println(line1map.equals(line2map) ? 1 : 0);

@@ -23,8 +23,10 @@ class ShellExecutor
         this.shellExecutorParameters = shellExecutorParameters;
     }
 
-    public void exec(String command) {
-        try {
+    public void exec(String command)
+    {
+        try
+        {
             LOGGER.trace("Executing {}", command);
             List<String> bash = new ArrayList<>();
             bash.add("/bin/bash");
@@ -47,7 +49,9 @@ class ShellExecutor
 
             future.get(10, SECONDS);
             errFuture.get(10, SECONDS);
-        } catch (IOException | InterruptedException | ExecutionException | TimeoutException e) {
+        }
+        catch (IOException | InterruptedException | ExecutionException | TimeoutException e)
+        {
             throw new RuntimeException(e);
         }
     }

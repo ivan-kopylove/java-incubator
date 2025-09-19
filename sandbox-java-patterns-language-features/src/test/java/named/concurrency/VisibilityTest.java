@@ -1,32 +1,38 @@
 package named.concurrency;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.jupiter.api.Test;
-
-class VisibilityExample {
+class VisibilityExample
+{
     private boolean flag = false;
 
-    public void toggleFlag() {
+    public void toggleFlag()
+    {
         flag = true;
     }
 
-    public boolean getFlag() {
+    public boolean getFlag()
+    {
         return flag;
     }
 }
 
-public class VisibilityTest {
+public class VisibilityTest
+{
 
     @Test
-    public void fix_me() throws InterruptedException {
+    public void fix_me() throws InterruptedException
+    {
         VisibilityExample example = new VisibilityExample();
         Thread writerThread = new Thread(() -> {
             example.toggleFlag();
         });
         Thread readerThread = new Thread(() -> {
-            while (!example.getFlag()) {
+            while (!example.getFlag())
+            {
                 // Spin until what?
             }
             assertTrue(example.getFlag());

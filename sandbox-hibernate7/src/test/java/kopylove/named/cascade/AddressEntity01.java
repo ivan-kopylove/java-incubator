@@ -12,10 +12,10 @@ class AddressEntity01
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int          id;
-    private String       street;
-    private int          houseNumber;
-    private String       city;
+    private int            id;
+    private String         street;
+    private int            houseNumber;
+    private String         city;
     private int            zipCode;
     @ManyToOne(fetch = FetchType.LAZY)
     private PersonEntity01 person;

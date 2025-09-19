@@ -17,6 +17,49 @@ import java.util.stream.Collectors;
 /// - [obsidian](obsidian://search?query=leetcode%20990)
 class MySolution_181_181_casesPassed
 {
+    private static boolean checkEquality(Map<Character, Set<Character>> eq, char left, char right, Set<Character> visited)
+    {
+        if (left == right)
+        {
+            return false;
+        }
+
+        visited.add(left);
+        Set<Character> characters = eq.get(left);
+        if (characters == null)
+        {
+            return true;
+        }
+        for (char c : characters)
+        {
+            if (visited.contains(c))
+            {
+                continue;
+            }
+
+            boolean res = checkEquality(eq, c, right, visited);
+            if (!res)
+            {
+                return res;
+            }
+        }
+
+        return true;
+    }
+
+    private static void enrich(Map<Character, Set<Character>> eq, char left, char right)
+    {
+        eq.computeIfPresent(left, (x, y) -> {
+            y.add(right);
+            return y;
+        });
+        eq.computeIfAbsent(left, x -> {
+            HashSet<Character> objects = new HashSet<>();
+            objects.add(right);
+            return objects;
+        });
+    }
+
     public boolean equationsPossible(String[] equations)
     {
         // why it doesnt make sence to sort?
@@ -64,48 +107,5 @@ class MySolution_181_181_casesPassed
 
 
         return true;
-    }
-
-    private static boolean checkEquality(Map<Character, Set<Character>> eq, char left, char right, Set<Character> visited)
-    {
-        if (left == right)
-        {
-            return false;
-        }
-
-        visited.add(left);
-        Set<Character> characters = eq.get(left);
-        if (characters == null)
-        {
-            return true;
-        }
-        for (char c : characters)
-        {
-            if (visited.contains(c))
-            {
-                continue;
-            }
-
-            boolean res = checkEquality(eq, c, right, visited);
-            if (!res)
-            {
-                return res;
-            }
-        }
-
-        return true;
-    }
-
-    private static void enrich(Map<Character, Set<Character>> eq, char left, char right)
-    {
-        eq.computeIfPresent(left, (x, y) -> {
-            y.add(right);
-            return y;
-        });
-        eq.computeIfAbsent(left, x -> {
-            HashSet<Character> objects = new HashSet<>();
-            objects.add(right);
-            return objects;
-        });
     }
 }

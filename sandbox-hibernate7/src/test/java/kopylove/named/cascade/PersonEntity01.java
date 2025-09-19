@@ -14,7 +14,7 @@ class PersonEntity01
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int                 id;
+    private int                   id;
     private String                name;
     @OneToMany(mappedBy = "person", orphanRemoval = true, cascade = CascadeType.ALL)
     private List<AddressEntity01> addresses;

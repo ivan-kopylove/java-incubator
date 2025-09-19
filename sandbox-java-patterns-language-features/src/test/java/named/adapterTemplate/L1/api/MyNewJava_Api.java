@@ -5,9 +5,6 @@ public interface MyNewJava_Api
 {
     Result callMe(Payload myPayload);
 
-    record Payload(String myPayload)
-    {}
-
     interface Result
     {
 
@@ -41,4 +38,7 @@ public interface MyNewJava_Api
             }
         }
     }
+
+    record Payload(String myPayload)
+    {}
 }

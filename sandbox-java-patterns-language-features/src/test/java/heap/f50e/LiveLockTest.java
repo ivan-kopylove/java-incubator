@@ -6,6 +6,18 @@ import java.util.concurrent.locks.ReentrantLock;
 
 class LiveLockTest
 {
+    private static void sleep(int millis)
+    {
+        try
+        {
+            Thread.sleep(millis);
+        }
+        catch (InterruptedException e)
+        {
+            throw new RuntimeException(e);
+        }
+    }
+
     @Test
     void what_is_the_purpose_of_this_example()
     {
@@ -68,17 +80,5 @@ class LiveLockTest
 
         // when
         sleep(15_000);
-    }
-
-    private static void sleep(int millis)
-    {
-        try
-        {
-            Thread.sleep(millis);
-        }
-        catch (InterruptedException e)
-        {
-            throw new RuntimeException(e);
-        }
     }
 }

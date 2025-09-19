@@ -20,7 +20,7 @@ public class WhatIsThePurposeOfTheExampleTest
         list2.add(1);
         list2.add(2);
 
-//        System.out.println(list1.equals(list2));
+        //        System.out.println(list1.equals(list2));
     }
 
     @Test
@@ -36,8 +36,6 @@ public class WhatIsThePurposeOfTheExampleTest
         list2.add(2);
         list2.add(1);
 
-//        System.out.println(list1.equals(list2));
+        //        System.out.println(list1.equals(list2));
     }
-
-
 }
