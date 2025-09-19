@@ -22,23 +22,24 @@ class WaitErrorExampleTest
 
             // when
             IllegalMonitorStateException ex = assertThrows(IllegalMonitorStateException.class, () -> {
-                lock.wait(); // ← This will throw exception
+                lock.wait(); // ← why will throw exception?
             });
 
 
             // then
-            assertThat(ex.getMessage(), equalTo("Current thread is not owner (of what?)"));
+            assertThat(ex.getMessage(), equalTo("Current thread is not owner")); // (is not an owner of what?);
         }
     }
 
     @Nested
     class Solution
     {
+        private final Object lock = new Object();
+
         @Test
         void should_call_wait_normally() throws InterruptedException
         {
             // given
-            Object lock = new Object();
             synchronized (lock)
             {
                 System.out.println("Entered sync block");
