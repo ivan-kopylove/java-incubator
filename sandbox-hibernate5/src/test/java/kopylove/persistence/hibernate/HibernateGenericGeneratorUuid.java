@@ -13,7 +13,7 @@ class HibernateGenericGeneratorUuid
     @Test
     void what_does_this_example_demonstrate()
     {
-        GeneratedValueUuid generatedKey = new GeneratedValueUuid();
+        GeneratedValueUuid01 generatedKey = new GeneratedValueUuid01();
 
         Session session = HibernateSessionFactory.openSession();
         session.getTransaction().begin();

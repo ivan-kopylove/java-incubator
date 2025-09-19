@@ -6,11 +6,11 @@ import jakarta.persistence.Id;
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
-class GeneratedValueUuid2
+public class GeneratedValueUuid01
 {
     @Id
     @GeneratedValue(generator = "generator")
-    @GenericGenerator(name = "generator", strategy = "uuid2")
+    @GenericGenerator(name = "generator", strategy = "uuid")
     private String key;
 
     public String getKey()
