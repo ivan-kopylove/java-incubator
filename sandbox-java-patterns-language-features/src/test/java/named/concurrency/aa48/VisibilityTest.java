@@ -27,9 +27,11 @@ public class VisibilityTest
     public void fix_me() throws InterruptedException
     {
         VisibilityExample example = new VisibilityExample();
+
         Thread writerThread = new Thread(() -> {
             example.toggleFlag();
         });
+
         Thread readerThread = new Thread(() -> {
             while (!example.getFlag())
             {
