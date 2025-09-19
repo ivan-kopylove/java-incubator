@@ -6,14 +6,14 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
 import kopylove.heap.EntityManagerProvider;
-import kopylove.heap.dsasdasda.EntitiManagerSession;
+import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-class JpaCompoundSelectionArray extends EntitiManagerSession
+class JpaCompoundSelectionArray extends EntityManagerSession
 {
     @BeforeAll
     public static void populate()

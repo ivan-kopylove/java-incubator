@@ -2,13 +2,13 @@ package kopylove.heap.a;
 
 import jakarta.persistence.EntityManager;
 import kopylove.heap.EntityManagerProvider;
-import kopylove.heap.dsasdasda.EntitiManagerSession;
+import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class JpaCompositeForeignKeyExample extends EntitiManagerSession
+class JpaCompositeForeignKeyExample extends EntityManagerSession
 {
     @BeforeAll
     public static void populate()

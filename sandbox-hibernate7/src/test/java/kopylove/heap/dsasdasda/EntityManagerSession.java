@@ -4,7 +4,7 @@ import org.junit.jupiter.api.AfterEach;
 
 import static kopylove.heap.EntityManagerProvider.closeEntityManager;
 
-public class EntitiManagerSession
+public class EntityManagerSession
 {
     @AfterEach
     public void destroy()

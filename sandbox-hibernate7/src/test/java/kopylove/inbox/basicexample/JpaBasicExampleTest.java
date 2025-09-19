@@ -2,13 +2,13 @@ package kopylove.inbox.basicexample;
 
 import jakarta.persistence.EntityManager;
 import kopylove.heap.EntityManagerProvider;
-import kopylove.heap.dsasdasda.EntitiManagerSession;
+import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// Minimal JPA example - save and load saved entity.
-class JpaBasicExampleTest extends EntitiManagerSession
+class JpaBasicExampleTest extends EntityManagerSession
 {
     @Test
     void what_does_this_example_demonstrate()

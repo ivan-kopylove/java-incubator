@@ -2,14 +2,14 @@ package kopylove.inbox.a2;
 
 import jakarta.persistence.EntityManager;
 import kopylove.heap.EntityManagerProvider;
-import kopylove.heap.dsasdasda.EntitiManagerSession;
+import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// @Embedded annotation demonstration.
-class JpaEmbededAnnotationExampleTest extends EntitiManagerSession
+class JpaEmbededAnnotationExampleTest extends EntityManagerSession
 {
     @BeforeAll
     public static void populate()
