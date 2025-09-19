@@ -1,4 +1,4 @@
-package kopylove.hibernate.GeneratedValueUuid01;
+package kopylove.hibernate.named.GeneratedValueUuid01;
 
 import kopylove.hibernate.HibernateSessionFactory;
 import org.hibernate.Session;
