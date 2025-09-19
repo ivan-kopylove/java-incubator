@@ -15,14 +15,17 @@ class JpaSharedGeneratedValueTest extends EntityManagerSession
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         entityManager.getTransaction().begin();
 
-        GeneratedValue02 g1 = new GeneratedValue02();
-        entityManager.persist(g1);
+        GeneratedValue02 g10 = new GeneratedValue02();
+        GeneratedValue02 g11 = new GeneratedValue02();
+        GeneratedValueSecond02 g20 = new GeneratedValueSecond02();
 
-        GeneratedValueSecond02 g2 = new GeneratedValueSecond02();
-        entityManager.persist(g2);
+        entityManager.persist(g10);
+        entityManager.persist(g11);
 
-        assertEquals(1, g1.getId());
-        assertEquals(2, g2.getId());
+        entityManager.persist(g20);
+
+        assertEquals(1, g10.getId());
+        assertEquals(1, g20.getId());
 
         entityManager.getTransaction().commit();
         entityManager.close();
