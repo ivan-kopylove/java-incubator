@@ -1,4 +1,4 @@
-package heap.a59e;
+package named.concurrencyWaitNotify01;
 
 class Waiter implements Runnable
 {
@@ -12,20 +12,21 @@ class Waiter implements Runnable
     @Override
     public void run()
     {
-        String name = Thread.currentThread().getName();
         synchronized (msg)
         {
+            String name = Thread.currentThread().getName();
+
             try
             {
-                System.out.println(name + " waiting to get notified at time:" + System.currentTimeMillis());
+                System.out.println(name + " waiting");
                 msg.wait();
             }
             catch (InterruptedException e)
             {
                 e.printStackTrace();
             }
-            System.out.println(name + " waiter thread got notified at time:" + System.currentTimeMillis());
-            //process the message now
+            System.out.println(name + " thread got notified");
+
             System.out.println(name + " processed: " + msg.getMsg());
         }
     }

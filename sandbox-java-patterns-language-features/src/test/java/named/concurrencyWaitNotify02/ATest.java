@@ -1,4 +1,4 @@
-package heap.a965;
+package named.concurrencyWaitNotify02;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -16,8 +16,13 @@ class ATest
         MyHouse myHouse = new MyHouse();
 
         // when
-        myHouse.eatPizza();
+        new Thread(() -> {
+            myHouse.eatPizza();
+        }).start();
+        Thread.sleep(2_000);
+
         myHouse.pizzaGuy();
+
 
         // then
         assertThat("actual result", equalTo("expected result"));

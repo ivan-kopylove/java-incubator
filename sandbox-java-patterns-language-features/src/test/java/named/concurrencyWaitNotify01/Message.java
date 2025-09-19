@@ -1,4 +1,4 @@
-package heap.a59e;
+package named.concurrencyWaitNotify01;
 
 class Message
 {

@@ -1,4 +1,4 @@
-package named.concurrency;
+package named.concurrency.aa48;
 
 import org.junit.jupiter.api.Test;
 

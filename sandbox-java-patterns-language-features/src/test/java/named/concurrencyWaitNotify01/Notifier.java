@@ -1,4 +1,4 @@
-package heap.a59e;
+package named.concurrencyWaitNotify01;
 
 class Notifier implements Runnable
 {
@@ -17,11 +17,14 @@ class Notifier implements Runnable
         System.out.println(name + " started");
         try
         {
-            Thread.sleep(1000);
+            Thread.sleep(2_000);
             synchronized (msg)
             {
                 msg.setMsg(name + " Notifier work done");
-                //                msg.notify();
+
+//                                msg.notify();
+//                                msg.notify();
+
                 msg.notifyAll();
             }
         }
