@@ -5,8 +5,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-
-        //@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
 class BookEntity07
 {
     @Id

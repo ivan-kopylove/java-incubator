@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-/// [...](https://docs.jboss.org/hibernate/core/3.6/reference/en-US/html/mapping.html#d0e5294)
+
 class HibernateGenericGeneratorUuid02
 {
     @Test
