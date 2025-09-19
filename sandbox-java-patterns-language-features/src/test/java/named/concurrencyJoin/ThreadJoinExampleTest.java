@@ -1,4 +1,4 @@
-package heap.e3d8;
+package named.concurrencyJoin;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

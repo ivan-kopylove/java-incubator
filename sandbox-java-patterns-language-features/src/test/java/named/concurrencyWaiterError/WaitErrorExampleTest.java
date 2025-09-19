@@ -1,4 +1,4 @@
-package heap.ad57;
+package named.concurrencyWaiterError;
 
 // Example 1: Basic Illegal Monitor State (Run to see error)
 
@@ -11,7 +11,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class WaitErrorExampleTest
 {
-
     @Nested
     class Problem
     {
@@ -28,7 +27,7 @@ class WaitErrorExampleTest
 
 
             // then
-            assertThat(ex.getMessage(), equalTo("current thread is not owner"));
+            assertThat(ex.getMessage(), equalTo("Current thread is not owner (of what?)"));
         }
     }
 
@@ -45,7 +44,7 @@ class WaitErrorExampleTest
                 System.out.println("Entered sync block");
                 // when
                 lock.wait();
-                System.out.println("This never prints");
+                System.out.println("Will this be printed somewhen?");
             }
         }
     }
