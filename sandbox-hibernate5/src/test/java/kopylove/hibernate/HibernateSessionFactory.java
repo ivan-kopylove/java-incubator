@@ -9,13 +9,13 @@ import static com.github.ivan.kopylove.commons.reflection.AnnotatedClassesProvid
 
 public final class HibernateSessionFactory
 {
-    private static final SessionFactory sessionFactory = buildSessionFactory();
+    private static final SessionFactory sessionFactory = buildSessionFactory("kopylove.hibernate");
 
     private HibernateSessionFactory()
     {
     }
 
-    private static SessionFactory buildSessionFactory()
+    private static SessionFactory buildSessionFactory(String packageToScan)
     {
         Configuration configuration = new Configuration();
 
@@ -31,7 +31,7 @@ public final class HibernateSessionFactory
         configuration.setProperty("hibernate.format_sql", "false");
         configuration.setProperty("hibernate.use_sql_comments", "false");
 
-        getAnnotatedClasses(Entity.class, "kopylove.hibernate").forEach(entity -> {
+        getAnnotatedClasses(Entity.class, packageToScan).forEach(entity -> {
             configuration.addAnnotatedClass(entity);
         });
 
