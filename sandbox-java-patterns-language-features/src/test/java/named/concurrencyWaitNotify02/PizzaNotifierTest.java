@@ -5,7 +5,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
+@SuppressWarnings("ALL")
 class PizzaNotifierTest
 {
     @Test
@@ -19,7 +21,9 @@ class PizzaNotifierTest
         new Thread(() -> {myHouse.eatPizza();}).start();
         Thread.sleep(2_000);
 
-        myHouse.pizzaGuy();
+        assertDoesNotThrow(() -> {
+            myHouse.pizzaGuy();
+        });
 
 
         // then

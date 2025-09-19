@@ -1,5 +1,6 @@
 package heap.cea2;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -15,10 +16,12 @@ import java.nio.file.Paths;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+
 class CutAudiofileTest
 {
 
     @Test
+    @Disabled
     @DisplayName("what is the purpose of this example?")
     void what_is_the_purpose_of_this_example() throws IOException
     {

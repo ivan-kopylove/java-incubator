@@ -1,4 +1,4 @@
-package heap.b860;
+package named.concurrencyWaitNotify03;
 
 import org.junit.jupiter.api.Test;
 
