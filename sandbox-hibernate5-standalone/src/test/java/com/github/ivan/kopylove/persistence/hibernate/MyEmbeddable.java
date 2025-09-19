@@ -1,7 +1,7 @@
 package com.github.ivan.kopylove.persistence.hibernate;
 
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
+
+
 
 @Embeddable
 class MyEmbeddable

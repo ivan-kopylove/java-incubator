@@ -1,8 +1,8 @@
 package com.github.ivan.kopylove.persistence.hibernate;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+
+import jakarta.persistence.GeneratedValue;
+
 
 /// drop sequence if exists MyGeneratorName
 @Entity

@@ -1,6 +1,6 @@
 package com.github.ivan.kopylove.persistence.hibernate;
 
-import javax.persistence.Column;
+
 
 class OrganizationGeneralDetails
 {

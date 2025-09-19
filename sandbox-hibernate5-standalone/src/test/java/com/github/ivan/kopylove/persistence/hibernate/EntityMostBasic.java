@@ -1,7 +1,7 @@
 package com.github.ivan.kopylove.persistence.hibernate;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+
+
 
 /// If no @Table and @Column are specified, Hibernate generates following schema:
 /// create table MinimalEntity (key bigint not null, primary key (key))

@@ -1,10 +1,10 @@
 package com.github.ivan.kopylove.sandbox.persistence.entities.a;
 
-import javax.persistence.CollectionTable;
-import javax.persistence.ElementCollection;
-import javax.persistence.Embeddable;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
+
+
+
+
+
 import java.util.Map;
 
 @Embeddable

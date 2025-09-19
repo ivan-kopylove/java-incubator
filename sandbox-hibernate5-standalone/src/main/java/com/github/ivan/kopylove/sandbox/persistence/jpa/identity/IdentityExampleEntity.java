@@ -1,10 +1,10 @@
 package com.github.ivan.kopylove.sandbox.persistence.jpa.identity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+
+
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+
 
 @Entity(name = "IDENTITY_EXAMPLE")
 class IdentityExampleEntity

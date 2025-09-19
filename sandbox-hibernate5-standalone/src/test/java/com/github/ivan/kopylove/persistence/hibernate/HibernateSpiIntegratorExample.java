@@ -1,6 +1,6 @@
 package com.github.ivan.kopylove.persistence.hibernate;
 
-import com.github.ivan.kopylove.sandbox.persistence.util.JpaEntityManagerFactory;
+
 import com.github.ivan.kopylove.sandbox.persistence.util.MetadataExtractorIntegrator;
 import org.hibernate.mapping.PersistentClass;
 import org.junit.jupiter.api.Test;
@@ -10,7 +10,7 @@ class HibernateSpiIntegratorExample
     @Test
     void foo()
     {
-        JpaEntityManagerFactory.getEntityManger();
+        EntityManagerProvider.getEntityManager();
 
         MetadataExtractorIntegrator instance = MetadataExtractorIntegrator.INSTANCE;
         for (PersistentClass clazz : instance.getMetadata()

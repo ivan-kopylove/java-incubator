@@ -1,7 +1,7 @@
 package com.github.ivan.kopylove.sandbox.persistence.entities.a;
 
-import javax.persistence.Embeddable;
-import javax.persistence.Embedded;
+
+
 
 @Embeddable
 class TicketDetails

@@ -2,9 +2,9 @@ package com.github.ivan.kopylove.persistence.hibernate;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+
+import jakarta.persistence.GeneratedValue;
+
 
 @Entity
 class GeneratedValueUuid2

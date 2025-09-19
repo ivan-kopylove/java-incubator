@@ -1,9 +1,9 @@
 package com.github.ivan.kopylove.sandbox.persistence.jpa.orderby;
 
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OrderBy;
+
+
+
+
 import java.util.List;
 
 @Entity

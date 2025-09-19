@@ -1,0 +1,52 @@
+package kopylove.inbox.a2;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Embedded;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "ORGANIZATION")
+class OrganizationEntity01
+{
+    @Id
+    @Column(name = "ORGANIZATION_KEY")
+    private int key;
+
+    @Embedded
+    private OrganizationBuildingDetails organizationBuildingDetails;
+
+    @Embedded
+    private OrganizationGeneralDetails organizationGeneralDetails;
+
+    public int getKey()
+    {
+        return key;
+    }
+
+    public void setKey(int key)
+    {
+        this.key = key;
+    }
+
+    public OrganizationBuildingDetails getOrganizationBuildingDetails()
+    {
+        return organizationBuildingDetails;
+    }
+
+    public void setOrganizationBuildingDetails(OrganizationBuildingDetails organizationBuildingDetails)
+    {
+        this.organizationBuildingDetails = organizationBuildingDetails;
+    }
+
+    public OrganizationGeneralDetails getOrganizationGeneralDetails()
+    {
+        return organizationGeneralDetails;
+    }
+
+    public void setOrganizationGeneralDetails(OrganizationGeneralDetails organizationGeneralDetails)
+    {
+        this.organizationGeneralDetails = organizationGeneralDetails;
+    }
+}
