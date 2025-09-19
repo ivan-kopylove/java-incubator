@@ -1,4 +1,4 @@
-package kopylove.named.fetchvsjoin;
+package kopylove.named.fetchVsJoin;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

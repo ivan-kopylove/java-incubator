@@ -1,4 +1,4 @@
-package kopylove.named.criteria.join;
+package kopylove.named.criteriaJoin;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;

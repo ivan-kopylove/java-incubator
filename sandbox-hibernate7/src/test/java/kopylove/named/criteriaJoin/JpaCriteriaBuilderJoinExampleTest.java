@@ -1,4 +1,4 @@
-package kopylove.named.criteria.join;
+package kopylove.named.criteriaJoin;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
@@ -45,8 +45,8 @@ class JpaCriteriaBuilderJoinExampleTest extends EntityManagerSession
     {
         EntityManager entityManager = super.getEntityManager();
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();
-        CriteriaQuery<ParentEntity02> cq = cb.createQuery(ParentEntity02.class);//result
-        Root<ParentEntity02> root = cq.from(ParentEntity02.class);//to start from
+        CriteriaQuery<ParentEntity02> cq = cb.createQuery(ParentEntity02.class);
+        Root<ParentEntity02> root = cq.from(ParentEntity02.class);
 
         root.join("childs");
         cq.select(root);
