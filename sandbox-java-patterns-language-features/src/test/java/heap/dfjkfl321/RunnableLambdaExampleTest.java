@@ -4,6 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import java.util.function.Consumer;
 
+import static heap.asddas.PredictionMode.KOAN_MODE;
+import static org.junit.jupiter.api.Assertions.fail;
+
 class RunnableLambdaExampleTest
 {
 
@@ -28,9 +31,14 @@ class RunnableLambdaExampleTest
         r3.accept("something");
         r4.myMethod();
 
-//                new Thread(r1);// is that compilable?
-//                new Thread(r2);// is that compilable?
-//                new Thread(r3);// is that compilable?
-//                new Thread(r4);// is that compilable?
+        if (KOAN_MODE)
+        {
+            fail("try to predict yourself before running the assertion");
+        }
+
+        //                new Thread(r1);// is that compilable?
+        //                new Thread(r2);// is that compilable?
+        //                new Thread(r3);// is that compilable?
+        //                new Thread(r4);// is that compilable?
     }
 }
