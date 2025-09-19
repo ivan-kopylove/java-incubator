@@ -20,7 +20,7 @@ class ParentEntity07
     private String name;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "parent")
-    private Set<ChildEntity07> childs;
+    private Set<ChildEntity07> children;
 
     public int getId()
     {
@@ -42,13 +42,13 @@ class ParentEntity07
         this.name = name;
     }
 
-    public Set<ChildEntity07> getChilds()
+    public Set<ChildEntity07> getChildren()
     {
-        return childs;
+        return children;
     }
 
-    public void setChilds(Set<ChildEntity07> childs)
+    public void setChildren(Set<ChildEntity07> childs)
     {
-        this.childs = new HashSet(childs);
+        this.children = new HashSet(childs);
     }
 }

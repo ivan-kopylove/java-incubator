@@ -47,7 +47,7 @@ class ParentEntity08
         return childs;
     }
 
-    public void setChilds(Set<ChildEntity08> childs)
+    public void setChildren(Set<ChildEntity08> childs)
     {
         this.childs = new HashSet(childs);
     }
