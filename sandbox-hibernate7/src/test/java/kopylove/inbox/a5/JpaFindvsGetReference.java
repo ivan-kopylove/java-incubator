@@ -52,11 +52,11 @@ class JpaFindvsGetReference extends EntityManagerSession
     {
         EntityManager entityManger = EntityManagerProvider.getEntityManager();
 
-        ParentEntity10 parent = entityManger.getReference(ParentEntity10.class, 999999999); //no db hit, parent is taken from proxy (what level?)
+        ParentEntity10 anEntity = entityManger.getReference(ParentEntity10.class, 999999999); //no db hit, parent is taken from proxy (what level?)
 
-        assertEquals(999999999, parent.getId()); //no init
-        assertTrue(parent.getClass().toString().contains("$HibernateProxy$"));
-        assertInstanceOf(HibernateProxy.class, parent);
+        assertEquals(999999999, anEntity.getId()); //no init
+        assertInstanceOf(HibernateProxy.class, anEntity);
+        assertTrue(anEntity.getClass().toString().contains("$HibernateProxy$"));
 
         entityManger.close();
     }
@@ -65,8 +65,6 @@ class JpaFindvsGetReference extends EntityManagerSession
     void getReferenceException()
     {
         assertThrows(EntityNotFoundException.class, () -> {
-
-
             EntityManager entityManger = EntityManagerProvider.getEntityManager();
 
             ParentEntity10 parent = entityManger.getReference(ParentEntity10.class, 999999999); //no db hit
