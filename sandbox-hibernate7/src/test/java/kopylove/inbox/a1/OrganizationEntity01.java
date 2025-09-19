@@ -1,24 +1,23 @@
-package kopylove.named.compoundselection;
+package kopylove.inbox.a1;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
 @Entity
 
-class OrganizationEntity
+class OrganizationEntity01
 {
     @Id
     @Column(name = "ORGANIZATION_KEY")
     private int key;
 
     @Embedded
-    private OrganizationBuildingDetails organizationBuildingDetails;
+    private OrganizationBuildingDetails01 organizationBuildingDetails;
 
     @Embedded
-    private OrganizationGeneralDetails organizationGeneralDetails;
+    private OrganizationGeneralDetails01 organizationGeneralDetails;
 
     public int getKey()
     {
@@ -30,22 +29,22 @@ class OrganizationEntity
         this.key = key;
     }
 
-    public OrganizationBuildingDetails getOrganizationBuildingDetails()
+    public OrganizationBuildingDetails01 getOrganizationBuildingDetails()
     {
         return organizationBuildingDetails;
     }
 
-    public void setOrganizationBuildingDetails(OrganizationBuildingDetails organizationBuildingDetails)
+    public void setOrganizationBuildingDetails(OrganizationBuildingDetails01 organizationBuildingDetails)
     {
         this.organizationBuildingDetails = organizationBuildingDetails;
     }
 
-    public OrganizationGeneralDetails getOrganizationGeneralDetails()
+    public OrganizationGeneralDetails01 getOrganizationGeneralDetails()
     {
         return organizationGeneralDetails;
     }
 
-    public void setOrganizationGeneralDetails(OrganizationGeneralDetails organizationGeneralDetails)
+    public void setOrganizationGeneralDetails(OrganizationGeneralDetails01 organizationGeneralDetails)
     {
         this.organizationGeneralDetails = organizationGeneralDetails;
     }

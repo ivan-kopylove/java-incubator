@@ -23,18 +23,18 @@ class JpaCompoundSelectionConstruction extends EntityManagerSession
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         entityManager.getTransaction().begin();
 
-        OrganizationBuildingDetails1 organizationBuildingDetails = new OrganizationBuildingDetails1();
+        OrganizationBuildingDetails01 organizationBuildingDetails = new OrganizationBuildingDetails01();
         organizationBuildingDetails.setAddress("Sadovnicheskaya Ulitsa 82, building 2, Moscow, Russia, 115035");
         organizationBuildingDetails.setFloors(5);
         organizationBuildingDetails.setWorkplaces(1000);
 
-        OrganizationGeneralDetails1 generalDetails = new OrganizationGeneralDetails1();
+        OrganizationGeneralDetails01 generalDetails = new OrganizationGeneralDetails01();
         generalDetails.setFound("1997");
         generalDetails.setGoal("Make the world better");
         generalDetails.setMotto("Naidyotsa vsyo");
         generalDetails.setOgranizationalStructure("Vertical");
 
-        OrganizationEntity1 organzation = new OrganizationEntity1();
+        OrganizationEntity01 organzation = new OrganizationEntity01();
         organzation.setKey(0);
         organzation.setOrganizationBuildingDetails(organizationBuildingDetails);
         organzation.setOrganizationGeneralDetails(generalDetails);
@@ -56,7 +56,7 @@ class JpaCompoundSelectionConstruction extends EntityManagerSession
 
             CriteriaBuilder builder = entityManager.getCriteriaBuilder();
             CriteriaQuery<CompoundObject1> query = builder.createQuery(CompoundObject1.class);
-            Root<OrganizationEntity1> cgedRoot = query.from(OrganizationEntity1.class);
+            Root<OrganizationEntity01> cgedRoot = query.from(OrganizationEntity01.class);
 
             CompoundSelection<CompoundObject1> compoundSelection = builder.construct(CompoundObject1.class,
                                                                                      cgedRoot.get(
@@ -77,7 +77,7 @@ class JpaCompoundSelectionConstruction extends EntityManagerSession
 
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
         CriteriaQuery<CompoundObject1> query = builder.createQuery(CompoundObject1.class);
-        Root<OrganizationEntity1> cgedRoot = query.from(OrganizationEntity1.class);
+        Root<OrganizationEntity01> cgedRoot = query.from(OrganizationEntity01.class);
 
         CompoundSelection<CompoundObject1> compoundSelection = builder.construct(CompoundObject1.class,
                                                                                  cgedRoot.get("key"),

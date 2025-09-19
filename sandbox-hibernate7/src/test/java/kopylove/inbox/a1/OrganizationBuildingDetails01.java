@@ -1,10 +1,10 @@
-package kopylove.named.compoundselection;
+package kopylove.inbox.a1;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 
 @Embeddable
-class OrganizationBuildingDetails
+class OrganizationBuildingDetails01
 {
     @Column(name = "WORKPLACES")
     private int    workplaces;

@@ -20,7 +20,7 @@ class DocumentEntity01
 
     @ManyToOne
     @JoinColumns({@JoinColumn(name = "DOCUMENT_USERS_LOGIN", referencedColumnName = "USERS_LOGIN"), @JoinColumn(name = "DOCUMENT_USERS_SSN", referencedColumnName = "USERS_SSN")})
-    private UserEntity user;
+    private UserEntity02 user;
 
     public int getKey()
     {
@@ -42,12 +42,12 @@ class DocumentEntity01
         this.name = name;
     }
 
-    public UserEntity getUser()
+    public UserEntity02 getUser()
     {
         return user;
     }
 
-    public void setUser(UserEntity user)
+    public void setUser(UserEntity02 user)
     {
         this.user = user;
     }

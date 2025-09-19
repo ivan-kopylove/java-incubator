@@ -1,8 +1,8 @@
-package kopylove.inbox.a1;
+package kopylove.named.compoundselection;
 
 import jakarta.persistence.Column;
 
-class OrganizationGeneralDetails1
+class OrganizationGeneralDetails03
 {
     @Column(name = "GOAL")
     private String goal;

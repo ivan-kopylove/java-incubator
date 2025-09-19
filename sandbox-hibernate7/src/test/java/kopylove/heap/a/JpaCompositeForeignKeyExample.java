@@ -16,7 +16,7 @@ class JpaCompositeForeignKeyExample extends EntityManagerSession
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         entityManager.getTransaction().begin();
 
-        UserEntity user = new UserEntity();
+        UserEntity02 user = new UserEntity02();
         user.setCity("Moscow");
         user.setName("bob");
         user.setSsn(99999999);
