@@ -1,11 +1,11 @@
-package kopylove.inbox.a1;
+package kopylove.named.compoundobject;
 
-class CompoundObject1
+class CompoundObject01
 {
     private int    a;
     private String b;
 
-    public CompoundObject1(int a, String b)
+    public CompoundObject01(int a, String b)
     {
         this.a = a;
         this.b = b;

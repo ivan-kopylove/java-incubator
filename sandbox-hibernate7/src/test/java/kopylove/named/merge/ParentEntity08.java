@@ -1,4 +1,4 @@
-package kopylove.inbox.merge;
+package kopylove.named.merge;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

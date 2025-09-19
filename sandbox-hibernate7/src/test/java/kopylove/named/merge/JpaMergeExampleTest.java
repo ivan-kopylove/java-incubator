@@ -1,7 +1,6 @@
-package kopylove.inbox.merge;
+package kopylove.named.merge;
 
 import jakarta.persistence.EntityManager;
-import kopylove.heap.EntityManagerProvider;
 import kopylove.heap.dsasdasda.EntityManagerSession;
 import org.junit.jupiter.api.Test;
 

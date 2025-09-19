@@ -1,4 +1,4 @@
-package kopylove.inbox.persistchild;
+package kopylove.named.persistchild;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

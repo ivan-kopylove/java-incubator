@@ -1,4 +1,4 @@
-package kopylove.inbox.persistchild;
+package kopylove.named.persistchild;
 
 import jakarta.persistence.EntityManager;
 import kopylove.heap.EntityManagerProvider;

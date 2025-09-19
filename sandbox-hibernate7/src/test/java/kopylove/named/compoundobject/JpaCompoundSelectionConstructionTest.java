@@ -1,4 +1,4 @@
-package kopylove.inbox.a1;
+package kopylove.named.compoundobject;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.criteria.CompoundSelection;
@@ -15,7 +15,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class JpaCompoundSelectionConstruction extends EntityManagerSession
+class JpaCompoundSelectionConstructionTest extends EntityManagerSession
 {
     @BeforeAll
     public static void populate()
@@ -55,16 +55,16 @@ class JpaCompoundSelectionConstruction extends EntityManagerSession
             entityManager.getTransaction().begin();
 
             CriteriaBuilder builder = entityManager.getCriteriaBuilder();
-            CriteriaQuery<CompoundObject1> query = builder.createQuery(CompoundObject1.class);
+            CriteriaQuery<CompoundObject01> query = builder.createQuery(CompoundObject01.class);
             Root<OrganizationEntity01> cgedRoot = query.from(OrganizationEntity01.class);
 
-            CompoundSelection<CompoundObject1> compoundSelection = builder.construct(CompoundObject1.class,
-                                                                                     cgedRoot.get(
+            CompoundSelection<CompoundObject01> compoundSelection = builder.construct(CompoundObject01.class,
+                                                                                      cgedRoot.get(
                                                                                                      "organizationBuildingDetails")
                                                                                              .get("address"),
-                                                                                     cgedRoot.get("key")); //incorrect order
+                                                                                      cgedRoot.get("key")); //incorrect order
             query.select(compoundSelection);
-            List<CompoundObject1> resultList = entityManager.createQuery(query).getResultList();
+            List<CompoundObject01> resultList = entityManager.createQuery(query).getResultList();
         });
     }
 
@@ -76,16 +76,16 @@ class JpaCompoundSelectionConstruction extends EntityManagerSession
         entityManager.getTransaction().begin();
 
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
-        CriteriaQuery<CompoundObject1> query = builder.createQuery(CompoundObject1.class);
+        CriteriaQuery<CompoundObject01> query = builder.createQuery(CompoundObject01.class);
         Root<OrganizationEntity01> cgedRoot = query.from(OrganizationEntity01.class);
 
-        CompoundSelection<CompoundObject1> compoundSelection = builder.construct(CompoundObject1.class,
-                                                                                 cgedRoot.get("key"),
-                                                                                 cgedRoot.get(
+        CompoundSelection<CompoundObject01> compoundSelection = builder.construct(CompoundObject01.class,
+                                                                                  cgedRoot.get("key"),
+                                                                                  cgedRoot.get(
                                                                                                  "organizationBuildingDetails")
                                                                                          .get("address")); //correct order
         query.select(compoundSelection);
-        List<CompoundObject1> resultList = entityManager.createQuery(query).getResultList();
+        List<CompoundObject01> resultList = entityManager.createQuery(query).getResultList();
         assertEquals(0, resultList.get(0).getA());
         assertEquals("Sadovnicheskaya Ulitsa 82, building 2, Moscow, Russia, 115035", resultList.get(0).getB());
     }

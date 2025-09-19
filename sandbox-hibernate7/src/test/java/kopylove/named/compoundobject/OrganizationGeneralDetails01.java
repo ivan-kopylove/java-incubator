@@ -1,4 +1,4 @@
-package kopylove.inbox.a1;
+package kopylove.named.compoundobject;
 
 import jakarta.persistence.Column;
 

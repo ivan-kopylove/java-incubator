@@ -1,13 +1,12 @@
-package kopylove.inbox.basicexample;
+package kopylove.named.nativequery;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-
         //@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
-class BookEntity02
+class BookEntity13
 {
     @Id
     @Column(name = "BOOK_KEY")
