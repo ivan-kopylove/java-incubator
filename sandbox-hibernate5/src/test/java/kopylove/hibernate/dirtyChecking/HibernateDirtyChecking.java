@@ -5,6 +5,8 @@ import org.hibernate.Session;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class HibernateDirtyChecking
@@ -55,6 +57,7 @@ class HibernateDirtyChecking
 
         BookEntity07 book = session.find(BookEntity07.class, ID);
         assertEquals("Fred Brooks - The Mythical Man-Month", book.getName());
+
 
         session.getTransaction().commit();
         session.close();

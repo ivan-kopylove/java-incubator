@@ -8,11 +8,12 @@ import org.hibernate.proxy.HibernateProxy;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.StringContains.containsString;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /// Difference between EntityManager#find and EntityManager#getReference
 class JpaFindvsGetReferenceTest extends EntityManagerManual
@@ -57,10 +58,10 @@ class JpaFindvsGetReferenceTest extends EntityManagerManual
 
         assertEquals(999999999, anEntity.getId()); //no init
         assertInstanceOf(HibernateProxy.class, anEntity);
-        String string = anEntity.getClass().toString();
-        System.out.println(string);
+        String className = anEntity.getClass().toString();
+        System.out.println(className);
 
-        assertTrue(string.contains("$HibernateProxy"));
+        assertThat(className, containsString("$HibernateProxy"));
 
         entityManger.close();
     }
@@ -74,7 +75,7 @@ class JpaFindvsGetReferenceTest extends EntityManagerManual
             ParentEntity10 parent = entityManger.getReference(ParentEntity10.class, 999999999); //no db hit
 
             assertEquals(999999999, parent.getId());//no init
-            assertTrue(parent.getClass().toString().contains("$HibernateProxy"));
+            assertThat(parent.getClass().toString(), containsString("$HibernateProxy"));
             assertInstanceOf(HibernateProxy.class, parent);
             parent.getName(); //produces exception
 
