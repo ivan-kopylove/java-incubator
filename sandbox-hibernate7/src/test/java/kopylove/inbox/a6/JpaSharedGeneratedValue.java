@@ -15,10 +15,10 @@ class JpaSharedGeneratedValue extends BaseSession
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         entityManager.getTransaction().begin();
 
-        GeneratedValueMostBasic g1 = new GeneratedValueMostBasic();
+        GeneratedValueMostBasic02 g1 = new GeneratedValueMostBasic02();
         entityManager.persist(g1);
 
-        GeneratedValueMostBasicSecond g2 = new GeneratedValueMostBasicSecond();
+        GeneratedValueMostBasicSecond02 g2 = new GeneratedValueMostBasicSecond02();
         entityManager.persist(g2);
 
         assertEquals(1, g1.getId());

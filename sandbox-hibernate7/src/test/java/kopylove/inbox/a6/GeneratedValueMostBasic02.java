@@ -6,7 +6,7 @@ import jakarta.persistence.Id;
 
 /// drop sequence if exists MyGeneratorName
 @Entity
-class GeneratedValueMostBasicSecond
+class GeneratedValueMostBasic02
 {
     @Id
     @GeneratedValue
