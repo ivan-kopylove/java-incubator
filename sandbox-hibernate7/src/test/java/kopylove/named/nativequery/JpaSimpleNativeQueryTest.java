@@ -3,7 +3,7 @@ package kopylove.named.nativequery;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
 import jakarta.persistence.Tuple;
-import kopylove.heap.dsasdasda.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerSession;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

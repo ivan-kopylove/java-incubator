@@ -5,7 +5,7 @@ import jakarta.persistence.TypedQuery;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
-import kopylove.heap.dsasdasda.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerSession;
 import org.junit.jupiter.api.Test;
 
 /// In this two examples, JOIN query is used to load. They have certain difference.

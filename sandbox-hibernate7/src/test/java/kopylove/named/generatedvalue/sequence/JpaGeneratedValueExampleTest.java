@@ -1,7 +1,7 @@
 package kopylove.named.generatedvalue.sequence;
 
 import jakarta.persistence.EntityManager;
-import kopylove.heap.dasads.EntityManagerProvider;
+import kopylove.heap.b505.EntityManagerProvider;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

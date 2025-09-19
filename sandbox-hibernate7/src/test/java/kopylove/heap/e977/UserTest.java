@@ -1,6 +1,6 @@
 package kopylove.heap.e977;
 
-import kopylove.heap.dsasdasda.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerSession;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;

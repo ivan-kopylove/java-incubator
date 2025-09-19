@@ -1,7 +1,7 @@
 package kopylove.named.cascade;
 
 import jakarta.persistence.EntityManager;
-import kopylove.heap.dsasdasda.EntityManagerSession;
+import kopylove.heap.e70a.EntityManagerSession;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collections;

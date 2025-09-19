@@ -1,7 +1,7 @@
 package kopylove.named.persistchild;
 
 import jakarta.persistence.EntityManager;
-import kopylove.heap.dasads.EntityManagerProvider;
+import kopylove.heap.b505.EntityManagerProvider;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashSet;

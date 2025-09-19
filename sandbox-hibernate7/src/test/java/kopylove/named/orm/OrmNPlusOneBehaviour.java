@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
-import static kopylove.heap.dasads.EntityManagerProvider.getEntityManager;
+import static kopylove.heap.b505.EntityManagerProvider.getEntityManager;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 /// ORM N+1 problem demonstration
