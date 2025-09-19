@@ -1,12 +1,12 @@
 package com.github.ivan.kopylove.persistence.hibernate;
 
-
 import jakarta.persistence.GeneratedValue;
 
+import javax.persistence.Id;
 
 /// drop sequence if exists MyGeneratorName
 @Entity
-class GeneratedValueMostBasic
+class GeneratedValueSecond03
 {
     @Id
     @GeneratedValue
