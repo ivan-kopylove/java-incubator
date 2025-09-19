@@ -27,6 +27,7 @@ class ThreadJoinExampleTest
             });
             //                thread.join(); // try different combinations of comment-uncomment
             thread.start();
+            // what is in common to fork-join here?
             thread.join(); // try different combinations of comment-uncomment
         }
 
