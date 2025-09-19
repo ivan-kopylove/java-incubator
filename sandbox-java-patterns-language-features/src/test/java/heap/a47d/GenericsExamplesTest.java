@@ -26,7 +26,7 @@ class GenericsExamplesTest
     }
 
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         String[] strings = new String[10];
         List<String> list = new ArrayList<>();

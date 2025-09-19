@@ -30,7 +30,7 @@ class JpaUpdateExampleTest extends BaseSession
     }
 
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         EntityManager entityManger = EntityManagerProvider.getEntityManager();
         ParentEntityRefresh parentEntity = entityManger.find(ParentEntityRefresh.class, 101);

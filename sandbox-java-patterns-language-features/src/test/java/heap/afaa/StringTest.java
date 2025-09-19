@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class StringTest
 {
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         String s = "0123456789_A";
 

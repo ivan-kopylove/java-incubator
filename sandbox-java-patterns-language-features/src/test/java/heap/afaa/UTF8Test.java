@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class UTF8Test
 {
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         String umlaut = "Ä";
         assertEquals(umlaut, "Ä");

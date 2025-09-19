@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class ArraysEqualityTest
 {
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         List<String> list = new ArrayList<>();
         list.add("1");

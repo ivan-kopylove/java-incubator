@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class MethodHidingOnStaticClassMethodsTest
 {
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         Child1 child = new Child1();
 

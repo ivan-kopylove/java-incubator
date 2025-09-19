@@ -2,7 +2,7 @@ package kopylove.inbox.a2;
 
 import javax.persistence.Column;
 
-class OrganizationGeneralDetails
+class OrganizationGeneralDetails02
 {
     @Column(name = "GOAL")
     private String goal;

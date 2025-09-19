@@ -17,18 +17,18 @@ class JpaEmbededAnnotationExampleTest extends BaseSession
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         entityManager.getTransaction().begin();
 
-        OrganizationBuildingDetails organizationBuildingDetails = new OrganizationBuildingDetails();
+        OrganizationBuildingDetails02 organizationBuildingDetails = new OrganizationBuildingDetails02();
         organizationBuildingDetails.setAddress("Sadovnicheskaya Ulitsa 82, building 2, Moscow, Russia, 115035");
         organizationBuildingDetails.setFloors(5);
         organizationBuildingDetails.setWorkplaces(1000);
 
-        OrganizationGeneralDetails generalDetails = new OrganizationGeneralDetails();
+        OrganizationGeneralDetails02 generalDetails = new OrganizationGeneralDetails02();
         generalDetails.setFound("1997");
         generalDetails.setGoal("Make the world better");
         generalDetails.setMotto("Naidyotsa vsyo");
         generalDetails.setOgranizationalStructure("Vertical");
 
-        OrganizationEntity01 organzation = new OrganizationEntity01();
+        OrganizationEntity02 organzation = new OrganizationEntity02();
         organzation.setKey(0);
         organzation.setOrganizationBuildingDetails(organizationBuildingDetails);
         organzation.setOrganizationGeneralDetails(generalDetails);
@@ -39,12 +39,12 @@ class JpaEmbededAnnotationExampleTest extends BaseSession
     }
 
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         entityManager.getTransaction().begin();
 
-        OrganizationEntity01 organization = entityManager.find(OrganizationEntity01.class, 0);
+        OrganizationEntity02 organization = entityManager.find(OrganizationEntity02.class, 0);
 
         assertEquals(5, organization.getOrganizationBuildingDetails().getFloors());
         assertEquals("1997", organization.getOrganizationGeneralDetails().getFound());

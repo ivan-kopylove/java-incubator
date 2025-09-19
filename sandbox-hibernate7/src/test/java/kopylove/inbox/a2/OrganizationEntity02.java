@@ -8,17 +8,17 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "ORGANIZATION")
-class OrganizationEntity01
+class OrganizationEntity02
 {
     @Id
     @Column(name = "ORGANIZATION_KEY")
     private int key;
 
     @Embedded
-    private OrganizationBuildingDetails organizationBuildingDetails;
+    private OrganizationBuildingDetails02 organizationBuildingDetails;
 
     @Embedded
-    private OrganizationGeneralDetails organizationGeneralDetails;
+    private OrganizationGeneralDetails02 organizationGeneralDetails;
 
     public int getKey()
     {
@@ -30,22 +30,22 @@ class OrganizationEntity01
         this.key = key;
     }
 
-    public OrganizationBuildingDetails getOrganizationBuildingDetails()
+    public OrganizationBuildingDetails02 getOrganizationBuildingDetails()
     {
         return organizationBuildingDetails;
     }
 
-    public void setOrganizationBuildingDetails(OrganizationBuildingDetails organizationBuildingDetails)
+    public void setOrganizationBuildingDetails(OrganizationBuildingDetails02 organizationBuildingDetails)
     {
         this.organizationBuildingDetails = organizationBuildingDetails;
     }
 
-    public OrganizationGeneralDetails getOrganizationGeneralDetails()
+    public OrganizationGeneralDetails02 getOrganizationGeneralDetails()
     {
         return organizationGeneralDetails;
     }
 
-    public void setOrganizationGeneralDetails(OrganizationGeneralDetails organizationGeneralDetails)
+    public void setOrganizationGeneralDetails(OrganizationGeneralDetails02 organizationGeneralDetails)
     {
         this.organizationGeneralDetails = organizationGeneralDetails;
     }

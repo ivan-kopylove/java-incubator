@@ -50,7 +50,7 @@ class JpaCriteriaBuilderJoinExampleTest
     }
 
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();

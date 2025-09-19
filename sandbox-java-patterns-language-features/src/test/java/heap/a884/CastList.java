@@ -9,7 +9,7 @@ import java.util.List;
 class CastList
 {
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         Child child = new Child();
         child.addValue(new Child());

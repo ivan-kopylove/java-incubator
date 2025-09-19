@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 class HibernateGenericGeneratorUuid
 {
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         GeneratedValueUuid generatedKey = new GeneratedValueUuid();
 

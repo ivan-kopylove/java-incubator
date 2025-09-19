@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class ExecutorInterfaceExampleTest
 {
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         Executor executor = new Executor()
         {

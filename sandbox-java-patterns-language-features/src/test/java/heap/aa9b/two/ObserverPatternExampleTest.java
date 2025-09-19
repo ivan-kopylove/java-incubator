@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 class ObserverPatternExampleTest
 {
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         Initiater initiater = new Initiater();
         Responder responder = new Responder();

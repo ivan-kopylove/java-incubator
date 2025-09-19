@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 class BreakToLabel1255Test
 {
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         int i = 0;
         loop:

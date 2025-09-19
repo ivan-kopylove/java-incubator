@@ -5,7 +5,7 @@ import jakarta.persistence.Column;
 import javax.persistence.Embeddable;
 
 @Embeddable
-class OrganizationBuildingDetails
+class OrganizationBuildingDetails02
 {
     @Column(name = "WORKPLACES")
     private int    workplaces;

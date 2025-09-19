@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class LinkedListExampleTest
 {
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         LinkedList<String> linkedList = new LinkedList<>();
         linkedList.add("b");

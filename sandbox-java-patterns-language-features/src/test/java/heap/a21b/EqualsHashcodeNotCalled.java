@@ -15,7 +15,7 @@ class EqualsHashcodeNotCalled
     private boolean hashcodeCalled = false;
 
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         new MyClass();
         MyClass myClass1 = new MyClass();

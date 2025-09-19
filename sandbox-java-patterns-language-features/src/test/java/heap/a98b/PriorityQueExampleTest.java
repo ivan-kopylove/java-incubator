@@ -40,7 +40,7 @@ class PriorityQueExampleTest
     }
 
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         PriorityQueue<String> priorityQueue = new PriorityQueue<>();
 

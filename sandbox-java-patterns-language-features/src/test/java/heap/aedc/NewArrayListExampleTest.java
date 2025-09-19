@@ -11,7 +11,7 @@ class NewArrayListExampleTest
 {
 
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         List<MyObj> list1 = new ArrayList<>();
         list1.add(new MyObj());

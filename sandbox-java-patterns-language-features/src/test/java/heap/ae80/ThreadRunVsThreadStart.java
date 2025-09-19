@@ -24,7 +24,7 @@ class ThreadRunVsThreadStart
     }
 
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         String parentThreadName = Thread.currentThread().getName();
         Thread thread = new Thread()

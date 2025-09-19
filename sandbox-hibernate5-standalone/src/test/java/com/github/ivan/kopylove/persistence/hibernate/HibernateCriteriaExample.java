@@ -34,7 +34,7 @@ class HibernateCriteriaExample
     }
 
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         Session session = HibernateSessionFactory.openSession();
         session.getTransaction()

@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class JpaBasicExampleTest extends BaseSession
 {
     @Test
-    void foo()
+    void what_does_this_example_demonstrate()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         entityManager.getTransaction()
