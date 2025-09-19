@@ -36,7 +36,7 @@ class JpaSimpleNativeQueryTest extends EntityManagerSession
 
         entityManager.getTransaction().begin();
 
-        Query query = entityManager.createNativeQuery("SELECT * FROM BOOK;");
+        Query query = entityManager.createNativeQuery("SELECT * FROM BookEntity13;");
 
         List<Tuple> resultList = query.getResultList();
 

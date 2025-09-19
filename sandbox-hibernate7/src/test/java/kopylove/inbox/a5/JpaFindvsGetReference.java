@@ -45,8 +45,8 @@ class JpaFindvsGetReference extends EntityManagerSession
     }
 
     /// proxy, that provides lazy access, throws an error on access
-    /// getReference can be considered the lazy version of find
-    /// The object content is retrieved from the database and the persistent fields are initialized, lazily, when the entity object is first accessed.
+    /// getReference is the lazy version of find
+    /// The object content is retrieved from the database and the persistent fields are initialized lazily
     @Test
     void getReference()
     {
