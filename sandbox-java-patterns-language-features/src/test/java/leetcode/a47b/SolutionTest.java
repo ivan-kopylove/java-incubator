@@ -14,7 +14,7 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 @Disabled
-public class TestRunner
+public class SolutionTest
 {
     private static InputStream originalSystemIn;
 
