@@ -13,8 +13,14 @@
     <dependencies>
         <dependency>
             <groupId>org.testcontainers</groupId>
-            <artifactId>postgresql </artifactId>
+            <artifactId>postgresql</artifactId>
             <version>1.19.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.8</version>
         </dependency>
     </dependencies>
 

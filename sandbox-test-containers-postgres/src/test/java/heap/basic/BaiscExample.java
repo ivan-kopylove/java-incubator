@@ -4,35 +4,31 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.testcontainers.containers.GenericContainer;
+import org.testcontainers.containers.PostgreSQLContainer;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import static org.junit.Assert.assertEquals;
 
 public class BaiscExample
 {
-    private static GenericContainer container;
-
-    @BeforeAll
-    public static void populate()
-    {
-        container = new GenericContainer("alpine:3.2").withExposedPorts(80);
-    }
-
-    @AfterAll
-    public static void destroy()
-    {
-        container.stop();
-    }
-
     @Test
-    void what_will_be_printed()
+    void what_will_be_printed() throws SQLException
     {
-        // when
-        container.start();
+        PostgreSQLContainer postgresContainer = new PostgreSQLContainer();
+        postgresContainer.start();
 
-        // then
-        String address = container.getHost() + ":" + container.getExposedPorts().getFirst();
-        System.out.println(address);
-        assertThat(address, equalTo("localhost:80"));
+        String jdbcUrl = postgresContainer.getJdbcUrl();
+        String username = postgresContainer.getUsername();
+        String password = postgresContainer.getPassword();
+        Connection conn = DriverManager.getConnection(jdbcUrl, username, password);
+        ResultSet resultSet = conn.createStatement().executeQuery("SELECT 1");
+        resultSet.next();
+        int result = resultSet.getInt(1);
+
+        assertEquals(1, result);
     }
 }
