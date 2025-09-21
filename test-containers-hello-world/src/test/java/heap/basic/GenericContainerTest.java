@@ -1,14 +1,12 @@
 package heap.basic;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.testcontainers.containers.GenericContainer;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class BaiscExample
+public class GenericContainerTest
 {
     @Test
     void what_will_be_printed()
