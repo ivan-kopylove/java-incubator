@@ -6,21 +6,24 @@ import org.testcontainers.containers.GenericContainer;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class BaiscExample
+public class GenericContainerTest
 {
     @Test
     void what_will_be_printed()
     {
-        // given
-        GenericContainer container = new GenericContainer("alpine:3.2").withExposedPorts(80);
+        GenericContainer container = new GenericContainer("alpine:3.2") //
+                .withExposedPorts(80)//
+                // what is the purpose of this command?
+                .withCommand("/bin/sh", "-c", "while true; do echo \"HTTP/1.1 200 OK\n\nHello World!\" | nc -l -p 80; done");
 
         // when
         container.start();
 
         // then
-
         String address = container.getHost() + ":" + container.getExposedPorts().getFirst();
         System.out.println(address);
         assertThat(address, equalTo("localhost:80"));
+
+        container.stop();
     }
 }

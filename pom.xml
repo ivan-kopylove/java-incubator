@@ -8,9 +8,9 @@
 
     <properties>
         <maven-compiler-plugin-version>3.14.0</maven-compiler-plugin-version>
-        <junit-jupiter-api.version>5.13.4</junit-jupiter-api.version>
+        <junit.version>5.13.4</junit.version>
+        <hamcrest.version>3.0</hamcrest.version>
     </properties>
-
 
     <build>
         <plugins>
@@ -22,16 +22,15 @@
                     <release>21</release>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
 
-
     <modules>
-        <module>kopylove-commons</module>
-        <module>sandbox-test-containers</module>
-        <module>sandbox-java-patterns-language-features</module>
-        <module>sandbox-hibernate7</module>
+        <module>commons</module>
+        <module>test-containers-postgres</module>
+        <module>test-containers-generic-hello-world</module>
+        <module>java-patterns-language-features</module>
+        <module>hibernate-7</module>
     </modules>
 
 
@@ -45,22 +44,21 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit-jupiter-api.version}</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
-            <version>${junit-jupiter-api.version}</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-
 
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest</artifactId>
-            <version>3.0</version>
+            <version>${hamcrest.version}</version>
             <scope>test</scope>
         </dependency>
 
