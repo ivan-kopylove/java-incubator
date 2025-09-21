@@ -1,9 +1,6 @@
 package heap.basic;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.testcontainers.containers.GenericContainer;
 import org.testcontainers.containers.PostgreSQLContainer;
 
 import java.sql.Connection;
@@ -13,7 +10,7 @@ import java.sql.SQLException;
 
 import static org.junit.Assert.assertEquals;
 
-public class BaiscExample
+public class PostgreSQLContainerTest
 {
     @Test
     void what_will_be_printed() throws SQLException
