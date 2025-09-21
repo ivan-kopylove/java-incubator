@@ -18,6 +18,7 @@ public class BaiscExample
         container.start();
 
         // then
+
         String address = container.getHost() + ":" + container.getExposedPorts().getFirst();
         System.out.println(address);
         assertThat(address, equalTo("localhost:80"));
