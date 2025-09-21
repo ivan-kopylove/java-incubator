@@ -17,7 +17,7 @@ public class BaiscExample
 
         simpleWebServer.start();
 
-        System.out.println(simpleWebServer.getHost() + ":" + simpleWebServer.getFirstMappedPort());
+        System.out.println(simpleWebServer.getHost() + ":" + simpleWebServer.getExposedPorts().getFirst());
 
     }
 }
