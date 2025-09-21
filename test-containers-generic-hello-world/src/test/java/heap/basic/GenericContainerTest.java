@@ -12,8 +12,9 @@ public class GenericContainerTest
     void what_will_be_printed()
     {
         GenericContainer container = new GenericContainer("alpine:3.2") //
-                .withExposedPorts(80) //
-                .withCommand("tail", "-f", "/dev/null"); // what is the purpose of this command?
+                .withExposedPorts(80)//
+                // what is the purpose of this command?
+                .withCommand("/bin/sh", "-c", "while true; do echo \"HTTP/1.1 200 OK\n\nHello World!\" | nc -l -p 80; done");
 
         // when
         container.start();
