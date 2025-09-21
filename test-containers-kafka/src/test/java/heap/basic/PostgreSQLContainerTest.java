@@ -17,6 +17,7 @@ import java.time.Duration;
 import java.util.Collections;
 import java.util.Properties;
 
+import static java.util.UUID.randomUUID;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -36,9 +37,9 @@ public class PostgreSQLContainerTest
     @Test
     void what_will_be_printed() throws SQLException
     {
-        String topicName = "hello-world-topic";
-        String messageKey = "my-key";
-        String messageValue = "Hello, Kafka with Testcontainers!";
+        String topicName = "hello-world-topic" + randomUUID();
+        String messageKey = "my-key" + randomUUID();
+        String messageValue = "Hello, Kafka with Testcontainers!" + randomUUID();
 
         // 1. Produce a message
         try (KafkaProducer<String, String> producer = createProducer(kafka.getBootstrapServers()))
