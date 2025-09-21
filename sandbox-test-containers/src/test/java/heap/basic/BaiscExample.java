@@ -16,6 +16,7 @@ public class BaiscExample
 
         // when
         container.start();
+        test
 
         // then
         String address = container.getHost() + ":" + container.getExposedPorts().getFirst();
