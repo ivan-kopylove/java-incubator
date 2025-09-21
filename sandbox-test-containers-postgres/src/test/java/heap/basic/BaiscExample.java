@@ -24,6 +24,7 @@ public class BaiscExample
         String jdbcUrl = postgresContainer.getJdbcUrl();
         String username = postgresContainer.getUsername();
         String password = postgresContainer.getPassword();
+
         Connection conn = DriverManager.getConnection(jdbcUrl, username, password);
         ResultSet resultSet = conn.createStatement().executeQuery("SELECT 1");
         resultSet.next();
