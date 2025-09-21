@@ -10,9 +10,6 @@
         <version>snapshot</version>
     </parent>
 
-
-
-
     <dependencies>
         <dependency>
             <groupId>org.testcontainers</groupId>
