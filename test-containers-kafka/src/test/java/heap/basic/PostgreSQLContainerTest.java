@@ -40,7 +40,6 @@ public class PostgreSQLContainerTest
         String messageKey = "my-key";
         String messageValue = "Hello, Kafka with Testcontainers!";
 
-
         // 1. Produce a message
         try (KafkaProducer<String, String> producer = createProducer(kafka.getBootstrapServers()))
         {
