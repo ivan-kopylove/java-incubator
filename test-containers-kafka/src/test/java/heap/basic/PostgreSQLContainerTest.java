@@ -42,8 +42,6 @@ public class PostgreSQLContainerTest
             producer.send(new ProducerRecord<>(topicName, messageKey, messageValue));
             producer.flush();
         }
-
-        kafka.stop();
     }
 
     private KafkaProducer<String, String> createProducer(String bootstrapServers)
