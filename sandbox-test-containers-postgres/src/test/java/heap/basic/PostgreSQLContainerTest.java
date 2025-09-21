@@ -28,5 +28,6 @@ public class PostgreSQLContainerTest
         int result = resultSet.getInt(1);
 
         assertEquals(1, result);
+        postgresContainer.stop();
     }
 }
