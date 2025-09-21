@@ -13,7 +13,12 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 import org.testcontainers.kafka.KafkaContainer;
 
 import java.sql.SQLException;
+import java.time.Duration;
+import java.util.Collections;
 import java.util.Properties;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 // any annotation is a what for what?
 //
@@ -41,6 +46,15 @@ public class PostgreSQLContainerTest
         {
             producer.send(new ProducerRecord<>(topicName, messageKey, messageValue));
             producer.flush();
+        }
+
+        try (KafkaConsumer<String, String> consumer = createConsumer(kafka.getBootstrapServers(), "test-group")) {
+            consumer.subscribe(Collections.singletonList(topicName));
+            var records = consumer.poll(Duration.ofSeconds(10)); // Poll for records for 10 seconds
+
+            var record = records.iterator().next();
+            assertThat(record.key(), equalTo(messageKey));
+            assertThat(record.value(), equalTo(messageValue));
         }
     }
 
