@@ -27,9 +27,9 @@
 
     <modules>
         <module>commons</module>
-        <module>sandbox-test-containers-postgres</module>
-        <module>sandbox-test-containers-hello-world</module>
-        <module>sandbox-java-patterns-language-features</module>
+        <module>test-containers-postgres</module>
+        <module>test-containers-hello-world</module>
+        <module>java-patterns-language-features</module>
         <module>hibernate7</module>
     </modules>
 
