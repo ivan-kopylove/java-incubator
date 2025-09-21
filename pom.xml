@@ -26,11 +26,11 @@
     </build>
 
     <modules>
-        <module>kopylove-commons</module>
+        <module>commons</module>
         <module>sandbox-test-containers-postgres</module>
         <module>sandbox-test-containers-hello-world</module>
         <module>sandbox-java-patterns-language-features</module>
-        <module>sandbox-hibernate7</module>
+        <module>hibernate7</module>
     </modules>
 
 
