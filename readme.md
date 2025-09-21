@@ -6,4 +6,4 @@ The project is an incubator, it contains different modules and serves different 
 - atomic examples;
 - atomic koans:
   - what will be printed; 
-  - fixme;
+  - fixmes;
