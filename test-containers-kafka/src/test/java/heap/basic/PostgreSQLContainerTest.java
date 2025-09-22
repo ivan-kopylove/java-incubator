@@ -25,7 +25,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 //
 // how to find the code related to handling this annotation?
 //
-// what does this annotation does instead of me?
+// what does this annotation do instead of me?
 @Testcontainers
 public class PostgreSQLContainerTest
 {
