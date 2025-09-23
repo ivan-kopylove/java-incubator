@@ -31,6 +31,7 @@
         <module>spring-hello-world-bean-scan</module>
         <module>spring-cacheable-manual-bean-config</module>
         <module>spring-cacheable</module>
+        <module>spring-cacheput</module>
         <module>test-containers-postgres</module>
         <module>test-containers-kafka</module>
         <module>test-containers-generic-hello-world</module>
