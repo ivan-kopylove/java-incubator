@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-@EnableCaching
+@EnableCaching // why spring doesn't enable caching by default and doesn't throw an exception for method marked @Cacheable?
 @Configuration
 @ComponentScan(basePackages = {"a8fe"})
 public class AppConfig
