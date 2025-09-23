@@ -7,14 +7,14 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class Runner
+public class ManualBeanConfigTest
 {
     @Test
     void what_will_be_printed()
     {
-        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig2.class);
 
-        SomeService service = context.getBean(SomeService.class);
+        SomeService2 service = context.getBean(SomeService2.class);
 
         System.out.println(service.generateUuid(1));
         System.out.println(service.generateUuid(1));

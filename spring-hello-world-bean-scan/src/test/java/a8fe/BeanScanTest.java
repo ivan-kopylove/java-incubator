@@ -4,14 +4,14 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Runner
+public class BeanScanTest
 {
     @Test
     void what_will_be_printed()
     {
-        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig1.class);
 
-        SomeService service = context.getBean(SomeService.class);
+        SomeService2 service = context.getBean(SomeService2.class);
 
         System.out.println(service.getMessage());
     }
