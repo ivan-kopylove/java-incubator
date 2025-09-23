@@ -5,6 +5,6 @@ Jobs change, this project stays: over time the examples are internalized and the
 
 Early stage projects are here as well - to be extracted into a separate project when matured enough.
 
-On top of that, there are a bit more complex, but still atomic examples.
+Apart from that, there are a bit more complex, but still atomic examples.
 
 Finally, there are atomic koans. Predict what will be printed and Fixmes.
