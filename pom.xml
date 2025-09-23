@@ -27,6 +27,7 @@
 
     <modules>
         <module>commons</module>
+        <module>spring-hello-world</module>
         <module>test-containers-postgres</module>
         <module>test-containers-kafka</module>
         <module>test-containers-generic-hello-world</module>

@@ -1,9 +1,11 @@
 
-The project is an incubator, it contains different modules and serves different purposes:
+The project is an incubator, it contains different modules and serves different purposes.
 
-- jobs change, this project stays - over time the examples are internalized; 
-- early stage projects - to be extracted into a separate project when matured enough;
-- atomic examples;
-- atomic koans:
-  - what will be printed; 
-  - fixmes;
+Jobs change, this project stays - over time the examples are internalized and the project became a catalog of snippets in form of runnable code.
+
+
+Early stage projects are here as well - to be extracted into a separate project when matured enough.
+
+On top of that, there are a bit more comlex, but still atomic examples.
+
+Finally, there are atomic koans. Predict what will be printed and Fixmes.
