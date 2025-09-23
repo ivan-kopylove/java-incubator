@@ -27,7 +27,10 @@
 
     <modules>
         <module>commons</module>
+        <module>spring-hello-world</module>
+        <module>spring-hello-world-annotation-scan</module>
         <module>test-containers-postgres</module>
+        <module>test-containers-kafka</module>
         <module>test-containers-generic-hello-world</module>
         <module>java-patterns-language-features</module>
         <module>hibernate-7</module>
