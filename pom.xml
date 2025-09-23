@@ -27,7 +27,7 @@
 
     <modules>
         <module>commons</module>
-        <module>spring-hello-world</module>
+        <module>spring-hello-world-manual-bean-config</module>
         <module>spring-hello-world-annotation-scan</module>
         <module>test-containers-postgres</module>
         <module>test-containers-kafka</module>
