@@ -14,7 +14,7 @@ public class ManualBeanConfigTest
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig2.class);
 
-        SomeService2 service = context.getBean(SomeService2.class);
+        MyCacheableService2 service = context.getBean(MyCacheableService2.class);
 
         System.out.println(service.generateUuid(1));
         System.out.println(service.generateUuid(1));

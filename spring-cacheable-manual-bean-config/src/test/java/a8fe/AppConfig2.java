@@ -5,7 +5,6 @@ import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.concurrent.ConcurrentMapCacheManager;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @EnableCaching // why Spring doesn't throw an exception for method marked @Cacheable when cache is not enabled?
@@ -13,8 +12,8 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig2
 {
     @Bean
-    public SomeService2 myService() {
-        return new SomeService2();
+    public MyCacheableService2 myService() {
+        return new MyCacheableService2();
     }
 
     @Bean
