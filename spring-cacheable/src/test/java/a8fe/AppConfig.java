@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-@EnableCaching // why Srping doesn't throw an exception for method marked @Cacheable when cache is not enabled?
+@EnableCaching // why Spring doesn't throw an exception for method marked @Cacheable when cache is not enabled?
 @Configuration
 @ComponentScan(basePackages = {"a8fe"})
 public class AppConfig
