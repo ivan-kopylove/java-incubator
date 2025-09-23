@@ -32,6 +32,7 @@
         <module>spring-cacheable-manual-bean-config</module>
         <module>spring-cacheable</module>
         <module>spring-cacheput</module>
+        <module>spring-cacheevict</module>
         <module>test-containers-postgres</module>
         <module>test-containers-kafka</module>
         <module>test-containers-generic-hello-world</module>
