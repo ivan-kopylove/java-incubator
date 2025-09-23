@@ -15,8 +15,8 @@ public class AppConfig
 {
 
     @Bean
-    public CacheManager cacheManager()
+    public CacheManager cacheManager() // last time I deleted this method and ...
     {
-        return new ConcurrentMapCacheManager("myCache");
+        return new ConcurrentMapCacheManager("myCache");// last time I renamed the cache name and ...
     }
 }
