@@ -1,12 +1,12 @@
-// com.example.SomeService2.java
+// com.example.SomeService1.java
 package a8fe;
 
 import org.springframework.stereotype.Service;
 
 @Service
-public class SomeService2
+public class SomeService1
 {
     public String getMessage() {
-        return "Hello from SomeService2!";
+        return "Hello from SomeService1!";
     }
 }

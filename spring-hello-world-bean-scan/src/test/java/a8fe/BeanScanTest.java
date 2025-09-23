@@ -11,7 +11,7 @@ public class BeanScanTest
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig1.class);
 
-        SomeService2 service = context.getBean(SomeService2.class);
+        SomeService1 service = context.getBean(SomeService1.class);
 
         System.out.println(service.getMessage());
     }
