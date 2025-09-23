@@ -3,14 +3,6 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>spring-hello-world</artifactId>
     <packaging>jar</packaging>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>6.1.7</version> <!-- Use a recent stable version -->
-        </dependency>
-        
-    </dependencies>
     <version>snapshot</version>
 
     <parent>
@@ -19,8 +11,11 @@
         <version>snapshot</version>
     </parent>
 
-
-
-
-
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>7.0.0-M9</version>
+        </dependency>
+    </dependencies>
 </project>
