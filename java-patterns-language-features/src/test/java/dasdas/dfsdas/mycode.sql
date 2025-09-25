@@ -1,49 +1,49 @@
-CREATE TABLE profile
-(
-    id BIGSERIAL PRIMARY KEY,
-    nickname TEXT,
-    registered_at TIMESTAMP
-);
-
-CREATE TABLE post
-(
-    id BIGSERIAL PRIMARY KEY,
-    owner_id BIGINT REFERENCES profile (id),
-    body TEXT,
-    inserted_at TIMESTAMP,
-    likes_count INT -- количество лайков
-);
-
-CREATE TABLE subscription_count
-(
-    profile_id BIGINT REFERENCES profile (id) UNIQUE,
-    followers_count INT, -- количество подписчиков
-    following_count INT, -- количество подписок
-);
-
-
-
-SELECT p.body
-FROM subscription_count sc
-JOIN post p ON sc.profile = p.id
-WHERE sc.followers_count > 500
-
----
-
-SELECT p.body
-FROM subscription_count sc
-JOIN post p ON sc.profile = p.id
-JOIN profile pr ON pr.id  =  sc.profile
-WHERE sc.followers_count > 500 AND 'k'
-
----
-
-SELECT *
-FROM post
-JOIN pr
-GROUP BY likes_count
-HAVING sum(likes_count) > 500
-
----
-
-
+--CREATE TABLE profile
+--(
+--    id BIGSERIAL PRIMARY KEY,
+--    nickname TEXT,
+--    registered_at TIMESTAMP
+--);
+--
+--CREATE TABLE post
+--(
+--    id BIGSERIAL PRIMARY KEY,
+--    owner_id BIGINT REFERENCES profile (id),
+--    body TEXT,
+--    inserted_at TIMESTAMP,
+--    likes_count INT -- количество лайков
+--);
+--
+--CREATE TABLE subscription_count
+--(
+--    profile_id BIGINT REFERENCES profile (id) UNIQUE,
+--    followers_count INT, -- количество подписчиков
+--    following_count INT, -- количество подписок
+--);
+--
+--
+--
+--SELECT p.body
+--FROM subscription_count sc
+--JOIN post p ON sc.profile = p.id
+--WHERE sc.followers_count > 500
+--
+-----
+--
+--SELECT p.body
+--FROM subscription_count sc
+--JOIN post p ON sc.profile = p.id
+--JOIN profile pr ON pr.id  =  sc.profile
+--WHERE sc.followers_count > 500 AND 'k'
+--
+-----
+--
+--SELECT *
+--FROM post
+--JOIN pr
+--GROUP BY likes_count
+--HAVING sum(likes_count) > 500
+--
+-----
+--
+--
