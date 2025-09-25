@@ -45,7 +45,6 @@ public class Tr
 
             statement.executeUpdate("INSERT INTO MYTABLE01 VALUES (1);");
 
-
             resultSet = statement.executeQuery("SELECT id FROM MYTABLE01 WHERE id = 1");
 
             if (resultSet.next())
