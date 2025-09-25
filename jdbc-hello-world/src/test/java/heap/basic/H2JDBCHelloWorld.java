@@ -1,5 +1,6 @@
 package heap.basic;
 
+import org.h2.util.IOUtils;
 import org.junit.jupiter.api.Test;
 
 import java.sql.Connection;
@@ -19,24 +20,19 @@ public class H2JDBCHelloWorld
 
         try
         {
-            // 1. Establish Connection
             connection = DriverManager.getConnection("jdbc:h2:mem:testdb", "sa", "");
 
-            // 2. Create Statement
             statement = connection.createStatement();
 
-            // 3. Execute SQL: Create table and insert data
             statement.executeUpdate("CREATE TABLE greetings (id INT PRIMARY KEY, message VARCHAR(255))");
             statement.executeUpdate("INSERT INTO greetings (id, message) VALUES (1, 'Hello, H2 JDBC!')");
 
-            // 4. Execute SQL: Query data
             resultSet = statement.executeQuery("SELECT message FROM greetings WHERE id = 1");
 
-            // 5. Process Results
             if (resultSet.next())
             {
                 String message = resultSet.getString("message");
-                System.out.println(message); // Output: Hello, H2 JDBC!
+                System.out.println(message);
             }
         }
         catch (SQLException e)
