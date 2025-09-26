@@ -8,14 +8,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class WhenPrivateConstructorRunsTest
 {
     @Test
-    void run_me_in_debug_mode()
+    void reverse_engineer_hypothetical_design_me_in_debug_mode()
     {
         String value = PrivateConstructorClass.getValue();
         assertEquals("put breakpoint here", value);
     }
 
     @Test
-    void run_me_in_debug_mode2()
+    void reverse_engineer_hypothetical_design_me_in_debug_mode2()
     {
         String input = "my custom value";
 

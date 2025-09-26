@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 class StaticBlockInitOrder
 {
     @Test
-    void what_does_this_example_demonstrate()
+    void reverse_engineer_hypothetical_design()
     {
         Parent p = new Child();
     }

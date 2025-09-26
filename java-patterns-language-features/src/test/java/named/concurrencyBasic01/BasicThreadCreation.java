@@ -6,7 +6,7 @@ public class BasicThreadCreation
 {
 
     @Test
-    void what_does_this_code_print() throws InterruptedException
+    void reverse_engineer_hypothetical_design() throws InterruptedException
     {
         Thread thread = new Thread(() -> {
             System.out.println("Thread execution: " + Thread.currentThread().getName());

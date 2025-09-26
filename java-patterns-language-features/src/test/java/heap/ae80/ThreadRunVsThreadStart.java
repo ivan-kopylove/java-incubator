@@ -24,7 +24,7 @@ class ThreadRunVsThreadStart
     }
 
     @Test
-    void what_does_this_example_demonstrate()
+    void reverse_engineer_hypothetical_design()
     {
         String parentThreadName = Thread.currentThread().getName();
         Thread thread = new Thread()

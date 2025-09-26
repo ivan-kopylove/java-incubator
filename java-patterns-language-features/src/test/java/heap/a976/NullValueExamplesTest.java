@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 class NullValueExamplesTest
 {
     @Test
-    void what_will_be_printed()
+    void reverse_engineer_hypothetical_design()
     {
         if (EDUCATION_MODE == KOAN)
         {

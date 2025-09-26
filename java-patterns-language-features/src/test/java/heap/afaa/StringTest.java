@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class StringTest
 {
     @Test
-    void what_does_this_example_demonstrate()
+    void reverse_engineer_hypothetical_design()
     {
         String s = "0123456789_A";
 

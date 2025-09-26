@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 class MapEqualityTest
 {
     @Test
-    void what_will_be_printed_1()
+    void reverse_engineer_hypothetical_design_1()
     {
         Map<Integer, Integer> map1 = new HashMap<>();
         map1.put(1, 3);
@@ -35,7 +35,7 @@ class MapEqualityTest
     }
 
     @Test
-    void what_will_be_printed_2()
+    void reverse_engineer_hypothetical_design_2()
     {
         Map<Integer, List<Integer>> map1 = new HashMap<>();
         map1.put(1, List.of(1, 2));

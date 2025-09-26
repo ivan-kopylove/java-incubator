@@ -9,7 +9,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class GenericContainerTest
 {
     @Test
-    void what_will_be_printed()
+    void reverse_engineer_hypothetical_design()
     {
         GenericContainer container = new GenericContainer("alpine:3.2") //
                 .withExposedPorts(80)//

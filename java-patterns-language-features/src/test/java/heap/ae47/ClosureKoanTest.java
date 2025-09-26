@@ -29,7 +29,7 @@ class ClosureKoanTest
 
     @Test
     @Disabled
-    public void runTest()
+    public void reverse_engineer_hypothetical_designTest()
     {
         TextProvider provider = getProvider(15);
         assertEquals(15, provider.get());
@@ -37,7 +37,7 @@ class ClosureKoanTest
 
     @Test
     @Disabled
-    public void runTest2()
+    public void reverse_engineer_hypothetical_designTest2()
     {
         TextProvider provider = getProvider(20);
         assertEquals(20, provider.get());

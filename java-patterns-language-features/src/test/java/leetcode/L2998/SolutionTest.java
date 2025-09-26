@@ -36,7 +36,7 @@ class SolutionTest
                  "10000,1,8",
     })
     // @formatter:on
-    void what_does_this_example_demonstrate(int x, int y, int expected)
+    void reverse_engineer_hypothetical_design(int x, int y, int expected)
     {
         // given
         MySolution sut = new MySolution();

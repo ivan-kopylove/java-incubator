@@ -6,7 +6,7 @@ class StaticBlockNestedClassTest
 {
 
     @Test
-    void run2()
+    void reverse_engineer_hypothetical_design2()
     {
         Child.CHILD_ID = "1";
     }

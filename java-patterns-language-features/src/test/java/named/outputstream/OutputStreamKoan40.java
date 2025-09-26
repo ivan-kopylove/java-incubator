@@ -8,7 +8,7 @@ import java.io.IOException;
 public class OutputStreamKoan40
 {
     @Test
-    void what_will_be_printed() throws IOException
+    void reverse_engineer_hypothetical_design() throws IOException
     {
         //given
         byte[] chars = new byte[3];

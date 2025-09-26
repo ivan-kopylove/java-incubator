@@ -2,14 +2,10 @@ package named.concurrencyWaitNotify01;
 
 import org.junit.jupiter.api.Test;
 
-/// Facets:
-/// - concurrency
-///
-/// [link](https://www.journaldev.com/1037/java-thread-wait-notify-and-notifyall-example)
 class WaiterNotifierTest
 {
     @Test
-    void what_does_this_example_demonstrate() throws InterruptedException
+    void reverse_engineer_hypothetical_design() throws InterruptedException
     {
         Message msg = new Message("process it");
 

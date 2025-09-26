@@ -6,13 +6,13 @@ class StaticBlockNestedClassTest
 {
 
     @Test
-    void what_does_this_example_demonstrate()
+    void reverse_engineer_hypothetical_design()
     {
         System.out.println(Child.ID);
     }
 
     @Test
-    void run2()
+    void reverse_engineer_hypothetical_design2()
     {
         new Child();
     }

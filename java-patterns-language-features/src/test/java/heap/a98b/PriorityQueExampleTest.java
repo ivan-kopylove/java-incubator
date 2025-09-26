@@ -40,7 +40,7 @@ class PriorityQueExampleTest
     }
 
     @Test
-    void what_does_this_example_demonstrate()
+    void reverse_engineer_hypothetical_design()
     {
         PriorityQueue<String> priorityQueue = new PriorityQueue<>();
 

@@ -8,7 +8,7 @@ import java.util.List;
 public class WhatIsThePurposeOfTheExampleTest
 {
     @Test
-    void what_will_be_printed1()
+    void reverse_engineer_hypothetical_design1()
     {
         // given
         List<Integer> list1 = new ArrayList<>();
@@ -24,7 +24,7 @@ public class WhatIsThePurposeOfTheExampleTest
     }
 
     @Test
-    void what_will_be_printed2()
+    void reverse_engineer_hypothetical_design2()
     {
         // given
         List<Integer> list1 = new ArrayList<>();
