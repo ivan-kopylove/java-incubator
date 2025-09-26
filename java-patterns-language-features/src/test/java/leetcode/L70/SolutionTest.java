@@ -16,7 +16,6 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 /// - [searchable problem definition](https://google.com/search?q=leetcode%2070)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+70)
-/// - [obsidian](obsidian://search?query=leetcode%2070)
 class SolutionTest
 {
 
