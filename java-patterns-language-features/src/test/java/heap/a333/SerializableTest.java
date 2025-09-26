@@ -52,10 +52,10 @@ class SerializableTest
         catch (IOException e)
         {
             System.out.println("error " + e);
-             if (EDUCATION_MODE == KOAN)
-        {
-            fail("try to predict yourself before running the assertion");
-        }
+            if (EDUCATION_MODE == KOAN)
+            {
+                fail("try to predict yourself before running the assertion");
+            }
         }
     }
 }

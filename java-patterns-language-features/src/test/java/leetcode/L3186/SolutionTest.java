@@ -17,17 +17,6 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 /// - [obsidian](obsidian://search?query=leetcode%203186)
 class SolutionTest
 {
-    private static List<Arguments> dataSet()
-    {
-        // @formatter:off
-        return List.of(
-                       arguments(new int[]{7, 1, 6, 3}, 10),
-                       arguments(new int[]{7, 1, 6, 6}, 13),
-                       arguments(new int[]{1, 1, 3, 4}, 6)
-//                       arguments(new int[]{23, 10, 9, 34, 6, 34, 4, 20, 7, 6, 34, 27, 17, 12, 11, 11, 17, 21, 8, 21, 22, 22, 29, 7, 14, 8, 25, 10, 9, 22, 27, 23, 6, 16, 23, 15, 10, 30, 21, 4, 26, 11, 32, 18, 3, 24, 11, 13, 23, 20}, 10)
-                );
-        // @formatter:on
-    }
 
     @ParameterizedTest
     @MethodSource("dataSet")
@@ -42,5 +31,17 @@ class SolutionTest
 
         // then
         assertThat(result, equalTo(expected));
+    }
+
+    private static List<Arguments> dataSet()
+    {
+        // @formatter:off
+        return List.of(
+                arguments(new int[]{7, 1, 6, 3}, 10),
+                arguments(new int[]{7, 1, 6, 6}, 13),
+                arguments(new int[]{1, 1, 3, 4}, 6)
+                //                       arguments(new int[]{23, 10, 9, 34, 6, 34, 4, 20, 7, 6, 34, 27, 17, 12, 11, 11, 17, 21, 8, 21, 22, 22, 29, 7, 14, 8, 25, 10, 9, 22, 27, 23, 6, 16, 23, 15, 10, 30, 21, 4, 26, 11, 32, 18, 3, 24, 11, 13, 23, 20}, 10)
+        );
+        // @formatter:on
     }
 }
