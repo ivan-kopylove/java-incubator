@@ -12,8 +12,7 @@ class Solution {
    // What is brother of recursion? What if there were no these siblings at all?
    int dfs(int n, int[] memo)
    {
-       // what if there is no base case?
-
+       // what is missing here and how the program would behave if it is missing?
 
        // how do I simulate two steps?
        return dfs(n - 1, memo); // how many steps are simulated here?
