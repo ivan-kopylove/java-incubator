@@ -10,7 +10,7 @@ import java.util.Set;
 ///
 /// - [searchable problem definition](https://google.com/search?q=leetcode%20990)
 /// - [garden](https://ivan-kopylove.github.io/leetcode/88a6)
-/// - [github](https://github.com/search?q=user%3Aivan-kopylove+990)
+/// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+990)
 /// - [obsidian](obsidian://search?query=leetcode%20990)
 class MySolution_179_181_casesPassed
 {

@@ -7,7 +7,7 @@ import java.util.Map;
 ///
 /// - [searchable problem definition](https://google.com/search?q=leetcode%202571)
 /// - [garden](https://ivan-kopylove.github.io/leetcode/0c78)
-/// - [github](https://github.com/search?q=user%3Aivan-kopylove+2571)
+/// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+2571)
 /// - [obsidian](obsidian://search?query=leetcode%202571)
 class PeekedAtSolution6789775
 {
