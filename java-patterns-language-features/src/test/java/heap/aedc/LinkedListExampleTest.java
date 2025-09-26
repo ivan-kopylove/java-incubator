@@ -25,7 +25,7 @@ class LinkedListExampleTest
     }
 
     @Test
-    void run2()
+    void reverse_engineer_hypothetical_design2()
     {
         LinkedList<String> linkedList = new LinkedList<>();
 
@@ -45,7 +45,7 @@ class LinkedListExampleTest
     }
 
     @Test
-    void run3()
+    void reverse_engineer_hypothetical_design3()
     {
         LinkedList<String> linkedList = new LinkedList<>();
         linkedList.add("a");
@@ -65,7 +65,7 @@ class LinkedListExampleTest
     }
 
     @Test
-    void run4()
+    void reverse_engineer_hypothetical_design4()
     {
         LinkedList<String> linkedList = new LinkedList<>();
 

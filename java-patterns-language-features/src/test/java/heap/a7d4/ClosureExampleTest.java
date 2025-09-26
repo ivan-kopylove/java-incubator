@@ -27,7 +27,7 @@ class ClosureExampleTest
     }
 
     @Test
-    void runTest()
+    void reverse_engineer_hypothetical_designTest()
     {
         TextProvider provider = getProvider(15);
         assertEquals(15, provider.get());
