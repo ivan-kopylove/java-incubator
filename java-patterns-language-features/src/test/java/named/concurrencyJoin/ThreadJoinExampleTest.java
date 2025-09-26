@@ -3,8 +3,7 @@ package named.concurrencyJoin;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-/// facets:
-/// - concurrency
+
 class ThreadJoinExampleTest
 {
     @Test
