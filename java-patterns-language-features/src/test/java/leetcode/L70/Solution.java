@@ -12,7 +12,7 @@ class Solution {
    // What is brother of recursion? What if there were no these siblings at all?
    int dfs(int n, int[] memo)
    {
-       // what is missing here and how the program would behave if it is missing?
+       // what is missing here (usually in the beginning of a recursive method) and how the program would behave if it is missing?
 
        // how do I simulate two steps?
        return dfs(n - 1, memo); // how many steps are simulated here?
