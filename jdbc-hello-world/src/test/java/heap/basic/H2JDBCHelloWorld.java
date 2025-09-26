@@ -12,7 +12,7 @@ import java.sql.Statement;
 public class H2JDBCHelloWorld
 {
     @Test
-    void what_will_be_printed()
+    void what_if_there_is_no_x()
     {
         Connection connection = null;
         Statement statement = null;

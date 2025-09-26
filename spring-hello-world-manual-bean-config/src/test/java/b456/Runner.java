@@ -7,7 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Runner
 {
     @Test
-    void what_will_be_printed()
+    void reverse_engineer_hypothetical_design()
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 

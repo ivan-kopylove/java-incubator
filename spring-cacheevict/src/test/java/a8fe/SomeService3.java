@@ -12,7 +12,6 @@ public class SomeService3
     public void evictMyCache(int someInt) {
     }
 
-
     @CacheEvict("myCache3")
     public void evictMyCache() {
     }
@@ -20,12 +19,8 @@ public class SomeService3
     public void evictAllEntries() {
     }
 
-
-
     @Cacheable("myCache3")
     public String associateMyArg(int someInt) {
         return randomUUID().toString();
     }
-
-
 }

@@ -12,7 +12,7 @@ class RunnableLambdaExampleTest
 {
 
     @Test
-    void an_example_of_what()
+    void reverse_engineer_hypothetical_design()
     {
         Runnable r1 = new Runnable()
         {

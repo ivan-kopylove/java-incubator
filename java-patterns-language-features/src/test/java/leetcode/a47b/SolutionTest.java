@@ -32,7 +32,7 @@ public class SolutionTest
 
     /// why cannot I just extract into a separate func and test it separately from input reading?
     @Test
-    void should_do_something_when_condition() throws Exception
+    void what_is_the_purpose_of_this_test() throws Exception
     {
         // given
         String input = "ab\nba\n";

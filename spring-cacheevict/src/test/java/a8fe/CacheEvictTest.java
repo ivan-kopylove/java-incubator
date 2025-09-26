@@ -10,7 +10,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class CacheEvictTest
 {
     @Test
-    void what_will_be_printed()
+    void reverse_engineer_hypothetical_design()
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig3.class);
 
@@ -24,7 +24,7 @@ public class CacheEvictTest
 
 
     @Test
-    void what_will_be_printed2()
+    void reverse_engineer_hypothetical_design2()
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig3.class);
 
@@ -36,10 +36,8 @@ public class CacheEvictTest
         System.out.println(service.associateMyArg(3));
     }
 
-
-
     @Test
-    void what_will_be_printed3()
+    void reverse_engineer_hypothetical_design3()
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig3.class);
 
@@ -53,7 +51,7 @@ public class CacheEvictTest
 
 
     @Test
-    void what_will_be_printed4()
+    void reverse_engineer_hypothetical_design4()
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig3.class);
 

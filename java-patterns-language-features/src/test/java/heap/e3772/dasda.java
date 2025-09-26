@@ -10,7 +10,7 @@ public class dasda
 
     @Test
     @DisplayName("How many balancing strategies are in the HashMap?")
-    void should_do_something_when_condition()
+    void what_is_the_purpose_of_this_test()
     {
         // given
         HashMap<Key, String> map = new HashMap<>(4, 0.75f);

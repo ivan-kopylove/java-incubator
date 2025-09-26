@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class BoxingExampleTest
 {
     @Test
-    void an_example_of_what()
+    void reverse_engineer_hypothetical_design()
     {
         Character ch = 'a';
     }
@@ -16,7 +16,7 @@ class BoxingExampleTest
     {
 
         @Test
-        void what_will_be_printed_01()
+        void reverse_engineer_hypothetical_design_01()
         {
             // given
             Integer a = 127;
@@ -27,7 +27,7 @@ class BoxingExampleTest
         }
 
         @Test
-        void what_will_be_printed_and_why()
+        void reverse_engineer_hypothetical_design_and_why()
         {
             // given
             Integer a = 128;
@@ -38,7 +38,7 @@ class BoxingExampleTest
         }
 
         @Test
-        void what_will_be_printed_and_why_02()
+        void reverse_engineer_hypothetical_design_and_why_02()
         {
             // given
             Integer a = new Integer(127);
