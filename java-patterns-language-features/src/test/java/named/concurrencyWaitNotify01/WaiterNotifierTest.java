@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 class WaiterNotifierTest
 {
     @Test
-    void what_does_this_example_demonstrate() throws InterruptedException
+    void reverse_engineer_hypothetical_design_of_the_example() throws InterruptedException
     {
         Message msg = new Message("process it");
 

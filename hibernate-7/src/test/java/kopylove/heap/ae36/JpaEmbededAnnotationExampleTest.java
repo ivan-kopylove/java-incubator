@@ -39,7 +39,7 @@ class JpaEmbededAnnotationExampleTest extends EntityManagerManual
     }
 
     @Test
-    void what_does_this_example_demonstrate()
+    void reverse_engineer_hypothetical_design_of_the_example()
     {
         // given
         EntityManager entityManager = super.getEntityManager();

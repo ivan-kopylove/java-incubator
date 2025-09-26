@@ -33,7 +33,7 @@ class SolutionTest
 
     @ParameterizedTest
     @MethodSource("dataSet")
-    void what_does_this_example_demonstrate(String[] s, boolean expected)
+    void reverse_engineer_hypothetical_design_of_the_example(String[] s, boolean expected)
     {
         // given
         MySolution_181_181_casesPassed sut = new MySolution_181_181_casesPassed();

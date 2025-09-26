@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class JpaSharedGeneratedValueTest extends EntityManagerManual
 {
     @Test
-    void what_does_this_example_demonstrate()
+    void reverse_engineer_hypothetical_design_of_the_example()
     {
         EntityManager entityManager = getEntityManager();
         entityManager.getTransaction().begin();

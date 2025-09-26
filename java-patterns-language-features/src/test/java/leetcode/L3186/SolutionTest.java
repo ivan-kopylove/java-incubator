@@ -32,7 +32,7 @@ class SolutionTest
     @ParameterizedTest
     @MethodSource("dataSet")
     @Disabled
-    void what_does_this_example_demonstrate(int[] input, long expected)
+    void reverse_engineer_hypothetical_design_of_the_example(int[] input, long expected)
     {
         // given
         MySolution_331_554_casesPassed sut = new MySolution_331_554_casesPassed();
