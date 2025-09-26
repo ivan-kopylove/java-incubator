@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class ExampleTest
 {
     @Test
-    void reverse_engineer_hypothetical_design_of_the_example()
+    void reverse_engineer_hypothetical_design()
     {
         LambdaInterface lambdaInterface = (str, num) -> {
             System.out.println("Lambda function");

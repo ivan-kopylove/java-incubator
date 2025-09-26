@@ -33,7 +33,7 @@ class JpaCompositeForeignKeyExample extends EntityManagerTransactional
     }
 
     @Test
-    void reverse_engineer_hypothetical_design_of_the_example()
+    void reverse_engineer_hypothetical_design()
     {
         EntityManager entityManager = super.getEntityManager();
 

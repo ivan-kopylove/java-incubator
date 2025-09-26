@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 class InitBlockOrder
 {
     @Test
-    void reverse_engineer_hypothetical_design_of_the_example()
+    void reverse_engineer_hypothetical_design()
     {
         A a = new B();
     }

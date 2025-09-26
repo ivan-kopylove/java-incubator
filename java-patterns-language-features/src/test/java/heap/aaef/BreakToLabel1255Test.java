@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 class BreakToLabel1255Test
 {
     @Test
-    void reverse_engineer_hypothetical_design_of_the_example()
+    void reverse_engineer_hypothetical_design()
     {
         int i = 0;
         loop:
