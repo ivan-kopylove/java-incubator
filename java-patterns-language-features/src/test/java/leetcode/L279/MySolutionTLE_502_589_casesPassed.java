@@ -21,7 +21,7 @@ class MySolutionTLE_502_589_casesPassed
             System.out.println(i * i);
         }
 
-        Collections.reverse(options);
+        Collections.reverse(options); // what if there no reverse?
 
         int result = dfs(n, options, 0, 0, new int[n + 1][n + 1]);
 
