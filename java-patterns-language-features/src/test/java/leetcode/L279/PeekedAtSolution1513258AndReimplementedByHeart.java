@@ -18,7 +18,6 @@ class PeekedAtSolution1513258AndReimplementedByHeart
                 break;
             }
             options.add(i * i);
-            System.out.println(i * i);
         }
 
         Collections.reverse(options); // what if there is no reverse?
