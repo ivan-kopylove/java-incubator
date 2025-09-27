@@ -2,8 +2,7 @@ package leetcode.L2222;
 
 /// - [peeked at solution](https://leetcode.com/problems/number-of-ways-to-select-buildings/solutions/3907842/easy-recursion-memoization/?envType=problem-list-v2&envId=dynamic-programming/)
 ///
-/// - [garden](https://ivan-kopylove.github.io/leetcode/8b49)
-/// - [github](https://github.com/search?q=user%3Aivan-kopylove+2222)
+/// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+2222)
 /// - [obsidian](obsidian://search?query=leetcode%202222)
 class PeekedAtSolution3907842
 {

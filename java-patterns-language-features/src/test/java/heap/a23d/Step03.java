@@ -2,7 +2,7 @@ package heap.a23d;
 
 import org.junit.jupiter.api.Test;
 
-class StaticVsNonStatic
+class Step03
 {
 
     @Test
@@ -18,10 +18,10 @@ class MyClass
 
     static
     {
-        System.out.println("Static");
+        System.out.println("1");
     }
 
     {
-        System.out.println("Non-static block");
+        System.out.println("2");
     }
 }

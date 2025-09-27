@@ -7,8 +7,7 @@ import java.util.List;
 /// - [peeked at solution](https://leetcode.com/problems/different-ways-to-add-parentheses/solutions/6634483/master-expression-evaluation-unlock-all-possible-results-from-a-math-string/)
 ///
 /// - [searchable problem definition](https://google.com/search?q=leetcode%20241)
-/// - [garden](https://ivan-kopylove.github.io/leetcode/e5eb)
-/// - [github](https://github.com/search?q=user%3Aivan-kopylove+241)
+/// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+241)
 /// - [obsidian](obsidian://search?query=leetcode%20241)
 class PeekedAtSolution6634483
 {

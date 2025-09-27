@@ -11,8 +11,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 /// - [searchable problem definition](https://google.com/search?q=leetcode%20990)
-/// - [garden](https://ivan-kopylove.github.io/leetcode/88a6)
-/// - [github](https://github.com/search?q=user%3Aivan-kopylove+990)
+/// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+990)
 /// - [obsidian](obsidian://search?query=leetcode%20990)
 class SolutionTest
 {

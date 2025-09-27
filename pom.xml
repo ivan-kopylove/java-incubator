@@ -34,6 +34,8 @@
         <module>spring-cacheput</module>
         <module>spring-cacheevict</module>
         <module>jdbc-hello-world</module>
+        <module>spring-hello-world</module>
+        <module>spring-hello-world-annotation-scan</module>
         <module>test-containers-postgres</module>
         <module>test-containers-kafka</module>
         <module>test-containers-generic-hello-world</module>
