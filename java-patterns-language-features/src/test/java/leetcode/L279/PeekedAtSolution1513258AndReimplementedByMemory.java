@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-class MySolutionTLE_502_589_casesPassed
+class PeekedAtSolution1513258AndReimplementedByMemory
 {
     public int numSquares(int n) {
 
@@ -21,9 +21,9 @@ class MySolutionTLE_502_589_casesPassed
             System.out.println(i * i);
         }
 
-        Collections.reverse(options); // what if there no reverse?
+        Collections.reverse(options); // what if there is no reverse?
 
-        int result = dfs(n, options, 0, 0, new int[n + 1][n + 1]);
+        int result = dfs(n, options, new int[n + 1]);
 
         if(result == Integer.MAX_VALUE)
         {
@@ -35,32 +35,32 @@ class MySolutionTLE_502_589_casesPassed
         }
     }
 
-    int dfs(int n, List<Integer> options, int current, int step, int[][] dp)
+    int dfs(int n, List<Integer> options, int[] dp)
     {
-        if(current > n)
+        if(n < 0)
         {
             return Integer.MAX_VALUE;
         }
 
-        if(dp[current][step] != 0)
+        if(dp[n] != 0)
         {
-            return dp[current][step];
+            return dp[n];
         }
 
-        if(current == n)
+        if(n == 0)
         {
-            return step;
+            return 0;
         }
 
-        int min = Integer.MAX_VALUE; // what is better choice to emphasize understanding?
+        int min = n;
         for(int i = 0; i < options.size(); i++)
         {
             Integer x = options.get(i);
             
-            min = Math.min(min, dfs(n, options, current + x, step + 1, dp));
+            min = Math.min(min, dfs(n - x, options, dp));
         }
 
-        dp[current][step] = min;
-        return dp[current][step];
+        dp[n] = min;
+        return dp[n];
     }
 }
