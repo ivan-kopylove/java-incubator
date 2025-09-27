@@ -1,4 +1,4 @@
-package leetcode.L70;
+package leetcode.L416;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -6,31 +6,21 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.List;
 
-import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.EXAMPLE;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-/// - [searchable problem definition](https://google.com/search?q=leetcode%2070)
-/// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+70)
 class SolutionTest
 {
-
     @ParameterizedTest
     @MethodSource("dataSet")
-    void run_tests(int n, int expected)
+    void foo(int[] input, boolean expected)
     {
-        if (EDUCATION_MODE == EXAMPLE)
-        {
-            return;
-        }
-
         // given
-        Koan sut = new Koan();
+        FixMissingSantiyCheck sut = new FixMissingSantiyCheck();
 
         // when
-        long result = sut.climbStairs(n);
+        boolean result = sut.canPartition(input);
 
         // then
         assertThat(result, equalTo(expected));
@@ -40,9 +30,7 @@ class SolutionTest
     {
         // @formatter:off
         return List.of(
-                arguments(2, 2),
-                arguments(3, 3),
-                arguments(9, 55)
+                arguments(new int[]{1, 5, 3}, false)
         );
         // @formatter:on
     }
