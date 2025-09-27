@@ -12,7 +12,6 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 /// - [searchable problem definition](https://google.com/search?q=leetcode%20241)
-/// - [garden](https://ivan-kopylove.github.io/leetcode/e5eb)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+241)
 /// - [obsidian](obsidian://search?query=leetcode%20241)
 

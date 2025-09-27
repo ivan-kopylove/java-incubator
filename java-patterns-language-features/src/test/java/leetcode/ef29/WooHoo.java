@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /// - [searchable problem definition](https://google.com/search?q=yandex+contest+B.+Последовательно+идущие+единицы)
-/// - [garden](https://ivan-kopylove.github.io/leetcode/8d9e)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+Последовательно+идущие+единицы)
 /// - [obsidian](obsidian://search?query=Последовательно идущие единицы)
 public class WooHoo

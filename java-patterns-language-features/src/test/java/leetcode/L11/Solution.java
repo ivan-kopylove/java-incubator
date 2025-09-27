@@ -1,7 +1,6 @@
 package leetcode.L11;
 
 /// - [searchable problem definition](https://google.com/search?q=leetcode%2011)
-/// - [garden](https://ivan-kopylove.github.io/leetcode/6b0b)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+11+container)
 /// - [my submission](https://leetcode.com/problems/container-with-most-water/submissions/449358581/)
 /// - [obsidian](obsidian://search?query=leetcode 11%20container)
