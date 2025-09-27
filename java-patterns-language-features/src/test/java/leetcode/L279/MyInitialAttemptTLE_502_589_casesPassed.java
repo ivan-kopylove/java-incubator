@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-class MySolutionTLE_502_589_casesPassed
+class MyInitialAttemptTLE_502_589_casesPassed
 {
     public int numSquares(int n) {
 
