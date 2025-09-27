@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-class PeekedAtSolution1513258AndReimplementedByMemory
+class PeekedAtSolution1513258AndReimplementedByHeart
 {
     public int numSquares(int n) {
 

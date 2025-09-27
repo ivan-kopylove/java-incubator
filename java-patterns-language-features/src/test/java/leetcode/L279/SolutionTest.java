@@ -6,8 +6,6 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.List;
 
-import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.EXAMPLE;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
@@ -19,7 +17,7 @@ class SolutionTest
     void run_tests(int n, int expected)
     {
         // given
-        PeekedAtSolution1513258AndReimplementedByMemory sut = new PeekedAtSolution1513258AndReimplementedByMemory();
+        PeekedAtSolution1513258AndReimplementedByHeart sut = new PeekedAtSolution1513258AndReimplementedByHeart();
 
         // when
         int result = sut.numSquares(n);
