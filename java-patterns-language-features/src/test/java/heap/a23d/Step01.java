@@ -2,7 +2,7 @@ package heap.a23d;
 
 import org.junit.jupiter.api.Test;
 
-class StaticBlockInitOrder
+class Step01
 {
     @Test
     void reverse_engineer_hypothetical_design()
@@ -15,7 +15,7 @@ class Parent
 {
     static
     {
-        System.out.println("Parent static block initialized first.");
+        System.out.println("1");
     }
 }
 
@@ -23,6 +23,6 @@ class Child extends Parent
 {
     static
     {
-        System.out.println("Child static block initialized second.");
+        System.out.println("2");
     }
 }
