@@ -35,7 +35,7 @@ class PeekedAtSolution1513258AndReimplementedByHeart
         }
     }
 
-    int dfs(int n, List<Integer> options, int[] dp)
+    private int dfs(int n, List<Integer> options, int[] dp)
     {
         if(n < 0)
         {
