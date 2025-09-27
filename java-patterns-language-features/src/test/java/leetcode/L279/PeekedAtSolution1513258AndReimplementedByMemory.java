@@ -60,7 +60,7 @@ class PeekedAtSolution1513258AndReimplementedByMemory
             min = Math.min(min, dfs(n - x, options, dp));
         }
 
-        dp[n] = min;
+        dp[n] = min + 1;
         return dp[n];
     }
 }

@@ -19,7 +19,7 @@ class SolutionTest
     void run_tests(int n, int expected)
     {
         // given
-        MySolutionTLE_502_589_casesPassed sut = new MySolutionTLE_502_589_casesPassed();
+        PeekedAtSolution1513258AndReimplementedByMemory sut = new PeekedAtSolution1513258AndReimplementedByMemory();
 
         // when
         int result = sut.numSquares(n);
