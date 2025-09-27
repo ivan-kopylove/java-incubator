@@ -54,7 +54,7 @@ class CommaSeparatedStatements
                     i++;
                 case 'b':
                     ++i;
-                case 'c' | 'd': // what letter do I need to add to match this first?
+                case 'c' | 'd': // what letter do I need to add to the array above to match this first?
                     i++;
             }
         }
