@@ -35,32 +35,32 @@ class PeekedAtSolution1513258AndReimplementedByHeart
         }
     }
 
-    private int dfs(int n, List<Integer> options, int[] dp)
+    private int dfs(int current, List<Integer> options, int[] dp)
     {
-        if(n < 0)
+        if(current < 0)
         {
             return Integer.MAX_VALUE;
         }
 
-        if(dp[n] != 0)
+        if(dp[current] != 0)
         {
-            return dp[n];
+            return dp[current];
         }
 
-        if(n == 0)
+        if(current == 0)
         {
             return 0;
         }
 
-        int min = n;
+        int min = current;
         for(int i = 0; i < options.size(); i++)
         {
             Integer x = options.get(i);
             
-            min = Math.min(min, dfs(n - x, options, dp));
+            min = Math.min(min, dfs(current - x, options, dp));
         }
 
-        dp[n] = min + 1;
-        return dp[n];
+        dp[current] = min + 1;
+        return dp[current];
     }
 }
