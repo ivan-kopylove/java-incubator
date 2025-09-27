@@ -1,5 +1,7 @@
 package heap.ac43;
 
+import org.hamcrest.CoreMatchers;
+import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -27,24 +29,35 @@ class CommaSeparatedStatements
     }
 
     @Test
-    void evalInsideSwitch()
+    void reverse_engineer_hypothetical_design1()
     {
+        int a = 'c' | 'd';
+        int b = 99 | 100;
+        char c = 99 | 100;
+
+        System.out.println(a == b);
+        System.out.println(a == c);
+    }
+
+    @Test
+    void reverse_engineer_hypothetical_design2()
+    {
+        char[] ca = {'a', 'b', 'c', 'd'};
+
+        int i = 0;
+
+        for (char c : ca)
         {
-            char[] ca = {'a', 'b', 'c', 'd'};
-            int i = 0;
-            for (char c : ca)
+            switch (c)
             {
-                switch (c)
-                {
-                    case 'a':
-                        i++;
-                    case 'b':
-                        ++i;
-                    case 'c' | 'd':
-                        i++;
-                }
+                case 'a':
+                    i++;
+                case 'b':
+                    ++i;
+                case 'c' | 'd': // what letter do I need to add to match this first?
+                    i++;
             }
-            assertEquals(5, i);
         }
+        assertEquals(5, i);
     }
 }
