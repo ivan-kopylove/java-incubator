@@ -18,14 +18,14 @@ class CommaSeparatedStatements
     }
 
     @Test
-    void assignmentInsideExpression()
+    void what_will_be_printed()
     {
-        int i1 = 1;
-        int i2 = 2;
-        int i3 = 3;
+        int a = 1;
+        int b = 2;
+        int c = 3;
 
-        int i4 = i1 + (i2 = i3);
-        assertEquals(4, i4);
+        int d = a + (b = c);
+        System.out.println(d);
     }
 
     @Test
