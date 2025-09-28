@@ -8,16 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import heap.qweqweweqweq.TestBase;
 class ExampleTest extends TestBase
 {
-    @Test
-    void exercise_design_reverse_engineering03()
-    {
-        LambdaInterface lambdaInterface = (str, num) -> {
-            System.out.println("Lambda function 03");
-            return 2L;
-        };
 
-        assertEquals(2L, lambdaInterface.doSomething("str", 5));
-    }
 
     @Test
     void exercise_design_reverse_engineering01()
@@ -37,5 +28,16 @@ class ExampleTest extends TestBase
         LambdaInterface lambdaInterface = new LambdaInterface2Impl();
 
         assertEquals(1, lambdaInterface.someDefaultMethod());
+    }
+
+    @Test
+    void exercise_design_reverse_engineering03()
+    {
+        LambdaInterface lambdaInterface = (str, num) -> {
+            System.out.println("Lambda function 03");
+            return 2L;
+        };
+
+        assertEquals(2L, lambdaInterface.doSomething("str", 5));
     }
 }
