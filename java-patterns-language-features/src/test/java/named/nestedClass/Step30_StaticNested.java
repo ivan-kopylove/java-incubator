@@ -1,6 +1,6 @@
 package named.nestedClass;
 
-class Step3_0_StaticNested
+class Step30_StaticNested
 {
 
     static class Nested
