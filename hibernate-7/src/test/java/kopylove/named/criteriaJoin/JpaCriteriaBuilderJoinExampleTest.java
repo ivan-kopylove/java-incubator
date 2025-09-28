@@ -17,8 +17,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// The example demonstrates minimal `join` boilerplate.
 @Disabled
-import heap.qweqweweqweq.TestBase;
-class JpaCriteriaBuilderJoinExampleTest extends TestBase extends EntityManagerManual
+
+class JpaCriteriaBuilderJoinExampleTest  extends EntityManagerManual
 {
     @BeforeAll
     public static void populate()

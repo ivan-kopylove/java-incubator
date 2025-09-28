@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import heap.qweqweweqweq.TestBase;
-class HibernateTest extends TestBase extends EntityManagerManual
+
+class HibernateTest  extends EntityManagerManual
 {
     @Test
     void testPackageScan()

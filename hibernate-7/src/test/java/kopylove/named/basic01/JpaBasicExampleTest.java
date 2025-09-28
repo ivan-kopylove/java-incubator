@@ -7,8 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// Minimal JPA example - save and load saved entity.
-import heap.qweqweweqweq.TestBase;
-class JpaBasicExampleTest extends TestBase extends EntityManagerManual
+class JpaBasicExampleTest  extends EntityManagerManual
 {
     @Test
     void exercise_design_reverse_engineering()

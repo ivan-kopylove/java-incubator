@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// JPA @GeneratedValue examples
-import heap.qweqweweqweq.TestBase;
-class JpaGeneratedValueExampleTest extends TestBase
+
+class JpaGeneratedValueExampleTest 
 {
     @Test
     void exercise_design_reverse_engineering()

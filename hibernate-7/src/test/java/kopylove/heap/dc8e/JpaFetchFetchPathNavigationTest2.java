@@ -15,8 +15,8 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 /// - [https://stackoverflow.com/questions/4511368/](https://stackoverflow.com/questions/4511368/)
-import heap.qweqweweqweq.TestBase;
-class JpaFetchFetchPathNavigationTest extends TestBase2 extends EntityManagerManual
+
+class JpaFetchFetchPathNavigationTest 2 extends EntityManagerManual
 {
     private static final String USER_NAME_ONE = "a";
     private static final String USER_NAME_TWO = "b";

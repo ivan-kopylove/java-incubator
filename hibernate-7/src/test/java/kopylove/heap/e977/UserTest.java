@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import heap.qweqweweqweq.TestBase;
-class UserTest extends Test extends TestBaseBase extends EntityManagerTransactional
+
+class UserTest extends Test Base extends EntityManagerTransactional
 {
 
     @Test
