@@ -1,6 +1,6 @@
 package leetcode.L416;
 
-class Step10_AddMissingSantiyCheckKoan
+class Step10_AddMissingSantiyCheckExercise
 {
     public boolean canPartition(int[] nums)
     {

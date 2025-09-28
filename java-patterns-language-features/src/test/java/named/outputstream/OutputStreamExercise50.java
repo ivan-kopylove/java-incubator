@@ -6,10 +6,10 @@ import java.io.BufferedOutputStream;
 import java.io.IOException;
 
 /// what does the example demonstrate?
-public class OutputStreamKoan50
+public class OutputStreamExercise50
 {
     @Test
-    void reverse_engineer_hypothetical_design() throws IOException
+    void exercise_reverse_engineering_design() throws IOException
     {
         // given
         byte[] chars = new byte[3];

@@ -14,7 +14,7 @@ import java.util.List;
 class ElemCollectionJoin extends EntityManagerManual
 {
     @Test
-    void reverse_engineer_hypothetical_design()
+    void exercise_reverse_engineering_design()
     {
         EntityManager entityManager = super.getEntityManager();
 

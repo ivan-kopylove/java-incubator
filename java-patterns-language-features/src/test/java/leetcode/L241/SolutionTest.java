@@ -32,7 +32,7 @@ class SolutionTest
     @ParameterizedTest
     @MethodSource("dataSet")
     @Disabled
-    void reverse_engineer_hypothetical_design(String input, List<Integer> expected)
+    void exercise_reverse_engineering_design(String input, List<Integer> expected)
     {
         // given
         PeekedAtSolution6634483 sut = new PeekedAtSolution6634483();

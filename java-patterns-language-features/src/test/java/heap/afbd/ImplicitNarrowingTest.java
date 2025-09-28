@@ -8,7 +8,7 @@ class ImplicitNarrowingTest
 {
 
     @Test
-    void reverse_engineer_hypothetical_design1()
+    void exercise_reverse_engineering_design1()
     {
         int i1 = 100;
         byte b1 = (byte) i1;
@@ -17,7 +17,7 @@ class ImplicitNarrowingTest
     }
 
     @Test
-    void reverse_engineer_hypothetical_design2()
+    void exercise_reverse_engineering_design2()
     {
         int i1 = 127;
         byte b1 = (byte) i1;
@@ -25,7 +25,7 @@ class ImplicitNarrowingTest
     }
 
     @Test
-    void reverse_engineer_hypothetical_design3()
+    void exercise_reverse_engineering_design3()
     {
         int i1 = 128;
         byte b1 = (byte) i1;
@@ -33,7 +33,7 @@ class ImplicitNarrowingTest
     }
 
     @Test
-    void reverse_engineer_hypothetical_design4()
+    void exercise_reverse_engineering_design4()
     {
         int i1 = 255;
         byte b1 = (byte) i1;

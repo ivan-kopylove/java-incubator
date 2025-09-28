@@ -15,7 +15,7 @@ import java.util.LinkedList;
 class ReferencesTest
 {
     @Test
-    void reverse_engineer_hypothetical_design()
+    void exercise_reverse_engineering_design()
     {
         int size = 10;
         LinkedList<SoftReference<VeryBig>> sa = new LinkedList<>();

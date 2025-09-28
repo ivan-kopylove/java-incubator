@@ -8,14 +8,14 @@ import java.util.List;
 import java.util.Map;
 
 import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.KOAN;
+import static heap.cb2d.EducationalStrengthness.EXERCISE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 class MapEqualityTest
 {
     @Test
-    void reverse_engineer_hypothetical_design_1()
+    void exercise_reverse_engineering_design_1()
     {
         Map<Integer, Integer> map1 = new HashMap<>();
         map1.put(1, 3);
@@ -26,7 +26,7 @@ class MapEqualityTest
         map2.put(2, 4);
 
 
-        if (EDUCATION_MODE == KOAN)
+        if (EDUCATION_MODE == EXERCISE)
         {
             fail("try to predict yourself before running the assertion");
         }
@@ -35,7 +35,7 @@ class MapEqualityTest
     }
 
     @Test
-    void reverse_engineer_hypothetical_design_2()
+    void exercise_reverse_engineering_design_2()
     {
         Map<Integer, List<Integer>> map1 = new HashMap<>();
         map1.put(1, List.of(1, 2));
@@ -54,7 +54,7 @@ class MapEqualityTest
         map2.put(1, list1);
         map2.put(2, list2);
 
-        if (EDUCATION_MODE == KOAN)
+        if (EDUCATION_MODE == EXERCISE)
         {
             fail("try to predict yourself before running the assertion");
         }

@@ -4,7 +4,7 @@ package leetcode.L70;
 /**
  * <a href="file:///home/me/1/notes/payload/heap/45fa/Algorithm%20Design%20Manual%203rd%20Ed.pdf#page=1">Open PDF Page 3</a>
  */
-class Koan
+class Exercise
 {
    public int climbStairs(int n) {
        return dfs(n, new int[n + 1]);

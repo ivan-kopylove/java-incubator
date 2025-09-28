@@ -20,7 +20,7 @@ class SolutionTest
 //            "001101,6"
             }, maxCharsPerColumn = 8192)
     // @formatter:on
-    void reverse_engineer_hypothetical_design(String s, long expected)
+    void exercise_reverse_engineering_design(String s, long expected)
     {
         // given
         PeekedAtSolution3907842 sut = new PeekedAtSolution3907842();

@@ -27,7 +27,7 @@ class SolutionTest
         }
 
         // given
-        Koan sut = new Koan();
+        Exercise sut = new Exercise();
 
         // when
         long result = sut.climbStairs(n);

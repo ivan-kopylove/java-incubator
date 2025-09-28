@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 /// facets:
 /// - koan
 /// - exercise
-class WhyAlwaysFiveKoanTest
+class WhyAlwaysFiveExerciseTest
 {
     int i = 0;
 

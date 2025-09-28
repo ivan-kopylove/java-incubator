@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class Double
 {
     @Test
-    void reverse_engineer_hypothetical_design1()
+    void exercise_reverse_engineering_design1()
     {
         double d1 = 1.0;
         double d2 = 43e1;//scientific notation

@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
 public class PostgreSQLContainerTest
 {
     @Test
-    void reverse_engineer_hypothetical_design() throws SQLException
+    void exercise_reverse_engineering_design() throws SQLException
     {
         PostgreSQLContainer postgresContainer = new PostgreSQLContainer();
         postgresContainer.start();
