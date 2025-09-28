@@ -3,7 +3,7 @@ package named.concurrencyBasic01;
 import org.junit.jupiter.api.Test;
 
 import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.KOAN;
+import static heap.cb2d.EducationalStrengthness.EXERCISE;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
@@ -29,7 +29,7 @@ public class VisibilityTest
     @Test
     void fix_me() throws InterruptedException
     {
-        if (EDUCATION_MODE == KOAN)
+        if (EDUCATION_MODE == EXERCISE)
         {
             fail("try to fix me");
         }

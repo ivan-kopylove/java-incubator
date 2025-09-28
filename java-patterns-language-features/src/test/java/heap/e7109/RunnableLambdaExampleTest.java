@@ -5,14 +5,14 @@ import org.junit.jupiter.api.Test;
 import java.util.function.Consumer;
 
 import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.KOAN;
+import static heap.cb2d.EducationalStrengthness.EXERCISE;
 import static org.junit.jupiter.api.Assertions.fail;
 
 class RunnableLambdaExampleTest
 {
 
     @Test
-    void reverse_engineer_hypothetical_design()
+    void exercise_reverse_engineering_design()
     {
         Runnable r1 = new Runnable()
         {
@@ -32,7 +32,7 @@ class RunnableLambdaExampleTest
         r3.accept("something");
         r4.myMethod();
 
-        if (EDUCATION_MODE == KOAN)
+        if (EDUCATION_MODE == EXERCISE)
         {
             fail("try to predict yourself before running the assertion");
         }

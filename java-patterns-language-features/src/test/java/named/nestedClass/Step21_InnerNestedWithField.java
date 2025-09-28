@@ -1,6 +1,6 @@
 package named.nestedClass;
 
-class Step2_1_InnerNestedWithField
+class Step21_InnerNestedWithField
 {
 
     private static int a = 3;

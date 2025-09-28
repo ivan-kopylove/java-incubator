@@ -7,7 +7,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.KOAN;
+import static heap.cb2d.EducationalStrengthness.EXERCISE;
 import static org.junit.jupiter.api.Assertions.fail;
 
 class VolatileTest
@@ -15,7 +15,7 @@ class VolatileTest
     private static volatile int counter1 = 0;
 
     @Test
-    void reverse_engineer_hypothetical_design() throws InterruptedException
+    void exercise_reverse_engineering_design() throws InterruptedException
     {
         int tasksCount = 100_000;
         CountDownLatch latch = new CountDownLatch(tasksCount);
@@ -31,7 +31,7 @@ class VolatileTest
         }
 
         latch.await();
-        if (EDUCATION_MODE == KOAN)
+        if (EDUCATION_MODE == EXERCISE)
         {
             fail("try to predict yourself before running the assertion");
         }

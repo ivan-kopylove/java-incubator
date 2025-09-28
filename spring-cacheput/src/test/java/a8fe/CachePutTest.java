@@ -10,7 +10,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class CachePutTest
 {
     @Test
-    void reverse_engineer_hypothetical_design()
+    void exercise_reverse_engineering_design()
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig3.class);
 

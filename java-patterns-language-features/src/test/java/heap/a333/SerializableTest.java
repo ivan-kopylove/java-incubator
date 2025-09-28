@@ -9,7 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.KOAN;
+import static heap.cb2d.EducationalStrengthness.EXERCISE;
 import static org.junit.jupiter.api.Assertions.fail;
 
 class SerializableTest
@@ -52,7 +52,7 @@ class SerializableTest
         catch (IOException e)
         {
             System.out.println("error " + e);
-            if (EDUCATION_MODE == KOAN)
+            if (EDUCATION_MODE == EXERCISE)
             {
                 fail("try to predict yourself before running the assertion");
             }

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 class WaiterNotifierTest
 {
     @Test
-    void reverse_engineer_hypothetical_design() throws InterruptedException
+    void exercise_reverse_engineering_design() throws InterruptedException
     {
         Message msg = new Message("process it");
 

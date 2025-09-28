@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class SolutionTest
 {
     @Test
-    void reverse_engineer_hypothetical_design()
+    void exercise_reverse_engineering_design()
     {
         new PeekedAtSolution6789775().minOperations(33);
     }

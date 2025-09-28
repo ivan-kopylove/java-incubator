@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 class ThreadRunVsThreadStart
 {
     @Test
-    void reverse_engineer_hypothetical_design1()
+    void exercise_reverse_engineering_design1()
     {
         String parentThreadName = Thread.currentThread().getName();
         Thread thread = new Thread()
@@ -24,7 +24,7 @@ class ThreadRunVsThreadStart
     }
 
     @Test
-    void reverse_engineer_hypothetical_design2()
+    void exercise_reverse_engineering_design2()
     {
         String parentThreadName = Thread.currentThread().getName();
         Thread thread = new Thread()

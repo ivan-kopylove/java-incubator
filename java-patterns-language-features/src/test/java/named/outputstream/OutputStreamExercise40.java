@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 import java.io.BufferedOutputStream;
 import java.io.IOException;
 
-public class OutputStreamKoan40
+public class OutputStreamExercise40
 {
     @Test
-    void reverse_engineer_hypothetical_design() throws IOException
+    void exercise_reverse_engineering_design() throws IOException
     {
         //given
         byte[] chars = new byte[3];

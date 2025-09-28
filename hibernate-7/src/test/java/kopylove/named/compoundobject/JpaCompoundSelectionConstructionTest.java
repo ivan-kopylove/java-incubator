@@ -46,7 +46,7 @@ class JpaCompoundSelectionConstructionTest extends EntityManagerManual
 
     /// CompoundSelection filled according construct order.
     @Test
-    void reverse_engineer_hypothetical_design_incorrect()
+    void exercise_reverse_engineering_design_incorrect()
     {
         assertThrows(IllegalStateException.class, () -> {
 
@@ -70,7 +70,7 @@ class JpaCompoundSelectionConstructionTest extends EntityManagerManual
 
     /// CompoundSelection filled according construct order.
     @Test
-    void reverse_engineer_hypothetical_design_correct()
+    void exercise_reverse_engineering_design_correct()
     {
         EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();

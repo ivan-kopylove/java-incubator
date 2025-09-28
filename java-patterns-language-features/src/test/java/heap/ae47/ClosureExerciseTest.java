@@ -5,12 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/// Make provider return a value passed from initial call
-/// facets
-/// - patterns
-/// - closure
-/// - koan
-class ClosureKoanTest
+class ClosureExerciseTest
 {
 
     static TextProvider getProvider(int value)
@@ -29,7 +24,7 @@ class ClosureKoanTest
 
     @Test
     @Disabled
-    public void reverse_engineer_hypothetical_design()
+    public void exercise_reverse_engineering_design()
     {
         TextProvider provider = getProvider(15);
         assertEquals(15, provider.get());
@@ -37,7 +32,7 @@ class ClosureKoanTest
 
     @Test
     @Disabled
-    public void reverse_engineer_hypothetical_design2()
+    public void exercise_reverse_engineering_design2()
     {
         TextProvider provider = getProvider(20);
         assertEquals(20, provider.get());

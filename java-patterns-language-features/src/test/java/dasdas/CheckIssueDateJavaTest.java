@@ -16,7 +16,7 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 class CheckIssueDateJavaTest
 {
     @Test
-    void reverse_engineer_hypothetical_design()
+    void exercise_reverse_engineering_design()
     {
         // given
         CheckIssueDateJava checkIssueDateJava = new CheckIssueDateJava(LocalDate.of(2004, 03, 15));
@@ -32,7 +32,7 @@ class CheckIssueDateJavaTest
     }
 
     @Test
-    void reverse_engineer_hypothetical_design1()
+    void exercise_reverse_engineering_design1()
     {
         // given
         LocalDate dob = LocalDate.of(1990, 03, 15);
@@ -49,7 +49,7 @@ class CheckIssueDateJavaTest
     }
 
     @Test
-    void reverse_engineer_hypothetical_design2()
+    void exercise_reverse_engineering_design2()
     {
         // given
         LocalDate dob = LocalDate.of(1990, 03, 15);
@@ -66,7 +66,7 @@ class CheckIssueDateJavaTest
     }
 
     @Test
-    void reverse_engineer_hypothetical_design3()
+    void exercise_reverse_engineering_design3()
     {
         // given
         LocalDate dob = LocalDate.of(1990, 03, 15);
@@ -83,7 +83,7 @@ class CheckIssueDateJavaTest
     }
 
     @Test
-    void reverse_engineer_hypothetical_design4()
+    void exercise_reverse_engineering_design4()
     {
         // given
         LocalDate dob = LocalDate.of(1990, 03, 15);
@@ -102,7 +102,7 @@ class CheckIssueDateJavaTest
 
     @ParameterizedTest
     @MethodSource("dataSet")
-    void reverse_engineer_hypothetical_design5(LocalDate dob, LocalDate issue, LocalDate current)
+    void exercise_reverse_engineering_design5(LocalDate dob, LocalDate issue, LocalDate current)
     {
         // given
         CheckIssueDateJava checkIssueDateJava = new CheckIssueDateJava(current);

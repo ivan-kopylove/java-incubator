@@ -2,10 +2,10 @@ package heap.a23d;
 
 import org.junit.jupiter.api.Test;
 
-class Step04
+class Step40
 {
     @Test
-    void reverse_engineer_hypothetical_design()
+    void exercise_reverse_engineering_design()
     {
         Foo a = new Bar();
     }

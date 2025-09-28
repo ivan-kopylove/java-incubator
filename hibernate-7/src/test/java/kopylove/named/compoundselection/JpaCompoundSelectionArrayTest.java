@@ -43,7 +43,7 @@ class JpaCompoundSelectionArrayTest extends EntityManagerManual
     }
 
     @Test
-    void reverse_engineer_hypothetical_design_correct()
+    void exercise_reverse_engineering_design_correct()
     {
         EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();

@@ -19,7 +19,7 @@ class SolutionTest
 
     @ParameterizedTest
     @MethodSource("dataSet")
-    void solution70(int n, int expected)
+    void run_tests(int n, int expected)
     {
         if (EDUCATION_MODE == EXAMPLE)
         {
@@ -27,7 +27,7 @@ class SolutionTest
         }
 
         // given
-        Koan sut = new Koan();
+        Exercise sut = new Exercise();
 
         // when
         long result = sut.climbStairs(n);

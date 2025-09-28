@@ -15,14 +15,14 @@ class Float
     }
 
     @Test
-    void reverse_engineer_hypothetical_design1()
+    void exercise_reverse_engineering_design1()
     {
         float f2 = 1.0f;
         assertEquals(1, f2, 0);
     }
 
     @Test
-    void reverse_engineer_hypothetical_design3()
+    void exercise_reverse_engineering_design3()
     {
         float hex1 = 0xA;
         float hex2 = 0x0A;
@@ -35,7 +35,7 @@ class Float
     }
 
     @Test
-    void reverse_engineer_hypothetical_design4()
+    void exercise_reverse_engineering_design4()
     {
         float f1 = -1;
 
@@ -43,7 +43,7 @@ class Float
     }
 
     @Test
-    void reverse_engineer_hypothetical_design5()
+    void exercise_reverse_engineering_design5()
     {
         float f1 = java.lang.Float.MAX_VALUE;
 

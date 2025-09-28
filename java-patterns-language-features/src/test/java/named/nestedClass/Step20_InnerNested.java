@@ -1,6 +1,6 @@
 package named.nestedClass;
 
-class Step2_0_InnerNested
+class Step20_InnerNested
 {
 
     class Nested

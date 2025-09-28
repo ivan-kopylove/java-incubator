@@ -20,7 +20,7 @@ class SolutionTest
     @ParameterizedTest
     @MethodSource("dataSet")
     @Disabled
-    void reverse_engineer_hypothetical_design(int[] input, long expected)
+    void exercise_reverse_engineering_design(int[] input, long expected)
     {
         // given
         MySolution_331_554_casesPassed sut = new MySolution_331_554_casesPassed();

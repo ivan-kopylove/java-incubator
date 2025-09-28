@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /// Answer the questions stated in [Fruit].
-class Step4SuperTest
+class Step40SuperTest
 {
     @Test
     void test1()

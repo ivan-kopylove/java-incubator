@@ -2,25 +2,25 @@ package heap.a23d;
 
 import org.junit.jupiter.api.Test;
 
-class Step02
+class Step30
 {
+
     @Test
-    void reverse_engineer_hypothetical_design()
+    void main()
     {
-        Foo a = new Bar();
+        new MyClass();
+        new MyClass();
     }
 }
 
-class A
+class MyClass
 {
 
+    static
     {
         System.out.println("1");
     }
-}
 
-class B extends Foo
-{
     {
         System.out.println("2");
     }
