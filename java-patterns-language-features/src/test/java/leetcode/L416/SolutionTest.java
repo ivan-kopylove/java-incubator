@@ -12,7 +12,6 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 class SolutionTest
 {
-
     @ParameterizedTest
     @MethodSource("dataSet")
     void foo(int[] input, boolean expected)
