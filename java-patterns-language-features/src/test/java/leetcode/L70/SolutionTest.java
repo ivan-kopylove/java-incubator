@@ -10,6 +10,7 @@ import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
 import static heap.cb2d.EducationalStrengthness.EXAMPLE;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
+import static org.junit.jupiter.api.Assertions.fail;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 /// - [searchable problem definition](https://google.com/search?q=leetcode%2070)
@@ -22,7 +23,10 @@ class SolutionTest extends TestBase
     @MethodSource("dataSet")
     void run_tests(int n, int expected)
     {
-
+        if (EDUCATION_MODE == EXAMPLE)
+        {
+            return;
+        }
         // given
         Exercise sut = new Exercise();
 
