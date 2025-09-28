@@ -4,7 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class CastingTests
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class CastingTest extends TestBase
 {
 
     /// Automatic type conversion. No explicit cast required.

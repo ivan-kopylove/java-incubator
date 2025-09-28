@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// java.mechanics.oop.hiding
-class FieldsAreNotPolymorphicTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class FieldsAreNotPolymorphicTest extends TestBase
 {
     @Test
     void referenceIsFather()

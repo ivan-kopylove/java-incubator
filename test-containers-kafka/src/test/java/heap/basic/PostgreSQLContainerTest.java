@@ -21,13 +21,13 @@ import static java.util.UUID.randomUUID;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-// any annotation is a what for what?
-//
-// how to find the code related to handling this annotation?
-//
-// what does this annotation do instead of me?
+/// any annotation is a what for what?
+///
+/// how to find the code related to handling this annotation?
+///
+/// what does this annotation do instead of me?
 @Testcontainers
-public class PostgreSQLContainerTest
+class PostgreSQLContainerTest
 {
     // how to find the code related to handling this annotation?
     // what does this annotation does instead of me?
@@ -35,7 +35,7 @@ public class PostgreSQLContainerTest
     private KafkaContainer kafka = new KafkaContainer("apache/kafka-native:3.8.0");
 
     @Test
-    void exercise_reverse_engineering_design() throws SQLException
+    void exercise_design_reverse_engineering() throws SQLException
     {
         String topicName = "hello-world-topic" + randomUUID();
         String messageKey = "my-key" + randomUUID();

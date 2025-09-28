@@ -12,10 +12,11 @@ import java.util.LinkedList;
 /// - java-mechanism
 ///
 /// SoftReference > Weak Reference > PhantomReference
-class ReferencesTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class ReferencesTest extends TestBase
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         int size = 10;
         LinkedList<SoftReference<VeryBig>> sa = new LinkedList<>();

@@ -4,7 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class AssertKeywordTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class AssertKeywordTest extends TestBase
 {
     @Test
     void should_throw_assertion_error()

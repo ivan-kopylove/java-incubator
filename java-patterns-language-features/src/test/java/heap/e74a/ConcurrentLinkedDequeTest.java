@@ -9,7 +9,9 @@ import static java.util.concurrent.Executors.newFixedThreadPool;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-class ConcurrentLinkedDequeTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+
+class ConcurrentLinkedDequeTest extends TestBase
 {
     @Test
     void what_is_the_purpose_of_this_example() throws InterruptedException

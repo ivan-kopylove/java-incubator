@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ClosureExerciseTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class ClosureExerciseTest extends TestBase
 {
 
     static TextProvider getProvider(int value)
@@ -24,7 +25,7 @@ class ClosureExerciseTest
 
     @Test
     @Disabled
-    public void exercise_reverse_engineering_design()
+    public void exercise_design_reverse_engineering()
     {
         TextProvider provider = getProvider(15);
         assertEquals(15, provider.get());
@@ -32,7 +33,7 @@ class ClosureExerciseTest
 
     @Test
     @Disabled
-    public void exercise_reverse_engineering_design2()
+    public void exercise_design_reverse_engineering2()
     {
         TextProvider provider = getProvider(20);
         assertEquals(20, provider.get());

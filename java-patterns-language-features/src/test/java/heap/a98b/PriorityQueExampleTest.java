@@ -6,9 +6,10 @@ import java.util.PriorityQueue;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/// java.util.* playground
+
 /// Priority map keeps structure sorted according natural ordering
-class PriorityQueExampleTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class PriorityQueExampleTest extends TestBase
 {
 
     @Test
@@ -40,7 +41,7 @@ class PriorityQueExampleTest
     }
 
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         PriorityQueue<String> priorityQueue = new PriorityQueue<>();
 

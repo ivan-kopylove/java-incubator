@@ -10,7 +10,8 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 /// Minimal JPA example - save and load saved entity.
-class JpaSimpleNativeQueryTest extends EntityManagerManual
+
+class JpaSimpleNativeQueryTest  extends EntityManagerManual
 {
     @BeforeEach
     public void populate()
@@ -29,7 +30,7 @@ class JpaSimpleNativeQueryTest extends EntityManagerManual
     }
 
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         EntityManager entityManager = super.getEntityManager();
 

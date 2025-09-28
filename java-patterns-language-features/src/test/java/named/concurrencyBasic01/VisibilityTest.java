@@ -1,9 +1,11 @@
 package named.concurrencyBasic01;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
-import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.EXERCISE;
+import static com.github.ivan.kopylove.commons.testing.EducationalStrengthness.EDUCATION_MODE;
+import static com.github.ivan.kopylove.commons.testing.EducationalStrengthness.EXERCISE;
+import static com.github.ivan.kopylove.commons.testing.EducationalStrengthness.FAMILIARIZE;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
@@ -23,17 +25,14 @@ class VisibilityExample
     }
 }
 
-public class VisibilityTest
+
+class VisibilityTest extends TestBase
 {
 
     @Test
     void fix_me() throws InterruptedException
     {
-        if (EDUCATION_MODE == EXERCISE)
-        {
-            fail("try to fix me");
-        }
-        else
+        if (EDUCATION_MODE == FAMILIARIZE)
         {
             return;
         }

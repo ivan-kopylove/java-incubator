@@ -5,14 +5,13 @@ import org.junit.jupiter.api.Test;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
-import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.EXERCISE;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.fail;
 
-class CompletableFutureSupplyAsyncTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class CompletableFutureSupplyAsyncTest extends TestBase
 {
 
     @Test
@@ -38,10 +37,6 @@ class CompletableFutureSupplyAsyncTest
     {
         CompletableFuture<String> stringCompletableFuture = CompletableFuture.supplyAsync(() -> "world");
 
-         if (EDUCATION_MODE == EXERCISE)
-        {
-            fail("try to predict yourself before running the assertion");
-        }
         assertThat(stringCompletableFuture.get(), equalTo("world"));
     }
 }

@@ -4,18 +4,17 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/// Decorator Pattern Example.
-/// facets:
-/// - patterns
-/// - decorator
-class DecoratorPatternEntryPointTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+
+class DecoratorPatternEntryPointTest extends TestBase
 {
     @Test
     void main()
     {
         Window decoratedWindow = new HorizontalScrollbarDecorator(new VerticalScrollBarDecorator(new SimpleWindow()));
+
         System.out.println(decoratedWindow.getDescription());
-        assertEquals("simple window, including vertical scrollbars, including horizontal scrollbars",
-                     decoratedWindow.getDescription());
+
+        assertEquals("simple window, including vertical scrollbars, including horizontal scrollbars", decoratedWindow.getDescription());
     }
 }

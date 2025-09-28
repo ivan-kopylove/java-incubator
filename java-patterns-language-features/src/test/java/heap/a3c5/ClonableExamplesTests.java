@@ -1,12 +1,13 @@
 package heap.a3c5;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotSame;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class ClonableExamplesTests
+class ClonableExamplesTest extends TestBase
 {
     @Test
     void not_clonable()

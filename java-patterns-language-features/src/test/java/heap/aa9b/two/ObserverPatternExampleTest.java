@@ -3,13 +3,14 @@ package heap.aa9b.two;
 import org.junit.jupiter.api.Test;
 
 /// [...](https://stackoverflow.com/questions/6270132/create-a-custom-event-in-java)
-/// facets:
+
 /// - listener
-/// - patterns
-class ObserverPatternExampleTest
+
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class ObserverPatternExampleTest extends TestBase
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         Initiater initiater = new Initiater();
         Responder responder = new Responder();

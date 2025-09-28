@@ -6,13 +6,14 @@ import java.util.concurrent.Executor;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/// Facets:
+
 ///
 /// - concurrency
-class ExecutorInterfaceExampleTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class ExecutorInterfaceExampleTest extends TestBase
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         Executor executor = new Executor()
         {

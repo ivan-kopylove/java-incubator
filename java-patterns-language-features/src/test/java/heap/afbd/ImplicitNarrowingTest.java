@@ -4,11 +4,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ImplicitNarrowingTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class ImplicitNarrowingTest extends TestBase
 {
 
     @Test
-    void exercise_reverse_engineering_design1()
+    void exercise_design_reverse_engineering1()
     {
         int i1 = 100;
         byte b1 = (byte) i1;
@@ -17,7 +18,7 @@ class ImplicitNarrowingTest
     }
 
     @Test
-    void exercise_reverse_engineering_design2()
+    void exercise_design_reverse_engineering2()
     {
         int i1 = 127;
         byte b1 = (byte) i1;
@@ -25,7 +26,7 @@ class ImplicitNarrowingTest
     }
 
     @Test
-    void exercise_reverse_engineering_design3()
+    void exercise_design_reverse_engineering3()
     {
         int i1 = 128;
         byte b1 = (byte) i1;
@@ -33,7 +34,7 @@ class ImplicitNarrowingTest
     }
 
     @Test
-    void exercise_reverse_engineering_design4()
+    void exercise_design_reverse_engineering4()
     {
         int i1 = 255;
         byte b1 = (byte) i1;

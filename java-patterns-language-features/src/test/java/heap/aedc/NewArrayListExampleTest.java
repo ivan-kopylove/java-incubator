@@ -7,11 +7,12 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertSame;
 
-class NewArrayListExampleTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class NewArrayListExampleTest extends TestBase
 {
 
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         List<MyObj> list1 = new ArrayList<>();
         list1.add(new MyObj());

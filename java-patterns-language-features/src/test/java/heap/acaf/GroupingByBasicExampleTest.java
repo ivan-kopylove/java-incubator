@@ -9,7 +9,8 @@ import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class GroupingByBasicExampleTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class GroupingByBasicExampleTest extends TestBase
 {
     @Test
     void what_is_the_purpose_of_the_example_1()

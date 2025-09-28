@@ -2,17 +2,18 @@ package heap.a67b;
 
 import org.junit.jupiter.api.Test;
 
-class WhyAlwaysFiveExerciseTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class WhyAlwaysFiveExerciseTest extends TestBase
 {
     int i = 0;
 
     @Test
-    void recurred()
+    void exercise_design_reverse_engineering()
     {
         i++;
         if (i < 5)
         {
-            recurred();
+            exercise_design_reverse_engineering();
         }
         System.out.println(i);
     }

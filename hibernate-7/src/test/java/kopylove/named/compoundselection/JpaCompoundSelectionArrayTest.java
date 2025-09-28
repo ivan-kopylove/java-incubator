@@ -13,7 +13,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-class JpaCompoundSelectionArrayTest extends EntityManagerManual
+
+class JpaCompoundSelectionArrayTest  extends EntityManagerManual
 {
     @BeforeAll
     public static void populate()
@@ -43,7 +44,7 @@ class JpaCompoundSelectionArrayTest extends EntityManagerManual
     }
 
     @Test
-    void exercise_reverse_engineering_design_correct()
+    void exercise_design_reverse_engineering_correct()
     {
         EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();

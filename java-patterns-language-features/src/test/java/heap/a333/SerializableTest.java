@@ -8,11 +8,10 @@ import java.io.ObjectOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.EXERCISE;
 import static org.junit.jupiter.api.Assertions.fail;
 
-class SerializableTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class SerializableTest extends TestBase
 {
     public static int sizeof(Object obj) throws IOException
     {
@@ -52,10 +51,6 @@ class SerializableTest
         catch (IOException e)
         {
             System.out.println("error " + e);
-            if (EDUCATION_MODE == EXERCISE)
-            {
-                fail("try to predict yourself before running the assertion");
-            }
         }
     }
 }

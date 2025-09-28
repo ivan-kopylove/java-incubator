@@ -11,6 +11,8 @@
         <junit.version>5.13.4</junit.version>
         <hamcrest.version>3.0</hamcrest.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.version>7.0.0-M9</spring.version>
+        <h2.version>2.3.232</h2.version>
     </properties>
 
     <build>
@@ -27,7 +29,9 @@
     </build>
 
     <modules>
+        <module>leetcode</module>
         <module>commons</module>
+        <module>spring-test-context</module>
         <module>spring-hello-world-manual-bean-config</module>
         <module>spring-hello-world-bean-scan</module>
         <module>spring-cacheable-manual-bean-config</module>
@@ -46,6 +50,8 @@
 
 
     <dependencies>
+
+
         <dependency>
             <groupId>org.reflections</groupId>
             <artifactId>reflections</artifactId>

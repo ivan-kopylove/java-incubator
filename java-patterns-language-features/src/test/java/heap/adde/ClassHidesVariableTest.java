@@ -5,10 +5,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// java.mechanics.oop.hiding
-class ClassHidesVariableTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class ClassHidesVariableTest extends TestBase
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         String localVariable = new ClassHidesVariable().getLocalVariable();
 

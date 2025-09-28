@@ -4,7 +4,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 
-class ThreadJoinExampleTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class ThreadJoinExampleTest extends TestBase
 {
     @Test
     @DisplayName("run the example and explain the behaviour")

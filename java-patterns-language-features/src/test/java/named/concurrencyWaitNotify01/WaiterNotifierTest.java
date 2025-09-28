@@ -2,10 +2,11 @@ package named.concurrencyWaitNotify01;
 
 import org.junit.jupiter.api.Test;
 
-class WaiterNotifierTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class WaiterNotifierTest extends TestBase
 {
     @Test
-    void exercise_reverse_engineering_design() throws InterruptedException
+    void exercise_design_reverse_engineering() throws InterruptedException
     {
         Message msg = new Message("process it");
 

@@ -2,13 +2,14 @@ package heap.aa9b.one;
 
 import org.junit.jupiter.api.Test;
 
-/// facets:
-/// - patterns
+
+
 /// - listener
-class ListenerEntryPointTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class ListenerEntryPointTest extends TestBase
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
 
         MyLongRunningTask myLongRunningTask = new MyLongRunningTask(new OnCompleteListener()

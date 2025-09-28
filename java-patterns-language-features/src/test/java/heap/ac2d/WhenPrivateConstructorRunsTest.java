@@ -5,17 +5,18 @@ import org.junit.jupiter.api.Test;
 import static heap.ac2d.PrivateConstructorClass.privateConstructorClass;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class WhenPrivateConstructorRunsTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class WhenPrivateConstructorRunsTest extends TestBase
 {
     @Test
-    void exercise_reverse_engineering_design_me_in_debug_mode()
+    void exercise_design_reverse_engineering_me_in_debug_mode()
     {
         String value = PrivateConstructorClass.getValue();
         assertEquals("put breakpoint here", value);
     }
 
     @Test
-    void exercise_reverse_engineering_design_me_in_debug_mode2()
+    void exercise_design_reverse_engineering_me_in_debug_mode2()
     {
         String input = "my custom value";
 

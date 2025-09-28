@@ -4,7 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.locks.ReentrantLock;
 
-class LiveLockTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class LiveLockTest extends TestBase
 {
     private static void sleep(int millis)
     {

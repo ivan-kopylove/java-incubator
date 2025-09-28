@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 class Step10
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         Parent p = new Child();
     }

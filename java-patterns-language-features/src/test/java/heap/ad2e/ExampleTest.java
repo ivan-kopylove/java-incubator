@@ -5,24 +5,16 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// functional interface playground
-class ExampleTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class ExampleTest extends TestBase
 {
-    @Test
-    void exercise_reverse_engineering_design()
-    {
-        LambdaInterface lambdaInterface = (str, num) -> {
-            System.out.println("Lambda function");
-            return 2L;
-        };
 
-        assertEquals(2L, lambdaInterface.doSomething("str", 5));
-    }
 
     @Test
-    void exercise_reverse_engineering_design01()
+    void exercise_design_reverse_engineering01()
     {
         LambdaInterface lambdaInterface = (str, num) -> {
-            System.out.println("Lambda function");
+            System.out.println("Lambda function 01");
             return 2L;
         };
 
@@ -30,11 +22,22 @@ class ExampleTest
     }
 
     @Test
-    void exercise_reverse_engineering_design02()
+    void exercise_design_reverse_engineering02()
     {
 
         LambdaInterface lambdaInterface = new LambdaInterface2Impl();
 
         assertEquals(1, lambdaInterface.someDefaultMethod());
+    }
+
+    @Test
+    void exercise_design_reverse_engineering03()
+    {
+        LambdaInterface lambdaInterface = (str, num) -> {
+            System.out.println("Lambda function 03");
+            return 2L;
+        };
+
+        assertEquals(2L, lambdaInterface.doSomething("str", 5));
     }
 }

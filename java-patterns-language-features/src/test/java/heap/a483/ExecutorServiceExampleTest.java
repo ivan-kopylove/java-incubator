@@ -9,11 +9,12 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
-class ExecutorServiceExampleTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class ExecutorServiceExampleTest extends TestBase
 {
 
     @Test
-    void should_run_a_thread() throws InterruptedException
+    void exercise_design_reverse_engineering() throws InterruptedException
     {
         AtomicBoolean called = new AtomicBoolean(false);
 

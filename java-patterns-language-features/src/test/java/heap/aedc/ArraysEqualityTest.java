@@ -7,10 +7,12 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ArraysEqualityTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+
+class ArraysEqualityTest extends TestBase
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         List<String> list = new ArrayList<>();
         list.add("1");

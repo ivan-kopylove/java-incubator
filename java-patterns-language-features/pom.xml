@@ -3,14 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>java-patterns-language-features</artifactId>
     <packaging>jar</packaging>
-    <dependencies>
-        <dependency>
-            <groupId>antlr</groupId>
-            <artifactId>antlr</artifactId>
-            <version>2.7.7</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+
     <version>snapshot</version>
 
     <parent>
@@ -19,7 +12,19 @@
         <version>snapshot</version>
     </parent>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>antlr</groupId>
+            <artifactId>antlr</artifactId>
+            <version>2.7.7</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.ivan.kopylove</groupId>
+            <artifactId>commons</artifactId>
+            <version>snapshot</version>
+        </dependency>
+    </dependencies>
 
 
 

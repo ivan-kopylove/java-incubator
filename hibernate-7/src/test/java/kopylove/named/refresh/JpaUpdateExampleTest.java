@@ -9,7 +9,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// Example of EntityManager#refresh.
-class JpaUpdateExampleTest extends EntityManagerManual
+
+class JpaUpdateExampleTest  extends EntityManagerManual
 {
     @BeforeAll
     public static void populate()
@@ -25,7 +26,7 @@ class JpaUpdateExampleTest extends EntityManagerManual
     }
 
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         EntityManager entityManger = super.getEntityManager();
         ParentEntity12 parentEntity = entityManger.find(ParentEntity12.class, 101);

@@ -9,7 +9,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// @Embedded annotation demonstration.
-class JpaEmbededAnnotationExampleTest extends EntityManagerManual
+
+class JpaEmbededAnnotationExampleTest  extends EntityManagerManual
 {
     @BeforeAll
     public static void populate()
@@ -39,7 +40,7 @@ class JpaEmbededAnnotationExampleTest extends EntityManagerManual
     }
 
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         // given
         EntityManager entityManager = super.getEntityManager();

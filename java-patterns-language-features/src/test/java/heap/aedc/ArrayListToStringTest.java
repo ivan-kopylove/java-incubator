@@ -7,10 +7,11 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ArrayListToStringTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class ArrayListToStringTest extends TestBase
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         List<String> list = new ArrayList<>();
         list.add("dsa1");

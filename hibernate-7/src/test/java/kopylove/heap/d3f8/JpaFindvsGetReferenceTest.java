@@ -16,7 +16,8 @@ import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /// Difference between EntityManager#find and EntityManager#getReference
-class JpaFindvsGetReferenceTest extends EntityManagerManual
+
+class JpaFindvsGetReferenceTest  extends EntityManagerManual
 {
     @BeforeAll
     public static void populate()

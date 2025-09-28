@@ -1,17 +1,18 @@
 package heap.a21b;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class EqualsHashcodeAreCalledTest
+class EqualsHashcodeAreCalledTest extends TestBase
 {
     private boolean equalsCalled   = false;
     private boolean hashcodeCalled = false;
 
     @Test
-    void exercise_reverse_engineering_design2()
+    void exercise_design_reverse_engineering2()
     {
         MyClass myClass1 = new MyClass();
         MyClass myClass2 = new MyClass();

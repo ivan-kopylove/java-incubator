@@ -7,10 +7,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// Minimal JPA example - save and load saved entity.
-class JpaBasicExampleTest extends EntityManagerManual
+class JpaBasicExampleTest  extends EntityManagerManual
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();

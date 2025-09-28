@@ -15,7 +15,8 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class JpaCompoundSelectionConstructionTest extends EntityManagerManual
+
+class JpaCompoundSelectionConstructionTest  extends EntityManagerManual
 {
     @BeforeAll
     public static void populate()
@@ -46,7 +47,7 @@ class JpaCompoundSelectionConstructionTest extends EntityManagerManual
 
     /// CompoundSelection filled according construct order.
     @Test
-    void exercise_reverse_engineering_design_incorrect()
+    void exercise_design_reverse_engineering_incorrect()
     {
         assertThrows(IllegalStateException.class, () -> {
 
@@ -70,7 +71,7 @@ class JpaCompoundSelectionConstructionTest extends EntityManagerManual
 
     /// CompoundSelection filled according construct order.
     @Test
-    void exercise_reverse_engineering_design_correct()
+    void exercise_design_reverse_engineering_correct()
     {
         EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();

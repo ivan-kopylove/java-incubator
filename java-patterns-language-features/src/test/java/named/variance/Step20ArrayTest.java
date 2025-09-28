@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 /// Answer the questions stated in [Fruit].
 ///
 /// Book search: "language misfeature".
-class Step20ArrayTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class Step20ArrayTest extends TestBase
 {
     @Test
     void test1()

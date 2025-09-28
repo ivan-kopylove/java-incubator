@@ -2,11 +2,12 @@ package heap.ac31;
 
 import org.junit.jupiter.api.Test;
 
-class StaticBlockNestedClassTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class StaticBlockNestedClassTest extends TestBase
 {
 
     @Test
-    void exercise_reverse_engineering_design2()
+    void exercise_design_reverse_engineering2()
     {
         Child.CHILD_ID = "1";
     }

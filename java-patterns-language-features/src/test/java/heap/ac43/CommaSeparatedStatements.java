@@ -29,7 +29,7 @@ class CommaSeparatedStatements
     }
 
     @Test
-    void exercise_reverse_engineering_design1()
+    void exercise_design_reverse_engineering1()
     {
         int a = 'c' | 'd';
         int b = 99 | 100;
@@ -40,7 +40,7 @@ class CommaSeparatedStatements
     }
 
     @Test
-    void exercise_reverse_engineering_design2()
+    void exercise_design_reverse_engineering2()
     {
         char[] ca = {'a', 'b', 'c', 'd'};
 

@@ -17,7 +17,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// The example demonstrates minimal `join` boilerplate.
 @Disabled
-class JpaCriteriaBuilderJoinExampleTest extends EntityManagerManual
+
+class JpaCriteriaBuilderJoinExampleTest  extends EntityManagerManual
 {
     @BeforeAll
     public static void populate()
@@ -43,7 +44,7 @@ class JpaCriteriaBuilderJoinExampleTest extends EntityManagerManual
     }
 
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         EntityManager entityManager = super.getEntityManager();
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();

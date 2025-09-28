@@ -6,10 +6,11 @@ import java.util.concurrent.ConcurrentLinkedDeque;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/// Removing elements from List while iterating leads to exception (btw, which one?), because iterator (... what?)
+/// Removing elements from List while iterating leads to exception (btw, which one?), because iterator is (... what?)
 ///
 /// Based on that idea, the experiment is about my hypothesis if I can pop elements from the deque while iterating on the que.
-class IteratingWhilePoppingTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class IteratingWhilePoppingTest extends TestBase
 {
     @Test
     void should_remove_elements_from_queue_without_exceptions()

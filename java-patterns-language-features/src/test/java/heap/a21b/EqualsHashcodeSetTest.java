@@ -9,7 +9,8 @@ import java.util.Set;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class EqualsHashcodeSetTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class EqualsHashcodeSetTest extends TestBase
 {
     private boolean equalsCalled   = false;
     private boolean hashcodeCalled = false;

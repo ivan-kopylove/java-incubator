@@ -3,10 +3,11 @@ package heap.a4cd;
 import org.junit.jupiter.api.Test;
 
 /// aka Operator p______
-class EvaluationOrderTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class EvaluationOrderTest extends TestBase
 {
     @Test
-    void calculateYourselfFirst1()
+    void exercise_design_reverse_engineering1()
     {
         int x = 5;
         int y = 10;
@@ -15,7 +16,7 @@ class EvaluationOrderTest
     }
 
     @Test
-    void calculateYourselfFirst2()
+    void exercise_design_reverse_engineering2()
     {
         String result1 = "1 + 2 = " + 1 + 2;
         String result2 = "1 + 2 = " + (1 + 2);
@@ -26,7 +27,7 @@ class EvaluationOrderTest
     }
 
     @Test
-    void calculateYourselfFirst4()
+    void exercise_design_reverse_engineering4()
     {
         String result1 = 1 + 2 + "abc";
         String result2 = "abc" + 1 + 2;
@@ -37,7 +38,7 @@ class EvaluationOrderTest
     }
 
     @Test
-    void calculateYourselfFirst3()
+    void exercise_design_reverse_engineering3()
     {
         int year = 2020;
         boolean result = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;

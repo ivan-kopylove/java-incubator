@@ -4,10 +4,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class UTF8Test
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class UTF8Test extends TestBase
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         String umlaut = "Ä";
         assertEquals(umlaut, "Ä");

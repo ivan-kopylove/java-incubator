@@ -7,10 +7,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /// search engine query with comprehensive examples:
 /// closure baeldung
 ///
-/// facets:
-/// - patterns
+
+
 /// - closure
-class ClosureExampleTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class ClosureExampleTest extends TestBase
 {
 
     static TextProvider getProvider(int value)
@@ -27,7 +28,7 @@ class ClosureExampleTest
     }
 
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         TextProvider provider = getProvider(15);
         assertEquals(15, provider.get());

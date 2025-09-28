@@ -2,11 +2,12 @@ package heap.a1ed;
 
 import org.junit.jupiter.api.Test;
 
-class PlusOperationBetweenClassesTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class PlusOperationBetweenClassesTest extends TestBase
 {
 
     @Test
-    void exercise_reverse_engineering_design_example()
+    void exercise_design_reverse_engineering_example()
     {
         //        System.out.println(new ClassOne() + new ClassTwo());
     }

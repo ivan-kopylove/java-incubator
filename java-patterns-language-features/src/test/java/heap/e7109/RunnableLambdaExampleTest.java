@@ -4,15 +4,14 @@ import org.junit.jupiter.api.Test;
 
 import java.util.function.Consumer;
 
-import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.EXERCISE;
 import static org.junit.jupiter.api.Assertions.fail;
 
-class RunnableLambdaExampleTest
+import com.github.ivan.kopylove.commons.testing.TestBase;
+class RunnableLambdaExampleTest extends TestBase
 {
 
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         Runnable r1 = new Runnable()
         {
@@ -32,10 +31,7 @@ class RunnableLambdaExampleTest
         r3.accept("something");
         r4.myMethod();
 
-        if (EDUCATION_MODE == EXERCISE)
-        {
-            fail("try to predict yourself before running the assertion");
-        }
+
 
         //                new Thread(r1);// is that compilable?
         //                new Thread(r2);// is that compilable?

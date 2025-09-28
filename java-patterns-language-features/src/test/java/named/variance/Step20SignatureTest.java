@@ -1,5 +1,6 @@
 package named.variance;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 class A
@@ -19,7 +20,8 @@ class B extends A
 }
 
 /// Answer the questions stated in [Fruit].
-class Step2SignatureTest
+
+class Step2SignatureTest extends TestBase
 {
 
     @Test

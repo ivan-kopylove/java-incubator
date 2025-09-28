@@ -8,7 +8,7 @@ import java.io.IOException;
 public class OutputStreamExercise40
 {
     @Test
-    void exercise_reverse_engineering_design() throws IOException
+    void exercise_design_reverse_engineering() throws IOException
     {
         //given
         byte[] chars = new byte[3];
