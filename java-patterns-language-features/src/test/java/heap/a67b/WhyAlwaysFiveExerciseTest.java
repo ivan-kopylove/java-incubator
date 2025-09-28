@@ -7,12 +7,12 @@ class WhyAlwaysFiveExerciseTest
     int i = 0;
 
     @Test
-    void recurred()
+    void exercise_reverse_engineering_design()
     {
         i++;
         if (i < 5)
         {
-            recurred();
+            exercise_reverse_engineering_design();
         }
         System.out.println(i);
     }
