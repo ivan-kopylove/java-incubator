@@ -11,6 +11,8 @@ public class WhatWillBePrinteddc5e
     void exercise_design_reverse_engineering_and_why()
     {
         // then
-        IntStream.range(1, 4).peek(System.out::println).anyMatch(i -> i > 1);
+        IntStream.range(1, 4)
+                 .peek(System.out::println)
+                 .anyMatch(i -> i > 1);
     }
 }
