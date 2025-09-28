@@ -7,7 +7,7 @@ class FixMissingSantiyCheckKoan
 
         int sum = 0;
 
-        for(int i = 0; i < nums.length; i++)
+        for (int i = 0; i < nums.length; i++)
         {
             sum += nums[i];
         }
@@ -17,26 +17,26 @@ class FixMissingSantiyCheckKoan
 
     private boolean dfs(int halfSum, int i, int[] nums, boolean take)
     {
-        if(halfSum == 0)
+        if (halfSum == 0)
         {
             return true;
         }
 
-        if(halfSum < 0 || i >= nums.length)
+        if (halfSum < 0 || i >= nums.length)
         {
             return false;
         }
 
         boolean result = false;
-        if(take)
+        if (take)
         {
             result = dfs(halfSum - nums[i], i + 1, nums, true);
-            if(result)
+            if (result)
             {
                 return true;
             }
             result = dfs(halfSum - nums[i], i + 1, nums, false);
-            if(result)
+            if (result)
             {
                 return true;
             }
@@ -44,12 +44,12 @@ class FixMissingSantiyCheckKoan
         else
         {
             result = dfs(halfSum, i + 1, nums, false);
-            if(result)
+            if (result)
             {
                 return true;
             }
             result = dfs(halfSum, i + 1, nums, true);
-            if(result)
+            if (result)
             {
                 return true;
             }
