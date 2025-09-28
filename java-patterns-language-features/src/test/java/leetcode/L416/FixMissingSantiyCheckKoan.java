@@ -2,13 +2,14 @@ package leetcode.L416;
 
 class FixMissingSantiyCheckKoan
 {
-    public boolean canPartition(int[] nums) {
+    public boolean canPartition(int[] nums)
+    {
 
         int sum = 0;
 
         for(int i = 0; i < nums.length; i++)
         {
-            sum+=nums[i];
+            sum += nums[i];
         }
 
         return dfs(sum / 2, 0, nums, true);
@@ -16,15 +17,13 @@ class FixMissingSantiyCheckKoan
 
     private boolean dfs(int halfSum, int i, int[] nums, boolean take)
     {
-
         if(halfSum == 0)
         {
             return true;
         }
-        
+
         if(halfSum < 0 || i >= nums.length)
         {
-            
             return false;
         }
 
@@ -57,6 +56,5 @@ class FixMissingSantiyCheckKoan
         }
 
         return false;
-
     }
 }
