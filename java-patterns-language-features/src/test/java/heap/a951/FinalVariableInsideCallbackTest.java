@@ -8,14 +8,13 @@ class FinalVariableInsideCallbackTest extends TestBase
     {
         //errors: cannot access a non-final variable inside an inner class defined in a different method
 
-        final String str = "";//why this have to be final?
+        final String str = ""; // what if there is no final?
         new One()
         {
-            //With anonymous classes, you are actually declaring a "nameless" nested class q
+            // With anonymous classes, you are actually declaring a "nameless" nested class
             @Override
             public void someMethod()
             {
-
                 System.out.println(str);
             }
         };
