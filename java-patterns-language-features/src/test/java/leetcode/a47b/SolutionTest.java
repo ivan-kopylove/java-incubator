@@ -1,5 +1,6 @@
 package leetcode.a47b;
 
+import heap.qweqweweqweq.TestBase;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
@@ -13,8 +14,10 @@ import java.io.PrintStream;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+import heap.qweqweweqweq.TestBase;
+
 @Disabled
-public class SolutionTest
+class SolutionTest extends TestBase
 {
     private static InputStream originalSystemIn;
 

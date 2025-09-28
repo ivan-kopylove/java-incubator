@@ -4,7 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class StringFormatTest
+import heap.qweqweweqweq.TestBase;
+class StringFormatTest extends TestBase
 {
     @Test
     void main()

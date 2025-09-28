@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// functional interface playground
-class ExampleTest
+import heap.qweqweweqweq.TestBase;
+class ExampleTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

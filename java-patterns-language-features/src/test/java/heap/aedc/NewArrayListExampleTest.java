@@ -7,7 +7,8 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertSame;
 
-class NewArrayListExampleTest
+import heap.qweqweweqweq.TestBase;
+class NewArrayListExampleTest extends TestBase
 {
 
     @Test

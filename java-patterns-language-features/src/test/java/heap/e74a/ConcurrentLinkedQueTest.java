@@ -9,7 +9,8 @@ import java.util.stream.IntStream;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-class ConcurrentLinkedQueTest
+import heap.qweqweweqweq.TestBase;
+class ConcurrentLinkedQueTest extends TestBase
 {
     @Test
     void what_is_the_purpose_of_this_example() throws InterruptedException

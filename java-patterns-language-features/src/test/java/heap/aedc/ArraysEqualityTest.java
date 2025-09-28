@@ -7,7 +7,9 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ArraysEqualityTest
+import heap.qweqweweqweq.TestBase;
+
+class ArraysEqualityTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

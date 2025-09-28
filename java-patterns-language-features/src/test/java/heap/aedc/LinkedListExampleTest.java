@@ -7,7 +7,8 @@ import java.util.LinkedList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class LinkedListExampleTest
+import heap.qweqweweqweq.TestBase;
+class LinkedListExampleTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

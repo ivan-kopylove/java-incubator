@@ -10,7 +10,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /// facets:
 /// - patterns
 /// - closure
-class ClosureExampleTest
+import heap.qweqweweqweq.TestBase;
+class ClosureExampleTest extends TestBase
 {
 
     static TextProvider getProvider(int value)

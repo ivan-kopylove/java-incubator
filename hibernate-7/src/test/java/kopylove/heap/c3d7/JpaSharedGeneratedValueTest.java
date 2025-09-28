@@ -6,7 +6,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class JpaSharedGeneratedValueTest extends EntityManagerManual
+import heap.qweqweweqweq.TestBase;
+class JpaSharedGeneratedValueTest extends TestBase extends EntityManagerManual
 {
     @Test
     void exercise_design_reverse_engineering()

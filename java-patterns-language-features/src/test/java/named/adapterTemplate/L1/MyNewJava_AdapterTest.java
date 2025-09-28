@@ -9,7 +9,8 @@ import org.junit.jupiter.api.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
-class MyNewJava_AdapterTest
+import heap.qweqweweqweq.TestBase;
+class MyNewJava_AdapterTest extends TestBase
 {
 
     @Test

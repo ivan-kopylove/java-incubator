@@ -10,7 +10,8 @@ import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
 import static heap.cb2d.EducationalStrengthness.EXERCISE;
 import static org.junit.jupiter.api.Assertions.fail;
 
-class VolatileTest
+import heap.qweqweweqweq.TestBase;
+class VolatileTest extends TestBase
 {
     private static volatile int counter1 = 0;
 
@@ -31,10 +32,7 @@ class VolatileTest
         }
 
         latch.await();
-        if (EDUCATION_MODE == EXERCISE)
-        {
-            fail("try to predict yourself before running the assertion");
-        }
+
 
         System.out.println(counter1);
     }

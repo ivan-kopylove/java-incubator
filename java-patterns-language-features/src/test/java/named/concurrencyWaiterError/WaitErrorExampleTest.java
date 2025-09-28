@@ -9,7 +9,8 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class WaitErrorExampleTest
+import heap.qweqweweqweq.TestBase;
+class WaitErrorExampleTest extends TestBase
 {
     @Nested
     class Problem

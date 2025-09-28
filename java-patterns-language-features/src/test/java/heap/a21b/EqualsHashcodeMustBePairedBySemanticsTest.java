@@ -9,7 +9,8 @@ import java.util.Set;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class EqualsHashcodeMustBePairedBySemanticsTest
+import heap.qweqweweqweq.TestBase;
+class EqualsHashcodeMustBePairedBySemanticsTest extends TestBase
 {
     private boolean equalsCalled   = false;
     private boolean hashcodeCalled = false;

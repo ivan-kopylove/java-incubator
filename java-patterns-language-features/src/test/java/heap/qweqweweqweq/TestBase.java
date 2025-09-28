@@ -1,20 +1,19 @@
-package heap.a976;
+package heap.qweqweweqweq;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 
 import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
 import static heap.cb2d.EducationalStrengthness.EXERCISE;
 import static org.junit.jupiter.api.Assertions.fail;
 
-import heap.qweqweweqweq.TestBase;
-class NullValueExamplesTest extends TestBase
+public class TestBase
 {
-    @Test
-    void exercise_design_reverse_engineering()
+    @BeforeEach
+    public void run()
     {
-
-
-        System.out.println(null == null);
+        if (EDUCATION_MODE == EXERCISE)
+        {
+            fail("try to predict yourself first");
+        }
     }
 }

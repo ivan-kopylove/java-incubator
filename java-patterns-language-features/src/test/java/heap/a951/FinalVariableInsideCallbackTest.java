@@ -1,7 +1,8 @@
 package heap.a951;
 
 /// finalVariableInsideCallback
-class FinalVariableInsideCallbackTest
+import heap.qweqweweqweq.TestBase;
+class FinalVariableInsideCallbackTest extends TestBase
 {
     public static void main(String[] args)
     {

@@ -17,7 +17,8 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 
-class CutAudiofileTest
+import heap.qweqweweqweq.TestBase;
+class CutAudiofileTest extends TestBase
 {
 
     @Test

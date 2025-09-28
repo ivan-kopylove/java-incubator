@@ -15,7 +15,8 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class JpaCompoundSelectionConstructionTest extends EntityManagerManual
+import heap.qweqweweqweq.TestBase;
+class JpaCompoundSelectionConstructionTest extends TestBase extends EntityManagerManual
 {
     @BeforeAll
     public static void populate()

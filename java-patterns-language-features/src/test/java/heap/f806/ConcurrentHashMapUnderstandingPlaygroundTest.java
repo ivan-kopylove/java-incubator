@@ -17,7 +17,8 @@ import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.lessThan;
 import static org.junit.jupiter.api.Assertions.fail;
 
-class ConcurrentHashMapUnderstandingPlaygroundTest
+import heap.qweqweweqweq.TestBase;
+class ConcurrentHashMapUnderstandingPlaygroundTest extends TestBase
 {
 
     @Test
@@ -36,10 +37,7 @@ class ConcurrentHashMapUnderstandingPlaygroundTest
         }
         Thread.sleep(15_000);
 
-        if (EDUCATION_MODE == EXERCISE)
-        {
-            fail("try to predict yourself before running the assertion");
-        }
+
         assertThat(collector.size(), equalTo(loops));
     }
 
@@ -59,10 +57,6 @@ class ConcurrentHashMapUnderstandingPlaygroundTest
         }
         Thread.sleep(15_000);
 
-        if (EDUCATION_MODE == EXERCISE)
-        {
-            fail("try to predict yourself before running the assertion");
-        }
         assertThat(collector.size(), greaterThan(loops / 10));
         assertThat(collector.size(), lessThan(loops));
     }

@@ -7,7 +7,8 @@ import java.util.concurrent.ExecutionException;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class CompletableFutureRunAsyncTest
+import heap.qweqweweqweq.TestBase;
+class CompletableFutureRunAsyncTest extends TestBase
 {
 
     @Test

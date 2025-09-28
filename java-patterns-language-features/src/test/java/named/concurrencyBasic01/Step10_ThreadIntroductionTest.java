@@ -2,7 +2,8 @@ package named.concurrencyBasic01;
 
 import org.junit.jupiter.api.Test;
 
-public class Step10_ThreadIntroductionTest
+import heap.qweqweweqweq.TestBase;
+class Step10_ThreadIntroductionTest extends TestBase
 {
 
     @Test

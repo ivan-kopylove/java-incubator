@@ -12,7 +12,8 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 
-class LoginQueueUsingSemaphoreTest
+import heap.qweqweweqweq.TestBase;
+class LoginQueueUsingSemaphoreTest extends TestBase
 {
 
     @Test

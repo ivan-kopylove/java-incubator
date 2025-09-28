@@ -10,7 +10,8 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class ArraysAsListFixedSizeExampleTest
+import heap.qweqweweqweq.TestBase;
+class ArraysAsListFixedSizeExampleTest extends TestBase
 {
     @Test
     void Arrays_asList_is_what()

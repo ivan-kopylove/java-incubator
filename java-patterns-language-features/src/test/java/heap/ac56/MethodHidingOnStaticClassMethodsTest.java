@@ -4,7 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class MethodHidingOnStaticClassMethodsTest
+import heap.qweqweweqweq.TestBase;
+class MethodHidingOnStaticClassMethodsTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

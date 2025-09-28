@@ -7,7 +7,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// Difference vs merge and persist
-class JpaMergeExampleTest extends EntityManagerManual
+import heap.qweqweweqweq.TestBase;
+class JpaMergeExampleTest extends TestBase extends EntityManagerManual
 {
     @Test
     void merge_set_new_name_original_object()

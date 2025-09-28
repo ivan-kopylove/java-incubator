@@ -7,7 +7,8 @@ import org.junit.jupiter.api.Test;
 /// - enthuware
 ///
 /// enthuware.ocpjp.i.v11.2.1255
-class BreakToLabel1255Test
+import heap.qweqweweqweq.TestBase;
+class BreakToLabel1255Test extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

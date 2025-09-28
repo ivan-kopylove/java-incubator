@@ -3,7 +3,8 @@ package heap.af51;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-class BoxingExampleTest
+import heap.qweqweweqweq.TestBase;
+class BoxingExampleTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

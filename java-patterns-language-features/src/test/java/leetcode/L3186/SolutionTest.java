@@ -14,7 +14,8 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 /// - [searchable problem definition](https://google.com/search?q=leetcode%203186)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+3186)
 /// - [obsidian](obsidian://search?query=leetcode%203186)
-class SolutionTest
+import heap.qweqweweqweq.TestBase;
+class SolutionTest extends TestBase
 {
 
     @ParameterizedTest

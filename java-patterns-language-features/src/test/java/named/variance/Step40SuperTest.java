@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /// Answer the questions stated in [Fruit].
-class Step40SuperTest
+import heap.qweqweweqweq.TestBase;
+class Step40SuperTest extends TestBase
 {
     @Test
     void test1()

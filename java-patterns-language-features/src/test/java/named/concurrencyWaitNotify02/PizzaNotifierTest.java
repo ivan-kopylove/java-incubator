@@ -7,7 +7,8 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
-class PizzaNotifierTest
+import heap.qweqweweqweq.TestBase;
+class PizzaNotifierTest extends TestBase
 {
     @Test
     @DisplayName("what is the purpose of this example?")

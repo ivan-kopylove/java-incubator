@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 /// facets:
 /// - patterns
 /// - listener
-class ListenerEntryPointTest
+import heap.qweqweweqweq.TestBase;
+class ListenerEntryPointTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

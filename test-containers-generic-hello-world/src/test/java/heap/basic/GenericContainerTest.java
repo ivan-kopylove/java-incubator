@@ -6,7 +6,8 @@ import org.testcontainers.containers.GenericContainer;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class GenericContainerTest
+import heap.qweqweweqweq.TestBase;
+class GenericContainerTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

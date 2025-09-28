@@ -2,7 +2,8 @@ package heap.a67b;
 
 import org.junit.jupiter.api.Test;
 
-class WhyAlwaysFiveExerciseTest
+import heap.qweqweweqweq.TestBase;
+class WhyAlwaysFiveExerciseTest extends TestBase
 {
     int i = 0;
 

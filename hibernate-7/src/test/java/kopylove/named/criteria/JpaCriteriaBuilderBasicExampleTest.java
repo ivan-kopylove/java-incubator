@@ -10,7 +10,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-class JpaCriteriaBuilderBasicExampleTest extends EntityManagerManual
+import heap.qweqweweqweq.TestBase;
+class JpaCriteriaBuilderBasicExampleTest extends TestBase extends EntityManagerManual
 {
     @Test
     void exercise_design_reverse_engineering()

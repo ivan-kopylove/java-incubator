@@ -3,7 +3,8 @@ package heap.a4cd;
 import org.junit.jupiter.api.Test;
 
 /// aka Operator p______
-class EvaluationOrderTest
+import heap.qweqweweqweq.TestBase;
+class EvaluationOrderTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering1()

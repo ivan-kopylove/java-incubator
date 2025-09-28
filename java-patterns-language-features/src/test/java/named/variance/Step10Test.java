@@ -3,7 +3,8 @@ package named.variance;
 import java.util.ArrayList;
 import java.util.List;
 
-class Step10Test
+import heap.qweqweweqweq.TestBase;
+class Step10Test extends TestBase
 {
     void foo()
     {

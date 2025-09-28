@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// java.mechanics.oop.hiding
-class ClassHidesVariableTest
+import heap.qweqweweqweq.TestBase;
+class ClassHidesVariableTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

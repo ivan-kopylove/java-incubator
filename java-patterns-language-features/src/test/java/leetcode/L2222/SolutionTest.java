@@ -10,7 +10,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 /// - [searchable problem definition](https://google.com/search?q=leetcode%202222)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+2222)
 /// - [obsidian](obsidian://search?query=leetcode%202222)
-class SolutionTest
+import heap.qweqweweqweq.TestBase;
+class SolutionTest extends TestBase
 {
     // @formatter:off
     @Disabled

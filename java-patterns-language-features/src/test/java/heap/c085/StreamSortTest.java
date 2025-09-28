@@ -9,7 +9,8 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
-class StreamSortTest
+import heap.qweqweweqweq.TestBase;
+class StreamSortTest extends TestBase
 {
     @DisplayName("what is the purpose of this example?")
     void what_is_the_purpose_of_this_example() throws InterruptedException

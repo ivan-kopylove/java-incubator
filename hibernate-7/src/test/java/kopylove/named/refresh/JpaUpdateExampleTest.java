@@ -9,7 +9,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// Example of EntityManager#refresh.
-class JpaUpdateExampleTest extends EntityManagerManual
+import heap.qweqweweqweq.TestBase;
+class JpaUpdateExampleTest extends TestBase extends EntityManagerManual
 {
     @BeforeAll
     public static void populate()

@@ -13,7 +13,8 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-class CheckIssueDateJavaTest
+import heap.qweqweweqweq.TestBase;
+class CheckIssueDateJavaTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

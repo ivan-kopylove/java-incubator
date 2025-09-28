@@ -4,7 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class UTF8Test
+import heap.qweqweweqweq.TestBase;
+class UTF8Test extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

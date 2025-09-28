@@ -9,7 +9,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// @Embedded annotation demonstration.
-class JpaEmbededAnnotationExampleTest extends EntityManagerManual
+import heap.qweqweweqweq.TestBase;
+class JpaEmbededAnnotationExampleTest extends TestBase extends EntityManagerManual
 {
     @BeforeAll
     public static void populate()

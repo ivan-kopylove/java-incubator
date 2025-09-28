@@ -2,7 +2,8 @@ package named.concurrencyWaitNotify01;
 
 import org.junit.jupiter.api.Test;
 
-class WaiterNotifierTest
+import heap.qweqweweqweq.TestBase;
+class WaiterNotifierTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering() throws InterruptedException

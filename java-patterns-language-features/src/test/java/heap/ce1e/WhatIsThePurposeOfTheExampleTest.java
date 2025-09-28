@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WhatIsThePurposeOfTheExampleTest
+import heap.qweqweweqweq.TestBase;
+class WhatIsThePurposeOfTheExampleTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering1()

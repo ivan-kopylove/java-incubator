@@ -7,7 +7,8 @@ import java.util.Date;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /// java.util.* playground
-class DateExamplesTest
+import heap.qweqweweqweq.TestBase;
+class DateExamplesTest extends TestBase
 {
     /// Date#before method exists in JCL.
     @Test

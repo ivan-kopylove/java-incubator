@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /// Answer the questions stated in [Fruit].
-class Step60QuestionMarkTest
+import heap.qweqweweqweq.TestBase;
+class Step60QuestionMarkTest extends TestBase
 {
     @Test
     void test1()

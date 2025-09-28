@@ -1,11 +1,12 @@
 package heap.afaa;
 
+import heap.qweqweweqweq.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-class StringsTests
+class StringsTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

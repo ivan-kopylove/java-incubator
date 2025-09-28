@@ -9,7 +9,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /// Facets:
 ///
 /// - concurrency
-class ExecutorInterfaceExampleTest
+import heap.qweqweweqweq.TestBase;
+class ExecutorInterfaceExampleTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

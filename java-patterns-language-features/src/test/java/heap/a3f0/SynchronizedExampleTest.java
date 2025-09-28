@@ -11,7 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
-class SynchronizedExampleTest
+import heap.qweqweweqweq.TestBase;
+class SynchronizedExampleTest extends TestBase
 {
     @Test
     void threadDangerousRun() throws InterruptedException

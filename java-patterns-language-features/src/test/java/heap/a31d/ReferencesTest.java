@@ -12,7 +12,8 @@ import java.util.LinkedList;
 /// - java-mechanism
 ///
 /// SoftReference > Weak Reference > PhantomReference
-class ReferencesTest
+import heap.qweqweweqweq.TestBase;
+class ReferencesTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

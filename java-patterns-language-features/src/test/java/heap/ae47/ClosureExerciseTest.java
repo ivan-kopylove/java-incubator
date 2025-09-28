@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ClosureExerciseTest
+import heap.qweqweweqweq.TestBase;
+class ClosureExerciseTest extends TestBase
 {
 
     static TextProvider getProvider(int value)

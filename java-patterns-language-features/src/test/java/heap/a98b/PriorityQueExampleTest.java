@@ -8,7 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// java.util.* playground
 /// Priority map keeps structure sorted according natural ordering
-class PriorityQueExampleTest
+import heap.qweqweweqweq.TestBase;
+class PriorityQueExampleTest extends TestBase
 {
 
     @Test

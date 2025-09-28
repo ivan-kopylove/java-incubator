@@ -8,7 +8,8 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class OrderOfOperationsMattersTest
+import heap.qweqweweqweq.TestBase;
+class OrderOfOperationsMattersTest extends TestBase
 {
 
     public static void orderOfOperationsMatters()

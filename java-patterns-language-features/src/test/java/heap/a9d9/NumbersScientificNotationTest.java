@@ -4,7 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class NumbersScientificNotationTest
+import heap.qweqweweqweq.TestBase;
+class NumbersScientificNotationTest extends TestBase
 {
 
     @Test

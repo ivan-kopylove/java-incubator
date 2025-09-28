@@ -7,7 +7,8 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class CollectionsEmptyListTest
+import heap.qweqweweqweq.TestBase;
+class CollectionsEmptyListTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

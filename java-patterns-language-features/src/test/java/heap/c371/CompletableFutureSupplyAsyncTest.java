@@ -12,7 +12,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.fail;
 
-class CompletableFutureSupplyAsyncTest
+import heap.qweqweweqweq.TestBase;
+class CompletableFutureSupplyAsyncTest extends TestBase
 {
 
     @Test
@@ -38,10 +39,6 @@ class CompletableFutureSupplyAsyncTest
     {
         CompletableFuture<String> stringCompletableFuture = CompletableFuture.supplyAsync(() -> "world");
 
-         if (EDUCATION_MODE == EXERCISE)
-        {
-            fail("try to predict yourself before running the assertion");
-        }
         assertThat(stringCompletableFuture.get(), equalTo("world"));
     }
 }

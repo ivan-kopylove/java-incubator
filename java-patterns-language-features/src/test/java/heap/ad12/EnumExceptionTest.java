@@ -6,7 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 ///
-class EnumExceptionTest
+import heap.qweqweweqweq.TestBase;
+class EnumExceptionTest extends TestBase
 {
     @Test
     void exceptionNonExistingEnumValue()

@@ -2,7 +2,8 @@ package heap.ac31;
 
 import org.junit.jupiter.api.Test;
 
-class StaticBlockNestedClassTest
+import heap.qweqweweqweq.TestBase;
+class StaticBlockNestedClassTest extends TestBase
 {
 
     @Test

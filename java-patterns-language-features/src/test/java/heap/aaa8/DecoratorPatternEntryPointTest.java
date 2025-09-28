@@ -8,7 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /// facets:
 /// - patterns
 /// - decorator
-class DecoratorPatternEntryPointTest
+import heap.qweqweweqweq.TestBase;
+class DecoratorPatternEntryPointTest extends TestBase
 {
     @Test
     void main()

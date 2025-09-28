@@ -4,7 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ImplicitNarrowingTest
+import heap.qweqweweqweq.TestBase;
+class ImplicitNarrowingTest extends TestBase
 {
 
     @Test

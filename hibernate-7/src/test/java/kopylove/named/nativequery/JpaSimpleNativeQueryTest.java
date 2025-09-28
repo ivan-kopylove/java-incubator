@@ -10,7 +10,8 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 /// Minimal JPA example - save and load saved entity.
-class JpaSimpleNativeQueryTest extends EntityManagerManual
+import heap.qweqweweqweq.TestBase;
+class JpaSimpleNativeQueryTest extends TestBase extends EntityManagerManual
 {
     @BeforeEach
     public void populate()

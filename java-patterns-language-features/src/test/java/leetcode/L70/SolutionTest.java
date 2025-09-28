@@ -14,17 +14,14 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 /// - [searchable problem definition](https://google.com/search?q=leetcode%2070)
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+70)
-class SolutionTest
+import heap.qweqweweqweq.TestBase;
+class SolutionTest extends TestBase
 {
 
     @ParameterizedTest
     @MethodSource("dataSet")
     void run_tests(int n, int expected)
     {
-        if (EDUCATION_MODE == EXAMPLE)
-        {
-            return;
-        }
 
         // given
         Exercise sut = new Exercise();

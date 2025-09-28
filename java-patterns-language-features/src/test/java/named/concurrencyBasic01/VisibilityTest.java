@@ -1,5 +1,6 @@
 package named.concurrencyBasic01;
 
+import heap.qweqweweqweq.TestBase;
 import org.junit.jupiter.api.Test;
 
 import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
@@ -23,20 +24,13 @@ class VisibilityExample
     }
 }
 
-public class VisibilityTest
+
+class VisibilityTest extends TestBase
 {
 
     @Test
     void fix_me() throws InterruptedException
     {
-        if (EDUCATION_MODE == EXERCISE)
-        {
-            fail("try to fix me");
-        }
-        else
-        {
-            return;
-        }
 
         VisibilityExample example = new VisibilityExample();
 

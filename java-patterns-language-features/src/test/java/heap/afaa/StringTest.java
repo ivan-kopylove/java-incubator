@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class StringTest
+import heap.qweqweweqweq.TestBase;
+class StringTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

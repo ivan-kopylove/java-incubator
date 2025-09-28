@@ -9,7 +9,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
-class ExecutorServiceExampleTest
+import heap.qweqweweqweq.TestBase;
+class ExecutorServiceExampleTest extends TestBase
 {
 
     @Test

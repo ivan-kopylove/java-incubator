@@ -7,7 +7,8 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ArrayListToStringTest
+import heap.qweqweweqweq.TestBase;
+class ArrayListToStringTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()

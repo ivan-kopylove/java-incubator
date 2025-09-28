@@ -6,7 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotSame;
 import static org.junit.jupiter.api.Assertions.assertSame;
 
-class BooleanComparisonTest
+import heap.qweqweweqweq.TestBase;
+class BooleanComparisonTest extends TestBase
 {
     @Test
     void booleanTest()

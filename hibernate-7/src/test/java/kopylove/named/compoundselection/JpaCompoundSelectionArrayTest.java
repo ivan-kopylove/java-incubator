@@ -13,7 +13,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-class JpaCompoundSelectionArrayTest extends EntityManagerManual
+import heap.qweqweweqweq.TestBase;
+class JpaCompoundSelectionArrayTest extends TestBase extends EntityManagerManual
 {
     @BeforeAll
     public static void populate()

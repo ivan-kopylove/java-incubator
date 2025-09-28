@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 import static heap.ac2d.PrivateConstructorClass.privateConstructorClass;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class WhenPrivateConstructorRunsTest
+import heap.qweqweweqweq.TestBase;
+class WhenPrivateConstructorRunsTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering_me_in_debug_mode()

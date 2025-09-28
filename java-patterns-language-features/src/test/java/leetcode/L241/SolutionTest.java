@@ -15,7 +15,8 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 /// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+241)
 /// - [obsidian](obsidian://search?query=leetcode%20241)
 
-class SolutionTest
+import heap.qweqweweqweq.TestBase;
+class SolutionTest extends TestBase
 {
     private static List<Arguments> dataSet()
     {

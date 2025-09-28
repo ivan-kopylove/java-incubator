@@ -10,7 +10,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-class SolutionTest
+import heap.qweqweweqweq.TestBase;
+class SolutionTest extends TestBase
 {
     @ParameterizedTest
     @MethodSource("dataSet")

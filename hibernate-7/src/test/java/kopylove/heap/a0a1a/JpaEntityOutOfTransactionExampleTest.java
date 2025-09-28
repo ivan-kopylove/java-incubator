@@ -13,7 +13,8 @@
 //import static org.junit.jupiter.api.Assertions.assertEquals;
 //import static org.junit.jupiter.api.Assertions.assertThrows;
 //
-//class JpaEntityOutOfTransactionExampleTest
+//import heap.qweqweweqweq.TestBase;
+class JpaEntityOutOfTransactionExampleTest extends TestBase
 //{
 //    private static int pageId;
 //

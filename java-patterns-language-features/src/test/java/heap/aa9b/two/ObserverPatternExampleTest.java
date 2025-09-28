@@ -6,7 +6,8 @@ import org.junit.jupiter.api.Test;
 /// facets:
 /// - listener
 /// - patterns
-class ObserverPatternExampleTest
+import heap.qweqweweqweq.TestBase;
+class ObserverPatternExampleTest extends TestBase
 {
     @Test
     void exercise_design_reverse_engineering()
