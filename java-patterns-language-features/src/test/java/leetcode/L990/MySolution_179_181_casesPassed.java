@@ -8,9 +8,6 @@ import java.util.Set;
 
 /// 179 / 181 testcases passed
 ///
-/// - [searchable problem definition](https://google.com/search?q=leetcode%20990)
-/// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+990)
-/// - [obsidian](obsidian://search?query=leetcode%20990)
 class MySolution_179_181_casesPassed
 {
     private static void enrichTransitive(Map<Character, Set<Character>> eq, char left, char right)

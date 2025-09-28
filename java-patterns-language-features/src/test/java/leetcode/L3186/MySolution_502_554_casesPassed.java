@@ -5,9 +5,6 @@ import java.util.List;
 
 /// [502 / 554 testcases passed](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/submissions/1756893038/?envType=problem-list-v2&envId=dynamic-programming)
 ///
-/// - [searchable problem definition](https://google.com/search?q=leetcode%203186)
-/// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+3186)
-/// - [obsidian](obsidian://search?query=leetcode%203186)
 class MySolution_502_554_casesPassed
 {
     public long maximumTotalDamage(int[] power)

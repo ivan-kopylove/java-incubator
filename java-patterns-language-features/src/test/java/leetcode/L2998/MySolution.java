@@ -2,9 +2,6 @@ package leetcode.L2998;
 
 import java.util.Arrays;
 
-/// - [searchable problem definition](https://google.com/search?q=leetcode%202998)
-/// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+2998)
-/// - [obsidian](obsidian://search?query=leetcode%202998)
 class MySolution
 {
     public int minimumOperationsToMakeEqual(int x, int y)

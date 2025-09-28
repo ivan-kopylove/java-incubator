@@ -3,9 +3,6 @@ package leetcode.ef29;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-/// - [searchable problem definition](https://google.com/search?q=yandex+contest+B.+Последовательно+идущие+единицы)
-/// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+Последовательно+идущие+единицы)
-/// - [obsidian](obsidian://search?query=Последовательно идущие единицы)
 public class WooHoo
 {
     public static void main(String[] args) throws Exception

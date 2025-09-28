@@ -13,8 +13,6 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.api.Assertions.fail;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-/// - [searchable problem definition](https://google.com/search?q=leetcode%2070)
-/// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+70)
 import heap.qweqweweqweq.TestBase;
 class SolutionTest extends TestBase
 {

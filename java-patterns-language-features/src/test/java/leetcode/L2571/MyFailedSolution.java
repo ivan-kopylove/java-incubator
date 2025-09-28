@@ -1,8 +1,5 @@
 package leetcode.L2571;
 
-/// - [searchable problem definition](https://google.com/search?q=leetcode%202571)
-/// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+2571)
-/// - [obsidian](obsidian://search?query=leetcode%202571)
 class MyFailedSolution
 {
     public int minOperations(int n)

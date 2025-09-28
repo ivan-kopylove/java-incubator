@@ -1,8 +1,6 @@
 package leetcode.L2222;
 
-/// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+2222)
 /// - [my submission](https://leetcode.com/problems/number-of-ways-to-select-buildings/submissions/1755549166/)
-/// - [obsidian](obsidian://search?query=leetcode%202222)
 class SolutionStackoverflow
 {
     public long numberOfWays(String s)

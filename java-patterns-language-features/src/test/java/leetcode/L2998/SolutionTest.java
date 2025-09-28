@@ -6,9 +6,6 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-/// - [searchable problem definition](https://google.com/search?q=leetcode%202998)
-/// - [github](https://github.com/search?q=user%3Aivan-kopylove+leetcode+2998)
-/// - [obsidian](obsidian://search?query=leetcode%202998)
 import heap.qweqweweqweq.TestBase;
 class SolutionTest extends TestBase
 {
