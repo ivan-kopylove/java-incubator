@@ -5,6 +5,7 @@
     <artifactId>hibernate-7</artifactId>
 
 
+
     <parent>
         <groupId>com.github.ivan.kopylove</groupId>
         <artifactId>java-incubator</artifactId>
@@ -21,7 +22,7 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>2.3.232</version>
+            <version>${h2.version}</version>
             <scope>test</scope>
         </dependency>
 
