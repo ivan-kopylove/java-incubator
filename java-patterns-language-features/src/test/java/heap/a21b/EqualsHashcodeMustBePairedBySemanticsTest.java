@@ -9,7 +9,7 @@ import java.util.Set;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class EqualsHashcodeMustBePairedBySemanticsTest extends TestBase
 {
     private boolean equalsCalled   = false;

@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class LinkedListExampleTest extends TestBase
 {
     @Test

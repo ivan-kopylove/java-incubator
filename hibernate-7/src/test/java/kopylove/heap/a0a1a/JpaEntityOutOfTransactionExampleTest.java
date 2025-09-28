@@ -14,7 +14,7 @@
 //import static org.junit.jupiter.api.Assertions.assertThrows;
 //
 //
-class JpaEntityOutOfTransactionExampleTest 
+//class JpaEntityOutOfTransactionExampleTest
 //{
 //    private static int pageId;
 //

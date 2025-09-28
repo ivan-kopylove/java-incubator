@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class IntermediateNullTest extends TestBase
 {
 

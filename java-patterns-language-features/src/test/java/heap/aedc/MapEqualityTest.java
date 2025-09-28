@@ -7,12 +7,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.EXERCISE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 
 class MapEqualityTest extends TestBase
 {

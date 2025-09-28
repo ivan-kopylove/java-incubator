@@ -12,7 +12,7 @@ import java.util.LinkedList;
 /// - java-mechanism
 ///
 /// SoftReference > Weak Reference > PhantomReference
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class ReferencesTest extends TestBase
 {
     @Test

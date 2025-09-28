@@ -4,11 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import java.util.function.Consumer;
 
-import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.EXERCISE;
 import static org.junit.jupiter.api.Assertions.fail;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class RunnableLambdaExampleTest extends TestBase
 {
 

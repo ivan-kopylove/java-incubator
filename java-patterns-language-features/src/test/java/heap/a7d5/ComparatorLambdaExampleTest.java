@@ -8,7 +8,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /// lambdas playground
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class ComparatorLambdaExampleTest extends TestBase
 {
     @Test

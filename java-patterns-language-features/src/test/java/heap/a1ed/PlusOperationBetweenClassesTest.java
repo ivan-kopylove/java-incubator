@@ -2,7 +2,7 @@ package heap.a1ed;
 
 import org.junit.jupiter.api.Test;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class PlusOperationBetweenClassesTest extends TestBase
 {
 

@@ -2,7 +2,7 @@ package named.concurrencyWaitNotify03;
 
 import org.junit.jupiter.api.Test;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class BasicNotificationTest extends TestBase
 {
     static Object lock = new Object();

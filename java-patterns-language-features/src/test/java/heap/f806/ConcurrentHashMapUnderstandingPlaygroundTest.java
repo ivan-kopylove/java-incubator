@@ -7,8 +7,6 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 
-import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.EXERCISE;
 import static java.util.UUID.randomUUID;
 import static java.util.concurrent.Executors.newFixedThreadPool;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -17,7 +15,7 @@ import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.lessThan;
 import static org.junit.jupiter.api.Assertions.fail;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class ConcurrentHashMapUnderstandingPlaygroundTest extends TestBase
 {
 

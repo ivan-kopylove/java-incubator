@@ -9,7 +9,7 @@ import static java.util.concurrent.Executors.newFixedThreadPool;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 
 class ConcurrentLinkedDequeTest extends TestBase
 {

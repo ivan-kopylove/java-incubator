@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class ConcurrentLinkedQueTest extends TestBase
 {
     @Test

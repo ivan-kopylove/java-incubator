@@ -27,6 +27,7 @@
     </build>
 
     <modules>
+        <module>leetcode</module>
         <module>commons</module>
         <module>spring-hello-world-manual-bean-config</module>
         <module>spring-hello-world-bean-scan</module>
@@ -46,6 +47,8 @@
 
 
     <dependencies>
+
+
         <dependency>
             <groupId>org.reflections</groupId>
             <artifactId>reflections</artifactId>

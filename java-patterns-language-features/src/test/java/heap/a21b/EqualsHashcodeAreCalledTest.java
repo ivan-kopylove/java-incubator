@@ -1,11 +1,11 @@
 package heap.a21b;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import heap.qweqweweqweq.TestBase;
 class EqualsHashcodeAreCalledTest extends TestBase
 {
     private boolean equalsCalled   = false;

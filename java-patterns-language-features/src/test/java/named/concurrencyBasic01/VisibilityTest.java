@@ -1,10 +1,8 @@
 package named.concurrencyBasic01;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
-import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.EXERCISE;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;

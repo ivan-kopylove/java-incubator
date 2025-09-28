@@ -3,7 +3,7 @@ package heap.a4cd;
 import org.junit.jupiter.api.Test;
 
 /// aka Operator p______
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class EvaluationOrderTest extends TestBase
 {
     @Test

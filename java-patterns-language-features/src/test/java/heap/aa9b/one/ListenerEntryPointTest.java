@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 
 /// - listener
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class ListenerEntryPointTest extends TestBase
 {
     @Test

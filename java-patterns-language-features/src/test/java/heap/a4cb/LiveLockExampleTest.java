@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class LiveLockExampleTest extends TestBase
 {
     private final Lock lock1 = new ReentrantLock(true);

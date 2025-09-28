@@ -3,7 +3,7 @@ package heap.af51;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class BoxingExampleTest extends TestBase
 {
     @Test

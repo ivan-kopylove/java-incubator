@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 
 import static org.junit.jupiter.api.Assertions.fail;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class SerializableTest extends TestBase
 {
     public static int sizeof(Object obj) throws IOException

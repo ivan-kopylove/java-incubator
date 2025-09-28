@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 ///
 /// - [Big O typical growth rates](https://i.imgur.com/Uf622Ip.png)
 /// - [red-black tree](https://i.imgur.com/uyqWi6O.png)
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class TreeMapExampleTest extends TestBase
 {
     @Test

@@ -1,6 +1,6 @@
 package named.variance;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 class A

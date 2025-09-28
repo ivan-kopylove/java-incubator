@@ -2,7 +2,7 @@ package heap.ad1f;
 
 import org.junit.jupiter.api.Test;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class StaticBlockNestedClassTest extends TestBase
 {
 

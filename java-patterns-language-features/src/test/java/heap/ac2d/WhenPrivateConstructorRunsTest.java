@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static heap.ac2d.PrivateConstructorClass.privateConstructorClass;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class WhenPrivateConstructorRunsTest extends TestBase
 {
     @Test

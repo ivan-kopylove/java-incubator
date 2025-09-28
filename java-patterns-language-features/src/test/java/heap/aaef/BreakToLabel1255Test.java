@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 /// - enthuware
 ///
 /// enthuware.ocpjp.i.v11.2.1255
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class BreakToLabel1255Test extends TestBase
 {
     @Test

@@ -6,11 +6,9 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.EXERCISE;
 import static org.junit.jupiter.api.Assertions.fail;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class VolatileTest extends TestBase
 {
     private static volatile int counter1 = 0;

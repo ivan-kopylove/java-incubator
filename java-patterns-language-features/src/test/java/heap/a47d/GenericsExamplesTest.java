@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// Various examples of generic methods.
 /// Generics added to the Java programming language in 2004 within version J2SE 5.0.
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class GenericsExamplesTest extends TestBase
 {
     /// a generic method.

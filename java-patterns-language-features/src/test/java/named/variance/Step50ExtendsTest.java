@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /// Answer the questions stated in [Fruit].
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 class Step50ExtendsTest extends TestBase
 {
     @Test

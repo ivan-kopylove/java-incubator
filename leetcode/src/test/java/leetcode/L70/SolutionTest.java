@@ -1,19 +1,17 @@
 package leetcode.L70;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.List;
-
-import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
-import static heap.cb2d.EducationalStrengthness.EXAMPLE;
+import static com.github.ivan.kopylove.commons.testing.EducationalStrengthness.EDUCATION_MODE;
+import static com.github.ivan.kopylove.commons.testing.EducationalStrengthness.FAMILIARIZE;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
-import static org.junit.jupiter.api.Assertions.fail;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-import heap.qweqweweqweq.TestBase;
 class SolutionTest extends TestBase
 {
 
@@ -21,7 +19,7 @@ class SolutionTest extends TestBase
     @MethodSource("dataSet")
     void run_tests(int n, int expected)
     {
-        if (EDUCATION_MODE == EXAMPLE)
+        if (EDUCATION_MODE == FAMILIARIZE)
         {
             return;
         }

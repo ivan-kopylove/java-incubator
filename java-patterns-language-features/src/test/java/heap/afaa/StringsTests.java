@@ -1,6 +1,6 @@
 package heap.afaa;
 
-import heap.qweqweweqweq.TestBase;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.stream.Collectors;
