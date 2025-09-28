@@ -27,8 +27,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 //
 // what does this annotation do instead of me?
 @Testcontainers
-import heap.qweqweweqweq.TestBase;
-class PostgreSQLContainerTest extends TestBase
+class PostgreSQLContainerTest
 {
     // how to find the code related to handling this annotation?
     // what does this annotation does instead of me?
