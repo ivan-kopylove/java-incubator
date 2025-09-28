@@ -11,22 +11,26 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import heap.qweqweweqweq.TestBase;
 class OrderOfOperationsMattersTest extends TestBase
 {
-
-    public static void orderOfOperationsMatters()
+    @Test
+    public  void exercise_design_reverse_engineering1()
     {
-        List<String> result1 = Stream.of("1", "22", "333").map(s -> s + "-postfix").filter(s -> s.length() > 1).collect(
-                Collectors.toList());
+        List<String> result1 = Stream.of("1", "22", "333")
+                                     .map(s -> s + "-postfix")
+                                     .filter(s -> s.length() > 1)
+                                     .collect(Collectors.toList());
 
-        List<String> result2 = Stream.of("1", "22", "333").filter(s -> s.length() > 1).map(s -> s + "-postfix").collect(
-                Collectors.toList());
 
         assertEquals(3, result1.size());
-        assertEquals(2, result2.size());
     }
 
     @Test
-    void main()
+    public  void exercise_design_reverse_engineering2()
     {
-        orderOfOperationsMatters();
+        List<String> result2 = Stream.of("1", "22", "333")
+                                     .filter(s -> s.length() > 1)
+                                     .map(s -> s + "-postfix")
+                                     .collect(Collectors.toList());
+
+        assertEquals(2, result2.size());
     }
 }
