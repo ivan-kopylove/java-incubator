@@ -21,11 +21,11 @@ import static java.util.UUID.randomUUID;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-// any annotation is a what for what?
-//
-// how to find the code related to handling this annotation?
-//
-// what does this annotation do instead of me?
+/// any annotation is a what for what?
+///
+/// how to find the code related to handling this annotation?
+///
+/// what does this annotation do instead of me?
 @Testcontainers
 class PostgreSQLContainerTest
 {
