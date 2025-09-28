@@ -9,10 +9,10 @@ import heap.qweqweweqweq.TestBase;
 class ExampleTest extends TestBase
 {
     @Test
-    void exercise_design_reverse_engineering()
+    void exercise_design_reverse_engineering03()
     {
         LambdaInterface lambdaInterface = (str, num) -> {
-            System.out.println("Lambda function");
+            System.out.println("Lambda function 03");
             return 2L;
         };
 
@@ -23,7 +23,7 @@ class ExampleTest extends TestBase
     void exercise_design_reverse_engineering01()
     {
         LambdaInterface lambdaInterface = (str, num) -> {
-            System.out.println("Lambda function");
+            System.out.println("Lambda function 01");
             return 2L;
         };
 
