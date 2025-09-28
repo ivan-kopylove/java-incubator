@@ -2,9 +2,6 @@ package heap.a67b;
 
 import org.junit.jupiter.api.Test;
 
-/// facets:
-/// - koan
-/// - exercise
 class WhyAlwaysFiveExerciseTest
 {
     int i = 0;
