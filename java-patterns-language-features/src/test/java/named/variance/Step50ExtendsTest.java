@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /// Answer the questions stated in [Fruit].
-class Step5ExtendsTest
+class Step50ExtendsTest
 {
     @Test
     void test1()

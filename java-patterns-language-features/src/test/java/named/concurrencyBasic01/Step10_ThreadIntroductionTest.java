@@ -2,7 +2,7 @@ package named.concurrencyBasic01;
 
 import org.junit.jupiter.api.Test;
 
-public class Step1_ThreadIntroductionTest
+public class Step10_ThreadIntroductionTest
 {
 
     @Test
