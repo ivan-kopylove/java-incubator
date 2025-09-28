@@ -11,7 +11,7 @@ class EqualsHashcodeAreCalledTest
     private boolean hashcodeCalled = false;
 
     @Test
-    void exercise_reverse_engineering_design2()
+    void exercise_design_reverse_engineering2()
     {
         MyClass myClass1 = new MyClass();
         MyClass myClass2 = new MyClass();

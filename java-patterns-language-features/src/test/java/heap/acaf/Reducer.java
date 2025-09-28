@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class Reducer
 {
     @Test
-    void exercise_reverse_engineering_design1()
+    void exercise_design_reverse_engineering1()
     {
         Optional<Integer> reduced = Stream.of(1, 2, 3).reduce(new BinaryOperator<Integer>()
         {

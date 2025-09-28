@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class ListenerEntryPointTest
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
 
         MyLongRunningTask myLongRunningTask = new MyLongRunningTask(new OnCompleteListener()

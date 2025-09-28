@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 public class dasdas
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         // given
         IntStream chars = "abc".chars(); // why .chars() returns IntStream? what's the difference between IntStream and Stream<?>?

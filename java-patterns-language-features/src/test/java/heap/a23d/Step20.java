@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 class Step20
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         Foo a = new Bar();
     }

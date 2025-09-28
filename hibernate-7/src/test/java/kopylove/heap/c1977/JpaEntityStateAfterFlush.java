@@ -27,7 +27,7 @@ class JpaEntityStateAfterFlush extends EntityManagerManual
     }
 
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         do_flush();
         read_again();

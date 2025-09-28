@@ -9,7 +9,7 @@ import java.io.IOException;
 public class OutputStreamExercise20
 {
     @Test
-    void exercise_reverse_engineering_design_1() throws IOException
+    void exercise_design_reverse_engineering_1() throws IOException
     {
         byte[] chars = new byte[3];
 
@@ -22,7 +22,7 @@ public class OutputStreamExercise20
     }
 
     @Test
-    void exercise_reverse_engineering_design_2() throws IOException
+    void exercise_design_reverse_engineering_2() throws IOException
     {
         byte[] chars = new byte[3];
         BufferedOutputStream output = new BufferedOutputStream(System.out, chars.length - 1); // why minus one?

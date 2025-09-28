@@ -35,7 +35,7 @@ public class PostgreSQLContainerTest
     private KafkaContainer kafka = new KafkaContainer("apache/kafka-native:3.8.0");
 
     @Test
-    void exercise_reverse_engineering_design() throws SQLException
+    void exercise_design_reverse_engineering() throws SQLException
     {
         String topicName = "hello-world-topic" + randomUUID();
         String messageKey = "my-key" + randomUUID();

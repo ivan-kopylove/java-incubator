@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class JpaBasicExampleTest extends EntityManagerManual
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();

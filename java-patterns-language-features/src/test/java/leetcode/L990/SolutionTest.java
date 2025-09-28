@@ -32,7 +32,7 @@ class SolutionTest
 
     @ParameterizedTest
     @MethodSource("dataSet")
-    void exercise_reverse_engineering_design(String[] s, boolean expected)
+    void exercise_design_reverse_engineering(String[] s, boolean expected)
     {
         // given
         MySolution_181_181_casesPassed sut = new MySolution_181_181_casesPassed();

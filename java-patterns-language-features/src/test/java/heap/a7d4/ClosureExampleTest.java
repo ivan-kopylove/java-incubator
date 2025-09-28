@@ -27,7 +27,7 @@ class ClosureExampleTest
     }
 
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         TextProvider provider = getProvider(15);
         assertEquals(15, provider.get());

@@ -11,7 +11,7 @@ import java.util.Set;
 class JpaBasicPersistChildExample
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
 
 

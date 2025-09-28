@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 class NullValueExamplesTest
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         if (EDUCATION_MODE == EXERCISE)
         {

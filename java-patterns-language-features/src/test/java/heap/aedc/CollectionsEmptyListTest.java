@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class CollectionsEmptyListTest
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         assertThrows(UnsupportedOperationException.class, () -> {
             List<Object> objects = Collections.emptyList();

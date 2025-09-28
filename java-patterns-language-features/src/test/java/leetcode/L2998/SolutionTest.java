@@ -35,7 +35,7 @@ class SolutionTest
                  "10000,1,8",
     })
     // @formatter:on
-    void exercise_reverse_engineering_design(int x, int y, int expected)
+    void exercise_design_reverse_engineering(int x, int y, int expected)
     {
         // given
         MySolution sut = new MySolution();

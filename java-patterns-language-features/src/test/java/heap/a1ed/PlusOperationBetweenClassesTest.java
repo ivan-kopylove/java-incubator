@@ -6,7 +6,7 @@ class PlusOperationBetweenClassesTest
 {
 
     @Test
-    void exercise_reverse_engineering_design_example()
+    void exercise_design_reverse_engineering_example()
     {
         //        System.out.println(new ClassOne() + new ClassTwo());
     }

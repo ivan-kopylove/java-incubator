@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class StringPoolTest
 {
     @Test
-    void exercise_reverse_engineering_designExample()
+    void exercise_design_reverse_engineeringExample()
     {
         // given
         String a = "Duke"; // all compile-time constant goes to a what place?
@@ -53,7 +53,7 @@ class StringPoolTest
     }
 
     @Test
-    void exercise_reverse_engineering_designtime_calculated_values_are_not_in_the_string_pool()
+    void exercise_design_reverse_engineeringtime_calculated_values_are_not_in_the_string_pool()
     {
         // given
         String a = "John";

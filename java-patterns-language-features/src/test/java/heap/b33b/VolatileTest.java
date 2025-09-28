@@ -15,7 +15,7 @@ class VolatileTest
     private static volatile int counter1 = 0;
 
     @Test
-    void exercise_reverse_engineering_design() throws InterruptedException
+    void exercise_design_reverse_engineering() throws InterruptedException
     {
         int tasksCount = 100_000;
         CountDownLatch latch = new CountDownLatch(tasksCount);

@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 class StringsTests
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
 
         Stream.of(new MyObj("a"), new MyObj("b")).peek(o -> {

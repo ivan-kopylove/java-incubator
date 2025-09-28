@@ -11,7 +11,7 @@ class NewArrayListExampleTest
 {
 
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         List<MyObj> list1 = new ArrayList<>();
         list1.add(new MyObj());

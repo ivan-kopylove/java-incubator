@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 class ObserverPatternExampleTest
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         Initiater initiater = new Initiater();
         Responder responder = new Responder();

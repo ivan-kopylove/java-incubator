@@ -25,7 +25,7 @@ class JpaUpdateExampleTest extends EntityManagerManual
     }
 
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         EntityManager entityManger = super.getEntityManager();
         ParentEntity12 parentEntity = entityManger.find(ParentEntity12.class, 101);

@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class AdapterPatternExampleRunner
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         Indicator celsius = new CelsiusScaleThermometer();
         IndicatorAdapter indicatorAdapter = new IndicatorAdapterImpl(celsius);

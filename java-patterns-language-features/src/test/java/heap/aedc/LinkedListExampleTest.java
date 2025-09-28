@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class LinkedListExampleTest
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         LinkedList<String> linkedList = new LinkedList<>();
         linkedList.add("b");
@@ -25,7 +25,7 @@ class LinkedListExampleTest
     }
 
     @Test
-    void exercise_reverse_engineering_design2()
+    void exercise_design_reverse_engineering2()
     {
         LinkedList<String> linkedList = new LinkedList<>();
 
@@ -45,7 +45,7 @@ class LinkedListExampleTest
     }
 
     @Test
-    void exercise_reverse_engineering_design3()
+    void exercise_design_reverse_engineering3()
     {
         LinkedList<String> linkedList = new LinkedList<>();
         linkedList.add("a");
@@ -65,7 +65,7 @@ class LinkedListExampleTest
     }
 
     @Test
-    void exercise_reverse_engineering_design4()
+    void exercise_design_reverse_engineering4()
     {
         LinkedList<String> linkedList = new LinkedList<>();
 

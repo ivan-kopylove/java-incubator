@@ -26,7 +26,7 @@ class GenericsExamplesTest
     }
 
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         String[] strings = new String[10];
         List<String> list = new ArrayList<>();

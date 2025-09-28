@@ -9,7 +9,7 @@ class ee94
     /// - what if there were another number?
     /// - what does `&` operator do?
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         // given
         int n = 32;

@@ -9,7 +9,7 @@ import java.util.List;
 class CastList
 {
     @Test
-    void exercise_reverse_engineering_design()
+    void exercise_design_reverse_engineering()
     {
         Child child = new Child();
         child.addValue(new Child());
