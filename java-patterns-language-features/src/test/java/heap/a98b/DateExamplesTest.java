@@ -6,7 +6,6 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/// java.util.* playground
 import heap.qweqweweqweq.TestBase;
 class DateExamplesTest extends TestBase
 {
