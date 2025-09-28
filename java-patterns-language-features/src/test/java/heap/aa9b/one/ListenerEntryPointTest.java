@@ -2,8 +2,8 @@ package heap.aa9b.one;
 
 import org.junit.jupiter.api.Test;
 
-/// facets:
-/// - patterns
+
+
 /// - listener
 import heap.qweqweweqweq.TestBase;
 class ListenerEntryPointTest extends TestBase

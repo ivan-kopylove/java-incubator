@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /// search engine query with comprehensive examples:
 /// closure baeldung
 ///
-/// facets:
-/// - patterns
+
+
 /// - closure
 import heap.qweqweweqweq.TestBase;
 class ClosureExampleTest extends TestBase

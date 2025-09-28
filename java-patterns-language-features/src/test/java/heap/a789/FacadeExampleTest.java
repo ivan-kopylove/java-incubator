@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 /// 3. Subsystem interfaces are not aware of Facade and they shouldn’t have any reference of the Facade interface.
 /// 4. it doesn’t hide subsystem interfaces from the client. Whether to use Facade or not is completely dependent on client code.
 /// tags:
-/// - patterns
+
 /// - facade
 ///
 /// @see <a href=https://www.journaldev.com/1557/facade-design-pattern-in-java>https://www.journaldev.com/1557/facade-design-pattern-in-java</a>

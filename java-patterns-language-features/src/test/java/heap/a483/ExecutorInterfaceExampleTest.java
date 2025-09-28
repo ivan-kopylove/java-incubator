@@ -6,7 +6,7 @@ import java.util.concurrent.Executor;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/// Facets:
+
 ///
 /// - concurrency
 import heap.qweqweweqweq.TestBase;
