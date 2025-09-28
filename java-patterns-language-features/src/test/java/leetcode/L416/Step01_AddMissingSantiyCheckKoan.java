@@ -1,10 +1,9 @@
 package leetcode.L416;
 
-class FixMissingSantiyCheckKoan
+class Step01_AddMissingSantiyCheckKoan
 {
     public boolean canPartition(int[] nums)
     {
-
         int sum = 0;
 
         for (int i = 0; i < nums.length; i++)
@@ -35,6 +34,7 @@ class FixMissingSantiyCheckKoan
             {
                 return true;
             }
+
             result = dfs(halfSum - nums[i], i + 1, nums, false);
             if (result)
             {
