@@ -1,6 +1,6 @@
 package leetcode.L416;
 
-class Step03_ApplyMemoization
+class Step30_ApplyMemoization
 {
     public boolean canPartition(int[] nums)
     {

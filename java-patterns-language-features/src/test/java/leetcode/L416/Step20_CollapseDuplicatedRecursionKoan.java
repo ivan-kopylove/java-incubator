@@ -1,6 +1,6 @@
 package leetcode.L416;
 
-class Step02_CollapseDuplicatedRecursionKoan
+class Step20_CollapseDuplicatedRecursionKoan
 {
     public boolean canPartition(int[] nums)
     {

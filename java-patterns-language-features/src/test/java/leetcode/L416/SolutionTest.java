@@ -17,7 +17,7 @@ class SolutionTest
     void foo(int[] input, boolean expected)
     {
         // given
-        Step09_Solution sut = new Step09_Solution();
+        Step90_Solution sut = new Step90_Solution();
 
         // when
         boolean result = sut.canPartition(input);
