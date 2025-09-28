@@ -8,21 +8,14 @@ class Runner
     @Test
     void haveToWrapWithTry()
     {
-        Parent b = new Child();
-        try
-        {
-            b.run();
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
+        Parent sut = new Child();
+        sut.run();
     }
 
     @Test
     void dontHaveToWrapWithTry()
     {
-        Child b = new Child();
-        b.run();
+        Child sut = new Child();
+        sut.run();
     }
 }
