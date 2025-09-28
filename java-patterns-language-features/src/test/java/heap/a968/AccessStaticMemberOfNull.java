@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class AccessStaticMemberOfNull
 {
     @Test
-    void try_to_predict_the_result_before_uncommenting()
+    void exercise_design_reverse_engineering()
     {
         MyClass a = new MyClass();
         a = null;

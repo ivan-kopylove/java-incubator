@@ -1,5 +1,6 @@
 package heap.a976;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static heap.cb2d.EducationalStrengthness.EDUCATION_MODE;
