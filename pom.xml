@@ -5,7 +5,7 @@
     <packaging>pom</packaging>
     <version>snapshot</version>
     <groupId>com.github.ivan.kopylove</groupId>
-
+p
     <properties>
         <h2.version>2.3.232</h2.version>
         <hamcrest.version>3.0</hamcrest.version>
@@ -35,16 +35,14 @@
     <modules>
         <module>commons</module>
         <module>hibernate-7</module>
-        <module>spring-transactional</module>
         <module>java-patterns-language-features</module>
         <module>jdbc-hello-world</module>
         <module>leetcode</module>
         <module>spring-cacheable-using-component-scan</module>
         <module>spring-cacheable-using-manual-bean-config</module>
-        <module>spring-context-bean-config-scan</module>
-        <module>spring-context-bean-config-manual</module>
+        <module>spring-context-bean-scan</module>
+        <module>spring-context-manual-bean-config</module>
         <module>spring-test-context</module>
-        <module>spring-test-context2</module>
         <module>test-containers-generic-hello-world</module>
         <module>test-containers-kafka</module>
         <module>test-containers-postgres</module>
