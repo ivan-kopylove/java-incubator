@@ -35,7 +35,7 @@
     <modules>
         <module>commons</module>
         <module>hibernate-7</module>
-        <module>spring-transactional-MVP</module>
+        <module>spring-transactional</module>
         <module>java-patterns-language-features</module>
         <module>jdbc-hello-world</module>
         <module>leetcode</module>
