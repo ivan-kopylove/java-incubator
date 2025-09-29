@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EnableTransactionManagement // why Spring doesn't prevent startup when there is a `@Transactional`, but no `@EnableTransactionManagement`?
+@EnableTransactionManagement // why Spring doesn't prevent startup when there is at least one `@Transactional`, but no `@EnableTransactionManagement`?
  class TxEnabled
 {
 
