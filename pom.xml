@@ -35,10 +35,8 @@
         <module>spring-test-context</module>
         <module>spring-manual-bean-config</module>
         <module>spring-context-bean-scan</module>
-        <module>spring-cacheable-manual-bean-config</module>
-        <module>spring-cacheable</module>
-        <module>spring-cacheput</module>
-        <module>spring-cacheevict</module>
+        <module>spring-cacheable-using-manual-bean-config</module>
+        <module>spring-cacheable-using-component-scan</module>
         <module>jdbc-hello-world</module>
         <module>spring-hello-world</module>
         <module>spring-annotation-scan</module>

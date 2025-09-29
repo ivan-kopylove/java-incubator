@@ -1,5 +1,5 @@
 // com.example.AppConfig4.java
-package a8fe;
+package cb8c;
 
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 @EnableCaching // why Spring doesn't throw an exception for method marked @Cacheable when cache is not enabled?
 @Configuration
-@ComponentScan(basePackages = {"a8fe"})
+@ComponentScan(basePackages = {"cb8c"})
 public class AppConfig4
 {
 
