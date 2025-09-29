@@ -18,10 +18,18 @@ import static org.hamcrest.MatcherAssert.assertThat;
     @Autowired
     private ApplicationContext applicationContext;
 
+    @Autowired
+    private String myString;
+
     @Test
     public void exercise_design_reverse_engineering() {
         String message = applicationContext.getBean(String.class);
         assertThat(message, equalTo("Hello from Config01"));
+    }
+
+    @Test
+    public void exercise_design_reverse_engineering2() {
+        assertThat(myString, equalTo("Hello from Config01"));
     }
 }
 
