@@ -1,4 +1,4 @@
-package aa01;
+package d7d6;
 
 import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
@@ -20,8 +20,7 @@ class Test10 extends TestBase
 
     @Test
     void exercise_design_reverse_engineering() {
-        assertThat(myTransactionalService.getClass().toString(), containsString("class aa01.MyTransactionalService"));
-        assertThat(myTransactionalService.getClass().toString(), containsString("$$SpringCGLIB$$"));
+        assertThat(myTransactionalService.getClass().toString(), containsString("class d7d6.MyTransactionalService$$SpringCGLIB$$0"));
     }
 }
 
@@ -36,7 +35,7 @@ class Test11 extends TestBase
 
     @Test
     void exercise_design_reverse_engineering() {
-        assertThat(myService.getClass().toString(), containsString("class aa01.MyService"));
+        assertThat(myService.getClass().toString(), containsString("class d7d6.MyService"));
         assertThat(myService.getClass().toString(), not(containsString("$$SpringCGLIB$$")));
     }
 }
@@ -52,7 +51,7 @@ class Test20 extends TestBase
 
     @Test
      void exercise_design_reverse_engineering() {
-        assertThat(myTransactionalService.getClass().toString(), containsString("class aa01.MyTransactionalService"));
+        assertThat(myTransactionalService.getClass().toString(), containsString("class d7d6.MyTransactionalService"));
         assertThat(myTransactionalService.getClass().toString(), not(containsString("$$SpringCGLIB$$")));
     }
 

@@ -1,4 +1,4 @@
-package aa01;
+package d7d6;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,12 +14,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
         return new MyTransactionalService();
     }
 
-     @Bean
+    @Bean
     MyService myService() {
         return new MyService();
     }
-
-
 }
 
 @Configuration
@@ -29,11 +27,5 @@ class TxDisabled
     MyTransactionalService myTransactionalService() {
         return new MyTransactionalService();
     }
-
-    @Bean
-    MyService myService() {
-        return new MyService();
-    }
-
 
 }
