@@ -1,5 +1,5 @@
 // com.example.AppConfig3.java
-package a8fb;
+package ad66;
 
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
