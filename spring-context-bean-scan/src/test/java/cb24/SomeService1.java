@@ -1,5 +1,5 @@
 // com.example.SomeService1.java
-package a8fe;
+package cb24;
 
 import org.springframework.stereotype.Service;
 

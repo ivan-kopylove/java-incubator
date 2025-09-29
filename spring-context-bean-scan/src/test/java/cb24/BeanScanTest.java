@@ -1,4 +1,4 @@
-package a8fe;
+package cb24;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
