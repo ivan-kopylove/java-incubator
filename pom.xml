@@ -13,6 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>7.0.0-M9</spring.version>
         <h2.version>2.3.232</h2.version>
+        <hibernate.version>7.1.1.Final</hibernate.version>
     </properties>
 
     <build>
@@ -33,11 +34,9 @@
         <module>commons</module>
         <module>spring-test-context</module>
         <module>spring-manual-bean-config</module>
-        <module>spring-bean-scan</module>
-        <module>spring-cacheable-manual-bean-config</module>
-        <module>spring-cacheable</module>
-        <module>spring-cacheput</module>
-        <module>spring-cacheevict</module>
+        <module>spring-context-bean-scan</module>
+        <module>spring-cacheable-using-manual-bean-config</module>
+        <module>spring-cacheable-using-component-scan</module>
         <module>jdbc-hello-world</module>
         <module>spring-hello-world</module>
         <module>spring-annotation-scan</module>
