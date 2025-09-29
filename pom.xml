@@ -7,13 +7,14 @@
     <groupId>com.github.ivan.kopylove</groupId>
 
     <properties>
-        <maven-compiler-plugin-version>3.14.0</maven-compiler-plugin-version>
-        <junit.version>5.13.4</junit.version>
-        <hamcrest.version>3.0</hamcrest.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.version>7.0.0-M9</spring.version>
         <h2.version>2.3.232</h2.version>
+        <hamcrest.version>3.0</hamcrest.version>
         <hibernate.version>7.1.1.Final</hibernate.version>
+        <junit.version>5.13.4</junit.version>
+        <maven-compiler-plugin-version>3.14.0</maven-compiler-plugin-version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-boot-starter.version>4.0.0-M3</spring-boot-starter.version>
+        <spring.version>7.0.0-M9</spring.version>
     </properties>
 
     <build>
@@ -40,6 +41,7 @@
         <module>spring-context-bean-config-scan</module>
         <module>spring-context-bean-config-manual</module>
         <module>spring-test-context</module>
+        <module>spring-test-context2</module>
         <module>test-containers-generic-hello-world</module>
         <module>test-containers-kafka</module>
         <module>test-containers-postgres</module>
