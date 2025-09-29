@@ -11,8 +11,32 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = FirstConfig.class)
-public class FirstConfigTest {
+@ContextConfiguration(classes = Config01.class)
+ class Config01Test
+{
+
+    @Autowired
+    private ApplicationContext applicationContext;
+
+    @Autowired
+    private String myString;
+
+    @Test
+    public void exercise_design_reverse_engineering() {
+        String message = applicationContext.getBean(String.class);
+        assertThat(message, equalTo("Hello from Config01"));
+    }
+
+    @Test
+    public void exercise_design_reverse_engineering2() {
+        assertThat(myString, equalTo("Hello from Config01"));
+    }
+}
+
+@ExtendWith(SpringExtension.class)
+@ContextConfiguration(classes = Config02.class)
+ class Config02Test
+{
 
     @Autowired
     private ApplicationContext applicationContext;
@@ -21,6 +45,6 @@ public class FirstConfigTest {
     public void exercise_design_reverse_engineering() {
         String message = applicationContext.getBean(String.class);
 
-        assertThat(message, equalTo("Hello from FirstConfig"));
+        assertThat(message, equalTo("Hello from Config02"));
     }
 }

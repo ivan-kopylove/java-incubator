@@ -4,10 +4,21 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class SecondConfig {
+ class Config02
+{
     
     @Bean
     public String message() {
-        return "Hello from SecondConfig";
+        return "Hello from Config02";
+    }
+}
+
+@Configuration
+class Config01
+{
+
+    @Bean
+    public String message() {
+        return "Hello from Config01";
     }
 }
