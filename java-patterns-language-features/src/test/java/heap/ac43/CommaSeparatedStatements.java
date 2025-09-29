@@ -18,7 +18,7 @@ class CommaSeparatedStatements
     }
 
     @Test
-    void what_will_be_printed()
+    void exercise_design_reverse_engineering()
     {
         int a = 1;
         int b = 2;

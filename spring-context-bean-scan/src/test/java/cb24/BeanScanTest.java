@@ -1,17 +1,17 @@
-package b456;
+package cb24;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Runner
+public class BeanScanTest
 {
     @Test
     void exercise_design_reverse_engineering()
     {
-        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig1.class);
 
-        MyService service = context.getBean(MyService.class);
+        SomeService1 service = context.getBean(SomeService1.class);
 
         System.out.println(service.getMessage());
     }
