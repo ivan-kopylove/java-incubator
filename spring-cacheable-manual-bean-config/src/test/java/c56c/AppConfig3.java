@@ -1,5 +1,5 @@
 // com.example.AppConfig3.java
-package a8fe;
+package c56c;
 
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
@@ -7,7 +7,7 @@ import org.springframework.cache.concurrent.ConcurrentMapCacheManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@EnableCaching // why Spring doesn't throw an exception for a method marked @Cacheable when the cache is not enabled?
+@EnableCaching // why Spring doesn't throw an exception for method marked @Cacheable when cache is not enabled?
 @Configuration
 public class AppConfig3
 {

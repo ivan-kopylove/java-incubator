@@ -34,7 +34,7 @@
         <module>commons</module>
         <module>spring-test-context</module>
         <module>spring-manual-bean-config</module>
-        <module>spring-bean-scan</module>
+        <module>spring-context-bean-scan</module>
         <module>spring-cacheable-manual-bean-config</module>
         <module>spring-cacheable</module>
         <module>spring-cacheput</module>
