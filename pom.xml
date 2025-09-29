@@ -13,6 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>7.0.0-M9</spring.version>
         <h2.version>2.3.232</h2.version>
+        <hibernate.version>7.1.1.Final</hibernate.version>
     </properties>
 
     <build>
