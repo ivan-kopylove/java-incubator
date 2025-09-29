@@ -1,5 +1,5 @@
 // com.example.AppConfig.java
-package das;
+package aa20;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
