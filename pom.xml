@@ -40,8 +40,9 @@ p
         <module>leetcode</module>
         <module>spring-cacheable-using-component-scan</module>
         <module>spring-cacheable-using-manual-bean-config</module>
-        <module>spring-context-bean-scan</module>
-        <module>spring-context-manual-bean-config</module>
+        <module>spring-context-bean-config-manual</module>
+        <module>spring-context-bean-config-scan</module>
+        <module>spring-transactional</module>
         <module>spring-test-context</module>
         <module>test-containers-generic-hello-world</module>
         <module>test-containers-kafka</module>
