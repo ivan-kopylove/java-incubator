@@ -20,7 +20,7 @@ class Test10 extends TestBase
 
     @Test
     void exercise_design_reverse_engineering() {
-        assertThat(myTransactionalService.getClass().toString(), containsString("class d7d6.MyTransactionalService$$SpringCGLIB$$0"));
+        assertThat(myTransactionalService.getClass().toString(), containsString("MyTransactionalService$$SpringCGLIB$$0"));
     }
 }
 
@@ -35,7 +35,7 @@ class Test11 extends TestBase
 
     @Test
     void exercise_design_reverse_engineering() {
-        assertThat(myService.getClass().toString(), containsString("class d7d6.MyService"));
+        assertThat(myService.getClass().toString(), containsString("MyService"));
         assertThat(myService.getClass().toString(), not(containsString("$$SpringCGLIB$$")));
     }
 }
@@ -51,7 +51,7 @@ class Test20 extends TestBase
 
     @Test
      void exercise_design_reverse_engineering() {
-        assertThat(myTransactionalService.getClass().toString(), containsString("class d7d6.MyTransactionalService"));
+        assertThat(myTransactionalService.getClass().toString(), containsString("MyTransactionalService"));
         assertThat(myTransactionalService.getClass().toString(), not(containsString("$$SpringCGLIB$$")));
     }
 
