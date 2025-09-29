@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Runner
+ class Runner
 {
     @Test
     void exercise_design_reverse_engineering()

@@ -1,15 +1,14 @@
-// com.example.AppConfig5.java
-package aa20;
+// com.example.AppConfig.java
+package b456;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
- class AppConfig5
-{
+ class AppConfig {
 
     @Bean
-     MyService5 myService() {
-        return new MyService5();
+     MyService myService() {
+        return new MyService();
     }
 }
