@@ -8,7 +8,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
 
-class VolatileTest extends TestBase
+class Volatile30Test extends TestBase
 {
     private volatile int counter1 = 0;
     private AtomicInteger counter2 = new AtomicInteger(0);
