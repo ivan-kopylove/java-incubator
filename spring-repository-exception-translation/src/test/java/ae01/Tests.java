@@ -1,8 +1,7 @@
-package d7d9;
+package ae01;
 
 import com.github.ivan.kopylove.commons.testing.TestBase;
-import d7d9.Configs.CustomDataAccessException;
-import d7d9.Configs.CustomPersistenceException;
+import ae01.Configs.CustomDataAccessException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
