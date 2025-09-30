@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>hibernate-7</artifactId>
+    <artifactId>test-containers-clickhouse</artifactId>
+    <packaging>jar</packaging>
 
     <parent>
         <groupId>com.github.ivan.kopylove</groupId>
@@ -12,24 +12,17 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.ivan.kopylove</groupId>
-            <artifactId>commons</artifactId>
-            <version>snapshot</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>${h2.version}</version>
+            <groupId>org.testcontainers</groupId>
+            <artifactId>clickhouse</artifactId>
+            <version>1.20.0</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.hibernate.orm</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>${hibernate.version}</version>
+            <groupId>com.clickhouse</groupId>
+            <artifactId>clickhouse-jdbc</artifactId>
+            <version>0.9.2</version>
         </dependency>
-
-
     </dependencies>
+
 </project>
