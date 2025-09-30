@@ -15,9 +15,9 @@ class BasicNotificationTest extends TestBase
             {
                 try
                 {
-                    System.out.println("Thread VolatileTest: Waiting");
+                    System.out.println("waiting");
                     lock.wait();
-                    System.out.println("Thread VolatileTest: Resumed");
+                    System.out.println("resumed");
                 }
                 catch (InterruptedException e)
                 {
