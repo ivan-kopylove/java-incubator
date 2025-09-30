@@ -33,7 +33,6 @@ class Tests extends TestBase
         });
     }
 
-
     @Test
     void exercise_design_reverse_engineering3() {
         assertThrows(InvalidDataAccessApiUsageException.class, () -> {
@@ -41,18 +40,10 @@ class Tests extends TestBase
         });
     }
 
-
-
     @Test
     void exercise_design_reverse_engineering4() {
         assertThrows(NullPointerException.class, () -> {
             repo.foo4();
         });
     }
-
-
-
-
-
-
 }
