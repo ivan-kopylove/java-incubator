@@ -38,7 +38,7 @@
                 <configuration>
                     <reuseForks>true</reuseForks> <!-- how to check what is default?-->
                     <parallel>classesAndMethods</parallel>
-                    <forkCount>81</forkCount>
+                    <forkCount>4</forkCount>  <!-- how can I have a proof that this parameter is applied? -->
                 </configuration>
             </plugin>
         </plugins>
