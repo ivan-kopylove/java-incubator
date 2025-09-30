@@ -29,13 +29,27 @@
                     <release>21</release>
                 </configuration>
             </plugin>
+
+            <!-- what if there is no this plugin? -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <reuseForks>true</reuseForks> <!-- how to check what is default?-->
+                    <parallel>classesAndMethods</parallel>
+                    <forkCount>81</forkCount>
+                </configuration>
+            </plugin>
         </plugins>
+
     </build>
 
     <modules>
         <module>commons</module>
         <module>hibernate-7</module>
         <module>java-patterns-language-features</module>
+        <module>java-concurrency</module>
         <module>jdbc-hello-world</module>
         <module>leetcode</module>
         <module>spring-repository-exception-translation</module>
