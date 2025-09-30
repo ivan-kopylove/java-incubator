@@ -1,13 +1,13 @@
-package d7d9;
+package ae01;
 
+import ae01.Configs.CustomDataAccessException;
 import com.github.ivan.kopylove.commons.testing.TestBase;
-import d7d9.Configs.CustomDataAccessException;
-import d7d9.Configs.CustomPersistenceException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.InvalidDataAccessApiUsageException;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -33,5 +33,17 @@ class Tests extends TestBase
         });
     }
 
+    @Test
+    void exercise_design_reverse_engineering3() {
+        assertThrows(InvalidDataAccessApiUsageException.class, () -> {
+            repo.foo3();
+        });
+    }
 
+    @Test
+    void exercise_design_reverse_engineering4() {
+        assertThrows(NullPointerException.class, () -> {
+            repo.foo4();
+        });
+    }
 }

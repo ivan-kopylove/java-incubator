@@ -1,0 +1,1 @@
+what is the purpose of applying separation of concerns (concerned to separate concurrency in a separate module)?
