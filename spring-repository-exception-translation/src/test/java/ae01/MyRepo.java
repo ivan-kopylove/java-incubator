@@ -14,4 +14,15 @@ import java.sql.SQLException;
     void foo2(){
         throw new Configs.CustomPersistenceException("abc");
     }
+
+
+    void foo3(){
+        throw new IllegalArgumentException("abc");
+    }
+
+    void foo4(){
+        throw new NullPointerException("abc");
+    }
+
+
 }
