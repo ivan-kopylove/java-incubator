@@ -38,6 +38,8 @@
         <module>java-patterns-language-features</module>
         <module>jdbc-hello-world</module>
         <module>leetcode</module>
+        <module>spring-transactional2</module>
+        <module>spring-transactional3</module>
         <module>spring-cacheable-using-component-scan</module>
         <module>spring-cacheable-using-manual-bean-config</module>
         <module>spring-context-bean-config-manual</module>
