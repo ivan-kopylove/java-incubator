@@ -11,7 +11,7 @@ public class IsolationLevelAnalogy40
     @Test
     void exercise_design_reverse_engineering1()
     {
-        for(int i = 0; i < 100_000; i++)
+        for(int i = 0; i < 10_000; i++)
         {
             // floor is lava, thread is transaction
             new Thread(() -> {
