@@ -14,12 +14,15 @@ import static org.hamcrest.MatcherAssert.assertThat;
 @ContextConfiguration(classes = Config01.class)
  class Config01Test
 {
-
-    @Autowired
     private ApplicationContext applicationContext;
-
-    @Autowired
     private String myString;
+
+    public Config01Test(@Autowired ApplicationContext applicationContext, @Autowired String myString)
+    {
+        this.applicationContext = applicationContext;
+        this.myString = myString;
+    }
+
 
     @Test
     public void exercise_design_reverse_engineering() {
