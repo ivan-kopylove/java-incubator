@@ -15,7 +15,7 @@ class CollectionsEmptyListTest extends TestBase
     {
         assertThrows(UnsupportedOperationException.class, () -> {
             List<Object> objects = Collections.emptyList();
-            objects.add("dsa");
+            objects.add("IsolationLevelAnalogy10");
         });
     }
 }

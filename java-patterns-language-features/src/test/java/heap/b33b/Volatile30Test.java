@@ -1,22 +1,22 @@
 package heap.b33b;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.junit.jupiter.api.Assertions.fail;
-
-import com.github.ivan.kopylove.commons.testing.TestBase;
-class VolatileTest extends TestBase
+class Volatile30Test extends TestBase
 {
-    private static volatile int counter1 = 0;
+    private volatile int counter1 = 0;
+    private AtomicInteger counter2 = new AtomicInteger(0);
 
     @Test
     void exercise_design_reverse_engineering() throws InterruptedException
     {
-        int tasksCount = 100_000;
+        int tasksCount = 1_000_000;
         CountDownLatch latch = new CountDownLatch(tasksCount);
         ExecutorService executor = Executors.newFixedThreadPool(100);
 
@@ -24,6 +24,7 @@ class VolatileTest extends TestBase
         {
             executor.submit(() -> {
                 counter1++;
+                counter2.incrementAndGet();
 
                 latch.countDown();
             });
@@ -31,7 +32,7 @@ class VolatileTest extends TestBase
 
         latch.await();
 
-
         System.out.println(counter1);
+        System.out.println(counter2.get());
     }
 }

@@ -10,8 +10,6 @@ class NullValueExamplesTest extends TestBase
     @Test
     void exercise_design_reverse_engineering()
     {
-
-
         System.out.println(null == null);
     }
 }
