@@ -32,9 +32,6 @@ class Configs
         return new PersistenceExceptionTranslationPostProcessor();
     }
 
-
-
-
 //    @Bean
 //    LocalSessionFactoryBean localSessionFactoryBean(){
 //        LocalSessionFactoryBean localSessionFactoryBean = new LocalSessionFactoryBean();
@@ -51,8 +48,6 @@ class Configs
     HibernateExceptionTranslator hibernateExceptionTranslator(){
         return new HibernateExceptionTranslator();
     }
-
-
 
     static class CustomPersistenceExceptionTranslator implements PersistenceExceptionTranslator
     {
@@ -94,7 +89,6 @@ class Configs
         return new HikariDataSource(config);
     }
 
-
     @Bean
     public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
@@ -102,7 +96,6 @@ class Configs
 
         return transactionManager;
     }
-
 
     @Bean
     EntityManager entityManager(EntityManagerFactory emf)
@@ -131,9 +124,7 @@ class Configs
             configuration.addAnnotatedClass(entity);
         });
 
-
         return configuration.buildSessionFactory().unwrap(EntityManagerFactory.class);
     }
-
 }
 

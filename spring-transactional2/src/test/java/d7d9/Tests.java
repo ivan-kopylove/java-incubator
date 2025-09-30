@@ -1,6 +1,8 @@
 package d7d9;
 
 import com.github.ivan.kopylove.commons.testing.TestBase;
+import d7d9.Configs.CustomDataAccessException;
+import d7d9.Configs.CustomPersistenceException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,9 +20,18 @@ class Tests extends TestBase
     private MyRepo repo;
 
     @Test
-    void exercise_design_reverse_engineering() {
+    void exercise_design_reverse_engineering1() {
         assertThrows(DataIntegrityViolationException.class, () -> {
-            repo.foo();
+            repo.foo1();
         });
     }
+
+    @Test
+    void exercise_design_reverse_engineering2() {
+        assertThrows(CustomDataAccessException.class, () -> {
+            repo.foo2();
+        });
+    }
+
+
 }
