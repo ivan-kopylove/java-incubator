@@ -13,7 +13,7 @@ import org.springframework.dao.annotation.PersistenceExceptionTranslationPostPro
 import org.springframework.dao.support.PersistenceExceptionTranslator;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.orm.jpa.JpaTransactionManager;
-import org.springframework.orm.jpa.hibernate.LocalSessionFactoryBean;
+import org.springframework.orm.jpa.hibernate.HibernateExceptionTranslator;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -32,16 +32,21 @@ class Configs
         return new PersistenceExceptionTranslationPostProcessor();
     }
 
-    @Bean
-    LocalSessionFactoryBean localSessionFactoryBean(){
-        LocalSessionFactoryBean localSessionFactoryBean = new LocalSessionFactoryBean();
-
-        return localSessionFactoryBean;
-    }
+//    @Bean
+//    LocalSessionFactoryBean localSessionFactoryBean(){
+//        LocalSessionFactoryBean localSessionFactoryBean = new LocalSessionFactoryBean();
+//
+//        return localSessionFactoryBean;
+//    }
 
     @Bean
     CustomPersistenceExceptionTranslator customPersistenceExceptionTranslator(){
         return new CustomPersistenceExceptionTranslator();
+    }
+
+    @Bean
+    HibernateExceptionTranslator hibernateExceptionTranslator(){
+        return new HibernateExceptionTranslator();
     }
 
     static class CustomPersistenceExceptionTranslator implements PersistenceExceptionTranslator
@@ -84,7 +89,6 @@ class Configs
         return new HikariDataSource(config);
     }
 
-
     @Bean
     public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
@@ -92,7 +96,6 @@ class Configs
 
         return transactionManager;
     }
-
 
     @Bean
     EntityManager entityManager(EntityManagerFactory emf)
@@ -121,9 +124,7 @@ class Configs
             configuration.addAnnotatedClass(entity);
         });
 
-
         return configuration.buildSessionFactory().unwrap(EntityManagerFactory.class);
     }
-
 }
 

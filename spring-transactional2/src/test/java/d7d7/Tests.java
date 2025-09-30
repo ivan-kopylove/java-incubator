@@ -8,16 +8,14 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
-//@ContextConfiguration(classes = Configs.class)
-
 @SpringBootTest(classes = Configs.class)
 class Tests extends TestBase
 {
     @Autowired
-    private MyService service;
+    private PersonRepository service;
 
     @Test
     void exercise_design_reverse_engineering() {
-        service.bar();
+        service.findById(1);
     }
 }
