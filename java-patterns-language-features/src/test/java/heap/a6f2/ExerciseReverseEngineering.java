@@ -12,12 +12,10 @@ public class ExerciseReverseEngineering
     {
         // given
         int[] a = new int[] { 1, 2 };
-        int[] b = new int[] { 1, 2 };
 
         // then
         Map<int[], String> map = new HashMap<>();
         map.put(a, "something");
-        map.put(b, "something");
 
         System.out.println(map.get(a));
         System.out.println(map.get(new int[] { 1, 2 }));
