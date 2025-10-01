@@ -1,4 +1,4 @@
-// package-info.java
+/// package-info.java
 ///
 /// There are a lot of pairs and an outstanding number.
 ///
