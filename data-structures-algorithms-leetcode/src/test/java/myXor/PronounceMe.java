@@ -2,7 +2,7 @@ package myXor;
 
 import org.junit.jupiter.api.Test;
 
-public class weweq
+public class PronounceMe
 {
     @Test
     void mark_and_pronounce_property_names_out_of_loud()
