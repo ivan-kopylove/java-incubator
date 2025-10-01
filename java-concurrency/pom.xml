@@ -12,7 +12,6 @@
     </parent>
 
     <dependencies>
-
         <dependency>
             <groupId>com.github.ivan.kopylove</groupId>
             <artifactId>commons</artifactId>

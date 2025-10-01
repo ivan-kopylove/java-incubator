@@ -10,16 +10,12 @@
         <version>snapshot</version>
     </parent>
 
-
-
-
     <dependencies>
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>testcontainers</artifactId>
-            <version>1.21.3</version>
+            <version>${testcontainers.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 </project>
