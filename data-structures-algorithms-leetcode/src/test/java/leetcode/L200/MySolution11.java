@@ -1,6 +1,6 @@
 package leetcode.L200;
 
-class MySolution10
+class MySolution11
 {
     public int numIslands(char[][] grid) {
 

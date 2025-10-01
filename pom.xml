@@ -54,7 +54,7 @@
         <module>java-patterns-language-features</module>
         <module>java-concurrency</module>
         <module>jdbc-hello-world</module>
-        <module>leetcode</module>
+        <module>data-structures-algorithms-leetcode</module>
         <module>spring-repository-exception-translation</module>
         <module>spring-cacheable-using-component-scan</module>
         <module>spring-cacheable-using-manual-bean-config</module>
