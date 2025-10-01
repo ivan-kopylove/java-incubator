@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class weweq
 {
     @Test
-    void pronounce_property_names_out_of_loud()
+    void mark_and_pronounce_property_names_out_of_loud()
     {
         // then
         System.out.println(5 ^ 5);
