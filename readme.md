@@ -7,6 +7,6 @@ Early stage projects are here as well - later I extract into a separate project 
 
 Pieces of an app skeleton are included as well.
 
-Apart from that, there are a bit more complex, but still atomic examples.
+Apart from that, there are a bit more complex, but still atomic MVP examples.
 
 Finally, there are atomic koans. Predict what will be printed and Fixmes.
