@@ -35,12 +35,12 @@ class MySolutionFinal
             return;
         }
 
-        if(grid.length <= i)
+        if(grid.length == i)
         {
             return;
         }
 
-        if(grid[i].length <= j)
+        if(grid[i].length == j)
         {
             return;
         }
