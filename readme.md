@@ -9,4 +9,4 @@ Pieces of an app skeleton are included as well.
 
 Apart from that, there are a bit more complex, but still atomic MVP examples.
 
-Finally, there are atomic koans. Predict what will be printed and Fixmes.
+Finally, there are atomic koans. Predict what will be printed or fix something.
