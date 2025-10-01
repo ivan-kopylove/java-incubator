@@ -4,7 +4,7 @@ class MySolution10
 {
     public int numIslands(char[][] grid) {
 
-        // how do I iterate over matrices?
+        // I know the task is solvable, what operations do I have in programming languages?
 
         return 0;
     }
