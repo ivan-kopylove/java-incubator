@@ -1,6 +1,6 @@
 package leetcode.L200;
 
-class MySolution50
+class MySolution60
 {
     public int numIslands(char[][] grid) {
 
@@ -11,7 +11,7 @@ class MySolution50
         {
             for(int j = 0; j < grid[0].length; j++)
             {
-                if(grid[i][j] == '1' && dp[i][j] == 0) // what if there is no such condition?
+                if(grid[i][j] == '1' && dp[i][j] == 0)
                 {
                     current++;
                 }
@@ -25,9 +25,13 @@ class MySolution50
 
     void dfs(int i, int j, int current, char[][] grid, int[][] dp)
     {
-        // what are base cases related to very first cell 0,0 and i,j?
 
-        if(grid.length <= i) // why less that or equals instead of strict equality?
+        if(grid.length == i) // what does the strict equality emphasize?
+        {
+            return;
+        }
+
+        if(grid[i].length == j)
         {
             return;
         }

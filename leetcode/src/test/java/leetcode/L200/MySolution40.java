@@ -26,7 +26,7 @@ class MySolution40
             return;
         }
 
-        if(dp[i][j] != 0) // what does that mean?
+        if(dp[i][j] != 0) // what does that mean? what if I do it like `== 1` or `== 2`?
         {
             return;
         }

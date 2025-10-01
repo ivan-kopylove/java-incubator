@@ -4,10 +4,9 @@ class MySolution21
 {
     public int numIslands(char[][] grid) {
 
-        // what if there is no extra data structure that hold, btw, what?
+        // what if there is no this extra data structure that hold, btw, what?
         // why this called dp?
         int[][] dp = new int[grid.length][grid[0].length];
-
 
         for(int i = 0; i < grid.length; i++)
         {
