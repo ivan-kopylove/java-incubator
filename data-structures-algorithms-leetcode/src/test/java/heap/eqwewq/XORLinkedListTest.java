@@ -1,4 +1,4 @@
-package myXor;
+package heap.eqwewq;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
