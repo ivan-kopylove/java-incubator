@@ -1,2 +1,0 @@
-///
-package leetcode.b282;

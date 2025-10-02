@@ -1,4 +1,4 @@
-package leetcode.a47b;
+package contest;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

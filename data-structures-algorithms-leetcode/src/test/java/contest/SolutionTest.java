@@ -1,4 +1,4 @@
-package leetcode.a47b;
+package contest;
 
 import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.AfterAll;

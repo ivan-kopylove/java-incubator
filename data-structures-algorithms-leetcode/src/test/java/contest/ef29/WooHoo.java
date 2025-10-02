@@ -1,4 +1,4 @@
-package leetcode.ef29;
+package contest.ef29;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
