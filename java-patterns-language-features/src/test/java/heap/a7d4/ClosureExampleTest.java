@@ -4,13 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/// search engine query with comprehensive examples:
-/// closure baeldung
-///
-
-
-/// - closure
 import com.github.ivan.kopylove.commons.testing.TestBase;
+
 class ClosureExampleTest extends TestBase
 {
 

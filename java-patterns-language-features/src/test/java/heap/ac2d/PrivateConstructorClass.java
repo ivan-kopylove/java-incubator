@@ -6,7 +6,7 @@ class PrivateConstructorClass
 
     static
     {
-        value = "put breakpoint here";
+        value = "put a breakpoint here";
     }
 
     private String myString = "field initial value";
@@ -14,7 +14,7 @@ class PrivateConstructorClass
     private PrivateConstructorClass(String myString)
     {
         this.myString = myString;
-        value = "and put breakpoint here as well";
+        value = "and put a breakpoint here as well";
     }
 
     public static PrivateConstructorClass privateConstructorClass(String myString)

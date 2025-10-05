@@ -1,4 +1,4 @@
-package heap.a98b;
+package heap.a50a;
 
 import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
@@ -74,9 +74,7 @@ class PriorityQueObjectExampleTest extends TestBase
     void exercise_design_reverse_engineering2()
     {
         // given
-
         PriorityQueue<Bar> priorityQueue = new PriorityQueue<>();
-
 
         priorityQueue.add(new Bar(5, "yellow"));
         priorityQueue.add(new Bar(3, "red"));
@@ -105,10 +103,5 @@ class PriorityQueObjectExampleTest extends TestBase
         assertEquals(priorityQueue.poll().color, "green");
         assertEquals(priorityQueue.poll().color, "red");
 
-
     }
-
-
-
-
 }
