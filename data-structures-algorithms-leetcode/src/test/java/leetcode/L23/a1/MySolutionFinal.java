@@ -1,5 +1,6 @@
-package leetcode.L23;
+package leetcode.L23.a1;
 
+import leetcode.L23.ListNode;
 
 class MySolutionFinal
 {
