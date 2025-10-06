@@ -11,7 +11,7 @@ public class ClickhosueContainerTest
     @Test
     void exercise_design_reverse_engineering() throws SQLException
     {
-        ClickHouseContainer clickHouseContainer = new ClickHouseContainer(DockerImageName.parse("clickhouse/clickhouse-server:24.5"));
+        ClickHouseContainer clickHouseContainer = new ClickHouseContainer(DockerImageName.parse("clickhouse/clickhouse-server:25.8"));
 
         clickHouseContainer.start();
         clickHouseContainer.stop();

@@ -1,17 +1,16 @@
-package heap.a98b;
+package heap.a50a;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.PriorityQueue;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
-/// Priority map keeps structure sorted according natural ordering
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class PriorityQueExampleTest extends TestBase
 {
-
     @Test
     void test2()
     {

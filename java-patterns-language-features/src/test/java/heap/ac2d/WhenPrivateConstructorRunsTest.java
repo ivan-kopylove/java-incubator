@@ -12,7 +12,7 @@ class WhenPrivateConstructorRunsTest extends TestBase
     void exercise_design_reverse_engineering_me_in_debug_mode()
     {
         String value = PrivateConstructorClass.getValue();
-        assertEquals("put breakpoint here", value);
+        assertEquals("put a breakpoint here", value);
     }
 
     @Test
