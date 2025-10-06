@@ -1,4 +1,4 @@
-package leetcode.L23;
+package leetcode.L23.a1;
 
 
 class MySolution20
