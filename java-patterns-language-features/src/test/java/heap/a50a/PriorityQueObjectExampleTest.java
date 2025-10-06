@@ -46,6 +46,7 @@ class PriorityQueObjectExampleTest extends TestBase
         PriorityQueue<Foo> priorityQueue = new PriorityQueue<>();
 
 
+
         assertThrows(ClassCastException.class, () -> {
             priorityQueue.add(new Foo(5, "yellow"));
         });
