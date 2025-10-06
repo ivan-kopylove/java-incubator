@@ -8,30 +8,30 @@ import java.util.PriorityQueue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class Foo
+class MyNonComparable
 {
     int id;
     String color;
 
-    public Foo(int id, String color)
+    public MyNonComparable(int id, String color)
     {
         this.id = id;
         this.color = color;
     }
 }
 
-class Bar implements Comparable<Bar>{
+class MyComparable implements Comparable<MyComparable>{
     int id;
     String color;
 
-    public Bar(int id, String color)
+    public MyComparable(int id, String color)
     {
         this.id = id;
         this.color = color;
     }
 
     @Override
-    public int compareTo(Bar o)
+    public int compareTo(MyComparable o)
     {
         return Integer.compare(this.id, o.id);
     }
@@ -43,12 +43,12 @@ class PriorityQueObjectExampleTest extends TestBase
     void why_this_throws()
     {
         // given
-        PriorityQueue<Foo> priorityQueue = new PriorityQueue<>();
+        PriorityQueue<MyNonComparable> priorityQueue = new PriorityQueue<>();
 
 
 
         assertThrows(ClassCastException.class, () -> {
-            priorityQueue.add(new Foo(5, "yellow"));
+            priorityQueue.add(new MyNonComparable(5, "yellow"));
         });
     }
 
@@ -58,11 +58,11 @@ class PriorityQueObjectExampleTest extends TestBase
     void exercise_design_reverse_engineering1()
     {
         // given
-        PriorityQueue<Foo> priorityQueue = new PriorityQueue<>((o1, o2) -> Integer.compare(o1.id, o2.id));
+        PriorityQueue<MyNonComparable> priorityQueue = new PriorityQueue<>((o1, o2) -> Integer.compare(o1.id, o2.id));
 
-        priorityQueue.add(new Foo(5, "yellow"));
-        priorityQueue.add(new Foo(3, "red"));
-        priorityQueue.add(new Foo(4, "green"));
+        priorityQueue.add(new MyNonComparable(5, "yellow"));
+        priorityQueue.add(new MyNonComparable(3, "red"));
+        priorityQueue.add(new MyNonComparable(4, "green"));
 
         assertEquals(priorityQueue.poll().color, "red");
         assertEquals(priorityQueue.poll().color, "green");
@@ -75,11 +75,11 @@ class PriorityQueObjectExampleTest extends TestBase
     void exercise_design_reverse_engineering2()
     {
         // given
-        PriorityQueue<Bar> priorityQueue = new PriorityQueue<>();
+        PriorityQueue<MyComparable> priorityQueue = new PriorityQueue<>();
 
-        priorityQueue.add(new Bar(5, "yellow"));
-        priorityQueue.add(new Bar(3, "red"));
-        priorityQueue.add(new Bar(4, "green"));
+        priorityQueue.add(new MyComparable(5, "yellow"));
+        priorityQueue.add(new MyComparable(3, "red"));
+        priorityQueue.add(new MyComparable(4, "green"));
 
         assertEquals(priorityQueue.poll().color, "red");
         assertEquals(priorityQueue.poll().color, "green");
@@ -92,12 +92,12 @@ class PriorityQueObjectExampleTest extends TestBase
     {
         // given
 
-        PriorityQueue<Bar> priorityQueue = new PriorityQueue<>((o1, o2) -> Integer.compare(o2.id, o1.id));
+        PriorityQueue<MyComparable> priorityQueue = new PriorityQueue<>((o1, o2) -> Integer.compare(o2.id, o1.id));
 
 
-        priorityQueue.add(new Bar(5, "yellow"));
-        priorityQueue.add(new Bar(3, "red"));
-        priorityQueue.add(new Bar(4, "green"));
+        priorityQueue.add(new MyComparable(5, "yellow"));
+        priorityQueue.add(new MyComparable(3, "red"));
+        priorityQueue.add(new MyComparable(4, "green"));
 
 
         assertEquals(priorityQueue.poll().color, "yellow");
