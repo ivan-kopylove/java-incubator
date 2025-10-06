@@ -4,12 +4,16 @@ class Step20_CollapseDuplicatedRecursionExercise
 {
     public boolean canPartition(int[] nums)
     {
-
         int sum = 0;
 
         for (int i = 0; i < nums.length; i++)
         {
             sum += nums[i];
+        }
+
+        if(sum % 2 == 1)
+        {
+            return false;
         }
 
         return dfs(sum / 2, 0, nums, true);
