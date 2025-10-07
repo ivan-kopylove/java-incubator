@@ -11,7 +11,7 @@ class MySolution10
         {
             if(matrix[i][j] < target)
             {
-                i++; // why do I move the whole line?
+                i++; // what for do I move the whole line?
             }
             else
             {
