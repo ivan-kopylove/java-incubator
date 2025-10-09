@@ -11,6 +11,7 @@ public class PronounceMe
         System.out.println(5 ^ 5);
         System.out.println(5 ^ 0);
         System.out.println(0 ^ 5);
+        System.out.println((0 ^ 5) == (5 ^ 0));
         System.out.println(((4 ^ 5) ^ 6) == ((6 ^ 5) ^ 4));
     }
 }
