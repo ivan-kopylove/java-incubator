@@ -36,7 +36,7 @@ class SolutionFinal
         return new ArrayList<String>(res);
     }
     
-    boolean isValid(String s) {
+    private boolean isValid(String s) {
           int count = 0;
 
           for (int i = 0; i < s.length(); i++) {
@@ -54,7 +54,7 @@ class SolutionFinal
           return count == 0;
     }
 
-    public void dfs(String s, int i, Set<String> res, StringBuilder sb, int count) {
+    private void dfs(String s, int i, Set<String> res, StringBuilder sb, int count) {
         if (count < 0) {
             return;
         }
@@ -72,7 +72,7 @@ class SolutionFinal
         int len = sb.length();
 
         if (c == '(' || c == ')') {
-            dfs(s, i + 1, res, sb, count - 1);		    // not use ')''('
+            dfs(s, i + 1, res, sb, count - 1); // what case does this minus one reflects?
             dfs(s, i + 1, res, sb.append(c), count);       // use
         } else {
             dfs(s, i + 1, res, sb.append(c), count); // what maintains here and for what reason?
