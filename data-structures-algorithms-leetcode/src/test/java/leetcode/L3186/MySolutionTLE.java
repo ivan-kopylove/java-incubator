@@ -3,8 +3,6 @@ package leetcode.L3186;
 import java.util.LinkedList;
 import java.util.List;
 
-/// [TLE](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/submissions/1756923231/)
-///
 class MySolutionTLE
 {
     public long maximumTotalDamage(int[] power)

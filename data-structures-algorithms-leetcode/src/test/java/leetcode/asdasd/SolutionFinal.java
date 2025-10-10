@@ -45,13 +45,9 @@ class SolutionFinal
               {
                   count++;
               }
-              if (c == ')')
+              if (c == ')' && count-- == 0)
               {
-                  if(count == 0)
-                  {
-                      return false;
-                  }
-                  count--;
+                  return false;
               }
           }
 
@@ -79,7 +75,7 @@ class SolutionFinal
             dfs(s, i + 1, res, sb, count - 1);		    // not use ')''('
             dfs(s, i + 1, res, sb.append(c), count);       // use
         } else {
-            dfs(s, i + 1, res, sb.append(c), count);
+            dfs(s, i + 1, res, sb.append(c), count); // what maintains here and for what reason?
         }
 
         sb.setLength(len);

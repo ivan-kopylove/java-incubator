@@ -42,17 +42,17 @@ class Solution050
 
           for (int i = 0; i < s.length(); i++) {
 
-          char c = s.charAt(i);
+              char c = s.charAt(i);
 
-              if (c == '(')
-              {
-                  count++;
+                  if (c == '(')
+                  {
+                      count++;
+                  }
+                  if (c == ')' && count-- == 0)
+                  {
+                      return false;
+                  }
               }
-              if (c == ')' && count-- == 0)
-              {
-                  return false;
-              }
-          }
 
           return count == 0;
     }
