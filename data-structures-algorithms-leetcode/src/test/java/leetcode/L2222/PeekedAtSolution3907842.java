@@ -1,7 +1,6 @@
 package leetcode.L2222;
 
 /// - [peeked at solution](https://leetcode.com/problems/number-of-ways-to-select-buildings/solutions/3907842/easy-recursion-memoization/?envType=problem-list-v2&envId=dynamic-programming/)
-///
 class PeekedAtSolution3907842
 {
     public long numberOfWays(String s)
