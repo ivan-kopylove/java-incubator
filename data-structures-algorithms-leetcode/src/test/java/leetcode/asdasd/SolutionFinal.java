@@ -33,7 +33,7 @@ class SolutionFinal
         count = left + right;
         Set<String> res = new HashSet<>();
         dfs(s, 0, res, new StringBuilder(""), count);
-        return new ArrayList<String>(res);
+        return new ArrayList<>(res);
     }
     
     private boolean isValid(String s) {
