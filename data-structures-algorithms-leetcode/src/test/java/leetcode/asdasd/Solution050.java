@@ -5,7 +5,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-class Solution {
+class Solution050
+{
 
     public List<String> removeInvalidParentheses(String s) {
         int left = 0;
@@ -15,7 +16,8 @@ class Solution {
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(') {
                 left++;
-            } else if (s.charAt(i) == ')')
+            }
+            else if (s.charAt(i) == ')')
             {
                 if (left > 0)
                 {
@@ -39,7 +41,9 @@ class Solution {
           int count = 0;
 
           for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
+
+          char c = s.charAt(i);
+
               if (c == '(')
               {
                   count++;
@@ -53,20 +57,7 @@ class Solution {
           return count == 0;
     }
 
-    public void dfs(String s, int i, Set<String> res, StringBuilder sb, int count) {
-        if (count < 0) {
-            return;
-        }
-
-        if (i == s.length()) {
-            if (count == 0) {
-                if (isValid(sb.toString())) {
-                    res.add(sb.toString());
-                }
-            }
-            return;
-        }
-
+    void dfs(String s, int i, Set<String> res, StringBuilder sb, int count) {
         char c = s.charAt(i);
         int len = sb.length();
 
