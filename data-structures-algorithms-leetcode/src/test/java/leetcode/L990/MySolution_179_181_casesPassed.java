@@ -7,7 +7,6 @@ import java.util.Map;
 import java.util.Set;
 
 /// 179 / 181 testcases passed
-///
 class MySolution_179_181_casesPassed
 {
     private static void enrichTransitive(Map<Character, Set<Character>> eq, char left, char right)
