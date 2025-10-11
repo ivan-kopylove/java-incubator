@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan(basePackages = {"cb24"} ) // tried specifying non-existing package and running it
-public class AppConfig1
+class AppConfig1
 {
 
 }
