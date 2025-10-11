@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @EnableCaching // why Spring doesn't throw an exception for method marked @Cacheable when cache is not enabled?
 @Configuration
 @ComponentScan(basePackages = {"cb8c"})
-public class AppConfig4
+class AppConfig4
 {
 
     @Bean

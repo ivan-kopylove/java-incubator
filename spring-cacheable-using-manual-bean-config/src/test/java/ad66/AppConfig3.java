@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 @EnableCaching // why Spring doesn't throw an exception for a method marked @Cacheable when the cache is not enabled?
 @Configuration
-public class AppConfig3
+class AppConfig3
 {
     @Bean
     public SomeService3 myService() {
