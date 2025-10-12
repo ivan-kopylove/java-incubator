@@ -7,6 +7,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.IntStream;
 
+import static java.util.concurrent.TimeUnit.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -21,7 +22,7 @@ class SynchronizedExampleTest extends TestBase
         CounterThreadDangerous summation = new CounterThreadDangerous();
 
         IntStream.range(0, 1000).forEach(count -> executorService.submit(summation::calculate));
-        executorService.awaitTermination(2000, TimeUnit.MILLISECONDS);
+        executorService.awaitTermination(2000, MILLISECONDS);
 
         assertTrue(summation.getSum() < 1000);
     }
@@ -33,7 +34,7 @@ class SynchronizedExampleTest extends TestBase
         ThreadSafeCounter summation = new ThreadSafeCounter();
 
         IntStream.range(0, 1000).forEach(count -> executorService.submit(summation::calculate));
-        executorService.awaitTermination(2000, TimeUnit.MILLISECONDS);
+        executorService.awaitTermination(2000, MILLISECONDS);
 
         assertEquals(1000, summation.getSum());
     }
@@ -45,7 +46,7 @@ class SynchronizedExampleTest extends TestBase
         CounterThreadSafeBlock summation = new CounterThreadSafeBlock();
 
         IntStream.range(0, 1000).forEach(count -> executorService.submit(summation::calculate));
-        executorService.awaitTermination(2000, TimeUnit.MILLISECONDS);
+        executorService.awaitTermination(2000, MILLISECONDS);
 
         assertEquals(1000, summation.getSum());
     }
