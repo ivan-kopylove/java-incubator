@@ -1,13 +1,13 @@
 package heap.a3b3;
 
-import org.hamcrest.CoreMatchers;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
 /// [source](https://github.com/search?q=NoPublishDemo&type=code)
-public class NoPublishDemo
+public class NoPublishDemo extends TestBase
 {
     private boolean stop = false;
     private boolean stopped = false;
