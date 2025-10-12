@@ -32,6 +32,6 @@ public class NoPublishDemo extends TestBase
         stop = true;
         System.out.println("Exit main");
         Thread.sleep(10_000);
-        assertThat(stopped, is(false));
+        assertThat(stopped, is(false)); // is that what might have been expected?
     }
 }
