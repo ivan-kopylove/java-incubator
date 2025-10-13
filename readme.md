@@ -15,6 +15,6 @@ The project is an incubator - it contains different modules and serves different
 
 # UUID structure
 
-The project heavily relies on UUIDs as package names. This is value / CAPEX tradeoff - might look ugly, but on the other hand eliminates the burden of coming up and then supporting package names.
+The project heavily relies on UUIDs as package names. This is the `value / CAPEX tradeoff` - might look ugly, but on the other hand eliminates the burden of coming up and then supporting package names.
 
 Anyway, modules' names narrow the scope enough.
