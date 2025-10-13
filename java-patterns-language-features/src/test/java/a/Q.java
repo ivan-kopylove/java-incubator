@@ -4,7 +4,6 @@ import jdk.jfr.Description;
 import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.platform.commons.support.scanning.DefaultClasspathScanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
