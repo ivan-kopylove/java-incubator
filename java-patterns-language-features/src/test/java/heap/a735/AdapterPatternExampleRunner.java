@@ -4,10 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/// Adapter is converter.
-
-
-/// - adapter
+/// Adapter is converter. - adapter
 class AdapterPatternExampleRunner
 {
     @Test

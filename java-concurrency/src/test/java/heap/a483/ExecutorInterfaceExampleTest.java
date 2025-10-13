@@ -6,8 +6,6 @@ import java.util.concurrent.Executor;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
-///
 /// - concurrency
 import com.github.ivan.kopylove.commons.testing.TestBase;
 class ExecutorInterfaceExampleTest extends TestBase
