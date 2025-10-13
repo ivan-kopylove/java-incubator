@@ -12,7 +12,7 @@ The project is an incubator - it contains different modules and serves different
 - early stage projects: once a project is mature enough, I extract it into a separate project;
 - atomic koans: predict what will be printed or fix something.
 
-# Structure
+# UUID structure
 
 The project heavily relies on UUIDs as package names.
 
