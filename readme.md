@@ -17,4 +17,4 @@ This might be a ugly, but eliminates the burden of coming up and then supporting
 
 I'm focused on delivering value rather than a boilerplate.
 
-Anyway, modules' names narrow the scope of what's inside.
+Anyway, modules' names narrow the scope enough of what's inside.
