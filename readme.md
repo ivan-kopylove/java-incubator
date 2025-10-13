@@ -17,4 +17,4 @@ This might be a ugly, but eliminates the burden of coming up and then supporting
 
 I'm focused on delivering much value with less boilerplate.
 
-Anyway, modules names give the whole idea what's inside.
+Anyway, modules' names give the whole idea what's inside.
