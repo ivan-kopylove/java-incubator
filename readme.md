@@ -7,6 +7,7 @@ The project is an incubator - it contains different modules and serves different
 
 - a via-negativa showcase: there are 1001 way to shoot yourself in the foot, but only a few to do according expectations;
 - in form of runnable code - the actual phenomenon that can be observed;
+- in form of MVP - I have examples of minimal permutations of components required to achieve some goal isolated from a production project so that in the production project where everything is mixed I can easily recognize it; 
 - pieces of apps' skeletons;
 - if you gaze long into an abyss...: jobs change, this project stays: over time I internalized the structure so that I can easily recall it mentally;
 - early stage projects: once a project is mature enough, I extract it into a separate project;
