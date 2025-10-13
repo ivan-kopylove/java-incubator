@@ -6,7 +6,7 @@
 The project is an incubator - it contains different modules and serves different purposes:
 
 - via-negativa 1 - a showcase: there are 1001 way to shoot yourself in the foot, but only a few to do according expectations. I have to recognize unexpected configurations as well;
-- via-negativa 2 - drop experiment: the MVP examples makes it easy to drop a component in order to check what will happen; unlike the big projects, it's easy to track relations what affects what;
+- via-negativa 2 - a drop experiment: the MVP examples makes it easy to drop a component in order to check what will happen; unlike the big projects, it's easy to track relations what affects what;
 - in form of runnable code - the actual phenomenon that can be observed;
 - pieces of apps' skeletons;
 - if you gaze long into an abyss...: by checking the code again and again I internalized the structure so that I can easily recall it mentally;
