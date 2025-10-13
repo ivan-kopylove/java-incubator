@@ -3,10 +3,10 @@
 
 The project is an incubator - it contains different modules and serves different purposes.
 
-- a mind palace: jobs change, this project stays: over time I internalized this gallery of snippets in form of runnable code;
-- aerly stage projects - once a project is mature enough, I extract into a separate project when matured enough. Or return back dead projects to serve as the examples;
+- anti-examples showcase aka via-negativa: there are 1001 way to shoot yourself in the foot, but only a few to do everything correct;
 - pieces of apps' skeletons;
-- a bit more complex, but still atomic MVP examples;
+- a mind palace: jobs change, this project stays: over time I internalized this gallery of snippets in form of runnable code;
+- early stage projects: once a project is mature enough, I extract it into a separate project;
 - atomic koans - predict what will be printed or fix something.
 
 # Structure
