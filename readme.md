@@ -1,11 +1,14 @@
 
 # Incubator
 
+> "Conceptual knowledge is not enough ... you must have the conviction that comes from personal experience." - The 9th Gyalwa Karmapa.
+
 The project is an incubator - it contains different modules and serves different purposes.
 
-- via-negativa showcase: there are 1001 way to shoot yourself in the foot, but only a few to do according expectations;
+- in form of runnable code - the actual phenomenon that can be observed. 
+- a via-negativa showcase: there are 1001 way to shoot yourself in the foot, but only a few to do according expectations;
 - pieces of apps' skeletons;
-- if you gaze long into an abyss...: jobs change, this project stays: over time I internalized this project;
+- if you gaze long into an abyss...: jobs change, this project stays: over time I internalized the structure so that I can easily recall mentally;
 - early stage projects: once a project is mature enough, I extract it into a separate project;
 - atomic koans: predict what will be printed or fix something.
 
