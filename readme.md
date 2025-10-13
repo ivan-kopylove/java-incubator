@@ -5,9 +5,9 @@
 
 The project is an incubator - it contains different modules and serves different purposes:
 
-- a via-negativa showcase: there are 1001 way to shoot yourself in the foot, but only a few to do according expectations;
+- via-negativa 1 - showcase: there are 1001 way to shoot yourself in the foot, but only a few to do according expectations;
+- via-negativa 2 - drop smt: the MVP examples of minimal permutations of components required to achieve some goal so it is easy to drop some component and check what will happen; unlike big projects, it's easy to track relations what affects what;
 - in form of runnable code - the actual phenomenon that can be observed;
-- in form of MVP: the examples of minimal permutations of components required to achieve some goal so that in the production project where everything is mixed I can recognize it with no effort; 
 - pieces of apps' skeletons;
 - if you gaze long into an abyss...: by checking the code again and again I internalized the structure so that I can easily recall it mentally;
 - early stage projects: once a project is mature enough, I extract it into a separate project;
