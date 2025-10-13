@@ -3,7 +3,7 @@
 
 > "Conceptual knowledge is not enough ... you must have the conviction that comes from personal experience." - The 9th Gyalwa Karmapa.
 
-The project is an incubator - it contains different modules and serves different purposes.
+The project is an incubator - it contains different modules and serves different purposes:
 
 - a via-negativa showcase: there are 1001 way to shoot yourself in the foot, but only a few to do according expectations;
 - in form of runnable code - the actual phenomenon that can be observed;
