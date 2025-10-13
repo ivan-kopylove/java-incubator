@@ -48,12 +48,5 @@
     </build>
 
 
-    <dependencies>
-        <dependency>
-            <groupId>org.pitest</groupId>
-            <artifactId>pitest-maven</artifactId>
-            <version>1.21.0</version>
-        </dependency>
-    </dependencies>
 
 </project>
