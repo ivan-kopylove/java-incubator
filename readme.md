@@ -15,6 +15,6 @@ The project heavily relies on UUIDs as package names.
 
 This might be a ugly, but eliminates the burden of coming up and then supporting package names.
 
-I'm focused on delivering value rather than boilerplate.
+I'm focused on delivering value rather than a boilerplate.
 
 Anyway, modules' names give the whole idea what's inside.
