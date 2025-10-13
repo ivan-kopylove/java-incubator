@@ -52,7 +52,7 @@
     <modules>
         <module>commons</module>
         <module>hibernate-7</module>
-        <module>mutation-testing</module>
+        <module>test-mutational</module>
         <module>java-patterns-language-features</module>
         <module>java-concurrency</module>
         <module>jdbc-hello-world</module>
