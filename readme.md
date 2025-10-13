@@ -3,7 +3,7 @@
 
 The project is an incubator - it contains different modules and serves different purposes.
 
-- anti-examples showcase aka via-negativa: there are 1001 way to shoot yourself in the foot, but only a few to do according expectations. 
+- anti-examples showcase aka via-negativa: there are 1001 way to shoot yourself in the foot, but only a few to do according expectations;
 - pieces of apps' skeletons;
 - a mind palace: jobs change, this project stays: over time I internalized this gallery of snippets in form of runnable code;
 - early stage projects: once a project is mature enough, I extract it into a separate project;
