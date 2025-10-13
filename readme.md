@@ -5,7 +5,7 @@ The project is an incubator - it contains different modules and serves different
 
 - a mind palace: jobs change, this project stays: over time I internalized this gallery of snippets in form of runnable code;
 - aerly stage projects - once a project is mature enough, I extract into a separate project when matured enough. Or return back dead projects to serve as the examples;
-- pieces of an app skeletons;
+- pieces of apps' skeletons;
 - a bit more complex, but still atomic MVP examples;
 - atomic koans - predict what will be printed or fix something.
 
