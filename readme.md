@@ -18,3 +18,9 @@ The project is an incubator - it contains different modules and serves different
 The project heavily relies on UUIDs as package names. This is the `value / CAPEX tradeoff` - the UUIDs might look ugly, but on the other hand eliminates the burden of coming up and then supporting package names.
 
 Anyway, modules' names narrow the scope enough.
+
+# Package-private
+
+Package-priavte approach is applied project-wide. 
+
+The examples intentionally violate DRY principle in the sake to make every example self-sufficient. No class sharing. No public classes.
