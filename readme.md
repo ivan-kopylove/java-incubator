@@ -23,4 +23,4 @@ Anyway, modules' names narrow the scope enough.
 
 Package-priavte approach is applied project-wide. 
 
-The examples intentionally violate DRY principle in the sake to make every example self-sufficient. No class sharing. No public classes.
+The examples intentionally violate DRY principle in the sake to make every example self-sufficient. No class reuse. No public classes.
