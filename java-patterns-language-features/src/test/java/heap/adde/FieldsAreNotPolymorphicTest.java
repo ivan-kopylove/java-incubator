@@ -36,12 +36,12 @@ class Father
     int i = 1;
     int j = 10;
 
-    public int getI()
+    int getI()
     {
         return i;
     }
 
-    public int getJ()
+    int getJ()
     {
         return j;
     }
@@ -54,7 +54,7 @@ class Son extends Father
     int j = 20;
 
     @Override
-    public int getI()
+    int getI()
     {
         return i;
     }

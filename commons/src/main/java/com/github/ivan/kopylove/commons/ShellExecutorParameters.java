@@ -9,13 +9,13 @@ import java.util.concurrent.ExecutorService;
 import static java.util.concurrent.Executors.newFixedThreadPool;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-public class ShellExecutorParameters
+class ShellExecutorParameters
 {
     private static final Logger          LOGGER            = LoggerFactory.getLogger(ShellExecutorParameters.class);
     private final        Path            workingDir;
     private final        ExecutorService streamGobblerPool = newFixedThreadPool(2);
 
-    public ShellExecutorParameters(Path workingDir)
+    ShellExecutorParameters(Path workingDir)
     {
         this.workingDir = workingDir;
 
@@ -40,12 +40,12 @@ public class ShellExecutorParameters
         }
     }
 
-    public ExecutorService getStreamGobblerPool()
+    ExecutorService getStreamGobblerPool()
     {
         return streamGobblerPool;
     }
 
-    public Path getWorkingDir()
+    Path getWorkingDir()
     {
         return workingDir;
     }

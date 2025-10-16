@@ -61,13 +61,13 @@ class Configs
     }
 
     static class CustomPersistenceException extends RuntimeException {
-        public CustomPersistenceException(String message) {
+        CustomPersistenceException(String message) {
             super(message);
         }
     }
 
     static class CustomDataAccessException extends DataAccessException {
-        public CustomDataAccessException(String message, Throwable cause) {
+        CustomDataAccessException(String message, Throwable cause) {
             super(message, cause);
         }
     }
@@ -90,7 +90,7 @@ class Configs
     }
 
     @Bean
-    public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
+    PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
         transactionManager.setEntityManagerFactory(emf);
 

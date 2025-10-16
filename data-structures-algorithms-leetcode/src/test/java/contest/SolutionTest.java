@@ -20,13 +20,13 @@ class SolutionTest extends TestBase
     private static InputStream originalSystemIn;
 
     @BeforeAll
-    public static void init()
+    static void init()
     {
         originalSystemIn = System.in;
     }
 
     @AfterAll
-    public static void destroy()
+    static void destroy()
     {
         System.setIn(originalSystemIn);
     }

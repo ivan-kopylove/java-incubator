@@ -6,7 +6,7 @@ import java.util.List;
 
 class MyInitialAttemptTLE_502_589_casesPassed
 {
-    public int numSquares(int n) {
+    int numSquares(int n) {
 
         List<Integer> options = new ArrayList<>();
         options.add(1);

@@ -2,7 +2,7 @@ package leetcode.L74;
 
 class MySolution10
 {
-    public boolean searchMatrix(int[][] matrix, int target) {
+    boolean searchMatrix(int[][] matrix, int target) {
 
         int i = 0;
         int j = ? // if not 0, then what?

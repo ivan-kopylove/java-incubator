@@ -18,32 +18,32 @@ class OrganizationEntity03
     @Embedded
     private OrganizationGeneralDetails03 organizationGeneralDetails;
 
-    public int getKey()
+    int getKey()
     {
         return key;
     }
 
-    public void setKey(int key)
+    void setKey(int key)
     {
         this.key = key;
     }
 
-    public OrganizationBuildingDetails03 getOrganizationBuildingDetails()
+    OrganizationBuildingDetails03 getOrganizationBuildingDetails()
     {
         return organizationBuildingDetails;
     }
 
-    public void setOrganizationBuildingDetails(OrganizationBuildingDetails03 organizationBuildingDetails)
+    void setOrganizationBuildingDetails(OrganizationBuildingDetails03 organizationBuildingDetails)
     {
         this.organizationBuildingDetails = organizationBuildingDetails;
     }
 
-    public OrganizationGeneralDetails03 getOrganizationGeneralDetails()
+    OrganizationGeneralDetails03 getOrganizationGeneralDetails()
     {
         return organizationGeneralDetails;
     }
 
-    public void setOrganizationGeneralDetails(OrganizationGeneralDetails03 organizationGeneralDetails)
+    void setOrganizationGeneralDetails(OrganizationGeneralDetails03 organizationGeneralDetails)
     {
         this.organizationGeneralDetails = organizationGeneralDetails;
     }

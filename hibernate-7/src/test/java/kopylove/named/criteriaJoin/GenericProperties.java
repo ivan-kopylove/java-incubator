@@ -15,12 +15,12 @@ class GenericProperties
     @CollectionTable(name = "PROPERTIES", joinColumns = @JoinColumn(name = "PROPERTIES_KEY"))
     private Map<String, PropertyValue> properties;
 
-    public Map<String, PropertyValue> getProperties()
+    Map<String, PropertyValue> getProperties()
     {
         return properties;
     }
 
-    public void setProperties(Map<String, PropertyValue> properties)
+    void setProperties(Map<String, PropertyValue> properties)
     {
         this.properties = properties;
     }

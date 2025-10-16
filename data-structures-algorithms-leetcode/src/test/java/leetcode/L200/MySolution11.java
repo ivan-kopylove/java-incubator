@@ -2,7 +2,7 @@ package leetcode.L200;
 
 class MySolution11
 {
-    public int numIslands(char[][] grid) {
+    int numIslands(char[][] grid) {
 
         // how do I iterate over matrices?
 

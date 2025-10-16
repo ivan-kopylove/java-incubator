@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 import static java.util.UUID.randomUUID;
 
 @Service
-public class SomeService4
+class SomeService4
 {
     @Cacheable(value = "myCache")
-    public String generateUuid(int someInt) {
+    String generateUuid(int someInt) {
         return randomUUID().toString();
     }
 }

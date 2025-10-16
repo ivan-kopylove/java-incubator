@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-public class das
+class das
 {
     @Test
     void exercise_design_reverse_engineering1()

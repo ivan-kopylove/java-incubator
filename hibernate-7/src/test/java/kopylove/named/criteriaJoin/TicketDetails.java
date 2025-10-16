@@ -9,12 +9,12 @@ class TicketDetails
     @Embedded
     private GenericProperties genericProperties;
 
-    public GenericProperties getGenericProperties()
+    GenericProperties getGenericProperties()
     {
         return genericProperties;
     }
 
-    public void setGenericProperties(GenericProperties genericProperties)
+    void setGenericProperties(GenericProperties genericProperties)
     {
         this.genericProperties = genericProperties;
     }

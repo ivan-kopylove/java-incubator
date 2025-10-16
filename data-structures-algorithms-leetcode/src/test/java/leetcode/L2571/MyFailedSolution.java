@@ -2,7 +2,7 @@ package leetcode.L2571;
 
 class MyFailedSolution
 {
-    public int minOperations(int n)
+    int minOperations(int n)
     {
 
         int low = 0;

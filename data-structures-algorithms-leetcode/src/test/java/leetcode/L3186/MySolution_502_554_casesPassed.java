@@ -6,7 +6,7 @@ import java.util.List;
 /// [502 / 554 testcases passed](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/submissions/1756893038/?envType=problem-list-v2&envId=dynamic-programming)
 class MySolution_502_554_casesPassed
 {
-    public long maximumTotalDamage(int[] power)
+    long maximumTotalDamage(int[] power)
     {
         return dfs(0, 0, power, new LinkedList<>());
     }

@@ -1,6 +1,6 @@
 package com.github.ivan.kopylove.commons.client.yandex.api.speech;
 
-public enum VoiceGender
+enum VoiceGender
 {
     MALE,
     FEMALE,

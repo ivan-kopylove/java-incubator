@@ -4,7 +4,7 @@ class MyLongRunningTask implements Runnable
 {
     private final OnCompleteListener onCompleteListener;
 
-    public MyLongRunningTask(OnCompleteListener onCompleteListener)
+    MyLongRunningTask(OnCompleteListener onCompleteListener)
     {
         this.onCompleteListener = onCompleteListener;
     }

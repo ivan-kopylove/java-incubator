@@ -2,7 +2,7 @@ package leetcode.L200;
 
 class MySolutionFinal
 {
-    public int numIslands(char[][] grid) {
+    int numIslands(char[][] grid) {
 
         int[][] dp = new int[grid.length][grid[0].length];
 

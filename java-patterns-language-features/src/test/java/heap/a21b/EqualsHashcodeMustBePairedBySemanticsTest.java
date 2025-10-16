@@ -36,7 +36,7 @@ class EqualsHashcodeMustBePairedBySemanticsTest extends TestBase
     {
         private final String value;
 
-        public WronglyDefinedEqualsHashcode(String value)
+        WronglyDefinedEqualsHashcode(String value)
         {
             this.value = value;
         }

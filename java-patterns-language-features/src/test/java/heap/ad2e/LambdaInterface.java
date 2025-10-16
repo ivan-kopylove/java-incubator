@@ -1,7 +1,7 @@
 package heap.ad2e;
 
 @FunctionalInterface
-public interface LambdaInterface
+interface LambdaInterface
 {
     long doSomething(String str, int num);
 

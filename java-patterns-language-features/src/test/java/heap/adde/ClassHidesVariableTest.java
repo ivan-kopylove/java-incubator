@@ -22,19 +22,19 @@ class ClassHidesVariableTest extends TestBase
     {
         private final String message = "instance variable";
 
-        public String getLocalVariable()
+        String getLocalVariable()
         {
             String message = "method local variable";
             return message;
         }
 
-        public String getInstanceVariableWithThis()
+        String getInstanceVariableWithThis()
         {
             String message = "method local variable";
             return this.message;
         }
 
-        public String getInstanceVariable()
+        String getInstanceVariable()
         {
             return message;
         }

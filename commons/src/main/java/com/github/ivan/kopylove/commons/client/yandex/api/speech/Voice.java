@@ -12,7 +12,7 @@ import static com.github.ivan.kopylove.commons.client.yandex.api.speech.VoiceGen
 import static com.github.ivan.kopylove.commons.stream.StreamUtil.shuffleComparator;
 import static java.util.stream.Collectors.toList;
 
-public enum Voice
+enum Voice
 {
     JOHN(MALE, EN),
     ERMIL(MALE, RU),
@@ -36,7 +36,7 @@ public enum Voice
         this.language = language;
     }
 
-    public static Voice randomRuVoice()
+    static Voice randomRuVoice()
     {
         if (VOICE_RANDOM_POOL.size() < 1)
         {
@@ -80,12 +80,12 @@ public enum Voice
         throw new RuntimeException("case is not handled");
     }
 
-    public VoiceGender getGender()
+    VoiceGender getGender()
     {
         return gender;
     }
 
-    public Language getLanguage()
+    Language getLanguage()
     {
         return language;
     }

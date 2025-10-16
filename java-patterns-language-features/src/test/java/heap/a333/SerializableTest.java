@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 import com.github.ivan.kopylove.commons.testing.TestBase;
 class SerializableTest extends TestBase
 {
-    public static int sizeof(Object obj) throws IOException
+    static int sizeof(Object obj) throws IOException
     {
         ByteArrayOutputStream byteOutputStream = new ByteArrayOutputStream();
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(byteOutputStream);

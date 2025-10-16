@@ -22,7 +22,7 @@ class JpaFetchFetchPathNavigationTest extends EntityManagerManual
     private static final String USER_NAME_TWO = "b";
 
     @BeforeAll
-    public static void populate()
+    static void populate()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         entityManager.getTransaction().begin();

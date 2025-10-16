@@ -9,7 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class H2JDBCHelloWorld
+class H2JDBCHelloWorld
 {
     @Test
     void what_if_there_is_no_x()

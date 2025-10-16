@@ -5,10 +5,10 @@ import org.springframework.cache.annotation.Cacheable;
 
 import static java.util.UUID.randomUUID;
 
-public class MyCacheableService2
+class MyCacheableService2
 {
     @Cacheable(value = "myCache2")
-    public String generateUuid(int someInt) {
+    String generateUuid(int someInt) {
         return randomUUID().toString();
     }
 }

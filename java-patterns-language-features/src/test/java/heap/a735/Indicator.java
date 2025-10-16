@@ -1,6 +1,6 @@
 package heap.a735;
 
-public interface Indicator
+interface Indicator
 {
     double getTemperature();
 }

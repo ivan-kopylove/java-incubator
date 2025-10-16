@@ -21,32 +21,32 @@ class DocumentEntity01
     @JoinColumns({@JoinColumn(name = "DOCUMENT_USERS_LOGIN", referencedColumnName = "USERS_LOGIN"), @JoinColumn(name = "DOCUMENT_USERS_SSN", referencedColumnName = "USERS_SSN")})
     private UserEntity02 user;
 
-    public int getKey()
+    int getKey()
     {
         return key;
     }
 
-    public void setKey(int key)
+    void setKey(int key)
     {
         this.key = key;
     }
 
-    public String getName()
+    String getName()
     {
         return name;
     }
 
-    public void setName(String name)
+    void setName(String name)
     {
         this.name = name;
     }
 
-    public UserEntity02 getUser()
+    UserEntity02 getUser()
     {
         return user;
     }
 
-    public void setUser(UserEntity02 user)
+    void setUser(UserEntity02 user)
     {
         this.user = user;
     }

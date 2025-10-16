@@ -4,7 +4,7 @@ class WindowDecorator implements Window
 {
     protected Window windowToBeDecorated;
 
-    public WindowDecorator(Window windowToBeDecorated)
+    WindowDecorator(Window windowToBeDecorated)
     {
         super();
         this.windowToBeDecorated = windowToBeDecorated;

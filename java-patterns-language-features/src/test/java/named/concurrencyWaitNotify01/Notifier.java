@@ -5,7 +5,7 @@ class Notifier implements Runnable
 
     private final Message msg;
 
-    public Notifier(Message msg)
+    Notifier(Message msg)
     {
         this.msg = msg;
     }

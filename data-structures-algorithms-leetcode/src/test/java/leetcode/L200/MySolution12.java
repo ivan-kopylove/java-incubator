@@ -2,7 +2,7 @@ package leetcode.L200;
 
 class MySolution12
 {
-    public int numIslands(char[][] grid) {
+    int numIslands(char[][] grid) {
 
         for(int i = 0; i < grid.length; i++) // what if there is no matrix iteration?
         {

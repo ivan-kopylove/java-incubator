@@ -1,6 +1,6 @@
 package heap.ad12;
 
-public enum EnumToString
+enum EnumToString
 {
     MY_VALUE("QWERTY");
 
@@ -11,7 +11,7 @@ public enum EnumToString
         this.enumValue = enumValue;
     }
 
-    public String getEnumValue()
+    String getEnumValue()
     {
         return enumValue;
     }

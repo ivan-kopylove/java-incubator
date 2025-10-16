@@ -2,7 +2,7 @@ package leetcode.L416;
 
 class Step30_ApplyMemoization
 {
-    public boolean canPartition(int[] nums)
+    boolean canPartition(int[] nums)
     {
         int sum = 0;
 

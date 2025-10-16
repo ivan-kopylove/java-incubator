@@ -6,7 +6,7 @@ import org.testcontainers.utility.DockerImageName;
 
 import java.sql.SQLException;
 
-public class ClickhosueContainerTest
+class ClickhosueContainerTest
 {
     @Test
     void exercise_design_reverse_engineering() throws SQLException

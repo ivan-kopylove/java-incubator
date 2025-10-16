@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 class MySolution
 {
-    public int minimumOperationsToMakeEqual(int x, int y)
+    int minimumOperationsToMakeEqual(int x, int y)
     {
         int[] dp = new int[x + 11];
         Arrays.fill(dp, -1);

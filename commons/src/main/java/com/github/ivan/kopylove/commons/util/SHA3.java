@@ -4,14 +4,14 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class SHA3
+class SHA3
 {
 
     private static final byte[] HEX_ARRAY = "0123456789abcdef".getBytes(StandardCharsets.US_ASCII);
 
     private SHA3() {}
 
-    public static String sha3_256(byte[] input) throws NoSuchAlgorithmException
+    static String sha3_256(byte[] input) throws NoSuchAlgorithmException
     {
         MessageDigest digest = MessageDigest.getInstance("SHA3-256");
         byte[] hashbytes = digest.digest(input);

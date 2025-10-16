@@ -68,7 +68,7 @@ class GenericsExamplesTest extends TestBase
         assertEquals("1.2", doubles.get(0));
     }
 
-    public List<?> printAll(List<?> list) //the same as using <? extends Object>.
+    List<?> printAll(List<?> list) //the same as using <? extends Object>.
     {
         return list.stream().map(Object::toString).collect(Collectors.toList());
     }

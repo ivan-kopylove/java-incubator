@@ -14,7 +14,7 @@ import java.util.List;
 class JpaSimpleNativeQueryTest  extends EntityManagerManual
 {
     @BeforeEach
-    public void populate()
+    void populate()
     {
         EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();

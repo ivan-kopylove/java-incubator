@@ -6,7 +6,7 @@ package leetcode.L70;
  */
 class Exercise
 {
-   public int climbStairs(int n) {
+   int climbStairs(int n) {
        return dfs(n, new int[n + 1]);
    }
 

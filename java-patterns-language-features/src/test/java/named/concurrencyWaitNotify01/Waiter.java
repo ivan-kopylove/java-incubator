@@ -4,7 +4,7 @@ class Waiter implements Runnable
 {
     private final Message msg;
 
-    public Waiter(Message m)
+    Waiter(Message m)
     {
         this.msg = m;
     }

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.io.BufferedOutputStream;
 import java.io.IOException;
 
-public class OutputStreamExercise60
+class OutputStreamExercise60
 {
     @Test
     void what_is_the_purpose_of_the_example() throws IOException

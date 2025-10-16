@@ -18,32 +18,32 @@ class Ticket
     @Embedded
     private TicketDetails ticketDetails;
 
-    public int getKey()
+    int getKey()
     {
         return key;
     }
 
-    public void setKey(int key)
+    void setKey(int key)
     {
         this.key = key;
     }
 
-    public String getName()
+    String getName()
     {
         return name;
     }
 
-    public void setName(String name)
+    void setName(String name)
     {
         this.name = name;
     }
 
-    public TicketDetails getTicketDetails()
+    TicketDetails getTicketDetails()
     {
         return ticketDetails;
     }
 
-    public void setTicketDetails(TicketDetails ticketDetails)
+    void setTicketDetails(TicketDetails ticketDetails)
     {
         this.ticketDetails = ticketDetails;
     }

@@ -15,7 +15,7 @@ class Predicates
         sumAll(numbers, jkljlkj -> true);
     }
 
-    public int sumAll(List<Integer> numbers, Predicate<Integer> p)
+    int sumAll(List<Integer> numbers, Predicate<Integer> p)
     {
         int total = 0;
         for (int number : numbers)

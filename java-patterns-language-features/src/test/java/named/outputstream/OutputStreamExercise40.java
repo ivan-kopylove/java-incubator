@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.io.BufferedOutputStream;
 import java.io.IOException;
 
-public class OutputStreamExercise40
+class OutputStreamExercise40
 {
     @Test
     void exercise_design_reverse_engineering() throws IOException

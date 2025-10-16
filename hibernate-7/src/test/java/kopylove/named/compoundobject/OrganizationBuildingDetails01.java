@@ -13,32 +13,32 @@ class OrganizationBuildingDetails01
     @Column(name = "ADDRESS")
     private String address;
 
-    public int getWorkplaces()
+    int getWorkplaces()
     {
         return workplaces;
     }
 
-    public void setWorkplaces(int workplaces)
+    void setWorkplaces(int workplaces)
     {
         this.workplaces = workplaces;
     }
 
-    public int getFloors()
+    int getFloors()
     {
         return floors;
     }
 
-    public void setFloors(int floors)
+    void setFloors(int floors)
     {
         this.floors = floors;
     }
 
-    public String getAddress()
+    String getAddress()
     {
         return address;
     }
 
-    public void setAddress(String address)
+    void setAddress(String address)
     {
         this.address = address;
     }

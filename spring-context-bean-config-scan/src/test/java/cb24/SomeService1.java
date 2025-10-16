@@ -4,9 +4,9 @@ package cb24;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SomeService1
+class SomeService1
 {
-    public String getMessage() {
+    String getMessage() {
         return "Hello from SomeService1!";
     }
 }

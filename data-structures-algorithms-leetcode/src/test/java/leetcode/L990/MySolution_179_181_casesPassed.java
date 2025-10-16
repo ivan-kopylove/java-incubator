@@ -35,7 +35,7 @@ class MySolution_179_181_casesPassed
         });
     }
 
-    public boolean equationsPossible(String[] equations)
+    boolean equationsPossible(String[] equations)
     {
         Arrays.sort(equations, (a, b) -> b.charAt(1) - a.charAt(1));
 

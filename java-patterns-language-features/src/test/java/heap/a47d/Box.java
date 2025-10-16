@@ -4,12 +4,12 @@ class Box<T>
 {
     private T t;
 
-    public T getT()
+    T getT()
     {
         return t;
     }
 
-    public void setT(T t)
+    void setT(T t)
     {
         this.t = t;
     }

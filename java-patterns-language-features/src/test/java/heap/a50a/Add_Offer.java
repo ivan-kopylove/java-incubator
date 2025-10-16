@@ -8,13 +8,13 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class Add_Offer
+class Add_Offer
 {
 
     private boolean offerCalled = false;
 
     @Test
-    public void testAddCallsOffer() {
+    void testAddCallsOffer() {
         // a spy to verify method delegation
         PriorityQueue<Integer> queue = new PriorityQueue<>() {
             @Override

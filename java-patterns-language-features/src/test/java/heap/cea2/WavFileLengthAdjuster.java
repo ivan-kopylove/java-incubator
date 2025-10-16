@@ -4,7 +4,7 @@ class WavFileLengthAdjuster
 {
 
     /// Used to read unfinished recording.
-    public static byte[] finalizeWavFile(byte[] bytes)
+    static byte[] finalizeWavFile(byte[] bytes)
     {
         int length = bytes.length;
 

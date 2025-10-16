@@ -20,57 +20,57 @@ class AddressEntity01
     @ManyToOne(fetch = FetchType.LAZY)
     private PersonEntity01 person;
 
-    public int getId()
+    int getId()
     {
         return id;
     }
 
-    public String getStreet()
+    String getStreet()
     {
         return street;
     }
 
-    public void setStreet(String street)
+    void setStreet(String street)
     {
         this.street = street;
     }
 
-    public int getHouseNumber()
+    int getHouseNumber()
     {
         return houseNumber;
     }
 
-    public void setHouseNumber(int houseNumber)
+    void setHouseNumber(int houseNumber)
     {
         this.houseNumber = houseNumber;
     }
 
-    public String getCity()
+    String getCity()
     {
         return city;
     }
 
-    public void setCity(String city)
+    void setCity(String city)
     {
         this.city = city;
     }
 
-    public int getZipCode()
+    int getZipCode()
     {
         return zipCode;
     }
 
-    public void setZipCode(int zipCode)
+    void setZipCode(int zipCode)
     {
         this.zipCode = zipCode;
     }
 
-    public PersonEntity01 getPerson()
+    PersonEntity01 getPerson()
     {
         return person;
     }
 
-    public void setPerson(PersonEntity01 person)
+    void setPerson(PersonEntity01 person)
     {
         this.person = person;
     }

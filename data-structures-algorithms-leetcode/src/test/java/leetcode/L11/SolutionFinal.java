@@ -2,7 +2,7 @@ package leetcode.L11;
 
 class SolutionFinal
 {
-    public int maxArea(int[] height)
+    int maxArea(int[] height)
     {
         int globalMax = 0;
 

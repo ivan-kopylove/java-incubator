@@ -5,7 +5,7 @@ import java.util.List;
 
 class MySolutionTLE
 {
-    public long maximumTotalDamage(int[] power)
+    long maximumTotalDamage(int[] power)
     {
         return dfs(0, 0, power, new LinkedList<>());
     }

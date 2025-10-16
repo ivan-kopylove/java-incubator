@@ -4,7 +4,6 @@ import jdk.jfr.Description;
 import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.platform.commons.support.scanning.DefaultClasspathScanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,7 +17,7 @@ import java.util.UUID;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.greaterThan;
 
-public class Q
+class Q
 {
     @Test
     void exercise_design_reverse_engineering1()
@@ -92,7 +91,7 @@ class DiscountCalculator
 
     private UserDiscountApi userDiscountApi;
 
-    public DiscountCalculator(UserDiscountApi userDiscountApi)
+    DiscountCalculator(UserDiscountApi userDiscountApi)
     {
         this.userDiscountApi = userDiscountApi;
     }
@@ -138,7 +137,7 @@ class DiscountCalculator
 
 class Order
 {
-    public Order(List<Good> goods)
+    Order(List<Good> goods)
     {
         this.goods = goods;
     }
@@ -150,7 +149,7 @@ class Order
 class Good
 {
 
-    public Good(UUID uuid, BigDecimal price)
+    Good(UUID uuid, BigDecimal price)
     {
         this.uuid = uuid;
         this.price = price;
@@ -165,6 +164,6 @@ class Good
 
 interface UserDiscountApi
 {
-    public int getDiscount(UUID userId);
+    int getDiscount(UUID userId);
 
 }

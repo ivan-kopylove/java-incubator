@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class JpaFindvsGetReferenceTest  extends EntityManagerManual
 {
     @BeforeAll
-    public static void populate()
+    static void populate()
     {
         ParentEntity10 parentEntity = new ParentEntity10();
         parentEntity.setId(0);

@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 class MySolutionFinal
 {
-    public ListNode mergeKLists(ListNode[] lists) {
+    ListNode mergeKLists(ListNode[] lists) {
         PriorityQueue<ListNode> queue = new PriorityQueue<>((o1, o2) -> o1.val - o2.val);
 
         for(int i = 0; i < lists.length; i++)

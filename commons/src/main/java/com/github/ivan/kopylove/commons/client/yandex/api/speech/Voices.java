@@ -3,12 +3,12 @@ package com.github.ivan.kopylove.commons.client.yandex.api.speech;
 import java.util.HashMap;
 import java.util.Map;
 
-public final class Voices
+final class Voices
 {
 
     private Voices() {}
 
-    public static Map<String, String> philip()
+    static Map<String, String> philip()
     {
         Map<String, String> body = new HashMap<>();
         body.put("lang", "ru-RU");
@@ -16,7 +16,7 @@ public final class Voices
         return body;
     }
 
-    public static Map<String, String> alena()
+    static Map<String, String> alena()
     {
         Map<String, String> body = new HashMap<>();
         body.put("lang", "ru-RU");
@@ -24,7 +24,7 @@ public final class Voices
         return body;
     }
 
-    public static Map<String, String> madirus()
+    static Map<String, String> madirus()
     {
         Map<String, String> body = new HashMap<>();
         body.put("lang", "ru-RU");
@@ -32,7 +32,7 @@ public final class Voices
         return body;
     }
 
-    public static Map<String, String> zahar()
+    static Map<String, String> zahar()
     {
         Map<String, String> body = new HashMap<>();
         body.put("lang", "ru-RU");
@@ -40,7 +40,7 @@ public final class Voices
         return body;
     }
 
-    public static Map<String, String> omazh()
+    static Map<String, String> omazh()
     {
         Map<String, String> body = new HashMap<>();
         body.put("lang", "ru-RU");
@@ -48,7 +48,7 @@ public final class Voices
         return body;
     }
 
-    public static Map<String, String> jane()
+    static Map<String, String> jane()
     {
         Map<String, String> body = new HashMap<>();
         body.put("lang", "ru-RU");
@@ -56,7 +56,7 @@ public final class Voices
         return body;
     }
 
-    public static Map<String, String> ermil()
+    static Map<String, String> ermil()
     {
         Map<String, String> body = new HashMap<>();
         body.put("lang", "ru-RU");
@@ -64,7 +64,7 @@ public final class Voices
         return body;
     }
 
-    public static Map<String, String> john()
+    static Map<String, String> john()
     {
         Map<String, String> body = new HashMap<>();
         body.put("lang", "en-US");

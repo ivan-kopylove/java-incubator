@@ -14,22 +14,22 @@ class Game
     @Column(name = "TITLE")
     private String title;
 
-    public int getId()
+    int getId()
     {
         return id;
     }
 
-    public void setId(int id)
+    void setId(int id)
     {
         this.id = id;
     }
 
-    public String getTitle()
+    String getTitle()
     {
         return title;
     }
 
-    public void setTitle(String title)
+    void setTitle(String title)
     {
         this.title = title;
     }

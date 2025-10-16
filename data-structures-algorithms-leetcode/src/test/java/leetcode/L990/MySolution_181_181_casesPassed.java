@@ -56,7 +56,7 @@ class MySolution_181_181_casesPassed
         });
     }
 
-    public boolean equationsPossible(String[] equations)
+    boolean equationsPossible(String[] equations)
     {
         // why it doesnt make sence to sort?
         Arrays.sort(equations, (a, b) -> b.charAt(1) - a.charAt(1));

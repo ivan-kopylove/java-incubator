@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 class MySolution20
 {
-    public ListNode mergeKLists(ListNode[] lists) {
+    ListNode mergeKLists(ListNode[] lists) {
         PriorityQueue<ListNode> queue = new PriorityQueue<>(
                 // what is here?
         );

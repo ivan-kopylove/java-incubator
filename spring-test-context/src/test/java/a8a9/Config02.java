@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 {
     
     @Bean
-    public String message() {
+    String message() {
         return "Hello from Config02";
     }
 }
@@ -18,7 +18,7 @@ class Config01
 {
 
     @Bean
-    public String message() {
+    String message() {
         return "Hello from Config01";
     }
 }

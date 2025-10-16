@@ -19,7 +19,7 @@
 //    private static int pageId;
 //
 //    @BeforeAll
-//    public static void populate()
+//    static void populate()
 //    {
 //        EntityManager entityManager = super.getEntityManager();
 //        entityManager.getTransaction()

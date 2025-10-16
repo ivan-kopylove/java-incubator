@@ -7,7 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class User01
+class User01
 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,16 +16,16 @@ public class User01
     @Column(name = "name")
     private String name;
 
-    public User01() {}
+    User01() {}
 
-    public User01(String name)
+    User01(String name)
     {
         this.name = name;
     }
 
-    public Long getId() {return id;}
+    Long getId() {return id;}
 
-    public String getName() {return name;}
+    String getName() {return name;}
 
-    public void setName(String name) {this.name = name;}
+    void setName(String name) {this.name = name;}
 }

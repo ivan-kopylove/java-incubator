@@ -9,12 +9,12 @@ class PropertyValue
     @Column(name = "PROPERTIES_VALUE")
     private String value;
 
-    public String getValue()
+    String getValue()
     {
         return value;
     }
 
-    public void setValue(String value)
+    void setValue(String value)
     {
         this.value = value;
     }

@@ -3,7 +3,7 @@ package heap.aaa8;
 class HorizontalScrollbarDecorator extends WindowDecorator
 {
 
-    public HorizontalScrollbarDecorator(Window windowToBeDecorated)
+    HorizontalScrollbarDecorator(Window windowToBeDecorated)
     {
         super(windowToBeDecorated);
     }

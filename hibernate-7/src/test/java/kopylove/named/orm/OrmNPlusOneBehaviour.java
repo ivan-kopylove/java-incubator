@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 class OrmNPlusOneBehaviour
 {
     @BeforeAll
-    public static void populate()
+    static void populate()
     {
         Random random = new Random();
 

@@ -23,7 +23,7 @@ import static com.github.ivan.kopylove.commons.client.yandex.api.speech.Voices.z
 import static java.net.http.HttpClient.newHttpClient;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
-public final class YandexSpeechSynthesisAPI
+final class YandexSpeechSynthesisAPI
 {
 
     private static final Logger              LOGGER                = LoggerFactory.getLogger(YandexSpeechSynthesisAPI.class);
@@ -34,7 +34,7 @@ public final class YandexSpeechSynthesisAPI
     private final        HttpClient          httpClient            = newHttpClient();
     private final        ObjectMapper        objectMapper          = new ObjectMapper();
 
-    public YandexSpeechSynthesisAPI(YandexApiParameters apiParameters)
+    YandexSpeechSynthesisAPI(YandexApiParameters apiParameters)
     {
 
         this.apiParameters = apiParameters;
@@ -52,7 +52,7 @@ public final class YandexSpeechSynthesisAPI
     }
 
     /// The IAM token lifetime doesn't exceed 12 hours, but we recommend requesting the token more often, like once per hour.
-    public byte[] yandexSpeechGenerate(String text, Voice voice)
+    byte[] yandexSpeechGenerate(String text, Voice voice)
     {
         try
         {

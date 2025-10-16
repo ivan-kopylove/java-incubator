@@ -3,7 +3,7 @@ package leetcode.L2222;
 /// - [my submission](https://leetcode.com/problems/number-of-ways-to-select-buildings/submissions/1755549166/)
 class SolutionStackoverflow
 {
-    public long numberOfWays(String s)
+    long numberOfWays(String s)
     {
         return dfs(new StringBuilder(), 0, s);
     }

@@ -19,32 +19,32 @@ class Gamer
     @JoinColumn(name = "GAME", nullable = false)
     private Game game;
 
-    public int getId()
+    int getId()
     {
         return id;
     }
 
-    public void setId(int id)
+    void setId(int id)
     {
         this.id = id;
     }
 
-    public String getNickname()
+    String getNickname()
     {
         return nickname;
     }
 
-    public void setNickname(String nickname)
+    void setNickname(String nickname)
     {
         this.nickname = nickname;
     }
 
-    public Game getGame()
+    Game getGame()
     {
         return game;
     }
 
-    public void setGame(Game game)
+    void setGame(Game game)
     {
         this.game = game;
     }

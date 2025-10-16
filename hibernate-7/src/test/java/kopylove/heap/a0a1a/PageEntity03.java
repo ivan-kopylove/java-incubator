@@ -24,42 +24,42 @@ class PageEntity03
     @Column(name = "PAGE_ANNOTATIONS")
     private String annotations;
 
-    public int getKey()
+    int getKey()
     {
         return key;
     }
 
-    public void setKey(int key)
+    void setKey(int key)
     {
         this.key = key;
     }
 
-    public BookEntity03 getBook()
+    BookEntity03 getBook()
     {
         return book;
     }
 
-    public void setBook(BookEntity03 book)
+    void setBook(BookEntity03 book)
     {
         this.book = book;
     }
 
-    public String getName()
+    String getName()
     {
         return name;
     }
 
-    public void setName(String name)
+    void setName(String name)
     {
         this.name = name;
     }
 
-    public String getAnnotations()
+    String getAnnotations()
     {
         return annotations;
     }
 
-    public void setAnnotations(String annotations)
+    void setAnnotations(String annotations)
     {
         this.annotations = annotations;
     }

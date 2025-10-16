@@ -32,22 +32,22 @@ class ParentEntity10
         this.id = id;
     }
 
-    public String getName()
+    String getName()
     {
         return name;
     }
 
-    public void setName(String name)
+    void setName(String name)
     {
         this.name = name;
     }
 
-    public Set<ChildEntity10> getChilds()
+    Set<ChildEntity10> getChilds()
     {
         return childs;
     }
 
-    public void setChildren(Set<ChildEntity10> childs)
+    void setChildren(Set<ChildEntity10> childs)
     {
         this.childs = new HashSet(childs);
     }

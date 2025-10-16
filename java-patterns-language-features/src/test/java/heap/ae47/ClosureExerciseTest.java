@@ -25,7 +25,7 @@ class ClosureExerciseTest extends TestBase
 
     @Test
     @Disabled
-    public void exercise_design_reverse_engineering()
+    void exercise_design_reverse_engineering()
     {
         TextProvider provider = getProvider(15);
         assertEquals(15, provider.get());
@@ -33,7 +33,7 @@ class ClosureExerciseTest extends TestBase
 
     @Test
     @Disabled
-    public void exercise_design_reverse_engineering2()
+    void exercise_design_reverse_engineering2()
     {
         TextProvider provider = getProvider(20);
         assertEquals(20, provider.get());

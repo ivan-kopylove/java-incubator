@@ -8,12 +8,12 @@ class Initiater
 {
     private final List<HelloListener> listeners = new ArrayList<>();
 
-    public void addListener(HelloListener toAdd)
+    void addListener(HelloListener toAdd)
     {
         listeners.add(toAdd);
     }
 
-    public void sayHello()
+    void sayHello()
     {
         System.out.println("Hello!!");
 

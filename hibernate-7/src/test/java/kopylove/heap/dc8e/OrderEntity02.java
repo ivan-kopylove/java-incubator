@@ -19,17 +19,17 @@ class OrderEntity02
     @ManyToOne(fetch = FetchType.LAZY)
     private UserEntity01 user;
 
-    public UserEntity01 getUser()
+    UserEntity01 getUser()
     {
         return user;
     }
 
-    public void setUser(UserEntity01 user)
+    void setUser(UserEntity01 user)
     {
         this.user = user;
     }
 
-    public long getId()
+    long getId()
     {
         return id;
     }
