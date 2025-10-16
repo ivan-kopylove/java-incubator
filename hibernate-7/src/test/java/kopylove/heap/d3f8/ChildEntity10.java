@@ -20,32 +20,32 @@ class ChildEntity10
     @JoinColumn(name = "CHILDTABLE_PARENT_KEY", nullable = false)
     private ParentEntity10 parent;
 
-    public Integer getId()
+    Integer getId()
     {
         return id;
     }
 
-    public void setId(Integer id)
+    void setId(Integer id)
     {
         this.id = id;
     }
 
-    public String getName()
+    String getName()
     {
         return name;
     }
 
-    public void setName(String name)
+    void setName(String name)
     {
         this.name = name;
     }
 
-    public ParentEntity10 getParent()
+    ParentEntity10 getParent()
     {
         return parent;
     }
 
-    public void setParent(ParentEntity10 parent)
+    void setParent(ParentEntity10 parent)
     {
         this.parent = parent;
     }

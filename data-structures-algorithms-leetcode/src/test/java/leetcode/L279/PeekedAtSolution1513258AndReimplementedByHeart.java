@@ -6,7 +6,7 @@ import java.util.List;
 
 class PeekedAtSolution1513258AndReimplementedByHeart
 {
-    public int numSquares(int n) {
+    int numSquares(int n) {
 
         List<Integer> options = new ArrayList<>();
         options.add(1);

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.concurrent.ThreadLocalRandom;
 
 /// an example of what isolation level?
-public class IsolationLevelAnalogy10
+class IsolationLevelAnalogy10
 {
     private int cell = 0;
 

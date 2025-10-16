@@ -9,7 +9,7 @@ class PeekedAtSolution6789775
 
     Map<Integer, Integer> memo = new HashMap<>(); // what if it was an array?
 
-    public int minOperations(int n)
+    int minOperations(int n)
     {
         return dp(n);
     }

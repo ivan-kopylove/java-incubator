@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class JpaCriteriaBuilderJoinExampleTest  extends EntityManagerManual
 {
     @BeforeAll
-    public static void populate()
+    static void populate()
     {
 
         ParentEntity02 parentEntity = new ParentEntity02();

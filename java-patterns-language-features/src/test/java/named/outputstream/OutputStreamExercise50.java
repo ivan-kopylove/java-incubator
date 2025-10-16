@@ -6,7 +6,7 @@ import java.io.BufferedOutputStream;
 import java.io.IOException;
 
 /// what does the example demonstrate?
-public class OutputStreamExercise50
+class OutputStreamExercise50
 {
     @Test
     void exercise_design_reverse_engineering() throws IOException

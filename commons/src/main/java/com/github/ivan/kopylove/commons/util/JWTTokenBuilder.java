@@ -21,11 +21,11 @@ import java.util.Objects;
 
 import static java.time.Instant.now;
 
-public class JWTTokenBuilder
+class JWTTokenBuilder
 {
     private static final Logger LOGGER = LoggerFactory.getLogger(JWTTokenBuilder.class);
 
-    public String buildJwtToken(String issuer, String kid, Path path, String audience)
+    String buildJwtToken(String issuer, String kid, Path path, String audience)
     {
         Objects.requireNonNull(issuer);
         Objects.requireNonNull(kid);

@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "persons")
-public class Person {
+class Person {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -24,48 +24,48 @@ public class Person {
 	@Column(name = "ssn", nullable = false, unique = true)
 	private String ssn;
 
-	public Person() {
+	Person() {
 	}
 
-	public Person(String firstName, String lastName) {
+	Person(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
 
-	public Person(String firstName, String lastName, String ssn) {
+	Person(String firstName, String lastName, String ssn) {
 		this(firstName, lastName);
 		this.ssn = ssn;
 	}
 
-	public Integer getId() {
+	Integer getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	void setId(Integer id) {
 		this.id = id;
 	}
 
-	public String getFirstName() {
+	String getFirstName() {
 		return firstName;
 	}
 
-	public void setFirstName(String firstName) {
+	void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
 
-	public String getLastName() {
+	String getLastName() {
 		return lastName;
 	}
 
-	public void setLastName(String lastName) {
+	void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
 
-	public String getSsn() {
+	String getSsn() {
 		return ssn;
 	}
 
-	public void setSsn(String ssn) {
+	void setSsn(String ssn) {
 		this.ssn = ssn;
 	}
 

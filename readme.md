@@ -13,14 +13,16 @@ The project is an incubator - it contains different modules and serves different
 - early stage projects: once a project is mature enough, I extract it into a separate project;
 - atomic koans: predict what will be printed or fix something.
 
-# UUID structure
+# Project-wide defaults
+
+Wherever possible, the following project-wide defaults are applied project-wide.
+
+## UUID structure
 
 The project heavily relies on UUIDs as package names. This is the `value / CAPEX tradeoff` - the UUIDs might look ugly, but on the other hand eliminates the burden of coming up and then supporting package names.
 
 Anyway, modules' names narrow the scope enough.
 
-# Package-private
+## Package-private
 
-Package-priavte approach is applied project-wide. 
-
-The examples intentionally violate DRY principle in the sake to make every example self-sufficient. No class reuse. No public classes.
+The examples intentionally violate DRY principle in the sake to make every example self-sufficient. No class reuse. No classes.

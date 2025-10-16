@@ -27,7 +27,7 @@ class LiveLockExampleTest extends TestBase
         Thread.sleep(10_000L);
     }
 
-    public void operation1()
+    void operation1()
     {
         try
         {
@@ -72,7 +72,7 @@ class LiveLockExampleTest extends TestBase
         }
     }
 
-    public void operation2()
+    void operation2()
     {
         try
         {

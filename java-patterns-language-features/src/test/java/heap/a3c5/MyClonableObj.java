@@ -4,12 +4,12 @@ class MyClonableObj implements Cloneable
 {
     private final String field = "value";
 
-    public String getField()
+    String getField()
     {
         return field;
     }
 
-    public Object get() throws CloneNotSupportedException
+    Object get() throws CloneNotSupportedException
     {
         return super.clone();
     }

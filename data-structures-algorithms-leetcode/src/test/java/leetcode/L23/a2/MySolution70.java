@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 class MySolution70
 {
-    public ListNode mergeKLists(ListNode[] lists) {
+    ListNode mergeKLists(ListNode[] lists) {
         if(lists.length == 0)
         {
             return null;

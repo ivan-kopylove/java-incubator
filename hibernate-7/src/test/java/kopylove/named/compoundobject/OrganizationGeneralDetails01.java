@@ -16,42 +16,42 @@ class OrganizationGeneralDetails01
     @Column(name = "STRUCTURE")
     private String ogranizationalStructure;
 
-    public String getGoal()
+    String getGoal()
     {
         return goal;
     }
 
-    public void setGoal(String goal)
+    void setGoal(String goal)
     {
         this.goal = goal;
     }
 
-    public String getFound()
+    String getFound()
     {
         return found;
     }
 
-    public void setFound(String found)
+    void setFound(String found)
     {
         this.found = found;
     }
 
-    public String getMotto()
+    String getMotto()
     {
         return motto;
     }
 
-    public void setMotto(String motto)
+    void setMotto(String motto)
     {
         this.motto = motto;
     }
 
-    public String getOgranizationalStructure()
+    String getOgranizationalStructure()
     {
         return ogranizationalStructure;
     }
 
-    public void setOgranizationalStructure(String ogranizationalStructure)
+    void setOgranizationalStructure(String ogranizationalStructure)
     {
         this.ogranizationalStructure = ogranizationalStructure;
     }

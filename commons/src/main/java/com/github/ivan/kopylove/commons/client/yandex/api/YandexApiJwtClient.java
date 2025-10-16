@@ -18,7 +18,7 @@ import java.util.Objects;
 import static java.net.http.HttpClient.Version.HTTP_1_1;
 import static java.net.http.HttpClient.newHttpClient;
 
-public class YandexApiJwtClient
+class YandexApiJwtClient
 {
 
     private static final Logger       LOGGER          = LoggerFactory.getLogger(YandexApiJwtClient.class);
@@ -27,7 +27,7 @@ public class YandexApiJwtClient
     private final        HttpClient   httpClient      = newHttpClient();
     private final        ObjectMapper objectMapper    = new ObjectMapper();
 
-    public String requestIamToken(String signedJwt)
+    String requestIamToken(String signedJwt)
     {
         Objects.requireNonNull(signedJwt);
         if (signedJwt.isBlank())

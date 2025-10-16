@@ -4,7 +4,7 @@ package heap.a951;
 import com.github.ivan.kopylove.commons.testing.TestBase;
 class FinalVariableInsideCallbackTest extends TestBase
 {
-    public static void main(String[] args)
+    static void main(String[] args)
     {
         //errors: cannot access a non-final variable inside an inner class defined in a different method
 
@@ -13,7 +13,7 @@ class FinalVariableInsideCallbackTest extends TestBase
         {
             // With anonymous classes, you are actually declaring a "nameless" nested class
             @Override
-            public void someMethod()
+            void someMethod()
             {
                 System.out.println(str);
             }
@@ -25,7 +25,7 @@ class FinalVariableInsideCallbackTest extends TestBase
          */
 
 		/*
-		public void someMethod() {
+		void someMethod() {
 		    String shared = "hello"; 
 		    new EnclosingClass$1(shared).start();
 

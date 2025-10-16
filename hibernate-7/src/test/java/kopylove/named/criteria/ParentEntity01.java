@@ -22,32 +22,32 @@ class ParentEntity01
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "parent")
     private Set<ChildEntity01> childs;
 
-    public int getId()
+    int getId()
     {
         return id;
     }
 
-    public void setId(int id)
+    void setId(int id)
     {
         this.id = id;
     }
 
-    public String getName()
+    String getName()
     {
         return name;
     }
 
-    public void setName(String name)
+    void setName(String name)
     {
         this.name = name;
     }
 
-    public Set<ChildEntity01> getChilds()
+    Set<ChildEntity01> getChilds()
     {
         return childs;
     }
 
-    public void setChildren(Set<ChildEntity01> childs)
+    void setChildren(Set<ChildEntity01> childs)
     {
         this.childs = new HashSet(childs);
     }

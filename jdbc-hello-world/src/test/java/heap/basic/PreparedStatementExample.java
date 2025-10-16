@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class PreparedStatementExample
+class PreparedStatementExample
 {
     @Test
     void what_if_no_prepared_statement()

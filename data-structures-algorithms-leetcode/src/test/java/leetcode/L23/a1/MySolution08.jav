@@ -3,7 +3,7 @@ package leetcode.L23.a1;
 
 class MySolution10
 {
-    public ListNode mergeKLists(ListNode[] lists) {
+    ListNode mergeKLists(ListNode[] lists) {
         
             for(int i = 0; i < lists.length; i++)
             {

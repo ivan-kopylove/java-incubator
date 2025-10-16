@@ -1,6 +1,6 @@
 package heap.aa9b.two;
 
-public interface HelloListener
+interface HelloListener
 {
     void someoneSaidHello();
 }

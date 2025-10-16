@@ -43,7 +43,7 @@ class CutAudiofileTest extends TestBase
         assertThat("actual result", equalTo("expected result"));
     }
 
-    public void copyAudio(String sourceFileName, String destinationFileName, long lastNSeconds)
+    void copyAudio(String sourceFileName, String destinationFileName, long lastNSeconds)
     {
         AudioInputStream inputStream = null;
         AudioInputStream shortenedStream = null;

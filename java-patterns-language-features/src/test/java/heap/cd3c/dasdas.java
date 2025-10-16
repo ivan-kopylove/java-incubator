@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.stream.IntStream;
 
-public class dasdas
+class dasdas
 {
     @Test
     void exercise_design_reverse_engineering()

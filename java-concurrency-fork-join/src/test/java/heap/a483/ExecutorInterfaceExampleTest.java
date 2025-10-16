@@ -16,7 +16,7 @@ class ExecutorInterfaceExampleTest extends TestBase
         Executor executor = new Executor()
         {
             @Override
-            public void execute(Runnable runnable)
+            void execute(Runnable runnable)
             {
                 runnable.run();
             }

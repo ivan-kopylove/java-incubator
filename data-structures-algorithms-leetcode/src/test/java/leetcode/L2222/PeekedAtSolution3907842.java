@@ -3,13 +3,13 @@ package leetcode.L2222;
 /// - [peeked at solution](https://leetcode.com/problems/number-of-ways-to-select-buildings/solutions/3907842/easy-recursion-memoization/?envType=problem-list-v2&envId=dynamic-programming/)
 class PeekedAtSolution3907842
 {
-    public long numberOfWays(String s)
+    long numberOfWays(String s)
     {
         Long[][][] memo = new Long[s.length()][3][4];
         return numberOfWays(s, '2', 0, 0, memo);
     }
 
-    public long numberOfWays(String s, char ch, int i, int count, Long[][][] memo)
+    long numberOfWays(String s, char ch, int i, int count, Long[][][] memo)
     {
         if (count == 3)
         {

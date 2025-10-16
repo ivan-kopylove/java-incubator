@@ -12,12 +12,12 @@ import org.springframework.context.annotation.Configuration;
 class AppConfig2
 {
     @Bean
-    public MyCacheableService2 myService() {
+    MyCacheableService2 myService() {
         return new MyCacheableService2();
     }
 
     @Bean
-    public CacheManager cacheManager() // last time I deleted this method and ...
+    CacheManager cacheManager() // last time I deleted this method and ...
     {
         // last time I renamed the cache name and ...
         // there are no-args contructor - what does it do instead of specifying cache names?

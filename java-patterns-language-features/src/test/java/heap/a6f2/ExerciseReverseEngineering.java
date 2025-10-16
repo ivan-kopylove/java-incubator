@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ExerciseReverseEngineering
+class ExerciseReverseEngineering
 {
     @Test
     void exercise_design_reverse_engineering2()

@@ -13,7 +13,7 @@ class ThreadRunVsThreadStart
         String parentThreadName = Thread.currentThread().getName();
         Thread thread = new Thread()
         {
-            public void foo()
+            void foo()
             {
                 String childThreadName = Thread.currentThread().getName();
                 assertNotEquals(parentThreadName, childThreadName);
@@ -29,7 +29,7 @@ class ThreadRunVsThreadStart
         String parentThreadName = Thread.currentThread().getName();
         Thread thread = new Thread()
         {
-            public void foo()
+            void foo()
             {
                 String childThreadName = Thread.currentThread().getName();
                 assertEquals(parentThreadName, childThreadName);

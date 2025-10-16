@@ -14,12 +14,12 @@ class VisibilityExample
 {
     private boolean flag = false;
 
-    public void toggleFlag()
+    void toggleFlag()
     {
         flag = true;
     }
 
-    public boolean getFlag()
+    boolean getFlag()
     {
         return flag;
     }

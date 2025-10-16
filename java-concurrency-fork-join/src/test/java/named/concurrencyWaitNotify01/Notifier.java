@@ -5,13 +5,13 @@ class Notifier implements Runnable
 
     private final Message msg;
 
-    public Notifier(Message msg)
+    Notifier(Message msg)
     {
         this.msg = msg;
     }
 
     @Override
-    public void run()
+    void run()
     {
         String name = Thread.currentThread().getName();
         System.out.println(name + " started");

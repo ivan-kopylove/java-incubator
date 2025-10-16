@@ -4,17 +4,17 @@ class Message
 {
     private String msg;
 
-    public Message(String msg)
+    Message(String msg)
     {
         this.msg = msg;
     }
 
-    public String getMsg()
+    String getMsg()
     {
         return msg;
     }
 
-    public void setMsg(String msg)
+    void setMsg(String msg)
     {
         this.msg = msg;
     }

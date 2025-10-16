@@ -9,39 +9,39 @@ class ComparableObject
     private Date   date;
     private int    num;
 
-    public ComparableObject(String str, Date date, int num)
+    ComparableObject(String str, Date date, int num)
     {
         this.str = str;
         this.date = date;
         this.num = num;
     }
 
-    public String getStr()
+    String getStr()
     {
         return str;
     }
 
-    public void setStr(String str)
+    void setStr(String str)
     {
         this.str = str;
     }
 
-    public Date getDate()
+    Date getDate()
     {
         return date;
     }
 
-    public void setDate(Date date)
+    void setDate(Date date)
     {
         this.date = date;
     }
 
-    public int getNum()
+    int getNum()
     {
         return num;
     }
 
-    public void setNum(int num)
+    void setNum(int num)
     {
         this.num = num;
     }

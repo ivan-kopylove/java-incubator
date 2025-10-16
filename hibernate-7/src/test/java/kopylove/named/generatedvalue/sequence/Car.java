@@ -21,22 +21,22 @@ class Car
     @Column(name = "CAR_NAME")
     private String name;
 
-    public int getKey()
+    int getKey()
     {
         return key;
     }
 
-    public void setKey(int key)
+    void setKey(int key)
     {
         this.key = key;
     }
 
-    public String getName()
+    String getName()
     {
         return name;
     }
 
-    public void setName(String name)
+    void setName(String name)
     {
         this.name = name;
     }

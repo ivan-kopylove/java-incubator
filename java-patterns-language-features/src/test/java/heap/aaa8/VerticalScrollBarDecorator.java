@@ -2,7 +2,7 @@ package heap.aaa8;
 
 class VerticalScrollBarDecorator extends WindowDecorator
 {
-    public VerticalScrollBarDecorator(Window windowToBeDecorated)
+    VerticalScrollBarDecorator(Window windowToBeDecorated)
     {
         super(windowToBeDecorated);
     }

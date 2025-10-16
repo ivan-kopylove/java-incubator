@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class JpaOrderByExample extends EntityManagerManual
 {
     @BeforeAll
-    public static void populate()
+    static void populate()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         entityManager.getTransaction().begin();

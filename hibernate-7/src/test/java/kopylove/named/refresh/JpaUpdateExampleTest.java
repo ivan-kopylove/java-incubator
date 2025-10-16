@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class JpaUpdateExampleTest  extends EntityManagerManual
 {
     @BeforeAll
-    public static void populate()
+    static void populate()
     {
         ParentEntity12 parentEntity = new ParentEntity12();
         parentEntity.setId(101);

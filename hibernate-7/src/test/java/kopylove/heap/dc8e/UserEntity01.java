@@ -20,32 +20,32 @@ class UserEntity01 implements Serializable
     @Column(name = "USERS_CITY")
     private String city;
 
-    public String getName()
+    String getName()
     {
         return name;
     }
 
-    public void setName(String name)
+    void setName(String name)
     {
         this.name = name;
     }
 
-    public int getSsn()
+    int getSsn()
     {
         return ssn;
     }
 
-    public void setSsn(int ssn)
+    void setSsn(int ssn)
     {
         this.ssn = ssn;
     }
 
-    public String getCity()
+    String getCity()
     {
         return city;
     }
 
-    public void setCity(String city)
+    void setCity(String city)
     {
         this.city = city;
     }

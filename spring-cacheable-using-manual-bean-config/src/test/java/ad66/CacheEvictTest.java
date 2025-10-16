@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class CacheEvictTest
+class CacheEvictTest
 {
     @Test
     void exercise_design_reverse_engineering()

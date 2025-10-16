@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class JpaEntityStateAfterFlush extends EntityManagerManual
 {
     @BeforeAll
-    public static void populate()
+    static void populate()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
         entityManager.getTransaction().begin();
@@ -33,7 +33,7 @@ class JpaEntityStateAfterFlush extends EntityManagerManual
         read_again();
     }
 
-    public void do_flush()
+    void do_flush()
     {
         EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();
@@ -49,7 +49,7 @@ class JpaEntityStateAfterFlush extends EntityManagerManual
         entityManager.close();
     }
 
-    public void read_again()
+    void read_again()
     {
         EntityManager entityManager = super.getEntityManager();
         entityManager.getTransaction().begin();

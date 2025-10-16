@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 class MySolution10
 {
-    public ListNode mergeKLists(ListNode[] lists) {
+    ListNode mergeKLists(ListNode[] lists) {
 
         PriorityQueue<ListNode> queue = new PriorityQueue<>(); // what's the idea behind solving this problem using priority que?
 

@@ -6,9 +6,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 /// - [problem definition](https://www.google.com/search?&q=yandex+contest+C.+Удаление+дубликатов)
-public class WooHoo
+class WooHoo
 {
-    public static void main(String[] args) throws Exception
+    static void main(String[] args) throws Exception
     {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
 

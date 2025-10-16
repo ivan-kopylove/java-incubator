@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 class A
 {
-    public Number test1()
+    Number test1()
     {
         return 1;
     }
@@ -13,7 +13,7 @@ class A
 
 class B extends A
 {
-    //        public Integer test2()
+    //        Integer test2()
     //        {
     //                return 2;
     //        }

@@ -3,7 +3,7 @@ package leetcode.L23.a1;
 
 class MySolution20
 {
-    public ListNode mergeKLists(ListNode[] lists) {
+    ListNode mergeKLists(ListNode[] lists) {
 
         while(true) // what if there is no this external loop?
         {

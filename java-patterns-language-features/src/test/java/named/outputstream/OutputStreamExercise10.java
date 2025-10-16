@@ -2,7 +2,7 @@ package named.outputstream;
 
 import org.junit.jupiter.api.Test;
 
-public class OutputStreamExercise10
+class OutputStreamExercise10
 {
     @Test
     void example_1()

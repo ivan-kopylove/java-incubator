@@ -7,11 +7,11 @@ class Calculator {
     private static final Logger log = LoggerFactory.getLogger(Calculator.class);
 
 
-    public int add(int x, int y) {
+    int add(int x, int y) {
         return x + y;
     }
 
-    public int abs(int value) {
+    int abs(int value) {
         if (value < 0) {
             return -value;
         }
@@ -19,17 +19,17 @@ class Calculator {
     }
 
 
-    public int increment(int x) {
+    int increment(int x) {
         return ++x;
     }
 
 
-    public int decrement(int x) {
+    int decrement(int x) {
         return --x;
     }
 
 
-    public int addAndSet(int x, int y, Service service) {
+    int addAndSet(int x, int y, Service service) {
         int result = x + y;
         service.setResult(result);
         log.info("#addAndSet - got {}", result);

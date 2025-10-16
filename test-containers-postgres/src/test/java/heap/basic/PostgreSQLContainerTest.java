@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 import static org.junit.Assert.assertEquals;
 
-public class PostgreSQLContainerTest
+class PostgreSQLContainerTest
 {
     @Test
     void exercise_design_reverse_engineering() throws SQLException

@@ -13,7 +13,7 @@ class MyNonComparable
     int id;
     String color;
 
-    public MyNonComparable(int id, String color)
+    MyNonComparable(int id, String color)
     {
         this.id = id;
         this.color = color;
@@ -24,7 +24,7 @@ class MyComparable implements Comparable<MyComparable>{
     int id;
     String color;
 
-    public MyComparable(int id, String color)
+    MyComparable(int id, String color)
     {
         this.id = id;
         this.color = color;

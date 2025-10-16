@@ -12,18 +12,18 @@ import java.util.concurrent.TimeoutException;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-public class ShellExecutor
+class ShellExecutor
 {
     private static final Logger LOGGER = LoggerFactory.getLogger(ShellExecutor.class);
 
     private final ShellExecutorParameters shellExecutorParameters;
 
-    public ShellExecutor(ShellExecutorParameters shellExecutorParameters)
+    ShellExecutor(ShellExecutorParameters shellExecutorParameters)
     {
         this.shellExecutorParameters = shellExecutorParameters;
     }
 
-    public void exec(String command)
+    void exec(String command)
     {
         try
         {

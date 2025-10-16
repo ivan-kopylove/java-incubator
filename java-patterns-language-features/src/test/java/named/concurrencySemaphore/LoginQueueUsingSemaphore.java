@@ -7,7 +7,7 @@ class LoginQueueUsingSemaphore
 
     private final Semaphore semaphore;
 
-    public LoginQueueUsingSemaphore(int slotLimit)
+    LoginQueueUsingSemaphore(int slotLimit)
     {
         semaphore = new Semaphore(slotLimit);
     }

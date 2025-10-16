@@ -19,27 +19,27 @@ class PersonEntity01
     @OneToMany(mappedBy = "person", orphanRemoval = true, cascade = CascadeType.ALL)
     private List<AddressEntity01> addresses;
 
-    public int getId()
+    int getId()
     {
         return id;
     }
 
-    public String getName()
+    String getName()
     {
         return name;
     }
 
-    public void setName(String name)
+    void setName(String name)
     {
         this.name = name;
     }
 
-    public List<AddressEntity01> getAddresses()
+    List<AddressEntity01> getAddresses()
     {
         return addresses;
     }
 
-    public void setAddresses(List<AddressEntity01> addresses)
+    void setAddresses(List<AddressEntity01> addresses)
     {
         this.addresses = addresses;
     }

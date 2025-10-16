@@ -17,17 +17,17 @@ class PrivateConstructorClass
         value = "and put a breakpoint here as well";
     }
 
-    public static PrivateConstructorClass privateConstructorClass(String myString)
+    static PrivateConstructorClass privateConstructorClass(String myString)
     {
         return new PrivateConstructorClass(myString);
     }
 
-    public static String getValue()
+    static String getValue()
     {
         return value;
     }
 
-    public String getMyString()
+    String getMyString()
     {
         return myString;
     }

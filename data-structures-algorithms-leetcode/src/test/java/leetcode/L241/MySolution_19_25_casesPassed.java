@@ -8,7 +8,7 @@ import java.util.Map;
 /// - [19 / 25 testcases passed](https://leetcode.com/problems/different-ways-to-add-parentheses/submissions/1764655146/)
 class MySolution_19_25_casesPassed
 {
-    public List<Integer> diffWaysToCompute(String expression)
+    List<Integer> diffWaysToCompute(String expression)
     {
 
         Map<String, Integer> memo = new HashMap<>();

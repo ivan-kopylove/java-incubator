@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.stream.IntStream;
 
-public class WhatWillBePrinteddc5e
+class WhatWillBePrinteddc5e
 {
     // what word describes this effect? (the word is also used in Hibernate, Singletons, method references)?
     @Test

@@ -56,7 +56,7 @@ class FacadeExampleTest extends TestBase
         CatalyticConverter catalyticConverter = new CatalyticConverter();
         Starter            starter            = new Starter();
 
-        public void startEngine()
+        void startEngine()
         {
             airflowController.takeAir();
             injector.on();
@@ -66,7 +66,7 @@ class FacadeExampleTest extends TestBase
             catalyticConverter.on();
         }
 
-        public void stopEngine()
+        void stopEngine()
         {
             injector.off();
             catalyticConverter.off();

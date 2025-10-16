@@ -13,32 +13,32 @@ class Person
         this.age = age;
     }
 
-    public String getGivenName()
+    String getGivenName()
     {
         return givenName;
     }
 
-    public void setGivenName(String givenName)
+    void setGivenName(String givenName)
     {
         this.givenName = givenName;
     }
 
-    public String getSurName()
+    String getSurName()
     {
         return surName;
     }
 
-    public void setSurName(String surName)
+    void setSurName(String surName)
     {
         this.surName = surName;
     }
 
-    public int getAge()
+    int getAge()
     {
         return age;
     }
 
-    public void setAge(int age)
+    void setAge(int age)
     {
         this.age = age;
     }

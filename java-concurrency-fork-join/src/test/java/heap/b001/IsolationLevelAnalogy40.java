@@ -3,7 +3,7 @@ package heap.b001;
 import org.junit.jupiter.api.Test;
 
 /// an example of what isolation level?
-public class IsolationLevelAnalogy40
+class IsolationLevelAnalogy40
 {
     private int    cell = 0;
     private Object lock = new Object();

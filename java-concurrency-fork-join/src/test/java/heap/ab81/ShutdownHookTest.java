@@ -19,7 +19,7 @@ class ShutdownHookTest extends TestBase
         Runtime.getRuntime().addShutdownHook(new Thread(new Runnable()
         {
             @Override
-            public void run()
+            void run()
             {
                 executed.set(true);
 

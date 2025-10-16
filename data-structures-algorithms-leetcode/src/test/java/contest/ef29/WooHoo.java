@@ -3,9 +3,9 @@ package contest.ef29;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class WooHoo
+class WooHoo
 {
-    public static void main(String[] args) throws Exception
+    static void main(String[] args) throws Exception
     {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
 

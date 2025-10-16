@@ -55,17 +55,17 @@ class SynchronizedExampleTest extends TestBase
     {
         private int sum = 0;
 
-        public synchronized void calculate()
+        synchronized void calculate()
         {
             setSum(getSum() + 1);
         }
 
-        public int getSum()
+        int getSum()
         {
             return sum;
         }
 
-        public void setSum(int sum)
+        void setSum(int sum)
         {
             this.sum = sum;
         }
@@ -75,7 +75,7 @@ class SynchronizedExampleTest extends TestBase
     {
         private int sum = 0;
 
-        public void calculate()
+        void calculate()
         {
             synchronized (this)
             {
@@ -83,12 +83,12 @@ class SynchronizedExampleTest extends TestBase
             }
         }
 
-        public int getSum()
+        int getSum()
         {
             return sum;
         }
 
-        public void setSum(int sum)
+        void setSum(int sum)
         {
             this.sum = sum;
         }
@@ -98,17 +98,17 @@ class SynchronizedExampleTest extends TestBase
     {
         private int sum = 0;
 
-        public void calculate()
+        void calculate()
         {
             setSum(getSum() + 1);
         }
 
-        public int getSum()
+        int getSum()
         {
             return sum;
         }
 
-        public void setSum(int sum)
+        void setSum(int sum)
         {
             this.sum = sum;
         }

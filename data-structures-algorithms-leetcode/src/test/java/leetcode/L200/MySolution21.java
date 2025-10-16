@@ -2,7 +2,7 @@ package leetcode.L200;
 
 class MySolution21
 {
-    public int numIslands(char[][] grid) {
+    int numIslands(char[][] grid) {
 
         // what if there is no this extra data structure that hold, btw, what?
         // why this called dp?

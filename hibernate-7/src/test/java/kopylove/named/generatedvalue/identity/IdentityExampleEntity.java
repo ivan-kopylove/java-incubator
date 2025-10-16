@@ -17,7 +17,7 @@ class IdentityExampleEntity
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    public int getId()
+    int getId()
     {
         return id;
     }

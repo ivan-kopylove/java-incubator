@@ -6,7 +6,7 @@ class VeryBig
     private final        long[] la   = new long[SIZE];
     private final        String id;
 
-    public VeryBig(String id)
+    VeryBig(String id)
     {
         this.id = id;
     }

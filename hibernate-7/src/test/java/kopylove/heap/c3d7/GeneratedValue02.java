@@ -11,7 +11,7 @@ class GeneratedValue02
     @GeneratedValue
     private long id;
 
-    public long getId()
+    long getId()
     {
         return id;
     }

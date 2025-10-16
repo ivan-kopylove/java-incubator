@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 class Step90_Solution
 {
-    public boolean canPartition(int[] nums)
+    boolean canPartition(int[] nums)
     {
         int sum = 0;
 

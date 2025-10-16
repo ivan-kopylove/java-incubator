@@ -5,7 +5,7 @@ class IndicatorAdapterImpl implements IndicatorAdapter// what's wrong with that 
 
     private final Indicator indicator;
 
-    public IndicatorAdapterImpl(Indicator indicator)
+    IndicatorAdapterImpl(Indicator indicator)
     {
         this.indicator = indicator;
     }

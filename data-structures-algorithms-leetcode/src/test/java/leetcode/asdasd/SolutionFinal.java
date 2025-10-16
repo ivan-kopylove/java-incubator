@@ -7,7 +7,7 @@ import java.util.Set;
 
 class SolutionFinal
 {
-    public List<String> removeInvalidParentheses(String s) {
+    List<String> removeInvalidParentheses(String s) {
         int left = 0;
         int right = 0;
         int count = 0;

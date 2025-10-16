@@ -16,22 +16,22 @@ class Building
     @OrderBy
     private List<String> phoneNumbers;
 
-    public long getId()
+    long getId()
     {
         return id;
     }
 
-    public void setId(long id)
+    void setId(long id)
     {
         this.id = id;
     }
 
-    public List<String> getPhoneNumbers()
+    List<String> getPhoneNumbers()
     {
         return phoneNumbers;
     }
 
-    public void setPhoneNumbers(List<String> phoneNumbers)
+    void setPhoneNumbers(List<String> phoneNumbers)
     {
         this.phoneNumbers = phoneNumbers;
     }

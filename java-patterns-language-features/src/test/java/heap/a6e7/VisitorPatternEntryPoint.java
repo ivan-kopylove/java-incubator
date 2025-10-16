@@ -38,12 +38,12 @@ class Wheel implements CarElement
 {
     private final String name;
 
-    public Wheel(String name)
+    Wheel(String name)
     {
         this.name = name;
     }
 
-    public String getName()
+    String getName()
     {
         return name;
     }
@@ -77,7 +77,7 @@ class Car implements CarElement
 {
     private final List<CarElement> elements;
 
-    public Car()
+    Car()
     {
         this.elements = Arrays.asList(new Wheel("front left"),
                                       new Wheel("front right"),

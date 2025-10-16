@@ -3,7 +3,7 @@ package named.concurrencyWaitNotify02;
 class MyHouse
 {
 
-    public void eatPizza()
+    void eatPizza()
     {
         synchronized (this)
         {
@@ -22,7 +22,7 @@ class MyHouse
         System.out.println("Yumyum..");
     }
 
-    public void pizzaGuy()
+    void pizzaGuy()
     {
         synchronized (this)
         {

@@ -13,7 +13,7 @@ import com.github.ivan.kopylove.commons.testing.TestBase;
 class OrderOfOperationsMattersTest extends TestBase
 {
     @Test
-    public  void exercise_design_reverse_engineering1()
+     void exercise_design_reverse_engineering1()
     {
         List<String> result1 = Stream.of("1", "22", "333")
                                      .map(s -> s + "-postfix")
@@ -25,7 +25,7 @@ class OrderOfOperationsMattersTest extends TestBase
     }
 
     @Test
-    public  void exercise_design_reverse_engineering2()
+     void exercise_design_reverse_engineering2()
     {
         List<String> result2 = Stream.of("1", "22", "333")
                                      .filter(s -> s.length() > 1)

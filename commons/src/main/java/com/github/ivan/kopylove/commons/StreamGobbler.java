@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class StreamGobbler implements Runnable
+class StreamGobbler implements Runnable
 {
 
     private static final Logger      LOGGER = LoggerFactory.getLogger(StreamGobbler.class);
@@ -16,7 +16,7 @@ public class StreamGobbler implements Runnable
     private final        String      name;
     private              int         lines  = 0;
 
-    public StreamGobbler(InputStream inputStream, String name)
+    StreamGobbler(InputStream inputStream, String name)
     {
         this.inputStream = inputStream;
         this.name = name;
