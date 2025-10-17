@@ -1,1 +1,1 @@
-what is the purpose of applying separation of concerns (concerned to separate concurrency in a separate module)?
+what is the purpose of applying separation of concerns (concerned to separate the concurrency into a separate module)?
