@@ -28,7 +28,7 @@ class MySolution40
 
             if(lists[minIdx] != null)
             {
-                if(resultFirst == null) // It might have been placed outside the loop, what's the only reason it here?
+                if(resultFirst == null) // It might have been placed outside the loop, what's the only reason it is here?
                 {
                     resultFirst = lists[minIdx];
                     resultNext = lists[minIdx];

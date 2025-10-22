@@ -65,7 +65,7 @@ class Solution050
             dfs(s, i + 1, res, sb, count - 1);		    // not use ')''('
             dfs(s, i + 1, res, sb.append(c), count);       // use
         } else {
-            dfs(s, i + 1, res, sb.append(c), count);
+            dfs(s, i + 1, res, sb.append(c), count); // what maintains here and for what reason?
         }
 
         sb.setLength(len);
