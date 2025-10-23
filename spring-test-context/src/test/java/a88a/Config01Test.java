@@ -1,9 +1,11 @@
-package a8a9;
+package a88a;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
@@ -12,7 +14,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = Config01.class)
- class Config01Test
+class Config01Test
 {
     private ApplicationContext applicationContext;
     private String myString;
@@ -36,18 +38,12 @@ import static org.hamcrest.MatcherAssert.assertThat;
     }
 }
 
-@ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = Config02.class)
- class Config02Test
+@Configuration
+class Config01
 {
-
-    @Autowired
-    private ApplicationContext applicationContext;
-
-    @Test
-    void exercise_design_reverse_engineering() {
-        String message = applicationContext.getBean(String.class);
-
-        assertThat(message, equalTo("Hello from Config02"));
+    @Bean
+    String message()
+    {
+        return "Hello from Config01";
     }
 }

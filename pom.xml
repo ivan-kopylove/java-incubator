@@ -67,10 +67,11 @@
         <module>spring-transactional</module>
         <module>spring-test-context</module>
         <module>spring-scheduled</module>
+        <module>spring-serviceconnection</module>
         <module>test-containers-generic-hello-world</module>
         <module>test-containers-kafka</module>
         <module>test-containers-postgres</module>
-        <module>spring-serviceconnection</module>
+        <module>test-containers-rabbitmq</module>
         <module>test-containers-clickhouse</module>
     </modules>
 
