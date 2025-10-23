@@ -17,7 +17,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.emptyString;
 
 @SpringJUnitConfig
-class RabbitMQContainerExample
+class ServiceConnectionExample
 {
     /// what if there is no @ServiceConnection?
     /// how this connected to DynamicPropertyRegistry?
