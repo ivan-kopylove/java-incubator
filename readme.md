@@ -29,4 +29,4 @@ The examples intentionally violate DRY principle in the sake to make every examp
 
 The approach is tends to target a single concept at the moment.
 
-No class reuse. No classes. Only a few `public` keywords.
+No class reuse. No public classes. Only a few `public` keywords.
