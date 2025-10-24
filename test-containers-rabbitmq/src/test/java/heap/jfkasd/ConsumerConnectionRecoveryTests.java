@@ -12,11 +12,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import org.testcontainers.containers.RabbitMQContainer;
-import org.testcontainers.junit.jupiter.Container;
-import org.testcontainers.junit.jupiter.Testcontainers;
 import org.testcontainers.utility.DockerImageName;
 
 import java.util.concurrent.BlockingQueue;
@@ -27,12 +26,11 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 @SpringJUnitConfig
-@Testcontainers(disabledWithoutDocker = true)
 @DirtiesContext
 class ConsumerConnectionRecoveryTests
 {
-    @Container
-    private static final RabbitMQContainer RABBIT_MQ_CONTAINER = new RabbitMQContainer(DockerImageName.parse("rabbitmq"));
+    @Autowired
+    private RabbitMQContainer rabbitMQContainer;
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
@@ -52,11 +50,11 @@ class ConsumerConnectionRecoveryTests
 
         assertThat(config.received.poll(20, TimeUnit.SECONDS), equalTo("test data #1"));
 
-        RABBIT_MQ_CONTAINER.stop();
-        RABBIT_MQ_CONTAINER.start();
+        rabbitMQContainer.stop();
+        rabbitMQContainer.start();
 
-        cachingConnectionFactory.setPort(RABBIT_MQ_CONTAINER.getAmqpPort());
-        publisherConnectionFactory.setPort(RABBIT_MQ_CONTAINER.getAmqpPort());
+        cachingConnectionFactory.setPort(rabbitMQContainer.getAmqpPort());
+        publisherConnectionFactory.setPort(rabbitMQContainer.getAmqpPort());
 
         rabbitTemplate.convertAndSend("testQueue", "test data #2");
 
@@ -70,20 +68,26 @@ class ConsumerConnectionRecoveryTests
         private BlockingQueue<String> received = new LinkedBlockingQueue<>();
 
         @Bean
-        CachingConnectionFactory connectionFactory()
+        CachingConnectionFactory connectionFactory(RabbitMQContainer rabbitMQContainer)
         {
             CachingConnectionFactory connectionFactory = new CachingConnectionFactory("localhost",
-                                                                                      RABBIT_MQ_CONTAINER.getAmqpPort());
+                                                                                      rabbitMQContainer.getAmqpPort());
             connectionFactory.setChannelCacheSize(1);
             connectionFactory.setChannelCheckoutTimeout(2000);
             return connectionFactory;
         }
 
         @Bean
-        CachingConnectionFactory publisherConnectionFactory()
+        RabbitMQContainer rabbitMQContainer()
+        {
+            return new RabbitMQContainer(DockerImageName.parse("rabbitmq"));
+        }
+
+        @Bean
+        CachingConnectionFactory publisherConnectionFactory(RabbitMQContainer rabbitMQContainer)
         {
             CachingConnectionFactory connectionFactory = new CachingConnectionFactory("localhost",
-                                                                                      RABBIT_MQ_CONTAINER.getAmqpPort());
+                                                                                      rabbitMQContainer.getAmqpPort());
             connectionFactory.setChannelCacheSize(1);
             connectionFactory.setChannelCheckoutTimeout(2000);
             return connectionFactory;
