@@ -37,9 +37,9 @@ class PostgreSQLContainerTest
     @Test
     void exercise_design_reverse_engineering() throws SQLException
     {
-        String topicName = "hello-world-topic" + randomUUID();
-        String messageKey = "my-key" + randomUUID();
-        String messageValue = "Hello, Kafka with Testcontainers!" + randomUUID();
+        String topicName = "hello-world-topic";
+        String messageKey = "my-key " + randomUUID();
+        String messageValue = "Hello, Kafka with Testcontainers! " + randomUUID();
 
         // 1. Produce a message
         try (KafkaProducer<String, String> producer = createProducer(kafka.getBootstrapServers()))

@@ -25,4 +25,8 @@ Anyway, modules' names narrow the scope enough.
 
 ## Package-private
 
-The examples intentionally violate DRY principle in the sake to make every example self-sufficient. No class reuse. No classes. Only a few `public` keywords.
+The examples intentionally violate DRY principle in the sake to make every example self-sufficient. 
+
+The approach is tends to target a single concept at the moment.
+
+No class reuse. No public classes except a few ones.

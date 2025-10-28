@@ -22,7 +22,7 @@ class RecursiveTaskExample {
         ForkJoinPool commonPool = ForkJoinPool.commonPool();
 
         // when
-        Integer result = commonPool.invoke(new CustomRecursiveTask(new int[]{5, 8, 12, 20, 25}));
+        Integer result = commonPool.invoke(new CustomRecursiveTask(new int[] {5, 8, 12, 20, 25}));
 
         // then
         assertThat(result, equalTo(570));

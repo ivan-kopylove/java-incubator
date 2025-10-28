@@ -4,6 +4,7 @@ import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import com.github.ivan.kopylove.commons.testing.TestBase;
@@ -43,6 +44,6 @@ class SolutionTest extends TestBase
         int result = sut.minimumOperationsToMakeEqual(x, y);
 
         // then
-        assertThat(result, CoreMatchers.equalTo(expected));
+        assertThat(result, equalTo(expected));
     }
 }
