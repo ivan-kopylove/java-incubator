@@ -66,6 +66,7 @@
         <module>spring-repository-enable-jpa-repositories</module>
         <module>spring-transactional</module>
         <module>spring-test-context</module>
+        <module>spring-properties</module>
         <module>spring-scheduled</module>
         <module>spring-serviceconnection</module>
         <module>test-containers-generic-hello-world</module>
