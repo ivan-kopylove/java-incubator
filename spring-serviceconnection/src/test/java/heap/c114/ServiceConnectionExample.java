@@ -10,6 +10,7 @@ import org.testcontainers.utility.DockerImageName;
 
 import java.sql.SQLException;
 
+import static com.github.ivan.kopylove.commons.shared.Constants.RABBIT_MQ_DOCKER_IMAGE;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.CoreMatchers.notNullValue;
