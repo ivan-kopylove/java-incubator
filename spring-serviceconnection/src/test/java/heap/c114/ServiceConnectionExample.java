@@ -13,6 +13,7 @@ import org.testcontainers.utility.DockerImageName;
 
 import java.sql.SQLException;
 
+import static com.github.ivan.kopylove.commons.shared.Constants.RABBIT_MQ_DOCKER_IMAGE;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.CoreMatchers.notNullValue;
@@ -27,7 +28,7 @@ class ServiceConnectionExample
     /// What are the ways to access properties registerd by @ServiceConnection?
     /// Is @ServiceConnection works only with @TestConfiguration?
     @ServiceConnection
-    private static RabbitMQContainer rabbit = new RabbitMQContainer(DockerImageName.parse("rabbitmq:3.7.25-management-alpine"));
+    private static RabbitMQContainer rabbit = new RabbitMQContainer(DockerImageName.parse(RABBIT_MQ_DOCKER_IMAGE));
 
     @Autowired
     private RabbitConnectionDetails connectionDetails;
