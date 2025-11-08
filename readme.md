@@ -25,7 +25,7 @@ Anyway, modules' names narrow the scope enough.
 
 ## Package-private
 
-The examples intentionally violate DRY principle in the sake to make every example self-sufficient. 
+The examples intentionally violate DRY principle in the sake of making every example self-sufficient. 
 
 The approach is tends to target a single concept at the moment.
 
