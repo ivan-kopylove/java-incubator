@@ -1,12 +1,11 @@
 package heap.c114;
 
+import org.hamcrest.CoreMatchers;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.amqp.autoconfigure.RabbitConnectionDetails;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import org.testcontainers.containers.RabbitMQContainer;
 import org.testcontainers.utility.DockerImageName;
@@ -25,8 +24,11 @@ class ServiceConnectionExample
 {
     /// what if there is no @ServiceConnection?
     /// how this connected to DynamicPropertyRegistry?
-    /// What are the ways to access properties registerd by @ServiceConnection?
+    /// What are the ways to access properties registerd by @ServiceConnection via @Configuration, not just a static field?
     /// Is @ServiceConnection works only with @TestConfiguration?
+    /// Is Spring @ServiceConnection works only with static fields?
+    /// NoSuchBeanDefinition RabbitConnectionDetails?
+    /// Spring @Testcontainers is not created
     @ServiceConnection
     private static RabbitMQContainer rabbit = new RabbitMQContainer(DockerImageName.parse(RABBIT_MQ_DOCKER_IMAGE));
 

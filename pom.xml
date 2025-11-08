@@ -65,6 +65,7 @@
         <module>spring-web-mvc-test</module>
         <module>spring-repository-enable-jpa-repositories</module>
         <module>spring-transactional</module>
+        <module>spring-import-annotation</module>
         <module>spring-test-context</module>
         <module>spring-properties</module>
         <module>spring-scheduled</module>
