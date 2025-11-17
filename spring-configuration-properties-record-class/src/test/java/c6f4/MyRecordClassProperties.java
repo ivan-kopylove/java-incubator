@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.bind.ConstructorBinding;
 import org.springframework.stereotype.Component;
 
 @ConfigurationProperties(prefix = "app")
-public record MyRecordClassProperties(String myName,  String yourName)
+record MyRecordClassProperties(String myName,  String yourName)
 {
 
 }

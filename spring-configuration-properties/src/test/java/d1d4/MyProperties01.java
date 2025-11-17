@@ -5,25 +5,25 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties(prefix = "app")
-public class MyProperties01
+class MyProperties01
 {
     private String myName;
     private String yourName;
 
-    public String getMyName() {
+    String getMyName() {
         return myName;
     }
 
-    public void setMyName(String myName) {
+    void setMyName(String myName) {
         this.myName = myName;
     }
 
-    public String getYourName()
+    String getYourName()
     {
         return yourName;
     }
 
-    public void setYourName(String yourName)
+    void setYourName(String yourName)
     {
         this.yourName = yourName;
     }

@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 @SpringBootApplication
 //@EnableConfigurationProperties(ParticularProperties.class) or ConfigurationPropertiesScan
 @ConfigurationPropertiesScan
-public class RecordClassPropertiesApplication
+class RecordClassPropertiesApplication
 {
 
 

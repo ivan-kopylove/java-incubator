@@ -13,7 +13,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @Import(PropertiesConfig.class)
-public class ConfigCreatedPropertiesTest
+class ConfigCreatedPropertiesTest
 {
     @Autowired
     private ConfigCreatedProperties configCreatedProperties;

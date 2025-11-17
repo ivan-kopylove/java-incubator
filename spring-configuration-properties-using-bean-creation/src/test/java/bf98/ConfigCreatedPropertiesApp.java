@@ -3,7 +3,7 @@ package bf98;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ConfigCreatedPropertiesApp
+class ConfigCreatedPropertiesApp
 {
 
 
