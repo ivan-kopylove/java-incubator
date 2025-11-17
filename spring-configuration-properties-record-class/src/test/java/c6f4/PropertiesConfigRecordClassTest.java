@@ -11,7 +11,7 @@ import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
 @SpringBootTest
-public class PropertiesConfigTest03
+public class PropertiesConfigRecordClassTest
 {
     @Autowired
     private MyRecordClassProperties myRecordClassProperties;
