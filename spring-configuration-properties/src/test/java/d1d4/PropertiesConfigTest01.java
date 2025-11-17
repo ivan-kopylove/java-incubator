@@ -18,8 +18,8 @@ class PropertiesConfigTest01
 
     @Test
     void exercise_design_reverse_engineering()  {
-        assertThat(myProperties01.getMyName(), equalTo("MyName2"));
-        assertThat(myProperties01.getYourName(), equalTo("YourName3"));
+        assertThat(myProperties01.getMyName(), equalTo("MyName22"));
+        assertThat(myProperties01.getYourName(), equalTo("YourName23"));
 
     }
 }
