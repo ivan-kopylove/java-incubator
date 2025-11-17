@@ -11,15 +11,15 @@ import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
 @SpringBootTest
-public class Tests
+class PropertiesConfigTest01
 {
     @Autowired
-    private MyProperties myProperties;
+    private MyProperties01 myProperties01;
 
     @Test
-    public void exercise_design_reverse_engineering()  {
-        assertThat(myProperties.getMyName(), equalTo("MyName2"));
-        assertThat(myProperties.getYourName(), equalTo("YourName3"));
+    void exercise_design_reverse_engineering()  {
+        assertThat(myProperties01.getMyName(), equalTo("MyName22"));
+        assertThat(myProperties01.getYourName(), equalTo("YourName23"));
 
     }
 }

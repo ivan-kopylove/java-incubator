@@ -50,7 +50,7 @@ class EqualsHashcodeHashMap
     {
         private final String value;
 
-        public MyClass(String value)
+        MyClass(String value)
         {
             this.value = value;
         }

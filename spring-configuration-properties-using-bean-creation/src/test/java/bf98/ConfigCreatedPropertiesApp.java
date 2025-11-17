@@ -1,9 +1,9 @@
-package d1d4;
+package bf98;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-class PropertiesApplication
+class ConfigCreatedPropertiesApp
 {
 
 
