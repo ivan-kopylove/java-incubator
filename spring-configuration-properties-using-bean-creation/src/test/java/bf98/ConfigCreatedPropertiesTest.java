@@ -20,8 +20,8 @@ public class ConfigCreatedPropertiesTest
 
     @Test
      void exercise_design_reverse_engineering()  {
-        assertThat(configCreatedProperties.getMyName(), equalTo("MyName5"));
-        assertThat(configCreatedProperties.getYourName(), equalTo("YourName6"));
+        assertThat(configCreatedProperties.getMyName(), equalTo("MyName15"));
+        assertThat(configCreatedProperties.getYourName(), equalTo("YourName16"));
 
     }
 }
