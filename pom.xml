@@ -66,6 +66,7 @@
         <module>spring-repository-enable-jpa-repositories</module>
         <module>spring-transactional</module>
         <module>spring-configuration-properties</module>
+        <module>spring-configuration-properties-using-bean-creation</module>
         <module>spring-import-annotation</module>
         <module>spring-test-context</module>
         <module>spring-properties</module>
