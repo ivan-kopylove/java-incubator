@@ -13,15 +13,15 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @Import(PropertiesConfig.class)
-public class PropertiesConfigTest02
+public class ConfigCreatedPropertiesTest
 {
     @Autowired
-    private MyProperties02 myProperties02;
+    private ConfigCreatedProperties configCreatedProperties;
 
     @Test
      void exercise_design_reverse_engineering()  {
-        assertThat(myProperties02.getMyName(), equalTo("MyName5"));
-        assertThat(myProperties02.getYourName(), equalTo("YourName6"));
+        assertThat(configCreatedProperties.getMyName(), equalTo("MyName5"));
+        assertThat(configCreatedProperties.getYourName(), equalTo("YourName6"));
 
     }
 }

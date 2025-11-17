@@ -3,7 +3,7 @@ package bf98;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix = "app")
-public class MyProperties02
+public class ConfigCreatedProperties
 {
     private String myName;
     private String yourName;
