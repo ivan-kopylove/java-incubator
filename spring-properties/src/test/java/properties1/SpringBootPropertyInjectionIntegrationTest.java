@@ -16,7 +16,7 @@ import java.util.Collection;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 @SpringBootTest(classes = Config.class)
-public class SpringBootPropertyInjectionIntegrationTest {
+class SpringBootPropertyInjectionIntegrationTest {
 
     @Value("${foo.bar}")
     private String baz;
@@ -26,7 +26,7 @@ public class SpringBootPropertyInjectionIntegrationTest {
 
 
     @Test
-    public void whenSpringBootPropertyProvided_thenProperlyInjected() {
+    void whenSpringBootPropertyProvided_thenProperlyInjected() {
         assertThat(baz).isEqualTo("baz");
         assertThat(myPropertyOne).isEqualTo("baq");
     }
@@ -42,7 +42,7 @@ class Config{
 class AppContextRefreshedEventPropertiesPrinter {
 
     @EventListener
-    public void handleContextRefreshed(ContextRefreshedEvent event) {
+    void handleContextRefreshed(ContextRefreshedEvent event) {
         ConfigurableEnvironment env = (ConfigurableEnvironment) event.getApplicationContext().getEnvironment();
 
         env.getPropertySources()
