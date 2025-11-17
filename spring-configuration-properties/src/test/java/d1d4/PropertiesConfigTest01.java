@@ -1,9 +1,8 @@
-package bf98;
+package d1d4;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.Import;
 
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -12,16 +11,15 @@ import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
 @SpringBootTest
-@Import(PropertiesConfig.class)
-public class Tests
+public class PropertiesConfigTest01
 {
     @Autowired
-    private MyProperties myProperties;
+    private MyProperties01 myProperties01;
 
     @Test
-    public void exercise_design_reverse_engineering()  {
-        assertThat(myProperties.getMyName(), equalTo("MyName5"));
-        assertThat(myProperties.getYourName(), equalTo("YourName6"));
+    void exercise_design_reverse_engineering()  {
+        assertThat(myProperties01.getMyName(), equalTo("MyName2"));
+        assertThat(myProperties01.getYourName(), equalTo("YourName3"));
 
     }
 }

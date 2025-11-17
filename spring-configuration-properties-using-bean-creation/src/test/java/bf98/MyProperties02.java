@@ -1,10 +1,9 @@
 package bf98;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
 
 @ConfigurationProperties(prefix = "app")
-public class MyProperties
+public class MyProperties02
 {
     private String myName;
     private String yourName;

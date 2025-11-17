@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties(prefix = "app")
-public class MyProperties
+public class MyProperties01
 {
     private String myName;
     private String yourName;
