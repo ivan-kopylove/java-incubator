@@ -2,7 +2,7 @@ package leetcode.L23.a1;
 
 class ListNode
 {
-    int val;
+    int      val;
     ListNode next;
 
     ListNode() {}
