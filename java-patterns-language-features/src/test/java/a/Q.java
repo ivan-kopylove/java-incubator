@@ -15,6 +15,11 @@ import java.util.UUID;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
+interface UserDiscountApi
+{
+    int getDiscount(UUID userId);
+}
+
 class Q
 {
     @Test
@@ -92,6 +97,16 @@ class DiscountCalculator
         this.userDiscountApi = userDiscountApi;
     }
 
+    private static void validate1(Order order)
+    {
+        order.goods.forEach(a -> {
+            if (a.price.intValue() < 0)
+            {
+                throw new IllegalArgumentException("detailed error message");
+            }
+        });
+    }
+
     Order foo(UUID userId, Order order)
     {
         Objects.requireNonNull(userId);
@@ -121,43 +136,27 @@ class DiscountCalculator
 
         return order;
     }
-
-    private static void validate1(Order order)
-    {
-        order.goods.forEach(a -> {
-            if (a.price.intValue() < 0)
-            {
-                throw new IllegalArgumentException("detailed error message");
-            }
-        });
-    }
 }
 
 class Order
 {
+    List<Good> goods = new ArrayList<>();
+
     Order(List<Good> goods)
     {
         this.goods = goods;
     }
-
-    List<Good> goods = new ArrayList<>();
 }
 
 class Good
 {
 
+    UUID       uuid;
+    BigDecimal price;
+    BigDecimal finalPrice;
     Good(UUID uuid, BigDecimal price)
     {
         this.uuid = uuid;
         this.price = price;
     }
-
-    UUID       uuid;
-    BigDecimal price;
-    BigDecimal finalPrice;
-}
-
-interface UserDiscountApi
-{
-    int getDiscount(UUID userId);
 }

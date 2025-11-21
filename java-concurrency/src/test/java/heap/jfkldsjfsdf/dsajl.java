@@ -28,10 +28,9 @@ class dsajl
 
 class CustomRecursiveAction extends RecursiveAction
 {
-    private              String workload  = "";
     private static final int    THRESHOLD = 4;
-
     private static Logger logger = Logger.getAnonymousLogger();
+    private              String workload  = "";
 
     CustomRecursiveAction(String workload)
     {

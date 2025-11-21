@@ -52,35 +52,6 @@ class Configs
         return new HibernateExceptionTranslator();
     }
 
-    static class CustomPersistenceExceptionTranslator implements PersistenceExceptionTranslator
-    {
-        @Override
-        public DataAccessException translateExceptionIfPossible(RuntimeException ex)
-        {
-            if (ex instanceof CustomPersistenceException)
-            {
-                return new CustomDataAccessException("Translated: " + ex.getMessage(), ex);
-            }
-            return null;
-        }
-    }
-
-    static class CustomPersistenceException extends RuntimeException
-    {
-        CustomPersistenceException(String message)
-        {
-            super(message);
-        }
-    }
-
-    static class CustomDataAccessException extends DataAccessException
-    {
-        CustomDataAccessException(String message, Throwable cause)
-        {
-            super(message, cause);
-        }
-    }
-
     @Bean
     DataSource dataSource()
     {
@@ -137,6 +108,35 @@ class Configs
 
         return configuration.buildSessionFactory()
                             .unwrap(EntityManagerFactory.class);
+    }
+
+    static class CustomPersistenceExceptionTranslator implements PersistenceExceptionTranslator
+    {
+        @Override
+        public DataAccessException translateExceptionIfPossible(RuntimeException ex)
+        {
+            if (ex instanceof CustomPersistenceException)
+            {
+                return new CustomDataAccessException("Translated: " + ex.getMessage(), ex);
+            }
+            return null;
+        }
+    }
+
+    static class CustomPersistenceException extends RuntimeException
+    {
+        CustomPersistenceException(String message)
+        {
+            super(message);
+        }
+    }
+
+    static class CustomDataAccessException extends DataAccessException
+    {
+        CustomDataAccessException(String message, Throwable cause)
+        {
+            super(message, cause);
+        }
     }
 }
 

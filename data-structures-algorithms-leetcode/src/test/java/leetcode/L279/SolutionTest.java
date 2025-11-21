@@ -13,6 +13,17 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 class SolutionTest extends TestBase
 {
+    private static List<Arguments> dataSet()
+    {
+        // @formatter:off
+        return List.of(
+                arguments(12, 3),
+                arguments(13, 2),
+                arguments(7168, 4)
+        );
+        // @formatter:on
+    }
+
     @ParameterizedTest
     @MethodSource("dataSet")
     void run_tests(int n, int expected)
@@ -25,16 +36,5 @@ class SolutionTest extends TestBase
 
         // then
         assertThat(result, equalTo(expected));
-    }
-
-    private static List<Arguments> dataSet()
-    {
-        // @formatter:off
-        return List.of(
-                arguments(12, 3),
-                arguments(13, 2),
-                arguments(7168, 4)
-        );
-        // @formatter:on
     }
 }

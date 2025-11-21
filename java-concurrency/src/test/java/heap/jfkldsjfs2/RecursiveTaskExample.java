@@ -32,8 +32,8 @@ class RecursiveTaskExample
 
 class CustomRecursiveTask extends RecursiveTask<Integer>
 {
-    private              int[] arr;
     private static final int   THRESHOLD = 20;
+    private              int[] arr;
 
     CustomRecursiveTask(int[] arr)
     {
