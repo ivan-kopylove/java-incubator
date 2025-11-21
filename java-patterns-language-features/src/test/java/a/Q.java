@@ -154,6 +154,7 @@ class Good
     UUID       uuid;
     BigDecimal price;
     BigDecimal finalPrice;
+
     Good(UUID uuid, BigDecimal price)
     {
         this.uuid = uuid;
