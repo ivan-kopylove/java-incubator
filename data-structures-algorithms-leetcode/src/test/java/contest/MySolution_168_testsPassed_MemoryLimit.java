@@ -28,8 +28,12 @@ class MySolution_168_testsPassed_MemoryLimit
         /// - start from 1
         /// - start from 2
 
-        Map<Integer, List<Integer>> line1map = line1.chars().mapToObj(val -> (Integer) val).collect(Collectors.groupingBy(val -> val));
-        Map<Integer, List<Integer>> line2map = line2.chars().mapToObj(val -> (Integer) val).collect(Collectors.groupingBy(val -> val));
+        Map<Integer, List<Integer>> line1map = line1.chars()
+                                                    .mapToObj(val -> (Integer) val)
+                                                    .collect(Collectors.groupingBy(val -> val));
+        Map<Integer, List<Integer>> line2map = line2.chars()
+                                                    .mapToObj(val -> (Integer) val)
+                                                    .collect(Collectors.groupingBy(val -> val));
 
 
         System.out.println(line1map.equals(line2map) ? 1 : 0);

@@ -42,8 +42,11 @@ final class YandexSpeechSynthesisAPI
 
     private static String urlEncode(Map<?, ?> map)
     {
-        return map.entrySet().stream().map(entry -> entry.getValue() == null ? urlEncode(entry.getKey()) : urlEncode(
-                entry.getKey()) + "=" + urlEncode(entry.getValue())).collect(Collectors.joining("&"));
+        return map.entrySet()
+                  .stream()
+                  .map(entry -> entry.getValue() == null ? urlEncode(entry.getKey()) : urlEncode(
+                          entry.getKey()) + "=" + urlEncode(entry.getValue()))
+                  .collect(Collectors.joining("&"));
     }
 
     private static String urlEncode(Object obj)
@@ -81,9 +84,12 @@ final class YandexSpeechSynthesisAPI
             String url = YANDEX_TTS_API_URL + "?";
             url += urlEncode(voiceParam);
 
-            HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).header("Authorization",
-                                                                                       "Bearer " + apiParameters.token())
-                                             .POST(HttpRequest.BodyPublishers.noBody()).build();
+            HttpRequest request = HttpRequest.newBuilder()
+                                             .uri(URI.create(url))
+                                             .header("Authorization",
+                                                     "Bearer " + apiParameters.token())
+                                             .POST(HttpRequest.BodyPublishers.noBody())
+                                             .build();
 
             for (int i = 0; i < 6; i++)
             {

@@ -29,8 +29,10 @@ class JpaBasicPersistChildExample
         childen.add(childEntity);
 
         EntityManager em = EntityManagerProvider.getEntityManager();
-        em.getTransaction().begin();
+        em.getTransaction()
+          .begin();
         em.persist(parentEntity);
-        em.getTransaction().commit();
+        em.getTransaction()
+          .commit();
     }
 }

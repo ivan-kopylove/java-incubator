@@ -20,6 +20,7 @@ public class StreamUtil
 
     public static <T> Comparator<T> shuffleComparator()
     {
-        return Comparator.comparing(e -> ThreadLocalRandom.current().nextBoolean());
+        return Comparator.comparing(e -> ThreadLocalRandom.current()
+                                                          .nextBoolean());
     }
 }

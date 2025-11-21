@@ -9,7 +9,8 @@ class GlobalExceptionHandler
 {
     // what if I replace it with Exception or RuntimeException, will it work?
     @ExceptionHandler(CustomException.class)
-    ResponseEntity<String> handleGoneException(CustomException e) {
+    ResponseEntity<String> handleGoneException(CustomException e)
+    {
         return new ResponseEntity<>(e.getMessage(), e.getStatusCode());
     }
 }

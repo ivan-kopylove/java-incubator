@@ -1,12 +1,11 @@
 package named.variance;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/// Answer the questions stated in [Fruit].
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class Step60QuestionMarkTest extends TestBase
 {
     @Test

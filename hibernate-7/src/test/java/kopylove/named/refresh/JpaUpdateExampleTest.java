@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// Example of EntityManager#refresh.
 
-class JpaUpdateExampleTest  extends EntityManagerManual
+class JpaUpdateExampleTest extends EntityManagerManual
 {
     @BeforeAll
     static void populate()
@@ -20,9 +20,11 @@ class JpaUpdateExampleTest  extends EntityManagerManual
         parentEntity.setName("Robert Patrick");
 
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
         entityManager.persist(parentEntity);
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
     }
 
     @Test

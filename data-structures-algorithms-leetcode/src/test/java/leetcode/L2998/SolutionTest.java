@@ -1,13 +1,11 @@
 package leetcode.L2998;
 
-import org.hamcrest.CoreMatchers;
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-
-import com.github.ivan.kopylove.commons.testing.TestBase;
 
 class SolutionTest extends TestBase
 {

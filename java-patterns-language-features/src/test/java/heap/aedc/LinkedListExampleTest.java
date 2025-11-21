@@ -1,5 +1,6 @@
 package heap.aedc;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.LinkedList;
@@ -7,7 +8,6 @@ import java.util.LinkedList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class LinkedListExampleTest extends TestBase
 {
     @Test

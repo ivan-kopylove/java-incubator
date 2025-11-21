@@ -1,7 +1,9 @@
 package heap.a951;
 
 /// finalVariableInsideCallback
+
 import com.github.ivan.kopylove.commons.testing.TestBase;
+
 class FinalVariableInsideCallbackTest extends TestBase
 {
     static void main(String[] args)

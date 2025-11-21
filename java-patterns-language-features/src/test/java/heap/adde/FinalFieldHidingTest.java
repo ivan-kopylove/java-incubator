@@ -1,11 +1,10 @@
 package heap.adde;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/// java.mechanics.oop.hiding
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class FinalFieldHidingTest extends TestBase
 {
     @Test

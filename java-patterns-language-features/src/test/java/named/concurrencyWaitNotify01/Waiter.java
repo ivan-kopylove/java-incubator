@@ -14,7 +14,8 @@ class Waiter implements Runnable
     {
         synchronized (msg)
         {
-            String name = Thread.currentThread().getName();
+            String name = Thread.currentThread()
+                                .getName();
 
             try
             {

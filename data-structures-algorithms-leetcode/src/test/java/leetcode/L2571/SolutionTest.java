@@ -1,8 +1,8 @@
 package leetcode.L2571;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class SolutionTest extends TestBase
 {
     @Test

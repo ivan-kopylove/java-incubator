@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /// Difference between EntityManager#find and EntityManager#getReference
 
-class JpaFindvsGetReferenceTest  extends EntityManagerManual
+class JpaFindvsGetReferenceTest extends EntityManagerManual
 {
     @BeforeAll
     static void populate()
@@ -27,9 +27,11 @@ class JpaFindvsGetReferenceTest  extends EntityManagerManual
         parentEntity.setName("some parent name");
 
         EntityManager entityManger = EntityManagerProvider.getEntityManager();
-        entityManger.getTransaction().begin();
+        entityManger.getTransaction()
+                    .begin();
         entityManger.persist(parentEntity);
-        entityManger.getTransaction().commit();
+        entityManger.getTransaction()
+                    .commit();
         entityManger.close();
     }
 
@@ -42,7 +44,9 @@ class JpaFindvsGetReferenceTest  extends EntityManagerManual
         // if the object is not found in the database null is returned
         ParentEntity10 parentEntityObject = entityManger.find(ParentEntity10.class, 0);
 
-        assertFalse(parentEntityObject.getClass().toString().contains("_$$_jvst"));
+        assertFalse(parentEntityObject.getClass()
+                                      .toString()
+                                      .contains("_$$_jvst"));
         entityManger.close();
     }
 
@@ -59,7 +63,8 @@ class JpaFindvsGetReferenceTest  extends EntityManagerManual
 
         assertEquals(999999999, anEntity.getId()); //no init
         assertInstanceOf(HibernateProxy.class, anEntity);
-        String className = anEntity.getClass().toString();
+        String className = anEntity.getClass()
+                                   .toString();
         System.out.println(className);
 
         assertThat(className, containsString("$HibernateProxy"));
@@ -76,7 +81,8 @@ class JpaFindvsGetReferenceTest  extends EntityManagerManual
             ParentEntity10 parent = entityManger.getReference(ParentEntity10.class, 999999999); //no db hit
 
             assertEquals(999999999, parent.getId());//no init
-            assertThat(parent.getClass().toString(), containsString("$HibernateProxy"));
+            assertThat(parent.getClass()
+                             .toString(), containsString("$HibernateProxy"));
             assertInstanceOf(HibernateProxy.class, parent);
             parent.getName(); //produces exception
 

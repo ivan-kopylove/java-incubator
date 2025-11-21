@@ -1,14 +1,12 @@
 package heap.ad2e;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/// functional interface playground
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class ExampleTest extends TestBase
 {
-
 
     @Test
     void exercise_design_reverse_engineering01()

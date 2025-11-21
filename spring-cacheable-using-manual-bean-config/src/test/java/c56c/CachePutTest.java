@@ -16,7 +16,9 @@ class CachePutTest
 
         SomeService3 service = context.getBean(SomeService3.class);
 
-        System.out.println(service.getClass().getSimpleName().toString());
+        System.out.println(service.getClass()
+                                  .getSimpleName()
+                                  .toString());
 
         System.out.println(service.generateUuid(1));
         System.out.println(service.generateUuid(1));

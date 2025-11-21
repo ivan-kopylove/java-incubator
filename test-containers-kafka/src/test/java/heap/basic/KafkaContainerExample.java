@@ -48,11 +48,13 @@ class KafkaContainerExample
             producer.flush();
         }
 
-        try (KafkaConsumer<String, String> consumer = createConsumer(kafka.getBootstrapServers(), "test-group")) {
+        try (KafkaConsumer<String, String> consumer = createConsumer(kafka.getBootstrapServers(), "test-group"))
+        {
             consumer.subscribe(Collections.singletonList(topicName));
             var records = consumer.poll(Duration.ofSeconds(10)); // Poll for records for 10 seconds
 
-            var record = records.iterator().next();
+            var record = records.iterator()
+                                .next();
             assertThat(record.key(), equalTo(messageKey));
             assertThat(record.value(), equalTo(messageValue));
         }

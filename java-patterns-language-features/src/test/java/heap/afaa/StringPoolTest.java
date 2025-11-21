@@ -1,12 +1,11 @@
 package heap.afaa;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/// Basic demonstration of strings pool in java. Strings are compared intentionally using reference equality.
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class StringPoolTest extends TestBase
 {
     @Test

@@ -2,14 +2,15 @@ package leetcode.L200;
 
 class MySolution40
 {
-    int numIslands(char[][] grid) {
+    int numIslands(char[][] grid)
+    {
 
         int[][] dp = new int[grid.length][grid[0].length];
 
         int current = 0;
-        for(int i = 0; i < grid.length; i++)
+        for (int i = 0; i < grid.length; i++)
         {
-            for(int j = 0; j < grid[0].length; j++)
+            for (int j = 0; j < grid[0].length; j++)
             {
                 current++; // is that ok that current is incremented for each cell?
                 dfs(i, j, current, grid, dp);
@@ -21,17 +22,17 @@ class MySolution40
 
     void dfs(int i, int j, int current, char[][] grid, int[][] dp)
     {
-        if(grid[i][j] == '0')
+        if (grid[i][j] == '0')
         {
             return;
         }
 
-        if(dp[i][j] != 0) // what does that mean? what if I do it like `== 1` or `== 2`?
+        if (dp[i][j] != 0) // what does that mean? what if I do it like `== 1` or `== 2`?
         {
             return;
         }
 
-        if(grid[i][j] == '1')
+        if (grid[i][j] == '1')
         {
             dp[i][j] = current;
         }
@@ -41,6 +42,4 @@ class MySolution40
         dfs(i, j + 1, current, grid, dp);
         dfs(i, j - 1, current, grid, dp);
     }
-
-    
 }

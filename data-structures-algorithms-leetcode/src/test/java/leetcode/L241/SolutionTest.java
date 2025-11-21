@@ -1,5 +1,6 @@
 package leetcode.L241;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -11,8 +12,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class SolutionTest extends TestBase
 {
     private static List<Arguments> dataSet()

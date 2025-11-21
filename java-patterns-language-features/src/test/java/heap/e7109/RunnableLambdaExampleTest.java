@@ -1,12 +1,10 @@
 package heap.e7109;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.function.Consumer;
 
-import static org.junit.jupiter.api.Assertions.fail;
-
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class RunnableLambdaExampleTest extends TestBase
 {
 
@@ -30,7 +28,6 @@ class RunnableLambdaExampleTest extends TestBase
         r2.run();
         r3.accept("something");
         r4.myMethod();
-
 
 
         //                new Thread(r1);// is that compilable?

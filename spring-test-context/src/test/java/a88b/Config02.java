@@ -12,7 +12,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = Config02.class)
 class Config02Test
@@ -21,7 +20,8 @@ class Config02Test
     private ApplicationContext applicationContext;
 
     @Test
-    void exercise_design_reverse_engineering() {
+    void exercise_design_reverse_engineering()
+    {
         String message = applicationContext.getBean(String.class);
 
         assertThat(message, equalTo("Hello from Config02"));
@@ -32,7 +32,8 @@ class Config02Test
 class Config02
 {
     @Bean
-    String message() {
+    String message()
+    {
         return "Hello from Config02";
     }
 }

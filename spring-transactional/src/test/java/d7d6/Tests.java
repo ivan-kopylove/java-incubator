@@ -19,11 +19,12 @@ class Test10 extends TestBase
     private MyTransactionalService myTransactionalService;
 
     @Test
-    void exercise_design_reverse_engineering() {
-        assertThat(myTransactionalService.getClass().toString(), containsString("MyTransactionalService$$SpringCGLIB$$0"));
+    void exercise_design_reverse_engineering()
+    {
+        assertThat(myTransactionalService.getClass()
+                                         .toString(), containsString("MyTransactionalService$$SpringCGLIB$$0"));
     }
 }
-
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = TxEnabled.class)
@@ -34,13 +35,14 @@ class Test11 extends TestBase
     private MyService myService;
 
     @Test
-    void exercise_design_reverse_engineering() {
-        assertThat(myService.getClass().toString(), containsString("MyService"));
-        assertThat(myService.getClass().toString(), not(containsString("$$SpringCGLIB$$")));
+    void exercise_design_reverse_engineering()
+    {
+        assertThat(myService.getClass()
+                            .toString(), containsString("MyService"));
+        assertThat(myService.getClass()
+                            .toString(), not(containsString("$$SpringCGLIB$$")));
     }
 }
-
-
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = TxDisabled.class)
@@ -50,11 +52,12 @@ class Test20 extends TestBase
     private MyTransactionalService myTransactionalService;
 
     @Test
-     void exercise_design_reverse_engineering() {
-        assertThat(myTransactionalService.getClass().toString(), containsString("MyTransactionalService"));
-        assertThat(myTransactionalService.getClass().toString(), not(containsString("$$SpringCGLIB$$")));
+    void exercise_design_reverse_engineering()
+    {
+        assertThat(myTransactionalService.getClass()
+                                         .toString(), containsString("MyTransactionalService"));
+        assertThat(myTransactionalService.getClass()
+                                         .toString(), not(containsString("$$SpringCGLIB$$")));
     }
-
-
 }
 

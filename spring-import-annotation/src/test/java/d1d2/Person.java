@@ -9,68 +9,81 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "persons")
-class Person {
+class Person
+{
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
 
-	@Column(name = "first_name", nullable = false)
-	private String firstName;
+    @Column(name = "first_name", nullable = false)
+    private String firstName;
 
-	@Column(name = "last_name", nullable = false)
-	private String lastName;
+    @Column(name = "last_name", nullable = false)
+    private String lastName;
 
-	@Column(name = "ssn", nullable = false, unique = true)
-	private String ssn;
+    @Column(name = "ssn", nullable = false, unique = true)
+    private String ssn;
 
-	Person() {
-	}
+    Person()
+    {
+    }
 
-	Person(String firstName, String lastName) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-	}
+    Person(String firstName, String lastName)
+    {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
-	Person(String firstName, String lastName, String ssn) {
-		this(firstName, lastName);
-		this.ssn = ssn;
-	}
+    Person(String firstName, String lastName, String ssn)
+    {
+        this(firstName, lastName);
+        this.ssn = ssn;
+    }
 
-	Integer getId() {
-		return id;
-	}
+    Integer getId()
+    {
+        return id;
+    }
 
-	void setId(Integer id) {
-		this.id = id;
-	}
+    void setId(Integer id)
+    {
+        this.id = id;
+    }
 
-	String getFirstName() {
-		return firstName;
-	}
+    String getFirstName()
+    {
+        return firstName;
+    }
 
-	void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
+    void setFirstName(String firstName)
+    {
+        this.firstName = firstName;
+    }
 
-	String getLastName() {
-		return lastName;
-	}
+    String getLastName()
+    {
+        return lastName;
+    }
 
-	void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+    void setLastName(String lastName)
+    {
+        this.lastName = lastName;
+    }
 
-	String getSsn() {
-		return ssn;
-	}
+    String getSsn()
+    {
+        return ssn;
+    }
 
-	void setSsn(String ssn) {
-		this.ssn = ssn;
-	}
+    void setSsn(String ssn)
+    {
+        this.ssn = ssn;
+    }
 
-	@Override
-	public String toString() {
-		return firstName + " " + lastName;
-	}
+    @Override
+    public String toString()
+    {
+        return firstName + " " + lastName;
+    }
 }

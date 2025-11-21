@@ -6,14 +6,15 @@ import java.util.List;
 
 class PeekedAtSolution1513258AndReimplementedByHeart
 {
-    int numSquares(int n) {
+    int numSquares(int n)
+    {
 
         List<Integer> options = new ArrayList<>();
         options.add(1);
 
-        for(int i = 2; i < n / 2 + 1; i++)    
+        for (int i = 2; i < n / 2 + 1; i++)
         {
-            if(i * i > n)
+            if (i * i > n)
             {
                 break;
             }
@@ -24,7 +25,7 @@ class PeekedAtSolution1513258AndReimplementedByHeart
 
         int result = dfs(n, options, new int[n + 1]);
 
-        if(result == Integer.MAX_VALUE)
+        if (result == Integer.MAX_VALUE)
         {
             return 1;
         }
@@ -36,26 +37,26 @@ class PeekedAtSolution1513258AndReimplementedByHeart
 
     private int dfs(int current, List<Integer> options, int[] dp)
     {
-        if(current < 0)
+        if (current < 0)
         {
             return Integer.MAX_VALUE;
         }
 
-        if(dp[current] != 0)
+        if (dp[current] != 0)
         {
             return dp[current];
         }
 
-        if(current == 0)
+        if (current == 0)
         {
             return 0;
         }
 
         int min = current;
-        for(int i = 0; i < options.size(); i++)
+        for (int i = 0; i < options.size(); i++)
         {
             Integer x = options.get(i);
-            
+
             min = Math.min(min, dfs(current - x, options, dp));
         }
 

@@ -1,5 +1,6 @@
 package named.adapterTemplate.L1;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import named.adapterTemplate.L1.adapter.MyNewJava_Adapter;
 import named.adapterTemplate.L1.spi.MyNewJava_Spi;
 import named.adapterTemplate.L1.usecase.MyNewJava_UseCase;
@@ -9,7 +10,6 @@ import org.junit.jupiter.api.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class MyNewJava_AdapterTest extends TestBase
 {
 

@@ -1,10 +1,10 @@
 package heap.afaa;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class UTF8Test extends TestBase
 {
     @Test

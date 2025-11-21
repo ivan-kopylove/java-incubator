@@ -6,14 +6,14 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
-class JpaSharedGeneratedValueTest  extends EntityManagerManual
+class JpaSharedGeneratedValueTest extends EntityManagerManual
 {
     @Test
     void exercise_design_reverse_engineering()
     {
         EntityManager entityManager = getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         GeneratedValue02 g10 = new GeneratedValue02();
         GeneratedValue02 g11 = new GeneratedValue02();
@@ -27,7 +27,8 @@ class JpaSharedGeneratedValueTest  extends EntityManagerManual
         assertEquals(1, g10.getId());
         assertEquals(1, g20.getId());
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 }

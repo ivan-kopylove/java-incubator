@@ -1,10 +1,10 @@
 package heap.a4e1;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class BitFieldExampleTest extends TestBase
 {
     private static final int MAGIC        = 1; // power of 0
@@ -30,7 +30,8 @@ class BitFieldExampleTest extends TestBase
 
     private String fillNumberWithLeadingZeroes(int length, String s)
     {
-        return String.format("%" + length + "s", s).replace(' ', '0');
+        return String.format("%" + length + "s", s)
+                     .replace(' ', '0');
     }
 
     @Test

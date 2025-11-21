@@ -20,28 +20,32 @@ class Tests extends TestBase
     private MyRepo repo;
 
     @Test
-    void exercise_design_reverse_engineering1() {
+    void exercise_design_reverse_engineering1()
+    {
         assertThrows(DataIntegrityViolationException.class, () -> {
             repo.foo1();
         });
     }
 
     @Test
-    void exercise_design_reverse_engineering2() {
+    void exercise_design_reverse_engineering2()
+    {
         assertThrows(CustomDataAccessException.class, () -> {
             repo.foo2();
         });
     }
 
     @Test
-    void exercise_design_reverse_engineering3() {
+    void exercise_design_reverse_engineering3()
+    {
         assertThrows(InvalidDataAccessApiUsageException.class, () -> {
             repo.foo3();
         });
     }
 
     @Test
-    void exercise_design_reverse_engineering4() {
+    void exercise_design_reverse_engineering4()
+    {
         assertThrows(NullPointerException.class, () -> {
             repo.foo4();
         });

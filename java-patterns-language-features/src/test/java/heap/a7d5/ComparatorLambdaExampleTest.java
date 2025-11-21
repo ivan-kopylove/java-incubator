@@ -1,5 +1,6 @@
 package heap.a7d5;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -7,8 +8,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-/// lambdas playground
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class ComparatorLambdaExampleTest extends TestBase
 {
     @Test
@@ -24,7 +23,8 @@ class ComparatorLambdaExampleTest extends TestBase
         {
             public int compare(Person p1, Person p2)
             {
-                return p1.getSurName().compareTo(p2.getSurName());
+                return p1.getSurName()
+                         .compareTo(p2.getSurName());
             }
         });
 
@@ -34,7 +34,9 @@ class ComparatorLambdaExampleTest extends TestBase
         }
 
         // Use Lambda instead
-        Collections.sort(personList, (Person p1, Person p2) -> p1.getSurName().compareTo(p2.getSurName()));
+        Collections.sort(personList,
+                         (Person p1, Person p2) -> p1.getSurName()
+                                                     .compareTo(p2.getSurName()));
 
         for (Person p : personList)
         {
@@ -42,7 +44,9 @@ class ComparatorLambdaExampleTest extends TestBase
         }
 
         // Print Desc
-        Collections.sort(personList, (p1, p2) -> p2.getSurName().compareTo(p1.getSurName()));
+        Collections.sort(personList,
+                         (p1, p2) -> p2.getSurName()
+                                       .compareTo(p1.getSurName()));
 
         for (Person p : personList)
         {

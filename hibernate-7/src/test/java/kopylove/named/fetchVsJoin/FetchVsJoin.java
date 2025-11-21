@@ -16,7 +16,8 @@ class FetchVsJoin extends EntityManagerManual
     void join()
     {
         EntityManager entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
         CriteriaQuery<Gamer> cq = builder.createQuery(Gamer.class);
@@ -27,7 +28,8 @@ class FetchVsJoin extends EntityManagerManual
         TypedQuery<Gamer> query = entityManager.createQuery(cq);
         query.getResultList();
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 
@@ -36,7 +38,8 @@ class FetchVsJoin extends EntityManagerManual
     void fetch()
     {
         EntityManager entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
         CriteriaQuery<Gamer> cq = builder.createQuery(Gamer.class);
@@ -47,7 +50,8 @@ class FetchVsJoin extends EntityManagerManual
         TypedQuery<Gamer> query = entityManager.createQuery(cq);
         query.getResultList();
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 }

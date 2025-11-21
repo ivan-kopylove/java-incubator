@@ -24,7 +24,8 @@ class OrmNPlusOneBehaviour
         Random random = new Random();
 
         EntityManager entityManager = getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         for (int i = 7; i < 12; i++)
         {
@@ -41,7 +42,8 @@ class OrmNPlusOneBehaviour
             entityManager.persist(child);
         }
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 
@@ -56,7 +58,8 @@ class OrmNPlusOneBehaviour
         Root<ParentEntity06> root = cr.from(ParentEntity06.class);
         cr.select(root);
 
-        List<ParentEntity06> parents = entityManager.createQuery(cr).getResultList();
+        List<ParentEntity06> parents = entityManager.createQuery(cr)
+                                                    .getResultList();
 
         for (ParentEntity06 parent : parents)
         {
@@ -71,7 +74,8 @@ class OrmNPlusOneBehaviour
     void nPlusOne()
     {
         EntityManager entityManager = getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();
         CriteriaQuery<ParentEntity06> cr = cb.createQuery(ParentEntity06.class);
@@ -90,7 +94,8 @@ class OrmNPlusOneBehaviour
             }
         }
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 
@@ -98,7 +103,8 @@ class OrmNPlusOneBehaviour
     void solutionIsFetch()
     {
         EntityManager entityManager = getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
         CriteriaQuery<ParentEntity06> cq = builder.createQuery(ParentEntity06.class);
@@ -107,7 +113,8 @@ class OrmNPlusOneBehaviour
         root.fetch("childs");
         cq.select(root);
 
-        List<ParentEntity06> parents = entityManager.createQuery(cq).getResultList();
+        List<ParentEntity06> parents = entityManager.createQuery(cq)
+                                                    .getResultList();
 
         //        entityManager.close();
 
@@ -120,7 +127,8 @@ class OrmNPlusOneBehaviour
             }
         }
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
     }
 
     @Test
@@ -135,7 +143,8 @@ class OrmNPlusOneBehaviour
         root.join("childs");
         cq.select(root);
 
-        List<ParentEntity06> parents = entityManager.createQuery(cq).getResultList();
+        List<ParentEntity06> parents = entityManager.createQuery(cq)
+                                                    .getResultList();
 
 
         System.out.println("---- FINISHED -----");

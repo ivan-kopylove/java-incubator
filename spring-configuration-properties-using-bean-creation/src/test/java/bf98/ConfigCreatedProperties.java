@@ -8,11 +8,13 @@ class ConfigCreatedProperties
     private String myName;
     private String yourName;
 
-    String getMyName() {
+    String getMyName()
+    {
         return myName;
     }
 
-    void setMyName(String myName) {
+    void setMyName(String myName)
+    {
         this.myName = myName;
     }
 

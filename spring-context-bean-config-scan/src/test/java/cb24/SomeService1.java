@@ -6,7 +6,8 @@ import org.springframework.stereotype.Service;
 @Service
 class SomeService1
 {
-    String getMessage() {
+    String getMessage()
+    {
         return "Hello from SomeService1!";
     }
 }

@@ -1,10 +1,9 @@
 package heap.a7d4;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import com.github.ivan.kopylove.commons.testing.TestBase;
 
 class ClosureExampleTest extends TestBase
 {

@@ -6,16 +6,18 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement // why Spring silently allow startup when there is at least one `@Transactional`, but no `@EnableTransactionManagement`?
- class TxEnabled
+class TxEnabled
 {
 
     @Bean
-    MyTransactionalService myTransactionalService() {
+    MyTransactionalService myTransactionalService()
+    {
         return new MyTransactionalService();
     }
 
     @Bean
-    MyService myService() {
+    MyService myService()
+    {
         return new MyService();
     }
 }
@@ -24,8 +26,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 class TxDisabled
 {
     @Bean
-    MyTransactionalService myTransactionalService() {
+    MyTransactionalService myTransactionalService()
+    {
         return new MyTransactionalService();
     }
-
 }

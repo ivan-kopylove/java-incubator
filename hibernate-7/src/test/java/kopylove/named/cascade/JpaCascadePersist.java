@@ -13,7 +13,8 @@ class JpaCascadePersist extends EntityManagerManual
     void whenParentSavedThenChildSaved()
     {
         EntityManager entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         PersonEntity01 person = new PersonEntity01();
         person.setName("devender");
@@ -23,7 +24,8 @@ class JpaCascadePersist extends EntityManagerManual
 
         entityManager.persist(person);
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 
@@ -31,7 +33,8 @@ class JpaCascadePersist extends EntityManagerManual
     void whenParentRemovedThenChildRemoved()
     {
         EntityManager entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         PersonEntity01 person = new PersonEntity01();
         person.setName("devender");
@@ -42,16 +45,19 @@ class JpaCascadePersist extends EntityManagerManual
 
         entityManager.persist(person);
         int id = person.getId();
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
 
         entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         PersonEntity01 personEntity = entityManager.find(PersonEntity01.class, id);
 
         entityManager.remove(personEntity);
-        entityManager.getTransaction().commit(); //also deletes addresses
+        entityManager.getTransaction()
+                     .commit(); //also deletes addresses
         entityManager.close();
     }
 
@@ -59,7 +65,8 @@ class JpaCascadePersist extends EntityManagerManual
     void a()
     {
         EntityManager entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         PersonEntity01 person = new PersonEntity01();
         person.setName("some");
@@ -70,17 +77,22 @@ class JpaCascadePersist extends EntityManagerManual
 
         entityManager.persist(person);
         int id = person.getId();
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
 
         entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         PersonEntity01 personEntity = entityManager.find(PersonEntity01.class, id);
 
-        personEntity.getAddresses().remove(personEntity.getAddresses().get(0));
+        personEntity.getAddresses()
+                    .remove(personEntity.getAddresses()
+                                        .get(0));
 
-        entityManager.getTransaction().commit(); //also deletes addresses
+        entityManager.getTransaction()
+                     .commit(); //also deletes addresses
         entityManager.close();
     }
 
@@ -88,7 +100,8 @@ class JpaCascadePersist extends EntityManagerManual
     void whenParentSavedThenMerged()
     {
         EntityManager entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         int addressId;
         PersonEntity01 person = new PersonEntity01();
@@ -99,11 +112,13 @@ class JpaCascadePersist extends EntityManagerManual
 
         addressId = address.getId();
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
 
         entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         AddressEntity01 savedAddressEntity = entityManager.find(AddressEntity01.class, addressId);
         PersonEntity01 savedPersonEntity = savedAddressEntity.getPerson();
@@ -111,7 +126,8 @@ class JpaCascadePersist extends EntityManagerManual
         savedAddressEntity.setHouseNumber(24);
 
         entityManager.merge(savedPersonEntity);
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 }

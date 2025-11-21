@@ -1,5 +1,6 @@
 package heap.a333;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -8,9 +9,6 @@ import java.io.ObjectOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import static org.junit.jupiter.api.Assertions.fail;
-
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class SerializableTest extends TestBase
 {
     static int sizeof(Object obj) throws IOException

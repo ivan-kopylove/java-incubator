@@ -1,7 +1,7 @@
 package heap.aa9b.one;
 
-import org.junit.jupiter.api.Test;
 import com.github.ivan.kopylove.commons.testing.TestBase;
+import org.junit.jupiter.api.Test;
 
 class ListenerEntryPointTest extends TestBase
 {

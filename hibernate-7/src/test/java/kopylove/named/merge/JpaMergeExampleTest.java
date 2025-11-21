@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// Difference vs merge and persist
 
-class JpaMergeExampleTest  extends EntityManagerManual
+class JpaMergeExampleTest extends EntityManagerManual
 {
     @Test
     void merge_set_new_name_original_object()
@@ -18,12 +18,14 @@ class JpaMergeExampleTest  extends EntityManagerManual
         initialEntity.setName("initial name");
 
         EntityManager entityManger = super.getEntityManager();
-        entityManger.getTransaction().begin();
+        entityManger.getTransaction()
+                    .begin();
         ParentEntity08 merged = entityManger.merge(initialEntity);//copies the state from the supplied entity, and makes the new copy managed.
 
         initialEntity.setName("initial updated name");
 
-        entityManger.getTransaction().commit();
+        entityManger.getTransaction()
+                    .commit();
 
         entityManger.close();
 
@@ -43,12 +45,14 @@ class JpaMergeExampleTest  extends EntityManagerManual
         initialEntity.setName("initial name");
 
         EntityManager entityManger = super.getEntityManager();
-        entityManger.getTransaction().begin();
+        entityManger.getTransaction()
+                    .begin();
         ParentEntity08 merged = entityManger.merge(initialEntity);//copies the state from the supplied entity, and makes the new copy managed.
 
         merged.setName("merged updated name");
 
-        entityManger.getTransaction().commit();
+        entityManger.getTransaction()
+                    .commit();
 
         entityManger.close();
 
@@ -73,16 +77,20 @@ class JpaMergeExampleTest  extends EntityManagerManual
 
         //save to db and commit
         EntityManager entityManger = super.getEntityManager();
-        entityManger.getTransaction().begin();
+        entityManger.getTransaction()
+                    .begin();
         entityManger.persist(entity1);
-        entityManger.getTransaction().commit();
+        entityManger.getTransaction()
+                    .commit();
         entityManger.close();
 
         //update detached entity with the same id
         entityManger = super.getEntityManager();
-        entityManger.getTransaction().begin();
+        entityManger.getTransaction()
+                    .begin();
         entityManger.merge(entity2);
-        entityManger.getTransaction().commit();
+        entityManger.getTransaction()
+                    .commit();
         entityManger.close();
     }
 
@@ -94,12 +102,14 @@ class JpaMergeExampleTest  extends EntityManagerManual
         originalEntity.setName("old parent name");
 
         EntityManager entityManger = super.getEntityManager();
-        entityManger.getTransaction().begin();
+        entityManger.getTransaction()
+                    .begin();
         entityManger.persist(originalEntity);//makes supplied entity managed
 
         originalEntity.setName("new parent name");
 
-        entityManger.getTransaction().commit();
+        entityManger.getTransaction()
+                    .commit();
 
         entityManger.close();
 

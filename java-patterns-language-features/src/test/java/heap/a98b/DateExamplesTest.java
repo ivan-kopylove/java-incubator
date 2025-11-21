@@ -1,12 +1,12 @@
 package heap.a98b;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class DateExamplesTest extends TestBase
 {
     /// Date#before method exists in JCL.

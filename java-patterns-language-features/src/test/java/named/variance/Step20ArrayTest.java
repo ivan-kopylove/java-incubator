@@ -1,11 +1,8 @@
 package named.variance;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
-/// Answer the questions stated in [Fruit].
-///
-/// Book search: "language misfeature".
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class Step20ArrayTest extends TestBase
 {
     @Test

@@ -2,6 +2,7 @@ package named.concurrencyWaiterError;
 
 // Example 1: Basic Illegal Monitor State (Run to see error)
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +10,6 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class WaitErrorExampleTest extends TestBase
 {
     @Nested

@@ -8,13 +8,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// JPA @GeneratedValue examples
 
-class JpaGeneratedValueExampleTest 
+class JpaGeneratedValueExampleTest
 {
     @Test
     void exercise_design_reverse_engineering()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         Car car1 = new Car();
         car1.setName("ZAZ Zaporozhets");
@@ -37,6 +38,7 @@ class JpaGeneratedValueExampleTest
         assertEquals(2, car2.getKey());
         assertEquals(3, car3.getKey());
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
     }
 }

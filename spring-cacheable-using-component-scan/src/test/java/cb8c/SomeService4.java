@@ -10,7 +10,8 @@ import static java.util.UUID.randomUUID;
 class SomeService4
 {
     @Cacheable(value = "myCache")
-    String generateUuid(int someInt) {
+    String generateUuid(int someInt)
+    {
         return randomUUID().toString();
     }
 }

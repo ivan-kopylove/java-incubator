@@ -10,7 +10,7 @@ import java.util.concurrent.RecursiveAction;
 import static java.util.stream.Collectors.toList;
 
 /// What search engine request should I use to refresh the theory about this?
- class SumActionExample
+class SumActionExample
 {
 
     @Test
@@ -31,19 +31,22 @@ import static java.util.stream.Collectors.toList;
     }
 }
 
-
-class SumAction extends RecursiveAction {
+class SumAction extends RecursiveAction
+{
     private static final int SEQUENTIAL_THRESHOLD = 5;
 
     private List<Long> data;
 
-    SumAction(List<Long> data) {
+    SumAction(List<Long> data)
+    {
         this.data = data;
     }
 
     @Override
-    protected void compute() {
-        if (data.size() <= SEQUENTIAL_THRESHOLD) { // base case
+    protected void compute()
+    {
+        if (data.size() <= SEQUENTIAL_THRESHOLD)
+        { // base case
             long sum = computeSumDirectly();
             System.out.format("Sum of %s: %d\n", data.toString(), sum);
         }
@@ -59,9 +62,11 @@ class SumAction extends RecursiveAction {
         }
     }
 
-    private long computeSumDirectly() {
+    private long computeSumDirectly()
+    {
         long sum = 0;
-        for (Long l: data) {
+        for (Long l : data)
+        {
             sum += l;
         }
         return sum;

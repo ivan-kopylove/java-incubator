@@ -1,11 +1,11 @@
 package heap.ae47;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class ClosureExerciseTest extends TestBase
 {
 

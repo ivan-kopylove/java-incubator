@@ -1,6 +1,5 @@
 package a;
 
-import jdk.jfr.Description;
 import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -15,7 +14,6 @@ import java.util.Objects;
 import java.util.UUID;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.greaterThan;
 
 class Q
 {
@@ -38,7 +36,7 @@ class Q
         assertThat(result.goods.get(1).finalPrice.intValue(), CoreMatchers.equalTo(147));
     }
 
-      @Test
+    @Test
     void exercise_design_reverse_engineering2()
     {
         // given
@@ -61,29 +59,27 @@ class Q
         assertThat(result.goods.get(0).finalPrice, CoreMatchers.equalTo(operand));
     }
 
-   @Test
-   @DisplayName("Тесты на Illegal Arugment, тесты null")
+    @Test
+    @DisplayName("Тесты на Illegal Arugment, тесты null")
     void exercise_design_reverse_engineering3()
     {
-     // todo
+        // todo
     }
 
-
-   @Test
-   @DisplayName("Тесты на то что цены нереальные")
+    @Test
+    @DisplayName("Тесты на то что цены нереальные")
     void exercise_design_reverse_engineering4()
     {
-     // todo
+        // todo
     }
 
-   @Test
-   @DisplayName("Тесты на то что скидка в диапазоне 0..100")
+    @Test
+    @DisplayName("Тесты на то что скидка в диапазоне 0..100")
     void exercise_design_reverse_engineering5()
     {
-     // todo
+        // todo
     }
 }
-
 
 class DiscountCalculator
 {
@@ -96,7 +92,8 @@ class DiscountCalculator
         this.userDiscountApi = userDiscountApi;
     }
 
-    Order foo(UUID userId, Order order){
+    Order foo(UUID userId, Order order)
+    {
         Objects.requireNonNull(userId);
         Objects.requireNonNull(order);
 
@@ -104,18 +101,19 @@ class DiscountCalculator
 
 
         int discount = userDiscountApi.getDiscount(userId);
-        if(discount < 1 || discount > 100)
+        if (discount < 1 || discount > 100)
         {
             throw new IllegalArgumentException("discount error: " + discount);
         }
 
-        for(Good good : order.goods)
+        for (Good good : order.goods)
         {
             BigDecimal divisor = new BigDecimal(100);
 
             BigDecimal multiplicand = new BigDecimal(discount);
 
-            BigDecimal discount1 = good.price.divide(divisor).multiply(multiplicand);
+            BigDecimal discount1 = good.price.divide(divisor)
+                                             .multiply(multiplicand);
             BigDecimal bigDecimal = discount1.setScale(2, RoundingMode.HALF_UP);
 
             good.finalPrice = good.price.subtract(bigDecimal);
@@ -127,7 +125,7 @@ class DiscountCalculator
     private static void validate1(Order order)
     {
         order.goods.forEach(a -> {
-            if(a.price.intValue() < 0)
+            if (a.price.intValue() < 0)
             {
                 throw new IllegalArgumentException("detailed error message");
             }
@@ -143,7 +141,6 @@ class Order
     }
 
     List<Good> goods = new ArrayList<>();
-
 }
 
 class Good
@@ -155,15 +152,12 @@ class Good
         this.price = price;
     }
 
-     UUID       uuid;
-     BigDecimal price;
-     BigDecimal finalPrice;
+    UUID       uuid;
+    BigDecimal price;
+    BigDecimal finalPrice;
 }
-
-
 
 interface UserDiscountApi
 {
     int getDiscount(UUID userId);
-
 }

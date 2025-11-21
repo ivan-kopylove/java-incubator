@@ -8,16 +8,19 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-class CalculatorTest {
+class CalculatorTest
+{
     private Calculator sut;
 
     @BeforeEach
-    void setUp() {
+    void setUp()
+    {
         sut = new Calculator();
     }
 
     @Test
-    void add_returnSum() {
+    void add_returnSum()
+    {
         int result = sut.add(2, 3);
         assertThat(result, equalTo(5));
     }
@@ -29,21 +32,23 @@ class CalculatorTest {
             -7, 7
             """
     )
-    void givenX_absReturnsY(int input, int expected) {
+    void givenX_absReturnsY(int input, int expected)
+    {
         int actual = sut.abs(input);
         assertThat(actual, equalTo(expected));
     }
 
     @Test
-    void incrementAddsOne() {
+    void incrementAddsOne()
+    {
         int result = sut.increment(10);
         assertThat(result, equalTo(11));
     }
 
     @Test
-    void decrementSubtractsOne() {
+    void decrementSubtractsOne()
+    {
         int result = sut.decrement(10);
         assertThat(result, equalTo(9));
     }
-
 }

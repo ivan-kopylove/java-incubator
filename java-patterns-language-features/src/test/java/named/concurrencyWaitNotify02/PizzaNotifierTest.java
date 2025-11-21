@@ -1,12 +1,11 @@
 package named.concurrencyWaitNotify02;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class PizzaNotifierTest extends TestBase
 {
     @Test

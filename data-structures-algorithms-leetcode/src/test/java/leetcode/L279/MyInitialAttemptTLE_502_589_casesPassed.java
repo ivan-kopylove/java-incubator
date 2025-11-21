@@ -6,14 +6,15 @@ import java.util.List;
 
 class MyInitialAttemptTLE_502_589_casesPassed
 {
-    int numSquares(int n) {
+    int numSquares(int n)
+    {
 
         List<Integer> options = new ArrayList<>();
         options.add(1);
 
-        for(int i = 2; i < n / 2 + 1; i++)    
+        for (int i = 2; i < n / 2 + 1; i++)
         {
-            if(i * i > n)
+            if (i * i > n)
             {
                 break;
             }
@@ -25,7 +26,7 @@ class MyInitialAttemptTLE_502_589_casesPassed
 
         int result = dfs(n, options, 0, 0, new int[n + 1][n + 1]);
 
-        if(result == Integer.MAX_VALUE)
+        if (result == Integer.MAX_VALUE)
         {
             return 1;
         }
@@ -37,26 +38,26 @@ class MyInitialAttemptTLE_502_589_casesPassed
 
     int dfs(int n, List<Integer> options, int current, int step, int[][] dp)
     {
-        if(current > n)
+        if (current > n)
         {
             return Integer.MAX_VALUE;
         }
 
-        if(dp[current][step] != 0)
+        if (dp[current][step] != 0)
         {
             return dp[current][step];
         }
 
-        if(current == n)
+        if (current == n)
         {
             return step;
         }
 
         int min = Integer.MAX_VALUE; // what is better choice to emphasize understanding?
-        for(int i = 0; i < options.size(); i++)
+        for (int i = 0; i < options.size(); i++)
         {
             Integer x = options.get(i);
-            
+
             min = Math.min(min, dfs(n, options, current + x, step + 1, dp));
         }
 

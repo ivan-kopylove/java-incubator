@@ -6,18 +6,17 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @Configuration
 @EnableScheduling
- class Config
+class Config
 {
     @Bean
-    MySchedulableService MySchedulableService1() {
+    MySchedulableService MySchedulableService1()
+    {
         return new MySchedulableService();
     }
 
     @Bean
-    MySchedulableService2 MySchedulableService2() {
+    MySchedulableService2 MySchedulableService2()
+    {
         return new MySchedulableService2();
     }
-
-
-
 }

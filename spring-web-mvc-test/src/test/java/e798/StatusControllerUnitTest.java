@@ -20,21 +20,24 @@ class StatusControllerUnitTest
     private MockMvc mockMvc;
 
     @Test
-    void whenGetRequestSentToResource_thenReturnStatusOk() throws Exception {
+    void whenGetRequestSentToResource_thenReturnStatusOk() throws Exception
+    {
         mockMvc.perform(get("/resource"))
-            .andExpect(status().is2xxSuccessful());
+               .andExpect(status().is2xxSuccessful());
     }
 
     @Test
-    void whenGetRequestSentToException_thenReturnStatusNotFound() throws Exception {
+    void whenGetRequestSentToException_thenReturnStatusNotFound() throws Exception
+    {
         mockMvc
                 .perform(get("/exception"))
-            .andExpect(status().isNotFound());
+                .andExpect(status().isNotFound());
     }
 
     @Test
-    void whenGetRequestSentToCustomException_thenReturnStatusGone() throws Exception {
+    void whenGetRequestSentToCustomException_thenReturnStatusGone() throws Exception
+    {
         mockMvc.perform(get("/custom-exception"))
-            .andExpect(status().is4xxClientError());
+               .andExpect(status().is4xxClientError());
     }
 }

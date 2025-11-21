@@ -1,6 +1,7 @@
 package com.att.training.demo.mutations;
 
-interface Service {
+interface Service
+{
 
     void setResult(int result);
 }

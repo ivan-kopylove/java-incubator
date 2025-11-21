@@ -13,14 +13,14 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-
-class JpaCompoundSelectionArrayTest  extends EntityManagerManual
+class JpaCompoundSelectionArrayTest extends EntityManagerManual
 {
     @BeforeAll
     static void populate()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         OrganizationBuildingDetails03 organizationBuildingDetails = new OrganizationBuildingDetails03();
         organizationBuildingDetails.setAddress("Sadovnicheskaya Ulitsa 82, building 2, Moscow, Russia, 115035");
@@ -39,7 +39,8 @@ class JpaCompoundSelectionArrayTest  extends EntityManagerManual
         organzation.setOrganizationGeneralDetails(generalDetails);
 
         entityManager.persist(organzation);
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 
@@ -47,7 +48,8 @@ class JpaCompoundSelectionArrayTest  extends EntityManagerManual
     void exercise_design_reverse_engineering_correct()
     {
         EntityManager entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
         CriteriaQuery<Object[]> query = builder.createQuery(Object[].class);
@@ -58,7 +60,8 @@ class JpaCompoundSelectionArrayTest  extends EntityManagerManual
                                                                           .get("ogranizationalStructure"));
 
         query.select(compoundSelection);
-        Object[] resultList = entityManager.createQuery(query).getSingleResult();
+        Object[] resultList = entityManager.createQuery(query)
+                                           .getSingleResult();
         assertNotNull(resultList[0]);
         assertEquals("Vertical", resultList[1]);
     }

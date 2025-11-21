@@ -6,7 +6,6 @@ import java.util.PriorityQueue;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class Add_Offer
 {
@@ -14,17 +13,21 @@ class Add_Offer
     private boolean offerCalled = false;
 
     @Test
-    void testAddCallsOffer() {
+    void testAddCallsOffer()
+    {
         // a spy to verify method delegation
-        PriorityQueue<Integer> queue = new PriorityQueue<>() {
+        PriorityQueue<Integer> queue = new PriorityQueue<>()
+        {
             @Override
-            public boolean offer(Integer e) {
+            public boolean offer(Integer e)
+            {
                 offerCalled = true;
                 return super.offer(e);
             }
 
             @Override
-            public boolean add(Integer e) {
+            public boolean add(Integer e)
+            {
                 offerCalled = false;
                 return super.add(e); // open add implementation and pronounce a pattern name out of loud
             }

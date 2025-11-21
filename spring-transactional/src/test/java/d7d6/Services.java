@@ -5,7 +5,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 class MyService
 {
-     void foo() {}
+    void foo() {}
 }
 
 @Transactional

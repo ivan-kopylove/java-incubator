@@ -1,5 +1,6 @@
 package heap.acaf;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -10,14 +11,16 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class IntermediateNullTest extends TestBase
 {
 
     @Test
     void a()
     {
-        List<Object> mapped = Stream.of("1", "2").map(s -> null).peek(System.out::println).collect(Collectors.toList());
+        List<Object> mapped = Stream.of("1", "2")
+                                    .map(s -> null)
+                                    .peek(System.out::println)
+                                    .collect(Collectors.toList());
 
         assertNull(mapped.get(0));
         assertNull(mapped.get(1));
@@ -26,8 +29,11 @@ class IntermediateNullTest extends TestBase
     @Test
     void b()
     {
-        List<Object> mapped = Stream.of("1", "2").map(s -> null).filter(Objects::nonNull) //this helps
-                                    .peek(System.out::println).collect(Collectors.toList());
+        List<Object> mapped = Stream.of("1", "2")
+                                    .map(s -> null)
+                                    .filter(Objects::nonNull) //this helps
+                                    .peek(System.out::println)
+                                    .collect(Collectors.toList());
 
         assertEquals(0, mapped.size());
     }

@@ -11,7 +11,7 @@ class Step30_ApplyMemoization
             sum += nums[i];
         }
 
-        if(sum % 2 == 1)
+        if (sum % 2 == 1)
         {
             return false;
         }
@@ -32,7 +32,7 @@ class Step30_ApplyMemoization
         }
 
         boolean branch1 = dfs(halfSum - nums[i], i + 1, nums);
-        boolean branch2 = dfs(halfSum,           i + 1, nums);
+        boolean branch2 = dfs(halfSum, i + 1, nums);
 
         return branch1 || branch2;
     }

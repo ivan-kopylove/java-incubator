@@ -9,18 +9,23 @@ import static java.util.UUID.randomUUID;
 class SomeService3
 {
     @CacheEvict("myCache3")
-    void evictMyCache(int someInt) {
+    void evictMyCache(int someInt)
+    {
     }
 
     @CacheEvict("myCache3")
-    void evictMyCache() {
+    void evictMyCache()
+    {
     }
+
     @CacheEvict(value = "myCache3", allEntries = true)
-    void evictAllEntries() {
+    void evictAllEntries()
+    {
     }
 
     @Cacheable("myCache3")
-    String associateMyArg(int someInt) {
+    String associateMyArg(int someInt)
+    {
         return randomUUID().toString();
     }
 }

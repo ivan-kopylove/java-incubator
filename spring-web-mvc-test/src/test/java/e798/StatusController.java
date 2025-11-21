@@ -10,9 +10,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 class StatusController
 {
     @GetMapping("/resource")
-    ResponseEntity<String> successStatusCode() {
+    ResponseEntity<String> successStatusCode()
+    {
         HttpStatusCode statusCode = HttpStatusCode.valueOf(200);
-        if (statusCode.is2xxSuccessful()) {
+        if (statusCode.is2xxSuccessful())
+        {
             return new ResponseEntity<>("Success", statusCode);
         }
 
@@ -20,16 +22,19 @@ class StatusController
     }
 
     @GetMapping("/exception")
-    ResponseEntity<String> resourceNotFound() {
+    ResponseEntity<String> resourceNotFound()
+    {
         HttpStatus statusCode = HttpStatus.NOT_FOUND;
-        if (statusCode.is4xxClientError()) {
+        if (statusCode.is4xxClientError())
+        {
             return new ResponseEntity<>("Resource not found", HttpStatusCode.valueOf(404));
         }
         return new ResponseEntity<>("Resource found", HttpStatusCode.valueOf(200));
     }
 
     @GetMapping("/custom-exception")
-    ResponseEntity<String> goneStatusCode() {
+    ResponseEntity<String> goneStatusCode()
+    {
         throw new CustomException("Resource Gone", HttpStatusCode.valueOf(410));
     }
 }

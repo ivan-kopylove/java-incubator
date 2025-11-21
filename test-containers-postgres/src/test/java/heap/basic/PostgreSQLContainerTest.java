@@ -23,7 +23,8 @@ class PostgreSQLContainerTest
         String password = postgresContainer.getPassword();
 
         Connection conn = DriverManager.getConnection(jdbcUrl, username, password);
-        ResultSet resultSet = conn.createStatement().executeQuery("SELECT 1");
+        ResultSet resultSet = conn.createStatement()
+                                  .executeQuery("SELECT 1");
         resultSet.next();
         int result = resultSet.getInt(1);
 

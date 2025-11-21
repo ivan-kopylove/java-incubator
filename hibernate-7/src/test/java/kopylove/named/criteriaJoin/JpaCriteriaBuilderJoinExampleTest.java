@@ -17,8 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// The example demonstrates minimal `join` boilerplate.
 @Disabled
-
-class JpaCriteriaBuilderJoinExampleTest  extends EntityManagerManual
+class JpaCriteriaBuilderJoinExampleTest extends EntityManagerManual
 {
     @BeforeAll
     static void populate()
@@ -35,12 +34,14 @@ class JpaCriteriaBuilderJoinExampleTest  extends EntityManagerManual
 
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
 
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         entityManager.persist(parentEntity);
         entityManager.persist(childEntity);
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
     }
 
     @Test
@@ -59,7 +60,11 @@ class JpaCriteriaBuilderJoinExampleTest  extends EntityManagerManual
 
         for (ParentEntity02 parentEntity : result)
         {
-            assertEquals("some child name", parentEntity.getChilds().iterator().next().getName());
+            assertEquals("some child name",
+                         parentEntity.getChilds()
+                                     .iterator()
+                                     .next()
+                                     .getName());
             assertEquals("some parent name", parentEntity.getName());
         }
     }

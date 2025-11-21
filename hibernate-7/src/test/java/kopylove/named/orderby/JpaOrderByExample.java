@@ -17,7 +17,8 @@ class JpaOrderByExample extends EntityManagerManual
     static void populate()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         Building building = new Building();
         building.setId(0);
@@ -25,7 +26,8 @@ class JpaOrderByExample extends EntityManagerManual
 
         entityManager.persist(building);
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 
@@ -33,7 +35,8 @@ class JpaOrderByExample extends EntityManagerManual
     void exercise_design_reverse_engineering()
     {
         EntityManager entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         Building building = entityManager.find(Building.class, 0L);
         List<String> phoneNumbers = building.getPhoneNumbers();
@@ -50,7 +53,8 @@ class JpaOrderByExample extends EntityManagerManual
         assertEquals("8", phoneNumbers.get(9));
         assertEquals("9", phoneNumbers.get(10));
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 }

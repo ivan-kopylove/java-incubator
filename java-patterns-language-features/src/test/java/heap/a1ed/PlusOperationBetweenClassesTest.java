@@ -1,8 +1,8 @@
 package heap.a1ed;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class PlusOperationBetweenClassesTest extends TestBase
 {
 

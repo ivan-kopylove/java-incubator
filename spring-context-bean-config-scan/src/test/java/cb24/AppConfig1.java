@@ -5,7 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = {"cb24"} ) // tried specifying non-existing package and running it
+@ComponentScan(basePackages = {"cb24"}) // tried specifying non-existing package and running it
 class AppConfig1
 {
 

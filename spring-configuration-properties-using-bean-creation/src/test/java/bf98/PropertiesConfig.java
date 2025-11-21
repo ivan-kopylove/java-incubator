@@ -7,8 +7,8 @@ import org.springframework.context.annotation.Configuration;
 class PropertiesConfig
 {
     @Bean
-    ConfigCreatedProperties myProperties(){
+    ConfigCreatedProperties myProperties()
+    {
         return new ConfigCreatedProperties();
     }
-
 }

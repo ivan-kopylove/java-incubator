@@ -56,7 +56,8 @@ public class EntityManagerProvider
 
 
         // Build EntityManagerFactory
-        emf = configuration.buildSessionFactory().unwrap(EntityManagerFactory.class);
+        emf = configuration.buildSessionFactory()
+                           .unwrap(EntityManagerFactory.class);
         return emf.createEntityManager();
     }
 }

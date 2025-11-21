@@ -7,7 +7,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 class MySchedulableService
 {
     static int FIXED_DELAY = 0;
-    static int FIXED_RATE = 0;
+    static int FIXED_RATE  = 0;
 
     @Scheduled(fixedDelay = 1000)
     void fixedDelay() throws InterruptedException
@@ -24,11 +24,7 @@ class MySchedulableService
         Thread.sleep(5000);
         FIXED_RATE++;
     }
-
-
-
 }
-
 
 @Async
 class MySchedulableService2
@@ -42,8 +38,6 @@ class MySchedulableService2
         Thread.sleep(5000);
         FIXED_RATE_ASYNC++;
     }
-
-
 }
 
 

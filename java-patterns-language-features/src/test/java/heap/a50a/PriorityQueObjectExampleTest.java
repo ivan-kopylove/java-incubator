@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class MyNonComparable
 {
-    int id;
+    int    id;
     String color;
 
     MyNonComparable(int id, String color)
@@ -20,8 +20,9 @@ class MyNonComparable
     }
 }
 
-class MyComparable implements Comparable<MyComparable>{
-    int id;
+class MyComparable implements Comparable<MyComparable>
+{
+    int    id;
     String color;
 
     MyComparable(int id, String color)
@@ -46,13 +47,10 @@ class PriorityQueObjectExampleTest extends TestBase
         PriorityQueue<MyNonComparable> priorityQueue = new PriorityQueue<>();
 
 
-
         assertThrows(ClassCastException.class, () -> {
             priorityQueue.add(new MyNonComparable(5, "yellow"));
         });
     }
-
-
 
     @Test
     void exercise_design_reverse_engineering1()
@@ -69,8 +67,6 @@ class PriorityQueObjectExampleTest extends TestBase
         assertEquals(priorityQueue.poll().color, "yellow");
     }
 
-
-
     @Test
     void exercise_design_reverse_engineering2()
     {
@@ -85,7 +81,6 @@ class PriorityQueObjectExampleTest extends TestBase
         assertEquals(priorityQueue.poll().color, "green");
         assertEquals(priorityQueue.poll().color, "yellow");
     }
-
 
     @Test
     void exercise_design_reverse_engineering3()
@@ -103,6 +98,5 @@ class PriorityQueObjectExampleTest extends TestBase
         assertEquals(priorityQueue.poll().color, "yellow");
         assertEquals(priorityQueue.poll().color, "green");
         assertEquals(priorityQueue.poll().color, "red");
-
     }
 }

@@ -15,7 +15,8 @@ class Tests extends TestBase
     private PersonRepository service;
 
     @Test
-    void exercise_design_reverse_engineering() {
+    void exercise_design_reverse_engineering()
+    {
         service.findById(1);
     }
 }

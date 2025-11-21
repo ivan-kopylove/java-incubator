@@ -11,13 +11,14 @@ import java.util.List;
 
 /// Minimal JPA example - save and load saved entity.
 
-class JpaSimpleNativeQueryTest  extends EntityManagerManual
+class JpaSimpleNativeQueryTest extends EntityManagerManual
 {
     @BeforeEach
     void populate()
     {
         EntityManager entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         BookEntity13 bookEntity = new BookEntity13();
         bookEntity.setId(5001);
@@ -25,7 +26,8 @@ class JpaSimpleNativeQueryTest  extends EntityManagerManual
 
         entityManager.persist(bookEntity);
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 
@@ -34,13 +36,15 @@ class JpaSimpleNativeQueryTest  extends EntityManagerManual
     {
         EntityManager entityManager = super.getEntityManager();
 
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         Query query = entityManager.createNativeQuery("SELECT * FROM BookEntity13;");
 
         List<Tuple> resultList = query.getResultList();
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
 
         entityManager.close();
     }

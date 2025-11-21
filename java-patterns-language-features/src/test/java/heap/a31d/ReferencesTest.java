@@ -1,5 +1,6 @@
 package heap.a31d;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.lang.ref.PhantomReference;
@@ -7,12 +8,6 @@ import java.lang.ref.SoftReference;
 import java.lang.ref.WeakReference;
 import java.util.LinkedList;
 
-/// facets
-/// - thinking-in-java
-/// - java-mechanism
-///
-/// SoftReference > Weak Reference > PhantomReference
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class ReferencesTest extends TestBase
 {
     @Test

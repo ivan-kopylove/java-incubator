@@ -25,7 +25,8 @@ class JpaFetchFetchPathNavigationTest extends EntityManagerManual
     static void populate()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         UserEntity01 user = new UserEntity01();
         user.setName(USER_NAME_ONE);
@@ -44,7 +45,8 @@ class JpaFetchFetchPathNavigationTest extends EntityManagerManual
         entityManager.persist(order);
         entityManager.persist(order2);
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 
@@ -52,7 +54,8 @@ class JpaFetchFetchPathNavigationTest extends EntityManagerManual
     void join_fetch_together()
     {
         EntityManager entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
         CriteriaQuery<OrderEntity02> cq = builder.createQuery(OrderEntity02.class);
@@ -68,7 +71,8 @@ class JpaFetchFetchPathNavigationTest extends EntityManagerManual
         TypedQuery<OrderEntity02> query = entityManager.createQuery(cq);
         List<OrderEntity02> result = query.getResultList();
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 
@@ -76,7 +80,8 @@ class JpaFetchFetchPathNavigationTest extends EntityManagerManual
     void cast_to_join()
     {
         EntityManager entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
         CriteriaQuery<OrderEntity02> cq = builder.createQuery(OrderEntity02.class);
@@ -92,7 +97,8 @@ class JpaFetchFetchPathNavigationTest extends EntityManagerManual
         TypedQuery<OrderEntity02> query = entityManager.createQuery(cq);
         List<OrderEntity02> result = query.getResultList();
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 }

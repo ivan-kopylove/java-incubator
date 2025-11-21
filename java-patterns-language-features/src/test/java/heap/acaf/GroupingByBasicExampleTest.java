@@ -1,5 +1,6 @@
 package heap.acaf;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -9,7 +10,6 @@ import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class GroupingByBasicExampleTest extends TestBase
 {
     @Test
@@ -20,9 +20,12 @@ class GroupingByBasicExampleTest extends TestBase
         ints.add(2);
         ints.add(3);
 
-        Map<Boolean, List<Integer>> collect = ints.stream().collect(Collectors.groupingBy(integer -> integer > 1));
+        Map<Boolean, List<Integer>> collect = ints.stream()
+                                                  .collect(Collectors.groupingBy(integer -> integer > 1));
 
-        assertEquals(3, (int) collect.get(true).get(1));
+        assertEquals(3,
+                     (int) collect.get(true)
+                                  .get(1));
     }
 
     @Test
@@ -34,8 +37,11 @@ class GroupingByBasicExampleTest extends TestBase
         ints.add(3);
         ints.add(3);
 
-        Map<Integer, List<Integer>> groupedBy = ints.stream().collect(Collectors.groupingBy(integer -> integer));
+        Map<Integer, List<Integer>> groupedBy = ints.stream()
+                                                    .collect(Collectors.groupingBy(integer -> integer));
 
-        assertEquals(2, (int) groupedBy.get(3).size());
+        assertEquals(2,
+                     (int) groupedBy.get(3)
+                                    .size());
     }
 }

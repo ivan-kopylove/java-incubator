@@ -10,13 +10,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /// @Embedded annotation demonstration.
 
-class JpaEmbededAnnotationExampleTest  extends EntityManagerManual
+class JpaEmbededAnnotationExampleTest extends EntityManagerManual
 {
     @BeforeAll
-     static void populate()
+    static void populate()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         OrganizationBuildingDetails02 organizationBuildingDetails = new OrganizationBuildingDetails02();
         organizationBuildingDetails.setAddress("Sadovnicheskaya Ulitsa 82, building 2, Moscow, Russia, 115035");
@@ -35,7 +36,8 @@ class JpaEmbededAnnotationExampleTest  extends EntityManagerManual
         organzation.setOrganizationGeneralDetails(generalDetails);
 
         entityManager.persist(organzation);
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 
@@ -44,16 +46,22 @@ class JpaEmbededAnnotationExampleTest  extends EntityManagerManual
     {
         // given
         EntityManager entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         // when
         OrganizationEntity02 organization = entityManager.find(OrganizationEntity02.class, 0);
 
         // then
-        assertEquals(5, organization.getOrganizationBuildingDetails().getFloors());
-        assertEquals("1997", organization.getOrganizationGeneralDetails().getFound());
+        assertEquals(5,
+                     organization.getOrganizationBuildingDetails()
+                                 .getFloors());
+        assertEquals("1997",
+                     organization.getOrganizationGeneralDetails()
+                                 .getFound());
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 }

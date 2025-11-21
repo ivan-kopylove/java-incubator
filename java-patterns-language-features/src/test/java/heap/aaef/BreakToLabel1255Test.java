@@ -1,13 +1,8 @@
 package heap.aaef;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
-/// Labels example
-/// facets
-/// - enthuware
-///
-/// enthuware.ocpjp.i.v11.2.1255
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class BreakToLabel1255Test extends TestBase
 {
     @Test

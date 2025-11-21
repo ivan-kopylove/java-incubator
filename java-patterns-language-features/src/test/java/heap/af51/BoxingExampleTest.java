@@ -1,9 +1,9 @@
 package heap.af51;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class BoxingExampleTest extends TestBase
 {
     @Test

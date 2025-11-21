@@ -79,8 +79,10 @@ class MySolution_181_181_casesPassed
         {
             for (int i = 0; i < eqStr.size(); i++)
             {
-                char left = eqStr.get(i).charAt(0);
-                char right = eqStr.get(i).charAt(3);
+                char left = eqStr.get(i)
+                                 .charAt(0);
+                char right = eqStr.get(i)
+                                  .charAt(3);
 
                 enrich(eq, left, right);
                 enrich(eq, right, left);
@@ -89,8 +91,10 @@ class MySolution_181_181_casesPassed
 
         for (int i = 0; i < neqStr.size(); i++)
         {
-            char left = neqStr.get(i).charAt(0);
-            char right = neqStr.get(i).charAt(3);
+            char left = neqStr.get(i)
+                              .charAt(0);
+            char right = neqStr.get(i)
+                               .charAt(3);
 
             if (left == right)
             {

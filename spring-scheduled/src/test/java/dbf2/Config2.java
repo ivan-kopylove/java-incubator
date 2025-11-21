@@ -8,25 +8,26 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 
 @Configuration
 @EnableScheduling
- class Config2
+class Config2
 {
     @Bean
-    MySchedulableService MySchedulableService1() {
+    MySchedulableService MySchedulableService1()
+    {
         return new MySchedulableService();
     }
 
     @Bean
-    MySchedulableService2 MySchedulableService2() {
+    MySchedulableService2 MySchedulableService2()
+    {
         return new MySchedulableService2();
     }
 
     @Bean
-    TaskScheduler taskScheduler() {
+    TaskScheduler taskScheduler()
+    {
         ThreadPoolTaskScheduler threadPoolTaskScheduler = new ThreadPoolTaskScheduler();
         threadPoolTaskScheduler.setPoolSize(5);
         threadPoolTaskScheduler.setThreadNamePrefix("ThreadPoolTaskScheduler");
         return threadPoolTaskScheduler;
     }
-
-
 }

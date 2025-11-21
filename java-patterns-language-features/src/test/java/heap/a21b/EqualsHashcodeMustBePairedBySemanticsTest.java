@@ -1,5 +1,6 @@
 package heap.a21b;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashSet;
@@ -9,7 +10,6 @@ import java.util.Set;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class EqualsHashcodeMustBePairedBySemanticsTest extends TestBase
 {
     private boolean equalsCalled   = false;

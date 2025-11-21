@@ -11,7 +11,7 @@ class Step20_CollapseDuplicatedRecursionExercise
             sum += nums[i];
         }
 
-        if(sum % 2 == 1)
+        if (sum % 2 == 1)
         {
             return false;
         }

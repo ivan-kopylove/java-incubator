@@ -12,7 +12,8 @@ import org.springframework.context.annotation.Configuration;
 class AppConfig2
 {
     @Bean
-    MyCacheableService2 myService() {
+    MyCacheableService2 myService()
+    {
         return new MyCacheableService2();
     }
 

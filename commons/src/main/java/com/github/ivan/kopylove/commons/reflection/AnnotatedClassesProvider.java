@@ -13,7 +13,9 @@ public class AnnotatedClassesProvider
     {
         Reflections relections = new Reflections(packageName);
 
-        return relections.getTypesAnnotatedWith(input).stream()
-                         .filter(clazz -> !Modifier.isAbstract(clazz.getModifiers())).collect(Collectors.toSet());
+        return relections.getTypesAnnotatedWith(input)
+                         .stream()
+                         .filter(clazz -> !Modifier.isAbstract(clazz.getModifiers()))
+                         .collect(Collectors.toSet());
     }
 }

@@ -1,8 +1,8 @@
 package named.concurrencyBasic01;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class Step10_ThreadIntroductionTest extends TestBase
 {
 

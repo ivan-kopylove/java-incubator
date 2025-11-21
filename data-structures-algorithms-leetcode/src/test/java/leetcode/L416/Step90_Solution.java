@@ -13,14 +13,14 @@ class Step90_Solution
             sum += nums[i];
         }
 
-        if(sum % 2 == 1)
+        if (sum % 2 == 1)
         {
             return false;
         }
 
         int[][] dp = new int[nums.length + 1][sum / 2 + 1];
 
-        for(int i = 0; i < dp.length; i++)
+        for (int i = 0; i < dp.length; i++)
         {
             Arrays.fill(dp[i], -1);
         }
@@ -40,15 +40,15 @@ class Step90_Solution
             return false;
         }
 
-        if(dp[i][halfSum] != -1)
+        if (dp[i][halfSum] != -1)
         {
             return dp[i][halfSum] == 1 ? true : false;
         }
 
         boolean branch1 = dfs(halfSum - nums[i], i + 1, nums, dp);
-        boolean branch2 = dfs(halfSum,           i + 1, nums, dp);
+        boolean branch2 = dfs(halfSum, i + 1, nums, dp);
 
         dp[i][halfSum] = branch1 || branch2 ? 1 : 0;
-        return dp[i][halfSum] == 1? true : false;
+        return dp[i][halfSum] == 1 ? true : false;
     }
 }

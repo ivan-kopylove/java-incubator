@@ -20,6 +20,4 @@ class ee94
         // then
         System.out.println(result);
     }
-
-
 }

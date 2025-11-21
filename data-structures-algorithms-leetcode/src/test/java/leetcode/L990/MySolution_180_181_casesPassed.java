@@ -90,7 +90,9 @@ class MySolution_180_181_casesPassed
                     return false;
                 }
 
-                if (eq.get(left) != null && eq.get(left).stream().anyMatch(el -> el == right))
+                if (eq.get(left) != null && eq.get(left)
+                                              .stream()
+                                              .anyMatch(el -> el == right))
                 {
                     return false;
                 }

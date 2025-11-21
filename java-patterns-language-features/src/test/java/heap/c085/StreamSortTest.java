@@ -1,5 +1,6 @@
 package heap.c085;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +10,6 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class StreamSortTest extends TestBase
 {
     @DisplayName("what is the purpose of this example?")
@@ -25,7 +25,8 @@ class StreamSortTest extends TestBase
     void chainedLambdaComparator()
     {
         List<ComparableObject> list = createObjects();
-        list.sort(Comparator.comparing(ComparableObject::getDate).thenComparing(ComparableObject::getStr));
+        list.sort(Comparator.comparing(ComparableObject::getDate)
+                            .thenComparing(ComparableObject::getStr));
     }
 
     private List<ComparableObject> createObjects()

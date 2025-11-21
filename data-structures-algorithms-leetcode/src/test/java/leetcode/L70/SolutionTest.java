@@ -6,6 +6,7 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.List;
+
 import static com.github.ivan.kopylove.commons.testing.EducationalStrengthness.EDUCATION_MODE;
 import static com.github.ivan.kopylove.commons.testing.EducationalStrengthness.FAMILIARIZE;
 import static org.hamcrest.MatcherAssert.assertThat;

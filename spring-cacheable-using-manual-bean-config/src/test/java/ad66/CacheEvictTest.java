@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-
 class CacheEvictTest
 {
     @Test
@@ -20,7 +18,6 @@ class CacheEvictTest
         service.evictMyCache(2);
         System.out.println(service.associateMyArg(1));
     }
-
 
     @Test
     void exercise_design_reverse_engineering2()
@@ -48,7 +45,6 @@ class CacheEvictTest
         System.out.println(service.associateMyArg(3));
     }
 
-
     @Test
     void exercise_design_reverse_engineering4()
     {
@@ -61,6 +57,4 @@ class CacheEvictTest
         service.evictAllEntries();
         System.out.println(service.associateMyArg(3));
     }
-
-
 }

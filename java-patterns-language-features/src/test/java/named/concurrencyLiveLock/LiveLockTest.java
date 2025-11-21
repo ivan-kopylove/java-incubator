@@ -1,10 +1,10 @@
 package named.concurrencyLiveLock;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.locks.ReentrantLock;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class LiveLockTest extends TestBase
 {
     private static void sleep(int millis)

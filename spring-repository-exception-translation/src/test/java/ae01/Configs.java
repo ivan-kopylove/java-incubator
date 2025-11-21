@@ -15,42 +15,50 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 class Configs
 {
     @Bean
-    PersistenceExceptionTranslationPostProcessor persistenceExceptionTranslationPostProcessor(){
+    PersistenceExceptionTranslationPostProcessor persistenceExceptionTranslationPostProcessor()
+    {
         return new PersistenceExceptionTranslationPostProcessor();
     }
 
     @Bean
-    CustomPersistenceExceptionTranslator customPersistenceExceptionTranslator(){
+    CustomPersistenceExceptionTranslator customPersistenceExceptionTranslator()
+    {
         return new CustomPersistenceExceptionTranslator();
     }
 
     @Bean
-    HibernateExceptionTranslator hibernateExceptionTranslator(){
+    HibernateExceptionTranslator hibernateExceptionTranslator()
+    {
         return new HibernateExceptionTranslator();
     }
 
     static class CustomPersistenceExceptionTranslator implements PersistenceExceptionTranslator
     {
         @Override
-        public DataAccessException translateExceptionIfPossible(RuntimeException ex) {
-            if (ex instanceof CustomPersistenceException) {
+        public DataAccessException translateExceptionIfPossible(RuntimeException ex)
+        {
+            if (ex instanceof CustomPersistenceException)
+            {
                 return new CustomDataAccessException("Translated: " + ex.getMessage(), ex);
             }
             return null;
         }
     }
 
-    static class CustomPersistenceException extends RuntimeException {
-        CustomPersistenceException(String message) {
+    static class CustomPersistenceException extends RuntimeException
+    {
+        CustomPersistenceException(String message)
+        {
             super(message);
         }
     }
 
-    static class CustomDataAccessException extends DataAccessException {
-        CustomDataAccessException(String message, Throwable cause) {
+    static class CustomDataAccessException extends DataAccessException
+    {
+        CustomDataAccessException(String message, Throwable cause)
+        {
             super(message, cause);
         }
     }
-
 }
 

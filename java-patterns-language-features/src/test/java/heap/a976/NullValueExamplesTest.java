@@ -1,10 +1,8 @@
 package heap.a976;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.fail;
-
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class NullValueExamplesTest extends TestBase
 {
     @Test

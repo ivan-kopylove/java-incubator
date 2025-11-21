@@ -14,7 +14,8 @@ class JpaCompositeForeignKeyExample extends EntityManagerTransactional
     static void populate()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         UserEntity02 user = new UserEntity02();
         user.setCity("Moscow");
@@ -28,7 +29,8 @@ class JpaCompositeForeignKeyExample extends EntityManagerTransactional
         entityManager.persist(user);
         entityManager.persist(documentEntity);
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 
@@ -39,7 +41,11 @@ class JpaCompositeForeignKeyExample extends EntityManagerTransactional
 
         DocumentEntity01 documentEntity = entityManager.find(DocumentEntity01.class, 0);
 
-        assertEquals(99999999, documentEntity.getUser().getSsn());
-        assertEquals("bob", documentEntity.getUser().getName());
+        assertEquals(99999999,
+                     documentEntity.getUser()
+                                   .getSsn());
+        assertEquals("bob",
+                     documentEntity.getUser()
+                                   .getName());
     }
 }

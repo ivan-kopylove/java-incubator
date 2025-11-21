@@ -1,12 +1,12 @@
 package heap.a70e;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotSame;
 import static org.junit.jupiter.api.Assertions.assertSame;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class BooleanComparisonTest extends TestBase
 {
     @Test

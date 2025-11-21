@@ -1,5 +1,6 @@
 package heap.a47d;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -11,9 +12,6 @@ import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/// Various examples of generic methods.
-/// Generics added to the Java programming language in 2004 within version J2SE 5.0.
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class GenericsExamplesTest extends TestBase
 {
     /// a generic method.
@@ -70,6 +68,8 @@ class GenericsExamplesTest extends TestBase
 
     List<?> printAll(List<?> list) //the same as using <? extends Object>.
     {
-        return list.stream().map(Object::toString).collect(Collectors.toList());
+        return list.stream()
+                   .map(Object::toString)
+                   .collect(Collectors.toList());
     }
 }

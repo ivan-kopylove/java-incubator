@@ -16,16 +16,16 @@ class das
             System.out.println(a);
         }
 
-       if (++a == 0)
+        if (++a == 0)
         {
             System.out.println(a);
         }
     }
 
-     @Test
+    @Test
     void exercise_design_reverse_engineering2()
     {
-        int[] arr = new int[] { 0, 0, 0 };
+        int[] arr = new int[]{0, 0, 0};
         int a = 0;
 
         arr[a++] = 5;
@@ -35,7 +35,7 @@ class das
         System.out.println(Arrays.toString(arr));
     }
 
-  @Test
+    @Test
     void exercise_design_reverse_engineering3()
     {
         int a = 0;
@@ -53,7 +53,7 @@ class das
     {
         int a = 5;
 
-        while(true)
+        while (true)
         {
             if (true && a-- == 0)
             {
@@ -63,6 +63,4 @@ class das
             System.out.println(a);
         }
     }
-
-
 }

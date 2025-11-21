@@ -1,6 +1,5 @@
 package heap.basic;
 
-import org.h2.util.IOUtils;
 import org.junit.jupiter.api.Test;
 
 import java.sql.Connection;

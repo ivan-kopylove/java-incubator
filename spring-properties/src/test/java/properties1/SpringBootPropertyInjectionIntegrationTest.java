@@ -16,7 +16,8 @@ import java.util.Collection;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 @SpringBootTest(classes = Config.class)
-class SpringBootPropertyInjectionIntegrationTest {
+class SpringBootPropertyInjectionIntegrationTest
+{
 
     @Value("${foo.bar}")
     private String baz;
@@ -24,31 +25,36 @@ class SpringBootPropertyInjectionIntegrationTest {
     @Value("${foo.myPropertyOne}")
     private String myPropertyOne;
 
-
     @Test
-    void whenSpringBootPropertyProvided_thenProperlyInjected() {
+    void whenSpringBootPropertyProvided_thenProperlyInjected()
+    {
         assertThat(baz).isEqualTo("baz");
         assertThat(myPropertyOne).isEqualTo("baq");
     }
 }
 
 @Configuration
-@ComponentScan(basePackages = {"properties1"} ) // tried specifying non-existing package and running it
-class Config{
+@ComponentScan(basePackages = {"properties1"}) // tried specifying non-existing package and running it
+class Config
+{
 
 }
 
 @Component
-class AppContextRefreshedEventPropertiesPrinter {
+class AppContextRefreshedEventPropertiesPrinter
+{
 
     @EventListener
-    void handleContextRefreshed(ContextRefreshedEvent event) {
-        ConfigurableEnvironment env = (ConfigurableEnvironment) event.getApplicationContext().getEnvironment();
+    void handleContextRefreshed(ContextRefreshedEvent event)
+    {
+        ConfigurableEnvironment env = (ConfigurableEnvironment) event.getApplicationContext()
+                                                                     .getEnvironment();
 
         env.getPropertySources()
            .stream()
            .filter(ps -> ps instanceof MapPropertySource)
-           .map(ps -> ((MapPropertySource) ps).getSource().keySet())
+           .map(ps -> ((MapPropertySource) ps).getSource()
+                                              .keySet())
            .flatMap(Collection::stream)
            .distinct()
            .sorted()

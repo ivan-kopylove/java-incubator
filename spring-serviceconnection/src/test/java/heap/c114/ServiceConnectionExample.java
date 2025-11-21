@@ -1,7 +1,5 @@
 package heap.c114;
 
-import org.hamcrest.CoreMatchers;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.amqp.autoconfigure.RabbitConnectionDetails;

@@ -1,5 +1,6 @@
 package named.concurrencySemaphore;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.ExecutorService;
@@ -11,8 +12,6 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class LoginQueueUsingSemaphoreTest extends TestBase
 {
 
@@ -26,7 +25,8 @@ class LoginQueueUsingSemaphoreTest extends TestBase
         LoginQueueUsingSemaphore loginQueue = new LoginQueueUsingSemaphore(slots);
 
         // when
-        IntStream.range(0, slots).forEach(user -> executorService.submit(loginQueue::tryLogin));
+        IntStream.range(0, slots)
+                 .forEach(user -> executorService.submit(loginQueue::tryLogin));
         executorService.shutdown();
         executorService.awaitTermination(10, SECONDS);
 

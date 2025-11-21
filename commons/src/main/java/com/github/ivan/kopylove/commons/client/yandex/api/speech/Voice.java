@@ -40,7 +40,9 @@ enum Voice
     {
         if (VOICE_RANDOM_POOL.size() < 1)
         {
-            List<Voice> ruVoices = ALL_VOICES.stream().filter(voice -> voice.language == RU).collect(toList());
+            List<Voice> ruVoices = ALL_VOICES.stream()
+                                             .filter(voice -> voice.language == RU)
+                                             .collect(toList());
 
             VOICE_RANDOM_POOL.addAll(ruVoices);
         }
@@ -53,8 +55,12 @@ enum Voice
                 case MALE ->
                 {
                     nextRandomGender = FEMALE;
-                    voice = VOICE_RANDOM_POOL.stream().filter(v -> v.gender == MALE).filter(v -> v.language == RU).min(
-                            shuffleComparator()).orElseThrow();
+                    voice = VOICE_RANDOM_POOL.stream()
+                                             .filter(v -> v.gender == MALE)
+                                             .filter(v -> v.language == RU)
+                                             .min(
+                                                     shuffleComparator())
+                                             .orElseThrow();
                     if (voice == PREVIOUS)
                     {
                         continue;
@@ -63,8 +69,11 @@ enum Voice
                 case FEMALE ->
                 {
                     nextRandomGender = MALE;
-                    voice = VOICE_RANDOM_POOL.stream().filter(v -> v.gender == FEMALE).filter(v -> v.language == RU)
-                                             .min(shuffleComparator()).orElse(PREVIOUS);
+                    voice = VOICE_RANDOM_POOL.stream()
+                                             .filter(v -> v.gender == FEMALE)
+                                             .filter(v -> v.language == RU)
+                                             .min(shuffleComparator())
+                                             .orElse(PREVIOUS);
                     if (voice == PREVIOUS)
                     {
                         continue;

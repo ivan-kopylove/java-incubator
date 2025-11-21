@@ -9,14 +9,15 @@ import org.junit.jupiter.api.Test;
 
 /// JPA allows implementations to synchronize the persistence context at other times, if they wish.
 
-class JpaFlushModeTest  extends EntityManagerManual
+class JpaFlushModeTest extends EntityManagerManual
 {
 
     @BeforeAll
     static void populate()
     {
         EntityManager entityManager = EntityManagerProvider.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         ParentEntity04 parent = new ParentEntity04();
         parent.setName("some name");
@@ -24,7 +25,8 @@ class JpaFlushModeTest  extends EntityManagerManual
 
         entityManager.persist(parent);
 
-        entityManager.getTransaction().commit();
+        entityManager.getTransaction()
+                     .commit();
         entityManager.close();
     }
 
@@ -32,14 +34,16 @@ class JpaFlushModeTest  extends EntityManagerManual
     void commitMode()
     {
         EntityManager entityManager = super.getEntityManager();
-        entityManager.getTransaction().begin();
+        entityManager.getTransaction()
+                     .begin();
 
         ParentEntity04 parent = entityManager.find(ParentEntity04.class, 4000);
         parent.setName("new name");
 
         entityManager.setFlushMode(FlushModeType.COMMIT);
 
-        entityManager.getTransaction().commit();// hibernate does flush
+        entityManager.getTransaction()
+                     .commit();// hibernate does flush
         entityManager.close();
     }
 }

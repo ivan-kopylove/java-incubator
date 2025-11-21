@@ -1,10 +1,9 @@
 package named.concurrencyJoin;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class ThreadJoinExampleTest extends TestBase
 {
     @Test

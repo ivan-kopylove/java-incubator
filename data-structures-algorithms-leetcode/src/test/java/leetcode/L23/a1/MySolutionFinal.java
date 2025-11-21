@@ -1,35 +1,35 @@
 package leetcode.L23.a1;
 
-
 class MySolutionFinal
 {
-    ListNode mergeKLists(ListNode[] lists) {
+    ListNode mergeKLists(ListNode[] lists)
+    {
 
         int minIdx = 0;
-        
+
         ListNode resultFirst = null;
         ListNode resultNext = null;
 
-        while(true)
+        while (true)
         {
-            for(int i = 0; i < lists.length; i++)
+            for (int i = 0; i < lists.length; i++)
             {
-                if(lists[i] != null)
+                if (lists[i] != null)
                 {
-                    if(lists[minIdx] == null)
+                    if (lists[minIdx] == null)
                     {
                         minIdx = i;
                     }
-                    else if(lists[i].val < lists[minIdx].val)
+                    else if (lists[i].val < lists[minIdx].val)
                     {
                         minIdx = i;
                     }
                 }
             }
 
-            if(lists[minIdx] != null)
+            if (lists[minIdx] != null)
             {
-                if(resultFirst == null)
+                if (resultFirst == null)
                 {
                     resultFirst = lists[minIdx];
                     resultNext = lists[minIdx];

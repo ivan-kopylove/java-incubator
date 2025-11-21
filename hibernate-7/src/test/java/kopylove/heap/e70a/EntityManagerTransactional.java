@@ -10,13 +10,15 @@ public class EntityManagerTransactional
     @BeforeEach
     public void init()
     {
-        getEntityManager().getTransaction().begin();
+        getEntityManager().getTransaction()
+                          .begin();
     }
 
     @AfterEach
     public void destroy()
     {
-        getEntityManager().getTransaction().commit();
+        getEntityManager().getTransaction()
+                          .commit();
         EntityManagerProvider.closeEntityManager();
     }
 

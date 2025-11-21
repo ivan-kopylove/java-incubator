@@ -1,5 +1,6 @@
 package heap.aedc;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.Comparator;
@@ -9,12 +10,6 @@ import java.util.TreeMap;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/// TreeMap sorts all its entries according to their natural ordering.
-/// Complexity: O(log(n))
-///
-/// - [Big O typical growth rates](https://i.imgur.com/Uf622Ip.png)
-/// - [red-black tree](https://i.imgur.com/uyqWi6O.png)
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class TreeMapExampleTest extends TestBase
 {
     @Test
@@ -27,7 +22,8 @@ class TreeMapExampleTest extends TestBase
         treeMap.put(1, "some value");
         treeMap.put(2, "some value");
 
-        Iterator<Integer> iterator = treeMap.keySet().iterator();
+        Iterator<Integer> iterator = treeMap.keySet()
+                                            .iterator();
         assertEquals(Integer.valueOf(1), iterator.next());
         assertEquals(Integer.valueOf(2), iterator.next());
         assertEquals(Integer.valueOf(3), iterator.next());
@@ -45,7 +41,8 @@ class TreeMapExampleTest extends TestBase
         treeMap.put(4, "some value");
         treeMap.put(5, "some value");
 
-        Iterator<Integer> iterator = treeMap.keySet().iterator();
+        Iterator<Integer> iterator = treeMap.keySet()
+                                            .iterator();
         assertEquals(Integer.valueOf(5), iterator.next());
         assertEquals(Integer.valueOf(4), iterator.next());
         assertEquals(Integer.valueOf(3), iterator.next());
@@ -71,7 +68,8 @@ class TreeMapExampleTest extends TestBase
         treeMap.put(4, "some value");
         treeMap.put(5, "some value");
 
-        Iterator<Integer> iterator = treeMap.keySet().iterator();
+        Iterator<Integer> iterator = treeMap.keySet()
+                                            .iterator();
         assertEquals(Integer.valueOf(1), iterator.next());
         assertEquals(Integer.valueOf(2), iterator.next());
         assertEquals(Integer.valueOf(3), iterator.next());

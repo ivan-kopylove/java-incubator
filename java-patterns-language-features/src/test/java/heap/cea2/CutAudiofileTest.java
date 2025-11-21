@@ -1,5 +1,6 @@
 package heap.cea2;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -16,8 +17,6 @@ import java.nio.file.Paths;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class CutAudiofileTest extends TestBase
 {
 

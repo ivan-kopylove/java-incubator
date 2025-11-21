@@ -13,7 +13,8 @@ class Notifier implements Runnable
     @Override
     public void run()
     {
-        String name = Thread.currentThread().getName();
+        String name = Thread.currentThread()
+                            .getName();
         System.out.println(name + " started");
         try
         {
@@ -22,8 +23,8 @@ class Notifier implements Runnable
             {
                 msg.setMsg(name + " Notifier work done");
 
-//                                msg.notify();
-//                                msg.notify();
+                //                                msg.notify();
+                //                                msg.notify();
 
                 msg.notifyAll();
             }

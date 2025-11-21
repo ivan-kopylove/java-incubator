@@ -3,11 +3,9 @@ package kopylove.heap.e977;
 import kopylove.heap.e70a.EntityManagerTransactional;
 import org.junit.jupiter.api.Test;
 
-import static kopylove.heap.b505.EntityManagerProvider.getEntityManager;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-
-class UserTest extends  EntityManagerTransactional
+class UserTest extends EntityManagerTransactional
 {
 
     @Test

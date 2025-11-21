@@ -14,7 +14,8 @@ class Tests extends TestBase
     private String someBean;
 
     @Test
-    void exercise_design_reverse_engineering() {
+    void exercise_design_reverse_engineering()
+    {
         System.out.println(someBean);
     }
 }

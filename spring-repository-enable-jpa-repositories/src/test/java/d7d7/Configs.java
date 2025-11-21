@@ -28,52 +28,62 @@ import static com.github.ivan.kopylove.commons.reflection.AnnotatedClassesProvid
 class Configs
 {
     @Bean
-    PersistenceExceptionTranslationPostProcessor persistenceExceptionTranslationPostProcessor(){
+    PersistenceExceptionTranslationPostProcessor persistenceExceptionTranslationPostProcessor()
+    {
         return new PersistenceExceptionTranslationPostProcessor();
     }
 
-//    @Bean
-//    LocalSessionFactoryBean localSessionFactoryBean(){
-//        LocalSessionFactoryBean localSessionFactoryBean = new LocalSessionFactoryBean();
-//
-//        return localSessionFactoryBean;
-//    }
+    //    @Bean
+    //    LocalSessionFactoryBean localSessionFactoryBean(){
+    //        LocalSessionFactoryBean localSessionFactoryBean = new LocalSessionFactoryBean();
+    //
+    //        return localSessionFactoryBean;
+    //    }
 
     @Bean
-    CustomPersistenceExceptionTranslator customPersistenceExceptionTranslator(){
+    CustomPersistenceExceptionTranslator customPersistenceExceptionTranslator()
+    {
         return new CustomPersistenceExceptionTranslator();
     }
 
     @Bean
-    HibernateExceptionTranslator hibernateExceptionTranslator(){
+    HibernateExceptionTranslator hibernateExceptionTranslator()
+    {
         return new HibernateExceptionTranslator();
     }
 
     static class CustomPersistenceExceptionTranslator implements PersistenceExceptionTranslator
     {
         @Override
-        public DataAccessException translateExceptionIfPossible(RuntimeException ex) {
-            if (ex instanceof CustomPersistenceException) {
+        public DataAccessException translateExceptionIfPossible(RuntimeException ex)
+        {
+            if (ex instanceof CustomPersistenceException)
+            {
                 return new CustomDataAccessException("Translated: " + ex.getMessage(), ex);
             }
             return null;
         }
     }
 
-    static class CustomPersistenceException extends RuntimeException {
-        CustomPersistenceException(String message) {
+    static class CustomPersistenceException extends RuntimeException
+    {
+        CustomPersistenceException(String message)
+        {
             super(message);
         }
     }
 
-    static class CustomDataAccessException extends DataAccessException {
-        CustomDataAccessException(String message, Throwable cause) {
+    static class CustomDataAccessException extends DataAccessException
+    {
+        CustomDataAccessException(String message, Throwable cause)
+        {
             super(message, cause);
         }
     }
 
     @Bean
-    DataSource dataSource() {
+    DataSource dataSource()
+    {
         HikariConfig config = new HikariConfig();
         config.setDriverClassName("org.h2.Driver");
         config.setJdbcUrl("jdbc:h2:mem:testdb");
@@ -90,7 +100,8 @@ class Configs
     }
 
     @Bean
-    PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
+    PlatformTransactionManager transactionManager(EntityManagerFactory emf)
+    {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
         transactionManager.setEntityManagerFactory(emf);
 
@@ -124,7 +135,8 @@ class Configs
             configuration.addAnnotatedClass(entity);
         });
 
-        return configuration.buildSessionFactory().unwrap(EntityManagerFactory.class);
+        return configuration.buildSessionFactory()
+                            .unwrap(EntityManagerFactory.class);
     }
 }
 

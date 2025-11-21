@@ -1,11 +1,11 @@
 package heap.ce1e;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class WhatIsThePurposeOfTheExampleTest extends TestBase
 {
     @Test

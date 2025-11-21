@@ -5,10 +5,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
- class AppConfig {
+class AppConfig
+{
 
     @Bean
-     MyService myService() {
+    MyService myService()
+    {
         return new MyService();
     }
 }

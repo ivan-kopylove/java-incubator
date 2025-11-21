@@ -12,7 +12,8 @@ import org.springframework.context.annotation.Configuration;
 class AppConfig3
 {
     @Bean
-    SomeService3 myService() {
+    SomeService3 myService()
+    {
         return new SomeService3();
     }
 

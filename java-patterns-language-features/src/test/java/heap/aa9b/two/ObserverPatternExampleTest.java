@@ -1,9 +1,8 @@
 package heap.aa9b.two;
 
+import com.github.ivan.kopylove.commons.testing.TestBase;
 import org.junit.jupiter.api.Test;
 
-
-import com.github.ivan.kopylove.commons.testing.TestBase;
 class ObserverPatternExampleTest extends TestBase
 {
     @Test
